@@ -1,4 +1,5 @@
 #summary The FAQ.
+#labels Featured
 
 == How do I get to the Options page? ==
 
