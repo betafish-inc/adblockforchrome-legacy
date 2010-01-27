@@ -25,9 +25,9 @@ No.  We're waiting on a feature for Chrome by a guy named Pavel that will allow 
 
 Nope!  We do as much as we can to optimize the rules in your filter lists.  A simple example is that we jump through some hoops to convert as many regular-expression-based rules as we can to substring-matching rules, because that's much faster in Chrome.
 
-== Are you the same guys that made AdBlockPlus for Firefox? ==
+== Are you the same guys that made !AdBlockPlus for Firefox? ==
 
-No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for AdBlock is Michael Gundlach and he lives in Georgia.
+No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia.
 
 == How can I help? ==
 
