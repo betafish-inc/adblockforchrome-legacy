@@ -24,3 +24,21 @@ No.  We're waiting on a feature for Chrome by a guy named Pavel that will allow 
 == Isn't that slow? ==
 
 Nope!  We do as much as we can to optimize the rules in your filter lists.  A simple example is that we jump through some hoops to convert as many regular-expression-based rules as we can to substring-matching rules, because that's much faster in Chrome.
+
+== Are you the same guys that made AdBlockPlus for Firefox? ==
+
+No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for AdBlock is Michael Gundlach and he lives in Georgia.
+
+== How can I help? ==
+
+Oh man, lots of ways:
+
+  * Report a bug via the Issues tab above.
+  * Report an ad in the same place.
+  * Open an ad report from someone else, figure out what filter would block the ad, and update the bug report.
+  * Verify that you can reproduce an existing bug.  Turn on debugging via AdBlock Options, and see if anything interesting shows up in the Javascript Console.
+  * Offer to translate (we're not there yet but we will be)
+  * Rate us five stars on the installation page at http://bit.ly/ChromeAdBlock .
+  * Tell your friends about us!
+
+Thanks for asking! :)
