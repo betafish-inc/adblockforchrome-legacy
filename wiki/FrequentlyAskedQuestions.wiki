@@ -27,7 +27,7 @@ Nope!  We do as much as we can to optimize the rules in your filter lists.  A si
 
 == Are you the same guys that made !AdBlockPlus for Firefox? ==
 
-No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the EasyList filter list (as well as several others) and those are maintained by independent users.
+No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
 == How can I help? ==
 
