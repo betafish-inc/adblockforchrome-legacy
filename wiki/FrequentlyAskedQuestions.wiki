@@ -3,7 +3,7 @@
 
 == How do I get to the Options page? ==
 
-Wrench -> Extensions -> AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
+Wrench -> Extensions -> !AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
 
 == How do I blacklist something? ==
 
@@ -13,7 +13,7 @@ Press Ctrl-Shift-K on a page once it has finished loading, and you'll get a blac
 
 The blacklist UI creates entries in the blacklist table on the Options page.  You can add, replace, or remove entries there if you are feeling advanced.
 
-== How do I stop AdBlock from running on a page? ==
+== How do I stop !AdBlock from running on a page? ==
 
 Press Ctrl-Shift-L (or use the browser action button) on a page and you'll have the option to whitelist that domain.  The Options page gives you a list of whitelisted domains.
 
@@ -27,7 +27,7 @@ Nope!  We do as much as we can to optimize the rules in your filter lists.  A si
 
 == Are you the same guys that made !AdBlockPlus for Firefox? ==
 
-No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia.
+No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives near Athens, Georgia, USA.
 
 == How can I help? ==
 
