@@ -27,6 +27,10 @@ No.  We're waiting on a feature for Chrome by a guy named Pavel that will allow 
 
 Nope!  We do as much as we can to optimize the rules in your filter lists.  A simple example is that we jump through some hoops to convert as many regular-expression-based rules as we can to substring-matching rules, because that's much faster in Chrome.
 
+== Are you the same guys that made !AdBlockPlus for Firefox? ==
+
+No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
+
 == When I install, Chrome warns me that !AdBlock will have access to all my private data! ==
 
 It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing.
@@ -34,10 +38,6 @@ It's true.  !AdBlock has the *ability* to access to your private data, but it do
 In Firefox, the situation was worse: every extension had the power to access your private data, and you weren't informed.  In Chrome, at least, those extensions that need to run on every page show you a warning before you install them!
 
 It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is (as of writing) the #2 most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
-
-== Are you the same guys that made !AdBlockPlus for Firefox? ==
-
-No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
 == How can I help? ==
 
