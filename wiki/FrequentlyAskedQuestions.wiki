@@ -1,7 +1,9 @@
 #summary The FAQ.
 #labels Featured
 
-<wiki:toc max_depth="1" />
+= Frequently Asked Questions =
+
+<wiki:toc max_depth="2" />
 
 == How do I get to the Options page? ==
 
