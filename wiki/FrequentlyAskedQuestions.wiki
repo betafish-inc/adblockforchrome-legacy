@@ -1,6 +1,8 @@
 #summary The FAQ.
 #labels Featured
 
+<wiki:toc max_depth="1" />
+
 == How do I get to the Options page? ==
 
 Wrench -> Extensions -> !AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
