@@ -1,0 +1,31 @@
+#summary What has changed between releases.
+
+= Changelog =
+
+Note that AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix.
+
+== Versions ==
+
+*1.3.10*: Allow blacklist entries in easylist syntax.
+
+E.g. yahoo.com##div[id="ad"] when entered in the "CSS" field on the Options page is now interpreted as if they had entered div[id="id"] and put yahoo.com in the domain regex.
+
+*1.3.9*: Created an initial CHANGELOG file.
+
+*1.3.8*: Fixed a problem with converting to the new Russian list.
+
+*1.3.7*: Added Danish filter subscription.
+
+*1.3.6*: Working around a webkit bug that hasn't merged into Chrome stable yet.
+
+*1.3.5*: Point to a new Russian subscription list.
+
+*1.3.4*: HTML updates to Options page.
+
+*1.3.3*: Point users to bug tracker on the Options page.
+
+*1.3.2*: Working around a webkit bug that hasn't merged into Chrome stable yet.
+
+*1.3.1*: Attempt to point to a new Russian subscription list.
+
+*1.3.0*: Initial import.
