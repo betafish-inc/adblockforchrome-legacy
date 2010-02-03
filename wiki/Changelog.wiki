@@ -3,7 +3,7 @@
 
 = Changelog =
 
-Note that AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix.
+Note that !AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix.
 
 == Versions ==
 
