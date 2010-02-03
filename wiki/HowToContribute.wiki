@@ -1,0 +1,11 @@
+#summary Things you can do to contribute to AdBlock.
+
+= Introduction =
+
+This document explains the details of being an official contributor to !AdBlock.  You don't need to read it if you don't plan on regularly helping out with the project.
+
+You can report an ad or a bug (via the Issues tab) or point people in the discussion group to the FAQ (both linked on the right side of the Project Home tab), and we appreciate the help.  If you want to spend more time helping make !AdBlock better for our over 250,000 users, and would like to get credit for your part in the story, read on.
+
+= Contributing =
+
+(todo!)
