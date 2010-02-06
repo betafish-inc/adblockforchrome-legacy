@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.14*: Possibly fixes bug that makes AdBlock stop working when leaving Chrome open overnight.
+
 *1.3.13*: Fixes bug that let whitelister open multiple dialog boxes.
 
 *1.3.12*: Working around a webkit bug that hasn't merged into Chrome stable yet.
