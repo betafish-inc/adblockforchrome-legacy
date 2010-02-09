@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.18*: Working around a webkit bug that hasn't merged into Chrome stable yet.
+
 *1.3.17*: Added helpful buttons for contributors.
 
 *1.3.16*: Added a Donate button to the Options page.
