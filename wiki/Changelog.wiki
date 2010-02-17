@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.25*: Now blocking background image ads.
+
 *1.3.24*: Now handling the '(Adblock' case when importing filters. Working around a webkit bug that hasn't merged into Chrome stable yet.
 
 *1.3.22*: Working around a webkit bug that hasn't merged into Chrome stable yet.
