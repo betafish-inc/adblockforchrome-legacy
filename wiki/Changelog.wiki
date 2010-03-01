@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.28*: Working around a webkit bug.
+
 *1.3.27*: Working around a webkit bug.
 
 *1.3.26*: Working around a webkit bug.
