@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.32*: Working around a webkit bug in a very general way, so hopefully this is the last changelog entry of this type!
+
 *1.3.31*: Handle ksplice.com
 
 *1.3.30*: Retire "Prevent ad flashup" as an option -- now it's always true.
