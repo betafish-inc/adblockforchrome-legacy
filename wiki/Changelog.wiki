@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.35*: Handle uppercased blacklist or whitelist manual entries correctly.
+
 *1.3.34*: Standardize whitelist and blacklist UIs more, and don't let CSS from underlying page bleed through.
 
 *1.3.33*: No more alert on acid3 test -- Chrome gets to 100/100 even with AdBlock.
