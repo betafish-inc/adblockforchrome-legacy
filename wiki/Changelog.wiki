@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.38*: Log only successful manual filter subscriptions, to determine which should be added to the standard list.
+
 *1.3.37*: Get latest versions of all filters upon Chrome startup.
 
 *1.3.36*: Improved the beta YouTube ad blocking feature; plus a message telling users how to work around problems or disable the feature if they're having trouble.
