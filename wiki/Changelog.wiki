@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.3.40*: Fix bug that broke the "Update Now" button.
+
 *1.3.39*: Fix slashdot effect from .37, and adhere to 5-day updates per EasyList maintainers' request.
 
 *1.3.38*: Log only successful manual filter subscriptions, to determine which should be added to the standard list.
