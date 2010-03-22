@@ -9,7 +9,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 *1.3.45*: Add X icon to blacklister and whitelister dialogs.
 
-*1.3.44*: Switch back to RuAd russian filter list.
+*1.3.44*: Switch back to !RuAd russian filter list.
 
 *1.3.43*: Auto-complete the description field as well.
 
