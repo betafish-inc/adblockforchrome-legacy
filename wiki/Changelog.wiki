@@ -96,3 +96,15 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 *1.3.1*: Attempt to point to a new Russian subscription list.
 
 *1.3.0*: Initial import.
+
+= Changelog for the "Browser Button For AdBlock" extension
+
+*0.0.5*: Turn icon green if a domain is whitelisted.
+
+*0.0.4*: Handle different Chrome themes correctly.
+
+*0.0.3*: Link to installation page within popup.
+
+*0.0.2*: Link to AdBlock extension Options page.
+
+*0.0.1*: Initial version.
