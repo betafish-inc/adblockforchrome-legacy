@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.5*: Pointed to new Korean filter URL.
+
 *1.4.0-1.4.4*: Improved and simplified filtering system under the hood.
 
 *1.3.49*: Allow user to close (and never see again) the youtube help message.
