@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*1.4.5*: Pointed to new Korean filter URL.
+*1.4.5-1.4.6*: Pointing to the new location of Korean filterlist.
 
 *1.4.0-1.4.4*: Improved and simplified filtering system under the hood.
 
