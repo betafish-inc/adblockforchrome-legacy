@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.8*: Correct the error message upon internet failure during subscribing to a filter.
+
 *1.4.7*: Add support for type directives in filters, so if they only want to apply to $images and $stylesheets, we don't apply them to $objects.
 
 *1.4.5-1.4.6*: Pointing to the new location of Korean filterlist.
