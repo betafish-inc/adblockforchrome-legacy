@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.11*: Detect and handle bad selector syntax that broke ChinaList.
+
 *1.4.10*: Improved CSS for blacklister.
 
 *1.4.9*: Small fix for when a user manually subscribes to a well-known filterlist.
