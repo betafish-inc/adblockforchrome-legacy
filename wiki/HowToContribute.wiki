@@ -1,11 +1,39 @@
 #summary Things you can do to contribute to AdBlock.
 
-= First off... =
+Would you be interested in making !AdBlock better for our hundreds of thousands of users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
 
-This document explains the details of being an official contributor to !AdBlock.  You don't need to read it if you don't plan on regularly helping out with the project.
+= Ways to contribute =
 
-You can report an ad or a bug (via the Issues tab) or point people in the discussion group to the FAQ (both linked on the right side of the Project Home tab), and we appreciate the help.  But if you want to spend more time helping make !AdBlock better for our over 250,000 users, and would like to get credit for your part in the story, read on.
+== Answer FAQs in the feedback comments ==
 
-= How to contribute =
+On the installation page at chromeadblock.com users leave comments and questions, and there aren't that many different questions they ask.  They also consistently fail to see the links to the FAQ and to this project page.  Read FrequentlyAskedQuestions, then drop comments answering questions while gently directing users to the FAQ link.
 
-(todo!)
+== File a bug! ==
+
+via the Issues tab.  It helps us a lot if you provide all the info we ask for.
+
+== File an ad report! ==
+
+again via the Issues tab -- change the Template for a new Issue report to "Ad Report".  And again, it helps us a lot if you provide all the info we ask for.
+
+== Fix a bug or a add a new feature! ==
+
+!AdBlock is written in Javascript, HTML, and CSS, and there are almost always open Issues that only require CSS or HTML changes, even if you don't know Javascript.  Here's how to help:
+
+  1 Find an Issue that interests you on the Issues tab
+  1 Check out the trunk version of the code via the instructions on the Source tab
+  1 Make your code changes
+  1 Type "svn diff > mycontribution.patch" to create a patchfile
+  1 Attach the patchfile to the Issue.
+
+== Tell your friends! ==
+
+Tweet links to http://chromeadblock.com, email people, rent a megaphone and go to the student union, that kind of thing.  I would expect that millions of users are still using Firefox solely because they don't know !AdBlock exists for Chrome.  Also, if you know friends who are web programmers, tell them we'd love code contributions! :)
+
+== Becoming a regular contributor ==
+
+As of April 2010 !AdBlock has had three people besides the author pour their love into the project via all of the methods above (and I'm eternally grateful!)  If you'd like to contribute bug fixes or fix ad reports regularly, here's a path that seems to work:
+
+  1 If you'd like, create ad reports that include correct filters to fix the problem.  We'll apply the filters for you.
+  1 If you'd like, create patches to address open Issues.  We'll apply the patches for you.
+  1 Drop a line in the adblockforchrome-dev Google Group asking to become an official contributor so you can apply your filters and patches directly.  If you've regularly contributed up to this point and your contributions are high-quality, we'll be more than happy to have you join the group.
