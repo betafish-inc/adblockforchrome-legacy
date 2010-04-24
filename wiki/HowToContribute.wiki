@@ -1,4 +1,5 @@
 #summary Things you can do to contribute to AdBlock.
+#labels Featured
 
 Would you be interested in making !AdBlock better for our hundreds of thousands of users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
 
