@@ -135,6 +135,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 = Changelog for the "Browser Button For AdBlock" extension
 
+*0.0.6*: Don't bomb when someone tries to whitelist a file://.
+
 *0.0.5*: Turn icon green if a domain is whitelisted.
 
 *0.0.4*: Handle different Chrome themes correctly.
