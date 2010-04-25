@@ -15,7 +15,7 @@ On the installation page at chromeadblock.com users leave comments and questions
   1 Follow the steps to reproduce it, exactly as reported in the Issue.
   1 Leave a comment telling whether it happens for you or not.  The more info about your system you can provide, the better.
 
-== File a bug! ==
+== File a bug or feature request! ==
 
 via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link on the Issues tab.  It helps us a lot if you provide all the info we ask for.
 
@@ -43,4 +43,4 @@ As of April 2010 !AdBlock has had three people besides the author pour their lov
 
   1 If you'd like, create ad reports that include correct filters to fix the problem.  We'll apply the filters for you.
   1 If you'd like, create patches to address open Issues.  We'll apply the patches for you.
-  1 Drop a line in the adblockforchrome-dev Google Group asking to become an official contributor so you can apply your filters and patches directly.  If you've regularly contributed up to this point and your contributions are high-quality, we'll be more than happy to have you join the group.
+  1 Drop a line in the [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev] Google Group asking to become an official contributor so you can apply your filters and patches directly.  If you've regularly contributed up to this point and your contributions are high-quality, we'll be more than happy to have you join the group.
