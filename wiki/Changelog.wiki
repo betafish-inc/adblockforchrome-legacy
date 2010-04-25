@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.24*: By famlam: provide links to filter subscriptions from options page
+
 *1.4.23*: Corrected a couple filter parsing bugs.
 
 *1.4.22*: Workaround Chrome bug regarding removing SCRIPT elements.
