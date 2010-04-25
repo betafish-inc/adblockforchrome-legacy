@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*1.4.24*: By famlam: provide links to filter subscriptions from options page
+*1.4.24*: Provide links to filter subscriptions from options page (by famlam).
 
 *1.4.23*: Corrected a couple filter parsing bugs.
 
@@ -21,11 +21,11 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 *1.4.18*: Point to new options page from youtube
 
-*1.4.17*: Tabbed Options page.
+*1.4.17*: Tabbed Options page (by drewish).
 
-*1.4.16*: Fix Google Reader ads, which regressed somewhere at or before v1.4 release; added 'Edit' label after a custom blacklist entry.
+*1.4.16*: Fix Google Reader ads, which regressed somewhere at or before v1.4 release; added 'Edit' label after a custom blacklist entry (by famlam).
 
-*1.4.15*: Added changelog link to Options page; improved CSS for blacklister.
+*1.4.15*: Added changelog link to Options page; improved CSS for blacklister (by drewish and famlam).
 
 *1.4.14*: Add Italian filters.
 
