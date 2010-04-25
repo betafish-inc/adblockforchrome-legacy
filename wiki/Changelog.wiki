@@ -139,7 +139,9 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 *1.3.0*: Initial import.
 
-= Changelog for the "Browser Button For AdBlock" extension
+== Changelog for the "Browser Button For AdBlock" extension ==
+
+*0.0.7*: Pointing to the new location of the options page.
 
 *0.0.6*: Don't bomb when someone tries to whitelist a file://.
 
