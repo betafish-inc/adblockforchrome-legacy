@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.21*: Theme tweaks
+
 *1.4.20*: Support the $third-party filter directive.
 
 *1.4.19*: Correctly block OBJECTs with multiple < param > tags
