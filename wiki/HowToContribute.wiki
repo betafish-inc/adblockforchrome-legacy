@@ -17,11 +17,11 @@ On the installation page at chromeadblock.com users leave comments and questions
 
 == File a bug! ==
 
-via the Issues tab.  It helps us a lot if you provide all the info we ask for.
+via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link on the Issues tab.  It helps us a lot if you provide all the info we ask for.
 
 == File an ad report! ==
 
-again via the Issues tab -- change the Template for a new Issue report to "Ad Report".  And again, it helps us a lot if you provide all the info we ask for.
+again via the [http://code.google.com/p/adblockforchrome/issues/entry?template=Ad%20report%20from%20user New Issue] link on the Issues tab (using a different template).  And again, it helps us a lot if you provide all the info we ask for.
 
 == Fix a bug or a add a new feature! ==
 
