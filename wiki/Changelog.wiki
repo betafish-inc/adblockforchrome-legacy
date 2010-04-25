@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.18*: Point to new options page from youtube
+
 *1.4.17*: Tabbed Options page.
 
 *1.4.16*: Fix Google Reader ads, which regressed somewhere at or before v1.4 release.
