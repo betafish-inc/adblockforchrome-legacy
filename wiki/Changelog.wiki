@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.22*: Workaround Chrome bug regarding removing SCRIPT elements.
+
 *1.4.21*: Theme tweaks
 
 *1.4.20*: Support the $third-party filter directive.
