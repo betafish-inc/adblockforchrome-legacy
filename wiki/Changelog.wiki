@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*1.4.25*: Fix regression: we stopped working around a Chrome 4 bug.
+*1.4.25*: Fix regression: we stopped working around a Chrome 4 bug; blacklister can now also create 'href' and 'data' filters.
 
 *1.4.24*: Provide links to filter subscriptions from options page (by famlam).
 
