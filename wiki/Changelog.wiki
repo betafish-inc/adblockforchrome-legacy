@@ -8,6 +8,11 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 == Versions ==
 
 *1.4.27*: Lots of changes:
+  * Edit support in blacklist UI (by Famlam)
+  * 'Remove' labels by custom filter lists (by Famlam)
+  * New filter subscriptions available (by Drewish)
+  * You can press enter in textboxes on the Options pages to submit data (by Famlam)
+  * Make blacklist and whitelist more robust against page CSS (by Famlam)
 
 *1.4.26*: 5 filter list additions and corrections (by Drewish).  A slider on the whitelister, an edit button on the whitelist options page, support for IP whitelisting (by Famlam).
 
