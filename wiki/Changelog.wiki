@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.27*: Lots of changes:
+
 *1.4.26*: 5 filter list additions and corrections (by Drewish).  A slider on the whitelister, an edit button on the whitelist options page, support for IP whitelisting (by Famlam).
 
 *1.4.25*: Fix regression: we stopped working around a Chrome 4 bug; blacklister can now also create 'href' and 'data' filters.
