@@ -137,7 +137,7 @@ BlacklistUi.prototype._build_page2 = function() {
     " so everybody can benefit!<br/>" +
     "<br/></div>" +
     "<div style='clear:left; font-size:smaller'>" +
-    "This is the filter. It can be changed on the Options page: " +
+    "Hey geeks: this is the filter, which you can change on the Options " +
     "page:" +
     "  <div style='margin-left:15px;margin-bottom:15px'>" +
     "    <div>" +
@@ -164,7 +164,7 @@ BlacklistUi.prototype._build_page2 = function() {
             extension_call('add_user_filter', { filter: filter }, function() {
               that._fire('block');
             });
-          } else {alert("No filter specified!");}
+          } else {alert('Geen filter opgegeven!');}
         },
         "Cancel": function() {
           that._ui_page2.dialog('close');
@@ -307,7 +307,11 @@ BlacklistUi.prototype._redrawPage2 = function() {
       append("<b>" + (attr == 'nodeName' ? "Type" : attr) + 
              "</b> will be <i>" + val + "</i>").
       css("cursor", "pointer").
-      click(checkboxlabel_clicked);
+      click(function() {
+        $(this).prev('input').
+          click().
+          change();
+      });
 
     var checkbox = $("<div></div>").
       append("<input type=checkbox " + ((attr == 'src' || attr == 'href') ? 
@@ -316,6 +320,9 @@ BlacklistUi.prototype._redrawPage2 = function() {
 
     checkbox.find("input").change(function() {
       updateFilter();
+      var any = ($(summary.text()).length != 0);
+      $("#btnOk2", that._ui_page2).attr("disabled", (any?null:"disabled"));
+
     });
 
     detailsDiv.append(checkbox);

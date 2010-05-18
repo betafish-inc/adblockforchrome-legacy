@@ -83,7 +83,11 @@
         load_options();
       });
 
-      $('.optionDescription').click(checkboxlabel_clicked);
+      $('.optionDescription').click(function() {
+        $(this).prev('input').
+          click().
+          change();
+      });
 
   </script>
   <div class="section">

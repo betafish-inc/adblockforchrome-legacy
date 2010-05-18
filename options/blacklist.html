@@ -132,7 +132,11 @@
       load_options();
     });
 
-    $('.optionDescription').click(checkboxlabel_clicked);
+      $('.optionDescription').click(function() {
+        $(this).prev('input').
+          click().
+          change();
+      });
   </script>
 
   <a name="user_filters_link"></a>
