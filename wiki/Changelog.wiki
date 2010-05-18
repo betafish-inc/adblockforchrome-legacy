@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.28*: Fix high CPU usage on sites that insert lots of DOM nodes after loading.
+
 *1.4.27*: Lots of changes:
   * Edit support in blacklist UI (by Famlam)
   * 'Remove' labels by custom filter lists (by Famlam)
