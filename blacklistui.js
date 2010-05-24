@@ -137,7 +137,8 @@ BlacklistUi.prototype._build_page2 = function() {
     " so everybody can benefit!<br/>" +
     "<br/></div>" +
     "<div style='clear:left; font-size:smaller'>" +
-    "This is the filter. It can be changed on the Options page: " +
+    "Hey geeks: this is the filter, which you can change on the Options " +
+    "page:" +
     "  <div style='margin-left:15px;margin-bottom:15px'>" +
     "    <div>" +
     "      <div id='summary'></div><br/>" +
@@ -163,7 +164,7 @@ BlacklistUi.prototype._build_page2 = function() {
             extension_call('add_user_filter', { filter: filter }, function() {
               that._fire('block');
             });
-          } else {alert("No filter specified!");}
+          } else {alert('Geen filter opgegeven!');}
         },
         "Cancel": function() {
           that._ui_page2.dialog('close');
@@ -306,7 +307,11 @@ BlacklistUi.prototype._redrawPage2 = function() {
       append("<b>" + (attr == 'nodeName' ? "Type" : attr) + 
              "</b> will be <i>" + val + "</i>").
       css("cursor", "pointer").
-      click(checkboxlabel_clicked);
+      click(function() {
+        $(this).prev('input').
+          click().
+          change();
+      });
 
     var checkbox = $("<div></div>").
       append("<input type=checkbox " + ((attr == 'src' || attr == 'href') ? 
@@ -315,6 +320,9 @@ BlacklistUi.prototype._redrawPage2 = function() {
 
     checkbox.find("input").change(function() {
       updateFilter();
+      var any = ($(summary.text()).length != 0);
+      $("#btnOk2", that._ui_page2).attr("disabled", (any?null:"disabled"));
+
     });
 
     detailsDiv.append(checkbox);
@@ -349,7 +357,7 @@ BlacklistUi.prototype._generatedAdReportUrl = function() {
     var result = [];
     result.push("http://code.google.com/p/adblockforchrome/issues/entry");
     result.push("?template=Ad%20report%20from%20user");
-    result.push("&summary=" + escape("Ad report: " + location.hostname));
+    result.push("&summary=" + escape("Ad report: " + document.location.href));
 
     var body = [];
     body.push("Thanks for reporting an ad!  Please answer the three" +
@@ -359,14 +367,11 @@ BlacklistUi.prototype._generatedAdReportUrl = function() {
     body.push("   Update Now to update your filters, then reload the page,");
     body.push("   does the ad still appear?");
     body.push("");
-    body.push("");
     body.push("2. What does the ad look like?  (We can't always tell which");
     body.push("   part of the page you think is an ad!)");
     body.push("");
-    body.push("");
     body.push("3. Any other information that would be helpful, besides what");
     body.push("   is listed below?");
-    body.push("");
     body.push("");
     body.push("-------- Please don't touch below this line. ---------");
     body.push("=== URL with ad ===");

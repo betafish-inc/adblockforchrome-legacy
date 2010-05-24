@@ -98,9 +98,7 @@
           "show_youtube_help_msg",
           "show_google_search_text_ads",
           "whitelist_shortcut",
-          "blacklist_shortcut",
-          "collapse_blocked_elements",
-          "dont_block_on_https"
+          "blacklist_shortcut"
           ];
         for (var i = 0; i < feature_names.length; i++) {
           var name = feature_names[i];
@@ -216,9 +214,6 @@
       // Inputs: none
       utils.get_subscriptions_minus_text = function(options) {
         return _myfilters.get_subscriptions_minus_text();
-      }
-      utils.get_subscriptions_text = function(options) {
-        return _myfilters.get_subscriptions_text();
       }
       // Subscribes to a filter subscription.
       // Inputs: id: id to which to subscribe.  Either a well-known
