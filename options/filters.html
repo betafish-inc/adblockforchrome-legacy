@@ -65,12 +65,12 @@
             if (subs[id] && subs[id].subscribed)
               is_checked = "checked";
 
-            $("input", el).attr("checked", is_checked);
+              $("input", el).attr("checked", is_checked);
 
-            if (subs[id] && subs[id].user_submitted && is_checked == false) {
-              $(this).find(".remove_filter").css("display", "inline");
-              $(this).closest("div").find(".update_time").text("");
-            }
+              if (subs[id].user_submitted && is_checked == false) {
+                $(this).find(".remove_filter").css("display", "inline");
+                $(this).closest("div").find(".update_time").text("");
+              }
           });
           
           global_refreshing_subscription_view = false;
@@ -156,7 +156,6 @@
           //5: custom filter lists
           var sorted_list = [];
           for (var id in subscriptions) {
-            if (id == "__AdBlock_Advanced_Filters__") continue;
             var entry = subscriptions[id];
             if (id == 'easylist' || id == 'adblock_custom')
               entry.order = "1" + id;
@@ -169,7 +168,7 @@
             entry.id = id;
             sorted_list.push(entry);
           }
-          sorted_list.sort(function(a,b) {
+          sorted_list.sort(function(a,b) { 
             return a.order > b.order ? 1 : (a.order == b.order ? 0 : -1);
           });
 
@@ -185,7 +184,11 @@
               text(entry.name).
               attr("title", entry.url).
               css("cursor", "pointer").
-              click(checkboxlabel_clicked);
+              click(function() {
+                $(this).closest("div").find("input"). // my checkbox
+                  click().  // toggle the UI
+                  change(); // activate the handler as if a user had clicked it
+              });
 
             var link_to_list = $("<a>", { target: "_new" }).
               text('show').
@@ -203,8 +206,8 @@
               addClass("remove_filter").
               click(function(event) {
                 event.preventDefault();
-                unsubscribe(entry.id, true);
-                $(this).closest("div").remove();
+                unsubscribe(id, true);
+                $(this).closest("div").css("display", "none");
               });
 
             div.
@@ -220,7 +223,7 @@
 
           // Now that it's built, fill it in.
           refresh_subscription_view();
-
+          
           // Each subscription checkbox, upon change, should subscribe
           // or unsubscribe the user and refresh the subscriptions.
           $('.subscription input:checkbox').change(function() {
@@ -285,7 +288,7 @@
     <p class="footnote">
       Don't subscribe to more than you need -- every one
       slows you down a tiny bit!  Credits and more lists can be found
-      <a href="http://adblockplus.org/en/subscriptions" target="_new">here</a>.
+      <a href="http://adblockplus.org/en/subscriptions" target="_new">here.</a>
     </p>
     I will fetch updates every 5 days; you can also
     <input type="button" id="btnUpdateNow" value="update now." />
