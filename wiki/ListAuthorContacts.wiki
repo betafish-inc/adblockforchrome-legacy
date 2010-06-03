@@ -1,0 +1,28 @@
+#summary The places where you can contact the authors of the lists.
+
+Here are all contact methods for the list authors. It saves you some searching if you want to report them. To prevent spam @ is replaced by " at "
+
+|| Chrome AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list ||
+|| EasyList (recommended) || http://forums.lanik.us/ ||
+|| - additional Bulgarian filters || alex at stanev.org ||
+|| - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list ||
+|| - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ ||
+|| - additional French filters || http://forums.lanik.us/viewforum.php?f=91 ||
+|| - additional German filters || http://forums.lanik.us/viewforum.php?f=90 ||
+|| - additional Norwegian filters || mlan76 at gmail.com ||
+|| - additional Polish filters || admin at adblocklist.org ||
+|| - additional Romanian filters || menetz at gmail.com ||
+|| - additional Vietnamese filters || http://code.google.com/p/adblockplus-vietnam/issues/list ||
+|| Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list ||
+|| Czech filters || 
+|| Danish filters || henrik at schack.dk ||
+|| German filters || adblock at mengemail.de ||
+|| Hungarian filters || pete at teamlupus.hu ||
+|| Israeli filters || http://code.google.com/p/israellist/issues/list ||
+|| Italian filters || giovanni at gfsolone.com ||
+|| Japanese filters || mp3geek at gmail.com ||
+|| Korean filters || http://corset.tistory.com/guestbook ||
+|| Polish filters || krzysiek at niecko.pl ||
+|| Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 ||
+|| Spanish filters || nauscopio at gmail.com ||
+|| Ukranian filters || adblock.ua at gmail.com ||
