@@ -2,8 +2,8 @@
 
 Here are all contact methods for the list authors. It saves you some searching if you want to report them. To prevent spam @ is replaced by " at "
 
-|| Chrome AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list ||
-|| EasyList (recommended) || http://forums.lanik.us/ ||
+|| Chrome !AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list ||
+|| !EasyList (recommended) || http://forums.lanik.us/ ||
 || - additional Bulgarian filters || alex at stanev.org ||
 || - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list ||
 || - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ ||
