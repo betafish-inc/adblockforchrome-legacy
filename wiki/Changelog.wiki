@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.31*: Fix bug in .30 keeping Safari users from seeing Options page
+
 *1.4.30*: Now supported in Safari as well -- see safariadblock.com
 
 *1.4.29*: Add caching to making CPU usage even better when many DOM nodes are inserted.
