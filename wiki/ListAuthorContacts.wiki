@@ -2,27 +2,28 @@
 
 Here are all contact methods for the list authors. It saves you some searching if you want to report them. To prevent spam @ is replaced by " at "
 
-|| Chrome !AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list ||
-|| !EasyList (recommended) || http://forums.lanik.us/ ||
-|| - additional Bulgarian filters || alex at stanev.org ||
-|| - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list ||
-|| - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ ||
-|| - additional French filters || http://forums.lanik.us/viewforum.php?f=91 ||
-|| - additional German filters || http://forums.lanik.us/viewforum.php?f=90 ||
-|| - additional Norwegian filters || mlan76 at gmail.com ||
-|| - additional Polish filters || admin at adblocklist.org ||
-|| - additional Romanian filters || menetz at gmail.com ||
-|| - additional Vietnamese filters || http://code.google.com/p/adblockplus-vietnam/issues/list ||
-|| Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list ||
-|| Czech filters || 
-|| Danish filters || henrik at schack.dk ||
-|| German filters || adblock at mengemail.de ||
-|| Hungarian filters || pete at teamlupus.hu ||
-|| Israeli filters || http://code.google.com/p/israellist/issues/list ||
-|| Italian filters || giovanni at gfsolone.com ||
-|| Japanese filters || mp3geek at gmail.com ||
-|| Korean filters || http://corset.tistory.com/guestbook ||
-|| Polish filters || krzysiek at niecko.pl ||
-|| Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 ||
-|| Spanish filters || nauscopio at gmail.com ||
-|| Ukranian filters || adblock.ua at gmail.com ||
+|| *List name* || *Contact* || *Homepage* ||
+|| Chrome !AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list || http://chromeadblock.com/ ||
+|| !EasyList (recommended) || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
+|| - additional Bulgarian filters || alex at stanev.org || http://stanev.org/abp/ ||
+|| - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list || http://sites.google.com/site/dutchadblockfilters/ ||
+|| - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ || http://www.wiltteri.net/ ||
+|| - additional French filters || http://forums.lanik.us/viewforum.php?f=91 || http://easylist.adblockplus.org/ ||
+|| - additional German filters || http://forums.lanik.us/viewforum.php?f=90 || http://easylist.adblockplus.org/ ||
+|| - additional Norwegian filters || mlan76 at gmail.com || http://home.online.no/~mlangsho/ ||
+|| - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
+|| - additional Romanian filters || menetz at gmail.com || http://www.picpoc.ro/ ||
+|| - additional Vietnamese filters || http://code.google.com/p/adblockplus-vietnam/issues/list || http://code.google.com/p/adblockplus-vietnam/ ||
+|| Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
+|| Czech filters || || http://dajbych.net/adblock/ ||
+|| Danish filters || henrik at schack.dk || http://henrik.schack.dk/adblock/ ||
+|| German filters || adblock at mengemail.de || http://chewey.de/mozilla/adblock-filterliste.html ||
+|| Hungarian filters || pete at teamlupus.hu || http://pete.teamlupus.hu/site/?pg=hufilter ||
+|| Israeli filters || http://code.google.com/p/israellist/issues/list || http://code.google.com/p/israellist/ ||
+|| Italian filters || giovanni at gfsolone.com || http://mozilla.gfsolone.com/ ||
+|| Japanese filters || mp3geek at gmail.com || http://www.fanboy.co.nz/adblock/ ||
+|| Korean filters || http://corset.tistory.com/guestbook || http://corset.tistory.com/ ||
+|| Polish filters || krzysiek at niecko.pl || http://www.niecko.pl/adblock/ ||
+|| Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
+|| Spanish filters || nauscopio at gmail.com || http://nauscopio.nireblog.com/cat/filtrado ||
+|| Ukranian filters || adblock.ua at gmail.com || http://adblock.oasis.org.ua/ ||
