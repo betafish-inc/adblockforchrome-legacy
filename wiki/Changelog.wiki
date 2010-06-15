@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*1.4.34*: Workaround to avoid safari crashes until safari team fixes safari
+
 *1.4.33*: Prevent empty element flashup in Safari
 
 *1.4.32*: New filter list options (drewish), better element clicking in blacklist wizard (famlam), fix some issues with removing unsubscribed custom filter lists.
