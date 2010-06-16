@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.0.2*: Add EasyPrivacy (now that we mostly block resources from downloading) and remove Germany (an out of date filter that EasyList+additional German filters replaces)
+*2.0.2*: Add !EasyPrivacy (now that we mostly block resources from downloading) and remove Germany (an out of date filter that !EasyList+additional German filters replaces)
 
 *2.0.1*: Resource blocking works in Chrome Stable after all, so get Stable users in on the goodness too.
 
