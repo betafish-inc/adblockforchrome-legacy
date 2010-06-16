@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.1*: Resource blocking works in Chrome Stable after all, so get Stable users in on the goodness too.
+
 *2.0.0*: True blocking of resources in Chrome 6.  Most resources can be blocked before they're even downloaded.  Because Chrome doesn't fully support resource blocking yet, a few resources will load so quickly that the resource blocker will miss them, and they'll be removed after the fact as usual.
 
 *1.4.36*: Workaround #2 for Safari crashes
