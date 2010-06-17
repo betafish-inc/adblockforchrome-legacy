@@ -1,4 +1,4 @@
-#summary What has changed between releases.
+﻿#summary What has changed between releases.
 #labels Featured
 
 = Changelog =
@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.0.4*: Subscribe to filter lists when you click on abp:subscribe links on the web.  I *still* don't understand how Famlam pulled this off.
+*2.0.4*: Subscribe to filter lists when you click on abp:subscribe links on the web.  I *still* don't understand how Famlam pulled this off.  Only works in Chrome.
 
 *2.0.3*: Remove a workaround no longer needed
 
