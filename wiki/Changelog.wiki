@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.5*: A few blacklist UI fixes (famlam)
+
 *2.0.4*: Subscribe to filter lists when you click on abp:subscribe links on the web.  I *still* don't understand how Famlam pulled this off.  Only works in Chrome.
 
 *2.0.3*: Remove a workaround no longer needed
