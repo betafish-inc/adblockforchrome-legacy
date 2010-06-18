@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.7*: Before a user reports an ad via the blacklist wizard, point him to a helper that makes sure he's got up to date subscriptions, and that the ad doesn't appear in Firefox (if he has Firefox.)  (Famlam)
+
 *2.0.6*: Remove an old gmail special case
 
 *2.0.5*: A few blacklist UI fixes (famlam)
