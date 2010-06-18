@@ -2,7 +2,7 @@
 
 Here are all contact methods for the list authors. It saves you some searching if you want to report them. To prevent spam @ is replaced by " at "
 
-|| *List name* || *Contact* || *Homepage* ||
+|| *List name* || *Contact* || *Website* ||
 || Chrome !AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list || http://chromeadblock.com/ ||
 || !EasyList (recommended) || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
 || - additional Bulgarian filters || alex at stanev.org || http://stanev.org/abp/ ||
