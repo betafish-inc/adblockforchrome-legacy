@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.9*: Grr, turns out Gmail needs a special case to work around a bug in Chrome that makes CC and BCC fields disappear onclick.  Put the special case back in.
+
 *2.0.8*: Remove an old facebook layout hack that may be affecting safari
 
 *2.0.7*: Before a user reports an ad via the blacklist wizard, point him to a helper that makes sure he's got up to date subscriptions, and that the ad doesn't appear in Firefox (if he has Firefox.)  (Famlam)
