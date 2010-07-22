@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.11*: Support collapsing empty ad holding elements, and auto-subscribe EasyList if you subscribe to an EasyList additional list
+
 *2.0.10*: Fix some filter rule parsing bugs and a small UI bug
 
 *2.0.9*: Grr, turns out Gmail needs a special case to work around a bug in Chrome that makes CC and BCC fields disappear onclick.  Put the special case back in.
