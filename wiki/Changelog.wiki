@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.0.15*: Respect filter subscription expiration dates
+*2.0.15*: Respect filter subscription expiration dates (famlam)
 
 *2.0.14*: Give icons a new look (thanks tgines!), and don't lose the current tab when reloading the Options page
 
