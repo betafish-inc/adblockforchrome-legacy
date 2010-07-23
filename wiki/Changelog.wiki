@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.12*: Blacklist UI shows full effect of proposed rule.
+
 *2.0.11*: Support collapsing empty ad holding elements, and auto-subscribe EasyList if you subscribe to an EasyList additional list
 
 *2.0.10*: Fix some filter rule parsing bugs and a small UI bug
