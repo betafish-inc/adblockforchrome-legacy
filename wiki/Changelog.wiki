@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.14*: Give icons a new look (thanks tgines!), and don't lose the current tab when reloading the Options page
+
 *2.0.13*: Fix bug with "Collapse Blocked Elements" beta feature
 
 *2.0.12*: Blacklist UI shows full effect of proposed rule. (famlam)
