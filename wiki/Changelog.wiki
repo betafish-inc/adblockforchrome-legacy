@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.18*: Work around Chrome bug causing Google Calendar to render incorrectly in some cases
+
 *2.0.17*: Bandaid to fix collapse-blocked-elements hanging on some websites
 
 *2.0.16*: Correct third-party and first-party and match-case support (famlam)
