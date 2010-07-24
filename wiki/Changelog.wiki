@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.17*: Bandaid to fix collapse-blocked-elements hanging on some websites
+
 *2.0.16*: Correct third-party and first-party and match-case support (famlam)
 
 *2.0.15*: Respect filter subscription expiration dates (famlam)
