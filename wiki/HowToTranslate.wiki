@@ -41,9 +41,11 @@ In some strings the following markups are supported
 
 = Finished? =
 After you are finished, you just add the translation as an attachment to the issue in the issue tracker and we'll take care of it, eventually giving you some suggestions to improve it. Make sure you have the top lines updated as well!
-{{{//Translation by YourName
+{{{
+//Translation by YourName
 //Last updated for version CurrentAdBlockVersion
+}}}
 
 = Maintaining =
-When strings are changed in AdBlock, we'll remove it from the existing translations to prevent users from having old strings with a different meaning in their localization of AdBlock.
+When strings are changed in !AdBlock, we'll remove it from the existing translations to prevent users from having old strings with a different meaning in their localization of !AdBlock.
 A list with all new strings in a version will be added to this wiki page, so you can see which are new and have to be translated in a version!
