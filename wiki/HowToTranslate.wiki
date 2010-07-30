@@ -1,0 +1,49 @@
+#summary How to translate AdBlock into your own language
+
+= General =
+
+In a few releases !AdBlock will be translatable into several languages. But there is only one problem: we don't speak all languages ourselves. Therefore we need your help!
+If you would like to translate !AdBlock into your own language, then you can read here what to do.
+
+= Language =
+First you must make sure that !AdBlock isn't already translated into your own language. If it already is, you first have to contact the last translator if he is going to update it himself. Otherwise it might happen that we get two translations for the same language.
+Also you must make sure that your language is supported by the Chrome translation API. You can check that [http://code.google.com/chrome/extensions/i18n.html#locales-supported here].
+Before you start translating, please first drop a note in the issue tracker. Otherwise two people could be starting on the same translation on the same moment.
+
+
+= Translating =
+You start by downloading the strings from [http://code.google.com/p/adblockforchrome/source/browse/#svn/trunk/_locales/en the trunk]. 
+If you open that file (you can open it in every text editor, like Notepad), you'll see a lot of entries that look like this one:
+{{{
+"blacklistermatches": {
+  "message": "That matches $matchcount$ items on this page.",
+  "description": "Tells the user multiple matches were found",
+  "placeholders": {
+    "matchcount": {
+      "content": "$1",
+      "example": "5"
+    }
+  }
+},
+}}}
+
+You have to translate every string on a line that starts with "message"
+However, there are a few exceptions:
+ * {{{AdBlock}}} should not be translated. It is a name and not a word
+ * Words wrapped between {{{$}}} should not be translated
+ * No other strings but the strings after 'message' should be translated. Except for one: there is a string called "blacklisternotsure" which has a 'content' that has to be translated. But do not remove or change the {{{$1}}} and {{{$2}}} variables!
+
+In some strings the following markups are supported
+ * You can make text *bold* by wrapping it into {{{<b>}}} and {{{</b>}}}
+ * You can make a text _italic_ by wrapping it into {{{<i>}}} and {{{</i>}}}
+ * You can make a text a [# hyperlink or a button] by wrapping it into {{{<a>}}} and {{{</a>}}}
+ * You can add newlines by adding {{{<br/>}}}
+
+= Finished? =
+After you are finished, you just add the translation as an attachment to the issue in the issue tracker and we'll take care of it, eventually giving you some suggestions to improve it. Make sure you have the top lines updated as well!
+{{{//Translation by YourName
+//Last updated for version CurrentAdBlockVersion
+
+= Maintaining =
+When strings are changed in AdBlock, we'll remove it from the existing translations to prevent users from having old strings with a different meaning in their localization of AdBlock.
+A list with all new strings in a version will be added to this wiki page, so you can see which are new and have to be translated in a version!
