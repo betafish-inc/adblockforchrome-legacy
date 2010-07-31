@@ -18,7 +18,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || Czech filters || || http://dajbych.net/adblock/ ||
 || Danish filters || henrik at schack.dk || http://henrik.schack.dk/adblock/ ||
 || Hungarian filters || pete at teamlupus.hu || http://pete.teamlupus.hu/site/?pg=hufilter ||
-|| Israeli filters || http://code.google.com/p/israellist/issues/list || http://code.google.com/p/israellist/ ||
+|| Israeli filters || http://mozilla.org.il/board/viewtopic.php?f=8&t=8679 || http://code.google.com/p/israellist/ ||
 || Italian filters || giovanni at gfsolone.com || http://mozilla.gfsolone.com/ ||
 || Japanese filters || mp3geek at gmail.com || http://www.fanboy.co.nz/adblock/ ||
 || Korean filters || http://corset.tistory.com/guestbook || http://corset.tistory.com/ ||
