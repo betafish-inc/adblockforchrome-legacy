@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.20*: Chrome shouldn't emulate true blocking in subframes because each one costs a fixed amount of RAM and some pages have *lots* of subframes.
+
 *2.0.19*: Revert messed up grayscale icon for Safari toolbar
 
 *2.0.18*: Work around Chrome bug causing Google Calendar to render incorrectly in some cases
