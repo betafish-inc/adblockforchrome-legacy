@@ -1,7 +1,7 @@
 #summary Things you can do to contribute to AdBlock.
 #labels Featured,Restrict-AddWikiComment-Commit
 
-Would you be interested in making !AdBlock better for our hundreds of thousands of users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
+Would you be interested in making !AdBlock better for our million plus users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
 
 = Ways to contribute =
 
@@ -21,7 +21,7 @@ via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link 
 
 == File an ad report! ==
 
-Press Ctrl-Shift-K on the page in question, do your best to block the ad, then click the "report this ad" link on the final page of the wizard.
+Only via the link at the bottom of AdBlock Options -> Blacklist, please, as it helps you report all the right information.
 
 == Fix a bug or a add a new feature! ==
 
@@ -39,7 +39,7 @@ Tweet links to http://chromeadblock.com and http://safariadblock.com, email peop
 
 == Become a regular contributor! ==
 
-As of April 2010 !AdBlock has had three people besides the author pour their love into the project via all of the methods above (and I'm eternally grateful!)  If you'd like to contribute bug fixes or fix ad reports regularly, here's a path that seems to work:
+As of August 2010 !AdBlock has had four people besides the author pour their love into the project via all of the methods above (and I'm eternally grateful!)  If you'd like to contribute bug fixes or fix ad reports regularly, here's a path that seems to work:
 
   1 If you'd like, create ad reports that include correct filters to fix the problem.  We'll apply the filters for you.
   1 If you'd like, create patches to address open Issues.  We'll apply the patches for you.
