@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.24*: Support object-subrequest a little better.  Ask for fewer ad reports to hopefully improve the signal to noise ratio.
+
 *2.0.23*: Ignore certain filters that Webkit doesn't parse properly
 
 *2.0.22*: Fix some Safari issues causing ads to slip through, and improve Chrome and Safari memory usage.
