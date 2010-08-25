@@ -34,6 +34,10 @@ Nope!  We do as much as we can to optimize the rules in your filter lists.  A si
 
 No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
+== Do you maintain all filter lists yourselves? ==
+
+No, we only maintain the !AdBlock custom filters. All other lists are maintained by volunteers that are not connected to !AdBlock. (Except for the Dutch list, which is maintained by !FamLam). To contact a list maintainer you can use the links or email addresses in ListAuthorContacts for the default lists. For custom lists you often have to look in the list itself to see if there is a contact address.
+
 == When I install, Chrome warns me that !AdBlock will have access to all my private data! ==
 
 It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing.
