@@ -39,6 +39,10 @@ In some strings the following markups are supported
  * You can make a text a [# hyperlink or a button] by wrapping it into {{{<a>}}} and {{{</a>}}}
  * You can add newlines by adding {{{<br/>}}}
 
+Common pitfalls
+ * Do *never* use {{{"}}} into a string, or it will break. Use {{{'}}} instead.
+ * Save your file as *UTF-8* to prevent issues with special characters (like Korean characters or characters with accents, like {{{ç}}} or {{{ë}}})
+
 = Finished? =
 After you are finished, you just add the translation as an attachment to the issue in the issue tracker and we'll take care of it, eventually giving you some suggestions to improve it. Make sure you have the top lines updated as well!
 {{{
