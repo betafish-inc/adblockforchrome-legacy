@@ -1,55 +1,88 @@
 #summary How to translate AdBlock into your own language
 
-= General =
+!AdBlock supports translation into many languages.  But there is only one problem: we don't speak all languages ourselves. Therefore we need your help!
 
-In a few releases !AdBlock will be translatable into several languages. But there is only one problem: we don't speak all languages ourselves. Therefore we need your help!
 If you would like to translate !AdBlock into your own language, then you can read here what to do.
 
-= Language =
-First you must make sure that !AdBlock isn't already translated into your own language. If it already is, you first have to contact the last translator if he is going to update it himself. Otherwise it might happen that we get two translations for the same language.
-Also you must make sure that your language is supported by the Chrome translation API. You can check that [http://code.google.com/chrome/extensions/i18n.html#locales-supported here].
-Before you start translating, please first drop a note in the issue tracker. Otherwise two people could be starting on the same translation on the same moment.
+= Is your language supported? =
 
+  # Find your language's "language code."  [http://aruljohn.com/lang.php This website] detects the ones your browser is using.
+  # Make sure your language is in Chrome's [http://code.google.com/chrome/extensions/i18n.html#locales-supported list of supported language codes].
 
-= Translating =
-You start by downloading the strings from [http://code.google.com/p/adblockforchrome/source/browse/#svn/trunk/_locales/en the trunk]. 
-If you open that file (you can open it in every text editor, like Notepad), you'll see a lot of entries that look like this one:
+Anything supported by Chrome will be supported by Safari as well.
+
+= Is it already translated? =
+
+Check the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] for a your language.  If it exists, you can leave a comment on there saying you'd like to help, and the original translator or we will talk to you.
+
+= OK so let's translate! =
+
+First, [http://code.google.com/p/adblockforchrome/issues/entry?template=Offer%20to%20translate add your language] to the list of translations (so that two people don't start the same translation at the same time).
+
+Then download the [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json English messages.json file].
+
+If you open that file (you can open it in any text editor, like Notepad), you'll see a lot of entries that look like this one:
 {{{
-"blacklistermatches": {
-  "message": "That matches $matchcount$ items on this page.",
-  "description": "Tells the user multiple matches were found",
-  "placeholders": {
-    "matchcount": {
-      "content": "$1",
-      "example": "5"
+  "updatefromoldversion": {
+    "message": "You are using an old version of AdBlock. Please first $updatelink$ the newest version of AdBlock",
+    "description": "Instruction telling the user to click a link to update AdBlock",
+    "placeholders": {
+      "updatelink": {
+        "content": "$1download$2",
+        "example": "<a href='http://chrome.com/update_here.ctx'>download</a>"
+      }
     }
-  }
-},
+  },
 }}}
 
-You have to translate every string on a line that starts with "message"
-However, there are a few exceptions:
- * {{{AdBlock}}} should not be translated. It is a name and not a word
- * Words wrapped between {{{$}}} should not be translated
- * No other strings but the strings after 'message' should be translated. Except for one: there is a string called "blacklisternotsure" which has a 'content' that has to be translated. But do not remove or change the {{{$1}}} and {{{$2}}} variables!
+Every string on *a line that starts with "message" or "content"* needs to be replaced with a translation.
 
-In some strings the following markups are supported
- * You can make text *bold* by wrapping it into {{{<b>}}} and {{{</b>}}}
- * You can make a text _italic_ by wrapping it into {{{<i>}}} and {{{</i>}}}
- * You can make a text a [# hyperlink or a button] by wrapping it into {{{<a>}}} and {{{</a>}}}
- * You can add newlines by adding {{{<br/>}}}
+However, there are a few exceptions:
+ * {{{AdBlock}}} should not be translated. It is a name and not a word.
+ * Words wrapped between {{{$}}} should not be translated -- they refer to placeholders, such as {{{$updatelink$}}} referring to the {{{"updatelink"}}} placeholder above.
+ * Make sure to leave $1, $2, etc in your translation -- they are placeholders for strings that AdBlock will insert, such as "<a href='...'>" and "</a>" above.
+
+The above example might look like this after you translated it:
+{{{
+  "updatefromoldversion": {
+    "message": "Ya $updatelink$ iss var gut so yoo do eet to AdBlock noww",
+    "description": "Instruction telling the user to click a link to update AdBlock",
+    "placeholders": {
+      "updatelink": {
+        "content": "$1get der file all quicklike$2",
+        "example": "<a href='http://chrome.com/update_here.ctx'>download</a>"
+      }
+    }
+  },
+}}}
+
+Note some things about my (pretend) translation:
+  * I didn't translate "description" or "example" (those are to help the translator)
+  * I didn't translate "updatelink" (that is a placeholder)
+  * I translated one word in "content" into five, but made sure to keep the $1 and $2
+  * I moved $updatelink$ earlier in "message" because it sounded better there in my language
+
+If a "message" or "content" string contains {{{<b>}}}, {{{<i>}}}, {{{<a>}}}, or {{{<br/>}}}, your translation should as well:
+ * You can make text *bold* by wrapping it in {{{<b>}}} and {{{</b>}}} like {{{<b>Hi!</b>}}}
+ * You can make a text _italic_ by wrapping it in {{{<i>}}} and {{{</i>}}} like {{{<i>Hi!</i>}}}
+ * You can make a text a [# hyperlink or a button] by wrapping it in {{{<a>}}} and {{{</a>}}} like {{{<a>click me</a>}}}
+ * You can add newlines by adding {{{<br/>}}} like {{{First line<br/>Second line}}}
 
 Common pitfalls
- * Do *never* use {{{"}}} into a string, or it will break. Use {{{'}}} instead.
+ * *Never* use {{{"}}} in a string, or it will break. Use {{{\"}}} which gets turned into {{{"}}} for you, or just use {{{'}}} instead.
  * Save your file as *UTF-8* to prevent issues with special characters (like Korean characters or characters with accents, like {{{ç}}} or {{{ë}}})
 
 = Finished? =
-After you are finished, you just add the translation as an attachment to the issue in the issue tracker and we'll take care of it, eventually giving you some suggestions to improve it. Make sure you have the top lines updated as well!
-{{{
-//Translation by YourName
-//Last updated for version CurrentAdBlockVersion
-}}}
+
+When you finish, just attach your file to the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type%3Dl10n&colspec=ID+Status+Summary note you left above].  We'll take care of the rest!
 
 = Maintaining =
-When strings are changed in !AdBlock, we'll remove it from the existing translations to prevent users from having old strings with a different meaning in their localization of !AdBlock.
-A list with all new strings in a version will be added to this wiki page, so you can see which are new and have to be translated in a version!
+
+When we change strings in !AdBlock, we'll add them to a list here, so you know to change them in your file.
+
+|| *We changed this message* || *on this date* ||
+|| (none yet!) || (none yet!) ||
+
+And most importantly...
+
+= Thanks! =
