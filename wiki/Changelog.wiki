@@ -7,8 +7,6 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.1.0*: I18n support, with English Dutch and German translations (Famlam and contributors)
-
 *2.0.26*: Remove whitespace in hotmail, update some filter list links, fix a bug in ad reporting page, and support filter list redirects -- all done by Famlam
 
 *2.0.25*: Fix broken ad reporting link in Safari
