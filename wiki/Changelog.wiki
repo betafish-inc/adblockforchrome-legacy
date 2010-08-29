@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.1.2*: A few remaining l10n tasks
+
 *2.1.1*: Work around Gallery bug causing extension not to install...
 
 *2.1.0*: Added internationalization support, and English Dutch and German translations (Famlam, plus John Rey providing German translation)
