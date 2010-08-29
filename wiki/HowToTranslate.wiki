@@ -13,7 +13,7 @@ Anything supported by Chrome will be supported by Safari as well.
 
 = Is it already translated? =
 
-Check the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] for a your language.  If it exists, you can leave a comment on there saying you'd like to help, and the original translator or we will talk to you.
+Check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] for a your language.  If it exists, you can leave a comment on there saying you'd like to help, and the original translator or we will talk to you.
 
 = OK so let's translate! =
 
@@ -74,7 +74,7 @@ Common pitfalls
 
 = Finished? =
 
-When you finish, just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type%3Dl10n&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
+When you finish, just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
 
 = Maintaining =
 
