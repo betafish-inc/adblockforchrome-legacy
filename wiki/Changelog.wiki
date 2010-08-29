@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.0.26*: Remove whitespace in hotmail, update some filter list links, fix a bug in ad reporting page, and support filter list redirects -- all done by Famlam
+
 *2.0.25*: Fix broken ad reporting link in Safari
 
 *2.0.24*: Support object-subrequest a little better.  Ask for fewer ad reports to hopefully improve the signal to noise ratio.
