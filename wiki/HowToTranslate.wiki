@@ -2,7 +2,7 @@
 
 !AdBlock supports translation into many languages.  But there is only one problem: we don't speak all languages ourselves. Therefore we need your help!
 
-If you would like to translate !AdBlock into your own language, then you can read here what to do.
+Here's how to translate !AdBlock into your own language:
 
 = Is your language supported? =
 
