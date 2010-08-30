@@ -33,7 +33,7 @@ Every string on *a line that starts with "message" or "content"* needs to be rep
 However, there are a few exceptions:
  * The word {{{AdBlock}}} should not be translated -- it is a name.
  * Words wrapped between {{{$}}} should not be translated -- they refer to placeholders, such as {{{$updatelink$}}} referring to the {{{"updatelink"}}} placeholder above.
- * Make sure to leave {{{$1}}}, {{{$2}}}, etc in your translation -- they are placeholders for strings that AdBlock will insert, such as "{{{<a href='...'>}}}" and "{{{</a>}}}" above.
+ * Make sure to leave {{{$1}}}, {{{$2}}}, etc in your translation -- they are placeholders for strings that !AdBlock will insert, such as "{{{<a href='...'>}}}" and "{{{</a>}}}" above.
 
 The above example might look like this after you translated it:
 {{{
