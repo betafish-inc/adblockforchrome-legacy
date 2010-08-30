@@ -67,7 +67,7 @@ Common pitfalls
 
 = Finished? =
 
-When you finish, just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
+Jjust attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
 
 = Maintaining =
 
