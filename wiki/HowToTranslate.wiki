@@ -4,24 +4,17 @@
 
 Here's how to translate !AdBlock into your own language:
 
-= Is your language supported? =
+= Don't waste your time =
 
-  # Find your language's "language code."  [http://aruljohn.com/lang.php This website] detects the ones your browser is using.
-  # Make sure your language is in Chrome's [http://code.google.com/chrome/extensions/i18n.html#locales-supported list of supported language codes].
+Make sure that Chrome [http://code.google.com/chrome/extensions/i18n.html#locales-supported supports your language code].  If you don't know your language's code, you can [http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt look it up].
 
-Anything supported by Chrome will be supported by Safari as well.
+Also, check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] to make sure !AdBlock isn't already translated into your language.  If it is, you can leave a comment on there saying you'd like to help, and the original translator or we will talk to you.
 
-= Is it already translated? =
-
-Check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] for a your language.  If it exists, you can leave a comment on there saying you'd like to help, and the original translator or we will talk to you.
-
-= OK so let's translate! =
+= OK, let's translate! =
 
 First, [http://code.google.com/p/adblockforchrome/issues/entry?template=Offer%20to%20translate add your language] to the list of translations (so that two people don't start the same translation at the same time).
 
-Then download the [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json English messages.json file].
-
-If you open that file (you can open it in any text editor, like Notepad), you'll see a lot of entries that look like this one:
+Then download the [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json English messages.json file]. Open that file (in any text editor, like Notepad), and you'll see a lot of entries that look like this one:
 {{{
   "updatefromoldversion": {
     "message": "You are using an old version of AdBlock. Please first $updatelink$ the newest version of AdBlock",
@@ -38,9 +31,9 @@ If you open that file (you can open it in any text editor, like Notepad), you'll
 Every string on *a line that starts with "message" or "content"* needs to be replaced with a translation.
 
 However, there are a few exceptions:
- * {{{AdBlock}}} should not be translated. It is a name and not a word.
+ * The word {{{AdBlock}}} should not be translated -- it is a name.
  * Words wrapped between {{{$}}} should not be translated -- they refer to placeholders, such as {{{$updatelink$}}} referring to the {{{"updatelink"}}} placeholder above.
- * Make sure to leave $1, $2, etc in your translation -- they are placeholders for strings that AdBlock will insert, such as "<a href='...'>" and "</a>" above.
+ * Make sure to leave {{{$1}}}, {{{$2}}}, etc in your translation -- they are placeholders for strings that AdBlock will insert, such as "{{{<a href='...'>}}}" and "{{{</a>}}}" above.
 
 The above example might look like this after you translated it:
 {{{
@@ -63,13 +56,13 @@ Note some things about my (pretend) translation:
   * I moved $updatelink$ earlier in "message" because it sounded better there in my language
 
 If a "message" or "content" string contains {{{<b>}}}, {{{<i>}}}, {{{<a>}}}, or {{{<br/>}}}, your translation should as well:
- * You can make text *bold* by wrapping it in {{{<b>}}} and {{{</b>}}} like {{{<b>Hi!</b>}}}
- * You can make a text _italic_ by wrapping it in {{{<i>}}} and {{{</i>}}} like {{{<i>Hi!</i>}}}
- * You can make a text a [# hyperlink or a button] by wrapping it in {{{<a>}}} and {{{</a>}}} like {{{<a>click me</a>}}}
- * You can add newlines by adding {{{<br/>}}} like {{{First line<br/>Second line}}}
+ * Make text *bold* by wrapping it in {{{<b>}}} and {{{</b>}}} like {{{<b>Hi!</b>}}}
+ * Make text _italic_ by wrapping it in {{{<i>}}} and {{{</i>}}} like {{{<i>Hi!</i>}}}
+ * Make text a [# hyperlink or a button] by wrapping it in {{{<a>}}} and {{{</a>}}} like {{{<a>click me</a>}}}
+ * Add newlines by adding {{{<br/>}}} like {{{First line<br/>Second line}}}
 
 Common pitfalls
- * *Never* use {{{"}}} in a string, or it will break. Use {{{\"}}} which gets turned into {{{"}}} for you, or just use {{{'}}} instead.
+ * *Never* use {{{"}}} (quotation mark) in a string, or it will break. Use {{{\"}}} which gets turned into {{{"}}} for you, or just use {{{'}}} (apostrophe) instead.
  * Save your file as *UTF-8* to prevent issues with special characters (like Korean characters or characters with accents, like {{{ç}}} or {{{ë}}})
 
 = Finished? =
