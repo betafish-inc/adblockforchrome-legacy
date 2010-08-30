@@ -54,7 +54,7 @@ Oh man, lots of ways:
   * Report an ad in the same place.
   * Update ad reports with the filters that would block the ad.
   * Verify that you can reproduce an existing bug.  Turn on debugging via !AdBlock Options, and see if anything interesting shows up in the Javascript Console.
-  * Offer to translate (we're not there yet but we will be)
+  * Offer to translate
   * Rate us five stars on the installation page at http://bit.ly/ChromeAdBlock .
   * Tell your friends about us!
 See also: HowToContribute
