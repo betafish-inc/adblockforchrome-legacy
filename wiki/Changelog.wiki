@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.1.4*: Found a workaround for Safari crashes
+
 *2.1.3*: Roll back to 2.0.25, because Safari is crashing something fierce.  Probably due to 2.1.0, but just in case 2.0.0.26 is the culprit (which was only released for an hour before 2.1.0) I'm rolling to .25.  This version will only be released to Safari.
 
 *2.1.2*: A few remaining l10n tasks
