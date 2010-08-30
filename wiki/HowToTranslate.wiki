@@ -14,7 +14,7 @@ Also, check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=t
 
 First, [http://code.google.com/p/adblockforchrome/issues/entry?template=Offer%20to%20translate add your language] to the list of translations (so that two people don't start the same translation at the same time).
 
-Then download the [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json English messages.json file]. Open that file (in any text editor, like Notepad), and you'll see a lot of entries that look like this one:
+Then right click [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json this link] and download the English messages.json file. Open that file (in any text editor, like Notepad), and you'll see a lot of entries that look like this one:
 {{{
   "updatefromoldversion": {
     "message": "You are using an old version of AdBlock. Please first $updatelink$ the newest version of AdBlock",
