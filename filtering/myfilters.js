@@ -228,21 +228,16 @@ MyFilters.prototype._updateSubscriptionText = function(subscription_id, text) {
 
   // Record how many days until we need to update the subscription text
   sub_data.expiresAfterHours = 120; // The default
-  var expiresRegex = /(?:expires\:|expires\ after\ )\ *(\d*[1-9]\d*)\ ?(h?)/i;
-  var redirectRegex = /(?:redirect\:|redirects\ to\ )\ *(https?\:\/\/\S+)/i;
-  var checkLines = text.split('\n', 15); //15 lines should be enough
-  for (var i = 0; i < checkLines.length; i++) {
-    if (!Filter.isComment(checkLines[i]))
+  var expiresRegex = /(?:expires\:\ ?|expires\ after\ )(\d*[1-9]\d*)\ ?(h?)/i;
+  var expiresCheckLines = text.split('\n', 15); //15 lines should be enough
+  for (var i = 0; i < expiresCheckLines.length; i++) {
+    if (!Filter.isComment(expiresCheckLines[i]))
       continue;
-    var match = checkLines[i].match(redirectRegex);
-    if (match) {
-      sub_data.url = match[1]; //assuming the URL is always correct
-      sub_data.last_update = 0; //update ASAP
-    }
-    match = checkLines[i].match(expiresRegex);
+    var match = expiresCheckLines[i].match(expiresRegex);
     if (match) {
       var hours = parseInt(match[1]) * (match[2] == "h" ? 1 : 24);
       sub_data.expiresAfterHours = Math.min(hours, 21*24); // 3 week maximum
+      break;
     }
   }
 }
@@ -356,7 +351,7 @@ MyFilters.__make_subscription_options = function() {
       name: "AdBlock custom filters (recommended)",
     },
     "easylist": {
-      url: "https://easylist-downloads.adblockplus.org/easylist.txt",
+      url: "http://adblockplus.mozdev.org/easylist/easylist.txt",
       name: "EasyList (recommended)",
     },
     "easylist_plus_bulgarian": {
@@ -376,7 +371,7 @@ MyFilters.__make_subscription_options = function() {
       name: " - additional French filters",
     },
     "easylist_plus_german": {
-      url: "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
+      url: "http://adblockplus.mozdev.org/easylist/easylistgermany.txt",
       name: " - additional German filters",
     },
     "easylist_plus_norwegian": {
@@ -390,10 +385,6 @@ MyFilters.__make_subscription_options = function() {
     "easylist_plus_romanian": {
       url: "http://www.picpoc.ro/menetzrolist.txt",
       name: " - additional Romanian filters",
-    },
-    "russian": { //id must not change!
-      url: "https://ruadlist.googlecode.com/svn/trunk/advblock.txt",
-      name: " - additional Russian filters",
     },
     "easylist_plus_vietnamese": {
       url: "http://adblockplus-vietnam.googlecode.com/svn/trunk/abpvn.txt",
@@ -424,7 +415,7 @@ MyFilters.__make_subscription_options = function() {
       name: "Italian filters",
     },
     "japanese": {
-      url: "https://secure.fanboy.co.nz/fanboy-japanese.txt",
+      url: "http://www.fanboy.co.nz/adblock/fanboy-adblocklist-jpn.txt",
       name: "Japanese filters",
     },
     "easylist_plun_korean": { // no longer w/ easylist, but ids mustn't change
@@ -434,6 +425,10 @@ MyFilters.__make_subscription_options = function() {
     "polish": {
       url: "http://www.niecko.pl/adblock/adblock.txt",
       name: "Polish filters",
+    },
+    "russian": {
+      url: "http://ruadlist.googlecode.com/svn/trunk/adblock.txt",
+      name: "Russian filters",
     },
     "easylist_plus_spanish": { //id must not change!
       url: "http://abp.mozilla-hispano.org/nauscopio/filtros.txt",

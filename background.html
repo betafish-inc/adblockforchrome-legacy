@@ -120,14 +120,6 @@
         return xhr.responseText;
       }
 
-      if (SAFARI) {
-        // Return chrome.i18n._getL10nData() for content scripts who cannot
-        // call that function (since it loads extension files from disk.)
-        utils.get_l10n_data = function(options) {
-          return chrome.i18n._getL10nData();
-        }
-      }
-
 
       // OPTIONAL FEATURES
 
@@ -202,7 +194,7 @@
         if (!SAFARI)
           result.filtertext = _myfilters.filterset._sourceText;
         var end = new Date();
-        log("time to run: " + (end - start) + " ms || " + options.domain);
+        log("time to run: " + (end - start) + " || " + options.domain);
         return result;
       }
 
@@ -334,7 +326,18 @@
 
       // Called by onRequest[External] to call functions from the field.
       function dispatchHandler(request, sender, sendResponse) { 
+        if (false) {
+          log("Running: " + request.fn);
+          log("    " + JSON.stringify(request).substring(0, 300));
+        }
         var result = utils[request.fn](request.options, sender);
+        if (false) {
+          log("Response:");
+          if (result != null)
+            log("    " + JSON.stringify(result).substring(0, 300));
+          else
+            log("    (undefined)");
+        }
         sendResponse(result);
       }
  
