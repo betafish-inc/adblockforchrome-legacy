@@ -1,6 +1,6 @@
 #summary How to translate AdBlock into your own language
 
-!AdBlock supports translation into many languages.  But there is only one problem: we don't speak all languages ourselves. Therefore we need your help!
+!AdBlock supports translation into many languages.  But there is only one problem: we don't speak all languages ourselves. We need your help!
 
 Here's how to translate !AdBlock into your own language:
 
