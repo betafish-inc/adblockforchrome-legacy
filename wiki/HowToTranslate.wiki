@@ -8,7 +8,7 @@ Here's how to translate !AdBlock into your own language:
 
 Make sure that Chrome [http://code.google.com/chrome/extensions/i18n.html#locales-supported supports your language code].  If you don't know your language's code, you can [http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt look it up].  If it's not supported, we can't use your translation.
 
-Also, check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of existing translations] to make sure !AdBlock isn't already translated into your language.  If it is, you can leave a comment on the list entry saying you'd like to help, and the original translator or we will talk to you.
+Also, check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate&colspec=ID+Status+Summary list of existing translations] to make sure !AdBlock isn't already translated into your language.  If it is, you can leave a comment on the list entry saying you'd like to help, and the original translator or we will talk to you.
 
 = OK, let's translate! =
 
@@ -67,7 +67,7 @@ Common pitfalls
 
 = Finished? =
 
-Just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
+Just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate&colspec=ID+Status+Summary list of translations].  We'll take care of the rest!
 
 = Maintaining =
 
