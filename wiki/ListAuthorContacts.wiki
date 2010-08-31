@@ -16,7 +16,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
 || - additional Vietnamese filters || http://code.google.com/p/adblockplus-vietnam/issues/list || http://code.google.com/p/adblockplus-vietnam/ ||
 || Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
-|| Czech filters || || http://dajbych.net/adblock/ ||
+|| Czech filters || || http://adblock.dajbych.net/ ||
 || Danish filters || henrik at schack.dk || http://henrik.schack.dk/adblock/ ||
 || Hungarian filters || pete at teamlupus.hu || http://pete.teamlupus.hu/site/?pg=hufilter ||
 || Israeli filters || http://mozilla.org.il/board/viewtopic.php?f=8&t=8679 || http://code.google.com/p/israellist/ ||
