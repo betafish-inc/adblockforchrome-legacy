@@ -13,6 +13,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional Norwegian filters || mlan76 at gmail.com || http://home.online.no/~mlangsho/ ||
 || - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
 || - additional Romanian filters || menetz at gmail.com || http://www.picpoc.ro/ ||
+|| - additional Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
 || - additional Vietnamese filters || http://code.google.com/p/adblockplus-vietnam/issues/list || http://code.google.com/p/adblockplus-vietnam/ ||
 || Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
 || Czech filters || || http://dajbych.net/adblock/ ||
@@ -23,7 +24,6 @@ Here are all contact methods for the list authors. It saves you some searching i
 || Japanese filters || mp3geek at gmail.com || http://www.fanboy.co.nz/adblock/ ||
 || Korean filters || http://corset.tistory.com/guestbook || http://corset.tistory.com/ ||
 || Polish filters || krzysiek at niecko.pl || http://www.niecko.pl/adblock/ ||
-|| Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
 || Spanish filters || nauscopio at gmail.com || http://nauscopio.nireblog.com/cat/filtrado ||
 || Ukranian filters || adblock.ua at gmail.com || http://adblock.oasis.org.ua/ ||
 || !EasyPrivacy || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
