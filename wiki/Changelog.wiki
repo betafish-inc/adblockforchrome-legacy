@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.1.5*: Add German, French, Italian, Korean, Macedonian, Dutch, Polish, and Chinese translations.
+*2.1.5*: Add or update German, French, Italian, Korean, Macedonian, Dutch, Polish, and Chinese translations.
 
 *2.1.4*: Found a workaround for Safari crashes
 
