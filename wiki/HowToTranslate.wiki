@@ -74,7 +74,8 @@ Just attach your file to your entry in the [http://code.google.com/p/adblockforc
 When we change strings in !AdBlock, we'll add them to a list here, so you know to change them in your file.
 
 || *We changed or added this message* || *for this version* ||
-|| (none yet!) || (none yet!) ||
+|| showcontextmenus || 2.0.8 ||
+|| pleaserestart || 2.0.8 ||
 
 And most importantly...
 
