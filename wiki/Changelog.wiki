@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.1.9*: Safari users also lose the context menus if they choose to via the Options page
+
 *2.1.8*: Quick patch to allow optional right click menus and to force Chrome 6 or higher, to get rid of permission error messages for Chrome 5 users.
 
 *2.1.7*: Optimize Chrome RAM usage when 'Block most ads...' beta option is disabled
