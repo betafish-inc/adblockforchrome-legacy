@@ -76,6 +76,9 @@ When we change strings in !AdBlock, we'll add them to a list here, so you know t
 || *We changed or added this message* || *for this version* ||
 || added _showcontextmenus_ || 2.1.8 ||
 || added _pleaserestart_ || 2.1.8 ||
+|| removed _blacklistshortcutmessage_ || next version ||
+|| removed _whitelistshortcutmessage_ || next version ||
+|| added _blacklistclickmessage_ || next version ||
 || removed _uptodatefilters_ || next version ||
 
 And most importantly...
