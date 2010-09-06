@@ -73,14 +73,14 @@ Just attach your file to your entry in the [http://code.google.com/p/adblockforc
 
 When we change strings in !AdBlock, we'll add them to a list here, so you know to change them in your file.
 
-|| *We changed or added this message* || *for this version* ||
-|| added _showcontextmenus_ || 2.1.8 ||
-|| added _pleaserestart_ || 2.1.8 ||
-|| removed _blacklistshortcutmessage_ || next version ||
-|| removed _whitelistshortcutmessage_ || next version ||
-|| added _blacklistclickmessage_ || next version ||
-|| removed _uptodatefilters_ || next version ||
-|| removed _shortcutenabled_ || next version ||
+|| *We changed or added this message* || *for this version* || *on this date* ||
+|| added _showcontextmenus_ || 2.1.8 || 5 September 2010 ||
+|| added _pleaserestart_ || 2.1.8 || 5 September 2010 ||
+|| removed _blacklistshortcutmessage_ || next version || 6 September 2010 ||
+|| removed _whitelistshortcutmessage_ || next version || 6 September 2010 ||
+|| added _blacklistclickmessage_ || next version || 6 September 2010 ||
+|| removed _uptodatefilters_ || next version || 6 September 2010 ||
+|| removed _shortcutenabled_ || next version || 6 September 2010 ||
 
 And most importantly...
 
