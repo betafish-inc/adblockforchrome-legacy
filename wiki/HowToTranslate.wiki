@@ -80,6 +80,7 @@ When we change strings in !AdBlock, we'll add them to a list here, so you know t
 || removed _whitelistshortcutmessage_ || next version ||
 || added _blacklistclickmessage_ || next version ||
 || removed _uptodatefilters_ || next version ||
+|| removed _shortcutenabled_ || next version ||
 
 And most importantly...
 
