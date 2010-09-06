@@ -1,32 +1,32 @@
 ﻿{
   "description": {
-    "message": "专门给各位中国网民制作的Adblock，只需要简单设置即可轻松去除网页中密密麻麻的广告！",
+    "message": "AdBlock Chrome-hoz!  Blokkolja a reklámokat az egész weben.  4.5-re értékelve az 5-ből a felhasználók által!",
     "description": "Extension description in manifest"
   },
 
   "buttoncancel": {
-    "message": "取消",
+    "message": "Mégse",
     "description": "Cancel button"
   },
   "buttonok": {
-    "message": "确定",
+    "message": "OK!",
     "description": "OK button"
   },
   "buttonblockit": {
-    "message": "拦截它",
+    "message": "Blokkolás",
     "description": "Block button"
   },
   "buttonedit": {
-    "message": "编辑",
+    "message": "Szerkesztés",
     "description": "Edit filter manually button"
   },
   "optionstitle": {
-    "message": "Adblock 设置",
+    "message": "AdBlock Beállítások",
     "description": "Title for the options page"
   },
 
   "youtubevideomessage": {
-    "message": "没视频？重新载入压面。如果经常发生这种问题，请取消选择YouTobe的广告拦截在 $link$",
+    "message": "Nincs videó? Töltse újra az oldalt. Ha ez sokszor előfordul, kapcsolja ki a Youtube reklámblokkolást az $link$ban.",
     "description": "Message on the YouTube video page that tells you that it might be the option that blocks the video.  $link$'s text is the title of the AdBlock Options page.",
     "placeholders": {
       "link": {
@@ -37,51 +37,51 @@
   },
 
   "sliderexplanation": {
-    "message": "滑动滑块，直到正确的阻止广告，并看起来其他拦截元素有用",
+   "message": "Húzza a csúszkát addig, amíg a reklám nincs megfelelően blokkolva, és a blokkolt elem használhatónak néz ki.",
     "description": "Blacklister slider page message"
   },
   "slidertitle": {
-    "message": "步骤1：找出障碍",
+    "message": "1. lépés: Találja ki mit akar blokkolni",
     "description": "Blacklister slider page title"
   },
   "blacklisteroptions1": {
-    "message": "真的让本广告每次都不拦截吗？",
+   "message": "Mit gondol, igaz lesz erre a reklámra mindig, amikor meglátogatja az oldalt?",
     "description": "Blacklister attribute choosing page message"
   },
   "blacklisternotsure": {
-    "message": "<b>不知道？</b> 仅仅只需在下面按下'拦截它'",
+    "message": "<b>Nem biztos?</b> nyomja meg a 'Blokkolás' gombot lent",
     "description": "Blacklister attribute choosing page message.  'Block it!' must be the same as the text of the 'buttonblockit' message."
   },
   "blacklisterthefilter": {
-    "message": "这个过滤器可以改变选项页",
+    "message": "A szűrő, amit meg tud változtatni a Beállítások oldalon:",
     "description": "Blacklister attribute choosing page message"
   },
   "blacklisteroptionstitle": {
-    "message": "最后一步： 什么制作了这个广告？",
+    "message": "Utolsó lépés: Mi okozza ezt a reklámot?",
     "description": "Blacklister options page title"
   },
   "blacklisternofilter": {
-    "message": "没有指定过滤器！",
+    "message": "Nincs szűrő meghatározva!",
     "description": "Warning if the user hasn't specified a filter"
   },
   "blacklistereditfilter": {
-    "message": "请在下面输入正确的过滤器然后单击确定",
+   "message": "Írja be a helyes szűrőt lent, és nyomjon OK-t",
     "description": "Text if the user wants to manually edit a filter.  'OK' is the standard javascript popup button text."
   },
   "blacklistereditinvalid": {
-    "message": "这个过滤器无效！",
+    "message": "A szűrő érvénytelen!",
     "description": "Messagebox if the manually edited filter is invalid"
   },
   "blacklisterblockedelement": {
-    "message": "拦截元素：",
+    "message": "Blokkolt elem:",
     "description": "Tells the user what the blocked element is on the slider page"
   },
   "blacklisterwarningnofilter": {
-    "message": "警告：没有指定过滤器！",
+    "message": "Figyelem: nincs szűrő meghatározva!",
     "description": "Warns the user that no filter was specified"
   },
   "blacklisterblocksalloftype": {
-    "message": "注意：此过滤器阻止所有网页上的元素！",
+   "message": "Legyen óvatos: ez a szűrő blokkol minden $elementtype$ elemet az oldalon!",
     "description": "Warns the user that all elements of type X will be blocked",
     "placeholders": {
       "elementtype": {
@@ -91,11 +91,11 @@
     }
   },
   "blacklistersinglematch": {
-    "message": "那个匹配有 <b>1个</b> 项目在此页",
+   "message": "Ez <b>1</b> elemre illik az oldalon.",
     "description": "Tells the user only one match was found"
   },
   "blacklistermatches": {
-    "message": "那个匹配 $matchcount$ 元素在次页",
+   "message": "Ez $matchcount$ elemre illik az oldalon.",
     "description": "Tells the user multiple matches were found",
     "placeholders": {
       "matchcount": {
@@ -105,7 +105,7 @@
     }
   },
   "blacklisterattrwillbe": {
-    "message": "$attribute$将变为$value$",
+   "message": "A(z) $attribute$ $value$ lesz",
     "description": "Checkbox label",
     "placeholders": {
       "attribute": {
@@ -119,33 +119,33 @@
     }
   },
   "blacklistertype": {
-    "message": "复制",
+    "message": "Típus",
     "description": "node name is called 'Type'"
   },
   "buttonlooksgood": {
-    "message": "看起来很好",
+    "message": "Jól néz ki",
     "description": "Looks good button"
   },
   "buttonback": {
-    "message": "后退",
+    "message": "Vissza",
     "description": "Back to previous wizard page button"
   },
 
   "findingads": {
-    "message": "寻找广告中...<br/><br/><i>这将花一些时间</i>",
+    "message": "Reklámok keresése...<br/><br/><i>Csak egy pár pillanatig tart</i>",
     "description": "When you press ctrl-shift-K the blacklister searches for ads"
   },
   "blockanadtitle": {
-    "message": "拦截一个广告",
+    "message": "Egy reklám blokkolása",
     "description": "Title of the first two dialogs of the blacklister"
   },
   "clickthead": {
-    "message": "点击广告，我会按照您的做法去拦截它",
+   "message": "Kattinston a reklámra, és végig fogom vezetni a folyamaton.",
     "description": "When you have to click the ad to continue"
   },
 
   "whitelistertext": {
-    "message": "让Adblock不运行于(包括子域名)<br/>$domain$.",
+   "message": "Az AdBlock nem fog futni az alábbi végződésű domain-eken:<br/>$domain$.",
     "description": "The message of the whitelister dialog, putting the domain name on a separate line",
     "placeholders": {
       "domain": {
@@ -155,50 +155,50 @@
     }
   },
   "whitelistertitle": {
-    "message": "排除此域名？",
+    "message": "Kizárja ezt a domain-t?",
     "description": "The title of the whitelister dialog"
   },
   "buttonexclude": {
-    "message": "排除",
+    "message": "Kizárás",
     "description": "Button for excluding a domain in the whitelister dialog (see 'whitelistertitle' message)"
   },
 
   "adreportintro": {
-    "message": "你找到了一个在网页上未被拦截的广告？好，我将会给你一个正确的位置去报告它！",
+   "message": "Szóval talált egy reklámot egy weboldalon? Rendben, segítek megtalálni a megfelelő helyet a jelentéshez!",
     "description": "Adreport intro message"
   },
   "willnotreportblacklister": {
-    "message": "记住：报告广告只是自愿的。 如果你不希望你自己报告的广告增加到广告筛选器，您可以关闭此窗口，然后请在“广告黑名单”当中自行添加未拦截的广告",
+   "message": "Emlékeztetőül: a reklámok jelentése önkéntes. Ha nem akarja csinálni, bezárhatja ezt az ablakot, és blokkolhatja csak magának a 'Blokkolás'-ra kattintva a feketelista varázsló ablakban!",
     "description": "Adreport intro message"
   },
   "willnotreportoptions": {
-    "message": "记住：报告广告只是自愿的。 如果你不希望你自己报告的广告增加到广告筛选器，您可以关闭此窗口，然后请在“广告黑名单”当中自行添加未拦截的广告",
+   "message": "Emlékeztetőül: a reklámok jelentése önkéntes. Ha nem akarja csinálni, bezárhatja ezt az ablakot, és blokkolhatja csak magának a szűrő hozzáadásával a beállítások oldal 'Feketelista' fülén!",
     "description": "Adreport intro message"
   },
   "doesitstillappear": {
-    "message": "如果您更新了您的过滤器，然后重新载入页面，请问广告是否出现？",
+   "message": "Ha frissíti a szűrőit, és újratölti az oldalt, ami tartalmazta a reklámot, még mindig megjelenik a reklám?",
     "description": "Adreport step 1"
   },
   "clickupdatefiltersbutton": {
-    "message": "请点击此按钮：",
+    "message": "Frissítheti a szűrőit az alábbi gombra kattintva:",
     "description": "Adreport step 1"
   },
 
   "subscribingtitle": {
-    "message": "订阅到过滤列表...",
+    "message": "Feliratkozás a szűrő listára",
     "description": "abp: link subscriber title"
   },
   "subscribingfinished": {
-    "message": "完成！",
+    "message": "Kész!",
     "description": "abp: link subscriber result"
   },
   "subscribingfailed": {
-    "message": "失败！",
+    "message": "Hiba!",
     "description": "abp: link subscriber result"
   },
 
   "optionsversion": {
-    "message": "版本： $version$",
+    "message": "Verzió: $version$",
     "description": "Version number",
     "placeholders": {
       "version": {
@@ -208,81 +208,81 @@
     }
   },
   "optionschangelog": {
-    "message": "更新日志",
+    "message": "változások listája",
     "description": "changelog link"
   },
   "donatethanks": {
-    "message": "太好了！谢谢！",
+    "message": "Hurrá! Köszönöm!",
     "description": "Tooltip if you hover the donate image"
   },
   "optionsintro": {
-    "message": "你喜欢Adblock吗？ 我的名字叫做迈克尔。为了发展的AdBlock和报答支持我的用户我已经很少做我的正常工作。请尽情享受Adblock吧！如果你能为我们 <a>捐款</a> 无论数额大小, 我将会非常 <b>高兴</b> :)",
+   "message": "Szereti az Adblockot? A nevem Michael. Egy részmunkaidős állásra váltottam, hogy tudjam fejleszteni az Adblock-ot, és segíteni a felhasználóimat. Kérem használja, és élvezze az Adblock-ot, és ha tud, <a>támogasson</a> bármekkora összeggel, <b>végtelenül</b> örülnék neki :)",
     "description": "Intro of the options page"
   },
   "tabgeneral": {
-    "message": "基本的设置",
+    "message": "Általános",
     "description": "A tab on the options page"
   },
   "tabfilterlists": {
-    "message": "订阅筛选器",
+    "message": "Szűrők",
     "description": "A tab on the options page"
   },
   "tabblacklist": {
-    "message": "广告黑名单",
+    "message": "Feketelista",
     "description": "A tab on the options page"
   },
   "tabexcluded": {
-    "message": "广告白名单",
+    "message": "Kizárt oldalak",
     "description": "A tab on the options page"
   },
 
   "generaloptions": {
-    "message": "基本的设置",
+    "message": "Általános beállítások",
     "description": "Title of first tab page"
   },
   "blocknothideoption": {
-    "message": "让大部分的广告在加载中之前拦截，而不是加载完成后拦截",
+   "message": "A legtöbb reklám letöltésének blokkolása, elrejtésük helyett.",
     "description": "Option on first tab page"
   },
   "betalabel": {
-    "message": "测试版本，可能不稳定",
+    "message": "Béta",
     "description": "Option on first tab page"
   },
   "blocknothidewarning": {
-    "message": "注意：Chrome可能并不完全支持本设置，如果你的电脑速度较慢，仍可能以隐藏广告的形式进行广告拦截！",
+   "message": "Vegye figyelembe, hogy a Chrome nem teljesen támogatja ezt, ezért egy pár elem esetleg még mindig letöltődhet, és el lesz rejtve, ha ön egy gyors gépet használ.",
     "description": "Warning for block instead of hiding option"
   },
   "buttonexplanation": {
-    "message": "<i>为了使按钮可选，请在安装后不要卸载Adblock，请您先卸载Adblock按钮后再卸载Adblock！</i><br/><br/>要添加按钮，点击 <b>安装</b> 在 <a>Adblock按钮</a> 页面。<br/><br/>要取消显示按钮，右键点击按钮，选择停用",
+   "message": "<i>Azért, hogy opcionális legyen a gomb, és telepíthető az AbBlock-al együtt, egy külön kiegészítőbe raktuk.</i><br/><br/>A gomb hozzáadásához kattintson a <b>Telepítés</>re a <a>Browser Button for Abclock</a> oldalon.<br/><br/>Az eltávolításhoz kattintson jobb gombbal rá, és válassza a Kikapcsolást.</i>",
     "description": "Explanation of how the button works"
   },
   "buttonextension": {
-    "message": "让Adblock按钮显示在地址栏附近",
+    "message": "Mutassa az Adblock gombot a címsávtól jobbra.",
     "description": "Option on first tab page"
   },
   "googletextads": {
-    "message": "我喜欢谷歌的文字广告，请不要拦截他们",
+   "message": "Szeretem a szöveges hirdetéseket a Google-ön, mutassa ezeket.",
     "description": "Option on first tab page"
   },
   "youtubeads": {
-    "message": "拦截在YouTube视频网站的视频中的广告",
+    "message": "Reklámok blokkolása a Yotube videókban.",
     "description": "Option on first tab page"
   },
   "debuginlogoption": {
-    "message": "在控制台日志里显示调试语句(Debug)(将会导致Adblock运行减慢)",
+    "message": "Mutassa a hibakeresési adatokat a Console Log-ban (ami lelassítja az AdBlock-ot)",
     "description": "Option on first tab page"
   },
   "timeinlogoption": {
-    "message": "在控制台日志里显示时间陈述(Timing)(将会导致Adblock运行减慢)",
+    "message": "Mutassa az időmérési adatokat a Console Log-ban (ami lelasítja az AdBlock-ot)",
     "description": "Option on first tab page"
   },
 
   "updatedrightnow": {
-    "message": "现在更新中...",
+    "message": "éppen most frissítve",
     "description": "Label for subscription"
   },
   "updatedsecondsago": {
-    "message": "在 $seconds$ 秒前更新完毕",
+    "message": "$seconds$ másodperce frissítve ",
     "description": "Label for subscription",
     "placeholders": {
       "seconds": {
@@ -292,7 +292,7 @@
     }
   },
   "updatedminutesago": {
-    "message": "在 $minutes$ 分钟前更新完毕",
+    "message": "$minutes$ perce frissítve ",
     "description": "Label for subscription",
     "placeholders": {
       "minutes": {
@@ -302,7 +302,7 @@
     }
   },
   "updatedhoursago": {
-    "message": "在 $hours$ 小时前更新完毕",
+    "message": "$hours$ órája frissítve ",
     "description": "Label for subscription",
     "placeholders": {
       "hours": {
@@ -312,7 +312,7 @@
     }
   },
   "updateddaysago": {
-    "message": "在 $days$ 天前更新完毕",
+    "message": "$days$ napja frissítve ",
     "description": "Label for subscription",
     "placeholders": {
       "days": {
@@ -322,402 +322,407 @@
     }
   },
   "updatedminuteago": {
-    "message": "在 1 分钟前更新完毕",
+    "message": "1 perce frissítve ",
     "description": "Label for subscription"
   },
   "updatedhourago": {
-    "message": "在 1 小时前更新完毕",
+    "message": "1 órája frissítve ",
     "description": "Label for subscription"
   },
   "updateddayago": {
-    "message": "在 1 天前更新完毕",
+    "message": "1 napja frissítve ",
     "description": "Label for subscription"
   },
   "removedlabel": {
-    "message": "移除",
+    "message": "Eltávolítva.",
     "description": "Status label"
   },
   "unsubscribedlabel": {
-    "message": "取消订阅成功",
+    "message": "Leiratkozva.",
     "description": "Status label"
   },
   "fetchinglabel": {
-    "message": "订阅中...请稍后",
+    "message": "Betöltés...kérem várjon",
     "description": "Status label"
   },
   "subscribedlabel": {
-    "message": "订阅成功",
+    "message": "Feliratkozva.",
     "description": "Status label"
   },
   "nolisturllabel": {
-    "message": "这不是个地址",
+    "message": "Ez nem egy listát tartalmazó URL volt.",
     "description": "Status label"
   },
   "failedtofetchfilter": {
-    "message": "无法获得此过滤器",
+    "message": "Nem sikerült betölteni a szűrőt",
     "description": "Error messagebox"
   },
   "enterurloflist": {
-    "message": "请输入一个过滤器列表中订阅的网址。",
+   "message": "Írja be a szűrők listájának az URL-jét, amire fel szeretne iratkozni.",
     "description": "Error messagebox"
   },
   "removefromlist": {
-    "message": "从列表中移除",
+    "message": "Eltávolítás a listáról",
     "description": "Label to remove a custom filter"
   },
   "filterstabtitle": {
-    "message": "订阅到过滤列表",
+    "message": "Feliratkozás szűrő listákra",
     "description": "Title of the filter list tab"
   },
   "defaultsexplanation": {
-    "message": "默认订阅美国过滤器，其他人可能需要更多的过滤器",
+   "message": "Az alapértelmezettek jók az angolul beszélő felhasználóknak Amerikában. Mások esetleg fel szeretnének iratkozni több listára.",
     "description": "Explanation of the filter lists"
   },
   "filterlistlink": {
-    "message": "不要订阅您不需要的筛选器——每个筛选器都会拖慢您的程序！若需要其他更多的筛选器请点击<a>这里</a>.",
+   "message": "Ne iratkozzon fel többre, mint amennyire szüksége van -- mindegyik egy kicsit lelassítja a böngészőt! Készítők, és egyéb listák megtalálhatóak <a>itt</a>. ",
     "description": "Explanation of the filter lists"
   },
   "updatenowmessage": {
-    "message": "我将会自动升级筛选器；你依然可以<a>现在升级</a>。",    "description": "update filters text + button"
+   "message": "Le fogom tölteni a frissítéseket automatikusan; de akár ön is <a>frissíthet most</a>",
+    "description": "update filters text + button"
   },
   "orenteraurl": {
-    "message": "没有找到适合的列表，您可以自己添加一个广告筛选器网址: ",
+    "message": "Vagy írjon be egy URL-t:",
     "description": "link for custom subscription"
   },
   "subscribebutton": {
-    "message": "订阅",
+    "message": "Feliratkozás",
     "description": "subscribe to a list button"
   },
   "subscribetoall": {
-    "message": "订阅所有的过滤器：",
+    "message": "Feliratkozás az összes szűrőre:",
     "description": "option on second tab page"
   },
   "subscribetonone": {
-    "message": "取消订阅所有的过滤器：",
+    "message": "Leiratkozás az összes szűrőről:",
     "description": "option on second tab page"
   },
   "showlinkstolists": {
-    "message": "显示每个过滤表的地址链接：",
+    "message": "Linkek mutatása a szűrő listákhoz:",
     "description": "Option on second tab page"
   },
   "labelshow": {
-    "message": "打开",
+    "message": "mutassa",
     "description": "The label when you click the 'show links to filter lists' option"
   },
   "filteradblock_custom": {
-    "message": "Adblock自定义筛选器",
+    "message": "Adblock egyedi szűrők (javasolt)",
     "description": "A filter list. Don't translate 'AdBlock'"
   },
   "filtereasylist": {
-    "message": "易清单",
+    "message": "EasyList (javasolt)",
     "description": "A filter list. Don't translate 'EasyList'"
   },
   "filtereasylist_plus_bulgarian": {
-    "message": " - 添加保加利亚筛选器",
+    "message": " - további bolgár szűrők",
     "description": "A filter list"
   },
   "filterdutch": {
-    "message": " - 添加荷兰筛选器",
+    "message": " - további holland szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_finnish": {
-    "message": " - 添加芬兰筛选器",
+    "message": " - további finn szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_french": {
-    "message": " - 添加法国筛选器",
+    "message": " - további francia szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_german": {
-    "message": " - 添加德国筛选器",
+    "message": " - további német szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_norwegian": {
-    "message": " - 添加挪威筛选器",
+    "message": " - további norvég szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_polish": {
-    "message": " - 添加波兰筛选器",
+    "message": " - további lengyel szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_romanian": {
-    "message": " - 添加罗马尼亚筛选器",
+    "message": " - további román szűrők",
     "description": "A filter list"
   },
   "filterrussian": {
-    "message": " - 添加俄罗斯筛选器",
+    "message": " - további orosz szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_vietnamese": {
-    "message": " - 添加越南筛选器",
+    "message": " - további vietnámi szűrők",
     "description": "A filter list"
   },
   "filterchinese": {
-    "message": "中国筛选器(中国人推荐)",
+    "message": "Kínai szűrők",
     "description": "A filter list"
   },
   "filterczech": {
-    "message": "捷克筛选器",
+    "message": "Cseh szűrők",
     "description": "A filter list"
   },
   "filterdanish": {
-    "message": "丹麦筛选器",
+    "message": "Dán szűrők",
     "description": "A filter list"
   },
   "filterhungarian": {
-    "message": "匈牙利筛选器",
+    "message": "Magyar szűrők",
     "description": "A filter list"
   },
   "filterisraeli": {
-    "message": "以色列筛选器",
+    "message": "Izraeli szűrők",
     "description": "A filter list"
   },
   "filteritalian": {
-    "message": "意大利筛选器",
+    "message": "Olasz szűrők",
     "description": "A filter list"
   },
   "filterjapanese": {
-    "message": "日本筛选器",
+    "message": "Japán szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plun_korean": {
-    "message": "韩国筛选器",
+    "message": "Koreai szűrők",
     "description": "A filter list"
   },
   "filterpolish": {
-    "message": "波兰筛选器",
+    "message": "Lengyel szűrők",
     "description": "A filter list"
   },
   "filtereasylist_plus_spanish": {
-    "message": "西班牙筛选器",
+    "message": "Spanyol szűrők",
     "description": "A filter list"
   },
   "filterukranian": {
-    "message": "乌克兰筛选器",
+    "message": "Ukrán szűrők",
     "description": "A filter list"
   },
 
+  "blacklistclickmessage": {
+   "message": "Kattintson jobb gombbal egy reklámra az oldalon a blokkoláshoz -- vagy blokkolja itt manuálisan.",
+    "description": "Message at the top of the blacklist options tab"
+  },
   "blacklisttabtitle": {
-    "message": "广告黑名单",
+   "message": "Blokkoljon egy reklámot amit a szűrő lista kihagyott",
     "description": "Title of the third tab"
   },
   "addnewfilter": {
-    "message": "添加一个新的黑名单：",
+    "message": "Új szűrő hozzáadása:",
     "description": "Subtitle on the third tab"
   },
   "linkblockadbyurl": {
-    "message": "拦截广告的网址",
+    "message": "Reklám blokkolása az URL-je alapján:",
     "description": "Link on the third tab"
   },
   "linkhidesection": {
-    "message": "隐藏第一个网页",
+    "message": "Weboldal egy részének elrejtése:",
     "description": "Link on the third tab"
   },
   "blockurlwithtext": {
-    "message": "拦截包含该文本的网址",
+    "message": "URL-ek blokkolása, amelyek tartalmazzák ezt a szöveget",
     "description": "Message of the url-blocking area"
   },
   "csstomatch": {
-    "message": "匹配CSS",
+    "message": "Illeszkedő CSS",
     "description": "Message of the css-hiding area"
   },
   "blockdomain": {
-    "message": "域名的页面上应用",
+    "message": "Az oldal domain-je, amin alkalmazva legyen",
     "description": "Message of the url and css -blocking area"
   },
   "manualfilteredit": {
-    "message": "手动编辑您的黑名单：",
+    "message": "Szűrők módosítása manuálisan:",
     "description": "Subtitle on the third tab"
   },
   "filtersavewarning": {
-    "message": "注意：如果你没有设置好黑名单和白名单这可能将会把您设置的广告过滤器失效建议阅读 <a>使用说明</a> 以了解如何使用黑名单和白名单。",
+   "message": "Legyen óvatos: ha hibázik, sok szűrő, beleértve a hivatalos szűrőket, elromolhatnak!<br/>Olvassa el a <a>szűrő szintaxis segédletet</a>, hogy megtanulja, hogyan kell összetett feketelista, és fehérlista szűrőket hozzáadni.",
     "description": "Warning when blacklisting manually"
   },
   "savebutton": {
-    "message": "保存",
+    "message": "Mentés",
     "description": "Save button"
   },
   "savereminder": {
-    "message": "别忘了保存！",
+    "message": "Ne felejtsen el menteni!",
     "description": "Reminder to press save"
   },
   "advanced": {
-    "message": "高级：",
+    "message": "Haladó",
     "description": "Section label for advanced options"
   },
   "reportanad": {
-    "message": "<a>提交一个未拦截的广告</a> 给Adblock或者广告筛选器制作者",
+   "message": "<a>Reklám jelentése</a> az AdBlock-nak, vagy a szűrő lista karbantartóinak.",
     "description": "A link for users who found an ad somewhere and want to report it"
   },
 
   "removelabel": {
-    "message": "移除",
+    "message": "Eltávolítás",
     "description": "link to remove a excluded site"
   },
   "excludedsitestitle": {
-    "message": "广告白名单",
+   "message": "Ne tiltsa le a reklámokat azokon domain-eken, amik ezzel végződnek...",
     "description": "title of the 4th tab page"
   },
   "excludedsitesexample": {
-    "message": "例如： google.com 将包括不拦截广告在google.com、mail.google.com和www.google.com等(也就是说包括所有子域名均不拦截)。",
+   "message": "Például, a 'google.com' kikapcsolja a blokkolást a google.com, mail.google.com, www.google.com oldalakon.",
     "description": "text on the 4th tab page"
   },
   "addbutton": {
-    "message": "添加",
+    "message": "Hozzáadás",
     "description": "add button"
   },
   "removeallfromlist": {
-    "message": "删除列表中的所有项目：",
+    "message": "Összes elem eltávolítása a listából:",
     "description": "option on 4th tab page"
   },
   "adblockreportinganad": {
-    "message": "AdBlock - 报告一个未被拦截的广告",
+    "message": "AdBlock - Reklám jelentése",
     "description": "title of ad report page"
   },
   "adreport1": {
-    "message": "你找到了一个在网页上未被拦截的广告？好，我将会给你一个正确的位置去报告它！<br/> 记住：报告广告只是自愿的。 如果你不希望你自己报告的广告增加到广告筛选器，您可以关闭此窗口，然后请在“广告黑名单”当中自行添加未拦截的广告",
+    "message": "Szóval talált egy reklámot egy weboldalon? Rendben, segítek megtalálni a megfelelő helyet a jelentéshez!<br/> Emlékeztetőül: a reklámok jelentése önkéntes. Ha nem akarja csinálni, bezárhatja ezt az ablakot, és blokkolhatja csak magának a szűrő hozzáadásával a beállítások oldal 'Feketelista' fülén!",
     "description": "Instructions on ad reporting page.  'Blacklist' should be the same text as the 'tabblacklist' message."
   },
   "updateyourlists": {
-    "message": "请确保您的广告筛选器已经是最新版本",
+    "message": "Győződjön meg róla, hogy a szűrő listái naprakészek",
     "description": "instruction on ad report page"
   },
   "clickupdatefilters": {
-    "message": "点击此按钮： <a>升级我的广告筛选器</a>",
+    "message": "Kattintson ide: <a>Szűrőim frissítése!</a>",
     "description": "instruction on ad report page"
   },
   "reloadadpage": {
-    "message": "重新加载带有广告的页面",
+    "message": "Oldal újratöltése a reklámmal",
     "description": "instruction on ad report page"
   },
   "adstillappear": {
-    "message": "请问广告依然出现吗？",
+    "message": "A reklám még mindig megjelenik?",
     "description": "question on ad reporting page"
   },
   "yes": {
-    "message": "是的",
+    "message": "Igen",
     "description": "A positive response to a question"
   },
   "no": {
-    "message": "没有",
+    "message": "Nem",
     "description": "A negative response to a question"
   },
   "adalreadyblocked": {
-    "message": "目前广告已经阻止，您无需报告！",
+   "message": "Nem kell semmit csinálnia, mivel a reklám már blokkolva lett",
     "description": "on the ad report page, telling a user there is nothing to do"
   },
   "correctfilters": {
-    "message": "正确的过滤器",
+    "message": "Helyes szűrők",
     "description": "on the ad report page, label describing having the right set of filters"
   },
   "reallyclearlist": {
-    "message": "请确定要清除这个名单？",
+   "message": "Biztos benne, hogy törölni szeretné a listát?",
     "description": "confirmation of clearing a list of iteams"
   },
   "pagelanguagecheck": {
-    "message": "请问带有广告的网页是什么语言的？",
+    "message": "Milyen nyelvű az oldal?",
     "description": "question on ad report page"
   },
   "lang_english": {
-    "message": "英语",
+    "message": "Angol",
     "description": "language"
   },
   "lang_bulgarian": {
-    "message": "保加利亚语",
+    "message": "Bolgár",
     "description": "language"
   },
   "lang_chinese": {
-    "message": "中文",
+    "message": "Kínai",
     "description": "language"
   },
   "lang_czech": {
-    "message": "捷克语",
+    "message": "Cseh",
     "description": "language"
   },
   "lang_danish": {
-    "message": "丹麦语",
+    "message": "Dán",
     "description": "language"
   },
   "lang_dutch": {
-    "message": "荷兰语",
+    "message": "Holland",
     "description": "language"
   },
   "lang_finnish": {
-    "message": "芬兰语",
+    "message": "Finn",
     "description": "language"
   },
   "lang_french": {
-    "message": "法语",
+    "message": "Francia",
     "description": "language"
   },
   "lang_german": {
-    "message": "德语",
+    "message": "Német",
     "description": "language"
   },
   "lang_hungarian": {
-    "message": "匈牙利语",
+    "message": "Magyar",
     "description": "language"
   },
   "lang_israeli": {
-    "message": "以色列语",
+    "message": "Izraeli",
     "description": "language"
   },
   "lang_italian": {
-    "message": "意大利语",
+    "message": "Olasz",
     "description": "language"
   },
   "lang_japanese": {
-    "message": "日语",
+    "message": "Japán",
     "description": "language"
   },
   "lang_korean": {
-    "message": "韩语",
+    "message": "Koreai",
     "description": "language"
   },
   "lang_norwegian": {
-    "message": "挪威语",
+    "message": "Norvég",
     "description": "language"
   },
   "lang_polish": {
-    "message": "波兰语",
+    "message": "Lengyel",
     "description": "language"
   },
   "lang_romanian": {
-    "message": "罗马尼亚语",
+    "message": "Román",
     "description": "language"
   },
   "lang_russian": {
-    "message": "俄罗斯语",
+    "message": "Orosz",
     "description": "language"
   },
   "lang_spanish": {
-    "message": "西班牙语",
+    "message": "Spanyol",
     "description": "language"
   },
   "lang_ukranian": {
-    "message": "乌克兰语",
+    "message": "Ukrán",
     "description": "language"
   },
   "lang_vietnamese": {
-    "message": "越南语",
+    "message": "Vietnámi",
     "description": "language"
   },
   "other": {
-    "message": "其他语言",
+    "message": "Egyéb",
     "description": "multiple choice option"
   },
   "nodefaultfilter": {
-    "message": "我们没有该语言的默认筛选器的列表。<br/>请试着找到一个合适的支持这种语言的筛选器 $link$ 或者通过黑名单拦截。",
+   "message": "Nincs egy alap szűrő listánk erre a nyelvre.<br/>Kérjük próbáljon keresni egy megfelelő listát $link$, ami támogatja ezt a nyelvet, vagy blokkolja ezt a reklámot magának a Feketelista oldalon.",
     "description": "instructions on ad report page pointing users to EasyList subscriptions list.  'Blacklist' should be the same message as 'tabblacklist'.",
     "placeholders": {
       "link": {
-        "content": "$1点击这里$2",
+        "content": "$1itt$2",
         "example": "<a href='http://abp.org'>here</a>"
       }
     }
   },
   "retryaftersubscribe": {
-    "message": "订阅此广告筛选器，然后重试：$list_title$",
+   "message": "Iratkozzon fel erre a szűrő listára, majd próbálja újra: $list_title$",
     "description": "instructions on ad report page telling users to subscribe to a filter list and then check again to see whether the ad exists",
     "placeholders": {
       "list_title": {
@@ -727,35 +732,35 @@
     }
   },
   "checkinfirefox": {
-    "message": "在FireFox中检查",
+    "message": "Próbálja ki Firefox-ban",
     "description": "tell a user to see if a reported ad also appears in firefox"
   },
   "checkinfirefox1": {
-    "message": "安装Firefox即使你不需要它。",
+    "message": "Telepítse fel a Firefox-ot, ha még nincs.",
     "description": "instruction for how to check Firefox for a reported ad"
   },
   "checkinfirefox2": {
-    "message": "在Firefox安装Adblock Plus即使你需不要它。",
+   "message": "Telepítse fel az Adblock Plus-t Firefoxhoz, ha még nincs.",
     "description": "instruction for how to check Firefox for a reported ad"
   },
   "checkinfirefox3": {
-    "message": "在Firefox中，订阅相同的广告筛选器列表 (Adblock的自定义过滤器除外)。",
+   "message": "Iratkozzon fel ugyan azokra a szűrő listákra Firefoxban, mint itt (kivéve az AdBlock egyedi szűrőket).",
     "description": "instruction for how to check Firefox for a reported ad"
   },
   "checkinfirefox4": {
-    "message": "在Firefox中，加载未拦截的广告页。",
+   "message": "Töltse be az oldalt Firefoxban a reklámmal.",
     "description": "instruction for how to check Firefox for a reported ad"
   },
   "checkinfirefox5": {
-    "message": "在Firefox中，广告是否出现？",
+    "message": "Megjelenik a reklám Firefoxban?",
     "description": "instruction for how to check Firefox for a reported ad"
   },
   "refusetocheck": {
-    "message": "我不想这样做",
+    "message": "Nem akarom megnézni.",
     "description": "user is telling us they don't wish to investigate something for us"
   },
   "reportfilterlistproblem": {
-    "message": "这是广告筛选器的问题，请在这里报告：$link$",
+   "message": "Ez egy szűrő lista probléma. Jelentse itt: $link$",
     "description": "telling the user to report an ad to a filter list maintainer",
     "placeholders": {
       "link": {
@@ -765,43 +770,31 @@
     }
   },
   "reporttous": {
-    "message": "你可以向我们报告无法拦截的广告在$in_the_issue_tracker_link$. (我们已经知道，我们不能阻止大多数的视频广告，目前正在等待在WebKit的支持.)",
+    "message": "Ha beszél angolul, jelentheti a reklámot nekünk a $in_the_issue_tracker_link$. (Már tudatában vagyunk, hogy nem tudjuk a reklámokat blokkolni a legtöbb videóban; a Webkit-ben való támogatásra várunk.)",
     "description": "NOTE: non-English translations should replace the first sentence and instead say 'If you can speak English, you can report the ad to us $in_the_issue_tracker_link$.'",
     "placeholders": {
       "in_the_issue_tracker_link": {
-        "content": "$1问题跟踪页面$2",
+        "content": "$1hibakövetőben$2",
         "example": "<a href='issuetracker.html'>in the issue tracker</a>"
       }
     }
   },
   "fixityourself": {
-    "message": "好吧，您依然可以使用广告黑名单功能阻止该广告。谢谢使用！",
+    "message": "OK, még mindig blokkolhatja a reklámot magának a Beállítások oldalon. Köszönjük!",
     "description": "telling a user who won't report an ad to us how to handle it for herself"
   },
   "updatefromoldversion": {
-    "message": "您使用的是Adblock旧版本。请先 $updatelink$ 到最新版本",
+   "message": "Egy régebbi verzióját használja az AdBlock-nak. Kérjük először $updatelink$ az AdBlock legújabb verziójára",
     "description": "ad report page instruction",
     "placeholders": {
       "updatelink": {
-        "content": "$1升级$2",
+        "content": "$1frissítsen$2",
         "example": "<a href='http://chrome.com/update_here.ctx'>update</a>"
       }
     }
   },
   "cantundo": {
-    "message": "这个操作无法恢复！",
+    "message": "Ez a művelet nem vonható vissza!",
     "description": "Warning a user before confirming an action"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-

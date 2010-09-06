@@ -12,13 +12,13 @@
     "message": "OK!",
     "description": "OK button"
   },
-  "shortcutenabled": {
-    "message": "ingeschakeld",
-    "description": "The checkbox label for the shortcut option"
-  },
   "buttonblockit": {
     "message": "Blokkeer!",
     "description": "Block button"
+  },
+  "blacklistclickmessage": {
+    "message": "Klik met de rechtermuisknop op een advertentie om hem te blokkeren -- of blokkeer het hier handmatig.",
+    "description": "Message at the top of the blacklist options tab"
   },
   "buttonedit": {
     "message": "Bewerken",
@@ -775,5 +775,13 @@
   "reportanad": {
     "message": "<a>rapporteer een advertentie</a> aan de beheerders van de filter lijsten.",
     "description": "A link for users who found an ad somewhere and want to report it"
+  },
+  "showcontextmenus": {
+    "message": "Voeg items toe aan het context menu.",
+    "description": "Option on first tab page"
+  },
+  "pleaserestart": {
+    "message": "(Hiervoor moet u uw browser opnieuw opstarten)",
+    "description": "Explaining that changing an optional feature requires restarting Chrome before it will take effect"
   }
 }
