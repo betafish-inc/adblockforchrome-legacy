@@ -82,9 +82,6 @@ Message 'contextmenuhidethis' is never used and should be removed
 Message 'contextmenuhideanything' is never used and should be removed
 Message 'contextmenuexcludedomain' is never used and should be removed
 
-===== \_locales\pl\messages.json =====
-Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
-
 ===== \_locales\mk\messages.json =====
 Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
 
