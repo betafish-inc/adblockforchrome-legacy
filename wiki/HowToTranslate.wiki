@@ -88,9 +88,6 @@ Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
 ===== \_locales\mk\messages.json =====
 Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
 
-===== \_locales\ko\messages.json =====
-Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
-
 ===== \_locales\it\messages.json =====
 Missing translations: blacklistclickmessage
 
