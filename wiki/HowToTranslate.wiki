@@ -77,11 +77,6 @@ When there is an issue with your lists, for example a string is missing, we will
 ===== \_locales\zh_CN\messages.json =====
 Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
 
-===== \_locales\ru\messages.json =====
-Message 'contextmenuhidethis' is never used and should be removed
-Message 'contextmenuhideanything' is never used and should be removed
-Message 'contextmenuexcludedomain' is never used and should be removed
-
 ===== \_locales\mk\messages.json =====
 Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
 
