@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.1.12*: Localized right-click menu text
+*2.1.12*: Localized right-click menu text (famlam)
 
 *2.1.11*: Memory savings in Chrome and probably some in Safari (famlam)
 
