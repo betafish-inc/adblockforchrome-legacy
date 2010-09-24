@@ -75,13 +75,34 @@ When there is an issue with your lists, for example a string is missing, we will
 
 {{{
 ===== \_locales\zh_CN\messages.json =====
-Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
+Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, pleaserestart, showcontextmenus
+
+===== \_locales\pl\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
 
 ===== \_locales\mk\messages.json =====
-Missing translations: blacklistclickmessage, pleaserestart, showcontextmenus
+Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, pleaserestart, showcontextmenus
+
+===== \_locales\ko\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+
+===== \_locales\it\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
 
 ===== \_locales\hu\messages.json =====
-Missing translations: pleaserestart, showcontextmenus
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+
+===== \_locales\fr\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+
+===== \_locales\el\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+
+===== \_locales\de\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+
+===== \_locales\cs\messages.json =====
+Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
 }}}
 
 
