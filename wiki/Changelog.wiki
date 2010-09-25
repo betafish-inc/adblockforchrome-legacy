@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.1.15*: Add indonesian translation, and improve memory usage in Safari.
+
 *2.1.14*: Block background images even when they are specified in stylesheets (famlam).  Touchups to the UI for manual blacklist editing.  Fix typos in last release.
 
 *2.1.13*: Warning popup to Chrome users that next week AdBlock will be disabled as a necessary part of an upgrade, with instructions for re-enabling it.
