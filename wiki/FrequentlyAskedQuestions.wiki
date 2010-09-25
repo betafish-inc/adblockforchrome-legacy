@@ -7,11 +7,11 @@
 
 == How do I get to the Options page? ==
 
-Wrench -> Extensions -> !AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
+Wrench -> Tools -> Extensions -> !AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
 
 == How do I blacklist something? ==
 
-Press Ctrl-Shift-K on a page once it has finished loading, and you'll get a blacklisting UI.  You can also add the browser action button via the Options page, and blacklist from there.
+Right-click on a page once it has finished loading, select "Block an ad on this page..." and you'll get a blacklisting UI or simply right-click an ad on a page and select "Block this ad".  You can also add the browser action button via the Options page, and blacklist from there.
 
 == How do I undo if I blacklisted something accidentally? ==
 
@@ -19,7 +19,7 @@ The blacklist UI creates entries in the blacklist table on the Options page.  Yo
 
 == How do I stop !AdBlock from running on a page? ==
 
-Press Ctrl-Shift-L (or use the browser action button) on a page and you'll have the option to exclude that domain.  The Options page gives you a list of all excluded domains.
+Right-click (or use the browser action button) on a page, select "Don't run on this domain..." and you'll have the option to exclude that domain.  The Options page gives you a list of all excluded domains.
 
 == Does this actually prevent ads from downloading? ==
 
