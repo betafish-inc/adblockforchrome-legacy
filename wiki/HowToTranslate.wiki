@@ -84,9 +84,6 @@ Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextme
 ===== \_locales\it\messages.json =====
 Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
 
-===== \_locales\hu\messages.json =====
-Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
-
 ===== \_locales\fr\messages.json =====
 Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
 
