@@ -76,10 +76,10 @@ When there is an issue with your lists, for example a string is missing, we will
 {{{
 ===== \_locales\zh_CN\messages.json =====
 Some variables are broken or missing in an item at line 87
-Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, pleaserestart, showcontextmenus
+Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, showcontextmenus
 
 ===== \_locales\mk\messages.json =====
-Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, pleaserestart, showcontextmenus
+Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, showcontextmenus
 
 ===== \_locales\it\messages.json =====
 Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
