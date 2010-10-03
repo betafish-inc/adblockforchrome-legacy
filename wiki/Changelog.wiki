@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.2*: Make the Chrome right click menu disappear properly when requested or paused or whitelisted
+
 *2.2.1*: Typo fix
 
 *2.2.0*: Add a browser button to AdBlock (integrating the Browser Button For AdBlock extension.)  Also add support for pausing Chrome AdBlock via the browser button.
