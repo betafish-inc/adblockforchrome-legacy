@@ -265,6 +265,8 @@ EasyList if you subscribe to an EasyList additional list (famlam)
 
 == Changelog for the "Browser Button For !AdBlock" extension ==
 
+*0.0.8*: Removes support for extension. Please install Adblock 2.2
+
 *0.0.7*: Pointing to the new location of the options page.
 
 *0.0.6*: Don't bomb when someone tries to whitelist a file://.
