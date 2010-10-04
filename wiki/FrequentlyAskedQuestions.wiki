@@ -5,9 +5,9 @@
 
 <wiki:toc max_depth="2" />
 
-== How do I get to the Options page? ==
+== How do I hide the browser action button? ==
 
-Wrench -> Tools -> Extensions -> !AdBlock Options.  From there you can subscribe to filters, change your settings, and play with your blacklist and whitelist.
+If you'd rather hide the browser button, you can do so by moving your mouse just to the right of the address bar where the cursor becomes a ⟺, then dragging to the right.  This hides the button under a ≫ icon.  If you want to be able to hide the button without seeing the ≫ icon, star http://crbug.com/57824.
 
 == How do I blacklist something? ==
 
