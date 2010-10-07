@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.3*: Move the browser button back into a separate extension until Chrome supports fully hiding browser buttons.
+
 *2.2.2*: Make the Chrome right click menu disappear properly when requested or paused or whitelisted
 
 *2.2.1*: Typo fix
