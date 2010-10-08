@@ -5,10 +5,6 @@
 
 <wiki:toc max_depth="2" />
 
-== How do I hide the browser action button? ==
-
-If you'd rather hide the browser button, you can do so by moving your mouse just to the right of the address bar where the cursor becomes a ⟺, then dragging to the right.  This hides the button under a ≫ icon.  If you want to be able to hide the button without seeing the ≫ icon, star http://crbug.com/57824.
-
 == How do I blacklist something? ==
 
 Right-click on a page once it has finished loading, select "Block an ad on this page..." and you'll get a blacklisting UI or simply right-click an ad on a page and select "Block this ad".  You can also add the browser action button via the Options page, and blacklist from there.
@@ -26,10 +22,6 @@ Right-click (or use the browser action button) on a page, select "Don't run on t
 Yes, but some ads still slip through as this feature isn't fully supported by Chrome yet. Please star issue chromium:35897 if you want Chrome to implement this.
 Also we are not yet able to block ads that appear in other plugins, like Flash.
 
-== Isn't that slow? ==
-
-Nope!  We do as much as we can to optimize the rules in your filter lists.  A simple example is that we jump through some hoops to convert as many regular-expression-based rules as we can to substring-matching rules, because that's much faster in Chrome.
-
 == Are you the same guys that made !AdBlockPlus for Firefox? ==
 
 No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
@@ -38,24 +30,21 @@ No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The 
 
 No, we only maintain the !AdBlock custom filters. All other lists are maintained by volunteers that are not connected to !AdBlock. (Except for the Dutch list, which is maintained by !FamLam). To contact a list maintainer you can use the links or email addresses in ListAuthorContacts for the default lists. For custom lists you often have to look in the list itself to see if there is a contact address.
 
-== When I install, Chrome warns me that !AdBlock will have access to all my private data! ==
+== When I install, Chrome warns me that !AdBlock will have access to all my private data and browsing history! ==
 
-It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing.
+It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing and what URLs you visit.
 
 In Firefox, the situation was worse: every extension had the power to access your private data, and you weren't informed.  In Chrome, at least, those extensions that need to run on every page show you a warning before you install them!
 
-It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is (as of writing) the #2 most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
+It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
 
 == How can I help? ==
 
 Oh man, lots of ways:
 
   * Report a bug via the Issues tab above.
-  * Report an ad in the same place.
-  * Update ad reports with the filters that would block the ad.
   * Verify that you can reproduce an existing bug.  Turn on debugging via !AdBlock Options, and see if anything interesting shows up in the Javascript Console.
   * Offer to translate
-  * Rate us five stars on the installation page at http://bit.ly/ChromeAdBlock .
   * Tell your friends about us!
 See also: HowToContribute
 
