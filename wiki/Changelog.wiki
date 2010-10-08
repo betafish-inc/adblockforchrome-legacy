@@ -275,7 +275,13 @@ EasyList if you subscribe to an EasyList additional list (famlam)
 
 == Changelog for the "Browser Button For !AdBlock" extension ==
 
-*0.0.8*: Removes support for extension. Please install Adblock 2.2
+*0.0.11*: Fix incorrect click behavior in the menu.
+
+*0.0.10*: Gray out the button on sites where AdBlock can't run (e.g. about:blank).
+
+*0.0.9*: Re-enabled the extension because people didn't like the inability to hide the button in AdBlock.
+
+*0.0.8*: Disabled extension while AdBlock had the button integrated.
 
 *0.0.7*: Pointing to the new location of the options page.
 
