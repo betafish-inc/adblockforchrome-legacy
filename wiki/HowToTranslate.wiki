@@ -75,20 +75,40 @@ When there is an issue with your lists, for example a string is missing, we will
 
 {{{
 ===== \_locales\zh_CN\messages.json =====
-Some variables are broken or missing in an item at line 87
-Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, showcontextmenus
+Missing translations: somequicksetup
+
+===== \_locales\sl\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
+===== \_locales\pl\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\mk\messages.json =====
-Missing translations: blacklistclickmessage, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, showcontextmenus
+Missing translations: blacklistclickmessage, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, showcontextmenus, somequicksetup
+
+===== \_locales\ko\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\it\messages.json =====
-Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
+===== \_locales\id\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
+===== \_locales\hu\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\fr\messages.json =====
-Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\el\messages.json =====
-Missing translations: contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
+===== \_locales\de\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
+===== \_locales\cs\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 }}}
 
 
