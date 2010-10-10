@@ -103,9 +103,6 @@ Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, c
 
 ===== \_locales\de\messages.json =====
 Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
-
-===== \_locales\cs\messages.json =====
-Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 }}}
 
 
