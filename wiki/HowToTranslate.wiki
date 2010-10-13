@@ -80,6 +80,9 @@ Missing translations: somequicksetup
 ===== \_locales\sl\messages.json =====
 Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
+===== \_locales\pt_BR\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
 ===== \_locales\pl\messages.json =====
 Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
