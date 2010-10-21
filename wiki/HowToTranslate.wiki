@@ -98,6 +98,9 @@ Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, c
 ===== \_locales\fr\messages.json =====
 Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 
+===== \_locales\es\messages.json =====
+Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
+
 ===== \_locales\el\messages.json =====
 Missing translations: chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, donaterequest, installedtitle, installisdone, setotheroptions, somequicksetup
 }}}
