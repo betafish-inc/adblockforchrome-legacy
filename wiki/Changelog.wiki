@@ -277,6 +277,8 @@ EasyList if you subscribe to an EasyList additional list (famlam)
 
 == Changelog for the "Browser Button For !AdBlock" extension ==
 
+*0.0.12*: Fix the link to the options page.
+
 *0.0.11*: Fix incorrect click behavior in the menu.
 
 *0.0.10*: Gray out the button on sites where AdBlock can't run (e.g. about:blank).
