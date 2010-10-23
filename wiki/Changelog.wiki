@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.7*: Vastly simplified mechanism for dealing with ads in Chrome that load before the filter engine is in place (famlam)
+
 *2.2.6*: Memory and speed improvements (famlam)
 
 *2.2.5*: Don't let users try to block the BODY tag
