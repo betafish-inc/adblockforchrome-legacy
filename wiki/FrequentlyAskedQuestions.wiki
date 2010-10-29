@@ -26,6 +26,12 @@ Also we are not yet able to block ads that appear in other plugins, like Flash.
 
 No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
+== My settings aren't saved and/or I see a pop up every time I start Chrome ==
+
+This can have two reasons: 
+1. Your settings file is corrupt. Chrome is working on a fix for this
+2. You have a hyperactive 'disk cleaner' program. You have to allow the 'LocalStorage' from Chrome/Safari, as our settings are saved in a LocalStorage file.
+
 == Do you recommend to subscribe to all filter lists? ==
 
 No, not at all. Every filter has to be tested on each resource load. The more filters you have, the longer this will take. So every filter list written in languages you can't even read will slow you down without matching anything. Further, the more filter lists you are subscribed to, the more likely a resource will be incorrectly blocked. You can off course report it to the maintainer of that list [ListAuthorContacts here], but if you don't have to report anything, it's always easier. Last but not least: by subscribing to all filters, you are wasting bandwidth of the filter list authors. As said before, you won't use the filters, but they are still downloaded every 21 days or less.
