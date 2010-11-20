@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.8*: Use less memory in Chrome
+
 *2.2.7*: Vastly simplified mechanism for dealing with ads in Chrome that load before the filter engine is in place (famlam).  Also, we're now at 18 languages -- see http://bit.ly/AdBlockTranslations for the list and for credits!
 
 *2.2.6*: Memory and speed improvements (famlam)
