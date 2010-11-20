@@ -19,7 +19,7 @@ Right-click (or use the browser action button) on a page, select "Don't run on t
 
 == Does this actually prevent ads from downloading? ==
 
-Yes, but some ads still slip through as this feature isn't fully supported by Chrome yet. Please star issue chromium:35897 if you want Chrome to implement this.
+Yes, but some ads still slip through as this feature isn't fully supported by Chrome yet. Please star [http://crbug.com/35897 Chromium issue 35897] if you want Chrome to implement this.
 Also we are not yet able to block ads that appear in other plugins, like Flash.
 
 == Are you the same guys that made !AdBlockPlus for Firefox? ==
