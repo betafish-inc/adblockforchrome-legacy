@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.12*: Roll back chrome.tabs.insertCSS() work while we figure out how to make it run earlier and how to be specific for different iframes on a page.
+
 *2.2.11*: Fix tagging typo
 
 *2.2.10*: Use Chrome API for CSS hiding which should improve RAM and speed in Chrome.
