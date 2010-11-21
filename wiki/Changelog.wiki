@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.11*: Fix tagging typo
+
 *2.2.10*: Use Chrome API for CSS hiding which should improve RAM and speed in Chrome.
 
 *2.2.9*: Work around Chrome bugs related to chrome.tabs and SVG images.  'background' type now deprecated in filter lists.  Special cases for hotmail.com and hk-pub.com.  Add note to ad reporter about video ads not being blockable yet except in Youtube.  Speed up ad blocking in Chrome by removing a redundant regex parse. (All by Famlam!)
