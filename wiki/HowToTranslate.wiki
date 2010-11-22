@@ -83,9 +83,6 @@ Missing translations: cantblockflash, cantblockflashwarning, filecleanerwarning,
 ===== \_locales\sl\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, filecleanerwarning, flashads
 
-===== \_locales\ru\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, filecleanerwarning, flashads
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, donaterequest, filecleanerwarning, flashads, installedtitle, installisdone, setotheroptions, somequicksetup
 
