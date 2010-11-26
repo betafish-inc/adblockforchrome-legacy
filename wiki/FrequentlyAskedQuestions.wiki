@@ -28,9 +28,10 @@ No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The 
 
 == My settings aren't saved and/or I see a pop up every time I start Chrome ==
 
-This can have two reasons: 
+This can have these reasons: 
  # Your settings file is corrupt. Chrome is working on a fix for this
  # You have a hyperactive 'disk cleaner' program. You have to allow the '!LocalStorage' from Chrome/Safari, as our settings are saved in a !LocalStorage file.
+ # Also make sure your browser has access to the folder where !LocalStorage files are stored
 
 == Do you recommend to subscribe to all filter lists? ==
 
