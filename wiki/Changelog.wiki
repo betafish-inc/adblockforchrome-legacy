@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.15*: Updated text description for web store launch
+
 *2.2.14*: Fix broken Spanish translation.  jQuery-1.4.4 for speed improvements.  Small bugfixes and improvements.
 
 *2.2.13*: Subscribe non-English-speakers to an appropriate Easylist sublist (Famlam)
