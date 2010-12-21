@@ -77,20 +77,14 @@ When there is an issue with your lists, for example a string is missing, we will
 ===== \_locales\zh_TW\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
 
-===== \_locales\zh_CN\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description, somequicksetup
-
 ===== \_locales\sl\messages.json =====
-Missing translations: donaterequest2
-
-===== \_locales\ru\messages.json =====
 Missing translations: donaterequest2
 
 ===== \_locales\ro\messages.json =====
 Missing translations: donaterequest2
 
 ===== \_locales\pt_BR\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\pl\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
@@ -99,39 +93,30 @@ Missing translations: cantblockflash, cantblockflashwarning, description1, donat
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
 
 ===== \_locales\mk\messages.json =====
-Missing translations: blacklistclickmessage, cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, showcontextmenus, somequicksetup
-
-===== \_locales\ko\messages.json =====
-Missing translations: donaterequest
+Missing translations: blacklistclickmessage, cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, showcontextmenus, somequicksetup
 
 ===== \_locales\ja\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
 
 ===== \_locales\it\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\id\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\hu\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\fr\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\es\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
 
-===== \_locales\en\messages.json =====
-Missing translations: donaterequest
-
 ===== \_locales\el\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
+Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
 
 ===== \_locales\de\messages.json =====
-Missing translations: donaterequest2
-
-===== \_locales\cs\messages.json =====
 Missing translations: donaterequest2
 }}}
 
