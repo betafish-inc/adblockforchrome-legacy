@@ -77,10 +77,10 @@ When there is an issue with your lists, for example a string is missing, we will
 ===== \_locales\zh_TW\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
 
-===== \_locales\sl\messages.json =====
+===== \_locales\tr\messages.json =====
 Missing translations: donaterequest2
 
-===== \_locales\ro\messages.json =====
+===== \_locales\sl\messages.json =====
 Missing translations: donaterequest2
 
 ===== \_locales\pt_BR\messages.json =====
@@ -115,9 +115,6 @@ Missing translations: cantblockflash, cantblockflashwarning, description1, donat
 
 ===== \_locales\el\messages.json =====
 Missing translations: cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, filecleanerwarning, flashads, free_description, installedtitle, installisdone, setotheroptions, somequicksetup
-
-===== \_locales\de\messages.json =====
-Missing translations: donaterequest2
 }}}
 
 
