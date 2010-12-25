@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.2.22*: Validate filters on download instead of when inputting into filter engine, because we input into filter engine on every page load.  Saves 50ms per frame.  Goooo famlam!
+*2.2.22*: Validate filters on download instead of when inputting into filter engine, because we input into filter engine on every page load.  Saves 50ms per frame.  Goooo famlam! Also fix the parsing of `@@||$domain=domain.com` filters
 
 *2.2.21*: New and improved Youtube ad blocking (famlam)
 
