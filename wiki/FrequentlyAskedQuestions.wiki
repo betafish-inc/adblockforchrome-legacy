@@ -49,6 +49,12 @@ In Firefox, the situation was worse: every extension had the power to access you
 
 It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
 
+== How do I uninstall? ==
+
+Chrome: Go to chrome://extensions -> !AdBlock Uninstall.
+
+Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
+
 == How can I help? ==
 
 Oh man, lots of ways:
