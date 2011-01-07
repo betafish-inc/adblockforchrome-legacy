@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.24*: See which filter lists should be added to or removed from the options page.
+
 *2.2.23*: In Chrome, reduce overall browser RAM usage by up to 30%, and decrease !AdBlock run time by about 50% :D
 
 *2.2.22*: Validate filters on download instead of when inputting into filter engine, because we input into filter engine on every page load.  Saves 50ms per frame.  Goooo famlam! Also fix the parsing of `@@||$domain=domain.com` filters
