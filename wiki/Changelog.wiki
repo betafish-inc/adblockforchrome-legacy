@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.25*: Handle new EasyPrivacy filter that was breaking many websites
+
 *2.2.24*: See which filter lists should be added to or removed from the options page.
 
 *2.2.23*: In Chrome, reduce overall browser RAM usage by up to 30%, and decrease !AdBlock run time by about 50% :D
