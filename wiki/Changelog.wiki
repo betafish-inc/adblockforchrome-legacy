@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.27*: Ignore filters if they contain unknown options (famlam)
+
 *2.2.26*: Support requiresLocation in abp:subscribe links (famlam)
 
 *2.2.25*: Handle new !EasyPrivacy filter that was breaking many websites
