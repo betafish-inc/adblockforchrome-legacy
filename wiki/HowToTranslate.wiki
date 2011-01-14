@@ -74,9 +74,6 @@ Just attach your file to your entry in the [http://code.google.com/p/adblockforc
 When there is an issue with your lists, for example a string is missing, we will add it to the list below. Isn't your list shown, then no issues are present.
 
 {{{
-===== \_locales\zh_TW\messages.json =====
-Missing translations: cantblockflash, cantblockflashwarning, description1, donaterequest2, filecleanerwarning, flashads, free_description
-
 ===== \_locales\tr\messages.json =====
 Missing translations: donaterequest2
 
