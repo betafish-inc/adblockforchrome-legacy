@@ -7,7 +7,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*2.2.28*: Support $document filter syntax, allowing individual pages to be whitelisted (Famlam)
+*2.2.28*: Support $document filter syntax, allowing individual pages to be whitelisted.  Also added $elemhide support. (Famlam)
 
 *2.2.27*: Ignore filters if they contain unknown options (famlam)
 
