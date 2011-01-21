@@ -104,9 +104,6 @@ Missing translations: adreport2, blockmoreads, cantblockflash, cantblockflashwar
 ===== \_locales\mk\messages.json =====
 Missing translations: adreport2, blacklistclickmessage, blockmoreads, cantblockflash, cantblockflashwarning, chromebutton_how_to_disable, chromebutton_how_to_enable, chromebutton_showoption, contextmenuexcludedomain, contextmenuhideanything, contextmenuhidethis, description1, donaterequest2, excludedomainorurl, filecleanerwarning, filterlistsrock, flashads, free_description, installedtitle, installisdone, linkunblock, nodefaultfilter1, setotheroptions, showcontextmenus, somequicksetup, tabcustomize, tabcustomizetitle, unblocktitle
 
-===== \_locales\ko\messages.json =====
-Missing translations: adreport2, blockmoreads, excludedomainorurl, filterlistsrock, linkunblock, nodefaultfilter1, tabcustomize, tabcustomizetitle, unblocktitle
-
 ===== \_locales\ja\messages.json =====
 Missing translations: adreport2, blockmoreads, cantblockflash, cantblockflashwarning, description1, donaterequest2, excludedomainorurl, filecleanerwarning, filterlistsrock, flashads, free_description, linkunblock, nodefaultfilter1, tabcustomize, tabcustomizetitle, unblocktitle
 
