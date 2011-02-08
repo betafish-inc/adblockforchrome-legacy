@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.2.30*: Support opt-in to Google ads when not subscribed to EasyList (famlam)
+
 *2.2.29*: Localization updates, correct a URL scheme bug, and remove dead code
 
 *2.2.28*: Support $document filter syntax, allowing individual pages to be whitelisted.  Also added $elemhide support. (Famlam)
