@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.0*: Add a toolbar button [again], retiring the Browser Button For AdBlock extension.
+
 *2.2.32*: Bugfix: new installation page was showing checked 'Show a toolbar button' checkbox
 
 *2.2.31*: Bugfix on ad report page (john) and more thorough validation of custom blacklist entries (famlam)
