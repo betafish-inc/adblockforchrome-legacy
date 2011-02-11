@@ -33,9 +33,9 @@ Only via the link at the bottom of AdBlock Options -> Blacklist, please, as it h
   1 Type "svn diff > mycontribution.patch" to create a patchfile
   1 Attach the patchfile to the Issue.
 
-== Translate AdBlock into your own language ==
+== Translate !AdBlock into your own language ==
 
-If you want to translate AdBlock into your own language read this [http://code.google.com/p/adblockforchrome/wiki/HowToTranslate HowToTranslate Wiki].
+If you want to translate !AdBlock into your own language read this [http://code.google.com/p/adblockforchrome/wiki/HowToTranslate HowToTranslate Wiki].
 
 == Tell your friends! ==
 
