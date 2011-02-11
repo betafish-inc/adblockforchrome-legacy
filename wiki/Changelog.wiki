@@ -1,5 +1,5 @@
 ﻿#summary What has changed between releases.
-#labels Featured
+#labels Featured,Restrict-AddWikiComment-Commit
 
 = Changelog =
 
