@@ -131,9 +131,6 @@ Missing translations: adblock_is_disabled_on_domain, blacklistereditinvalid1, ch
 ===== \_locales\de\messages.json =====
 Missing translations: adblock_is_disabled_on_domain, blacklistereditinvalid1, chromebutton_how_to_hide, cleanuplist, did_you_know_this_is_my_full_time_job, disabled_by_filter_lists, dont_run_on_domain, dont_run_on_this_page, enable, hide_this_button, new_version, newtitle, options, pause_adblock, status_disabled, status_paused, this_toolbar_button, unpause, yes_toolbar_button
 
-===== \_locales\cs\messages.json =====
-Missing translations: adblock_is_disabled_on_domain, chromebutton_how_to_hide, did_you_know_this_is_my_full_time_job, disabled_by_filter_lists, dont_run_on_domain, dont_run_on_this_page, enable, hide_this_button, new_version, newtitle, options, pause_adblock, status_disabled, status_paused, this_toolbar_button, unpause, yes_toolbar_button
-
 ===== \_locales\ar\messages.json =====
 Missing translations: adblock_is_disabled_on_domain, adreport2, blacklistereditinvalid1, blockmoreads, chromebutton_how_to_hide, cleanuplist, did_you_know_this_is_my_full_time_job, disabled_by_filter_lists, dont_run_on_domain, dont_run_on_this_page, enable, excludedomainorurl, filterlistsrock, hide_this_button, linkunblock, new_version, newtitle, nodefaultfilter1, options, pause_adblock, status_disabled, status_paused, tabcustomize, tabcustomizetitle, this_toolbar_button, unblocktitle, unpause, yes_toolbar_button
 }}}
