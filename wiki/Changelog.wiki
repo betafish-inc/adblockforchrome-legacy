@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.2*: Fix positioning of blacklist wizard (wormboy.d).  Fix hide button message bug on mac.
+
 *2.3.1*: Tell Mac users workaround for hiding button, since Chrome 9 failed to ship Hide Button on Mac (famlam)
 
 *2.3.0*: Add a toolbar button (again), retiring the Browser Button For !AdBlock extension.
