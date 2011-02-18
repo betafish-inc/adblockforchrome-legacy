@@ -78,7 +78,7 @@ Safari: You may have auto-update of extensions turned off.  Turn it on at Safari
 
 Sure.  Add this filter to your custom filters:
 
-@@*$document,domain=~domain1.com|~domain2.com|~domain3.com
+{{{@@*$document,domain=~domain1.com|~domain2.com|~domain3.com}}}
 
 where domain1.com etc. are the sites where you want to block ads.
 
