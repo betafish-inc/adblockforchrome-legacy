@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.4*: Fix a bug: whitelisting a page wasn't updating the toolbar icon immediately (famlam)
+
 *2.3.3*: Show hide button message on install page too
 
 *2.3.2*: Fix positioning of blacklist wizard (wormboy.d).  Fix hide button message bug on mac.
