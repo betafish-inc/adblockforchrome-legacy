@@ -31,6 +31,10 @@ No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The 
 
 Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock options, Customize tab, click Edit, and paste them in that text box.
 
+== Can I synchronize my settings and filters among multiple computers? ==
+
+Not automatically.  We're waiting on Chrome to add support for that.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
+
 == My settings aren't saved and/or I see a pop up every time I start Chrome ==
 
 This can have these reasons: 
