@@ -44,4 +44,6 @@ If you want to translate !AdBlock into your own language read this [http://code.
 Tweet links to http://chromeadblock.com and http://safariadblock.com, email people, rent a megaphone and go to the student union, that kind of thing.  I would expect that millions of users are still using Firefox solely because they don't know !AdBlock exists for Chrome and Safari.  Also, if you know friends who are web programmers, tell them we'd love code contributions! :)
 
 
-More questions?  Email adblockforchrome-discuss@googlegroups.com .
+== More questions? ==
+
+Email adblockforchrome-discuss@googlegroups.com .
