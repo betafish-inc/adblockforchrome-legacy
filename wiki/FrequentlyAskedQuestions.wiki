@@ -84,12 +84,8 @@ where domain1.com etc. are the sites where you want to block ads.
 
 == How can I help? ==
 
-Oh man, lots of ways:
+Thanks for asking!  see HowToContribute .
 
-  * Report a bug via the Issues tab above.
-  * Verify that you can reproduce an existing bug.  Turn on debugging via !AdBlock Options, and see if anything interesting shows up in the Javascript Console.
-  * Offer to translate
-  * Tell your friends about us!
-See also: HowToContribute
+== Where can I ask a question or get in touch? ==
 
-Thanks for asking! :)
+Send an email to adblockforchrome-discuss@googlegroups.com -- we're always listening!
