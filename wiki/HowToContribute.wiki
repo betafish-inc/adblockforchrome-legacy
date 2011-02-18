@@ -1,7 +1,7 @@
 #summary Things you can do to contribute to AdBlock.
 #labels Featured,Restrict-AddWikiComment-Commit
 
-Would you be interested in making !AdBlock better for our million plus users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
+Would you be interested in making !AdBlock better for our 2 million users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
 
 = Ways to contribute =
 
@@ -11,7 +11,7 @@ On the installation page at chromeadblock.com users leave comments and questions
 
 == Verify a bug! ==
 
-  1 Find an [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type-Defect&colspec=ID+Stars+Type+Status+Priority+Area+Summary&x=area&y=priority&cells=tiles open bug] that doesn't have a comment saying that someone else has reproduced the bug.
+  1 Find an [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type-Defect&colspec=ID+Stars+Type+Status+Priority+Area+Summary&x=area&y=priority&cells=tiles open bug] that looks interesting to you.
   1 Follow the steps to reproduce it, exactly as reported in the Issue.
   1 Leave a comment telling whether it happens for you or not.  The more info about your system you can provide, the better.
 
@@ -21,7 +21,7 @@ via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link 
 
 == File an ad report! ==
 
-Only via the link at the bottom of AdBlock Options -> Blacklist, please, as it helps you report all the right information.
+Only via the link at the bottom of AdBlock Options -> Customize, please, as it helps you report all the right information.
 
 == Fix a bug or a add a new feature! ==
 
@@ -33,6 +33,8 @@ Only via the link at the bottom of AdBlock Options -> Blacklist, please, as it h
   1 Type "svn diff > mycontribution.patch" to create a patchfile
   1 Attach the patchfile to the Issue.
 
+After you do this once, if you'd like to become an official contributor, we'll give you commit bits to the repo.
+
 == Translate !AdBlock into your own language ==
 
 If you want to translate !AdBlock into your own language read this [http://code.google.com/p/adblockforchrome/wiki/HowToTranslate HowToTranslate Wiki].
@@ -41,10 +43,5 @@ If you want to translate !AdBlock into your own language read this [http://code.
 
 Tweet links to http://chromeadblock.com and http://safariadblock.com, email people, rent a megaphone and go to the student union, that kind of thing.  I would expect that millions of users are still using Firefox solely because they don't know !AdBlock exists for Chrome and Safari.  Also, if you know friends who are web programmers, tell them we'd love code contributions! :)
 
-== Become a regular contributor! ==
 
-As of August 2010 !AdBlock has had four people besides the author pour their love into the project via all of the methods above (and I'm eternally grateful!)  If you'd like to contribute bug fixes or fix ad reports regularly, here's a path that seems to work:
-
-  1 If you'd like, create ad reports that include correct filters to fix the problem.  We'll apply the filters for you.
-  1 If you'd like, create patches to address open Issues.  We'll apply the patches for you.
-  1 Drop a line in the [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev] Google Group asking to become an official contributor so you can apply your filters and patches directly.  If you've regularly contributed up to this point and your contributions are high-quality, we'll be more than happy to have you join the group.
+More questions?  Email adblockforchrome-discuss@googlegroups.com .
