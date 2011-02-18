@@ -22,9 +22,14 @@ Right-click (or use the browser action button) on a page, select "Don't run on t
 Yes, but some ads still slip through as this feature isn't fully supported by Chrome yet. Please star [http://crbug.com/35897 Chromium issue 35897] if you want Chrome to implement this.
 Also we are not yet able to block ads that appear in other plugins, like Flash.
 
-== Are you the same guys that made !AdBlockPlus for Firefox? ==
+== Are you the same guys that made Adblock Plus for Firefox? ==
 
 No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
+
+
+== Can I import my filters from Adblock Plus for Firefox? ==
+
+Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock options, Customize tab, click Edit, and paste them in that text box.
 
 == My settings aren't saved and/or I see a pop up every time I start Chrome ==
 
@@ -54,6 +59,24 @@ It comes down to *trust*: you should not install extensions that ask for more pe
 Chrome: Go to chrome://extensions -> !AdBlock Uninstall.
 
 Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
+
+== My browser won't update to the latest version of !AdBlock! ==
+
+Chrome: Go to https://chrome.google.com/extensions/detail/gighmmpiobklfepjocnamgkkbiglidom and click 'Install' to force the update.
+
+Safari: You may have auto-update of extensions turned off.  Turn it on at Safari -> Preferences -> Extensions.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
+
+== I see ads in a video! ==
+
+!AdBlock can block ads in many !YouTube videos, but not in videos on other websites.  We're waiting on support from Chrome to be able to block ads in videos everywhere.
+
+== Can !AdBlock be set to block ads only on a few sites? ==
+
+Sure.  Add this filter to your custom filters:
+
+@@*$document,domain=~domain1.com|~domain2.com|~domain3.com
+
+where domain1.com etc. are the sites where you want to block ads.
 
 == How can I help? ==
 
