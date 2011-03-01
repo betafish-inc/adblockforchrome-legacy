@@ -9,21 +9,17 @@ Would you be interested in making !AdBlock better for our 2 million users?  We w
 
 On the installation page at chromeadblock.com users leave comments and questions, and there aren't that many different questions they ask.  They also consistently fail to see the links to the FAQ and to this project page.  Read FrequentlyAskedQuestions, then drop comments answering questions while gently directing users to the FAQ link.
 
-== Verify a bug! ==
+== Verify a bug ==
 
   1 Find an [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type-Defect&colspec=ID+Stars+Type+Status+Priority+Area+Summary&x=area&y=priority&cells=tiles open bug] that looks interesting to you.
   1 Follow the steps to reproduce it, exactly as reported in the Issue.
   1 Leave a comment telling whether it happens for you or not.  The more info about your system you can provide, the better.
 
-== File a bug or feature request! ==
+== File a bug report or feature request ==
 
 via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link on the Issues tab.  It helps us a lot if you provide all the info we ask for.
 
-== File an ad report! ==
-
-Only via the link at the bottom of AdBlock Options -> Customize, please, as it helps you report all the right information.
-
-== Fix a bug or a add a new feature! ==
+== Fix a bug or a add a new feature ==
 
 !AdBlock is written in Javascript, HTML, and CSS, and there are almost always open Issues that only require CSS or HTML changes, even if you don't know Javascript.  Here's how to help:
 
@@ -42,6 +38,32 @@ If you want to translate !AdBlock into your own language read this [http://code.
 == Tell your friends! ==
 
 Tweet links to http://chromeadblock.com and http://safariadblock.com, email people, rent a megaphone and go to the student union, that kind of thing.  I would expect that millions of users are still using Firefox solely because they don't know !AdBlock exists for Chrome and Safari.  Also, if you know friends who are web programmers, tell them we'd love code contributions! :)
+
+== Committers ==
+
+Here's more info for you once you have commit bits:
+
+=== Mailing lists ===
+
+Subscribe to the adblockforchrome-dev Google Group, which is where we do all our discussion that isn't in Issues or code reviews.  Also subscribe to the adblockforchrome-discuss Google Group to help answer FAQs from users.
+
+=== Committing code ===
+
+Instead of fixing issues in a patch file, you should make `branches/issue-NNNN` for the issue and make your changes there.  When you're done and you've tested them thoroughly, mark the Issue as `Status:ReadyForRelease`.  I'll review your code for bugs/style, then I'll merge your branch to trunk and set `Status:Fixed`.
+
+=== Coding style ===
+
+Please comment every function you write with a description of what it does, a list of inputs, and what it returns.  See `background.html` for some examples.  Variables should be clearly named instead of short.  When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When in doubt about capitalization, follow the rules of the code around you.  It's mostly `ClassName.functionName with_underscored_vars`.
+
+The code isn't 100% (or even 80%, probably) adherent to the rules in the previous paragraph.  Refactoring is great -- whenever you touch some code, feel free to clean it up.
+
+=== Ad reports ===
+
+In addition to triaging bugs, you can triage ad reports.  They come in via a reporting wizard that makes sure they shouldn't have reported the ad to a filter list maintainer instead.  Verify the ad, find the filter that fixes it (you can test it via the Customize tab), put it directly into `trunk/filters/adblock_custom.txt`, and set `Status:Fixed`.  If you put in a bad filter you can break all of !AdBlock (e.g., no images load on the entire web), so be extra-sure that you get this right!
+
+=== Getting help ===
+
+The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `ReadyToRelease` or `Fixed` :)  But if you get stuck, or have a question, you can cc gundlach on the Issue and I'll get emailed about it.
 
 
 == More questions? ==
