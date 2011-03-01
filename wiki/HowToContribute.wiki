@@ -65,6 +65,7 @@ In addition to triaging bugs, you can triage ad reports.  They come in via a rep
 
 The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `ReadyToRelease` or `Fixed` :)  But if you get stuck, or have a question, you can cc gundlach on the Issue and I'll get emailed about it.
 
+If there's a critical issue that needs my immediate attention, set it to Priority:Critical.  I'll get an email automatically.  Feel free also to set Priority:High on any issue that you think should be on the shortlist to complete (or just set yourself as owner and start coding!)
 
 == More questions? ==
 
