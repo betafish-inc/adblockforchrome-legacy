@@ -11,7 +11,7 @@ Right-click on a page once it has finished loading, select "Block an ad on this 
 
 == How do I undo if I blacklisted something accidentally? ==
 
-The blacklist UI creates entries in the blacklist table on the Options page.  You can add, replace, or remove entries there if you are feeling advanced.
+The blacklist UI creates entries in the customized filters tab on the Options page. You can add, replace, or remove filters there if you are feeling advanced.
 
 == How do I stop !AdBlock from running on a page? ==
 
