@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.10*: Don't show context menu in Chrome Extension Gallery
+
 *2.3.9*: Some resourceblock.html improvements and minor bugfixes (famlam, wormboy.d)
 
 *2.3.8*: Highlight the element you're about to click in the blacklist wizard (wormboy.d)
