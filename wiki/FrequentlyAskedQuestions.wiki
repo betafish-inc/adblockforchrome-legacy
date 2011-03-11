@@ -88,4 +88,4 @@ Thanks for asking!  see HowToContribute .
 
 == Where can I ask a question or get in touch? ==
 
-Send an email to adblockforchrome-discuss@googlegroups.com -- we're always listening!
+Send an email to adblockforchrome-discuss@googlegroups.com or post it [http://groups.google.com/group/adblockforchrome-discuss via the web interface] -- we're always listening!
