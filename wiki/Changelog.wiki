@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.12*: Fix "Block an ad on this page" from toolbar immediately after right clicking page (Naesten)
+
 *2.3.11*: Filter updates
 
 *2.3.10*: Don't show context menu in Chrome Extension Gallery
