@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.15*: Speed and code improvements, and don't let the blacklist and whitelist wizards be open at the same time (famlam, wormboy.d)
+
 *2.3.14*: General cleanup and refactoring of helper functions
 
 *2.3.13*: Make toolbar button tab-specific, so it looks right when multiple windows are open (Famlam)
