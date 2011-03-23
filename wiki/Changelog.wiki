@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.20*: Fix app description in manifest
+
 *2.3.19*: Show install page to Safari users, and create app version of AdBlock
 
 *2.3.18*: Fix broken signup for subscriptions
