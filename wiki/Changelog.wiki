@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.18*: Fix broken signup for subscriptions
+
 *2.3.17*: Internal code shufflins
 
 *2.3.16*: Fix opt-in to Google search ads when using Google Instant
