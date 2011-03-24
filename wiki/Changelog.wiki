@@ -373,6 +373,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Changelog for the "Browser Button For !AdBlock" extension ==
 
+*0.0.13*: Tell users to uninstall the button as it is integrated in the main extension
+
 *0.0.12*: Fix the link to the options page.
 
 *0.0.11*: Fix incorrect click behavior in the menu.
