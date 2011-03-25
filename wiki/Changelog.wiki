@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.23*: Text change
+
 *2.3.22*: Fix blank install page in Safari
 
 *2.3.21*: Fix Safari bug breaking !AdBlock after restart.  Thanks to conundrum on Freenode, plus the many users on the issue tracker (Issue 5384) who helped diagnose the problem!
