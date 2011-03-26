@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.24*: Fix blacklisting wizard manual editing bug (famlam)
+
 *2.3.23*: Text change
 
 *2.3.22*: Fix blank install page in Safari
