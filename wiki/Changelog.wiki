@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.27*: Test a new way to remove ads, which keeps some websites from breaking (famlam)
+
 *2.3.26*: Change app shipping
 
 *2.3.25*: Remove dead log message (Drew)
