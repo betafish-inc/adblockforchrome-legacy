@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.28*: Fix incognito app behavior. Fix manual filters paste bug (famlam).[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Blacklist wizard bugfix (wormboy).
+
 *2.3.27*: Test a new way to remove ads, which keeps some websites from breaking (famlam)
 
 *2.3.26*: Change app shipping
