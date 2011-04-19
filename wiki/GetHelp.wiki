@@ -1,0 +1,23 @@
+#summary Get help with an AdBlock problem.
+
+= under construction =
+
+= If you're having trouble... =
+
+Sorry to hear that!
+
+Try these things. (reboot, reinstall, delete localstorage)
+
+If you're in Safari, don't forgot to turn on autoupdate.
+
+= Known issues =
+
+We can't block video ads except on Youtube, and then imperfectly.
+
+If you subscribe to a ton of filter lists, it might run slowly.
+
+= If none the above help you... =
+
+[http://code.google.com/p/adblockforchrome/issues/entry Let us know] so we can figure things out with you.
+
+You can also see our [http://code.google.com/p/adblockforchrome/issues/ existing issues].
