@@ -1,4 +1,5 @@
 #summary Get help with an AdBlock problem.
+#labels Restrict-View-Committer
 
 = under construction =
 
