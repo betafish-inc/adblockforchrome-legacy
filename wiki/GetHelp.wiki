@@ -9,15 +9,15 @@ Sorry to hear that!
 
 Try these things. (reboot, reinstall, delete localstorage)
 
-If you're in Safari, don't forgot to turn on autoupdate.
+If you're using Safari, don't forget to turn on autoupdate.
 
 = Known issues =
 
-We can't block video ads except on Youtube, and then imperfectly.
+We can't block video ads except on Youtube, due to a limitation in Google Chrome and Safari. This isn't perfect either. If it doesn't work on Youtube, try reloading the page.
 
 If you subscribe to a ton of filter lists, it might run slowly.
 
-= If none the above help you... =
+= If none of the above help you... =
 
 [http://code.google.com/p/adblockforchrome/issues/entry Let us know] so we can figure things out with you.
 
