@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.3.32*: Fix bug related to clicking malformed filter list subscription links.  Thanks to Juho Nurminen for the report and most of the fix.  Also fix a leaking variable (famlam).
+
 *2.3.31*: Fix blacklister bug for Chinese users (famlam)
 
 *2.3.30*: !AdBlock Options in Safari now accessible through Extensions|Preferences.  Subscribe legacy users to language-specific filter lists if they've never set up their own lists.
