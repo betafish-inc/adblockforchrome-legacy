@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.2*: Bugfix in resourceblock; thanks to Juho again for the report.  Remove reference to dead file.
+
 *2.4.1*: Translators get credit under !AdBlock Options (Drewish).  Minor bug fixes and cleanup (famlam).  Lazy-load black and whitelisting code only when it's needed, to reduce memory in tabs.
 
 *2.4.0*: Restructuring of a few parts of the filtering engine, resulting in (on my fast laptop) a savings of 150-180ms per tab load(!), plus 3ms per resource on the page.  E.g. cnn.com with 150 resources saves about 650ms.
