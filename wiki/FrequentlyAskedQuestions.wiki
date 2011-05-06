@@ -66,7 +66,7 @@ Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
 
 == My browser won't update to the latest version of !AdBlock! ==
 
-Chrome: Go to https://chrome.google.com/extensions/detail/gighmmpiobklfepjocnamgkkbiglidom and click 'Install' to force the update.
+Chrome: Yes it will, it might just take a few weeks.  !AdBlock is so popular that Google tells your browser not to update as frequently, to save Google bandwidth.  If you must have the newest version now, you'll have to uninstall, then reinstall from https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom .  Make sure to copy any custom filters you've made under !AdBlock Options -> Customize so you can paste them back in.
 
 Safari: You may have auto-update of extensions turned off.  Turn it on at Safari -> Preferences -> Extensions.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
 
