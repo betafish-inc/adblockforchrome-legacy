@@ -35,7 +35,7 @@ Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock option
 
 Not automatically.  We're waiting on Chrome to add support for that.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
 
-== My settings aren't saved and/or I see a pop up every time I start Chrome ==
+== My settings aren't saved and/or I see a pop up every time I start the browser ==
 
 This can have these reasons: 
  # Your settings file is corrupt. Chrome is working on a fix for this
