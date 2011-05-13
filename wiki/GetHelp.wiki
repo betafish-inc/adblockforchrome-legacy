@@ -7,15 +7,17 @@
 
 Sorry to hear that!
 
+First make sure you have the latest version of AdBlock installed.
+
 Try these things. (reboot, reinstall, delete localstorage)
 
 If you're using Safari, don't forget to turn on autoupdate.
 
-If you only see a white page with some black dots when opening the !AdBlock options page in Safari on a Mac you should delete the LocalStorage file(s) of !AdBlock. To do this:
+If you only see a white page with some black dots when opening the !AdBlock options page in Safari on a Mac you should delete the !LocalStorage file(s) of !AdBlock. To do this:
 
  # Quit Safari
  # Open a Finder window by clicking on the Finder
- # Go to: Username -> Library -> Safari -> LocalStorage
+ # Go to: Username -> Library -> Safari -> !LocalStorage
  # Search for the "safari-extension_com.betafish.adblocksafari-letters&numbers.localstorage" file(s)
  # Delete this file(s)
 
