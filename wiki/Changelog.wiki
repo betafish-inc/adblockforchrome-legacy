@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.5*: Hide advanced features behind advanced checkbox
+
 *2.4.4*: Finish roll out of new install page
 
 *2.4.3*: Prettier new-install page, hopefully clearer to non-technical users as well
