@@ -3,13 +3,13 @@
 
 = Changelog =
 
-Note that !AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix (famlam).
+Note that !AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix.
 
 == Versions ==
 
 *2.4.6*: Typo
 
-*2.4.5*: Hide advanced features behind advanced checkbox
+*2.4.5*: Hide advanced features behind advanced checkbox (famlam)
 
 *2.4.4*: Finish roll out of new install page
 
