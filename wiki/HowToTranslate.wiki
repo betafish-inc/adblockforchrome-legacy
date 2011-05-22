@@ -71,7 +71,7 @@ Just attach your file to your entry in the [http://code.google.com/p/adblockforc
 
 = Maintaining =
 
-When there is an issue with your lists, for example a string is missing, we will add it to the list below. Isn't your list shown, then no issues are present. When you are going to update your translation, please download the latest version of the file from [http://code.google.com/p/adblockforchrome/source/browse/trunk#trunk%2F_locales here], as we sometimes remove unused strings ourself, but they probably won't be in your local copy.
+When there is an issue with your lists, for example a string is missing, we will add it to the list below. Isn't your list shown, then no issues are present. When you are going to update your translation, please download the latest version of the file from [http://adblockforchrome.googlecode.com/svn/trunk/_locales/XX/messages.json] (where XX is your language code), as we sometimes remove unused strings ourself, but they probably won't be in your local copy.
 
 {{{
 ===== \_locales\zh_TW\messages.json =====
