@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.8*: l10n typo
+
 *2.4.7*: i18n of the installation page. Switch to pay-what-you-want instead of donations.
 
 *2.4.6*: Typo
