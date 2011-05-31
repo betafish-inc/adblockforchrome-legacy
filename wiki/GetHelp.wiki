@@ -10,17 +10,17 @@ Make sure you have the latest version of AdBlock installed. Not sure what versio
 
 
 If that doesn't work, please try these things:
- # Reboot your computer
- # Uninstall AdBlock and then reinstall from ChromeAdBlock.com or SafariAdBlock.com depending which browser you're using.
- # Delete your localstorage. In Windows this can be found ... In Mac OS X, this can be found  ... here.
+  # Reboot your computer
+  # Uninstall AdBlock and then reinstall from ChromeAdBlock.com or SafariAdBlock.com depending which browser you're using.
+  # Delete your localstorage. In Windows this can be found ... In Mac OS X, this can be found  ... here.
 
 _Safari Users_: Don't forget to turn on autoupdate.
 
 = Known issues =
 
-* We can't block video ads except on Youtube, due to a limitation in Google Chrome and Safari. This isn't perfect either. If it doesn't work on Youtube, try reloading the page.
+  * We can't block video ads except on Youtube, due to a limitation in Google Chrome and Safari. This isn't perfect either. If it doesn't work on Youtube, try reloading the page.
 
-* If you subscribe to a ton of filter lists, it might run slowly. Please only subscribe to filters you *need*.
+  * If you subscribe to a ton of filter lists, it might run slowly. Please only subscribe to filters you *need*.
 
 = If none of the things above help you... =
 
