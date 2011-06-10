@@ -14,7 +14,7 @@ If that doesn't work, please try these things:
   # Uninstall {{{AdBlock}}} and then reinstall from [http://chromeadblock.com ChromeAdBlock] or [http://SafariAdBlock.com SafariAdBlock] depending which browser you're using.
   # Delete your localstorage. In Windows this can be found ... In Mac OS X, this can be found  ... here.
 
-_Safari Users_: Don't forget to turn on autoupdate.
+_Safari Users_: Don't forget to turn on autoupdate.  Here's how.
 
 ----
 = Known issues =
