@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.13*: Small UI changes and bugfixes (famlam)
+
 *2.4.12*: avoid collision due to not-very-random seeds
 
 *2.4.11*: AB test on install page
