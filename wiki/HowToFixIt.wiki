@@ -6,7 +6,7 @@
 == 1. Make sure you have the latest version of Google Chrome installed ==
 
  # Click on the Wrench -> About Google Chrome
- # If available click on "Update now" or get the latest version from www.google.com/chrome
+ # If available click on "Update now" or get the latest version from [http://www.google.com/chrome www.google.com/chrome]
 
 <br>
 
@@ -30,7 +30,7 @@
    # optional, but sometimes helpful: Quit Chrome and reopen it or even reboot your computer now
 
   === Reinstall ===
-   # Go to www.chromeadblock.com
+   # Go to [http://www.chromeadblock.com www.chromeadblock.com]
    # Click on "Install" and install !AdBlock for Chrome
 
 <br>
@@ -60,7 +60,7 @@
 == 1. Make sure you have the latest version of Safari installed ==
 
  # If you are using Windows click on Help -> About Safari or if you are using Mac OS X click on Safari -> About Safari
- # You can get the latest version here: http://www.apple.com/safari/download/
+ # You can get the latest version here: [http://www.apple.com/safari/download/ www.apple.com/safari/download/]
 
 <br>
 
@@ -89,7 +89,7 @@
    # optional, but sometimes helpful: Quit Safari and reopen it or even reboot your computer now
 
   === Reinstall ===
-   # Download !AdBlock for Safari from www.safariadblock.com
+   # Download !AdBlock for Safari from [http://www.safariadblock.com www.safariadblock.com]
    # Click on the downloaded file and install !AdBlock for Safari 
 
 <br>
