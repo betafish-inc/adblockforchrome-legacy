@@ -1,42 +1,35 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-View-Commit
 
-=You're having trouble? =
+=Having trouble with !AdBlock? =
 
-Sorry to hear that!
+Sorry to hear that!  You've come to the right place.
 
-=== Here are some easy steps which fix most problems: ===
- # Make sure !AdBlock and your browser are up to date.
-   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Get the latest version of AdBlock]
-   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Get the latest version of Chrome]
-   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Get the latest version of Safari]
- # Reboot your computer
- # Uninstall !AdBlock and then reinstall from [http://chromeadblock.com chromeadblock.com (Google Chrome)] or [http://safariadblock.com safariadblock.com (Safari)] 
-  For more instructions regarding re-/installing !AdBlock click [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome here] if you are using Chrome and [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari here] if you are using Safari
- # Delete the !LocalStorage file of !AdBlock
-  For more instructions regarding the !LocalStorage file click [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome here] if you are using Chrome and [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari here] if you are using Safari
+== Here are some easy steps which fix most problems: ==
+ # Make sure !AdBlock is up to date. ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed instructions])
+ # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
+ # Reboot your computer.
+ # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
+ # Delete !AdBlock's !LocalStorage file.  ([HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome  Chrome instructions], [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions])
 
-*Detailed instructions of all these steps can be found in the [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt HowToFixIt wiki].*
-
-_*Safari Users*_: Don't forget to turn on the extensions autoupdate as described [HowToFixIt#Enable_autoupdate_for_extensions here].
 
 <br>
 ----
 <br>
 
-= Known issues =
+== Known issues ==
 
-  * Preroll ads and other ads in videos and other elements which use flash can't be blocked yet due to a limitation in Google Chrome and Safari. This feature only works on !YouTube, but it is still in beta so it might not work all the time. If it doesn't work on !YouTube, try reloading the page.
+  * Ads in videos and Flash games can't be blocked yet due to a limitation in Google Chrome and Safari. This feature only works on !YouTube, but it is still in beta so it might not work all the time. If it doesn't work on !YouTube, try reloading the page.
 
-  * !AdBlock might break the image zoom on some pages due to a limitation in Google Chrome and Safari.
+  * !AdBlock might break image zoom on some pages due to a limitation in Google Chrome and Safari.
 
-  * If you subscribe to a lot of filter lists, !AdBlock and Chrome/Safari might run slowly. Please only subscribe to filters you *really need*, like the recommended filter lists and the lists of languages the most sites you visit are written in.
+  * If you subscribe to a lot of filter lists, your browser might run slowly.  Please only subscribe to filters you *really need*, like the recommended filter lists and the lists of languages the most sites you visit are written in.
 
 <br>
 ----
 <br>
 
-= If none of the things above help you... =
+== If none of the things above help you... ==
 
  * Please *[http://code.google.com/p/adblockforchrome/issues/ check the existing issues]* first and search for issues similar to your problem/suggestion. It is very likely that someone already filed an issue with the same problem/suggestion. If you found an issue which matches you problem/suggestion or is very similar please leave a comment with further information if you have any and make sure to star the issue on the top left, so you get notified if we need any additional information. If we request additional information and don't get any for over 14 days we close the issue as invalid.
 
