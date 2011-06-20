@@ -1,15 +1,20 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-View-Commit
 
-= If you're having trouble... =
+=You're having trouble? =
 
 Sorry to hear that!
 
-=== Here are some easy steps which fix most of the problems: ===
- # Make sure you have the latest version of Chrome/Safari and !AdBlock installed
+=== Here are some easy steps which fix most problems: ===
+ # Make sure you have the latest version of Chrome or Safari and !AdBlock installed
+  For more instructions regarding these updates click [HowToFixIt#2._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed here] if you are using Chrome or [HowToFixIt#2._Make_sure_you_have_the_latest_version_of_Safari_installed here] if you are using Safari
  # Reboot your computer
- # Uninstall !AdBlock and then reinstall from [http://chromeadblock.com www.chromeadblock.com (Google Chrome)] or [http://safariadblock.com www.safariadblock.com (Safari)]
- # Delete the !LocalStorage. The !LocalStorage file of Chrome can be found [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome here] and the !LocalStorage file of Safari can be found [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari here].
+ # Uninstall !AdBlock and then reinstall from [http://chromeadblock.com www.chromeadblock.com (Google Chrome)] or [http://safariadblock.com www.safariadblock.com (Safari)] 
+  For more instructions regarding re-/installing !AdBlock click [here] if you are using Chrome and [here] if you are using Safari
+ # Delete the !LocalStorage file of !AdBlock
+  For more instructions regarding the !LocalStorage file click [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome here] if you are using Chrome and [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari here] if you are using Safari
+
+*Detailed instructions of all these steps can be found in the [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt HowToFixIt wiki].*
 
 _*Safari Users*_: Don't forget to turn on the extensions autoupdate as described [HowToFixIt#Enable_autoupdate_for_extensions here].
 
@@ -19,11 +24,11 @@ _*Safari Users*_: Don't forget to turn on the extensions autoupdate as described
 
 = Known issues =
 
-  * We can't block video ads except on Youtube, due to a limitation in Google Chrome and Safari. This isn't perfect either. If it doesn't work on Youtube, try reloading the page.
+  * Preroll ads and other ads in videos and other elements which use flash can't be blocked yet due to a limitation in Google Chrome and Safari. This feature only works on !YouTube, but it is still in beta so it might not work all the time. If it doesn't work on !YouTube, try reloading the page.
 
-  * !AdBlock breaks the image zoom on some pages due to a limitation in Google Chrome and Safari.
+  * !AdBlock might break the image zoom on some pages due to a limitation in Google Chrome and Safari.
 
-  * If you subscribe to a ton of filter lists, it might run slowly. Please only subscribe to filters you *need*.
+  * If you subscribe to a lot of filter lists, !AdBlock and Chrome/Safari might run slowly. Please only subscribe to filters you *really need*, like the recommended filter lists and the lists of languages the most sites you visit are written in.
 
 <br>
 ----
@@ -31,6 +36,5 @@ _*Safari Users*_: Don't forget to turn on the extensions autoupdate as described
 
 = If none of the things above help you... =
 
-Please file a bug report in the [http://code.google.com/p/adblockforchrome/issues/entry Issue Tracker] so we can figure things out with you.
-
-To help us serve you better, please check the [http://code.google.com/p/adblockforchrome/issues/ existing issues] as well.
+ # To help us serve you better, please check the *[http://code.google.com/p/adblockforchrome/issues/ existing issues]* as well.
+ # Please *[http://code.google.com/p/adblockforchrome/issues/entry file a bug report in the Issue Tracker]* so we can figure things out with you. *Thank you!*
