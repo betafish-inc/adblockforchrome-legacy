@@ -36,5 +36,8 @@ _*Safari Users*_: Don't forget to turn on the extensions autoupdate as described
 
 = If none of the things above help you... =
 
- # To help us serve you better, please check the *[http://code.google.com/p/adblockforchrome/issues/ existing issues]* as well.
- # Please *[http://code.google.com/p/adblockforchrome/issues/entry file a bug report in the Issue Tracker]* so we can figure things out with you. *Thank you!*
+ * Please *[http://code.google.com/p/adblockforchrome/issues/ check the existing issues]* first and search for issues similar to your problem/suggestion. It is very likely that someone already filed an issue with the same problem/suggestion. If you found an issue which matches you problem/suggestion or is very similar please leave a comment with further information if you have any and make sure to star the issue on the top left, so you get notified if we need any additional information. If we request additional information and don't get any for over 14 days we close the issue as invalid.
+
+ * If you didn't find an issue that matched your problem/suggestion please *[http://code.google.com/p/adblockforchrome/issues/entry file a bug report in the issue tracker]* so we can figure things out with you. Make sure you fill out the right template and make sure it contains all information you can provide!
+
+ * *Thank you!*
