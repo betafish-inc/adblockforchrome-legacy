@@ -73,7 +73,7 @@
   === Enable autoupdate for extensions ===
    # Open the Safari preferences
    # Go to: Extensions -> Updates
-   # Enable autoupdates by clicking on the "Automatically install extension updates" checkbox  
+   # Enable autoupdates by clicking on the "Install Updates Automatically" checkbox  
 
 <br>
 
