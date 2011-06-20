@@ -7,7 +7,7 @@ Sorry to hear that!  You've come to the right place.
 
 == Here are some easy steps which fix most problems: ==
  # Make sure !AdBlock is up to date ([HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Chrome_i Chrome instructions], [HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i Safari instructions])
- # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
+ # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
  # Reboot your computer.
  # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
  # Delete !AdBlock's !LocalStorage file.  ([HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome  Chrome instructions], [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions])
