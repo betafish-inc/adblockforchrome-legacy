@@ -33,7 +33,7 @@ Please *[http://code.google.com/p/adblockforchrome/issues/ search our Issue list
 
 If you find a similar issue:
    # Please leave a comment if you have further information.
-   # You can Star the issue on the top left to be emailed when the issues is updated.
+   # You can star the issue on the top left to be emailed when the issue is updated.
 
 If you don't find a similar issue:
    # Please *[http://code.google.com/p/adblockforchrome/issues/entry file an issue report]* so we can figure things out with you.
