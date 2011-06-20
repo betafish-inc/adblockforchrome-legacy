@@ -35,7 +35,7 @@
 
 <br>
 
-== 5. Delete the !LocalStorage file of !AdBlock ==
+== 5. Delete the !LocalStorage file of !AdBlock for Chrome==
 
   === Windows ===
    # Quit Chrome
@@ -94,7 +94,7 @@
 
 <br>
 
-== 5. Delete the !LocalStorage file of !AdBlock ==
+== 5. Delete the !LocalStorage file of !AdBlock for Safari ==
 
   === Windows ===
    # Quit Safari
