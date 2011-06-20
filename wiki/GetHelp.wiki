@@ -6,10 +6,12 @@
 Sorry to hear that!
 
 === Here are some easy steps which fix most problems: ===
- # Make sure you have the latest version of Chrome or Safari and !AdBlock installed
-  For more instructions regarding these updates click [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed here] if you are using Chrome or [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed here] if you are using Safari
+ # Make sure !AdBlock and your browser are up to date.
+   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Get the latest version of AdBlock]
+   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_installed Get the latest version of Chrome]
+   * [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Get the latest version of Safari]
  # Reboot your computer
- # Uninstall !AdBlock and then reinstall from [http://chromeadblock.com www.chromeadblock.com (Google Chrome)] or [http://safariadblock.com www.safariadblock.com (Safari)] 
+ # Uninstall !AdBlock and then reinstall from [http://chromeadblock.com chromeadblock.com (Google Chrome)] or [http://safariadblock.com safariadblock.com (Safari)] 
   For more instructions regarding re-/installing !AdBlock click [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome here] if you are using Chrome and [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari here] if you are using Safari
  # Delete the !LocalStorage file of !AdBlock
   For more instructions regarding the !LocalStorage file click [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome here] if you are using Chrome and [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari here] if you are using Safari
