@@ -22,7 +22,7 @@
 == 3. Reboot your computer ==
 <br>
 
-== 4. Uninstall and reinstall !AdBlock ==
+== 4. Uninstall and reinstall !AdBlock for Chrome ==
 
   === Uninstall ===
    # Open the Extensions tab by going to this site: chrome://extensions/
@@ -35,7 +35,7 @@
 
 <br>
 
-== 5. Delete the !LocalStorage file of !AdBlock for Chrome==
+== 5. Delete the !LocalStorage file of !AdBlock for Chrome ==
 
   === Windows ===
    # Quit Chrome
@@ -80,7 +80,7 @@
 == 3. Reboot your computer ==
 <br>
 
-== 4. Uninstall and reinstall !AdBlock ==
+== 4. Uninstall and reinstall !AdBlock for Safari==
   
   === Uninstall ===
    # Open the Safari preferences
