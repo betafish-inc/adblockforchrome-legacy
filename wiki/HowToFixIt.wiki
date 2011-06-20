@@ -1,5 +1,4 @@
 #summary How to fix certain problems by yourself.
-#labels Restrict-AddWikiComment-Commit
 
 = Google Chrome =
 
