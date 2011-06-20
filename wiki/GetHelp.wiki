@@ -1,5 +1,4 @@
 #summary Get help with an AdBlock problem.
-#labels Restrict-View-Commit
 
 =Having trouble with !AdBlock? =
 
