@@ -10,7 +10,7 @@
 
 <br>
 
-== 2. Make sure you have the latest version of !AdBlock installed ==
+== 2. Make sure you have the latest version of !AdBlock for Chrome installed ==
 
  # Look which version the latest version is by going to the [http://code.google.com/p/adblockforchrome/wiki/Changelog AdBlock Changelog Wiki]
  # Open the Extensions tab by going to this site: chrome://extensions/
@@ -64,7 +64,7 @@
 
 <br>
 
-== 2. Make sure you have the latest version of !AdBlock installed ==
+== 2. Make sure you have the latest version of !AdBlock for Safari installed ==
 
  # Open the Safari preferences
  # Go to: Extensions -> Updates
