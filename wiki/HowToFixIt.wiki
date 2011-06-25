@@ -6,6 +6,7 @@
 
  # Click on the Wrench -> About Google Chrome
  # If available click on "Update now" or get the latest version from [http://www.google.com/chrome www.google.com/chrome]
+ # Restart your browser when you are asked to do so
 
 <br>
 
