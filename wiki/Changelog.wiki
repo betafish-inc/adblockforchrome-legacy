@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.15*: A pile of bugfixes by Famlam (Issues 5679 5380 699 5726), plus we added a Ukranian translation.
+
 *2.4.14*: Minor bugfixes (Famlam)
 
 *2.4.13*: Small UI changes and bugfixes (famlam)
