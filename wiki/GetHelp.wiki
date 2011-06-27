@@ -32,8 +32,8 @@ Sorry to hear that!  You've come to the right place.
 Please *[http://code.google.com/p/adblockforchrome/issues/ search our Issue list]* for issues similar to yours.  It's likely that the issue has already been reported!
 
 If you find a similar issue:
-   # Please leave a comment if you have further information.
-   # You can star the issue on the top left to be emailed when the issue is updated.
+   # Please *leave a comment* if you have further information.
+   # You can *star* the issue on the top left to be emailed when the issue is updated.
 
 If you don't find a similar issue:
    # Please *[http://code.google.com/p/adblockforchrome/issues/entry file an issue report]* so we can figure things out with you.
