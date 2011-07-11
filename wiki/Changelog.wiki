@@ -7,6 +7,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
+*2.4.17*: Warn users who oversubscribe to filter lists, and unsubscribe (one time) users who oversubscribed.
+
 *2.4.16*: Axe vietnamese filters; small bug fixes; helper wizard on Customize tab to run AdBlock on only a few sites (famlam)
 
 *2.4.15*: A pile of bugfixes by Famlam (Issues 5679 5380 699 5726), plus we added a Ukranian translation.
