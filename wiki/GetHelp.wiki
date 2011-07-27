@@ -20,7 +20,7 @@ Sorry to hear that!  You've come to the right place.
 
   * *!AdBlock stops working in Safari 5.1* after you use Private Browsing.  Disabling and re-enabling extensions via Safari | Preferences | Extensions will fix this.  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner!
 
-  * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star issue chromium:60101 to get this fixed in Chrome.
+  * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
 
   * *Image slideshows and popups are broken* on some websites due to a bug in Google Chrome and Safari. This is caused by an  [https://bugs.webkit.org/show_bug.cgi?id=45586 issue in WebKit].
 
