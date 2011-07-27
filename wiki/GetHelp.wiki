@@ -18,7 +18,7 @@ Sorry to hear that!  You've come to the right place.
 
 == Known issues ==
 
-  * *AdBlock stops working in Safari 5.1* after you use Private Browsing.  Disabling and re-enabling extensions via Safari | Preferences | Extensions will fix this.  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner!
+  * *!AdBlock stops working in Safari 5.1* after you use Private Browsing.  Disabling and re-enabling extensions via Safari | Preferences | Extensions will fix this.  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner!
 
   * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page.
 
