@@ -52,6 +52,14 @@
    # Delete the "chrome-extension_gighmmpiobklfepjocnamgkkbiglidom_0.localstorage" file
    # Open Chrome again and see if !AdBlock works
 
+  === Linux ===
+   # Quit Chrome
+   # Open Places -> Home Folder
+   # Choose View -> Show Hidden Files
+   # Go to: .config -> google-chrome -> Default -> Local Storage
+   # Delete the "chrome-extension_gighmmpiobklfepjocnamgkkbiglidom_0.localstorage" file
+   # Open Chrome again and see if !AdBlock works
+
 <br><br>
 ----
 <br>
@@ -99,7 +107,7 @@
 
   === Windows ===
    # Quit Safari
-   # Open Windows Explore
+   # Open Windows Explorer
    # Go to: %localappdata%\Apple Computer\Safari\!LocalStorage
    # Delete the "safari-extension_com.betafish.adblockforsafari-(letters & numbers).localstorage" file(s)
    # Open Safari again and see if !AdBlock works
