@@ -5,10 +5,10 @@
 
 Note that !AdBlock releases as quickly as possible to get improvements to our users, so our dot releases usually contain a single feature or fix.
 
+== Versions ==
+
 *Latest Chrome version*: 2.4.19<br/>
 *Latest Safari version*: 2.4.14<br/>
-
-== Versions ==
 
 *2.4.19*: Minor bug fixes, improvement to unsubscribing oversubscribed users (famlam)
 
