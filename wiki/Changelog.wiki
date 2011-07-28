@@ -10,6 +10,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 *Latest Chrome version*: 2.4.19<br/>
 *Latest Safari version*: 2.4.14<br/>
 
+<wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 *2.4.19*: Minor bug fixes, improvement to unsubscribing oversubscribed users (famlam)
 
 *2.4.18*: Retire the app version (famlam)
