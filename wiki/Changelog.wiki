@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.19<br/>
+*Latest Chrome version*: 2.4.20<br/>
 *Latest Safari version*: 2.4.14<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.20*: Minor speedup, graduate "new way to block ads" beta option and make it the only way, and don't refresh the page after blacklisting if you can help it (famlam)
 
 *2.4.19*: Minor bug fixes, improvement to unsubscribing oversubscribed users (famlam)
 
