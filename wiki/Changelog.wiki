@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.21<br/>
+*Latest Chrome version*: 2.4.22<br/>
 *Latest Safari version*: 2.4.21<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.22*: Added background image blocking in Safari (famlam), a +1 button in the Chrome browser action, and a small bugfix in the blacklist wizard
 
 *2.4.21*: Minor Safari bugfixes
 
