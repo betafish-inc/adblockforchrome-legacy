@@ -21,11 +21,13 @@ Sorry to hear that!  You've come to the right place.
 
   * *!AdBlock stops working in Safari 5.1* after you use Private Browsing.  Disabling and re-enabling extensions via Safari | Preferences | Extensions will fix this (and all your other extensions which stopped working too!)  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner.
 
+  * *The install screen appears every time you start your browser* if:
+    * _you have told Safari 5.1 to delete your cookies after every restart_.  Apple is working to fix this; in the meantime, you can work around this by turning off this Safari option.
+    * _your browser screws up the "localStorage" file on disk._  You can follow step 5 at the top of the page to fix this.
+
   * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
 
   * *Image slideshows and popups are broken* on some websites due to a bug in Google Chrome and Safari. This is caused by an  [https://bugs.webkit.org/show_bug.cgi?id=45586 issue in WebKit].
-
-  * *You will slow down your browser* if you subscribe to too many filter lists.  !AdBlock subscribes you to the lists that will work well for you.  You don't need to subscribe to more language-specific lists unless you visit lots of websites written in that language.
 
 ----
 <br>
