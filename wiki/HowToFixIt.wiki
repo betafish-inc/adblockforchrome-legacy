@@ -17,7 +17,7 @@
  # Open the Extensions tab by going to this site: chrome://extensions/
  # If you have an older version click on the right top on "Developer mode"
  # Click on "Update extensions now" and wait for a few seconds for it to update the version number.
- # If it doesn't, you may be able to click the Install button on [https://chrome.google.com/extensions/developer/detail/gighmmpiobklfepjocnamgkkbiglidom this page] to update.  Worst case, you can [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome uninstall and reinstall.]
+ # If it doesn't, you may be able to click the "Add to Chrome" button on [https://chrome.google.com/extensions/developer/detail/gighmmpiobklfepjocnamgkkbiglidom this page] to update.  Worst case, you can [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome uninstall and reinstall.]
 
 <br>
 
@@ -33,7 +33,7 @@
 
   === Reinstall ===
    # Go to [http://www.chromeadblock.com www.chromeadblock.com]
-   # Click on "Install" and install !AdBlock for Chrome
+   # Click on "Add to Chrome" and install !AdBlock for Chrome
 
 <br>
 
