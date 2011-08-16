@@ -5,6 +5,10 @@
 
 <wiki:toc max_depth="2" />
 
+== !AdBlock isn't working right! ==
+
+Visit GetHelp where we'll walk you through fixing the problem (or telling us about it.)
+
 == How do I blacklist something? ==
 
 Right-click on a page once it has finished loading, select "Block an ad on this page..." and you'll get a blacklisting UI or simply right-click an ad on a page and select "Block this ad".  You can also add the browser action button via the Options page, and blacklist from there.
