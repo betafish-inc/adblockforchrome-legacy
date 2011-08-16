@@ -7,7 +7,7 @@
 
 == !AdBlock isn't working right! ==
 
-Visit [http://code.google.com/p/adblockforchrome/wiki/GetHelp?tm=3 GetHelp] where we'll walk you through fixing the problem (or telling us about it.)
+Sorry to hear that!  We can [http://code.google.com/p/adblockforchrome/wiki/GetHelp?tm=3 walk you through] fixing or reporting your problem.
 
 == How do I blacklist something? ==
 
