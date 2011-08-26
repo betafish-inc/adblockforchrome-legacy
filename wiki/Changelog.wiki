@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.23<br/>
+*Latest Chrome version*: 2.4.24<br/>
 *Latest Safari version*: 2.4.23<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.24*: Small bugfixes, rework filter list manager (famlam), and add links to project homepage on Options page (John).
 
 *2.4.23*: Small bugfix, and support resourceblock.html in Safari (famlam)
 
