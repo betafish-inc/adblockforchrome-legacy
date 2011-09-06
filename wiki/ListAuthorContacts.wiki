@@ -6,6 +6,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || Chrome !AdBlock custom filters (recommended) || http://code.google.com/p/adblockforchrome/issues/list || http://chromeadblock.com/ ||
 || !EasyList (recommended) || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
 || - additional Bulgarian filters || alex at stanev.org || http://stanev.org/abp/ ||
+|| - additional Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
 || - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list || http://sites.google.com/site/dutchadblockfilters/ ||
 || - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ || http://www.wiltteri.net/ ||
 || - additional French filters || http://forums.lanik.us/viewforum.php?f=91 || http://easylist.adblockplus.org/ ||
@@ -14,14 +15,13 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
 || - additional Romanian filters || mail at zoso.ro || http://www.zoso.ro/rolist ||
 || - additional Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
-|| Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
 || Czech filters || || http://adblock.dajbych.net/ ||
 || Danish filters || henrik at schack.dk || http://henrik.schack.dk/adblock/ ||
 || Hungarian filters || pete at teamlupus.hu || http://pete.teamlupus.hu/site/?pg=hufilter ||
 || Israeli filters || http://mozilla.org.il/board/viewtopic.php?f=8&t=8679 || http://code.google.com/p/israellist/ ||
 || Italian filters || giovanni at gfsolone.com || http://gfsolone.com/realizzazioni/altro/abp-x-files ||
 || Japanese filters || mp3geek at gmail.com || http://www.fanboy.co.nz/adblock/ ||
-|| Korean filters || http://corset.tistory.com/guestbook || http://corset.tistory.com/ ||
+|| Korean filters || mp3geek at gmail.com ||  http://www.fanboy.co.nz/adblock/ ||
 || Polish filters || krzysiek at niecko.pl || http://www.niecko.pl/adblock/ ||
 || Spanish filters || nauscopio at gmail.com || http://nauscopio.nireblog.com/cat/filtrado ||
 || Ukranian filters || adblock.ua at gmail.com || http://adblock.oasis.org.ua/ ||
