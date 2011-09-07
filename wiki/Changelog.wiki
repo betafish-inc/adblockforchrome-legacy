@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.25<br/>
+*Latest Chrome version*: 2.4.26<br/>
 *Latest Safari version*: 2.4.25<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.26*: Revert style rules change, as it breaks GMail
 
 *2.4.25*: Several small changes, plus [style] rules are supported again, and some pages that spiked the CPU were fixed (famlam)
 
