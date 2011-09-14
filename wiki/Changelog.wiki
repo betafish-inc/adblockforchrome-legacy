@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.27<br/>
+*Latest Chrome version*: 2.4.28<br/>
 *Latest Safari version*: 2.4.25<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.28*: Clicking 'Update Now' on Safari Filter Lists page now correctly shows elapsed time
 
 *2.4.27*: {{{[style]}}} change again, this time with workaround for GMail and Yahoo
 
