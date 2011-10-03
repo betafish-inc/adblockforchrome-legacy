@@ -11,6 +11,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ || http://www.wiltteri.net/ ||
 || - additional French filters || http://forums.lanik.us/viewforum.php?f=91 || http://easylist.adblockplus.org/ ||
 || - additional German filters || http://forums.lanik.us/viewforum.php?f=90 || http://easylist.adblockplus.org/ ||
+|| - additional Greek filters || kargig at void.gr || http://www.void.gr/kargig/blog/greek-adblock-plus-filter/ ||
 || - additional Norwegian filters || mlan76 at gmail.com || http://home.online.no/~mlangsho/ ||
 || - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
 || - additional Romanian filters || mail at zoso.ro || http://www.zoso.ro/rolist ||
