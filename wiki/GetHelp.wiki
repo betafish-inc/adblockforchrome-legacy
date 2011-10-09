@@ -25,7 +25,7 @@ Sorry to hear that!  You've come to the right place.
     * _you have told Safari 5.1 to delete your cookies after every restart_.  Apple is working to fix this; in the meantime, you can work around this by turning off this Safari option.
     * _your browser screws up the "localStorage" file on disk._  You can follow step 5 at the top of the page to fix this.
 
-  * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
+  * !AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
 
   * *!AdBlock breaks when you enable the experimental feature 'Lazy Background Pages' in Chrome. Disable the option to fix this.
 
