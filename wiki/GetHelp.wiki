@@ -27,7 +27,9 @@ Sorry to hear that!  You've come to the right place.
 
   * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
 
-  * *Image slideshows and popups are broken* on some websites due to a bug in Google Chrome and Safari. This is caused by an  [https://bugs.webkit.org/show_bug.cgi?id=45586 issue in WebKit].
+  * *!AdBlock breaks when you enable the experimental feature 'Lazy Background Pages' in Chrome. Disable the option to fix this.
+
+  * *Image slideshows and popups are broken* on some websites due to a bug in Google Chrome and Safari. This is caused by an  [https://bugs.webkit.org/show_bug.cgi?id=45586 issue in WebKit]. This is fixed in Chrome 16+ and most likely in the Safari version after 5.1.
 
 ----
 <br>
