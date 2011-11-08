@@ -143,9 +143,6 @@ Missing translations: adblock_auto_removes_ads_thats_all, adblock_is_paused, adb
 ===== \_locales\el\messages.json =====
 Missing translations: filtereasylist_plus_greek, lang_greek, storage_quota_exeeded
 
-===== \_locales\de\messages.json =====
-Missing translations: filtereasyprivacy, storage_quota_exeeded
-
 ===== \_locales\cs\messages.json =====
 Missing translation: storage_quota_exeeded
 
