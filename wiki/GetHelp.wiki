@@ -29,19 +29,16 @@ Sorry to hear that!  You've come to the right place.
  # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
  # Delete !AdBlock's !LocalStorage file.  ([HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome  Chrome instructions], [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions])
 
-== Other Known issues ==
+== Other known problems ==
 
   * *The Lazy Background Pages experimental feature* breaks !AdBlock in Chrome. Disable the option to fix this.
 
-
 == Do you still have a problem after trying the above? ==
 
-Please *[http://code.google.com/p/adblockforchrome/issues/ search our Issue list]* for issues similar to yours.  It's likely that the issue has already been reported!
+It's likely that someone already told us about the problem!  Please [http://code.google.com/p/adblockforchrome/issues/ search previous reports] for one similar to yours.
 
-If you find a similar issue:
+If you find a similar report:
    # Please *leave a comment* if you have further information.
-   # You can *star* the issue on the top left to be emailed when the issue is updated.
+   # You can click the *star* on the top left to be emailed when there are updates.
 
-If you don't find a similar issue: help us figure things out with you by  [http://code.google.com/p/adblockforchrome/issues/entry filing an issue report].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
-
-*Thank you!*
+And if all the above fails, please report the problem [BugTriage here].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
