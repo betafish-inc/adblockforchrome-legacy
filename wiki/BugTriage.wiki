@@ -18,7 +18,7 @@ Here's a list of some really highly trafficked websites:
 
 Is the broken website in this list?
 [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes!]
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect1 No, it's another site]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect No, it's another site]
 
 == !AdBlock is breaking many websites ==
 
@@ -37,4 +37,4 @@ It's not an emergency (but we'll still take care of you!) if:
   * OR you have to use !AdBlock's right click menu to see the bug
   * OR it doesn't seem like an emergency to you.
 
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect1 No, it's not an emergency.]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect No, it's not an emergency.]
