@@ -17,23 +17,24 @@ Here's a list of some really highly trafficked websites:
   * A large news website (Yahoo, CNN, BBC, New York Times...)
 
 Is the broken website in this list?
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Broke%20the%20web Yes!]
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Broken%20site No, it's another site]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes!]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect1 No, it's another site]
 
 == !AdBlock is breaking many websites ==
 
 Help us decide if this is an emergency or not.
 
 It's an emergency if:
-  * The bug affects many websites AND
-  * The bug is seriously getting in the way of your browsing AND
-  * You suspect other people might be having this bug too.
+  * The bug affects multiple websites
+  * AND the bug is seriously getting in the way of your browsing
+  * AND you suspect other people might be having this bug too
+  * AND it feels to you like an emergency.
 
 [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes, it's an emergency!]
 
 It's not an emergency (but we'll still take care of you!) if:
-  * The bug only appears after you specifically interact with !AdBlock's toolbar button or right click menu OR
-  * The bug affects only one non-gigantic website OR
-  * You don't feel like it's an emergency.
+  * You have to click !AdBlock's toolbar button to see the bug
+  * OR you have to use !AdBlock's right click menu to see the bug
+  * OR it doesn't seem like an emergency to you.
 
 [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect1 No, it's not an emergency.]
