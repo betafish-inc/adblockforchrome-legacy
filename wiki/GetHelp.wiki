@@ -6,35 +6,35 @@
 Sorry to hear that!  You've come to the right place.
 <br/>
 
-== Here are some easy steps which fix most problems: ==
+== Is this your problem? ==
+
+ * Did !AdBlock *stop working in Safari*?
+   Safari 5.1 has a bug: after you use Private Browsing, extensions stop working.  To fix this, go to Safari | Preferences | Extensions and disable then re-enable extensions.  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner.
+
+ * Are you *seeing !AdBlock's install screen* every time you start your browser?
+   Safari 5.1 has a bug: if you tell it to delete cookies after every restart, it will show the !AdBlock install page every time you start your browser.  Turn off the Safari option to work around the bug.  A fix is coming.
+
+   If you haven't set that option, follow step 5 below to fix the problem.
+
+ * Are you seeing *ads in videos or Flash games*?
+   This is a known limitation in the browser.  Only Youtube videos get their ads blocked, and then only some of the time.  Chrome is fixing this shortly; not so, unfortunately, in Safari.
+
+ * Are you seeing *broken image popups or slideshows* on a website?
+   This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
+
+== Most other problems are fixed by these 5 easy steps! ==
  # Make sure !AdBlock is up to date ([HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Chrome_i Chrome instructions], [HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i Safari instructions])
  # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
  # Reboot your computer.
  # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
  # Delete !AdBlock's !LocalStorage file.  ([HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome  Chrome instructions], [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions])
 
-
-----
-<br>
-
-== Known issues ==
-
-  * *!AdBlock stops working in Safari 5.1* after you use Private Browsing.  Disabling and re-enabling extensions via Safari | Preferences | Extensions will fix this (and all your other extensions which stopped working too!)  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner.
-
-  * *The install screen appears every time you start your browser* if:
-    * _you have told Safari 5.1 to delete your cookies after every restart_.  Apple is working to fix this; in the meantime, you can work around this by turning off this Safari option.
-    * _your browser screws up the "localStorage" file on disk._  You can follow step 5 at the top of the page to fix this.
-
-  * *!AdBlock can't block ads in videos or Flash games* yet due to a limitation in Google Chrome and Safari.  This feature only works on !YouTube, but it is still in beta -- if something goes wrong on !YouTube, try reloading the page. Star [http://code.google.com/p/chromium/issues/detail?id=60101 this Chrome issue] to get this fixed in Chrome.
+== Other Known issues ==
 
   * *The Lazy Background Pages experimental feature* breaks !AdBlock in Chrome. Disable the option to fix this.
 
-  * *Image slideshows and popups are broken* on some websites due to a bug in Google Chrome and Safari. This is caused by an  [https://bugs.webkit.org/show_bug.cgi?id=45586 issue in WebKit]. This is fixed in Chrome 16+ and most likely in the Safari version after 5.1.
 
-----
-<br>
-
-== If none of the things above help you... ==
+== Do you still have a problem after trying the above? ==
 
 Please *[http://code.google.com/p/adblockforchrome/issues/ search our Issue list]* for issues similar to yours.  It's likely that the issue has already been reported!
 
@@ -42,8 +42,6 @@ If you find a similar issue:
    # Please *leave a comment* if you have further information.
    # You can *star* the issue on the top left to be emailed when the issue is updated.
 
-If you don't find a similar issue:
-   # Please *[http://code.google.com/p/adblockforchrome/issues/entry file an issue report]* so we can figure things out with you.
-   # Make sure to fill out the right template with all information you can provide!
+If you don't find a similar issue: help us figure things out with you by  [http://code.google.com/p/adblockforchrome/issues/entry filing an issue report].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
 
 *Thank you!*
