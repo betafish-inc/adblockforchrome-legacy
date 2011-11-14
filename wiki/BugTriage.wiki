@@ -8,6 +8,10 @@ Please don't report ads directly here.  Instead, turn on !AdBlock Options -> Adv
 
 That way, we get all the information we need, and we know that it's not just a missing filter in a filter list or something.
 
+== I'd like to request a feature! ==
+
+OK, [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user tell us about it].
+
 == !AdBlock is breaking one specific website ==
 
 Here's a list of some really highly trafficked websites:
@@ -25,16 +29,13 @@ Is the broken website in this list?
 Help us decide if this is an emergency or not.
 
 It's an emergency if:
-  * The bug affects multiple websites
-  * AND the bug is seriously getting in the way of your browsing
-  * AND you suspect other people might be having this bug too
-  * AND it feels to you like an emergency.
-
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes, it's an emergency!]
-
-It's not an emergency (but we'll still take care of you!) if:
-  * You have to click !AdBlock's toolbar button to see the bug
-  * OR you have to use !AdBlock's right click menu to see the bug
-  * OR it doesn't seem like an emergency to you.
+  * The bug happens _even if you never click !AdBlock's menus or buttons_
+  * AND the bug affects _multiple_ websites
+  * AND you suspect the bug affects _multiple_ people
+  * AND it feels to you like an emergency
+  * AND the bug breaks something _important_
+    * important: "headlines are missing"
+    * not important: "images are too far to the left"
 
 [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect No, it's not an emergency.]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes, it's an emergency!]
