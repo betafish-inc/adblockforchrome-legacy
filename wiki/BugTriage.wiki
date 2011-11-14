@@ -1,0 +1,39 @@
+= Report an issue =
+
+What kind of issue are you reporting?
+
+== I see an ad! ==
+
+Please don't report ads directly here.  Instead, turn on !AdBlock Options -> Advanced mode, then report them via the "Report an ad" link in the toolbar menu (Chrome) or Options -> Customize tab (Safari).
+
+That way, we get all the information we need, and we know that it's not just a missing filter in a filter list or something.
+
+== !AdBlock is breaking one specific website ==
+
+Here's a list of some really highly trafficked websites:
+  * Gmail, Yahoo Mail, Windows Live Mail
+  * Google+, Facebook, Twitter
+  * Any other Google website (Google search, news, calendar...)
+  * A large news website (Yahoo, CNN, BBC, New York Times...)
+
+Is the broken website in this list?
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Broke%20the%20web Yes!]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Broken%20site No, it's another site]
+
+== !AdBlock is breaking many websites ==
+
+Help us decide if this is an emergency or not.
+
+It's an emergency if:
+  * The bug affects many websites AND
+  * The bug is seriously getting in the way of your browsing AND
+  * You suspect other people might be having this bug too.
+
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes, it's an emergency!]
+
+It's not an emergency (but we'll still take care of you!) if:
+  * The bug only appears after you specifically interact with !AdBlock's toolbar button or right click menu OR
+  * The bug affects only one non-gigantic website OR
+  * You don't feel like it's an emergency.
+
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect1 No, it's not an emergency.]
