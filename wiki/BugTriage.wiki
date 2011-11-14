@@ -1,3 +1,4 @@
+#labels Restrict-AddWikiComment-Commit
 = Report an issue =
 
 What kind of issue are you reporting?
