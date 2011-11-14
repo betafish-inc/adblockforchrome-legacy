@@ -22,7 +22,7 @@ Here's a list of some really highly trafficked websites:
 
 Is the broken website in this list?
 [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect2 Yes!]
-[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect No, it's another site]
+[http://code.google.com/p/adblockforchrome/issues/entry?template=Defect No, it's another site.]
 
 == !AdBlock is breaking many websites ==
 
