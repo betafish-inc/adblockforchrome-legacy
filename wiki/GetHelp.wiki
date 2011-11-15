@@ -51,4 +51,4 @@ If you find a similar report:
    # Please *leave a comment* if you have further information.
    # You can click the *star* on the top left to be emailed when there are updates.
 
-And if not, please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] (or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request] if you're just asking for a new feature.) *Incomplete bug reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
+And if not, please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
