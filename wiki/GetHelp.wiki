@@ -22,6 +22,16 @@ Sorry to hear that!  You've come to the right place.
  * Are you seeing *broken image popups or slideshows* on a website?
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
 
+ * Are you seeing *an ad that should be blocked*?
+
+   To report the ad, please do the following:
+
+   # Turn on Advanced mode under the !AdBlock toolbar button -> Options -> General
+   # In Chrome: click the toolbar button -> Report an ad
+   # In Safari: click the toolbar button -> Customize -> Report an ad
+
+   You'll get the fix automatically a few days after your report is processed.
+
 == Most other problems are fixed by these 5 easy steps! ==
  # Make sure !AdBlock is up to date ([HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Chrome_i Chrome instructions], [HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i Safari instructions])
  # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
@@ -41,4 +51,4 @@ If you find a similar report:
    # Please *leave a comment* if you have further information.
    # You can click the *star* on the top left to be emailed when there are updates.
 
-And if all the above fails, please report the problem [BugTriage here].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
+And if not, please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] (or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request] if you're just asking for a new feature.) *Incomplete bug reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
