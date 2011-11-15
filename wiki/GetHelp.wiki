@@ -16,13 +16,13 @@ Sorry to hear that!  You've come to the right place.
 
    If you haven't set that option, follow step 5 below to fix the problem.
 
- * Are you seeing *ads in videos or Flash games*?
-   This is a known limitation in the browser.  Only Youtube videos get their ads blocked, and then only some of the time.  Chrome is fixing this shortly; not so, unfortunately, in Safari.
-
  * Are you seeing *broken image popups or slideshows* on a website?
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
 
- * Are you seeing *an ad that should be blocked*?
+ * Are you seeing *ads in videos or Flash games*?
+   This is a known limitation in the browser.  Only Youtube videos get their ads blocked, and then only some of the time.  Chrome is fixing this shortly; not so, unfortunately, in Safari.
+
+ * Are you seeing some other *ad that should be blocked*?
 
    To report the ad, please do the following:
 
