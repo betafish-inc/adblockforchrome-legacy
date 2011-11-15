@@ -45,10 +45,10 @@ Sorry to hear that!  You've come to the right place.
 
 == Do you still have a problem after trying the above? ==
 
-It's likely that someone already told us about the problem!  Please [http://code.google.com/p/adblockforchrome/issues/ search previous reports] for one similar to yours.
+It's likely that someone already told us about the problem!  Please [http://code.google.com/p/adblockforchrome/issues/ search existing reports] for one similar to yours.
 
 If you find a similar report:
    # Please *leave a comment* if you have further information.
    # You can click the *star* on the top left to be emailed when there are updates.
 
-And if not, please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
+And if you didn't find a match when you [http://code.google.com/p/adblockforchrome/issues/ searched existing reports], please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
