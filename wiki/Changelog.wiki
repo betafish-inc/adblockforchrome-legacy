@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.29<br/>
+*Latest Chrome version*: 2.4.30<br/>
 *Latest Safari version*: 2.4.28<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.30*: Fix GMail bug in Safari, other minor fixes
 
 *2.4.29*: Add greek filters (drewish), disable pause on close (Famlam), and sent last-modified and other headers to filter lists (Famlam)
 
