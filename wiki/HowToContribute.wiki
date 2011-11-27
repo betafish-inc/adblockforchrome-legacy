@@ -1,43 +1,46 @@
 #summary Things you can do to contribute to AdBlock.
 #labels Featured,Restrict-AddWikiComment-Commit
 
-Would you be interested in making !AdBlock better for our 2 million users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
+Would you be interested in making !AdBlock better for our millions of users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
 
 = Ways to contribute =
 
-== Answer FAQs in the feedback comments ==
+== Triage the Issue tracker ==
 
-On the installation page at chromeadblock.com users leave comments and questions, and there aren't that many different questions they ask.  They also consistently fail to see the links to the FAQ and to this project page.  Read FrequentlyAskedQuestions, then drop comments answering questions while gently directing users to the FAQ link.
+This would help a LOT!  Several new Issues arrive every day, and the more people willing to triage them, the less chance of an Issue going unnoticed.
 
-== Verify a bug ==
+Bookmark the [http://code.google.com/p/adblockforchrome/updates/list list of Issue updates] and watch for new or updated Issues.  Then do any of these helpful things:
 
-  1 Find an [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type-Defect&colspec=ID+Stars+Type+Status+Priority+Area+Summary&x=area&y=priority&cells=tiles open bug] that looks interesting to you.
-  1 Follow the steps to reproduce it, exactly as reported in the Issue.
-  1 Leave a comment telling whether it happens for you or not.  The more info about your system you can provide, the better.
+ * Leave a comment saying whether you can reproduce the problem.  Add a screenshot of the problem if there isn't one.
 
-== File a bug report or feature request ==
+ * Leave a comment asking the submitter to provide any clarifying info they didn't provide.
 
-via the [http://code.google.com/p/adblockforchrome/issues/entry New Issue] link on the Issues tab.  It helps us a lot if you provide all the info we ask for.
+ * [http://code.google.com/p/adblockforchrome/issues/list Search for duplicates] and leave a comment on the newer bug pointing out that it's a duplicate.
 
-== Fix a bug or a add a new feature ==
+ * Lots of problems are caused by a bad filter.  Use the !AdBlock Options -> Customize textbox to narrow down which specific filter is causing the reporter problems, and leave a comment with what you find.
+   * Tip: if you turn on Advanced Mode in the Options, then Options -> Filter Lists displays a button to show links to the source of each filter list.  You can use use that to paste the entire contents of a filter list into your Customize textbox, and start deleting big chunks to see which filter is causing the problem.
 
-!AdBlock is written in Javascript, HTML, and CSS, and there are almost always open Issues that only require CSS or HTML changes, even if you don't know Javascript.  Here's how to help:
+If you think you'll do this more than once or twice, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily give you Contributor access, so you can close/merge/prioritize bugs directly.
 
-  1 Find an Issue that interests you on the Issues tab
-  1 Check out the trunk version of the code via the instructions on the Source tab
-  1 Make your code changes
+== Improve the existing translations ==
+
+!AdBlock is translated into dozens of languages, but sometimes the translations are out of date, resulting in missing or incorrect phrases.  If you'd like to help correct problems you've noticed in your language, see HowToTranslate.
+
+== Fix a bug ==
+
+!AdBlock is written in Javascript, HTML, and CSS -- see [http://code.google.com/chrome/extensions/getstarted.html the Chrome extension tutorial] for details.  If you see an Issue that you'd like to fix,
+
+  1 Check out the trunk version of the code via the instructions on the Source tab and make your changes
   1 Type "svn diff > mycontribution.patch" to create a patchfile
   1 Attach the patchfile to the Issue.
 
-After you do this once, if you'd like to become an official contributor, we'll give you commit bits to the repo.
-
-== Translate !AdBlock into your own language ==
-
-If you want to translate !AdBlock into your own language read this [http://code.google.com/p/adblockforchrome/wiki/HowToTranslate HowToTranslate Wiki].
+After you do this once, feel free to ask for commit bits on adblockforchrome-dev@googlegroups.com.
 
 == Tell your friends! ==
 
-Tweet links to http://chromeadblock.com and http://safariadblock.com, email people, rent a megaphone and go to the student union, that kind of thing.  I would expect that millions of users are still using Firefox solely because they don't know !AdBlock exists for Chrome and Safari.  Also, if you know friends who are web programmers, tell them we'd love code contributions! :)
+Spreading the word via social networks / mailing lists / megaphones is always appreciated!
+
+<br/>
 
 == Committers ==
 
@@ -49,9 +52,9 @@ Subscribe to the adblockforchrome-dev Google Group, which is where we do all our
 
 === Committing code ===
 
-Instead of fixing issues in a patch file, you should make `branches/issue-NNNN` for the issue and make your changes there.  When you're done and you've tested them thoroughly, mark the Issue as `Status:ReadyForRelease`.  I'll review your code for bugs/style, then I'll merge your branch to trunk and set `Status:Fixed`.
+Instead of fixing issues in a patch file, you should make `branches/issue-NNNN` for the issue and make your changes there.  When you're done and you've tested them thoroughly, mark the Issue as `Status:NeedsReview`.  I'll review your code for bugs/style, then I'll merge your branch to trunk and set `Status:Fixed`.
 
-=== Coding style ===
+==== Coding style ====
 
 Please comment every function you write with a description of what it does, a list of inputs, and what it returns.  See `background.html` for some examples.  Variables should be clearly named instead of short.  When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When in doubt about capitalization, follow the rules of the code around you.  It's mostly `ClassName.functionName with_underscored_vars`.
 
@@ -63,9 +66,9 @@ In addition to triaging bugs, you can triage ad reports.  They come in via a rep
 
 === Getting help ===
 
-The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `ReadyToRelease` or `Fixed` :)  But if you get stuck, or have a question, you can cc gundlach on the Issue and I'll get emailed about it.
+The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `ReadyToRelease` or `Fixed` :)  But if you get stuck, or have a question, you can cc adblockforchrome on the Issue and I'll get emailed about it.
 
-If there's a critical issue that needs my immediate attention, set it to Priority:Critical.  I'll get an email automatically.  Feel free also to set Priority:High on any issue that you think should be on the shortlist to complete (or just set yourself as owner and start coding!)
+If there's a critical issue that needs my immediate attention, set it to Priority:Critical.  I'll get an email automatically at my personal address.  Feel free also to set Priority:High on any issue that you think should be on the shortlist to complete (or just set yourself as owner and start coding!)
 
 == More questions? ==
 
