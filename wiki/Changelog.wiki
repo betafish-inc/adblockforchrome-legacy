@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.30<br/>
+*Latest Chrome version*: 2.4.31<br/>
 *Latest Safari version*: 2.4.30<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.31*: Small changes (famlam), fix bug in waiting for idle
 
 *2.4.30*: Fix Gmail bug in Safari, wait for idle before fetching filters (famlam), fix filter normalization bug (famlam)
 
