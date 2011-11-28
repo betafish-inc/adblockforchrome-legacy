@@ -12,7 +12,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.4.32*: Fix critical bug breaking Safari after Private Browsing; remove dead Norwegian list (famlam)
+*2.4.32*: Fix critical bug breaking Safari after Private Browsing, remove dead Norwegian list (famlam), new jQuery version (famlam)
 
 *2.4.31*: Small changes (famlam), fix bug in waiting for idle
 
