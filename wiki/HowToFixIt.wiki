@@ -48,8 +48,8 @@
 
   === Mac OS X ===
    # Quit Chrome
-   # Open a Finder window by clicking on the Finder
-   # Go to: !YourUsername -> Library ->Application Support -> Google -> Chrome -> Default -> Local Storage
+   # Open Finder, click the Go menu, hold down the Option key, select Library which will appear at that point
+   # In the window that appears, go to: Application Support -> Google -> Chrome -> Default -> Local Storage
    # Delete the "chrome-extension_gighmmpiobklfepjocnamgkkbiglidom_0.localstorage" file
    # Open Chrome again and see if !AdBlock works
 
@@ -115,7 +115,7 @@
 
   === Mac OS X ===
    # Quit Safari
-   # Open a Finder window by clicking on the Finder
-   # Go to: !YourUsername -> Library -> Safari -> !LocalStorage
+   # Open Finder, click the Go menu, hold down the Option key, select Library which will appear at that point
+   # In the window that appears, go to: Safari -> !LocalStorage
    # Delete the "safari-extension_com.betafish.adblockforsafari-(letters & numbers).localstorage" file(s)
    # Open Safari again and see if !AdBlock works
