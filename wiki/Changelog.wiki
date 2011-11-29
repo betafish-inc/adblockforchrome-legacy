@@ -12,7 +12,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.4.34*: Don't break the toolbar button, thanks
+*2.4.34*: Don't break the toolbar button
 
 *2.4.33*: Store data in Safari settings instead of localStorage, so Safari doesn't wipe it out after Private Browsing
 
