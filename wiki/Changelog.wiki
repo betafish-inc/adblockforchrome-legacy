@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.4.32<br/>
+*Latest Chrome version*: 2.4.33<br/>
 *Latest Safari version*: 2.4.32<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.4.33*: Store data in Safari settings instead of localStorage, so Safari doesn't wipe it out after Private Browsing
 
 *2.4.32*: Fix critical bug breaking Safari after Private Browsing, remove dead Norwegian list (famlam), new jQuery version (famlam)
 
