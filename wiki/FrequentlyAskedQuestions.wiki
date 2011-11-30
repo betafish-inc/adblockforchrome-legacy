@@ -28,7 +28,7 @@ Also we are not yet able to block ads that appear in other plugins, like Flash.
 
 == Are you the same guys that made Adblock Plus for Firefox? ==
 
-No, the main developer for ABP is Vladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
+No, the main developer for ABP is Wladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
 
 == Can I import my filters from Adblock Plus for Firefox? ==
@@ -37,18 +37,11 @@ Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock option
 
 == Can I synchronize my settings and filters among multiple computers? ==
 
-Not automatically.  We're waiting on Chrome to add support for that.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
-
-== My settings aren't saved and/or I see a pop up every time I start the browser ==
-
-This can have these reasons: 
- # Your settings file is corrupt. Chrome is working on a fix for this
- # You have a hyperactive 'disk cleaner' program (a program that will automatically delete data saved by webpages when you close the browser). You have to allow the '!LocalStorage' from your browser, as our settings are saved in a !LocalStorage file.
- # Also make sure your browser has access to the folder where !LocalStorage files are stored
+Not automatically.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
 
 == Do you recommend to subscribe to all filter lists? ==
 
-No, not at all. Every filter has to be tested on each resource load. The more filters you have, the longer this will take. So every filter list written in languages you can't even read will slow you down without matching anything. Further, the more filter lists you are subscribed to, the more likely a resource will be incorrectly blocked. You can off course report it to the maintainer of that list [ListAuthorContacts here], but if you don't have to report anything, it's always easier. Last but not least: by subscribing to all filters, you are wasting bandwidth of the filter list authors. As said before, you won't use the filters, but they are still downloaded every 21 days or less.
+No, not at all.  !AdBlock subscribes you to the lists you should need.  The more filter lists you use, the slower AdBlock runs, and the more chance of false positives.  Lists for languages you don't speak will be useless to you.  And it wastes bandwidth for the filter list maintainers.
 
 == Do you maintain all filter lists yourselves? ==
 
@@ -72,7 +65,7 @@ Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
 
 Chrome: Yes it will, it might just take a few weeks.  !AdBlock is so popular that Google tells your browser not to update as frequently, to save Google bandwidth.  If you must have the newest version now, you'll have to uninstall, then reinstall from https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom .  Make sure to copy any custom filters you've made under !AdBlock Options -> Customize so you can paste them back in.
 
-Safari: You may have auto-update of extensions turned off.  Turn it on at Safari -> Preferences -> Extensions.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
+Safari: You may have auto-update of extensions turned off.  Turn it on under Safari -> Preferences -> Extensions -> Updates.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
 
 == I see ads in a video! ==
 
@@ -86,9 +79,39 @@ Sure.  Add this filter to your custom filters:
 
 where domain1.com etc. are the sites where you want to block ads.
 
+== How do I hunt down a bad filter? ==
+
+If you're helping us with a problem caused by a bad filter and we ask you to hunt down the bad filter, here's how to do it.
+
+Important: whenever you change your filters, it doesn't take effect on a tab until you reload the tab.
+
+STEP ONE: Make sure the bad filter isn't one of the Options -> Customize filters which you have added yourself.
+  1. Delete all filters in the Options -> Customize textbox and click Save.
+  1. If the problem is gone, put them back one at a time until you find the bad filter.  Otherwise, go to STEP TWO.
+
+STEP TWO: Find the bad list.
+  1. Unsubscribe from all filter lists under Options -> Filter Lists.
+  1. Subscribe to each of your lists individually until you find the one that brings the problem back.
+  1. Unsubscribe from all filter lists again.
+
+STEP THREE: Copy the bad list's filters into your Customize textbox.
+  1. Turn on Options -> General -> Advanced Mode.
+  1. Click Options -> Filter Lists -> Show Links To The Filter Lists.
+  1. Click the link next to the bad list to see its contents.
+  1. Copy the entire contents of the bad list.
+  1. Paste into the Options -> Customize textbox.
+  1. Verify that the problem is back.
+
+STEP FOUR: Delete filters until only the bad filter remains.
+  1. Reload the tab with the problem.
+  1. If the problem is still there, delete the first half of the contents of the Customize textbox and click Save, then go to step 1.
+  1. If the problem is gone, you deleted the bad filter.  So undo your delete in the textbox using Control-Z (Apple-Z on a Mac) and delete the second half of the contents instead; then go to step 1.
+
+After about 10 of those delete-check-repeat cycles you should have it narrowed down to the single bad filter causing you trouble.
+
 == How can I help? ==
 
-Thanks for asking!  see HowToContribute .
+Thanks for asking!  See HowToContribute .
 
 == Where can I ask a question or get in touch? ==
 
