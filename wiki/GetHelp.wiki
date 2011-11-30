@@ -9,12 +9,10 @@ Sorry to hear that!  You've come to the right place.
 == Is this your problem? ==
 
  * Did !AdBlock *stop working in Safari*?
-   Safari 5.1 has a bug: after you use Private Browsing, extensions stop working.  To fix this, go to Safari | Preferences | Extensions and disable then re-enable extensions.  Please [http://bugreport.apple.com report this to Apple] to help us get it fixed sooner.
+   This is fixed in AdBlock 2.4.33.  Reinstall AdBlock from [http://safariadblock.com safariadblock.com] and AdBlock should no longer randomly stop working.  If you tried this and that's not your problem, see below.
 
  * Are you *seeing !AdBlock's install screen* every time you start your browser?
-   Safari 5.1 has a bug: if you tell it to delete cookies after every restart, it will show the !AdBlock install page every time you start your browser.  Turn off the Safari option to work around the bug.  A fix is coming.
-
-   If you haven't set that option, follow step 5 below to fix the problem.
+   This is fixed in AdBlock 2.4.33.  Reinstall AdBlock from [http://safariadblock.com safariadblock.com] and AdBlock should stop showing you the install screen.
 
  * Are you seeing *broken image popups or slideshows* on a website?
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
