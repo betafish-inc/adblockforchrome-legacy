@@ -1,0 +1,856 @@
+<html>
+  <head>
+    <script src="port.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="stats.js"></script>
+    <script src="filtering/filteroptions.js"></script>
+    <script src="filtering/fifocache.js"></script>
+    <script src="filtering/filtertypes.js"></script>
+    <script src="filtering/filterset.js"></script>
+    <script src="filtering/myfilters.js"></script>
+    <script src="filtering/filternormalizer.js"></script>
+    <script>
+
+      GLOBAL_block_style = "new";
+      // Determine whether GLOBAL_block_style should be "old"
+      (function() {
+        function shouldDegrade() {
+          if (SAFARI)
+            return true;
+          // TEMP while webRequest is experimental, pretend it has graduated
+          if (chrome.experimental && chrome.experimental.webRequest &&
+              !chrome.webRequest)
+            chrome.webRequest = chrome.experimental.webRequest;
+          try {
+            // Quick test that the API exists and that we may access it.
+            function x() { return { cancel: false }; }
+            chrome.webRequest.onBeforeRequest.addListener(x, undefined, ["blocking"]);
+            chrome.webRequest.onBeforeRequest.removeListener(x);
+          }
+          catch (ex) {
+            return true;
+          }
+          // We must assume the API will work; if it fails later, we'll catch
+          // it and gracefully degrade.
+          return false;
+        }
+        if (shouldDegrade()) {
+          GLOBAL_block_style = "old";
+        }
+      })();
+
+
+      // Implement blocking via the Chrome webRequest API.
+      (function() {
+        if (SAFARI || GLOBAL_block_style == "old")
+          return;
+
+        // Stores url, whitelisting, and blocking info for a tabid+frameid
+        // TODO: can we avoid making this a global once 'old' style dies?
+        frameData = {
+          // Return the data object for the given tabId and frameId, creating
+          // it if necessary.
+          get: function(tabId, frameId) {
+            if (!frameData[tabId]) frameData[tabId] = {};
+            if (!frameData[tabId][frameId]) frameData[tabId][frameId] = {};
+            return frameData[tabId][frameId];
+          },
+
+          // Watch for requests for new tabs and frames, and track their URLs.
+          // Inputs: details: object from onBeforeRequest callback
+          // Returns false if this request's tab+frame are not trackable.
+          track: function(details) {
+            var fd = frameData, tabId = details.tabId;
+
+            if (details.type == 'main_frame') { // New tab
+              delete fd[tabId];
+              fd.get(tabId, 0).url = details.url;
+              log("=========== Tracking tab:", tabId, details.url);
+              return true;
+            }
+
+            // Request from a tab opened before AdBlock started, or from a
+            // chrome:// tab containing an http:// iframe
+            if (!fd[tabId]) {
+              log("Ignoring unknown tab:", tabId, details.frameId, details.url);
+              return false;
+            }
+
+            // Some times e.g. Youtube create empty iframes via JavaScript and
+            // inject code into them.  So requests appear from unknown frames.
+            // Treat these frames as having the same URL as the tab.
+            var potentialEmptyFrameId = (details.type == 'sub_frame' ? details.parentFrameId: details.frameId);
+            if (!fd[tabId][potentialEmptyFrameId]) {
+              fd.get(tabId, potentialEmptyFrameId).url = fd.get(tabId, 0).url;
+              log("Null frame", tabId, potentialEmptyFrameId, "found; giving it the tab's URL.");
+            }
+
+            if (details.type == 'sub_frame') { // New frame
+              delete fd[tabId][details.frameId];
+              fd.get(tabId, details.frameId).url = details.url;
+              log("=========== Tracking frame", tabId, details.parentFrameId, details.frameId, details.url);
+            }
+
+            return true;
+          },
+
+          // Returns the domain of the URL of the specified tab+frame.
+          domainOfFrame: function(tabId, frameId) {
+            var frame = frameData.get(tabId, frameId);
+            // Cache the answer, since all requests from this frame need this
+            if (frame.domain === undefined)
+              frame.domain = url_parts(frame.url).domain;
+            return frame.domain;
+          },
+
+          // True if the given tabId is whitelisted.
+          isOnWhitelistedTab: function(tabId) {
+            var sourceTab = frameData.get(tabId, 0);
+            // Cache the answer, since the page will generate many requests.
+            if (sourceTab.whitelisted === undefined)
+              sourceTab.whitelisted = page_is_whitelisted(sourceTab.url);
+            return sourceTab.whitelisted;
+          },
+
+          // Record a resource for the resource blocker.
+          storeResource: function(tabId, url, elType) {
+            if (!get_settings().show_advanced_options)
+              return;
+            var data = frameData.get(tabId, 0);
+            if (data.resources === undefined)
+              data.resources = {};
+            data.resources[elType + ':|:' + url] = null;
+          },
+
+          // Record that a url+elType was or was not blocked on the given tab.
+          // We don't record the frame because there's no way to message a
+          // specific frame, so our results will be broadcast to every frame
+          // on the tab anyway.
+          //
+          // This only stores elTypes that actually need removing in the
+          // content script.
+          //
+          // Returns an array of [elType, url, blocked] stored results if
+          // it decides it's time for the tab to know about them.
+          storeBlockResults: function(tabId, frameId, url, elType, blocked) {
+            var worthStoring = (elType & (ElementTypes.image | ElementTypes.subdocument | ElementTypes.object));
+            if (!worthStoring)
+              return null;
+            var data = frameData.get(tabId, frameId);
+            if (data.blockResults === undefined)
+              data.blockResults = [];
+            var blockData = data.blockResults;
+            blockData.push([elType, url, blocked]);
+            // Increasing this number sends fewer messages but leaves more
+            // unblocked items' keys (elType+" "+url) in tab memory
+            // and background memory after a tab is done loading
+            if (blocked || blockData.length > 20) {
+              delete data.blockResults;
+              return blockData;
+            } else {
+              return null;
+            }
+          },
+
+          // When a tab is closed, delete all its data
+          onTabClosedHandler: function(tabId) {
+            log("----------- Closing tab", tabId);
+            delete frameData[tabId];
+          }
+        };
+
+        // When a request starts, perhaps block it.
+        function onBeforeRequestHandler(details) {
+          try {
+            // TODO storage_get
+            if (localStorage.adblock_is_paused)
+              return { cancel: false };
+
+            if (!frameData.track(details))
+              return { cancel: false };
+
+            var tabId = details.tabId;
+            var elType = ElementTypes.fromOnBeforeRequestType(details.type);
+
+            frameData.storeResource(tabId, details.url, elType);
+
+            if (frameData.isOnWhitelistedTab(tabId)) {
+              log("Ignoring whitelisted tab", tabId, details.url.substring(0, 100));
+              return { cancel: false };
+            }
+
+            // For most requests, Chrome and we agree on who sent the request: the frame.
+            // But for iframe loads, we consider the request to be sent by the outer 
+            // frame, while Chrome claims it's sent by the new iframe.  Adjust accordingly.
+            var requestingFrameId = (details.type == 'sub_frame' ? details.parentFrameId : details.frameId);
+            // May the URL be loaded by the requesting frame?
+            var frameDomain = frameData.domainOfFrame(tabId, requestingFrameId);
+            var blocked = _myfilters.blocking.matches(details.url, elType, frameDomain);
+            var results = frameData.storeBlockResults(tabId, requestingFrameId, details.url, elType, blocked);
+            // Non-null results means there's a good reason to send a batch of
+            // results to the tab -- one was blocked, or there are many results
+            if (results) {
+              // frameUrl is used by the recipient to determine whether they're the frame who should
+              // receive this or not.  Because the #anchor of a page can change without navigating
+              // the frame, ignore the anchor when matching.
+              var frameUrl = frameData.get(tabId, requestingFrameId).url.replace(/#.*$/, "");
+              chrome.tabs.sendRequest(tabId, { command: "block-results", frameUrl: frameUrl, results: results });
+            }
+
+            log("Block result", blocked, details.type, frameDomain, details.url.substring(0, 100));
+            return { cancel: blocked };
+          }
+          catch(ex) {
+            abortNewStyle(ex);
+            return { cancel: false };
+          }
+        }
+
+        // Upon error in webRequest API, gracefully degrade to old style
+        // Inputs: ex: an exception that was thrown and caused the abort
+        function abortNewStyle(ex) {
+          GLOBAL_block_style = "old";
+          try {
+            console.log("Falling back to old-style blocking.  Error message:");
+            console.log(ex.message);
+            console.trace();
+            STATS.msg("webRequest fail: " + ex.message);
+            chrome.webRequest.onBeforeRequest.removeListener(onBeforeRequestHandler);
+            chrome.tabs.onRemoved.removeListener(frameData.onTabClosedHandler);
+          }
+          catch(ex) {
+          }
+        }
+
+        // Register to use webRequest API
+        try {
+          chrome.webRequest.onBeforeRequest.addListener(onBeforeRequestHandler, undefined, ["blocking"]);
+          chrome.tabs.onRemoved.addListener(frameData.onTabClosedHandler);
+        }
+        catch(ex) {
+          abortNewStyle(ex);
+        }
+
+      })();
+
+      debug_report_elemhide = function(selector, sender) {
+        if (!window.frameData)
+          return;
+        frameData.storeResource(sender.tab.id, selector, "HIDE");
+      }
+
+      // UNWHITELISTING
+
+      // Look for a custom filter that would whitelist options.url,
+      // and if any exist, remove the first one.
+      // Inputs: url:string - a URL that may be whitelisted by a custom filter
+      // Returns: true if a filter was found and removed; false otherwise.
+      try_to_unwhitelist = function(url) {
+        url = url.replace(/#.*$/, ''); // Whitelist ignores anchors
+        var loweredUrl = url.toLowerCase();
+        var custom_filters = get_custom_filters_text().split('\n');
+        for (var i = 0; i < custom_filters.length; i++) {
+          var text = custom_filters[i];
+          if (!Filter.isWhitelistFilter(text))
+            continue;
+          var filter = PatternFilter.fromText(text);
+          if (!filter.matches(url, loweredUrl, ElementTypes.document, false))
+            continue;
+
+          custom_filters.splice(i, 1); // Remove this whitelist filter text
+          var new_text = custom_filters.join('\n');
+          set_custom_filters_text(new_text);
+          return true;
+        }
+        return false;
+      }
+
+      // CUSTOM FILTERS
+
+      // Get the custom filters text as a \n-separated text string.
+      get_custom_filters_text = function() {
+        return storage_get('custom_filters') || '';
+      }
+
+      // Set the custom filters to the given \n-separated text string, and
+      // rebuild the filterset.
+      // Inputs: filters:string the new filters.
+      set_custom_filters_text = function(filters) {
+        storage_set('custom_filters', filters);
+        _myfilters.update();
+      }
+
+      // Removes a custom filter entry.
+      // Inputs: filter:string line of text to remove from custom filters.
+      remove_custom_filter = function(filter) {
+        // Make sure every filter is preceded and followed by at least one \n,
+        // then find and remove the filter.
+        var text = "\n" + get_custom_filters_text() + "\n";
+        text = text.replace("\n" + filter + "\n", "\n");
+        set_custom_filters_text(text.trim());
+      }
+
+      // OPTIONAL SETTINGS
+
+      function Settings() {
+        var defaults = {
+          debug_logging: false,
+          show_google_search_text_ads: false,
+          show_context_menu_items: true,
+          show_advanced_options: false
+        };
+        var settings = storage_get('settings') || {};
+        this._data = $.extend(defaults, settings);
+      };
+      Settings.prototype = {
+        set: function(name, is_enabled) {
+          this._data[name] = is_enabled;
+          storage_set('settings', this._data);
+        },
+        get_all: function() {
+          return this._data;
+        }
+      };
+      _settings = new Settings();
+
+      get_settings = function() {
+        return _settings.get_all();
+      }
+
+      set_setting = function(name, is_enabled) {
+        _settings.set(name, is_enabled);
+
+        if (name == "debug_logging") {
+          if (is_enabled)
+            log = function() { console.log.apply(console, arguments); };
+          else
+            log = function() { };
+        }
+      }
+
+      // MYFILTERS PASSTHROUGHS
+
+      // Rebuild the filterset based on the current settings and subscriptions.
+      update_filters = function() {
+        _myfilters.update();
+      }
+
+      // Fetch the latest version of all subscribed lists now.
+      update_subscriptions_now = function() {
+        _myfilters.freshen_async(true);
+      }
+
+      // Returns map from id to subscription object.  See filters.js for
+      // description of subscription object.
+      get_subscriptions_minus_text = function() {
+        return _myfilters.get_subscriptions_minus_text();
+      }
+
+      // Subscribes to a filter subscription.
+      // Inputs: id: id to which to subscribe.  Either a well-known
+      //             id, or "url:xyz" pointing to a user-specified list.
+      //         text: filter text string fetched from that url
+      //         requires: the id of a list if it is a supplementary list,
+      //                   or null if nothing required
+      // Returns: null, upon completion
+      subscribe = function(id, text, requires) {
+        _myfilters.subscribe(id, text, requires);
+      }
+
+      // Unsubscribes from a filter subscription.
+      // Inputs: id: id from which to unsubscribe.
+      //         del: (bool) if the filter should be removed or not
+      // Returns: null, upon completion.
+      unsubscribe = function(id, del) {
+        _myfilters.unsubscribe(id, del);
+      }
+
+      // Return the scheme and domain for the given url.
+      // TODO I have code in a few places that extracts domains, I think.
+      // Deduplicate it.
+      url_parts = function(url) {
+        var parts = url.match("(.*?)://(..*?)/");
+        if (!parts) // may be "about:blank" or similar
+          parts = url.match("(.*?):(.*)");
+        // TODO: crbug.com/81298 sometimes makes this break, but it doesn't
+        // impact users visibly so I'm letting it break.
+        var scheme = parts[1];
+        var domain = parts[2];
+        return {
+          scheme: scheme,
+          domain: domain
+        };
+      }
+      // INFO ABOUT CURRENT PAGE
+
+      // Get interesting information about the current tab.
+      // Inputs:
+      //   callback: function(info).
+      //   info object passed to callback: {
+      //     tab: Tab object
+      //     whitelisted: bool - whether the current tab's URL is whitelisted.
+      //     domain: string
+      //     disabled_site: bool - true if the url is e.g. about:blank or the
+      //                           Extension Gallery, where extensions don't run.
+      //   }
+      // Returns: null (asynchronous)
+      getCurrentTabInfo = function(callback) {
+        chrome.tabs.getSelected(undefined, function(tab) {
+          var url = url_parts(tab.url);
+
+          var disabled_site = false;
+          if (url.scheme != 'http' && url.scheme != 'https')
+            disabled_site = true;
+          if (/\:\/\/chrome.google.com\/webstore\//.test(tab.url))
+            disabled_site = true;
+
+          var result = {
+            tab: tab,
+            disabled_site: disabled_site,
+            domain: url.domain,
+          };
+          if (!disabled_site)
+            result.whitelisted = page_is_whitelisted(tab.url);
+
+          callback(result);
+        });
+      }
+
+      // Returns true if anything in whitelist matches the_domain.
+      //   url: the url of the page
+      //   type: one out of ElementTypes, default ElementTypes.document,
+      //         to check what the page is whitelisted for: hiding rules or everything
+      //   returnFilter: if the filter that whitelisted the page should be returned
+      page_is_whitelisted = function(url, type, returnFilter) {
+        url = url.replace(/\#.*$/, ''); // Remove anchors
+        var loweredUrl = url.toLowerCase();
+        if (!type)
+          type = ElementTypes.document;
+        var whitelist = _myfilters.blocking.whitelist;
+        var match = whitelist.matches(url, loweredUrl, type, url_parts(url).domain, false);
+        if (match)
+          return returnFilter ? match._text : true;
+        return false;
+      }
+
+      if (!SAFARI) {
+        // Set the button image and context menus according to the URL
+        // of the current tab.
+        updateButtonUIAndContextMenus = function() {
+
+          function setContextMenus(info) {
+            chrome.contextMenus.removeAll();
+            if (!get_settings().show_context_menu_items)
+              return;
+
+            if (localStorage.adblock_is_paused || info.whitelisted || info.disabled_site)
+              return;
+
+            function addMenu(title, callback) {
+              chrome.contextMenus.create({
+                title: title,
+                contexts: ["all"],
+                onclick: function(clickdata, tab) { callback(tab, clickdata); }
+              });
+            }
+
+            addMenu(translate("block_this_ad"), function(tab, clickdata) {
+              emit_page_broadcast(
+                {fn:'top_open_blacklist_ui', options:{info: clickdata}},
+                {tab: tab}
+              );
+            });
+
+            addMenu(translate("block_an_ad_on_this_page"), function(tab) {
+              emit_page_broadcast(
+                {fn:'top_open_blacklist_ui', options:{nothing_clicked: true}},
+                {tab: tab}
+              );
+            });
+          }
+
+          function setBrowserButton(info) {
+            if (localStorage.adblock_is_paused) {
+              chrome.browserAction.setIcon({path:"img/icon19-grayscale.png", tabId: info.tab.id});
+            } else if (info.disabled_site &&
+                !/^chrome-extension:.*pages\/install\//.test(info.tab.url)) {
+              // Show non-disabled icon on the installation-success page so it
+              // users see how it will normally look. All other disabled pages
+              // will have the gray one
+              chrome.browserAction.setIcon({path:"img/icon19-grayscale.png", tabId: info.tab.id});
+            } else if (info.whitelisted) {
+              chrome.browserAction.setIcon({path:"img/icon19-whitelisted.png", tabId: info.tab.id});
+            } else {
+              chrome.browserAction.setIcon({path:"img/icon19.png", tabId: info.tab.id});
+            }
+          }
+
+          getCurrentTabInfo(function(info) {
+            setContextMenus(info);
+            setBrowserButton(info);
+          });
+        }
+      }
+
+
+      // These functions are usually only called by content scripts.
+
+      // Add a new custom filter entry.
+      // Inputs: filter:string line of text to add to custom filters.
+      // Returns: null if succesfull, otherwise an exception
+      add_custom_filter = function(filter) {
+        var custom_filters = get_custom_filters_text();
+        try {
+          if (FilterNormalizer.normalizeLine(filter)) {
+            custom_filters = custom_filters + '\n' + filter;
+            set_custom_filters_text(custom_filters);
+            return null;
+          }
+          return "This filter is unsupported";
+        } catch(ex) {
+          return ex;
+        }
+      };
+
+      // Return the contents of a local file.
+      // Inputs: file:string - the file relative address, eg "js/foo.js".
+      // Returns: the content of the file.
+      readfile = function(file) {
+        // A bug in jquery prevents local files from being read, so use XHR.
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", chrome.extension.getURL(file), false);
+        xhr.send();
+        return xhr.responseText;
+      };
+
+      // TODO: make better.
+      // Inputs: options object containing:
+      //           style: "new" or "old" -- webRequest API content script
+      //                  sends "new", Safari/Chrome-old-style send "old".
+      //           domain:string the domain of the calling frame.
+      //           include_texts?:bool true if PatternFilter._text should be
+      //                               appended to block filters.
+      get_content_script_data = function(options, sender) {
+        if (options.style != GLOBAL_block_style) {
+          return { abort: true };
+        }
+        var whitelisted = page_is_whitelisted(sender.tab.url);
+        var settings = get_settings();
+        var result = {
+          page_is_whitelisted: whitelisted,
+          adblock_is_paused: localStorage.getItem('adblock_is_paused'),
+          settings: settings,
+          selectors: []
+        };
+        if (whitelisted || result.adblock_is_paused)
+          return result;
+
+        // Not whitelisted, and running on adblock_start.  We have two tasks:
+        // apply CSS-hiding rules, and send Chrome a filterset.
+
+        if (!page_is_whitelisted(sender.tab.url, ElementTypes.elemhide)) {
+          result.selectors = _myfilters.hiding.
+            filtersFor(options.domain, function(f) { return f.selector; });
+        }
+        // Chrome without the webRequest API needs the blocking filters in the
+        // content script.
+        if (!SAFARI && (options.style == "old" || options.include_texts)) {
+          function packed(filter) {
+            return [filter._rule.source, filter._allowedElementTypes, filter._options];
+          }
+          if (options.include_texts) {
+            packed = function(filter) {
+              return [filter._rule.source, filter._allowedElementTypes, filter._options, filter._text];
+            }
+          }
+          result.patternSerialized = _myfilters.blocking.pattern.
+            filtersFor(options.domain, packed);
+          result.whitelistSerialized = _myfilters.blocking.whitelist.
+            filtersFor(options.domain, packed);
+        }
+
+        return result;
+      };
+
+      // Bounce messages back to content scripts.
+      if (!SAFARI) {
+      emit_page_broadcast = (function() {
+          var injectMap = {
+            'top_open_whitelist_ui': {
+              allFrames: false,
+              include: [
+                "uiscripts/load_jquery_ui.js",
+                "uiscripts/top_open_whitelist_ui.js"
+                ]
+            },
+            'top_open_blacklist_ui': {
+              allFrames: false,
+              include: [
+                "uiscripts/load_jquery_ui.js",
+                "uiscripts/blacklisting/overlay.js",
+                "uiscripts/blacklisting/clickwatcher.js",
+                "uiscripts/blacklisting/elementchain.js",
+                "uiscripts/blacklisting/blacklistui.js",
+                "uiscripts/top_open_blacklist_ui.js"
+                ]
+            },
+            'send_content_to_back': {
+              allFrames: true,
+              include: [
+                'uiscripts/blacklisting/send_content_to_back.js'
+                ]
+            }
+          };
+          // Inject the required scripts to execute fn_name(parameter) in
+          // the current tab.
+          // Inputs: fn_name:string name of function to execute on tab.
+          //         fn_name must exist in injectMap above.
+          //         parameter:object to pass to fn_name.  Must be JSON.stringify()able.
+          //         injectedSoFar?:int used to recursively inject required scripts.
+          var executeOnTab = function(fn_name, parameter, injectedSoFar) {
+            injectedSoFar = injectedSoFar || 0;
+            var data = injectMap[fn_name];
+            var details = { allFrames: data.allFrames };
+            // If there's anything to inject, inject the next item and recurse.
+            if (data.include.length > injectedSoFar) {
+              details.file = data.include[injectedSoFar];
+              chrome.tabs.executeScript(undefined, details, function() {
+                executeOnTab(fn_name, parameter, injectedSoFar + 1);
+              });
+            }
+            // Nothing left to inject, so execute the function.
+            else {
+              var param = JSON.stringify(parameter);
+              details.code = fn_name + "(" + param + ");";
+              chrome.tabs.executeScript(undefined, details);
+            }
+          };
+
+          // The emit_page_broadcast() function
+          var theFunction = function(request) {
+            executeOnTab(request.fn, request.options);
+          };
+          return theFunction;
+        })();
+      }
+      if (SAFARI) {
+        emit_page_broadcast = (function() {
+        // Private list of connected ports for emit_page_broadcast()
+        var broadcast_ports = [];
+        chrome.extension.onConnect.addListener(function(port) {
+          port.onDisconnect.addListener(function(disconnected_port) {
+            var where = broadcast_ports.indexOf(disconnected_port);
+            if (where != -1) {
+              broadcast_ports.splice(where, 1);
+            }
+          });
+          broadcast_ports.push(port);
+        });
+
+        // The emit_page_broadcast() function
+        var theFunction = function(request, sender) {
+          $.each(broadcast_ports, function(i, port) {
+              // issue 5416, fixed in Chrome and probably never happens in
+              // Safari: port.sender.tab could be null for an unknown reason.
+              if (!port.sender.tab)
+                return;
+            if (port.sender.tab.id == sender.tab.id)
+              port.postMessage(request);
+          });
+        };
+        return theFunction;
+      })();
+      }
+
+      // Open the resource blocker when requested from the Chrome popup.
+      launch_resourceblocker = function(tabId) {
+        if (GLOBAL_block_style == "old") {
+          chrome.tabs.sendRequest(tabId, "open_resourcelist");
+        } else {
+          // TODO: once 'old' style is dead, have resourceblock.html
+          // request the resources from frameData, whose entries are
+          // deleted on tab navigate/close.  For now, just proxy to
+          // the 'old' method.
+          var data = frameData.get(tabId, 0);
+          if (!data)
+            return;
+          var resources = Object.keys(data.resources);
+          show_resourceblocker(resources, { tab: { url: data.url } });
+        }
+      }
+
+      // Will open the resource blocking tab.
+      // Input: resources: array of resource strings;
+      //                   see resourceblock.html for format
+      show_resourceblocker = (function() {
+        // Stores resources used by resourceblock.html
+        var _cached_resources = new FifoCache(5);
+
+        var theFunction = function(resources, sender) {
+          var url = sender.tab.url.replace(/\#.*/, '');
+          _cached_resources.set(url, resources);
+          chrome.tabs.create({url: "pages/resourceblock.html?url=" + escape(url)});
+        };
+        theFunction.cached_resources = _cached_resources; // make it public
+
+        return theFunction;
+      })();
+
+      // Return chrome.i18n._getL10nData() for content scripts who cannot
+      // call that function (since it loads extension files from disk.)
+      // Only defined in Safari.
+      get_l10n_data = (SAFARI ? chrome.i18n._getL10nData : undefined);
+
+
+      // BGcall DISPATCH
+      (function() {
+        chrome.extension.onRequest.addListener(
+          function(request, sender, sendResponse) {
+            if (request.command != "call")
+              return; // not for us
+            // +1 button in browser action popup loads a frame which
+            // runs content scripts.  Ignore their cries for ad blocking.
+            if (sender.tab == null)
+              return;
+            var fn = window[request.fn];
+            request.args.push(sender);
+            var result = fn.apply(window, request.args);
+            sendResponse(result);
+          }
+        );
+      })();
+
+
+      // BROWSER ACTION AND CONTEXT MENU UPDATES
+      (function() {
+        if (SAFARI)
+          return;
+
+        //TEMP: until crbug.com/60435 is fixed, check if chrome.tabs exists.
+        //Otherwise the extension doesn't work (e.g. doesn't block ads)
+        if (chrome.tabs) {
+          chrome.tabs.onUpdated.addListener(function(tabid, changeInfo, tab) {
+            if (tab.selected)
+              updateButtonUIAndContextMenus();
+          });
+          chrome.tabs.onSelectionChanged.addListener(function(tabid, selectInfo) {
+            updateButtonUIAndContextMenus();
+          });
+        }
+      })();
+
+      // BROWSER ACTION BADGE
+      (function() {
+        if (SAFARI)
+          return;
+
+        // The string to display to the user in the "new version" div.
+        // Update this whenever a release warrants a browser action
+        // badge and an info div in the popup.  Note that it is
+        // not compared with the manifest -- you can set it to whatever
+        // value you want.
+        version_to_notify = '2.3.0';
+
+        // Brand new users don't see badge (or popup's info div).
+        if (STATS.firstRun) {
+          localStorage.setItem('saw_badge_version', version_to_notify);
+          localStorage.setItem('saw_badge_info_version', version_to_notify);
+        }
+        var saw = localStorage.getItem('saw_badge_version');
+        if (saw != version_to_notify) {
+          // If they haven't seen the latest, show it.
+          chrome.browserAction.setTitle({title:translate("new_version")});
+          chrome.browserAction.setBadgeBackgroundColor({color:[40,255,40,255]});
+          chrome.browserAction.setBadgeText({text:"\u2022"}); // bullet
+        }
+
+      })();
+
+      if (get_settings().debug_logging)
+        log = function() { console.log.apply(console, arguments); };
+
+      _myfilters = new MyFilters();
+
+      // Record that we exist.
+      STATS.startPinging();
+
+      if (STATS.firstRun) { // show the walkthrough
+        // Safari has race condition where userId may not be available inside
+        // index.html, so pass it in explicitly.
+        chrome.tabs.create({url: "pages/install/index.html?u=" + STATS.userId});
+      }
+
+      // Safari specific code.
+      if (SAFARI) {
+        // True blocking support.
+        safari.application.addEventListener("message", function(messageEvent) {
+          if (messageEvent.name != "canLoad")
+            return;
+
+          if (page_is_whitelisted(messageEvent.target.url)) {
+            messageEvent.message = true;
+            return;
+          }
+
+          var url = messageEvent.message.url;
+          var elType = messageEvent.message.elType;
+          var frameDomain = messageEvent.message.frameDomain;
+
+          var isMatched = url && (_myfilters.blocking.matches(url, elType, frameDomain));
+          if (isMatched)
+            log("SAFARI TRUE BLOCK " + url + ": " + isMatched);
+          messageEvent.message = !isMatched;
+        }, false);
+
+        safari.application.addEventListener("command", function(commandEvent) {
+          // Open Options page upon Toolbar button click.
+          if (commandEvent.command == "AdBlockOptions")
+            chrome.tabs.create({url: "options/index.html"});
+          if (commandEvent.command in
+              {"show-whitelist-wizard": 1, "show-blacklist-wizard": 1, "show-clickwatcher-ui": 1 }) {
+            safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(commandEvent.command);
+          }
+        }, false);
+
+        // Open Options page upon settings checkbox click.
+        safari.extension.settings.openAdBlockOptions = false;
+        safari.extension.settings.addEventListener("change", function(e) {
+          if (e.key == 'openAdBlockOptions')
+            chrome.tabs.create({url: "options/index.html"});
+        }, false);
+
+        // Add context menus
+        safari.application.addEventListener("contextmenu", function(event) {
+          if (!event.userInfo)
+            return;
+          if (!get_settings().show_context_menu_items)
+            return;
+          event.contextMenu.appendContextMenuItem("show-blacklist-wizard", translate("block_this_ad"));
+          event.contextMenu.appendContextMenuItem("show-clickwatcher-ui", translate("block_an_ad_on_this_page"));
+          event.contextMenu.appendContextMenuItem("show-whitelist-wizard", translate("contextmenuexcludedomain"));
+        }, false);
+      }
+
+      // TEMP: OLD STYLE WHITELIST
+      (function() {
+        //   TODO: Remove this when you are convinced everyone has updated their
+        //   version of AdBlock... Say in March or April
+        if (storage_get('whitelist')) {
+          var old_style_whitelist = storage_get('whitelist') || [];
+          for (var i=0; i<old_style_whitelist.length; i++) {
+            var website = old_style_whitelist[i];
+            if (website[0] == '.')
+              website = '*' + website;
+            add_custom_filter('@@||' + website + '^$document');
+          }
+          localStorage.removeItem('whitelist');
+        }
+      })();
+      // Remnants from issue 5382
+      localStorage.removeItem('subscribed_list_for_language');
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
