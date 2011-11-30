@@ -12,7 +12,7 @@ Sorry to hear that!  You've come to the right place.
    This is fixed in !AdBlock 2.4.33.  Reinstall !AdBlock from [http://safariadblock.com safariadblock.com] and !AdBlock should no longer randomly stop working.  If you tried this and that's not your problem, see below.
 
  * Are you *seeing !AdBlock's install screen* every time you start your browser?
-   This is fixed in !AdBlock 2.4.33.  Reinstall !AdBlock from [http://safariadblock.com safariadblock.com] and !AdBlock should stop showing you the install screen.
+   In Safari, this is fixed in !AdBlock 2.4.33; get the latest version for the fix.  In Chrome, follow step 5 in the "5 easy steps" below.
 
  * Are you seeing *broken image popups or slideshows* on a website?
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
