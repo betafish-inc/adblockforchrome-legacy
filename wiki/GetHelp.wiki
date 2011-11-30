@@ -8,6 +8,9 @@ Sorry to hear that!  You've come to the right place.
 
 == Is this your problem? ==
 
+ * Are you seeing *infinite error message* when you start Safari?
+   This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can uninstall !AdBlock via Safari -> Preferences -> Extensions -> AdBlock -> Uninstall, then reinstall from safariadblock.com to fix the problem.
+
  * Did !AdBlock *stop working in Safari*?
    This is fixed in !AdBlock 2.4.33.  [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i Get the latest version] and !AdBlock should no longer randomly stop working.  If you tried this and that's not your problem, see below.
 
