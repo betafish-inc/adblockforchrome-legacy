@@ -43,6 +43,7 @@ Sorry to hear that!  You've come to the right place.
 == Other known problems ==
 
   * *The Lazy Background Pages experimental feature* breaks !AdBlock in Chrome. Disable the option to fix this.
+  * *Nightly and Canary builds* will often cause issues. If the issue doesn't occur in the latest dev, beta or stable version of your browser, please file a report in the issue tracker for the browser instead ([http://crbug.com/new Chrome] [https://bugreport.apple.com/ Safari]).
 
 == Do you still have a problem after trying the above? ==
 
