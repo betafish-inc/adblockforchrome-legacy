@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.1<br/>
+*Latest Chrome version*: 2.5.2<br/>
 *Latest Safari version*: 2.4.33<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.2*: Measure opt-in rate to new-style blocking, so we know when it's been tested enough to enable for everyone
 
 *2.5.1*: Quieter logging
 
