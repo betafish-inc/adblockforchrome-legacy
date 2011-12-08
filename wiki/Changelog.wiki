@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.0<br/>
+*Latest Chrome version*: 2.5.1<br/>
 *Latest Safari version*: 2.4.33<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.1*: Quieter logging
 
 *2.5.0*: All in-video and in-Flash ads are blocked in Chrome if you turn it on under !AdBlock Options
 
