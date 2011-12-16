@@ -151,9 +151,6 @@ Missing translations: adblock_auto_removes_ads_thats_all, adblock_is_paused, adb
 ===== \_locales\el\messages.json =====
 Missing translations: block_popups_video_flash_ads, filtereasylist_plus_greek, filterrussian, lang_greek, storage_quota_exceeded, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
 
-===== \_locales\de\messages.json =====
-Missing translations: block_popups_video_flash_ads, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
-
 ===== \_locales\cs\messages.json =====
 Missing translations: block_popups_video_flash_ads, filterrussian, storage_quota_exceeded, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
 
