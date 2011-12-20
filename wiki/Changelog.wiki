@@ -12,7 +12,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.5.8*: Oops, disable popup blocking as adding it disables AdBlock.  Fix broken youtube ad blocking in Safari.
+*2.5.8*: Oops, disable popup blocking as adding it disables !AdBlock.  Fix broken youtube ad blocking in Safari.
 
 *2.5.7*: Popup blocking (famlam), speed improvement (famlam), remove dead Ukranian list (John)
 
