@@ -12,7 +12,6 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional French filters || http://forums.lanik.us/viewforum.php?f=91 || http://easylist.adblockplus.org/ ||
 || - additional German filters || http://forums.lanik.us/viewforum.php?f=90 || http://easylist.adblockplus.org/ ||
 || - additional Greek filters || kargig at void.gr || http://www.void.gr/kargig/blog/greek-adblock-plus-filter/ ||
-|| - additional Norwegian filters || mlan76 at gmail.com || http://home.online.no/~mlangsho/ ||
 || - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
 || - additional Romanian filters || mail at zoso.ro || http://www.zoso.ro/rolist ||
 || - additional Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
@@ -25,5 +24,4 @@ Here are all contact methods for the list authors. It saves you some searching i
 || Korean filters || mp3geek at gmail.com ||  http://www.fanboy.co.nz/adblock/ ||
 || Polish filters || krzysiek at niecko.pl || http://www.niecko.pl/adblock/ ||
 || Spanish filters || nauscopio at gmail.com || http://nauscopio.nireblog.com/cat/filtrado ||
-|| Ukranian filters || adblock.ua at gmail.com || http://adblock.oasis.org.ua/ ||
 || !EasyPrivacy || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
