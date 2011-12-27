@@ -144,9 +144,6 @@ Missing translations: block_popups_video_flash_ads, block_video_flash_ads, filte
 ===== \_locales\hr\messages.json =====
 Missing translations: block_popups_video_flash_ads, block_video_flash_ads, filterrussian, safari50_updatenotice, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
 
-===== \_locales\fr\messages.json =====
-Missing translations: block_video_flash_ads, safari50_updatenotice
-
 ===== \_locales\fi\messages.json =====
 Missing translations: adblock_is_paused, adblock_wont_run_on_pages_matching, block_popups_video_flash_ads, block_video_flash_ads, disabled_on_this_page, dont_run_on_pages_on_domain, excludefilterremoved, faq, filterchinese, filtereasylist_plus_greek, filtereasyprivacy, filterrussian, help, i_like_googles_text_ads_dont_block_those, i_pruned_your_subscriptions, invalidListUrl, lang_greek, last_update_failed, project_home, safari50_updatenotice, stop_blocking_ads, storage_quota_exceeded, support_sentence, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning, whitelistertitle2, you_can_slide_to_change, you_know_thats_a_bad_idea_right
 
