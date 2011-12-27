@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.9<br/>
+*Latest Chrome version*: 2.5.10<br/>
 *Latest Safari version*: 2.5.8<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.10*: Show a menu when Safari toolbar button is pressed (Alexey Ermakov)
 
 *2.5.9*: Turn on new webRequest code for all Chrome 17 users
 
