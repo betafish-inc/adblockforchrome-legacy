@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.10<br/>
+*Latest Chrome version*: 2.5.11<br/>
 *Latest Safari version*: 2.5.10<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.11*: Typo
 
 *2.5.10*: Show a menu when Safari toolbar button is pressed (Alexey Ermakov)
 
