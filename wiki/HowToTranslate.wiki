@@ -157,9 +157,6 @@ Missing translation: block_popups_video_flash_ads
 ===== \_locales\el\messages.json =====
 Missing translations: block_popups_video_flash_ads, block_video_flash_ads, filtereasylist_plus_greek, filterrussian, lang_greek, safari50_updatenotice, storage_quota_exceeded, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
 
-===== \_locales\de\messages.json =====
-Missing translations: block_video_flash_ads, safari50_updatenotice
-
 ===== \_locales\cs\messages.json =====
 Missing translations: block_popups_video_flash_ads, block_video_flash_ads, filterrussian, safari50_updatenotice, storage_quota_exceeded, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, webrequest_warning
 
