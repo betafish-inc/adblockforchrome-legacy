@@ -3,6 +3,9 @@
 
 =Having trouble with !AdBlock? =
 
+
+*CHROME 18 DEV* is currently broken. A fix is pending (awaiting Michael to awake :) ).
+
 Sorry to hear that!  You've come to the right place.
 <br/>
 
