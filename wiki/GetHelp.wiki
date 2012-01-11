@@ -3,13 +3,13 @@
 
 =Having trouble with !AdBlock? =
 
-
-===CHROME 18 DEV* is currently broken. A fix is pending (awaiting Michael to awake :) ). ==
-
 Sorry to hear that!  You've come to the right place.
 <br/>
 
 == Is this your problem? ==
+
+ * Did AdBlock suddenly stop working in Chrome Dev/Canary?
+   This is a bug in Chrome 18.  Get the latest version of !AdBlock (2.5.12) to fix.
 
  * Are you seeing *infinite error message* when you start Safari?
    This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can uninstall !AdBlock via Safari -> Preferences -> Extensions -> !AdBlock -> Uninstall, then reinstall from safariadblock.com to fix the problem.
