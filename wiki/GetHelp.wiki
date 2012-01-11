@@ -8,7 +8,7 @@ Sorry to hear that!  You've come to the right place.
 
 == Is this your problem? ==
 
- * Did *!AdBlock stop working in Chrome Dev*?
+ * Did !AdBlock *stop working in Chrome Dev*?
    This is a bug in Chrome 18.  Get the latest version of !AdBlock (2.5.12) to fix.
 
  * Are you seeing *infinite error message* when you start Safari?
@@ -20,11 +20,11 @@ Sorry to hear that!  You've come to the right place.
  * Are you *seeing !AdBlock's install screen* every time you start your browser?
    In Safari, this is fixed in !AdBlock 2.4.33; [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i get the latest version] for the fix.  In Chrome, follow step 5 in the "5 easy steps" below.
 
- * Are you seeing *broken image popups or slideshows* on a website?
-   This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 browser bug] that has been fixed in Chrome 16 and in an upcoming version of Safari.
+ * Are you seeing *broken image popups or slideshows* in Safari?
+   This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 Safari bug] that will be fixed in an upcoming version of Safari.
 
  * Are you seeing *ads in videos or Flash games*?
-   This is a known limitation in the browser.  Only Youtube videos get their ads blocked, and then only some of the time.  Chrome is fixing this shortly; not so, unfortunately, in Safari.
+   If you have Chrome, thhis will go away as soon as you update to Chrome 17 (currently in Beta).  Unfortunately for Safari users however, this is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/landing/chrome/beta/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get video ad blocking.
 
  * Are you seeing some other *ad that should be blocked*?
 
