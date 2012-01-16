@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.12<br/>
+*Latest Chrome version*: 2.5.13<br/>
 *Latest Safari version*: 2.5.11<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.13*: Fix Safari toolbar button menu bug (zee) and blacklist wizard UI bug
 
 *2.5.12*: Refactoring, and work around a bug in Chrome 18 that breaks !AdBlock (famlam)
 
