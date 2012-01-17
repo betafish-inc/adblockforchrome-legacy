@@ -24,7 +24,7 @@ Sorry to hear that!  You've come to the right place.
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 Safari bug] that will be fixed in an upcoming version of Safari.
 
  * Are you seeing *ads in videos or Flash games*?
-   If you have Chrome, thhis will go away as soon as you update to Chrome 17 (currently in Beta).  Unfortunately for Safari users however, this is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/landing/chrome/beta/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get video ad blocking.
+   If you have Chrome, this will go away as soon as you update to Chrome 17 (currently in Beta).  Unfortunately for Safari users however, this is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/landing/chrome/beta/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get video ad blocking.
 
  * Are you seeing some other *ad that should be blocked*?
 
