@@ -8,6 +8,9 @@ Sorry to hear that!  You've come to the right place.
 
 == Is this your problem? ==
 
+ * Did Chrome just disable !AdBlock and ask you to *confirm new permissions*?
+   This is a bug in Chrome 16 which I triggered when I added popup blocking to !AdBlock in version 2.5.15 -- sorry!  I've since taken it back out while the Chrome bug is being fixed.  *It is safe to confirm the new permissions*; nothing sneaky is going on.  See [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#When_I_install,_Chrome_warns_me_that_AdBlock_will_have_access_to the FAQ] for more info about the permissions !AdBlock has, and [http://crbug.com/108198 the Chrome bug report] for all the details.
+
  * Did !AdBlock *stop working in Chrome Dev*?
    This is a bug in Chrome 18.  Get the latest version of !AdBlock (2.5.12) to fix.
 
