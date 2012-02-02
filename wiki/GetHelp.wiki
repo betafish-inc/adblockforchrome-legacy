@@ -13,8 +13,8 @@ Sorry to hear that!  You've come to the right place.
    * *It is safe to confirm the new permissions*; nothing sneaky is going on.  See [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#When_I_install,_Chrome_warns_me_that_AdBlock_will_have_access_to the FAQ] for more info about the permissions !AdBlock has, and [http://crbug.com/108198 the Chrome bug report] for all the details.  
    * *You can help me a lot* by going to [https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom/reviews AdBlock's review page], clicking Recent, and clicking "Mark as helpful" on the review by Michael Gundlach, then leaving your own postive review (or removing your negative review).  Thanks for your help.
 
- * Did !AdBlock *stop working in Chrome Dev*?
-   This is a bug in Chrome 18.  Get the latest version of !AdBlock (2.5.12) to fix.
+ * Did !AdBlock suddenly *stop working* in Chrome?
+   This is probably due to a bug fixed in !AdBlock 2.5.16.  The quickest way to get the fix is to go to chrome://extensions -> !AdBlock -> Remove, then go to [http://chromeadblock.com chromeadblock.com] and click Add To Chrome.
 
  * Are you seeing *infinite error message* when you start Safari?
    This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can uninstall !AdBlock via Safari -> Preferences -> Extensions -> !AdBlock -> Uninstall, then reinstall from safariadblock.com to fix the problem.
