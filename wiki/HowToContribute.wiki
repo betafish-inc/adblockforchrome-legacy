@@ -17,8 +17,7 @@ Bookmark the [http://code.google.com/p/adblockforchrome/updates/list list of Iss
 
  * [http://code.google.com/p/adblockforchrome/issues/list Search for duplicates] and leave a comment on the newer bug pointing out that it's a duplicate.
 
- * Lots of problems are caused by a bad filter.  Use the !AdBlock Options -> Customize textbox to narrow down which specific filter is causing the reporter problems, and leave a comment with what you find.
-   * Tip: if you turn on Advanced Mode in the Options, then Options -> Filter Lists displays a button to show links to the source of each filter list.  You can use use that to paste the entire contents of a filter list into your Customize textbox, and start deleting big chunks to see which filter is causing the problem.
+ * Lots of problems are caused by a bad filter.  Use the [http://chromeadblock.com/bugs/hunting filter hunting approach] to find which specific filter is causing the reporter problems, and leave a comment with what you find.
 
 If you think you'll do this more than once or twice, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily give you Contributor access, so you can close/merge/prioritize bugs directly.
 
