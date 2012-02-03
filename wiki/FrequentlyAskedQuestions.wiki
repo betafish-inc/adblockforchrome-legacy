@@ -49,7 +49,7 @@ No, we only maintain the !AdBlock custom filters. All other lists are maintained
 
 == When I install, Chrome warns me that !AdBlock will have access to all my private data and browsing history! ==
 
-It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing and what URLs you visit.
+It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing and what URLs you visit in which tabs.  Specifically, you're warned that !AdBlock can see "Your data on all websites" and "Your tabs and browsing activity".
 
 In Firefox, the situation was worse: every extension had the power to access your private data, and you weren't informed.  In Chrome, at least, those extensions that need to run on every page show you a warning before you install them!
 
