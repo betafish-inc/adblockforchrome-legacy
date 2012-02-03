@@ -55,9 +55,25 @@ In Firefox, the situation was worse: every extension had the power to access you
 
 It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
 
+== Why did Chrome disable !AdBlock and make me accept crazy new permissions? ==
+
+*The short answer*: a bug in Chrome showed you a permission warning when there was no warning needed, and !AdBlock has not increased its power.
+
+*The long answer*:
+
+!AdBlock 2.5.15 added popup blocking, which required adding the 'webNavigation' permission.
+
+Normally, when an extension adds a permission, Chrome disables it until you confirm the increase in power.  In this case, !AdBlock already had the 'tabs' permission (see the previous question in this FAQ for why), and 'tabs' is more powerful than 'webNavigation'.  So Chrome should not have asked you to accept an increase in power, for there _was_ no increase.
+
+The Chrome developers at Google realized this was a bug in Chrome.  If !AdBlock wants to add the 'webNavigation' permission, they reasoned, we shouldn't disable !AdBlock and show a permission warning, because there has been no increase in !AdBlock's power.
+
+I had been waiting to release popup blocking until they fixed this bug.  They [http://crbug.com/108198 fixed the bug] in Chrome 17 and 18, but not in Chrome 16.  I didn't realize Chrome 16 hadn't been fixed, so I went ahead and shipped popup blocking in version 2.5.15, and my Chrome 16 users saw the permission warning.  I then shipped 2.5.16 which removes popup blocking again, and won't re-add it until *all* users have the Chrome bug fix.
+
+*In summary*: Chrome shouldn't have shown a warning, !AdBlock hasn't gotten more powerful, and as the previous question in the FAQ explains, you already read the same permission warning when you installed !AdBlock and agreed to trust me.  And if you're still skeptical, you can email me at adblockforchrome at gmail and I'll explain further.  I'm a real person and am not doing anything shady :)
+
 == How do I uninstall? ==
 
-Chrome: Go to chrome://extensions -> !AdBlock Uninstall.
+Chrome: Go to chrome://extensions -> !AdBlock -> Remove.
 
 Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
 
