@@ -10,7 +10,7 @@ Sorry to hear that!  You've come to the right place.
 
  * Did Chrome just disable !AdBlock and ask you to *confirm new permissions*?
    * This is a bug in Chrome 16 which I triggered when I added popup blocking to !AdBlock in version 2.5.15 -- sorry!  I've since taken it back out while the Chrome bug is being fixed.
-   * *It is safe to confirm the permissions*; nothing sneaky is going on.  You can read the [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm detailed explanation] if you have any concerns.
+   * *It is safe to confirm the permissions*; nothing sneaky is going on and they haven't actually changed since when you installed.  You can read the [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm detailed explanation] if you have any concerns.
    * *You can help me a lot* by going to [https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom/reviews AdBlock's review page], clicking Recent, and marking as unhelpful reviews from users who were confused (or removing your own negative review).  Thanks for your help.
 
  * Did !AdBlock suddenly *stop working* in Chrome?
