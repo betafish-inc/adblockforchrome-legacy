@@ -10,11 +10,11 @@ Sorry to hear that!  You've come to the right place.
 
  * Did Chrome just disable !AdBlock and ask you to *confirm new permissions*?
    * This is a bug in Chrome 16 which I triggered when I added popup blocking to !AdBlock in version 2.5.15 -- sorry!  I've since taken it back out while the Chrome bug is being fixed.
-   * *It is safe to confirm the permissions*; nothing sneaky is going on.  The Chrome developers themselves [http://crbug.com/108198 noticed Chrome disabling AdBlock when it shouldn't], and fixed their bug in Chrome 17 and 18.  I forgot it wasn't fixed in Chrome 16 and accidentally triggered it.  As a result, you saw a permission box absolutely identical to the one you agreed to when you installed, which is silly.  See [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#When_I_install,_Chrome_warns_me_that_AdBlock_will_have_access_to the FAQ] for more info about the permissions !AdBlock has, and [http://crbug.com/108198 the Chrome bug report] for the messy details.  
+   * *It is safe to confirm the permissions*; nothing sneaky is going on.  You can read the detailed explanation [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm here] if you have any concerns.
    * *You can help me a lot* by going to [https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom/reviews AdBlock's review page], clicking Recent, and marking as unhelpful reviews from users who were confused (or removing your own negative review).  Thanks for your help.
 
  * Did !AdBlock suddenly *stop working* in Chrome?
-   This is probably due to a bug fixed in !AdBlock 2.5.16.  The quickest way to get the fix is to go to chrome://extensions -> !AdBlock -> Remove, then go to [http://chromeadblock.com chromeadblock.com] and click Add To Chrome.
+   !AdBlock was probably disabled by a recent bug in Chrome (see above).  The surefire way to get the fix is to uninstall (go to chrome://extensions -> !AdBlock -> Remove) and reinstall (go to http://chromeadblock.com/ and click Add To Chrome.)
 
  * Are you seeing *infinite error message* when you start Safari?
    This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can uninstall !AdBlock via Safari -> Preferences -> Extensions -> !AdBlock -> Uninstall, then reinstall from safariadblock.com to fix the problem.
