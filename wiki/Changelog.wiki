@@ -12,7 +12,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.5.16*: Revert part of .15 while investigating that some users are getting AdBlock disabled by Chrome
+*2.5.16*: Revert part of .15 while investigating that some users are getting !AdBlock disabled by Chrome
 
 *2.5.15*: Apply Content Security Policy. Re-add popup blocking (famlam). Bug hunting.
 
