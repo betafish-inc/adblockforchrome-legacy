@@ -8,11 +8,6 @@ Sorry to hear that!  You've come to the right place.
 
 == Is this your problem? ==
 
- * Did Chrome just disable !AdBlock and ask you to *confirm new permissions*?
-   * This is a bug in Chrome 16 which I triggered when I added popup blocking to !AdBlock in version 2.5.15 -- sorry!  I've since taken it back out while the Chrome bug is being fixed.
-   * *It is safe to confirm the permissions*; nothing sneaky is going on and they haven't actually changed since when you installed.  You can read the [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm detailed explanation] if you have any concerns.
-   * *You can help me a lot* by going to [https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom/reviews AdBlock's review page], clicking Recent, and marking as unhelpful reviews from users who were confused (or removing your own negative review).  Thanks for your help.
-
  * Did !AdBlock suddenly *stop working* in Chrome?
    !AdBlock was probably disabled by a recent bug in Chrome (see above).  The surefire way to get the fix is to uninstall (go to chrome://extensions -> !AdBlock -> Remove) and reinstall (go to http://chromeadblock.com/ and click Add To Chrome.)
 
@@ -28,8 +23,11 @@ Sorry to hear that!  You've come to the right place.
  * Are you seeing *broken image popups or slideshows* in Safari?
    This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 Safari bug] that will be fixed in an upcoming version of Safari.
 
- * Are you seeing *ads in videos or Flash games*?
-   If you have Chrome, this will go away as soon as you update to Chrome 17 (currently in Beta).  Unfortunately for Safari users however, this is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/landing/chrome/beta/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get video ad blocking.
+ * Did Chrome just disable !AdBlock and ask you to *confirm new permissions*?
+   * See [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm detailed explanation].  It's safe to confirm these permissions.
+
+ * Are you seeing *ads in videos or Flash games* in Safari?
+   This is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/chrome/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get ad blocking in videos/Flash.
 
  * Are you seeing some other *ad that should be blocked*?
 
