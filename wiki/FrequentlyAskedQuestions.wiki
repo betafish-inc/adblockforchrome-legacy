@@ -75,19 +75,19 @@ I had been waiting to release popup blocking until they fixed this bug.  They [h
 
 == How do I uninstall? ==
 
-Chrome: Go to chrome://extensions -> !AdBlock -> Remove.
+Chrome: Go to chrome://extensions -> mouse over !AdBlock -> click the trash can that appears on the right.
 
 Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
 
 == My browser won't update to the latest version of !AdBlock! ==
 
-Chrome: Yes it will, it might just take a few weeks.  !AdBlock is so popular that Google tells your browser not to update as frequently, to save Google bandwidth.  If you must have the newest version now, you'll have to uninstall, then reinstall from https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom .  Make sure to copy any custom filters you've made under !AdBlock Options -> Customize so you can paste them back in.
+Chrome: Yes it will, it might just take a few weeks.  !AdBlock is so popular that Google tells your browser not to update as frequently, to save Google bandwidth.  If you must have the newest version now, you'll have to uninstall, then reinstall from http://chromeadblock.com/ .  Make sure to copy any custom filters you've made under !AdBlock Options -> Customize so you can paste them back in.
 
 Safari: You may have auto-update of extensions turned off.  Turn it on under Safari -> Preferences -> Extensions -> Updates.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
 
-== I see ads in a video! ==
+== I see ads in a video in Safari! ==
 
-!AdBlock can block ads in many !YouTube videos, but not in videos on other websites.  We're waiting on support from Chrome to be able to block ads in videos everywhere.
+Yes, Safari is limited to blocking ads in videos only on Youtube.  File a bug with Safari if you'd like this changed.
 
 == Can !AdBlock be set to block ads only on a few sites? ==
 
