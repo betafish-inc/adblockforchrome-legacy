@@ -9,7 +9,7 @@ Sorry to hear that!  You've come to the right place.
 == Is this your problem? ==
 
  * Did !AdBlock suddenly *stop working* in Chrome?
-   !AdBlock was probably disabled by a recent bug in Chrome (see above).  The surefire way to get the fix is to uninstall (go to chrome://extensions -> !AdBlock -> Remove) and reinstall (go to http://chromeadblock.com/ and click Add To Chrome.)
+   !AdBlock was probably disabled by a recent bug in Chrome.  The surefire way to get the fix is to uninstall (go to chrome://extensions -> !AdBlock -> Remove) and reinstall (go to http://chromeadblock.com/ and click Add To Chrome.)
 
  * Are you seeing *infinite error message* when you start Safari?
    This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can uninstall !AdBlock via Safari -> Preferences -> Extensions -> !AdBlock -> Uninstall, then reinstall from safariadblock.com to fix the problem.
