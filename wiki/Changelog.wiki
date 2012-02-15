@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.17<br/>
+*Latest Chrome version*: 2.5.18<br/>
 *Latest Safari version*: 2.5.13<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.18*: Minor changes
 
 *2.5.17*: Minor bugfixes
 
