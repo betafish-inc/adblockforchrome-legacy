@@ -28,7 +28,7 @@
 
   === Uninstall ===
    # Open the Extensions tab by going to this site: chrome://extensions/
-   # Click "Uninstall" on !AdBlock
+   # Click the trash can to the right of !AdBlbock's "Enable" checkbox
    # optional, but sometimes helpful: Quit Chrome and reopen it or even reboot your computer now
 
   === Reinstall ===
