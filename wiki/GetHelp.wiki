@@ -9,7 +9,7 @@ Sorry to hear that!  You've come to the right place.
 == Is this your problem? ==
 
  * Did !AdBlock *stop working in Chrome*?
-   * !AdBlock was probably disabled by a recent bug in Chrome.  The surefire way to get the fix is to [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome uninstall and reinstall AdBlock.]
+   * !AdBlock was probably disabled by a recent bug in Chrome.  The surefire way to get the fix is to [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome uninstall and reinstall AdBlock]; the gory details are [http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#Why_did_Chrome_disable_AdBlock_and_make_me_accept_crazy_new_perm here].
 
  * Did !AdBlock *stop working in Safari*?
    * This is fixed in !AdBlock 2.4.33.  [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#2._Make_sure_you_have_the_latest_version_of_AdBlock_for_Safari_i Get the latest version] and !AdBlock should no longer randomly stop working.  If you tried this and that's not your problem, see below.
