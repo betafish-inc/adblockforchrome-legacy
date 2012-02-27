@@ -1,7 +1,7 @@
 #summary Things you can do to contribute to AdBlock.
 #labels Featured,Restrict-AddWikiComment-Commit
 
-Would you be interested in making !AdBlock better for our millions of users?  We would love any help you can give!  As you can see below, you don't need to know how to program to help out.
+Would you be interested in making !AdBlock better for millions of users?  I would love any help that you wanted to give!  As you can see below, you don't need to know how to program to help out.
 
 = Ways to contribute =
 
@@ -19,7 +19,7 @@ Bookmark the [http://code.google.com/p/adblockforchrome/updates/list list of Iss
 
  * Lots of problems are caused by a bad filter.  Use the [http://chromeadblock.com/bugs/hunting filter hunting approach] to find which specific filter is causing the reporter problems, and leave a comment with what you find.
 
-If you think you'll do this more than once or twice, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily give you Contributor access, so you can close/merge/prioritize bugs directly.
+If you think you'll do this more than once or twice, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily make you an official Contributor to the project, so that you can close/merge/prioritize bugs directly.
 
 == Improve the existing translations ==
 
@@ -33,7 +33,7 @@ If you think you'll do this more than once or twice, feel free to ask on adblock
   1 Type "svn diff > mycontribution.patch" to create a patchfile
   1 Attach the patchfile to the Issue.
 
-After you do this once, feel free to ask for commit bits on adblockforchrome-dev@googlegroups.com.
+After you do this once, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily make you an official Contributor to the project, so that you can commit directly to the repo.
 
 == Tell your friends! ==
 
@@ -41,34 +41,58 @@ Spreading the word via social networks / mailing lists / megaphones is always ap
 
 <br/>
 
-== Committers ==
+= For Contributors =
 
-Here's more info for you once you have commit bits:
+Here's more info for official Contributors (see above for how to become one).
 
-=== Mailing lists ===
+== Mailing lists ==
 
 Subscribe to the adblockforchrome-dev Google Group, which is where we do all our discussion that isn't in Issues or code reviews.  Also subscribe to the adblockforchrome-discuss Google Group to help answer FAQs from users.
 
-=== Committing code ===
+== Issue triage ==
 
-Instead of fixing issues in a patch file, you should make `branches/issue-NNNN` for the issue and make your changes there.  When you're done and you've tested them thoroughly, mark the Issue as `Status:NeedsReview`.  I'll review your code for bugs/style, then I'll merge your branch to trunk and set `Status:Fixed`.
+If an Issue is filed that is missing some info required by the report template, and it doesn't look like a critical issue, feel free to set `Status:Invalid` with a comment explaining that the report was incomplete.  I am very OK with not fixing bugs that are only reported incompletely by one person.
 
-==== Coding style ====
+If you need more info on an Issue, leave a comment asking for clarification and label it `MoreInfoNeeded`, to be removed when they respond.
+
+Issues that remain `MoreInfoNeeded` for more than 2 weeks can be closed as `Invalid` with a comment that more info wasn't forthcoming.
+
+`Status:Duplicate` merges duplicate Issues. `Status:WaitingOnChrome` and `WaitingOnSafari` close Issues that we can't act upon until something changes in the browser itself.
+
+The `OpSys`, `Browser`, and `Area` labels limit Issues to only applying to a certain operating system, browser, or area of the the extension (e.g. the !AdBlock button.)
+
+If you aren't able to handle an Issue yourself, see "Getting Help" below.
+
+== Ad reports ==
+
+In addition to triaging bugs, you can triage ad reports.  They come in via a reporting wizard that makes sure they shouldn't have reported the ad to a filter list maintainer instead.  Verify the ad, find the filter that fixes it (you can test it via the Customize tab), put it directly into `trunk/filters/adblock_custom.txt`, and set `Status:Fixed`.  Blocking filters are preferred over hiding filters; here is a [http://adblockplus.org/en/filters filter syntax tutorial].  If you put in a bad filter you can break all of !AdBlock (e.g., no images load on the entire web), so be extra-sure that you get this right!
+
+If someone manages to file a report about an ad when they clearly haven't gone through the reporting wizard, you can set `Status:Invalid` and ask them to turn on !AdBlock Options -> Advanced, and then click the !AdBlock toolbar button -> "Report an ad on this page".
+
+== Committing code ==
+
+Instead of fixing Issues via a patch file, you should make `branches/issue-NNNN` for the Issue and make your changes there.  When you commit to that branch, start your commit message with the line
+
+  `Update issue NNNN`
+
+which will automatically leave a comment on Issue NNNN ([http://code.google.com/p/support/wiki/IssueTracker#Integration_with_version_control more info here]).
+
+When you're done and you've tested your branch thoroughly, mark the Issue as `Status:NeedsReview` to get your code reviewed for bugs/style.  If it needs work it goes back to `Status:Accepted` until it's fixed.  When all looks good I'll merge your branch to trunk and set `Status:Fixed`.
+
+I'll also mark my own code as `Status:NeedsReview` and would appreciate extra pairs of eyeballs on it.  Leave comments with your thoughts, and set `Status:Accepted` if you find problems.  If you're confident in your coding abilities and you think it's ready for me to merge to trunk, set `Status:ReadyForRelease`.
+
+=== Coding style ===
 
 Please comment every function you write with a description of what it does, a list of inputs, and what it returns.  See `background.html` for some examples.  Variables should be clearly named instead of short.  When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When in doubt about capitalization, follow the rules of the code around you.  It's mostly `ClassName.functionName with_underscored_vars`.
 
 The code isn't 100% (or even 80%, probably) adherent to the rules in the previous paragraph.  Refactoring is great -- whenever you touch some code, feel free to clean it up.
 
-=== Ad reports ===
+== Getting help ==
 
-In addition to triaging bugs, you can triage ad reports.  They come in via a reporting wizard that makes sure they shouldn't have reported the ad to a filter list maintainer instead.  Verify the ad, find the filter that fixes it (you can test it via the Customize tab), put it directly into `trunk/filters/adblock_custom.txt`, and set `Status:Fixed`.  If you put in a bad filter you can break all of !AdBlock (e.g., no images load on the entire web), so be extra-sure that you get this right!
+The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `NeedsReview` or `Fixed` :)  But if you get stuck, or have a question, you can cc `adblockforchrome` on the Issue and I'll get emailed about it.
 
-=== Getting help ===
+If there's a critical issue that needs my immediate attention, label it `Priority:Critical`.  I'll get an email automatically at my personal address.  Feel free also to label `Priority:High` on any issue that you think should be on the shortlist to complete (or just set yourself as owner and start coding!)
 
-The best thing you can do to help me is probably to handle a bug or ad report entirely without me knowing about it until it's `ReadyToRelease` or `Fixed` :)  But if you get stuck, or have a question, you can cc adblockforchrome on the Issue and I'll get emailed about it.
-
-If there's a critical issue that needs my immediate attention, set it to Priority:Critical.  I'll get an email automatically at my personal address.  Feel free also to set Priority:High on any issue that you think should be on the shortlist to complete (or just set yourself as owner and start coding!)
-
-== More questions? ==
+= More questions? =
 
 Email adblockforchrome-discuss@googlegroups.com .
