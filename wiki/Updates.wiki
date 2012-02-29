@@ -1,6 +1,6 @@
 #summary Recent Commits and Updated Issues
 
-Google decided to [http://code.google.com/p/support/issues/detail?id=24324 disable the Updates/Activity tab] so here is a temporary replacement using Wiki gadgets.  Based on the code from http://code.google.com/p/bullet/wiki/Updates, with bugfixes.
+Google decided to [http://code.google.com/p/support/issues/detail?id=24324 disable the Updates/Activity tab] so here is a temporary replacement using Wiki gadgets.
 
 = Recent Commits to trunk =
 
@@ -13,3 +13,5 @@ Google decided to [http://code.google.com/p/support/issues/detail?id=24324 disab
 = Detailed Updates to Open Issues =
 
 <wiki:gadget url="http://sorryrobot.com/projecthostingupdates/t5.xml" up_projectName="adblockforchrome" width="800"  height="250"/>
+
+This page is based on the code from http://code.google.com/p/bullet/wiki/Updates, with bugfixes.
