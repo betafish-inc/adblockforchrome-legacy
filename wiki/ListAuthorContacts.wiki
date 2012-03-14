@@ -7,7 +7,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || !EasyList (recommended) || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
 || - additional Bulgarian filters || alex at stanev.org || http://stanev.org/abp/ ||
 || - additional Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
-|| - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list || http://sites.google.com/site/dutchadblockfilters/ ||
+|| - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list || http://code.google.com/p/dutchadblockfilters/ ||
 || - additional Finnish filters || http://www.wiltteri.net/?page_id=157/wiltteri-lista/ || http://www.wiltteri.net/ ||
 || - additional French filters || http://forums.lanik.us/viewforum.php?f=91 || http://easylist.adblockplus.org/ ||
 || - additional German filters || http://forums.lanik.us/viewforum.php?f=90 || http://easylist.adblockplus.org/ ||
