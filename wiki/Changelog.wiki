@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.21<br/>
+*Latest Chrome version*: 2.5.22<br/>
 *Latest Safari version*: 2.5.19<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.22*: Stop honoring bogus Cache-Control headers, parse custom URLs better (famlam)
 
 *2.5.21*: Minor bugfixes, use https for Dutch filters (famlam)
 
