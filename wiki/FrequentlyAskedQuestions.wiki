@@ -73,6 +73,10 @@ I had been waiting to release popup blocking until they fixed this bug.  They [h
 
 *In summary*: Chrome shouldn't have shown a warning, !AdBlock hasn't gotten more powerful, and as the previous question in the FAQ explains, you already read the same permission warning when you installed !AdBlock and agreed to trust me.  And if you're still skeptical, you can email me at adblockforchrome at gmail and I'll explain further.  I'm a real person and am not doing anything shady :)
 
+== !AdBlock doesn't work in incognito ==
+
+In Chrome, extensions are disabled by default in incognito mode. You can enable it in chrome://extensions by checking allow in incognito.
+
 == How do I uninstall? ==
 
 Chrome: Go to chrome://extensions -> mouse over !AdBlock -> click the trash can that appears on the right.
