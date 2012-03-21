@@ -30,7 +30,6 @@ Also we are not yet able to block ads that appear in other plugins, like Flash.
 
 No, the main developer for ABP is Wladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
 
-
 == Can I import my filters from Adblock Plus for Firefox? ==
 
 Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock options, Customize tab, click Edit, and paste them in that text box.
@@ -92,6 +91,17 @@ Safari: You may have auto-update of extensions turned off.  Turn it on under Saf
 == I see ads in a video in Safari! ==
 
 Yes, Safari is limited to blocking ads in videos only on Youtube.  File a bug with Safari if you'd like this changed.
+
+== How do I report an ad? ==
+
+Don't report it in the bug tracker directly.  Instead, do the following:
+
+   # Turn on Advanced mode under the !AdBlock toolbar button -> Options -> General
+   # In Chrome: click the toolbar button -> Report an ad
+   # In Safari: click the toolbar button -> Customize -> Report an ad
+
+   You'll get the fix automatically a few days after your report is processed.
+
 
 == Can !AdBlock be set to block ads only on a few sites? ==
 
