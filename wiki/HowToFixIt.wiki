@@ -11,7 +11,7 @@
 
 <br>
 
-== 2. Make sure !AdBlock is installed, enabled and up to date ==
+== 2. Make sure !AdBlock for Chrome is installed, enabled and up to date ==
 
  # Open the Extensions tab by going to this site: chrome://extensions/
  # If !AdBlock isn't listed, you'll need to [HowToFixIt#Reinstall install it].
@@ -75,7 +75,7 @@
 
 <br>
 
-== 2. Make sure !AdBlock is installed, enabled and up to date ==
+== 2. Make sure !AdBlock for Safari is installed, enabled and up to date ==
 
  # Open the Safari preferences
  # Go to Extensions.  If !AdBlock is not listed, [HowToFixIt#To_reinstall install it].
