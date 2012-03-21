@@ -29,13 +29,7 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
 
  * Are you seeing some other *ad that should be blocked*?
 
-   To report the ad, please do the following:
-
-   # Turn on Advanced mode under the !AdBlock toolbar button -> Options -> General
-   # In Chrome: click the toolbar button -> Report an ad
-   # In Safari: click the toolbar button -> Customize -> Report an ad
-
-   You'll get the fix automatically a few days after your report is processed.
+   To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_ad_ad? use the reporting wizard].
 
 == Most other problems are fixed by these 5 easy steps! ==
  # Make sure !AdBlock is installed and up to date, as described above.
