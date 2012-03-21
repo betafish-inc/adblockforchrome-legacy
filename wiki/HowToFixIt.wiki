@@ -79,7 +79,7 @@
 
  # Open the Safari preferences
  # Go to Extensions.  If !AdBlock is not listed, [HowToFixIt#To_reinstall install it].
- # Make sure "Enabled" is checked. 
+ # Make sure "Enable !AdBlock" is checked. 
  # Go to the Updates tab.
  # Wait a few seconds and install the update if there is one
 
