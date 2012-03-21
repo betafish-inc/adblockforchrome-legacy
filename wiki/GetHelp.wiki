@@ -27,8 +27,7 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
    * This is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/chrome/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get ad blocking in videos/Flash.
 
  * Are you seeing some other *ad that should be blocked*?
-
-   To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].
+   * To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].
 
 == Most other problems are fixed by these 5 easy steps! ==
  # Make sure !AdBlock is installed and up to date, as described above.
