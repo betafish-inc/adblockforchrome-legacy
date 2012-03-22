@@ -74,7 +74,7 @@ I had been waiting to release popup blocking until they fixed this bug.  They [h
 
 == !AdBlock doesn't work in incognito ==
 
-In Chrome, extensions are disabled by default in incognito mode. You can enable it in chrome://extensions by checking allow in incognito.
+In Chrome, extensions are disabled by default in incognito mode. You can enable it in chrome://extensions by checking 'allow in incognito'.
 
 == How do I uninstall? ==
 
