@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.23<br/>
+*Latest Chrome version*: 2.5.24<br/>
 *Latest Safari version*: 2.5.23<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.24*: Don't let websites open AdBlock pages; warn Chrome 16 users of impending breakage (famlam); don't ask Safari 5.0 users to upgrade if they can't (zee)
 
 *2.5.23*: Delete unmaintained translations.  Want to see yours back again?  Please visit the HowToTranslate wikipage.
 
