@@ -12,9 +12,9 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.5.25*: Help explain CatBlock to users who missed it on April Fools or who want to know how to get it after 4/4
+*2.5.25*: Help explain !CatBlock to users who missed it on April Fools or who want to know how to get it after 4/4
 
-*2.5.24*: Don't let websites open AdBlock pages; warn Chrome 16 users of impending breakage (famlam); don't ask Safari 5.0 users to upgrade if they can't (zee)
+*2.5.24*: Don't let websites open !AdBlock pages; warn Chrome 16 users of impending breakage (famlam); don't ask Safari 5.0 users to upgrade if they can't (zee)
 
 *2.5.23*: Delete unmaintained translations.  Want to see yours back again?  Please visit the HowToTranslate wikipage.
 
