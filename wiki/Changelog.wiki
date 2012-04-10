@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.26<br/>
+*Latest Chrome version*: 2.5.27<br/>
 *Latest Safari version*: 2.5.25<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.27*: Fix some websites broken by injecting a <link> tag
 
 *2.5.26*: Don't warn !RockMelt users of impending upgrade.  Work around Japanese filters issue (famlam).
 
