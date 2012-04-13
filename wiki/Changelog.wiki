@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.28<br/>
+*Latest Chrome version*: 2.5.29<br/>
 *Latest Safari version*: 2.5.27<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.29*: Small domain parsing change (famlam), stop using beforeload in Chrome 17+, get rid of 'blocked by third party extension' iframes
 
 *2.5.28*: Button popup wasn't showing for Chrome 16 users who hadn't set any settings (jaysoffian)
 
