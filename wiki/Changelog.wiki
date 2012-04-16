@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.29<br/>
+*Latest Chrome version*: 2.5.30<br/>
 *Latest Safari version*: 2.5.27<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.30*: Popup blocking in Chrome (famlam)
 
 *2.5.29*: Small domain parsing change (famlam), stop using beforeload in Chrome 17+, get rid of 'blocked by third party extension' iframes
 
