@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.31<br/>
+*Latest Chrome version*: 2.5.32<br/>
 *Latest Safari version*: 2.5.31<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.32*: Get rid of occasional 'error: blocked by 3rd party' iframes in Chrome
 
 *2.5.31*: various parsing bug fixes (famlam)
 
