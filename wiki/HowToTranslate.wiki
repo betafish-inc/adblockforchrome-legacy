@@ -125,9 +125,6 @@ Missing translations (52%): adblock_auto_removes_ads_thats_all, adblock_is_pause
 ===== \_locales\el\messages.json =====
 Missing translations (7%): block_popups_video_flash_ads, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, filtereasylist_plus_greek, filterrussian, lang_greek, safari50_updatenotice, storage_quota_exceeded, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
-===== \_locales\de\messages.json =====
-Missing translations (3%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
-
 ===== \_locales\da\messages.json =====
 Missing translations (3%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
 
