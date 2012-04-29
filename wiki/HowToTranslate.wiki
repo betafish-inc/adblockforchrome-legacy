@@ -124,9 +124,6 @@ Missing translations (7%): block_popups_video_flash_ads, checkinfirefox_1, check
 
 ===== \_locales\da\messages.json =====
 Missing translations (3%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
-
-===== \_locales\cs\messages.json =====
-Missing translations (3%): block_popups_video_flash_ads, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
