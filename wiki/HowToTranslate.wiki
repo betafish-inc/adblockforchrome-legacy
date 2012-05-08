@@ -120,9 +120,6 @@ Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 ===== \_locales\hr\messages.json =====
 Missing translations (3%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
 
-===== \_locales\fi\messages.json =====
-Missing translations (3%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle
-
 ===== \_locales\es\messages.json =====
 Missing translations (15%): adblock_is_paused, casesensitive, checkinfirefox_3, checkinfirefox_4, checkinfirefoxtitle, cleanuplist, click_extensions, click_install_update_automatically, click_safari_prefs, click_updates, excludedomainorurl, excludefilterremoved, filecleanerwarning, filterlistsrock, first_turn_on_autoupdate_to_get_bugfixes_as_i_write_them, for_more_options_right_click, headerfilter, noresourcessend, novalidurlpattern, please_fill_out_adblocks_one_question_setup, resourceblocklegend4, resourceblocklegend5, resourceiswhitelisted, show_ads_except_for, status_disabled, storage_quota_exceeded, subscribe_unsubscribe_all, thirdpartycheckbox, turning_on_autoupdate_is_really_important, typeobject_subrequest, typescript, typestylesheet, typesubdocument, typexmlhttprequest, warning_overrules_filters, whitelisteverycontaining, wildcardhint, you_can_slide_to_change, you_know_thats_a_bad_idea_right
 
