@@ -14,7 +14,46 @@ Also, check the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=t
 
 First, [http://code.google.com/p/adblockforchrome/issues/entry?template=Offer%20to%20translate add your language] to the list of translations (so that two people don't start the same translation at the same time).
 
-Then right click [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json this link] and download the English messages.json file. Open that file (in any text editor, like Notepad), and you'll see a lot of entries that look like this one:
+Then visit [http://chromeadblock.com/l10n/ chromeadblock.com/l10n/].
+Enter the language code in the text box (the one listed on [http://code.google.com/intl/en/chrome/webstore/docs/i18n.html#localeTable this page]).
+Now you can start translating. Every text box shown on that page contains the current translation (if any), the original English message and a description. All of these text boxes should be translated into your language.
+
+However, there are a few exceptions:
+ * The word {{{AdBlock}}} should not be translated -- it is a name.
+ * Words wrapped between {{{$}}} should not be translated -- they refer to placeholders. For example, if you see {{{$updatelink$}}} in your text, that part of the text will be replaced by the content of the textbox {{{updatelink}}} a few lines lower.
+ * Make sure to leave {{{$1}}}, {{{$2}}}, etc in your translation -- they are placeholders for strings that !AdBlock will insert, such as "{{{<a href='...'>}}}" and "{{{</a>}}}", or the input of a user.
+
+For example, if I want to translate the following string:
+{{{
+Please first $updatelink$ to the newest version of AdBlock
+}}}
+it might look like this:
+{{{
+Ya $updatelink$ iss var gut so yoo do eet to AdBlock noww
+}}}
+And $updatelink$ will be translated a few lines lower. If it first looks like
+{{{
+$1update$2
+}}}
+it could now look like
+{{{
+$1get der file all quicklike$2
+}}}
+
+Note some things about my (pretend) translation:
+  * I didn't translate "updatelink" (that is a placeholder)
+  * I translated one word in "content" into five, but made sure to keep the $1 and $2
+  * I moved $updatelink$ earlier in "message" because it sounded better there in my language
+
+If a message contains {{{<b>}}}, {{{<i>}}}, {{{<a>}}}, or {{{<br/>}}}, your translation should as well:
+ * Make text *bold* by wrapping it in {{{<b>}}} and {{{</b>}}} like {{{<b>Hi!</b>}}}
+ * Make text _italic_ by wrapping it in {{{<i>}}} and {{{</i>}}} like {{{<i>Hi!</i>}}}
+ * Make text a [# hyperlink or a button] by wrapping it in {{{<a>}}} and {{{</a>}}} like {{{<a>click me</a>}}}
+ * Add newlines by adding {{{<br/>}}} like {{{First line<br/>Second line}}}
+
+=== Don't want to use the web page? ===
+If you for some reason don't want to use the [http://chromeadblock.com/l10n/ chromeadblock.com/l10n/ web page], you can still help translating. It'll just be a bit more difficult.
+Right click [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json this link] and download the English messages.json file. Open that file (in any text editor, like Notepad), and you'll see a lot of entries that look like this one:
 {{{
   "updatefromoldversion": {
     "message": "You are using an old version of AdBlock. Please first $updatelink$ the newest version of AdBlock",
@@ -27,14 +66,7 @@ Then right click [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/m
     }
   },
 }}}
-
-Every string on *a line that starts with "message" or "content"* needs to be replaced with a translation.
-
-However, there are a few exceptions:
- * The word {{{AdBlock}}} should not be translated -- it is a name.
- * Words wrapped between {{{$}}} should not be translated -- they refer to placeholders, such as {{{$updatelink$}}} referring to the {{{"updatelink"}}} placeholder above.
- * Make sure to leave {{{$1}}}, {{{$2}}}, etc in your translation -- they are placeholders for strings that !AdBlock will insert, such as "{{{<a href='...'>}}}" and "{{{</a>}}}" above.
-
+Every string on *a line that starts with "message" or "content" *needs to be replaced with a translation. However, do not translate the strings "message" or "content", just the string that follows them. The same rules apply as for the web interface.
 The above example might look like this after you translated it:
 {{{
   "updatefromoldversion": {
@@ -49,29 +81,15 @@ The above example might look like this after you translated it:
   },
 }}}
 
-Note some things about my (pretend) translation:
-  * I didn't translate "description" or "example" (those are to help the translator)
-  * I didn't translate "updatelink" (that is a placeholder)
-  * I translated one word in "content" into five, but made sure to keep the $1 and $2
-  * I moved $updatelink$ earlier in "message" because it sounded better there in my language
 
-If a "message" or "content" string contains {{{<b>}}}, {{{<i>}}}, {{{<a>}}}, or {{{<br/>}}}, your translation should as well:
- * Make text *bold* by wrapping it in {{{<b>}}} and {{{</b>}}} like {{{<b>Hi!</b>}}}
- * Make text _italic_ by wrapping it in {{{<i>}}} and {{{</i>}}} like {{{<i>Hi!</i>}}}
- * Make text a [# hyperlink or a button] by wrapping it in {{{<a>}}} and {{{</a>}}} like {{{<a>click me</a>}}}
- * Add newlines by adding {{{<br/>}}} like {{{First line<br/>Second line}}}
-
-Common pitfalls
- * *Never* use {{{"}}} (quotation mark) in a string, or it will break. Use {{{\"}}} which gets turned into {{{"}}} for you, or just use {{{'}}} (apostrophe) instead.
- * Save your file as *UTF-8* to prevent issues with special characters (like Korean characters or characters with accents, like {{{ç}}} or {{{ë}}})
 
 = Finished? =
-
-Just attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate+-status:invalid&sort=summary&colspec=ID+Status+Summary&x=area&y=priority&cells=tiles list of translations].  We'll take care of the rest!
+Click the export button at the bottom of the page. It'll search for errors now. If any errors are found, you'll see an message and the page will jump to the bad translation.
+After all errors (if any) are fixed, click the download link. Save the file to your local computer and then attach your file to your entry in the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate+-status:invalid&sort=summary&colspec=ID+Status+Summary&x=area&y=priority&cells=tiles list of translations].  We'll take care of the rest!
 
 = Maintaining =
 
-When there is an issue with your lists, for example a string is missing, we will add it to the list below. Isn't your list shown, then no issues are present. When you are going to update your translation, please download the latest version of the file from [http://adblockforchrome.googlecode.com/svn/trunk/_locales/XX/messages.json] (where XX is your language code), as we sometimes remove unused strings ourself, but they probably won't be in your local copy. The missing strings can be found in [http://adblockforchrome.googlecode.com/svn/trunk/_locales/en/messages.json this file].
+When there is an issue with your lists, for example a string is missing, we will add it to the list below. Isn't your list shown, then no issues are present.
 
 {{{
 ===== \_locales\zh_TW\messages.json =====
