@@ -147,9 +147,6 @@ Missing translations (16%): adblock_is_paused, casesensitive, checkinfirefox_3, 
 ===== \_locales\el\messages.json =====
 Missing translations (7%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, resourcedomain, safari50_updatenotice, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
-===== \_locales\de\messages.json =====
-Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
-
 ===== \_locales\da\messages.json =====
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
