@@ -99,7 +99,7 @@ Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 Missing translations (4%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, noresourcessend2, resourcedomain, thirdparty, typepopup
 
 ===== \_locales\uk\messages.json =====
-Missing translations (4%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, noresourcessend2, resourcedomain, safari50_updatenotice, thirdparty
+Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
@@ -111,7 +111,7 @@ Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
 ===== \_locales\pt_PT\messages.json =====
-Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
+Missing translation (1%): resourcedomain
 
 ===== \_locales\pl\messages.json =====
 The string 'translator_credit' is not translated yet
@@ -151,9 +151,6 @@ Missing translations (7%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
 ===== \_locales\cs\messages.json =====
-Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
-
-===== \_locales\bg\messages.json =====
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 }}}
 
