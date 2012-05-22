@@ -104,9 +104,6 @@ Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
-===== \_locales\sk\messages.json =====
-Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): noresourcessend2, resourcedomain, thirdparty
 
