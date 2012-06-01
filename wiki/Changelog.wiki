@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.33<br/>
+*Latest Chrome version*: 2.5.34<br/>
 *Latest Safari version*: 2.5.33<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.34*: Improvements to the Options page (famlam), the Resource List (famlam), the Ad Reporter (john, famlam), the Blacklister (wormboy, famlam), and the Whitelister.  Decrease the chance of showing an ad at startup or when !AdBlock is updated (famlam).
 
 *2.5.33*: Delete Chrome 16-style blocking code.
 
