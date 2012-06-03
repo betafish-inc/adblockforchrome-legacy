@@ -152,9 +152,6 @@ Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain
 
 ===== \_locales\cs\messages.json =====
 Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain, thirdparty
-
-===== \_locales\bg\messages.json =====
-Missing translation (1%): doesntmatchoriginal
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
