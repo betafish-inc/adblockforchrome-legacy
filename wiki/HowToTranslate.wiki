@@ -132,9 +132,6 @@ Missing translations (7%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 ===== \_locales\hr\messages.json =====
 Missing translations (4%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, noresourcessend2, resourcedomain, thirdparty
 
-===== \_locales\fr\messages.json =====
-Missing translation (1%): doesntmatchoriginal
-
 ===== \_locales\fi\messages.json =====
 Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain, thirdparty
 
