@@ -104,9 +104,6 @@ Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain
 ===== \_locales\sk\messages.json =====
 Missing translation (1%): doesntmatchoriginal
 
-===== \_locales\ru\messages.json =====
-Missing translation (1%): doesntmatchoriginal
-
 ===== \_locales\pt_PT\messages.json =====
 Missing translation (1%): doesntmatchoriginal
 
@@ -143,9 +140,6 @@ Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 
 ===== \_locales\de\messages.json =====
 Missing translation (1%): doesntmatchoriginal
-
-===== \_locales\da\messages.json =====
-Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain, thirdparty
 
 ===== \_locales\cs\messages.json =====
 Missing translations (2%): doesntmatchoriginal, noresourcessend2, resourcedomain, thirdparty
