@@ -104,12 +104,6 @@ Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpublicly
 ===== \_locales\sv\messages.json =====
 Missing translation (1%): reportpubliclyavailable
 
-===== \_locales\sk\messages.json =====
-Missing translations (1%): doesntmatchoriginal, reportpubliclyavailable
-
-===== \_locales\ru\messages.json =====
-Missing translation (1%): reportpubliclyavailable
-
 ===== \_locales\pt_PT\messages.json =====
 Missing translations (1%): doesntmatchoriginal, reportpubliclyavailable
 
@@ -146,6 +140,9 @@ Missing translations (17%): adblock_is_paused, casesensitive, checkinfirefox_3, 
 
 ===== \_locales\el\messages.json =====
 Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+
+===== \_locales\de\messages.json =====
+Missing translations (1%): doesntmatchoriginal, reportpubliclyavailable
 
 ===== \_locales\da\messages.json =====
 Missing translation (1%): reportpubliclyavailable
