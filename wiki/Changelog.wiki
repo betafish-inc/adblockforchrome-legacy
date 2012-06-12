@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.34<br/>
+*Latest Chrome version*: 2.5.35<br/>
 *Latest Safari version*: 2.5.34<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.35*: Add warning to ad report page, stop using deprecated Chrome APIs (famlam).  Minimum Chrome version required is now 18.
 
 *2.5.34*: Improvements to the Options page (famlam), the Resource List (famlam), the Ad Reporter (john, famlam), the Blacklister (wormboy, famlam), and the Whitelister.  Decrease the chance of showing an ad at startup or when !AdBlock is updated (famlam).
 
