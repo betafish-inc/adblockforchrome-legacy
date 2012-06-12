@@ -17,6 +17,8 @@ Right-click on a page once it has finished loading, select "Block an ad on this 
 
 The blacklist UI creates entries in the customized filters tab on the Options page. You can add, replace, or remove filters there if you are feeling advanced.
 
+Click the !AdBlock toolbar button -> Options -> Customize Tab -> Edit, make your changes, and then click Save.
+
 == How do I stop !AdBlock from running on a page? ==
 
 Right-click (or use the browser action button) on a page, select "Don't run on this domain..." and you'll have the option to exclude that domain.  The Options page gives you a list of all excluded domains.
