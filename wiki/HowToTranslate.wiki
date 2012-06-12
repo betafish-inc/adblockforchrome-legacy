@@ -101,9 +101,6 @@ Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 ===== \_locales\uk\messages.json =====
 Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
 
-===== \_locales\sv\messages.json =====
-Missing translation (1%): reportpubliclyavailable
-
 ===== \_locales\pt_PT\messages.json =====
 Missing translations (1%): doesntmatchoriginal, reportpubliclyavailable
 
