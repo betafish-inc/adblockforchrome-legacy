@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.35<br/>
+*Latest Chrome version*: 2.5.36<br/>
 *Latest Safari version*: 2.5.35<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.36*: Update to manifest version 2 (famlam) and turn back on CSP
 
 *2.5.35*: Add warning to ad report page, stop using deprecated Chrome APIs (famlam).  Minimum Chrome version required is now 18.
 
