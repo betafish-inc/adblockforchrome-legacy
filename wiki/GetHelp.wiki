@@ -11,12 +11,6 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
 
 == Next: is this your problem? ==
 
- * Are you seeing *infinite error message* when you start Safari?
-   * This is fixed in !AdBlock 2.4.33.  After force quitting Safari, you can [http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari uninstall and reinstall AdBlock] to fix the problem.
-
- * Are you *seeing !AdBlock's install screen* every time you start Safari?
-   * This is fixed in !AdBlock 2.4.33; [HowToFixIt#2._Make_sure_AdBlock_for_Safari_is_installed,_enabled_and_up_to update AdBlock] for the fix.
-
  * Are you seeing *broken image popups or slideshows* in Safari?
    * This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 Safari bug] that will be fixed in an upcoming version of Safari.
 
