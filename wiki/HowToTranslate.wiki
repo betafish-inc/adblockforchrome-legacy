@@ -107,9 +107,6 @@ Missing translations (2%): custompattern, nosearchresults, searchexplanation, se
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
-===== \_locales\sk\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
