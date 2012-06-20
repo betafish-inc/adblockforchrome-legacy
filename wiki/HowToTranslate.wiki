@@ -93,59 +93,74 @@ When there is an issue with your lists, for example a string is missing, we will
 
 {{{
 ===== \_locales\zh_TW\messages.json =====
-Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, thirdparty, typepopup
+Missing translations (7%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, thirdparty, typepopup
 
 ===== \_locales\zh_CN\messages.json =====
-Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty, typepopup
+Missing translations (6%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty, typepopup
 
 ===== \_locales\uk\messages.json =====
-Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
+
+===== \_locales\tr\messages.json =====
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
+
+===== \_locales\sv\messages.json =====
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
+
+===== \_locales\sk\messages.json =====
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
+
+===== \_locales\ru\messages.json =====
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
 ===== \_locales\pt_PT\messages.json =====
-Missing translations (1%): doesntmatchoriginal, reportpubliclyavailable
+Missing translations (3%): custompattern, doesntmatchoriginal, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
 
 ===== \_locales\pl\messages.json =====
 The string 'translator_credit' is not translated yet
-Missing translations (48%): adblock_auto_removes_ads_thats_all, adblock_is_paused, adblock_wont_run_on_pages_matching, adreport2, advanced_options, any_new_tabs_you_open_Will_be_automatically_ad_free, anysite, appliedwhenbrowsing, blacklistereditinvalid1, block_by_url_instead, block_this_ad, blockeverycontaining, blockmoreads, cantblockflash, cantblockflashwarning, casesensitive, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, chromebutton_how_to_hide, cleanuplist, click_extensions, click_install_update_automatically, click_safari_prefs, click_updates, close, description1, disabled_by_filter_lists, disabled_on_this_page, doesntmatchoriginal, done, dont_run_on_pages_on_domain, excludedomainorurl, excludefilterremoved, faq, filecleanerwarning, filterchinese, filtereasylist_plus_greek, filtereasyprivacy, filterhasbeenadded, filterlistsrock, filterrussian, first_turn_on_autoupdate_to_get_bugfixes_as_i_write_them, flashads, for_more_options_right_click, format_site1_site2_site3, headerfilter, headerresource, headertype, help, how_to_use_adblock, i_like_googles_text_ads_dont_block_those, installing_adblock, invalidListUrl, lang_greek, last_update_failed, lets_get_you_set_up, linkunblock, loading, modifydomain, modifypath, multipledomainshint, new_version, newtitle, nextstep, nodefaultfilter1, noresourcessend2, novalidurlpattern, now_you_have_adblock_hooray, ok_autoupdate_is_on, ok_now_what, only_block_ads_on_these_sites, onlyondomains, onlyresourcetypes, please_fill_out_adblocks_one_question_setup, project_home, report_ad_on_page, reportpubliclyavailable, resourceblocklegend1, resourceblocklegend2, resourceblocklegend3, resourceblocklegend4, resourceblocklegend5, resourceblocktitle, resourcedomain, resourceiswhitelisted, safari50_updatenotice, seeing_this_every_time_you_start_your_browser, selectresources, set_up_adblock, show_ads_except_for, show_me_how, show_resourcelist, status_disabled, stop_blocking_ads, storage_quota_exceeded, subscribe_unsubscribe_all, tabcustomize, tabcustomizetitle, that_was_easy, thirdparty, thirdpartycheckbox, to_turn_on_autoupdate, turning_on_autoupdate_is_really_important, typehiding, typeimage, typemedia, typeobject, typeobject_subrequest, typeother, typepage, typepopup, typescript, typestylesheet, typesubdocument, typeunknown, typexmlhttprequest, warning_overrules_filters, whitelistertitle2, whitelisteverycontaining, wildcardhint, you_can_slide_to_change, you_know_thats_a_bad_idea_right
+Missing translations (49%): adblock_auto_removes_ads_thats_all, adblock_is_paused, adblock_wont_run_on_pages_matching, adreport2, advanced_options, any_new_tabs_you_open_Will_be_automatically_ad_free, anysite, appliedwhenbrowsing, blacklistereditinvalid1, block_by_url_instead, block_this_ad, blockeverycontaining, blockmoreads, cantblockflash, cantblockflashwarning, casesensitive, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, chromebutton_how_to_hide, cleanuplist, click_extensions, click_install_update_automatically, click_safari_prefs, click_updates, close, custompattern, description1, disabled_by_filter_lists, disabled_on_this_page, doesntmatchoriginal, done, dont_run_on_pages_on_domain, excludedomainorurl, excludefilterremoved, faq, filecleanerwarning, filterchinese, filtereasylist_plus_greek, filtereasyprivacy, filterhasbeenadded, filterlistsrock, filterrussian, first_turn_on_autoupdate_to_get_bugfixes_as_i_write_them, flashads, for_more_options_right_click, format_site1_site2_site3, headerfilter, headerresource, headertype, help, how_to_use_adblock, i_like_googles_text_ads_dont_block_those, installing_adblock, invalidListUrl, lang_greek, last_update_failed, lets_get_you_set_up, linkunblock, loading, modifydomain, modifypath, multipledomainshint, new_version, newtitle, nextstep, nodefaultfilter1, noresourcessend2, nosearchresults, novalidurlpattern, now_you_have_adblock_hooray, ok_autoupdate_is_on, ok_now_what, only_block_ads_on_these_sites, onlyondomains, onlyresourcetypes, please_fill_out_adblocks_one_question_setup, project_home, report_ad_on_page, reportpubliclyavailable, resourceblocklegend1, resourceblocklegend2, resourceblocklegend3, resourceblocklegend4, resourceblocklegend5, resourceblocktitle, resourcedomain, resourceiswhitelisted, safari50_updatenotice, searchexplanation, searchplaceholder, seeing_this_every_time_you_start_your_browser, selectresources, set_up_adblock, show_ads_except_for, show_me_how, show_resourcelist, status_disabled, stop_blocking_ads, storage_quota_exceeded, subscribe_unsubscribe_all, tabcustomize, tabcustomizetitle, that_was_easy, thirdparty, thirdpartycheckbox, to_turn_on_autoupdate, turning_on_autoupdate_is_really_important, typehiding, typeimage, typemedia, typeobject, typeobject_subrequest, typeother, typepage, typepopup, typescript, typestylesheet, typesubdocument, typeunknown, typexmlhttprequest, warning_overrules_filters, whitelistertitle2, whitelisteverycontaining, wildcardhint, you_can_slide_to_change, you_know_thats_a_bad_idea_right
 
 ===== \_locales\ko\messages.json =====
-Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+Missing translations (9%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
 ===== \_locales\ja\messages.json =====
-Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
 ===== \_locales\it\messages.json =====
-Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (6%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
 ===== \_locales\id\messages.json =====
-Missing translations (10%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, filterchinese, filtereasylist_plus_greek, filtereasyprivacy, filterrussian, invalidListUrl, lang_greek, last_update_failed, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+Missing translations (11%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, filterchinese, filtereasylist_plus_greek, filtereasyprivacy, filterrussian, invalidListUrl, lang_greek, last_update_failed, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
 ===== \_locales\hu\messages.json =====
-Missing translations (7%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, filterrussian, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, filterrussian, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
 ===== \_locales\hr\messages.json =====
-Missing translations (5%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (6%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
 ===== \_locales\fr\messages.json =====
-Missing translation (1%): reportpubliclyavailable
+Missing translations (2%): custompattern, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
 
 ===== \_locales\fi\messages.json =====
-Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
 ===== \_locales\es\messages.json =====
-Missing translations (17%): adblock_is_paused, casesensitive, checkinfirefox_3, checkinfirefox_4, checkinfirefoxtitle, cleanuplist, click_extensions, click_install_update_automatically, click_safari_prefs, click_updates, doesntmatchoriginal, excludedomainorurl, excludefilterremoved, filecleanerwarning, filterlistsrock, first_turn_on_autoupdate_to_get_bugfixes_as_i_write_them, for_more_options_right_click, headerfilter, noresourcessend2, novalidurlpattern, please_fill_out_adblocks_one_question_setup, reportpubliclyavailable, resourceblocklegend4, resourceblocklegend5, resourcedomain, resourceiswhitelisted, show_ads_except_for, status_disabled, storage_quota_exceeded, subscribe_unsubscribe_all, thirdparty, thirdpartycheckbox, turning_on_autoupdate_is_really_important, typeobject_subrequest, typescript, typestylesheet, typesubdocument, typexmlhttprequest, warning_overrules_filters, whitelisteverycontaining, wildcardhint, you_can_slide_to_change, you_know_thats_a_bad_idea_right
+Missing translations (18%): adblock_is_paused, casesensitive, checkinfirefox_3, checkinfirefox_4, checkinfirefoxtitle, cleanuplist, click_extensions, click_install_update_automatically, click_safari_prefs, click_updates, custompattern, doesntmatchoriginal, excludedomainorurl, excludefilterremoved, filecleanerwarning, filterlistsrock, first_turn_on_autoupdate_to_get_bugfixes_as_i_write_them, for_more_options_right_click, headerfilter, noresourcessend2, nosearchresults, novalidurlpattern, please_fill_out_adblocks_one_question_setup, reportpubliclyavailable, resourceblocklegend4, resourceblocklegend5, resourcedomain, resourceiswhitelisted, searchexplanation, searchplaceholder, show_ads_except_for, status_disabled, storage_quota_exceeded, subscribe_unsubscribe_all, thirdparty, thirdpartycheckbox, turning_on_autoupdate_is_really_important, typeobject_subrequest, typescript, typestylesheet, typesubdocument, typexmlhttprequest, warning_overrules_filters, whitelisteverycontaining, wildcardhint, you_can_slide_to_change, you_know_thats_a_bad_idea_right
 
 ===== \_locales\el\messages.json =====
-Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, reportpubliclyavailable, resourcedomain, safari50_updatenotice, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+Missing translations (9%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
+
+===== \_locales\de\messages.json =====
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
 ===== \_locales\da\messages.json =====
-Missing translation (1%): reportpubliclyavailable
+Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
 ===== \_locales\cs\messages.json =====
-Missing translations (2%): doesntmatchoriginal, noresourcessend2, reportpubliclyavailable, resourcedomain, thirdparty
+Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
 ===== \_locales\bg\messages.json =====
-Missing translation (1%): reportpubliclyavailable
+Missing translations (2%): custompattern, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
