@@ -12,7 +12,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
 
-*2.5.37*: Resource list refresh (famlam), blacklist wizard improvement
+*2.5.37*: Add a search box to the Resource List (famlam), blacklist wizard improvement
 
 *2.5.36*: Update to manifest version 2 (famlam) and turn back on CSP
 
