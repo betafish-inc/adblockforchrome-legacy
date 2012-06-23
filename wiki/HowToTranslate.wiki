@@ -104,9 +104,6 @@ Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2,
 ===== \_locales\tr\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
-===== \_locales\sv\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 
@@ -135,9 +132,6 @@ Missing translations (8%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 ===== \_locales\hr\messages.json =====
 Missing translations (6%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
-===== \_locales\fr\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
-
 ===== \_locales\fi\messages.json =====
 Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
@@ -152,12 +146,6 @@ Missing translations (2%): custompattern, nosearchresults, searchexplanation, se
 
 ===== \_locales\da\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
-===== \_locales\cs\messages.json =====
-Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
-
-===== \_locales\bg\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
