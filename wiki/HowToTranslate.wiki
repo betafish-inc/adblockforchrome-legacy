@@ -141,9 +141,6 @@ Missing translations (18%): adblock_is_paused, casesensitive, checkinfirefox_3, 
 ===== \_locales\el\messages.json =====
 Missing translations (9%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, custompattern, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, lang_greek, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest
 
-===== \_locales\de\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
 ===== \_locales\da\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
 }}}
