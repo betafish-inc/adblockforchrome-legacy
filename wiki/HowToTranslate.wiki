@@ -101,14 +101,8 @@ Missing translations (6%): checkinfirefox_1, checkinfirefox_2, checkinfirefox_3,
 ===== \_locales\uk\messages.json =====
 Missing translations (4%): custompattern, doesntmatchoriginal, noresourcessend2, nosearchresults, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thirdparty
 
-===== \_locales\tr\messages.json =====
-Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): custompattern, nosearchresults, searchexplanation, searchplaceholder
-
-===== \_locales\pt_PT\messages.json =====
-Missing translations (3%): custompattern, doesntmatchoriginal, nosearchresults, reportpubliclyavailable, searchexplanation, searchplaceholder
 
 ===== \_locales\pl\messages.json =====
 The string 'translator_credit' is not translated yet
