@@ -1,6 +1,14 @@
 #summary How to fix certain problems by yourself.
 #labels Restrict-AddWikiComment-Commit
 
+= All browsers =
+
+== Make sure you are using the latest filters ==
+  # Open !AdBlocks options by clicking the button -> Options
+  # Go to the second tab: "Filter lists"
+  # Click the 'Update Now' button
+  # Wait until all list have been updated, then reload all web pages
+
 = Google Chrome =
 
 == 1. Make sure you have the latest version of Google Chrome installed ==
