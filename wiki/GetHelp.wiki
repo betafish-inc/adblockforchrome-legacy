@@ -23,8 +23,9 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
  * Are you seeing some other *ad that should be blocked*?
    * To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].
 
-== Most other problems are fixed by these 5 easy steps! ==
+== Most other problems are fixed by these easy steps! ==
  # Make sure !AdBlock is installed and up to date, as described above.
+ # Manually update your filters ([http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#Make_sure_you_are_using_the_latest_filters instructions])
  # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
  # Reboot your computer.
  # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
