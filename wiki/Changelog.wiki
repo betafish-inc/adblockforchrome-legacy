@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.37<br/>
+*Latest Chrome version*: 2.5.38<br/>
 *Latest Safari version*: 2.5.37<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.38*: Fix !AdBlock in Safari 5.0.6, log error line numbers to server, several other bug fixes (all famlam)
 
 *2.5.37*: Add a search box to the Resource List (famlam), blacklist wizard improvement
 
