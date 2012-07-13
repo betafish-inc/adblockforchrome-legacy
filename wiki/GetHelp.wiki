@@ -17,8 +17,9 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
  * Are you seeing *ads in videos or Flash games* in Safari?
    * This is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/chrome/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get ad blocking in videos/Flash.
 
- * Is !AdBlock not installing on the *!RockMelt* browser?
-   * !RockMelt is getting an update to work with !AdBlock's latest version.  Until then, you can use Chrome and install !AdBlock from chromeadblock.com.  Star issue 6874 to get notified as this gets fixed.
+ * Is !AdBlock not installing on the *!RockMelt* or *!CoolNova* browser?
+   * !RockMelt is getting an update to work with !AdBlock's latest version. Star issue 6874 to get notified as this gets fixed. It also contains an old build of !AdBlock you can install.
+   * !CoolNova users can use the build in issue 6920 to install !AdBlock.
 
  * Are you seeing some other *ad that should be blocked*?
    * To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].
