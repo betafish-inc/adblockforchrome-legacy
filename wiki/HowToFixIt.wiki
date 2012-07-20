@@ -9,6 +9,10 @@
   # Click the 'Update Now' button
   # Wait until all list have been updated, then reload all web pages
 
+<br><br>
+----
+<br>
+
 = Google Chrome =
 
 == 1. Make sure you have the latest version of Google Chrome installed ==
