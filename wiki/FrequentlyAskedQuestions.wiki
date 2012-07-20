@@ -13,7 +13,7 @@ In addition to financial support, anyone can [HowToContribute contribute code or
 
 !AdBlock automatically blocks all ads on web pages for you, with no configuration necessary.  As soon as you install it, you can open a tab to nytimes.com (for example), and there will be no ads on the page.
 
-!AdBlock works by reading lists of all known ads on the internet.  Anything listed is blocked from loading in your browser.  !AdBlock doesn't contro what goes on the lists; they are [ListAuthorContacts maintained by volunteers].
+!AdBlock works by reading lists of all known ads on the internet.  Anything listed is blocked from loading in your browser.  !AdBlock doesn't control what goes on the lists; they are [ListAuthorContacts maintained by volunteers].
 
 == Is !AdBlock available on the iPhone/iPad/Android? ==
 
