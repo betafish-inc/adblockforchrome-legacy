@@ -110,8 +110,9 @@
    # optional, but sometimes helpful: Quit Safari and reopen it or even reboot your computer now
 
   === To reinstall ===
-   # Download !AdBlock for Safari from [http://www.safariadblock.com www.safariadblock.com]
-   # Click on the downloaded file and install !AdBlock for Safari 
+   # Go to [extensions.apple.com the Apple Extensions Gallery]
+   # Scroll down a little bit to !AdBlock
+   # Click "Install Now"
 
 <br>
 
