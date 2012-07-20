@@ -1,95 +1,106 @@
 #labels Featured,Restrict-AddWikiComment-Commit
-= Frequently Asked Questions =
-
 <wiki:toc max_depth="2" />
 
-== !AdBlock isn't working right! ==
+= About the project =
+
+== Who made !AdBlock? ==
+
+I'm Michael Gundlach, a developer in Georgia in the US.  Hi!  I created !AdBlock in 2009.  In 2010 I quit my job to work solely on !AdBlock, so my wife and I rely on [https://chromeadblock.com/pay/ your support] for our income.
+
+In addition to financial support, anyone can [HowToContribute contribute code or time] to the project.  About a dozen people have done so over the years.
+
+== How does !AdBlock work? Do I have to configure it? ==
+
+!AdBlock automatically blocks all ads on web pages for you, with no configuration necessary.  As soon as you install it, you can open a tab to nytimes.com (for example), and there will be no ads on the page.
+
+!AdBlock works by reading a list of all known ads on the internet.  Anything on the list is blocked from loading in your browser.
+
+== Is !AdBlock available on the iPhone/iPad/Android? ==
+
+Nope.  It's only available on [https://chromeadblock.com Chrome] and [https://safariadblock.com Safari].
+
+== Is !AdBlock available on Firefox or Internet Explorer? ==
+
+Nope.  It's only available on [https://chromeadblock.com Chrome] and [https://safariadblock.com Safari].  There's an unrelated project for Firefox called [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] that works great.  If you're on IE, I recommend switching to Chrome :)
+
+= Using !AdBlock =
+
+== !AdBlock disappeared / isn't working right! ==
 
 Sorry to hear that!  We can [http://code.google.com/p/adblockforchrome/wiki/GetHelp?tm=3 walk you through] fixing or reporting your problem.
 
-== How do I blacklist something? ==
+== How do I block an ad? ==
 
-Right-click on a page once it has finished loading, select "Block an ad on this page..." and you'll get a blacklisting UI or simply right-click an ad on a page and select "Block this ad".  You can also add the browser action button via the Options page, and blacklist from there.
+Ads are blocked for you automatically, but if something slipped by !AdBlock, you can block it for yourself.  Just click the !AdBlock toolbar button and choose "Block an ad on this page", or simply right-click the ad itself and choose "Block this ad".
 
-== How do I undo if I blacklisted something accidentally? ==
+== I blocked too much!  How do I undo it? ==
 
-The blacklist UI creates entries in the customized filters tab on the Options page. You can add, replace, or remove filters there if you are feeling advanced.
+Blocking an ad adds a new "filter" to the list on the the Customize tab on the !AdBlock toolbar button -> Options page.  You can click Edit on that list, remove the filter, and click Save.
 
-Click the !AdBlock toolbar button -> Options -> Customize Tab -> Edit, make your changes, and then click Save.
+== How do I tell !AdBlock not to run? ==
 
-== How do I stop !AdBlock from running on a page? ==
+You can pause !AdBlock, or tell it to never run on certain websites, under the !AdBlock toolbar button menu.
 
-Right-click (or use the browser action button) on a page, select "Don't run on this domain..." and you'll have the option to exclude that domain.  The Options page gives you a list of all excluded domains.
+== I see an ad!  How do I report it? == 
 
-== Does this actually prevent ads from downloading? ==
+You can block an ad for yourself if you'd like (see above); or you can report it so that it will be blocked for everyone.
 
-Yes, but some ads still slip through as this feature isn't fully supported by Chrome yet. Please star [http://crbug.com/35897 Chromium issue 35897] if you want Chrome to implement this.
-Also we are not yet able to block ads that appear in other plugins, like Flash.
+Don't report ads in the Issue tracker.  Instead, do the following:
 
-== Are you the same guys that made Adblock Plus for Firefox? ==
+   # Click the !AdBlock toolbar button -> Options -> General -> "Show me advanced options"
+   # Click the !AdBlock toolbar button -> Report an ad
 
-No, the main developer for ABP is Wladimir Palant and he lives in Germany.  The main dev for !AdBlock is Michael Gundlach and he lives in Georgia in the US.  Both extensions use the !EasyList filter list (as well as several others) and those are maintained by independent users.
+You'll get the fix automatically a few days after your report is processed.
+
+== How do I uninstall !AdBlock? ==
+
+Chrome: Right click the !AdBlock toolbar button and choose "Remove from Chrome".
+
+Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
+
+= Common problems =
+
+== !AdBlock doesn't work in Incognito mode. ==
+
+In Chrome, extensions are disabled by default in Incognito mode. You can enable it in chrome://extensions by checking 'Allow in incognito'.
+
+== My browser won't update to the latest version of !AdBlock! ==
+
+Chrome: because !AdBlock is so popular, updates take a few weeks to roll out.  You can [https://chromeadblock.com/help/outofdate force it to update] if you're impatient.
+
+Safari: You may have auto-update of extensions turned off.  Turn it on under Safari -> Preferences -> Extensions -> Updates.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.
+
+== I see ads in a video in Safari! ==
+
+See [GetHelp here].
+
+== When I install, Chrome warns me that !AdBlock will have access to "Your data on all websites*" and "Your tabs and browsing activity"! ==
+
+!AdBlock has the *ability* to access this data, but it doesn't actually access it.  !AdBlock needs this permission in order to run on every page, so that it can block ads for you; that's all.  Nothing sneaky is going on.
+
+It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
+
+= Advanced =
+
+== Does !AdBlock actually prevent ads from downloading? ==
+
+Yes!  Ad scripts, images, and Flash are not sent to your computer, saving you bandwidth.
 
 == Can I import my filters from Adblock Plus for Firefox? ==
 
-Yes, you can. Select the rules in ABP in FF, press Ctrl-C, go to !AdBlock options, Customize tab, click Edit, and paste them in that text box.
+Yes, you can. Copy your Adblock Plus filters to the clipboard, then click the !AdBlock toolbar button -> Options -> Customize, click Edit, and paste them there.
 
 == Can I synchronize my settings and filters among multiple computers? ==
 
 Not automatically.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
 
-== Do you recommend to subscribe to all filter lists? ==
-
-No, not at all.  !AdBlock subscribes you to the lists you should need.  The more filter lists you use, the slower AdBlock runs, and the more chance of false positives.  Lists for languages you don't speak will be useless to you.  And it wastes bandwidth for the filter list maintainers.
-
 == Do you maintain all filter lists yourselves? ==
 
 No, we only maintain the !AdBlock custom filters. All other lists are maintained by volunteers that are not connected to !AdBlock. (Except for the Dutch list, which is maintained by !FamLam). To contact a list maintainer you can use the links or email addresses in ListAuthorContacts for the default lists. For custom lists you often have to look in the list itself to see if there is a contact address.
 
-== When I install, Chrome warns me that !AdBlock will have access to all my private data and browsing history! ==
-
-It's true.  !AdBlock has the *ability* to access to your private data, but it doesn't actually access it.  In order to remove ads from every web page, !AdBlock needs the permission to run on every web page; and any extension that runs on every web page has the ability to see everything you're doing and what URLs you visit in which tabs.  
-
-Specifically, you're warned that !AdBlock has access to "*Your data on all websites*" and "*Your tabs and browsing activity*" - but these are only used to block ads for you.
-
-In Firefox, the situation was worse: every extension had the power to access your private data, and you weren't informed.  In Chrome, at least, those extensions that need to run on every page show you a warning before you install them!
-
-It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
-
-== !AdBlock doesn't work in incognito ==
-
-In Chrome, extensions are disabled by default in incognito mode. You can enable it in chrome://extensions by checking 'allow in incognito'.
-
-== How do I uninstall? ==
-
-Chrome: Go to chrome://extensions -> mouse over !AdBlock -> click the trash can that appears on the right.
-
-Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
-
-== My browser won't update to the latest version of !AdBlock! ==
-
-Chrome: Yes it will, it might just take a few weeks.  !AdBlock is so popular that Google tells your browser not to update as frequently, to save Google bandwidth.  If you must have the newest version now, you'll have to uninstall, then reinstall from http://chromeadblock.com/ .  Make sure to copy any custom filters you've made under !AdBlock Options -> Customize so you can paste them back in.
-
-Safari: You may have auto-update of extensions turned off.  Turn it on under Safari -> Preferences -> Extensions -> Updates.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.  Be aware that !AdBlock For Safari is usually a few versions behind !AdBlock For Chrome.
-
-== I see ads in a video in Safari! ==
-
-Yes, Safari is limited to blocking ads in videos only on Youtube.  File a bug with Safari if you'd like this changed.
-
-== How do I report an ad? ==
-
-Don't report it in the bug tracker directly.  Instead, do the following:
-
-   # Turn on Advanced mode under the !AdBlock toolbar button -> Options -> General
-   # In Chrome: click the toolbar button -> Report an ad
-   # In Safari: click the toolbar button -> Customize -> Report an ad
-
-   You'll get the fix automatically a few days after your report is processed.
-
-
 == Can !AdBlock be set to block ads only on a few sites? ==
 
-Sure.  Add this filter to your custom filters:
+Sure.  Add this filter to your !AdBlock toolbar button -> Options -> Customize list:
 
 {{{@@*$document,domain=~domain1.com|~domain2.com|~domain3.com}}}
 
@@ -125,10 +136,10 @@ STEP FOUR: Delete filters until only the bad filter remains.
 
 After about 10 of those delete-check-repeat cycles you should have it narrowed down to the single bad filter causing you trouble.
 
-== How can I help? ==
+== What filter lists should I use? ==
 
-Thanks for asking!  See HowToContribute .
+If you speak multiple languages, you may wish to use filter lists for those languages.  Otherwise, just use the defaults that !AdBlock chooses.  Using unnecessary lists slows down !AdBlock and wastes bandwidth for the list maintainers.
 
-== Where can I ask a question or get in touch? ==
+= Where can I ask a question or get in touch? =
 
 Send an email to adblockforchrome-discuss@googlegroups.com or post it [http://groups.google.com/group/adblockforchrome-discuss via the web interface] -- we're always listening!
