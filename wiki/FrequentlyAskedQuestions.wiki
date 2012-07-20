@@ -23,6 +23,8 @@ Nope.  It's only available on [https://chromeadblock.com Chrome] and [https://sa
 
 Nope.  It's only available on [https://chromeadblock.com Chrome] and [https://safariadblock.com Safari].  There's an unrelated project for Firefox called [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] that works great.  If you're on IE, I recommend switching to Chrome :)
 
+<hr>
+
 = Using !AdBlock =
 
 == !AdBlock disappeared / isn't working right! ==
@@ -58,6 +60,8 @@ Chrome: Right click the !AdBlock toolbar button and choose "Remove from Chrome".
 
 Safari: Safari -> Preferences -> Extensions -> !AdBlock Uninstall.
 
+<hr>
+
 = Common problems =
 
 == !AdBlock doesn't work in Incognito mode. ==
@@ -74,11 +78,13 @@ Safari: You may have auto-update of extensions turned off.  Turn it on under Saf
 
 See [GetHelp here].
 
-== When I install, Chrome warns me that !AdBlock will have access to "Your data on all websites*" and "Your tabs and browsing activity"! ==
+== When I install, Chrome warns me that !AdBlock will have access to "Your data on all websites" and "Your tabs and browsing activity"! ==
 
 !AdBlock has the *ability* to access this data, but it doesn't actually access it.  !AdBlock needs this permission in order to run on every page, so that it can block ads for you; that's all.  Nothing sneaky is going on.
 
 It comes down to *trust*: you should not install extensions that ask for more permission than you are comfortable with, unless you trust the author(s).  !AdBlock is the most popular extension for Chrome, partially because we care so much about our users -- so we hope you'll trust us :)
+
+<hr>
 
 = Advanced =
 
@@ -96,11 +102,11 @@ where domain1.com etc. are the sites where you want to block ads.
 
 == Can I synchronize my settings and filters among multiple computers? ==
 
-Not automatically.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock Options Customize tab) between computers.
+Not automatically.  You can manually set your settings the same, of course, and copy-and-paste your custom filters (from the !AdBlock toolbar button -> Options -> Customize tab) between computers.
 
 == Can I import my filters from Adblock Plus for Firefox? ==
 
-Yes, you can. Copy your Adblock Plus filters to the clipboard, then click the !AdBlock toolbar button -> Options -> Customize, click Edit, and paste them there.
+Yes, you can, by copying them to the clipboard, then pasting them into the list on the !AdBlock toolbar button -> Options -> Customize tab.
 
 == How do I hunt down a bad filter? ==
 
@@ -135,6 +141,8 @@ After about 10 of those delete-check-repeat cycles you should have it narrowed d
 == What filter lists should I use? ==
 
 If you speak multiple languages, you may wish to use filter lists for those languages.  Otherwise, just use the defaults that !AdBlock chooses.  Using unnecessary lists slows down !AdBlock and wastes bandwidth for the list maintainers.
+
+<hr>
 
 = Where can I ask a question or get in touch? =
 
