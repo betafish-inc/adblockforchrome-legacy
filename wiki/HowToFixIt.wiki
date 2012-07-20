@@ -35,14 +35,14 @@
 
 == 4. Uninstall and reinstall !AdBlock for Chrome ==
 
-  === Uninstall ===
+  === To uninstall ===
    # Open the Extensions tab by going to this site: chrome://extensions/
    # Click the trash can to the right of !AdBlbock's "Enable" checkbox
    # optional, but sometimes helpful: Quit Chrome and reopen it or even reboot your computer now
 
-  === Reinstall ===
+  === To install ===
    # Go to [http://www.chromeadblock.com www.chromeadblock.com]
-   # Click on "Add to Chrome" and install !AdBlock for Chrome
+   # Click the "Add to Chrome" button
 
 <br>
 
@@ -103,13 +103,13 @@
 
 == 4. Uninstall and reinstall !AdBlock for Safari==
   
-  === Uninstall ===
+  === To uninstall ===
    # Open the Safari preferences
    # Go to: Extensions -> !AdBlock
    # Click "Uninstall"
-   # optional, but sometimes helpful: Quit Safari and reopen it or even reboot your computer now
+   # _optional, but sometimes helpful:_ restart Safari or reboot your computer now.
 
-  === To reinstall ===
+  === To install ===
    # Go to [extensions.apple.com the Apple Extensions Gallery]
    # Scroll down a little bit to !AdBlock
    # Click "Install Now"
