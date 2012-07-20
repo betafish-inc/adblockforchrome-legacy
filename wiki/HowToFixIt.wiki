@@ -129,7 +129,10 @@
    # In the window that appears, go to: Safari -> !LocalStorage
    # Delete the "safari-extension_com.betafish.adblockforsafari-(letters & numbers).localstorage" file(s)
    # Open Safari again and see if !AdBlock works
-<!-- So that links to the Safari install section don't leave the section midway down the page -->
+<wiki:comment>So that links to the Safari install section don't leave the section midway down the page</wiki:comment>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
 <br><br><br><br><br>
 <br><br><br><br><br>
 <br><br><br><br><br>
