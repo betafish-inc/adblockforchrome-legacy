@@ -28,7 +28,7 @@
  # Open the Extensions tab by going to this site: chrome://extensions/
  # If !AdBlock isn't listed, you'll need to [HowToFixIt#To_install_on_Chrome install it].
  # If !AdBlock is listed but grayed out, click "Enable".
- # If your version is older than the latest version according to [http://code.google.com/p/adblockforchrome/wiki/Changelog this page], click on the right top on "Developer mode"
+ # If your version is older than the latest version according to [Changelog this page], click on the right top on "Developer mode"
  # Click on "Update extensions now" and wait for a few seconds for it to update the version number.
  # If it doesn't update, you can [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome uninstall and reinstall] to force it.
 
