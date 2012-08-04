@@ -9,7 +9,7 @@
 
 I'm Michael Gundlach, a developer in Georgia in the US.  Hi!  I created !AdBlock in 2009.  In 2010 I quit my job to work solely on !AdBlock, so my wife and I rely on [https://chromeadblock.com/pay/ your support] for our income.
 
-In addition to financial support, anyone can [HowToContribute contribute code or time] to the project.  About a dozen people have done so over the years.
+In addition to financial support, anyone can [HowToContribute contribute code or time] to the project.  About a dozen [http://code.google.com/p/adblockforchrome/people/list people] have [Changelog done so] over the years.
 
 == How does !AdBlock work? Do I have to configure it? ==
 
@@ -93,14 +93,6 @@ It comes down to *trust*: you should not install extensions that ask for more pe
 == Does !AdBlock actually prevent ads from downloading? ==
 
 Yes!  Ad scripts, images, and Flash are not sent to your computer, saving you bandwidth.
-
-== Can !AdBlock be set to block ads only on a few sites? ==
-
-Sure.  Add this filter to your !AdBlock toolbar button -> Options -> Customize list:
-
-{{{@@*$document,domain=~domain1.com|~domain2.com|~domain3.com}}}
-
-where domain1.com etc. are the sites where you want to block ads.
 
 == Can I synchronize my settings and filters among multiple computers? ==
 
