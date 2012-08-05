@@ -9,7 +9,7 @@
 
 I'm Michael Gundlach, a developer in Georgia in the US.  Hi!  I created !AdBlock in 2009.  In 2010 I quit my job to work solely on !AdBlock, so my wife and I rely on [https://chromeadblock.com/pay/ your support] for our income.
 
-In addition to financial support, anyone can [HowToContribute contribute code or time] to the project.  About a dozen [http://code.google.com/p/adblockforchrome/people/list people] have [Changelog done so] over the years.
+In addition to financial support, anyone can [HowToContribute contribute code or time] to the project.  About a dozen [http://code.google.com/p/adblockforchrome/people/list contributors] have [Changelog done so] over the years.
 
 == How does !AdBlock work? Do I have to configure it? ==
 
