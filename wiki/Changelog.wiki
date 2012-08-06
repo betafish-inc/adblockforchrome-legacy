@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.38<br/>
+*Latest Chrome version*: 2.5.39<br/>
 *Latest Safari version*: 2.5.38<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.39*: Small bugfixes (famlam) and a Retina display icon in Safari (John)
 
 *2.5.38*: Fix context menus in Safari 5.0.6, log error line numbers to server, several other bug fixes (all famlam)
 
