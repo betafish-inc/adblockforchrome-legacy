@@ -7,10 +7,12 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.39<br/>
+*Latest Chrome version*: 2.5.40<br/>
 *Latest Safari version*: 2.5.39<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.40*: Add support for selector exception syntax, code refactoring (famlam)
 
 *2.5.39*: Small bugfixes (famlam) and a Retina display icon in Safari (John)
 
