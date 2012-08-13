@@ -58,7 +58,7 @@ You'll get the fix automatically a few days after your report is processed.
 
 == How do I report that !AdBlock is blocking a non-ad? ==
 
-!AdBlock reads lists of filters to know what to block.  One of those lists has a bad filter.  Don't report it in the Issue tracker, because !AdBlock doesn't maintain the lists.  Instead, follow [#How_do_I_hunt_down_a_bad_filter? these instructions] to find the bad filter, then report it to the [ListAuthorContacts correct filter list maintainer].
+!AdBlock reads lists of filters to know what to block.  It may be that one of those lists has a bad filter.  In that case, don't report it in the Issue tracker: !AdBlock doesn't maintain the lists.  Instead, follow [#How_do_I_hunt_down_a_bad_filter? these instructions] to find the bad filter, then report it to the [ListAuthorContacts correct filter list maintainer].
 
 == How do I uninstall !AdBlock? ==
 
