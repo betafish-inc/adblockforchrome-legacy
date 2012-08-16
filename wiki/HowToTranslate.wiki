@@ -107,9 +107,6 @@ Missing translations (2%): adsoneverysite, maybemalware, oneverysitetitle
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): adsoneverysite, maybemalware, oneverysitetitle
 
-===== \_locales\sk\messages.json =====
-Missing translations (2%): adsoneverysite, maybemalware, oneverysitetitle
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): adsoneverysite, maybemalware, oneverysitetitle
 
