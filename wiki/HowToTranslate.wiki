@@ -154,9 +154,6 @@ Missing translations (6%): adsoneverysite, close_tab_begin_browsing, maybemalwar
 
 ===== \_locales\cs\messages.json =====
 Missing translations (6%): adsoneverysite, close_tab_begin_browsing, maybemalware, oneverysitetitle, opera_120_install, opera_120_options, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_show_toolbar_button, thats_it
-
-===== \_locales\bg\messages.json =====
-Missing translations (6%): adsoneverysite, close_tab_begin_browsing, maybemalware, oneverysitetitle, opera_120_install, opera_120_options, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_show_toolbar_button, thats_it
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
