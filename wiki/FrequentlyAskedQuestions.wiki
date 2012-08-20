@@ -108,7 +108,7 @@ Yes, you can, by copying them to the clipboard, then pasting them into the list 
 
 == How do I hunt down a bad filter? ==
 
-If you're helping us with a problem caused by a bad filter and we ask you to hunt down the bad filter, here's how to do it.
+!AdBlock reads lists of filters to know what to block.  If something is being blocked that shouldn't be blocked, here's how to hunt down which filter is the problem.
 
 Important: whenever you change your filters, it doesn't take effect on a tab until you reload the tab.
 
@@ -135,6 +135,8 @@ STEP FOUR: Delete filters until only the bad filter remains.
   1. If the problem is gone, you deleted the bad filter.  So undo your delete in the textbox using Control-Z (Apple-Z on a Mac) and delete the second half of the contents instead; then go to step 1.
 
 After about 10 of those delete-check-repeat cycles you should have it narrowed down to the single bad filter causing you trouble.
+
+Finally, you can report the bad filter to the [ListAuthorContacts maintainer of the bad filter list].
 
 == What filter lists should I use? ==
 
