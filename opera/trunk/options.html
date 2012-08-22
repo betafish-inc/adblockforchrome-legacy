@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title i18n="optionstitle"></title>
+    <link rel="stylesheet" href="options/options.css" />
+    <link rel="stylesheet" href="jquery/css/custom-theme/jquery-ui-1.8.custom.css" />
+    <script src="jquery/jquery.min.js"></script>
+    <script src="includes/01 port.js"></script>
+    <script src="jquery/jquery-ui.custom.min.js"></script>
+    <script src="includes/02 functions.js"></script>
+  </head>
+  <body>
+    <div style="float:right;"> 
+      <div>
+        <span id="version_number"></span>
+        (<a href="http://code.google.com/p/adblockforopera/wiki/Changelog" target="_blank" i18n="optionschangelog"></a>) 
+      </div>
+      <div>
+        <a href="http://code.google.com/p/adblockforopera" target="_blank" i18n="project_home"></a> |
+        <a href="http://code.google.com/p/adblockforopera/wiki/GetHelp?tm=3" target="_blank" i18n="help"></a> |
+        <a href="http://code.google.com/p/adblockforopera/wiki/FrequentlyAskedQuestions" target="_blank" i18n="faq"></a>
+      </div>
+      <div id="translation_credits"></div>
+    </div>
+    <h1 class="icon" i18n="optionstitle"></h1>
+    <div class="notice" id="opera120" i18n="opera_120_options"></div>
+    <img id="donatelink" style="margin: 0px 0px 10px 25px; cursor: pointer;" src="/img/donate.gif"/>
+
+    <div id="tabpages">
+      <ul>
+        <li><a href="options/general.html" data-scripts="options/general.js"><span i18n="tabgeneral"></span></a></li>
+        <li><a href="options/filters.html" data-scripts="options/filters.js"><span i18n="tabfilterlists"></span></a></li>
+        <li><a href="options/customize.html" data-scripts="filtering/filternormalizer.js filtering/filtertypes.js includes/03%20filteroptions.js options/customize.js"><span i18n="tabcustomize"></span></a></li>
+      </ul>
+    </div>
+    <script src="options/index.js"></script>
+  </body>
+</html>
