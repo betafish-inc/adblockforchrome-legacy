@@ -7,7 +7,7 @@ Sorry to hear that!  You've come to the right place.
 
 == First thing: ==
 
-Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2._Make_sure_AdBlock_for_Chrome_is_installed,_enabled_and_up_to Chrome instructions], [HowToFixIt#2._Make_sure_AdBlock_for_Safari_is_installed,_enabled_and_up_to Safari instructions]
+Make sure you have !AdBlock installed and have the latest version. [http://chromeadblock.com/help/outofdate/ Instructions]
 
 == Next: is this your problem? ==
 
@@ -22,21 +22,21 @@ Make sure you have !AdBlock installed and have the latest version. [HowToFixIt#2
    * !CoolNovo users, install the !AdBlock version in Issue 6920.
 
  * Are you seeing some other *ad that should be blocked*?
-   * To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].
+   * To report the ad, please [FrequentlyAskedQuestions#How_do_I_report_an_ad? use the reporting wizard].  Opera users, for now please report it [http://code.google.com/p/adblockforchrome/issues/entry?template=Ad%20report%20from%20user&comment=1.%20Exactly%20where%20on%20that%20page%20is%20the%20ad%3F%20What%20does%20it%20look%20like%3F%20Attach%20a%20screenshot%20with%20the%20ad%20clearly%20marked%2C%20if%20you%20can.%0A%0A%0A2.%20Paste%20a%20working%20filter%2C%20if%20you%20have%20one%3A%0A%0A%0A3.%20Any%20other%20information%20that%20would%20be%20helpful%2C%20besides%20what%20is%20listed%0Abelow%3A%0A%0A%0A4.%20In%20what%20language%20is%20the%20page%20written%3F%0A%0A%0A5.%20The%20exact%20URL%20to%20the%20page%20with%20the%20ad.%20(This%20is%20the%20exact%20text%20you'll%20see%20in%20the%20address%20bar)%0A%0A%0A6.%20Which%20filter%20lists%20are%20you%20subscribed%20to%3F%20(Default%20isn't%20an%20answer%20here%3B%20the%20defaults%20depend%20on%20your%20location)%0A%0A%0A%0A7.%20Which%20version%20of%20Opera%20are%20you%20using%3F%20(Latest%20isn't%20an%20answer%2C%20if%20I%20see%20this%20issue%20next%20year%2C%20it%20certainly%20isn't%20the%20latest%20version%20anymore)%0A%0A%0A%0A8.%20What%20version%20of%20AdBlock%20are%20you%20using%3F%0A%0A%0A%0A9.%20What%20settings%20are%20enabled%20in%20the%20first%20tab%20of%20the%20options%20page%3F%0A%0A%0A%0A10.%20What%20custom%20filters%20are%20you%20using%3F%20This%20is%20the%20content%20of%20the%20big%20text%20box%20on%20the%20third%20tab%20of%20the%20options%20page.%0A here].
 
 == Most other problems are fixed by these easy steps! ==
  # Make sure !AdBlock is installed and up to date, as described above.
  # Manually update your filters ([http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#Make_sure_you_are_using_the_latest_filters instructions])
- # Make sure your browser is up to date.  ([HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome instructions], [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari instructions])
+ # Make sure your browser is up to date.  (Instructions: [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome] [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari] [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Opera_installed Opera])
  # Reboot your computer.
- # Uninstall and reinstall !AdBlock. ( [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome instructions], [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari instructions])
- # Delete !AdBlock's !LocalStorage file.  ([HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome  Chrome instructions], [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions])
+ # Uninstall and reinstall !AdBlock. (Instructions: [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome] [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari] [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Opera Opera])
+ # Delete !AdBlock's settings file.  (Instructions: [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome Chrome] [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari instructions] [HowToFixIt#6._Clear_AdBlock_for_Opera's_settings Opera])
 
 == Other known problems ==
 
   * These features break !AdBlock and should be disabled:
     * *Multi-process windows* in Safari
-  * *Nightly and Canary builds* will often cause issues. If the issue doesn't occur in the latest dev, beta or stable version of your browser, please file a report in the issue tracker for the browser instead ([http://crbug.com/new Chrome] [https://bugreport.apple.com/ Safari]).
+  * *Nightly/Canary/Labs/Next browser versions* will often cause issues. If you have a problem there and the problem doesn't occur in the latest stable version of your browser, please file a report in the issue tracker for the browser instead ([http://crbug.com/new Chrome] [https://bugreport.apple.com/ Safari] [https://bugs.opera.com/wizard Opera]).
 
 == Do you still have a problem after trying the above? ==
 

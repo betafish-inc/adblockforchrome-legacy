@@ -7,7 +7,8 @@
   # Open !AdBlocks options by clicking the button -> Options
   # Go to the second tab: "Filter lists"
   # Click the 'Update Now' button
-  # Wait until all list have been updated, then reload all web pages
+  # Wait until all lists have been updated
+  # Restart the browser
 
 <br><br>
 ----
@@ -133,7 +134,53 @@
    # In the window that appears, go to: Safari -> !LocalStorage
    # Delete the "safari-extension_com.betafish.adblockforsafari-(letters & numbers).localstorage" file(s)
    # Open Safari again and see if !AdBlock works
-<wiki:comment>So that links to the Safari install section don't leave the section midway down the page</wiki:comment>
+
+<br><br>
+----
+<br>
+
+= Opera =
+
+== 1. Make sure you have the latest version of Opera installed ==
+ # Click on the Opera menu -> Help -> Check for Updates
+ # When an update is available, follow the steps to update the browser
+
+== 2. Make sure !AdBlock for Opera is installed, enabled and up to date ==
+  # Make sure the following setting is set to the default value or less: `opera:config#AutoUpdate|Add-onsCheckInterval`
+  # Open the Extensions tab by clicking the Opera menu -> Extensions -> Manage Extensions
+   * If !AdBlock isn't listed, you'll need to [HowToFixIt#To_install_on_Opera install it first]
+   * If !AdBlock is listed but grayed out, click "Enable"
+   * If your version is older than the latest version according to [Changelog this page], you'll have to wait until Opera automatically installs the new version
+   * If it doesn't update, you can [HowToFixIt#5._Uninstall_and_reinstall_AdBlock_for_Opera uninstall and reinstall] the extension to force it.
+
+== 3. Restart your browser ==
+
+== 4. Reboot your computer ==
+
+== 5. Uninstall and reinstall !AdBlock for Opera ==
+
+  === To uninstall from Opera ===
+   # Open the Extensions tab by clicking the Opera menu -> Extensions -> Manage Extensions
+   # Click the uninstall button near !AdBlock
+   # Restart the browser
+
+  === To install on Opera ===
+   # Go to [https://chromeadblock.com/which/ this page]
+   # Click "Add to Opera"
+   # (optionally, you can change the settings under privacy now)
+   # Click "Install"
+   # Restart Opera
+
+== 6. Clear !AdBlock for Opera's settings ==
+  # Open !AdBlocks options by clicking the button -> Options
+  # Right mouse click the page and choose `Inspect element`
+  # Click `Storage` in the new screen that opens (on top of it)
+  # Click the "Widget preferences" tab
+  # Right mouse click one of the items you'll see in the list
+  # Choose "Delete all from widget://wuid-..."
+  # Restart Opera
+
+<wiki:comment>So that links to the Opera install section don't leave the section midway down the page</wiki:comment>
 <br><br><br><br><br>
 <br><br><br><br><br>
 <br><br><br><br><br>
