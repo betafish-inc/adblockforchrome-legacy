@@ -150,7 +150,7 @@
   # Open the Extensions tab by clicking the Opera menu -> Extensions -> Manage Extensions
    * If !AdBlock isn't listed, you'll need to [HowToFixIt#To_install_on_Opera install it first]
    * If !AdBlock is listed but grayed out, click "Enable"
-   * If your version is older than the latest version according to [Changelog#Changelog_for_the_Opera_version_of_AdBlock this page this page], you'll have to wait until Opera automatically installs the new version
+   * If your version is older than the latest version according to [Changelog#Changelog_for_the_Opera_version_of_AdBlock this page], you'll have to wait until Opera automatically installs the new version
    * If it doesn't update, you can [HowToFixIt#5._Uninstall_and_reinstall_AdBlock_for_Opera uninstall and reinstall] the extension to force it.
 
 == 3. Restart your browser ==
