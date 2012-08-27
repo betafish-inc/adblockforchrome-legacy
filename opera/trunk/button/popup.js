@@ -41,7 +41,7 @@ function customize_for_this_tab() {
 $(function() {
 
   $("#titletext span").click(function() {
-    var url = "http://code.google.com/p/adblockforopera/";
+    var url = "http://code.google.com/p/adblockforchrome/";
     BG.openTab(url);
   });
 
