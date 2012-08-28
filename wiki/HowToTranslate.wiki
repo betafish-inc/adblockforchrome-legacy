@@ -107,9 +107,6 @@ Missing translations (3%): opera_can_also_change_setting, opera_donations_button
 ===== \_locales\sk\messages.json =====
 Missing translation (1%): undo_last_block
 
-===== \_locales\ru\messages.json =====
-Missing translations (5%): close_tab_begin_browsing, opera_120_install, opera_120_options, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_show_toolbar_button, thats_it, undo_last_block
-
 ===== \_locales\ko\messages.json =====
 Missing translations (16%): a_note_to_you_catblock_lovers, adsoneverysite, catblock_was_only_in_adblock_for_a_few_days, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, close_tab_begin_browsing, custompattern, doesntmatchoriginal, filtereasylist_plus_greek, filterrussian, i_came_here_looking_for_catblock, lang_greek, maybemalware, noresourcessend2, nosearchresults, oneverysitetitle, opera_120_install, opera_120_options, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_show_toolbar_button, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thats_it, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, undo_last_block
 
