@@ -123,6 +123,18 @@ chrome = {
         };
         opera.extension.tabs.addEventListener("focus", callbackfunction, false);
       }
+    },
+    reload: function() {
+      var hasCallback = typeof arguments[arguments.length-1] === "function";
+      if (!arguments.length || (arguments.length === 1 && hasCallback)) {
+        var current = chrome.extension.getBackgroundPage().opera.extension.tabs.getSelected();
+        if (current && current.url) {
+          current.update({url: current.url});
+        }
+      }
+      if (hasCallback) {
+        arguments.pop()();
+      }
     }
   },
 
@@ -246,8 +258,11 @@ opera.extension.ondisconnect
 opera.extension.onmessage
 opera.extension.postMessage()
 opera.extension.urlfilter.allow.add()
+opera.extension.urlfilter.allow.remove()
 opera.extension.urlfilter.block.add()
 opera.extension.urlfilter.block.remove()
+opera.extension.urlfilter.oncontentblocked
+opera.extension.urlfilter.oncontentunblocked
 opera.extension.tabGroups.create()
 opera.extension.tabGroups.getAll()
 opera.extension.tabGroups.onclose
