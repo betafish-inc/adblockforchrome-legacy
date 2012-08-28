@@ -104,9 +104,6 @@ Missing translations (10%): adsoneverysite, close_tab_begin_browsing, custompatt
 ===== \_locales\tr\messages.json =====
 Missing translations (3%): opera_can_also_change_setting, opera_donations_button, opera_enabledin, opera_excludedomainorurl, opera_reenable_button, undo_last_block
 
-===== \_locales\sv\messages.json =====
-Missing translation (1%): undo_last_block
-
 ===== \_locales\sk\messages.json =====
 Missing translation (1%): undo_last_block
 
