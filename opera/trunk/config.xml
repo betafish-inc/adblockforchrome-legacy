@@ -28,6 +28,6 @@ GNU General Public License for more details.
   </license>
   <access origin="*"/>
  	<content src="background.html" encoding="utf-8" type="text/html"/>
-  <feature name="opera:urlfilter"/>
-  <!--feature name="opera:contextmenus"/-->
+  <feature name="opera:urlfilter" required="true"/>
+  <feature name="opera:contextmenus" required="false"/>
 </widget>
