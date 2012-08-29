@@ -30,6 +30,7 @@ var button = opera.contexts.toolbar.createItem({
   function Settings() {
     var defaults = {
       debug_logging: false,
+      show_context_menu_items: true,
       show_advanced_options: false,
       show_toolbar_button: true
     },
@@ -301,7 +302,49 @@ var button = opera.contexts.toolbar.createItem({
 
   // Set the button image according to the URL of the current tab.
   updateButtonUIAndContextMenus = function() {
+    
+    function setContextMenus(info) {
+      if (olderOpera) {
+        return;
+      }
+      chrome.contextMenus.removeAll();
+      if (!get_settings().show_context_menu_items)
+        return;
 
+      if (adblock_is_paused() || info.whitelisted || info.disabled_site)
+        return;
+
+      function addMenu(title, callback) {
+        chrome.contextMenus.create({
+          title: title,
+          contexts: ["all"],
+          onclick: function(clickdata, tab) { callback(tab, clickdata); }
+        });
+      }
+
+      addMenu(translate("block_this_ad"), function(tab, clickdata) {
+        emit_page_broadcast(
+          {fn:'top_open_blacklist_ui', options:{info: clickdata}},
+          {tab: tab}
+        );
+      });
+
+      addMenu(translate("block_an_ad_on_this_page"), function(tab) {
+        emit_page_broadcast(
+          {fn:'top_open_blacklist_ui', options:{nothing_clicked: true}},
+          {tab: tab}
+        );
+      });
+
+      if (has_last_custom_filter(info.tab.url)) {
+        addMenu(translate("undo_last_block"), function(tab) {
+          remove_last_custom_filter();
+          chrome.tabs.reload();
+        });
+      }
+
+    }
+    
     function setBrowserButton(info) {
       if (get_settings().show_toolbar_button) {
         opera.contexts.toolbar.addItem(button);
@@ -321,6 +364,7 @@ var button = opera.contexts.toolbar.createItem({
     }
 
     getCurrentTabInfo(function(info) {
+      setContextMenus(info);
       setBrowserButton(info);
     });
   }

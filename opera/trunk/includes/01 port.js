@@ -144,6 +144,58 @@ chrome = {
       callback(opera.extension.windows.getLastFocused());
     }
   },
+  
+  contextMenus: {
+    removeAll: function(callback) {
+      if (opera.contexts.menu.length) {
+        opera.contexts.menu.removeItem(0);
+      }
+      if (callback) {
+        callback();
+      }
+    },
+    create: function(properties, callback) {
+      var menu = opera.contexts.menu, folder;
+      if (!menu.length) {
+        folder = menu.createItem({
+          title: widget.name,
+          type: "folder",
+          contexts: ["all"],
+          documentURLPatterns: ["https://*", "http://*"],
+          icon: 'img/icon16.png'
+        });
+        menu.addItem(folder);
+      } else {
+        folder = menu.item(0);
+      }
+      
+      var newitem = menu.createItem({
+        title: properties.title,
+        type: "entry",
+        contexts: properties.contexts,
+        disabled: properties.disabled !== undefined ? properties.disabled : false,
+        onclick: function(e) {
+          var current = opera.extension.tabs.getSelected(), isFrame = false;
+          if (current && current.url) {isFrame = current.url !== e.documentURL;}
+          properties.onclick({
+            menuItemId: e.target.id,
+            parentMenuItemId: e.target.parent.id,
+            linkUrl: e.linkURL,
+            srcUrl: e.srcURL,
+            pageUrl: current && current.url ? current.url : e.pageURL, // Opera bug? e.pageURL should be correct
+            frameUrl: isFrame ? e.documentURL : undefined,
+            selectionText: e.selectionText,
+            editable: e.isEditable            
+          }, opera.extension.tabs.getSelected());
+        }
+      });
+      folder.addItem(newitem);
+      
+      if (callback) {
+        callback();
+      }
+    }
+  },
 
   i18n: {
     getMessage: function(messageID, args) {
@@ -242,6 +294,11 @@ chrome = {
 
 /* Known list of existing opera functions.
  * Keep it here, as not everything can be found easily in Opera's documentation
+opera.contexts.menu.createItem()
+opera.contexts.menu.addItem()
+opera.contexts.menu.item()
+opera.contexts.menu.removeItem()
+opera.contexts.menu.onclick
 opera.contexts.speeddial.title
 opera.contexts.speeddial.url
 opera.contexts.toolbar.addItem()

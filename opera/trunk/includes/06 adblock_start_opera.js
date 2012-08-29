@@ -120,6 +120,22 @@ var load_user_interface = function(request) {
   }
 };
 
+var contextmenuclicked = function(e) {
+  if (document.body && window === window.top) {
+    if (e.srcElement.nodeName === "#text") {
+      rightclicked_item = e.srcElement.parentNode;
+    } else {
+      rightclicked_item = e.srcElement;
+    }
+    
+    var removetrash = function() {
+      rightclicked_item = null;
+      document.body.removeEventListener("click", removetrash, false);
+    };
+    document.body.addEventListener("click", removetrash, false);
+  }
+};
+
 adblock_begin({
   startPurger: function() {
     // Opera 12.0 (in the background olderOpera) throws an error here
@@ -135,5 +151,10 @@ adblock_begin({
   },
   success: function() {
     chrome.extension.onRequest.addListener(load_user_interface);
+    
+    // In Opera 12.0 this won't work yet
+    if (opera.contexts && opera.contexts.menu) {
+      opera.contexts.menu.addEventListener("click", contextmenuclicked, false);
+    }
   }
 });
