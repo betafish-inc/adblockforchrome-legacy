@@ -304,7 +304,7 @@ var button = opera.contexts.toolbar.createItem({
   updateButtonUIAndContextMenus = function() {
     
     function setContextMenus(info) {
-      if (olderOpera) {
+      if (olderOpera || !opera.contexts.menu) {
         return;
       }
       chrome.contextMenus.removeAll();
