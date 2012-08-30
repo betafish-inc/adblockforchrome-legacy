@@ -72,6 +72,11 @@ Safari: Safari menu -> Preferences -> Extensions -> !AdBlock Uninstall.
 
 Opera: Opera menu -> Extensions -> Manage Extensions -> Uninstall.
 
+== How do I remove or add the AdBlock toolbar button in Safari? ==
+
+To remove the button from the toolbar, simply right click the button and select "Remove Item".
+To add the button to the toolbar click on "View" in the menubar, then on "Customize Toolbar..." and drag the button with the AdBlock logo back on the toolbar.
+
 <hr>
 
 = Common problems =
