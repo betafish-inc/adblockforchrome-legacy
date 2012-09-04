@@ -6,17 +6,17 @@ echo.
 call pullfromchrome.bat
 
 echo running messages.json validator
-ValidateMessages.json.exe -closeIfNoErrors
+ValidateMessages.json.exe -closeIfNoMessages -removeUnusedStrings -minimizeForRelease
 pause
 
-del "adblockforopera.oex"
+del "adblock.oex"
 cd ..
 if exist "%programfiles%\7-Zip\7z.exe" (
-  "%programfiles%\7-Zip\7z.exe" a -mx=9 -tzip "tools\adblockforopera.oex" @tools\include_in_oex.txt
+  "%programfiles%\7-Zip\7z.exe" a -mx=9 -tzip "tools\adblock.oex" @tools\include_in_oex.txt
 ) else (
   echo No 7Zip found. Zip all files listed in "include_in_oex.txt" yourself and rename it to an .oex file
 )
 pause
 
-echo Don't forget to create a download!
+echo Don't forget to create a tag!
 pause

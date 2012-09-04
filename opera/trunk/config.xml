@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="adblockforopera" viewmodes="minimized" version="1.0.1">
-
-  <name>AdBlockForOpera</name>
-
-  <author>Famlam</author>
+<widget xmlns="http://www.w3.org/ns/widgets" id="adblockforopera" viewmodes="minimized" version="1.0.2">
+  <name>AdBlock</name>
+  <author>adblockforopera</author>
   <description>Blocks ads on all websites.</description>
   <icon src="img/icon16.png" width="16" height="16"/>
   <icon src="img/icon18.png" width="18" height="18"/>
