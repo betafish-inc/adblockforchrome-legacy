@@ -388,7 +388,7 @@ MyFilters.prototype._make_subscription_options = function() {
   // When modifying a list, IDs mustn't change!
   return {
     "adblock_custom": { // AdBlock custom filters
-      url: "http://chromeadblock.com/filters/adblock_custom.txt",
+      url: "https://chromeadblock.com/filters/adblock_custom.txt",
     },
     "easylist": { // EasyList
       url: "http://adblockplus.mozdev.org/easylist/easylist.txt"
@@ -430,7 +430,7 @@ MyFilters.prototype._make_subscription_options = function() {
       requiresList: "easylist",
     },
     "chinese": { // Additional Chinese filters
-      url: "http://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt",
+      url: "https://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt",
       requiresList: "easylist",
     },
     "czech": { // Czech filters
