@@ -14,8 +14,8 @@ includes\0*.js
 jquery\jquery.min.js
 jquery\jquery-ui.custom.min.js
 jquery\css\override-page.css
-jquery\css\custom-theme\jquery-ui-1.8.custom.css
-jquery\css\custom-theme\images\ui-*.png
+jquery\css\custom-theme\jquery-ui.custom.css
+jquery\css\custom-theme\images\ui-bg_*.png
 options\customize.html
 options\customize.js
 options\filters.js

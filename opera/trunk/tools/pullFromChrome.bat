@@ -17,7 +17,8 @@ xcopy "%dir%\_locales" "..\_locales\" /s /w /v /y
 xcopy "%dir%\img\icon???.png" "..\img\" /v /y
 xcopy "%dir%\img\delete.gif" "..\img\" /v /y
 xcopy "%dir%\jquery\jquery*.min.js" "..\jquery\" /v /y
-xcopy "%dir%\jquery\css\custom-theme" "..\jquery\css\custom-theme\" /s /v /y
+xcopy "%dir%\jquery\css\custom-theme\jquery-ui.custom.css" "..\jquery\css\custom-theme\" /s /v /y
+xcopy "%dir%\jquery\css\custom-theme\images\ui-bg_*" "..\jquery\css\custom-theme\images\" /s /v /y
 xcopy "%dir%\tools\I18N_include_exclude.txt" /v /y
 xcopy "%dir%\tools\ValidateMessages.json.exe" /v /y
 xcopy "%dir%\tools\tests\qunit.*" "tests\" /v /y

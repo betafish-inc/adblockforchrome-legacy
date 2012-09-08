@@ -113,10 +113,9 @@ var load_user_interface = function(request) {
       css.type = "text/css";
       css.style.setProperty("display", "none", "");
       css.className = "adblock-ui-stylesheet";
-      css.innerText = request.data.css;
+      css.textContent = request.data.css;
       document.body.appendChild(css);
     }
-    
   }
 };
 
