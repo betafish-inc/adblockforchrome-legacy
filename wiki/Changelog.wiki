@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.42<br/>
+*Latest Chrome version*: 2.5.43<br/>
 *Latest Safari version*: 2.5.42<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.43*: Fix conflict with other extensions, remove dead Polish list, minor changes (famlam)
 
 *2.5.42*: minor changes, bugfixes on NFL.com and hotmail.com (famlam), Undo of blacklist wizard rules available in button and context menus
 
