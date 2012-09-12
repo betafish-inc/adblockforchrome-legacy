@@ -1,6 +1,6 @@
   // OPTIONAL SETTINGS
 var urlFilterAPI = opera.extension.urlfilter;
-olderOpera = (Number(opera.version()) < 12.5); // Global
+olderOpera = (Number(opera.version()) < 12.1); // Global
 
 if (urlFilterAPI.clear === undefined) {
   // We really need this API.....
@@ -491,7 +491,7 @@ var button = opera.contexts.toolbar.createItem({
         "uiscripts/opera_hooks.js",
         "jquery/jquery-ui.custom.min.js",
         "uiscripts/top_open_whitelist_ui.js",
-        "jquery/css/custom-theme/jquery-ui.custom.css",
+        "jquery/css/jquery-ui.custom.css",
         "jquery/css/override-page.css"
       ]);
       injectMap.allFrames = false;
@@ -507,7 +507,7 @@ var button = opera.contexts.toolbar.createItem({
         "uiscripts/blacklisting/elementchain.js",
         "uiscripts/blacklisting/blacklistui.js",
         "uiscripts/top_open_blacklist_ui.js",
-        "jquery/css/custom-theme/jquery-ui.custom.css",
+        "jquery/css/jquery-ui.custom.css",
         "jquery/css/override-page.css"
       ]);
       injectMap.allFrames = false;

@@ -29,5 +29,5 @@ $("#enable_show_advanced_options").change(function() {
 
 
 if (chrome.extension.getBackgroundPage().olderOpera) {
-  $("#enable_show_context_menu_items, label[for='enable_show_context_menu_items']").css("color", "grey").prop("disabled", true).prop("checked", false).unbind().attr("title", translate("opera_enabledin", "Opera 12.50"));
+  $("#enable_show_context_menu_items, label[for='enable_show_context_menu_items']").css("color", "grey").prop("disabled", true).prop("checked", false).unbind().attr("title", translate("opera_enabledin", "Opera 12.10"));
 }

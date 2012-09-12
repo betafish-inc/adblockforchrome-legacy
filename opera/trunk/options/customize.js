@@ -205,6 +205,6 @@ $(function() {
   });
   
   if (chrome.extension.getBackgroundPage().olderOpera) {
-    $("#txtBlockUrlDomain, [i18n='opera_linkunblock'], [i18n='show_ads_except_for'], [i18n='stop_blocking_ads'], [i18n='blockdomain']").css("color", "grey").prop("disabled", true).prop("checked", false).unbind().attr("title", translate("opera_enabledin", "Opera 12.50"));
+    $("#txtBlockUrlDomain, [i18n='opera_linkunblock'], [i18n='show_ads_except_for'], [i18n='stop_blocking_ads'], [i18n='blockdomain']").css("color", "grey").prop("disabled", true).prop("checked", false).unbind().attr("title", translate("opera_enabledin", "Opera 12.10"));
   }
 });

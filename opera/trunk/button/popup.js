@@ -39,7 +39,7 @@ function customize_for_this_tab() {
         $('#' + div).show();
   });
   if (chrome.extension.getBackgroundPage().olderOpera) {
-    $("#div_pause_adblock, #div_whitelist").css("color", "grey").unbind("click").attr("title", translate("opera_enabledin", "Opera 12.50"));
+    $("#div_pause_adblock, #div_whitelist").css("color", "grey").unbind("click").attr("title", translate("opera_enabledin", "Opera 12.10"));
   }
 }
 
