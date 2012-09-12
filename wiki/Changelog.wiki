@@ -559,7 +559,9 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Changelog for the Opera version of !AdBlock ==
 
-*1.0.2*: Include changes from AdBlock for Chrome 2.5.42. Improve popup blocker speed. Fix incorrect gray button icon for non-disabled sites. Add context menu items (Opera 12.50 only)
+*1.0.3*: Include changes from !AdBlock for Chrome 2.5.43. Fix UI issues for the blacklister and whitelister. Add support for the improved blocking method in Opera 12.10
+
+*1.0.2*: Include changes from !AdBlock for Chrome 2.5.42. Improve popup blocker speed. Fix incorrect gray button icon for non-disabled sites. Add context menu items (Opera 12.50 only)
 
 *1.0.1*: Fix an issue where type-specific rules ($image for example) weren't ignored in Opera 12.01
 
