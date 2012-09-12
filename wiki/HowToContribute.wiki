@@ -83,7 +83,7 @@ I'll also mark my own code as `Status:NeedsReview` and would appreciate extra pa
 
 === Coding style ===
 
-Please comment every function you write with a description of what it does, a list of inputs, and what it returns.  See `background.html` for some examples.  Variables should be clearly named instead of short.  When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When in doubt about capitalization, follow the rules of the code around you.  It's mostly `ClassName.functionName with_underscored_vars`.
+Please comment every function you write with a description of what it does, a list of inputs, and what it returns.  See `background.html` for some examples.  Variables should be clearly named instead of short; "private" variables by convention have a leading underscore.  When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When in doubt about capitalization, follow the rules of the code around you.  It's mostly `ClassName.functionName with_underscored_vars`.
 
 The code isn't 100% (or even 80%, probably) adherent to the rules in the previous paragraph.  Refactoring is great -- whenever you touch some code, feel free to clean it up.
 
