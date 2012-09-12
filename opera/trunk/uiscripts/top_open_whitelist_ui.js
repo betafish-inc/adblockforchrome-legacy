@@ -82,6 +82,11 @@ function top_open_whitelist_ui() {
     }
     onSliderChange();
 
+    // In Opera, offsetHeight (=== jQuery.height()) is wrong initially
+    window.setTimeout(function() {
+      $(page).height(Math.max(page[0].offsetHeight, $(page).height(), $(page).height('auto').height()));
+    }, 0);
+
     // Generate the URL. If forDisplay is true, then it will truncate long URLs
     function generateUrl(forDisplay) {
       var result = "";
