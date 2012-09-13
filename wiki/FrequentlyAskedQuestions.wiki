@@ -41,7 +41,7 @@ Ads are blocked for you automatically, but if something slipped by !AdBlock, you
 
 == I blocked too much!  How do I undo it? ==
 
-Blocking an ad adds a new "filter" to the list on the the Customize tab on the !AdBlock toolbar button -> Options page.  You can click Edit on that list, remove the filter, and click Save.
+Click the button and choose "Undo last block" if it's available. Otherwise: blocking an ad adds a new "filter" to the list on the the Customize tab on the !AdBlock toolbar button -> Options page. You can click Edit on that list, remove the filter, and click Save.
 
 == How do I tell !AdBlock not to run? ==
 
