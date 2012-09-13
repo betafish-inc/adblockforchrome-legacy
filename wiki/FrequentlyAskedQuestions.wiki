@@ -108,7 +108,7 @@ See [GetHelp here].
 
 == In Opera, I see a warning that not all features are functional and that ads may show up. ==
 
-You'll see this in all Opera versions less than 12.50.  Don't worry, the effects aren't that bad.  !AdBlock uses a list of rules to block ads, and pre-12.50 versions of Opera can't support some of those rules, that's all.  Once you update to Opera 12.50, all disabled functionality will be enabled automatically.
+You'll see this in all Opera versions less than 12.10.  Don't worry, the effects aren't that bad.  !AdBlock uses a list of rules to block ads, and pre-12.10 versions of Opera can't support some of those rules, that's all.  Once you update to Opera 12.10, all disabled functionality will be enabled automatically.
 
 == When I install, Chrome warns me that !AdBlock will have access to "Your data on all websites" and "Your tabs and browsing activity"! ==
 
