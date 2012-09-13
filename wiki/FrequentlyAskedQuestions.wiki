@@ -134,7 +134,7 @@ Yes, you can, by copying them to the clipboard, then pasting them into the list 
 
 == What's different in the Opera version? ==
 
-Mostly due to limitations in Opera, !AdBlock is missing context menus, the ad reporting wizard, the resource list, and the ability to whitelist only part of a website.  We'll add back these features when we can.
+Mostly due to limitations in Opera, !AdBlock is missing the ad reporting wizard, the resource list, and the ability to whitelist only part of a website.  We'll add back these features when we can.
 
 == How do I hunt down a bad filter? ==
 
