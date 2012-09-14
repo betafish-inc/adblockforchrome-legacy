@@ -233,7 +233,9 @@ MyFilters.prototype.fetch_and_update = function(id, isNewList) {
   ajax(url, {
     headers: {
       "Accept": "text/plain",
-      "If-Modified-Since": this._subscriptions[id].last_modified || undefined
+      // Due to an Opera bug, status code 304 is returned as status code 0, so it's not
+      // possible to determine if an error occured or the list simply wasn't modified.
+      //"If-Modified-Since": this._subscriptions[id].last_modified || undefined
     },
     onSuccess: function(xhr) {
       // In case the subscription disappeared while we were out
