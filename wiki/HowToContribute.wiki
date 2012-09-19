@@ -9,7 +9,7 @@ Would you be interested in making !AdBlock better for millions of users?  I woul
 
 This would help a LOT!  Several new Issues arrive every day, and the more people willing to triage them, the less chance of an Issue going unnoticed.
 
-Bookmark the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=-modified&groupby=&colspec=Modified+ID+Type+Status+Priority+Summary&nobtn=Update list of Issue updates] or subscribe to [groups.google.com/group/adblockforchrome-feed adblockforchrome-feed@googlegroups.com] and watch for new or updated Issues.  Then do any of these helpful things:
+Bookmark the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=-modified&groupby=&colspec=Modified+ID+Type+Status+Priority+Summary&nobtn=Update list of Issue updates] or subscribe to [http://groups.google.com/group/adblockforchrome-feed adblockforchrome-feed@googlegroups.com] and watch for new or updated Issues.  Then do any of these helpful things:
 
  * Leave a comment saying whether you can reproduce the problem.  Add a screenshot of the problem if there isn't one.
 
