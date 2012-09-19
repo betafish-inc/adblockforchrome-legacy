@@ -9,7 +9,7 @@ Would you be interested in making !AdBlock better for millions of users?  I woul
 
 This would help a LOT!  Several new Issues arrive every day, and the more people willing to triage them, the less chance of an Issue going unnoticed.
 
-Bookmark the [http://code.google.com/p/adblockforchrome/updates/list list of Issue updates] and watch for new or updated Issues.  Then do any of these helpful things:
+Bookmark the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=-modified&groupby=&colspec=Modified+ID+Type+Status+Priority+Summary&nobtn=Update list of Issue updates] or subscribe to [groups.google.com/group/adblockforchrome-feed adblockforchrome-feed@googlegroups.com] and watch for new or updated Issues.  Then do any of these helpful things:
 
  * Leave a comment saying whether you can reproduce the problem.  Add a screenshot of the problem if there isn't one.
 
@@ -19,7 +19,7 @@ Bookmark the [http://code.google.com/p/adblockforchrome/updates/list list of Iss
 
  * Lots of problems are caused by a bad filter.  Use the [http://chromeadblock.com/bugs/hunting filter hunting approach] to find which specific filter is causing the reporter problems, and leave a comment with what you find.
 
-If you think you'll do this more than once or twice, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily make you an official Contributor to the project, so that you can close/merge/prioritize bugs directly.
+If you've done this enough for long enough (say, more than a dozen times over more than a week) to know that you'd like to do it regularly, then feel free to ask on adblockforchrome-dev@googlegroups.com.  I'll happily make you an official Contributor to the project, so that you can label/close/merge/prioritize bugs directly.
 
 == Improve the existing translations ==
 
@@ -33,7 +33,7 @@ If you think you'll do this more than once or twice, feel free to ask on adblock
   1 Type "svn diff > mycontribution.patch" to create a patchfile
   1 Attach the patchfile to the Issue.
 
-After you do this once, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily make you an official Contributor to the project, so that you can commit directly to the repo.
+After you do this once, feel free to ask on adblockforchrome-dev@googlegroups.com and I'll happily make you an official Contributor to the project, so that you can commit directly to the repo rather than using the patch process.
 
 == Tell your friends! ==
 
@@ -47,7 +47,10 @@ Here's more info for official Contributors (see above for how to become one).
 
 == Mailing lists ==
 
-Subscribe to the adblockforchrome-dev Google Group, which is where we do all our discussion that isn't in Issues or code reviews.  Also subscribe to the adblockforchrome-discuss Google Group to help answer FAQs from users.
+Subscribe to these Google Groups:
+ * adblockforchrome-dev : where we do all discussion that isn't in Issues or code review
+ * adblockforchrome-discuss : to answer FAQs from users
+ * adblockforchrome-feed : to get emailed all the changes that happen in the project.  You'll want to subscribe to this as a 25-emails-at-a-time digest for maximum readibility without getting spammed.
 
 == Issue triage ==
 
