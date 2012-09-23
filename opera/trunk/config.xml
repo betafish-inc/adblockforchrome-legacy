@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="adblockforopera" viewmodes="minimized" version="1.0.3">
+<widget xmlns="http://www.w3.org/ns/widgets" id="adblockforopera" viewmodes="minimized" version="1.0.4">
   <name>AdBlock</name>
   <author>adblockforopera</author>
   <description>Blocks ads on all websites.</description>

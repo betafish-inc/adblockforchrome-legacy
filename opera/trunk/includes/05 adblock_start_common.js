@@ -23,7 +23,6 @@ function typeForElement(el) {
       if (/(^|\s)icon($|\s)/i.test(el.rel))
         return ElementTypes.other;
       return ElementTypes.stylesheet;
-    case 'BODY': return ElementTypes.background;
     default: return ElementTypes.NONE;
   }
 }
