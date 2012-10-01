@@ -7,6 +7,8 @@ Currently, when someone decides they'd like to volunteer with !AdBlock, they are
 
 I'd like to replace that with a workflow that breaks tasks into simple, discrete chunks, and provides volunteers with a menu of tasks to complete, each with simple instructions.  That would help casual volunteers who may want to help once, or once a month, so that they can offer their contribution without having to learn everything about the project.  It would also help long-time contributors to the project (myself included), by providing a dashboard of what work is falling through the cracks.
 
+<wiki:toc max_depth="2" />
+
 = Strategy =
 
 I picture a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.
@@ -58,7 +60,7 @@ The most common and complex Issue type is Type-Defect, whose stages are:
     * (Gets default labels: Repro-Unknown Cause-Known Clarity-Clear if not otherwise specified)
     * !CodeReview-!NeedsReview - _Owner is done coding, needs code review_
     * !CodeReview-!NeedsWork - _Code reviewer found problems, back to Owner_
-  # Status:ReadyForRelease - _Code reviewer feels it's ready to merge_
+  # Status:!ReadyForRelease - _Code reviewer feels it's ready to merge_
   # Status:Fixed - _Merged into trunk_
   # Status:Invalid/Duplicate/!FailedToReproduce/!WontFix - _closed without Fixing_
 
@@ -92,7 +94,7 @@ Below is the list of tasks, along with the search that defines the list of relev
     * Changes to make:
       # Repro-Confirmed
       # comment "Can't repro"
-      # Status:FailedToReproduce to close the Issue after several people fail to repro
+      # Status:!FailedToReproduce to close the Issue after several people fail to repro
   # Find the root cause of an Issue
     * Search: Status:Accepted -Clarity-!WaitingForUser Cause-Unknown -Owner
     * Changes to make:
@@ -106,8 +108,8 @@ Below is the list of tasks, along with the search that defines the list of relev
     * Search: Status:Coding !CodeReview-!NeedsReview
     * Changes to make:
       # !CodeReview-!NeedsWork, with comments on the revision(s); maybe cc yourself to review again
-      # Status:ReadyForRelease
-      # code review comments alone, if not confident to set to Status:ReadyForRelease
+      # Status:!ReadyForRelease
+      # code review comments alone, if not confident to set to Status:!ReadyForRelease
   # Respond to a code review
     * Search: !CodeReview-!NeedsWork Owner:me
     * Changes to make:
