@@ -140,6 +140,6 @@ Problems with the above:
 
   * How does a volunteer filter out the Issues that they don't care about personally, but don't warrant a !WontFix?
     * Only starred: owner: and reporter: allow 'me' in the searchfield, customizing the search by user
-    * Could provide Chrome extension letting you Hide issues from the page
+    * A robot could serve up issues customized for the volunteer using the Project hosting API, instead of the Wikipage just embedding a Project Hosting custom search.  But that's a lot more work.
   * It'll take a little work to get used to the new labels.  Google Project Hosting will help with that some, because e.g. "Status:!NeedsReview" will no longer turn green when you type it, reminding you to use the label "!CodeReview-!NeedsReview" instead.
   * (add your own)
