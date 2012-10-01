@@ -1,0 +1,16 @@
+#summary Design of a new way for volunteers to easily find things that need doing, and to do them.
+#labels Phase-Design
+
+= Introduction =
+
+Currently, when someone decides they'd like to volunteer with AdBlock, they are pointed to HowToContribute.  That document is a big mix of instructions that, to someone who knows nothing about the project structure, can seem daunting and vague.  I (Michael) get the impression that people don't know where to start, and end up not starting at all.
+
+I'd like to replace that with a workflow that breaks tasks into simple, discrete chunks, and provides volunteers with a menu of tasks to complete, each with simple instructions.  That would help casual volunteers who may want to help once, or once a month, so that they can offer their contribution without having to learn everything about the project.  It would also help long-time contributors to the project (myself included), by providing a dashboard of what work is falling through the cracks.
+
+= Strategy =
+
+[coming]
+
+= Details =
+
+[coming]
