@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Currently, when someone decides they'd like to volunteer with !AdBlock, they are pointed to HowToContribute.  That document is a big mix of instructions that, to someone who knows nothing about the project structure, can seem daunting and vague.  I (Michael) get the impression that people don't know where to start, and end up not starting at all.
+Currently, when someone decides they'd like to volunteer with !AdBlock, they are pointed to HowToContribute.  That document is a big mix of instructions that, to someone who knows nothing about the project structure, can seem daunting and vague.  Michael gets the impression that people don't know where to start, and end up not starting at all.
 
 I'd like to replace that with a workflow that breaks tasks into simple, discrete chunks, and provides volunteers with a menu of tasks to complete, each with simple instructions.  That would help casual volunteers who may want to help once, or once a month, so that they can offer their contribution without having to learn everything about the project.  It would also help long-time contributors to the project (myself included), by providing a dashboard of what work is falling through the cracks.
 
@@ -11,7 +11,7 @@ I'd like to replace that with a workflow that breaks tasks into simple, discrete
 
 = Strategy =
 
-I picture a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.
+Create a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.
 
 There are a few parts to the strategy.
 
@@ -19,11 +19,11 @@ There are a few parts to the strategy.
 
 Some users may feel comfortable reproducing a bug but not finding the root cause.  Others may enjoy finding the root cause, or reviewing a patch to fix it, but wouldn't be confident writing the patch.  Some may only want to due initial Issue triage, marking Duplicates or asking for clarification from users.  Finally, some people who normally would want to write code may need a change of pace, and would enjoy just gathering clarification for a while.
 
-Using a pipeline metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
+Using a pipeline metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and code reviewing issues.)
 
 *Here's how the pipeline could work:*
 
-Volunteers are presented with a list of tasks they could perform, e.g. "Reproduce a bug" or "Check whether a new Issue is a duplicate."
+Volunteers are presented with a list of tasks they could perform, e.g. "Reproduce a bug" or "Triage a new Issue."
 
 Selecting one of these tasks would show three things:
 
@@ -39,7 +39,7 @@ Today, if an issue gets commented upon but not followed up, it just grows stale 
 
 So we have a dashboard, which is just a few more custom searches, like the Issue lists in the pipeline.  It allows everyone to see which Issues are languishing, so that it's immediately obvious to a newcomer which ones need the most help.  See the Details below for what the Dashboard might show.
 
-== Automate ==
+== Automation ==
 
 Write scripts to automate absolutely everything that can be automated, so volunteers can focus time on applying their skills rather than performing drudge work.  See the Details below for things we could automate.
 
@@ -72,61 +72,54 @@ This is the main section of the volunteer UI, displaying each stage in the pipel
 
 Below is the list of tasks, along with the search that defines the list of relevant Issues and what transformations the volunteer can perform on an Issue to move it to another stage.
 
-(Note: at any stage a user can close an issue as Status:Invalid or Status:!WontFix, so they're not listed below.)
+(Note: at any stage a user can close an issue as Status:Invalid or Status:!WontFix, so they're mostly not listed below.)
 
-  # Enter a bug report
-    * Changes to make:
-      # Fill out a report.  It is set to Status:New Type-Defect/Type-!FeatureRequest.
-  # Triage new reports
+  # *Create a bug report*.  It is set to Status:New Type-Defect/Type-!FeatureRequest.
+  # *Triage a new Issue*
     * Search: Status:New -Owner
-    * Changes to make:
-      # Status:Duplicate
-      # Status:Accepted
-      # Change Type to !AdReport/!FeatureRequest/Defect
-  # Clarify an Issue
-    * Search: Status:Accepted -Owner -Clarity-Clear.  (Divided into Clarity-Unknown and Clarity-!WaitingForUser, so volunteers can choose whether to ignore those already waiting for the user.)
-    * Changes to make:
-      # ask question, Clarity-!WaitingForUser, cc yourself so you notice when the reply comes back
-      # _(if another user asked a question and forget to set Clarity-!WaitingForUser):_ Clarity-!WaitingForUser, cc the other user
-      # Clarity-Clear
-  # Repro an Issue
+    # Status:Duplicate/Invalid/!WontFix
+    # Status:Accepted
+    # Change Type to !AdReport/!FeatureRequest/Defect
+  # *Clarify an Issue*
+    * Search: Status:Accepted -Owner -Clarity-Clear.  _(Divided into Clarity-Unknown and Clarity-!WaitingForUser, so volunteers can choose whether to ignore those already waiting for the user.)_
+    # ask question, Clarity-!WaitingForUser, cc yourself so you notice when the reply comes back
+    # _(if another user asked a question and forget to set Clarity-!WaitingForUser):_ Clarity-!WaitingForUser, cc the other user
+    # Clarity-Clear
+  # *Reproduce a bug report*
     * Search: Status:Accepted -Clarity-!WaitingForUser Cause-Unknown Repro-Unknown
-    * Changes to make:
-      # Repro-Confirmed
-      # comment "Can't repro"
-      # Status:!FailedToReproduce to close the Issue after several people fail to repro
-  # Find the root cause of an Issue
+    # Repro-Confirmed
+    # comment "Can't repro on (system, browser, version)"
+    # Browser- or !OpSys- labels
+    # Status:!FailedToReproduce to close the Issue after several people fail to repro
+  # *Find the root cause of a bug*
     * Search: Status:Accepted -Clarity-!WaitingForUser Cause-Unknown -Owner
-    * Changes to make:
-      # Cause-Known, comment with explanation
-      # Owner:me, if debugging looks tricky enough that duplication should be avoided
-  # Take ownership to write a patch
+    # Cause-Known, comment with explanation
+    # Owner:me, if debugging looks tricky enough that duplication should be avoided
+  # *Fix a bug*
     * Search: Status:Accepted Clarity-Clear Repro-Confirmed Cause-Known -Owner
-    * Changes to make:
-      # Status:Coding Owner:me.  Set !CodeReview-!NeedsReview when done.
-  # Review code
+    # Status:Coding Owner:me.  Set !CodeReview-!NeedsReview when done.
+  # *Do code review*
     * Search: Status:Coding !CodeReview-!NeedsReview
-    * Changes to make:
-      # !CodeReview-!NeedsWork, with comments on the revision(s); maybe cc yourself to review again
-      # Status:!ReadyForRelease
-      # code review comments alone, if not confident to set to Status:!ReadyForRelease
-  # Respond to a code review
+    # !CodeReview-!NeedsWork, with comments on the revision(s); maybe cc yourself to review again
+    # Status:ReadyForRelease
+    # code review comments alone, if not confident to set to Status:!ReadyForRelease
+  # *Respond to a code review*
     * Search: !CodeReview-!NeedsWork Owner:me
-    * Changes to make:
-      # -Owner (if you no longer can work on the Issue)
-      # !CodeReview-!NeedsReview
+    # -Owner (if you no longer can work on the Issue)
+    # !CodeReview-!NeedsReview
 
 == Dashboard ==
 
-The simplest way that a high-level overview will be provided is that each list of tasks in the pipeline can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
+The task list lets volunteers see a fine-grained view of the task they want to focus on.  There are also a few more general searches that might be helpful:
 
-  # My open issues (Owner:me).  Owning an Issue tells others not to touch it, so the first thing a volunteer should do is to handle these or to release Ownership.  (Owner:me should maybe even appear above the list of Tasks.)
-  # A list of ALL open issues ordered by Modified Date. _(Yes, we can get this list and some of the others today, but it's not provided in a one-stop UI for lots of people to easily see and act upon.)_  The oldest will linger at the top of the list until we do something about it.
-    * Michael thought about also having all open issues order by Modified Date descending, so we colud see the newest issues easily, but I think that being forced to view them in oldest-to-newest order will encourage us to work to close old Issues.
-  # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy or a failure, but it can't hurt to try.
-  # An 'unloved' list.  It contains issues that are stalled for a certain time, where the amount of time is different depending on the step they're on.  Issues that are unloved can get reviewed periodically so the reviewer can try to get some attention to the bug.  E.g. if an Issue hasn't moved from New to Repro-Confirmed,Clarity-Understood in X days, or doesn't get an Owner after Y days having been repro'd and understood, or Z days in Status:!NeedsReview -- then a reviewer can ping possible volunteers to help get to the next step, or can do the work himself.  (Michael will review this list if nobody else does.)
+  # My open issues (Owner:me).  Owning an Issue tells others not to touch it, so the first thing a volunteer should do is to handle these or to release Ownership.  (Owner:me should maybe even appear above the task list.)
+  # A list of all open issues ordered by Modified Date. The oldest will linger at the top of the list until we do something about it.
+    * Michael thought about also having all open issues order by Modified Date descending, so we could see the newest issues easily, but maybe being forced to view Issues in oldest-to-newest order will encourage us to work to close old Issues.
+  # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy, but it can't hurt to try.
+  # An 'unloved' list.  It contains issues that are stalled for a certain time, where the amount of time is different depending on the stage they're in.  Volunteers can periodically review unloved Issues and try to get some attention to them.  E.g. if an Issue hasn't moved from New to Repro-Confirmed,Clarity-Clear in X days, or doesn't get an Owner after Y days having been repro'd and clarified, or Z days with CodeReview-NeedsReview -- then it becomes 'unloved', and a reviewer can ping possible volunteers to help get to the next stage, or can do the work himself.  (Michael will review this list if nobody else does.)
+  # (Add your own)
 
-== Automate ==
+== Automation ==
 
 Google Project Hosting has an API.  A robot could watch issue changes and take actions.  Here's the list so far:
 
@@ -136,8 +129,8 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
   * Issues with Status:Coding but no owner become Status:Accepted, with a comment explaining that an Owner is needed
     * _(Michael doesn't like this much.  It's dumb that Status:Coding requires Owner, but he can't think of a better workflow.)_
   * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
-  * Issues that arrive on the 'unloved' Dashboard list get emailed to afc-dev, so we are driven to close the bugs to shut up the nagbot.
-  * New issues with blank reports become Status:Invalid with a comment explaining how to file a bug
+  * Issues that arrive on the 'unloved' Dashboard list could get emailed to afc-dev, so we are driven to close the bugs to shut up the nag emails?
+  * New issues with nothing filled in become Status:Invalid, Restrict-Comment-Commit with a comment explaining how to file a bug
   * (add your own)
 
 = Problems =
