@@ -27,9 +27,9 @@ Volunteers are presented with a list of tasks they could perform, e.g. "Reproduc
 
 Selecting one of these tasks would show three things:
 
-  # A list of Issues that need that task done.  Every task should have an associated label or status in the Issue tracker, so that this list can be created with a custom search.  E.g. 'Repro-Unknown' Issues need repro.  (This means we'll need to change our existing flow, and convert the few hundred existing open Issues to the new flow.)
-  # A link to detailed instructions for how to accomplish the task.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
-  # Instructions for how to modify the Issue when done with the task.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different task.
+  # The *list of Issues that need that task done*.  Every task should have an associated label or status in the Issue tracker, so that this list can be created with a custom search.  E.g. 'Repro-Unknown' Issues need repro.  (This means we'll need to change our existing flow, and convert the few hundred existing open Issues to the new flow.)
+  # A link to detailed instructions for *how to accomplish the task*.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
+  # Instructions for *how to modify the Issue when done with the task*.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different task.
 
 Can you picture it?  There's a pipeline of stages that each Issue has to flow through, from Task 1 through Task N.  People can hop in at any stage and help move some issues to the next stage in the pipeline.  And because each stage is defined by labels, we should be able to quickly see which stage has the most Issues accumulated waiting for help.
 
@@ -49,22 +49,22 @@ Write scripts to automate absolutely everything that can be automated, so volunt
 
 The most common and complex Issue type is Type-Defect, whose stages are:
 
-  # Status:New - _just filed_
-  # Status:Accepted - _we didn't set it to :Invalid :!WontFix :Duplicate
-    * (Gets default labels: Repro-Unknown Cause-Unknown Clarity-Unknown)
+  # `Status:New` - _just filed_
+  # `Status:Accepted` - _we didn't set it to :Invalid :!WontFix :Duplicate_
+    * (Gets default labels: `Repro-Unknown` `Cause-Unknown` `Clarity-Unknown`)
     * Clarity-!WaitingForUser - _waiting for a reply to clarify the Issue.  Used to be called !MoreInfoNeeded._
-    * Clarity-Clear - _no more info needed from user to proceed_
-    * Repro-Confirmed - _bug was reproduced_
-    * Cause-Known - _root cause of bug discovered_
-  # Status:Coding Owner:(somebody) - _enough is understood that someone is writing code to fix the Issue_
-    * (Gets default labels: Repro-Unknown Cause-Known Clarity-Clear if not otherwise specified)
-    * !CodeReview-!NeedsReview - _Owner is done coding, needs code review_
-    * !CodeReview-!NeedsWork - _Code reviewer found problems, back to Owner_
-  # Status:!ReadyForRelease - _Code reviewer feels it's ready to merge_
-  # Status:Fixed - _Merged into trunk_
-  # Status:Invalid/Duplicate/!FailedToReproduce/!WontFix - _closed without Fixing_
+    * `Clarity-Clear` - _no more info needed from user to proceed_
+    * `Repro-Confirmed` - _bug was reproduced_
+    * `Cause-Known` - _root cause of bug discovered_
+  # `Status:Coding` Owner:(somebody) - _enough is understood that someone is writing code to fix the Issue_
+    * (Gets default labels: `Repro-Unknown` `Cause-Known` `Clarity-Clear` if not otherwise specified)
+    * `!CodeReview-!NeedsReview` - _Owner is done coding, needs code review_
+    * `!CodeReview-!NeedsWork` - _Code reviewer found problems, back to Owner_
+  # `Status:!ReadyForRelease` - _Code reviewer feels it's ready to merge_
+  # `Status:Fixed` - _Merged into trunk_
+  # `Status:Invalid/Duplicate/!FailedToReproduce/!WontFix` - _closed without Fixing_
 
-Ownership means "I'm working on this; nobody touch it but me".  The purpose is to avoid duplication of effort.  Note that only Status:Coding requires an Owner, but a user can become Owner to find the root cause if it looks tricky (again to avoid duplication of effort).  Users may assign only themselves as Owner of an Issue, and may unassign if they don't want to keep working on it.
+Ownership means "I'm working on this; nobody touch it but me".  The purpose is to avoid duplication of effort.  Note that only `Status:Coding` requires an Owner, but a user can become Owner to find the root cause if it looks tricky (again to avoid duplication of effort).  Users may assign only themselves as Owner of an Issue, and may unassign if they don't want to keep working on it.
 
 == Pipeline ==
 
@@ -72,41 +72,41 @@ This is the main section of the volunteer UI, displaying each stage in the pipel
 
 Below is the list of tasks, along with the search that defines the list of relevant Issues and what transformations the volunteer can perform on an Issue to move it to another stage.
 
-(Note: at any stage a user can close an issue as Status:Invalid or Status:!WontFix, so they're mostly not listed below.)
+(Note: at any stage a user can close an issue as `Status:Invalid` or `Status:!WontFix`, so they're mostly not listed below.)
 
-  # *Create a bug report*.  It is set to Status:New Type-Defect/Type-!FeatureRequest.
+  # *Create a bug report*.  It is set to `Status:New` `Type-Defect`/`Type-!FeatureRequest`.
   # *Triage a new Issue*
-    * Search: Status:New -Owner
-    # Status:Duplicate/Invalid/!WontFix
-    # Status:Accepted
+    * Search: `Status:New` -Owner
+    # `Status:Duplicate/Invalid/!WontFix`
+    # `Status:Accepted`
     # Change Type to !AdReport/!FeatureRequest/Defect
   # *Clarify an Issue*
-    * Search: Status:Accepted -Owner -Clarity-Clear.  _(Divided into Clarity-Unknown and Clarity-!WaitingForUser, so volunteers can choose whether to ignore those already waiting for the user.)_
-    # ask question, Clarity-!WaitingForUser, cc yourself so you notice when the reply comes back
-    # _(if another user asked a question and forget to set Clarity-!WaitingForUser):_ Clarity-!WaitingForUser, cc the other user
-    # Clarity-Clear
+    * Search: `Status:Accepted` -Owner -`Clarity-Clear`.  _(Divided into `Clarity-Unknown` and `Clarity-!WaitingForUser`, so volunteers can choose whether to ignore those already waiting for the user.)_
+    # ask question, `Clarity-!WaitingForUser`, cc yourself so you notice when the reply comes back
+    # _(if another user asked a question and forget to set `Clarity-!WaitingForUser`):_ `Clarity-!WaitingForUser`, cc the other user
+    # `Clarity-Clear`
   # *Reproduce a bug report*
-    * Search: Status:Accepted -Clarity-!WaitingForUser Cause-Unknown Repro-Unknown
-    # Repro-Confirmed
+    * Search: `Status:Accepted` -`Clarity-!WaitingForUser` `Cause-Unknown` `Repro-Unknown`
+    # `Repro-Confirmed`
     # comment "Can't repro on (system, browser, version)"
     # Browser- or !OpSys- labels
-    # Status:!FailedToReproduce to close the Issue after several people fail to repro
+    # `Status:!FailedToReproduce` to close the Issue after several people fail to repro
   # *Find the root cause of a bug*
-    * Search: Status:Accepted -Clarity-!WaitingForUser Cause-Unknown -Owner
-    # Cause-Known, comment with explanation
+    * Search: `Status:Accepted` -`Clarity-!WaitingForUser` `Cause-Unknown` -Owner
+    # `Cause-Known`, comment with explanation
     # Owner:me, if debugging looks tricky enough that duplication should be avoided
   # *Fix a bug*
-    * Search: Status:Accepted Clarity-Clear Repro-Confirmed Cause-Known -Owner
-    # Status:Coding Owner:me.  Set !CodeReview-!NeedsReview when done.
+    * Search: `Status:Accepted` `Clarity-Clear` `Repro-Confirmed` `Cause-Known` -Owner
+    # `Status:Coding` Owner:me.  Set `!CodeReview-!NeedsReview` when done.
   # *Do code review*
-    * Search: Status:Coding !CodeReview-!NeedsReview
-    # !CodeReview-!NeedsWork, with comments on the revision(s); maybe cc yourself to review again
-    # Status:ReadyForRelease
-    # code review comments alone, if not confident to set to Status:!ReadyForRelease
+    * Search: `Status:Coding` `!CodeReview-!NeedsReview`
+    # `!CodeReview-!NeedsWork`, with comments on the revision(s); maybe cc yourself to review again
+    # `Status:ReadyForRelease`
+    # code review comments alone, if not confident to set to `Status:!ReadyForRelease`
   # *Respond to a code review*
-    * Search: !CodeReview-!NeedsWork Owner:me
+    * Search: `!CodeReview-!NeedsWork` Owner:me
     # -Owner (if you no longer can work on the Issue)
-    # !CodeReview-!NeedsReview
+    # `!CodeReview-!NeedsReview`
 
 == Dashboard ==
 
@@ -116,7 +116,7 @@ The task list lets volunteers see a fine-grained view of the task they want to f
   # A list of all open issues ordered by Modified Date. The oldest will linger at the top of the list until we do something about it.
     * Michael thought about also having all open issues order by Modified Date descending, so we could see the newest issues easily, but maybe being forced to view Issues in oldest-to-newest order will encourage us to work to close old Issues.
   # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy, but it can't hurt to try.
-  # An 'unloved' list.  It contains issues that are stalled for a certain time, where the amount of time is different depending on the stage they're in.  Volunteers can periodically review unloved Issues and try to get some attention to them.  E.g. if an Issue hasn't moved from New to Repro-Confirmed,Clarity-Clear in X days, or doesn't get an Owner after Y days having been repro'd and clarified, or Z days with CodeReview-NeedsReview -- then it becomes 'unloved', and a reviewer can ping possible volunteers to help get to the next stage, or can do the work himself.  (Michael will review this list if nobody else does.)
+  # An 'unloved' list.  It contains issues that are stalled for a certain time, where the amount of time is different depending on the stage they're in.  Volunteers can periodically review unloved Issues and try to get some attention to them.  E.g. if an Issue hasn't moved from New to `Repro-Confirmed`,`Clarity-Clear` in X days, or doesn't get an Owner after Y days having been repro'd and clarified, or Z days with `!CodeReview-!NeedsReview` -- then it becomes 'unloved', and a reviewer can ping possible volunteers to help get to the next stage, or can do the work himself.  (Michael will review this list if nobody else does.)
   # (Add your own)
 
 == Automation ==
@@ -125,12 +125,12 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
 
   * Issues with 'urgent' in subject get labeled Urgent, emails sent to interested parties
   * Issues with Clarity-!WaitingForUser become Clarity-Unknown when a non-project-member replies
-  * Issues with Clarity-!WaitingForUser become Status:Invalid, Restrict-Comment-Commit after X days with no reply; adds comment explaining how to refile if desired
-  * Issues with Status:Coding but no owner become Status:Accepted, with a comment explaining that an Owner is needed
-    * _(Michael doesn't like this much.  It's dumb that Status:Coding requires Owner, but he can't think of a better workflow.)_
+  * Issues with Clarity-!WaitingForUser become `Status:Invalid`, Restrict-Comment-Commit after X days with no reply; adds comment explaining how to refile if desired
+  * Issues with `Status:Coding` but no owner become `Status:Accepted`, with a comment explaining that an Owner is needed
+    * _(Michael doesn't like this much.  It's dumb that `Status:Coding` requires Owner, but he can't think of a better workflow.)_
   * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
   * Issues that arrive on the 'unloved' Dashboard list could get emailed to afc-dev, so we are driven to close the bugs to shut up the nag emails?
-  * New issues with nothing filled in become Status:Invalid, Restrict-Comment-Commit with a comment explaining how to file a bug
+  * New issues with nothing filled in become `Status:Invalid`, Restrict-Comment-Commit with a comment explaining how to file a bug
   * (add your own)
 
 = Problems =
