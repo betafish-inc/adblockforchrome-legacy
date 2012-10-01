@@ -107,6 +107,7 @@ Below is the list of tasks, along with the *search* that defines the list of rel
     * Search: `CodeReview-NeedsWork` `Owner:me`
     # -`Owner` (if you no longer can work on the Issue)
     # `CodeReview-NeedsReview`
+  # (add your own task+search+transformations)
 
 == Dashboard ==
 
