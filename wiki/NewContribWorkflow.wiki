@@ -13,13 +13,13 @@ I picture a single Wikipage where all volunteers can be directed, new and vetera
 
 There are a few parts to the strategy.
 
-== The assembly line ==
+== The pipeline ==
 
 Some users may feel comfortable reproducing a bug but not finding the root cause.  Others may enjoy finding the root cause, or reviewing a patch to fix it, but wouldn't be confident writing the patch.  Some may only want to due initial Issue triage, marking Duplicates or asking for clarification from users.  Finally, some people who normally would want to write code may need a change of pace, and would enjoy just gathering clarification for a while.
 
-Using an assembly line metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
+Using a pipeline metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
 
-*Here's how the assembly line could work:*
+*Here's how the pipeline could work:*
 
 Volunteers are presented with a list of tasks they could perform, e.g. "Reproduce a bug" or "Check whether a new Issue is a duplicate."
 
@@ -29,24 +29,23 @@ Selecting one of these tasks would show three things:
   # A link to detailed instructions for how to accomplish the task.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
   # Instructions for how to modify the Issue when done with the task.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different task.
 
-Can you picture it?  There's a staircase that each Issue has to climb, from Task 1 through Task N.  People can hop in at any step and help lift some issues to the next step on the staircase.  And because each stair step is defined by labels, we should be able to quickly see which step has the most Issues accumulated waiting for help.
+Can you picture it?  There's a pipeline of stages that each Issue has to flow through, from Task 1 through Task N.  People can hop in at any stage and help move some issues to the next stage in the pipeline.  And because each stage is defined by labels, we should be able to quickly see which stage has the most Issues accumulated waiting for help.
 
 == Dashboard ==
 
 Today, if an issue gets commented upon but not followed up, it just grows stale in the tracker.  Ideally, we'd know exactly which Issues still need attention, and work to close them.
 
-So we have a dashboard, which is just a few more custom searches, like the Issue lists in the assembly line.  It allows everyone to see which Issues are languishing, so that it's immediately obvious to a newcomer which ones need the most help.  See the Details below for what the Dashboard might show.
+So we have a dashboard, which is just a few more custom searches, like the Issue lists in the pipeline.  It allows everyone to see which Issues are languishing, so that it's immediately obvious to a newcomer which ones need the most help.  See the Details below for what the Dashboard might show.
 
 == Automate ==
 
 Write scripts to automate absolutely everything that can be automated, so volunteers can focus time on applying their skills rather than performing drudge work.  See the Details below for things we could automate.
 
-
 = Details =
 
-== Stages of an Issue ==
+== Lifecycle of an Issue ==
 
-The most common and complex type is a Defect, whose stages are:
+The most common and complex Issue type is Type-Defect, whose stages are:
 
   # Status:New - _just filed_
   # Status:Accepted - _we didn't set it to :Invalid :WontFix :Duplicate
@@ -61,18 +60,65 @@ The most common and complex type is a Defect, whose stages are:
     * CodeReview-NeedsWork - _Code reviewer found problems, back to Owner_
   # Status:ReadyForRelease - _Code reviewer feels it's ready to merge_
   # Status:Fixed - _Merged into trunk_
+  # Status:Invalid/Duplicate/FailedToReproduce/WontFix - _closed without Fixing_
 
-Ownership means "I'm working on this; nobody work on it but me".  It avoids duplication of effort.  Note that only Status:Coding requires an Owner, but a user can become Owner to find the root cause if it looks tricky (again to avoid duplication of effort).  Users may only assign themselves as Owners of issues, and may unassign if they don't want to keep working on it.
+Ownership means "I'm working on this; nobody touch it but me".  The purpose is to avoid duplication of effort.  Note that only Status:Coding requires an Owner, but a user can become Owner to find the root cause if it looks tricky (again to avoid duplication of effort).  Users may assign only themselves as Owner of an Issue, and may unassign if they don't want to keep working on it.
 
-== Assembly line ==
+== Pipeline ==
 
-TODO 
+This is the main section of the volunteer UI, displaying each stage in the pipeline as a task to complete.  Each task lists Issues in that stage, from oldest-Modified to newest.
 
+Below is the list of tasks, along with the search that defines the list of relevant Issues and what transformations the volunteer can perform on an Issue to move it to another stage.
+
+(Note: at any stage a user can close an issue as Status:Invalid or Status:WontFix, so they're not listed below.)
+
+  # Enter a bug report
+    * Changes to make:
+      # Fill out a report.  It is set to Status:New Type-Defect/Type-FeatureRequest.
+  # Triage new reports
+    * Search: Status:New -Owner
+    * Changes to make:
+      # Status:Duplicate
+      # Status:Accepted
+      # Change Type to AdReport/FeatureRequest/Defect
+  # Clarify an Issue
+    * Search: Status:Accepted -Owner -Clarity-Clear.  (Divided into Clarity-Unknown and Clarity-WaitingForUser, so volunteers can choose whether to ignore those already waiting for the user.)
+    * Changes to make:
+      # ask question, Clarity-WaitingForUser, cc yourself so you notice when the reply comes back
+      # _(if another user asked a question and forget to set Clarity-WaitingForUser):_ Clarity-WaitingForUser, cc the other user
+      # Clarity-Clear
+  # Repro an Issue
+    * Search: Status:Accepted -Clarity-WaitingForUser Cause-Unknown Repro-Unknown
+    * Changes to make:
+      # Repro-Confirmed
+      # comment "Can't repro"
+      # Status:FailedToReproduce to close the Issue after several people fail to repro
+  # Find the root cause of an Issue
+    * Search: Status:Accepted -Clarity-WaitingForUser Cause-Unknown -Owner
+    * Changes to make:
+      # Cause-Known, comment with explanation
+      # Owner:me, if debugging looks tricky enough that duplication should be avoided
+  # Take ownership to write a patch
+    * Search: Status:Accepted Clarity-Clear Repro-Confirmed Cause-Known -Owner
+    * Changes to make:
+      # Status:Coding Owner:me.  Set CodeReview-NeedsReview when done.
+  # Review code
+    * Search: Status:Coding CodeReview-NeedsReview
+    * Changes to make:
+      # CodeReview-NeedsWork, with comments on the revision(s); maybe cc yourself to review again
+      # Status:ReadyForRelease
+      # code review comments alone, if not confident to set to Status:ReadyForRelease
+  # Respond to a code review
+    * Search: CodeReview-NeedsWork Owner:me
+    * Changes to make:
+      # -Owner (if you no longer can work on the Issue)
+      # CodeReview-NeedsReview
 
 == Dashboard ==
 
-The simplest way this will be handled is that each list of tasks in the assembly line can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
+The simplest way that a high-level overview will be provided is that each list of tasks in the pipeline can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
 
+  # My open issues (Owner:me).  Owning an Issue tells others not to touch it, so the first thing a volunteer should do is to handle these or to release Ownership.  (Owner:me should maybe even appear above the list of Tasks.)
   # A list of ALL open issues ordered by Modified Date. _(Yes, we can get this list and some of the others today, but it's not provided in a one-stop UI for lots of people to easily see and act upon.)_  The oldest will linger at the top of the list until we do something about it.
     * Michael thought about also having all open issues order by Modified Date descending, so we colud see the newest issues easily, but I think that being forced to view them in oldest-to-newest order will encourage us to work to close old Issues.
   # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy or a failure, but it can't hurt to try.
@@ -89,6 +135,7 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
     * _(Michael doesn't like this much.  It's dumb that Status:Coding requires Owner, but he can't think of a better workflow.)_
   * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
   * Issues that arrive on the 'unloved' Dashboard list get emailed to afc-dev, so we are driven to close the bugs to shut up the nagbot.
+  * New issues with blank reports become Status:Invalid with a comment explaining how to file a bug
   * (add your own)
 
 = Problems =
@@ -98,6 +145,5 @@ Problems with the above:
   * How does a volunteer filter out the Issues that they don't care about personally, but don't warrant a WontFix?
     * Only starred: owner: and reporter: allow 'me' in the searchfield, customizing the search by user
     * Could provide Chrome extension letting you Hide issues from the page
+  * It'll take a little work to get used to the new labels.  Google Project Hosting will help with that some, because e.g. "Status:NeedsReview" will no longer turn green when you type it, reminding you to use the label "CodeReview-NeedsReview" instead.
   * (add your own)
-  
-    
