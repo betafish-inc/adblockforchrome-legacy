@@ -70,7 +70,7 @@ Ownership means "I'm working on this; nobody touch it but me".  The purpose is t
 
 This is the main section of the volunteer UI, displaying each stage in the pipeline as a task to complete.  Each task lists Issues in that stage, from oldest-Modified to newest.
 
-Below is the list of tasks, along with the search that defines the list of relevant Issues and what transformations the volunteer can perform on an Issue to move it to another stage.
+Below is the list of tasks, along with the *search* that defines the list of relevant Issues and a *numbered list of transformations* the volunteer can perform on an Issue to move it to another stage.
 
 (Note: at any stage a user can close an issue as `Status:Invalid` or `Status:WontFix`, so they're mostly not listed below.)
 
