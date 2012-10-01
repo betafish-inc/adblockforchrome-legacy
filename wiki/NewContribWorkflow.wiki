@@ -11,7 +11,7 @@ I'd like to replace that with a workflow that breaks tasks into simple, discrete
 
 = Strategy =
 
-Create a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.
+Create the Volunteer UI: a single web page where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.  This probably can't be a Project Hosting wikipage because they're too limited, so it should be a standalone page.
 
 There are a few parts to the strategy.
 
@@ -109,6 +109,8 @@ Below is the list of tasks, along with the *search* that defines the list of rel
     # `CodeReview-NeedsReview`
   # (add your own task+search+transformations)
 
+A fine point: users may want to filter out Issues that they personally don't care to address.  The Volunteer UI could be implemented as a webpage with a bunch of collapsed iframes embedding Project Hosting searches, so the page could modify the search to remove Issues that the User doesn't like.  But we may not want to allow that, as it will encourage volunteers to just filter out rather than address annoying Issues.
+
 == Dashboard ==
 
 The task list lets volunteers see a fine-grained view of the task they want to focus on.  There are also a few more general searches that might be helpful:
@@ -138,8 +140,5 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
 
 Problems with the above:
 
-  * How does a volunteer filter out the Issues that they don't care about personally, but don't warrant a !WontFix?
-    * Only starred: owner: and reporter: allow 'me' in the searchfield, customizing the search by user
-    * A robot could serve up issues customized for the volunteer using the Project hosting API, instead of the Wikipage just embedding a Project Hosting custom search.  But that's a lot more work.
   * It'll take a little work to get used to the new labels.  Google Project Hosting will help with that some, because e.g. "Status:!NeedsReview" will no longer turn green when you type it, reminding you to use the label "!CodeReview-!NeedsReview" instead.
   * (add your own)
