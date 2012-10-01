@@ -9,8 +9,61 @@ I'd like to replace that with a workflow that breaks tasks into simple, discrete
 
 = Strategy =
 
-[coming]
+I picture a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of Tasks that can be performed, and a Dashboard showing some high-level info to act upon.
+
+There are a few parts to the strategy.
+
+== The assembly line ==
+
+Some users may feel comfortable reproducing a bug but not finding the root cause.  Others may enjoy finding the root cause, or reviewing a patch to fix it, but wouldn't be confident writing the patch.  Some may only want to due initial Issue triage, marking Duplicates or asking for clarification from users.  Finally, some people who normally would want to write code may need a change of pace, and would enjoy just gathering clarification for a while.
+
+Using an assembly line or pipeline metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
+
+===Here's how the assembly line could work:===
+
+Volunteers are presented with a list of Tasks they could perform, e.g. "Reproduce a bug" or "Check whether a new Issue is a duplicate."
+
+Selecting one of these Tasks would show three things:
+
+  # A list of Issues that need that Task done.  Every Task should have an associated label or status in the Issue tracker, so that this list can be created with a custom search.  E.g. 'Repro-Unknown' Issues need repro.  (This means we'll need to change our existing flow, and convert the few hundred existing open Issues to the new flow.)
+  # A link to detailed instructions for how to accomplish the Task.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
+  # Instructions for how to modify the Issue when done with the Task.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different Task.
+
+Can you picture it?  There's a staircase that each Issue has to climb, from Task 1 through Task N.  People can hop in at any step and help lift some issues to the next step on the staircase.  And because each stair step is defined by labels, we should be able to quickly see which step has the most Issues accumulated waiting for help.
+
+== Dashboard ==
+
+Today, if an issue gets commented upon but not followed up, it just grows stale in the tracker.  Ideally, we'd know exactly which Issues still need attention, and work to close them.
+
+So we have a dashboard, which is just a few more custom searches, like the Issue lists in the assembly line.  It allows everyone to see which Issues are languishing, so that it's immediately obvious to a newcomer which ones need the most help.  See the Details below for what the Dashboard might show.
+
+== Automate ==
+
+Write scripts to automate absolutely everything that can be automated, so volunteers can focus time on applying their skills rather than performing drudge work.  See the Details below for things we could automate.
+
 
 = Details =
 
-[coming]
+== Assembly line ==
+
+TODO
+
+== Dashboard ==
+
+The simplest way this will be handled is that each list of Tasks in the assembly line can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
+
+  # A list of ALL open issues ordered by Modified Date. _(Yes, we can get this list and some of the others today, but it's not provided in a one-stop UI for lots of people to easily see and act upon.)_  The oldest will linger at the top of the list until we do something about it.
+    * I thought about also having all open issues order by Modified Date descending, so we colud see the newest issues easily, but I think that being forced to view them in oldest-to-newest order will encourage us to work to close old Issues.
+  # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy or a failure, but it can't hurt to try.
+
+== Automate ==
+
+Google Project Hosting has an API.  A robot could watch issue changes and take actions.  Here's the list so far:
+
+  * Issues with 'urgent' in subject get labeled Urgent, emails sent to interested parties
+  * Issues with Clarity-WaitingForUser become Clarity-Unknown when a non-project-member replies
+  * Issues with Clarity-WaitingForUser become Status:Invalid, Restrict-Comment-Commit after X days with no reply; adds comment explaining how to refile if desired
+  * Issues with Status:Coding but no owner become Status:Accepted, with a comment explaining that an Owner is needed
+    * _(Michael doesn't like this much.  It's dumb that Status:Coding requires Owner, but he can't think of a better workflow.)_
+  * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
+  * Issues with no activity for over XX days get emailed to afc-dev in a nag list, so we are driven to close the bugs to shut up the nagbot?
