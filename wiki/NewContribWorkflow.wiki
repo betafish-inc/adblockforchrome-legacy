@@ -9,7 +9,7 @@ I'd like to replace that with a workflow that breaks tasks into simple, discrete
 
 = Strategy =
 
-I picture a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of Tasks that can be performed, and a Dashboard showing some high-level info to act upon.
+I picture a single Wikipage where all volunteers can be directed, new and veteran alike.  It has a link to an overview of the project and helping out, a list of tasks that can be performed, and a Dashboard showing some high-level info to act upon.
 
 There are a few parts to the strategy.
 
@@ -17,17 +17,17 @@ There are a few parts to the strategy.
 
 Some users may feel comfortable reproducing a bug but not finding the root cause.  Others may enjoy finding the root cause, or reviewing a patch to fix it, but wouldn't be confident writing the patch.  Some may only want to due initial Issue triage, marking Duplicates or asking for clarification from users.  Finally, some people who normally would want to write code may need a change of pace, and would enjoy just gathering clarification for a while.
 
-Using an assembly line or pipeline metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
+Using an assembly line metaphor would help support these volunteers, allowing many people contribute a little to closing an Issue.  This also lets volunteers use their most in-demand skills most of the time (e.g. rather than a veteran volunteer triaging, clarifying, reproing, debugging, and fixing an issue, she may spend most of her time fixing and reviewing issues.)
 
-===Here's how the assembly line could work:===
+*Here's how the assembly line could work:*
 
-Volunteers are presented with a list of Tasks they could perform, e.g. "Reproduce a bug" or "Check whether a new Issue is a duplicate."
+Volunteers are presented with a list of tasks they could perform, e.g. "Reproduce a bug" or "Check whether a new Issue is a duplicate."
 
-Selecting one of these Tasks would show three things:
+Selecting one of these tasks would show three things:
 
-  # A list of Issues that need that Task done.  Every Task should have an associated label or status in the Issue tracker, so that this list can be created with a custom search.  E.g. 'Repro-Unknown' Issues need repro.  (This means we'll need to change our existing flow, and convert the few hundred existing open Issues to the new flow.)
-  # A link to detailed instructions for how to accomplish the Task.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
-  # Instructions for how to modify the Issue when done with the Task.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different Task.
+  # A list of Issues that need that task done.  Every task should have an associated label or status in the Issue tracker, so that this list can be created with a custom search.  E.g. 'Repro-Unknown' Issues need repro.  (This means we'll need to change our existing flow, and convert the few hundred existing open Issues to the new flow.)
+  # A link to detailed instructions for how to accomplish the task.  E.g. exactly how one goes about reproducing a bug.  It's a link rather than inline, so that once the volunteer understands the instructions, they don't clutter up the UI.
+  # Instructions for how to modify the Issue when done with the task.  E.g. label it 'Repro-Confirmed' or comment that you failed to reproduce the bug.  Changing the label would likely remove it from the list in step 2 and add it to a list for a different task.
 
 Can you picture it?  There's a staircase that each Issue has to climb, from Task 1 through Task N.  People can hop in at any step and help lift some issues to the next step on the staircase.  And because each stair step is defined by labels, we should be able to quickly see which step has the most Issues accumulated waiting for help.
 
@@ -44,17 +44,39 @@ Write scripts to automate absolutely everything that can be automated, so volunt
 
 = Details =
 
+== Stages of an Issue ==
+
+The most common and complex type is a Defect, whose stages are:
+
+  # Status:New - _just filed_
+  # Status:Accepted - _we didn't set it to :Invalid :WontFix :Duplicate
+    * (Gets default labels: Repro-Unknown Cause-Unknown Clarity-Unknown)
+    * Clarity-WaitingForUser - _waiting for a reply to clarify the Issue.  Used to be called MoreInfoNeeded._
+    * Clarity-Clear - _no more info needed from user to proceed_
+    * Repro-Confirmed - _bug was reproduced_
+    * Cause-Known - _root cause of bug discovered_
+  # Status:Coding Owner:(somebody) - _enough is understood that someone is writing code to fix the Issue_
+    * (Gets default labels: Repro-Unknown Cause-Known Clarity-Clear if not otherwise specified)
+    * CodeReview-NeedsReview - _Owner is done coding, needs code review_
+    * CodeReview-NeedsWork - _Code reviewer found problems, back to Owner_
+  # Status:ReadyForRelease - _Code reviewer feels it's ready to merge_
+  # Status:Fixed - _Merged into trunk_
+
+Ownership means "I'm working on this; nobody work on it but me".  It avoids duplication of effort.  Note that only Status:Coding requires an Owner, but a user can become Owner to find the root cause if it looks tricky (again to avoid duplication of effort).  Users may only assign themselves as Owners of issues, and may unassign if they don't want to keep working on it.
+
 == Assembly line ==
 
-TODO
+TODO 
+
 
 == Dashboard ==
 
-The simplest way this will be handled is that each list of Tasks in the assembly line can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
+The simplest way this will be handled is that each list of tasks in the assembly line can be sorted by modified date, so the stalest tasks come first.  But there are a couple of other custom searches that I can think of that might be helpful:
 
   # A list of ALL open issues ordered by Modified Date. _(Yes, we can get this list and some of the others today, but it's not provided in a one-stop UI for lots of people to easily see and act upon.)_  The oldest will linger at the top of the list until we do something about it.
-    * I thought about also having all open issues order by Modified Date descending, so we colud see the newest issues easily, but I think that being forced to view them in oldest-to-newest order will encourage us to work to close old Issues.
+    * Michael thought about also having all open issues order by Modified Date descending, so we colud see the newest issues easily, but I think that being forced to view them in oldest-to-newest order will encourage us to work to close old Issues.
   # We want to be aware very quickly of urgent issues.  We could try letting reporters opt in to having their issue labeled Urgent to appear in an Urgent list (and get emailed to interested parties, including Michael).  We can always unlabel Urgent if it's misapplied.  This may prove too spammy or a failure, but it can't hurt to try.
+  # An 'unloved' list.  It contains issues that are stalled for a certain time, where the amount of time is different depending on the step they're on.  Issues that are unloved can get reviewed periodically so the reviewer can try to get some attention to the bug.  E.g. if an Issue hasn't moved from New to Repro-Confirmed,Clarity-Understood in X days, or doesn't get an Owner after Y days having been repro'd and understood, or Z days in Status:NeedsReview -- then a reviewer can ping possible volunteers to help get to the next step, or can do the work himself.  (Michael will review this list if nobody else does.)
 
 == Automate ==
 
@@ -66,4 +88,16 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
   * Issues with Status:Coding but no owner become Status:Accepted, with a comment explaining that an Owner is needed
     * _(Michael doesn't like this much.  It's dumb that Status:Coding requires Owner, but he can't think of a better workflow.)_
   * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
-  * Issues with no activity for over XX days get emailed to afc-dev in a nag list, so we are driven to close the bugs to shut up the nagbot?
+  * Issues that arrive on the 'unloved' Dashboard list get emailed to afc-dev, so we are driven to close the bugs to shut up the nagbot.
+  * (add your own)
+
+= Problems =
+
+Problems with the above:
+
+  * How does a volunteer filter out the Issues that they don't care about personally, but don't warrant a WontFix?
+    * Only starred: owner: and reporter: allow 'me' in the searchfield, customizing the search by user
+    * Could provide Chrome extension letting you Hide issues from the page
+  * (add your own)
+  
+    
