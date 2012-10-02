@@ -72,7 +72,7 @@ This is the main section of the volunteer UI, displaying each stage in the pipel
 
 Below is the list of tasks, along with the *search* that defines the list of relevant Issues and a *numbered list of transformations* the volunteer can perform on an Issue to move it to another stage.
 
-(Note: at any stage a user can close an issue as `Status:Invalid` or `Status:WontFix`, so they're mostly not listed below.)
+(Note: at any stage a user can close an issue as `Status:Invalid` or `Status:WontFix`, so they're mostly not listed below.  Michael would monitor `Invalid`s and `WontFix`s to make sure they're being applied properly.)
 
   # *Create a bug report*.  It is set to `Status:New` `Type-Defect`/`Type-FeatureRequest`.
   # *Triage a new Issue*
