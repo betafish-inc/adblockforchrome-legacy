@@ -47,7 +47,7 @@ Write scripts to automate absolutely everything that can be automated, so volunt
 
 == Lifecycle of an Issue ==
 
-The most common and complex Issue type is Type-Defect, whose stages are:
+The most common and complex Issue type is Type-Defect.  Its stages are below.  Note that these aren't yet set in stone: maybe some stages should be combined for simplicity.
 
   # `Status:New` - _just filed_
   # `Status:Accepted` - _we didn't set it to `:Invalid :WontFix :Duplicate`_
