@@ -133,7 +133,7 @@ Google Project Hosting has an API.  A robot could watch issue changes and take a
     * _(Michael doesn't like this much.  It's dumb that `Status:Coding` requires `Owner`, but he can't think of a better workflow.)_
   * Issues with an Owner lose the Owner after X days with no activity; adds comment asking for someone to take ownership when they have time to work on the Issue
   * Issues that arrive on the 'unloved' Dashboard list could get emailed to afc-dev, so we are driven to close the bugs to shut up the nag emails?
-  * New issues with nothing filled in become `Status:Invalid`, `Restrict-Comment-Commit` with a comment explaining how to file a bug
+  * New issues with nothing filled in are closed as Invalid.  Or we could set Status:DetectiveWorkNeeded to appear in a Task called "Fill in the missing info in this ad report".
   * (add your own)
 
 = Problems =
