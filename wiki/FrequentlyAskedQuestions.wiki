@@ -49,7 +49,7 @@ You can pause !AdBlock, or tell it to never run on certain websites, under the !
 
 == I see an ad!  How do I report it? == 
 
-You can block an ad for yourself if you'd like (see [FrequentlyAskedQuestions#AdBlock_disappeared_/_isn't_working_right! these instructions]); or you can report it so that it will be blocked for everyone.
+You can block an ad for yourself if you'd like (see [FrequentlyAskedQuestions#How_do_I_block_an_ad? these instructions]); or you can report it so that it will be blocked for everyone.
 
 Don't report ads in the Issue tracker.  Instead, do the following:
 
