@@ -1,0 +1,28 @@
+#summary AdBlock Support
+
+= !AdBlock Support =
+
+Support is equally available to all users, whether or not you pay for !AdBlock.
+
+But there are a lot of users, so support is divided up a bit :)
+
+== Payment-related support (payments, refunds, subscriptions, receipts, etc): ==
+
+I (Michael Gundlach, the creator of !AdBlock) receive all proceeds from your payments -- thanks!  So if [PaymentsFAQ the Payments FAQ] doesn't answer your question, you can email me at [mailto:payments@getadblock.com payments@getadblock.com] for payment-related support.
+
+== General questions: ==
+
+There are also many volunteers helping me by answering general user questions or improving the !AdBlock program.  (I would love [HowToContribute your help] too!)  If your question isn't answered in [FrequentlyAskedQuestions the general FAQ], you can email !AdBlock's  [mailto:adblockforchrome-discuss@googlegroups.com public mailing list] to get help from a volunteer, me, or another !AdBlock user.
+
+== Private questions: ==
+
+If you have a question that shouldn't be read by volunteers/the general public, you can email [mailto:support@getadblock.com support@getadblock.com].
+
+== Problems with !AdBlock: ==
+
+If !AdBlock has a bug, or you see an ad, or you've found some other problem, you can get help [https://code.google.com/p/adblockforchrome/wiki/GetHelp?tm=3 here].
+
+<br>
+<br>
+
+I think that covers everything!  If I've left something out, just drop a suggestion to the mailing list above.
