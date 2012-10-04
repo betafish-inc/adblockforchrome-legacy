@@ -176,4 +176,4 @@ If you speak multiple languages, you may wish to use filter lists for those lang
 
 = Where can I ask a question or get in touch? =
 
-Send an email to adblockforchrome-discuss@googlegroups.com or post it [http://groups.google.com/group/adblockforchrome-discuss via the web interface] -- we're always listening!
+[mailto:adblockforchrome-discuss@googlegroups.com Send an email] to the discussion mailing list -- we're always listening!
