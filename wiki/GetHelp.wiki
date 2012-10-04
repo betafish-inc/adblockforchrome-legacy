@@ -1,28 +1,22 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-AddWikiComment-Commit,Featured
 
-=Having trouble with !AdBlock? =
+(Got a *question*, not a problem?  You can find your answer and our contact info in [FrequentlyAskedQuestions the FAQ].)
+
+= Having trouble with !AdBlock? =
 
 Sorry to hear that!  You've come to the right place.
 
-== First thing: ==
+The first thing to do is to *make sure !AdBlock is installed and up to date.* [http://chromeadblock.com/help/outofdate/ Instructions]
 
-Make sure you have !AdBlock installed and have the latest version. [http://chromeadblock.com/help/outofdate/ Instructions]
+== Next: some common problems. ==
 
-== Next: is this your problem? ==
-
- * Are you seeing *broken image popups or slideshows* in Safari?
-   * This is a [https://bugs.webkit.org/show_bug.cgi?id=45586 Safari bug] that will be fixed in an upcoming version of Safari.
-
- * Are you seeing *ads in videos or Flash games* in Safari?
-   * This is a known limitation in Safari.  Only Youtube videos get their ads blocked, and then only some of the time.  You can install [http://www.google.com/chrome/ Chrome on your Mac] and then [http://chromeadblock.com/ AdBlock For Chrome] to get ad blocking in videos/Flash.
-
- * Is !AdBlock not installing on the *!RockMelt* or *!CoolNovo* browser?
-   * !RockMelt is getting an update to work with !AdBlock's latest version. Star issue 6874 to get notified as this gets fixed. It also contains an old version of !AdBlock you can install.
-   * !CoolNovo users, install the !AdBlock version in Issue 6920.
-
- * Are you seeing some other *ad that should be blocked*?
-   * To report the ad, please [FrequentlyAskedQuestions#I_see_an_ad!__How_do_I_report_it? use the reporting wizard].  Opera users, for now please report it [http://code.google.com/p/adblockforchrome/issues/entry?template=Ad%20report%20from%20user&comment=1.%20Exactly%20where%20on%20that%20page%20is%20the%20ad%3F%20What%20does%20it%20look%20like%3F%20Attach%20a%20screenshot%20with%20the%20ad%20clearly%20marked%2C%20if%20you%20can.%0A%0A%0A2.%20Paste%20a%20working%20filter%2C%20if%20you%20have%20one%3A%0A%0A%0A3.%20Any%20other%20information%20that%20would%20be%20helpful%2C%20besides%20what%20is%20listed%0Abelow%3A%0A%0A%0A4.%20In%20what%20language%20is%20the%20page%20written%3F%0A%0A%0A5.%20The%20exact%20URL%20to%20the%20page%20with%20the%20ad.%20(This%20is%20the%20exact%20text%20you'll%20see%20in%20the%20address%20bar)%0A%0A%0A6.%20Which%20filter%20lists%20are%20you%20subscribed%20to%3F%20(Default%20isn't%20an%20answer%20here%3B%20the%20defaults%20depend%20on%20your%20location)%0A%0A%0A%0A7.%20Which%20version%20of%20Opera%20are%20you%20using%3F%20(Latest%20isn't%20an%20answer%2C%20if%20I%20see%20this%20issue%20next%20year%2C%20it%20certainly%20isn't%20the%20latest%20version%20anymore)%0A%0A%0A%0A8.%20What%20version%20of%20AdBlock%20are%20you%20using%3F%0A%0A%0A%0A9.%20What%20settings%20are%20enabled%20in%20the%20first%20tab%20of%20the%20options%20page%3F%0A%0A%0A%0A10.%20What%20custom%20filters%20are%20you%20using%3F%20This%20is%20the%20content%20of%20the%20big%20text%20box%20on%20the%20third%20tab%20of%20the%20options%20page.%0A here].
+ * You may find an *ad that wasn't blocked*.  Follow [FrequentlyAskedQuestions#I_see_an_ad!__How_do_I_report_it? these instructions] to block or report it.
+ * Safari users may see *broken image popups or slideshows*, until Apple fixes [https://bugs.webkit.org/show_bug.cgi?id=45586 this Safari bug].
+ * Safari users may see *ads in videos or Flash games*.  This is a known limitation in Safari.  To get ad-free videos and Flash, install [http://www.google.com/chrome/ Chrome] and then [http://getadblock.com/chrome add AdBlock to Chrome] instead.
+ * *RockMelt* and *CoolNovo* users cannot install !AdBlock without a workaround ([http://code.google.com/p/adblockforchrome/issues/detail?id=6874 Rockmelt workaround], [http://code.google.com/p/adblockforchrome/issues/detail?id=6920 CoolNovo workaround]).
+ * Safari users should not enable *multi-process windows*; it breaks !AdBlock.
+ * Users on a *Nightly/Canary/Labs/Next browser version* often have problems solved by switching to the stable browser version.
 
 == Most other problems are fixed by these easy steps! ==
  # Make sure !AdBlock is installed and up to date, as described above.
@@ -32,18 +26,10 @@ Make sure you have !AdBlock installed and have the latest version. [http://chrom
  # Uninstall and reinstall !AdBlock. (Instructions: [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome] [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari] [HowToFixIt#5._Uninstall_and_reinstall_AdBlock_for_Opera Opera])
  # Delete !AdBlock's settings file.  (Instructions: [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome Chrome] [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari] [HowToFixIt#6._Clear_AdBlock_for_Opera's_settings Opera])
 
-== Other known problems ==
-
-  * These features break !AdBlock and should be disabled:
-    * *Multi-process windows* in Safari
-  * *Nightly/Canary/Labs/Next browser versions* will often cause issues. If you have a problem there and the problem doesn't occur in the latest stable version of your browser, please file a report in the issue tracker for the browser instead ([http://crbug.com/new Chrome] [https://bugreport.apple.com/ Safari] [https://bugs.opera.com/wizard Opera]).
-
 == Do you still have a problem after trying the above? ==
 
 It's likely that someone already told us about the problem!  Please [http://code.google.com/p/adblockforchrome/issues/ search existing reports] for one similar to yours.
 
-If you find a similar report:
-   # Please *leave a comment* if you have further information.
-   # You can click the *star* on the top left to be emailed when there are updates.
+If you find a similar report, *leave a comment* with further information, and/or click the *star* at the top left of the report to be emailed updates.
 
-And if you didn't find a match when you [http://code.google.com/p/adblockforchrome/issues/ searched existing reports], please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request].  *Incomplete reports will be ignored*, so be sure not to leave any questions unanswered!  Sorry, but there are 5 million of you and 5 of us; we're overwhelmed :)
+And if you didn't find a match when you [http://code.google.com/p/adblockforchrome/issues/ searched existing reports], please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request].
