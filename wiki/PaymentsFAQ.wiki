@@ -1,9 +1,89 @@
 #summary Questions about payments
 
-= TODO =
+This page answers common questions about paying for !AdBlock.
 
-== Do I have to pay? ==
-== Who does it go to? ==
+<wiki:toc depth="1">
+
+= Payment =
+
+== Do I have to pay for !AdBlock? ==
+
+No.
+
+!AdBlock is free.  Payment is optional: you can pay whatever amount you want to and can afford to.  If you don't want to or cannot afford to pay anything, you can use !AdBlock for free.  If you do pay, you can get a refund at any time.
+
+== Who am I paying? ==
+
+You are paying me: Michael Gundlach, the author of !AdBlock.  (Technically, you're paying my one-man corporation which owns the rights to !AdBlock, and it pays me.)  Thanks!
+
+I ask for payment because !AdBlock is my job.  I support my family and fund !AdBlock development with your contributions.
+
+Note that several people contribute time or code to !AdBlock instead of money.  Your payments don't go to them.
+
+== Where can I pay? ==
+
+After you install !AdBlock you are given the chance to pay.  You can also go to [https://chromeadblock.com/pay/ chromeadblock.com/pay/] to pay at any time.
+
+== Can I subscribe to pay you monthly? ==
+
+Yes.  You can [http://chromeadblock.com/catblock/download buy CatBlock] for a monthly payment and get [http://chromeadblock.com/catblock CatBlock] as a bonus.  You'll get an email from !PayPal/Google/Amazon every month confirming each charge, and they provide a link to cancel at any time.
+
+== Do you prefer one payment processor over another?  Who should I use? ==
+
+I have no preference.  They all take about the same percentage cut (around 3-5%).
+
+= Refunds=
+
+== Can I get a refund? ==
+
+Yes!
+
+You can get a refund at any time, for any reason, and you can still use !AdBlock afterwards for free.  Payment was optional in the first place, so you can always change your mind.
+
 == How do I get a refund? ==
-== When can I ask for a refund? ==
+
+Your payment confirmation email from !PayPal/Google/Amazon should contain a link to review your order.  You can cancel the payment from there.
+
+If you can't find that, you can ask me for a refund at [mailto:payments@getadblock.com payments@getadblock.com] and I'll take care of it.  It's easier for me to do this in the first 60 days, but even beyond that point I will try my best to get you a full refund.
+
+Please don't dispute the charge through !PayPal/Google/Amazon/your credit card company in order to initiate the refund, as sometimes it freezes the money so I can't refund it to you for a month.
+
+= Ethics =
+
 == Why should I pay? ==
+
+I ask you to pay if you can afford it, based on the honor system.  If you don't pay, there is no penalty.  You will get ad blocking and customer support either way.  So I can't tell you why you should pay, but I hope that you will if you can afford to.
+
+Some facts that might inform your decision:  !AdBlock isn't made by a giant corporation.  I wrote it from scratch in my spare time, and eventually quit my job to focus on !AdBlock.  If you pay, you are helping me support my family and funding further !AdBlock development.  And I have a dog.
+
+== Why don't you just require payment? ==
+
+Because I want to do this for everybody whether or not they can afford it.  Because people who don't pay can still help out by spreading the word to their friends.  Because sometimes in lieu of payment I get thank you notes, which are priceless.  Because sometimes those who need ad blocking the most are those least able to pay.  I could go on :)
+
+== Do I have to pay multiple times to use !AdBlock on multiple computers? ==
+
+!AdBlock payments are always optional.  You get to choose each time you install !AdBlock whether you want to pay, and how much -- it's up to you.  Do what you think is right.
+
+== My laptop broke.  Do I have to pay to put !AdBlock on my new one? ==
+
+!AdBlock payments are always optional.  You get to choose each time you install !AdBlock whether you want to pay, and how much -- it's up to you.  Do what you think is right.
+
+= Misc =
+
+== Can you remind me a year from now to pay again? ==
+
+I keep meaning to get around to this, but I'm too busy.  I'd love it if you put a reminder on your own calendar!
+
+== Can I use !AdBlock in a business setting? ==
+
+Yes.  Same rules apply: you decide whether and how much you want to pay.  If you pay, you can do so once for the company, or once per seat, or whatever you want.
+
+== Can I get a receipt for tax purposes? ==
+
+!PayPal/Google/Amazon emails you a receipt when you make the purchase; that's the only receipt that there is.  Payments are not tax deductible.
+
+<hr>
+
+= Contact me =
+
+If your question about payment wasn't answered, just email me at [mailto:payments@getadblock.com payments@getadblock.com].  I'm happy to help :)
