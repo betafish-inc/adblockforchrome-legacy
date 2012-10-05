@@ -1,0 +1,9 @@
+#summary Questions about payments
+
+= TODO =
+
+== Do I have to pay? ==
+== Who does it go to? ==
+== How do I get a refund? ==
+== When can I ask for a refund? ==
+== Why should I pay? ==
