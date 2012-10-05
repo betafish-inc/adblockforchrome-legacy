@@ -1,4 +1,5 @@
 #summary Questions about payments
+#labels Restrict-AddWikiComment-Commit
 
 This page answers common questions about paying for !AdBlock.
 

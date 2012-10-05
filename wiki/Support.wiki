@@ -1,4 +1,5 @@
 #summary AdBlock Support
+#labels Restrict-AddWikiComment-Commit
 
 = !AdBlock Support =
 
