@@ -1,7 +1,7 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-AddWikiComment-Commit,Featured
 
-(Got a *question*, not a problem?  You can find your answer and our contact info in [FrequentlyAskedQuestions the FAQ].)
+(Got a *question*, not a problem?  Check out the [Support support page] for answers and contact info.)
 
 = Having trouble with !AdBlock? =
 
