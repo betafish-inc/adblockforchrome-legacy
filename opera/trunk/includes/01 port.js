@@ -14,6 +14,8 @@
 // Then you can use chrome.* APIs as usual. The opera.* APIs will
 // still be available in Opera.
 
+"use strict";
+
 var isOnGlobalPage = (!opera.extension.bgProcess && window.location.protocol === "widget:");
 
 var listenFor = function(messageName, handler) {
@@ -26,7 +28,7 @@ var listenFor = function(messageName, handler) {
   return listener;
 };
 
-chrome = {
+var chrome = {
   extension: {
     getBackgroundPage: function() {
       if (opera.extension.bgProcess) {

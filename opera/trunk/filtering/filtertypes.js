@@ -226,7 +226,7 @@ PatternFilter._addOperaRule = function(line, isWhitelist) {
   // Rules ending in | means the URL should end there
   if (rule[rule.length-1] === '|') {rule = rule.substr(0, rule.length-1);}
   // Opera doesn't allow * as filter. We however sometimes need it!
-  if (/^[\|\*\^]*$/.test(rule)) {rule = MATCHEVERYTHING;}
+  if (/^(?:\|\||\:|\||\|\*\:|\^|\|\*\^)?(?:\*\/|\*\^|\*\|)?$/.test(rule)) {rule = MATCHEVERYTHING;}
   
   if (olderOpera) {
     if (parsedDomains.not_applied_on.length || parsedDomains.applied_on.length) {

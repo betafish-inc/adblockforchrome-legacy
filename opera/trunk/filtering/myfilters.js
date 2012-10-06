@@ -59,7 +59,7 @@ function MyFilters() {
   else
     window.setTimeout(function() { 
       that.checkFilterUpdates();
-    }, 60);
+    }, 15000);
 
   window.setInterval(function() {
     that.checkFilterUpdates();
