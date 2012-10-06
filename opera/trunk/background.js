@@ -533,26 +533,6 @@ var button = opera.contexts.toolbar.createItem({
   launch_resourceblocker = function(search) {
     openTab("pages/resourceblock.html" + search, true);
   };
-  
-  resourceblock_get_filter_text = function() {
-    var filterTextsFromFilterSet = function(filterset) {
-      // We don't store the filter texts (yet), so don't try to find them.
-      return [];
-      
-      //var c = [];
-      //for (var a in filterset.items) {
-      //  for (var b=0; b<filterset.items[a].length; b++) {
-      //   c.push(filterset.items[a][b]._text);
-      //  }
-      //}
-      //return c;
-    }
-
-    return {
-      blocking: filterTextsFromFilterSet(_myfilters.blocking.pattern),
-      whitelist: filterTextsFromFilterSet(_myfilters.blocking.whitelist)
-    };
-  };
 
   // BGcall listener
     chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {

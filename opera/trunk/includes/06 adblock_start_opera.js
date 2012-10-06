@@ -3,8 +3,6 @@
 // @include https://*
 // ==/UserScript==
 
-"use strict";
-
 var elementPurger = function(e) {
   // Opera bug: it sometimes happens that e.element doesn't exist or refers to
   // the #document element in frames (instead of img or script or ...)

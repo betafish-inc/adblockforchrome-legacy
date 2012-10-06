@@ -80,6 +80,16 @@ MyFilters.prototype._onSubscriptionChange = function(rebuild) {
   chrome.extension.sendRequest({command: "filters_updated"});
 }
 
+// get filters that are defined in the extension
+MyFilters.prototype.getExtensionFilters = function(settings) {
+  var texts = [];
+  //Don't block our own pages or pages like opera:config
+  texts.push("@@|widget:\n@@|file:");
+  // Don't block the inspector or help texts in opera:config
+  texts.push("@@||opera.com^$~third-party");
+  return texts;
+};
+
 // Rebuild filters based on the current settings and subscriptions.
 MyFilters.prototype.rebuild = function() {
   var texts = [];
@@ -92,10 +102,7 @@ MyFilters.prototype.rebuild = function() {
   if (customfilters)
     texts.push(FilterNormalizer.normalizeList(customfilters));
   
-  //Don't block our own pages or pages like opera:config
-  texts.push("@@|widget:\n@@|file:");
-  // Don't block the inspector or help texts in opera:config
-  texts.push("@@||opera.com^$~third-party");
+  texts = texts.concat(this.getExtensionFilters(get_settings()));
 
   texts = texts.join('\n').split('\n');
 

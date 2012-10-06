@@ -89,6 +89,10 @@ var SelectorFilter = function(text) {
   var parts = text.match(/(^.*?)\#\@?\#(.+$)/);
   this._domains = Filter._domainInfo(parts[1], ',');
   this.selector = parts[2];
+  // Preserve _text for resourceblock. Don't do so in Safari, where
+  // resources aren't recorded
+  if (document.location.pathname === '/pages/resourceblock.html')
+    this._text = text;
 };
 SelectorFilter.prototype = {
   // Inherit from Filter.
@@ -119,8 +123,9 @@ PatternFilter.fromText = function(text) {
   result._options = data.options;
   result._rule = data.rule;
   result._key = data.key;
-  // Once we support resourceblock, implement this
-  if (document.location.protocol === 'chrome-extension:')
+  // Preserve _text for resourceblock. Don't do so in Safari, where
+  // resources aren't recorded
+  if (document.location.pathname === '/pages/resourceblock.html')
     result._text = text;
   return result;
 }
