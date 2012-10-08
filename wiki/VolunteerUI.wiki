@@ -6,9 +6,11 @@
 
 You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
 
-_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([instructions When should I de-own an issue?])_
+_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de_own_an_issue? When should I de-own an issue?])_
 
 = Ways to help =
+
+*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Owner these definitions (todo)].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
 || *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
 || *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
@@ -26,3 +28,22 @@ _TODO instructions link to this same document but after a big whitespace_
 [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&groupby=&colspec=ID+Opened+Modified+Status+Owner+Summary&nobtn=Update All issues labeled Urgent] - [link instructions] _TODO instructions include: To be notified when these come in, [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe] to the Urgent label._ _TODO robot converts subject:urgent into label:Urgent_
 
 [link Unloved issues] _TODO it needs to be easy to see in what way they're unloved to make it easier to take action on them_
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+=Instructions=
+
+=== Definition of Owner ===
+
+Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
+
+ * You plan to debug or write code against the Issue in the next few days.
+ * You might de-own an Issue if you change your mind.
+ * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help in a comment, so you can work together.
+
+
+=== When should I de-own an Issue? ===
+
+You own issues to tell others that you will address this issue very soon, so that they avoid duplicating your work.  If you don't work on an issue for a week or so, de-own it until you're ready to work on it.
+
+When you de-own an issue, you could leave a comment summarizing what progress you've made, for the benefit of whomever picks up where you left off.
