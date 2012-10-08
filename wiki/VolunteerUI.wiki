@@ -11,7 +11,7 @@ _Owning an issue means no one else will work on it, so you shouldn't own more th
 = Ways to help =
 
 || *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
-|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Stars%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=-cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancementrequest%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
