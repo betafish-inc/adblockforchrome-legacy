@@ -26,6 +26,7 @@ function generateTable() {
     var matchingfilter = resources[i].filter;
     var matchingListID = "", matchingListName = "";
     var typeName = getTypeName(resources[i].type);
+
     if (matchingfilter) {
       // If matchingfilter is already set, it's a hiding rule or a bug.
       // However, we only know the selector part (e.g. ##.ad) not the full
