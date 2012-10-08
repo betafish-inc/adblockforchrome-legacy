@@ -1,0 +1,28 @@
+#summary Resources for volunteers
+
+[link overview - read this first.] _TODO contains introduction, rules, and how to get started._
+
+= My issues =
+
+You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
+
+_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([instructions When should I de-own an issue?])_
+
+= Ways to help =
+
+|| *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
+|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Stars%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=-cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancementrequest%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+
+_TODO instructions link to this same document but after a big whitespace_
+
+= Other helpful views =
+
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn All open issues, stalest first] - Figure out what these old issues need in order to move toward resolution.
+
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&groupby=&colspec=ID+Opened+Modified+Status+Owner+Summary&nobtn=Update All issues labeled Urgent] - [link instructions] _TODO instructions include: To be notified when these come in, [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe] to the Urgent label._ _TODO robot converts subject:urgent into label:Urgent_
+
+[link Unloved issues] _TODO it needs to be easy to see in what way they're unloved to make it easier to take action on them_
