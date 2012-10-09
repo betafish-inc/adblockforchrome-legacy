@@ -33,6 +33,14 @@ _TODO instructions link to this same document but after a big whitespace_
 
 =Instructions=
 
+=== Definiton of Type ===
+
+*Type-EnhancementRequest*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
+
+*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between Defect and EncancementRequest can be fuzzy if the lack of a feature is considered a bug.)
+
+*Type-AdReport*: The end result of the AdBlock ad reporting wizard.  It represents an ad shown, or a non-ad blocked, that doesn't have the same behavior in Adblock Plus.  _TODO Does every legitimate AdReport become a Defect, and the rest become ReportToList?_
+
 === Definition of Owner ===
 
 Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
@@ -40,7 +48,6 @@ Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue jus
  * You plan to debug or write code against the Issue in the next few days.
  * You might de-own an Issue if you change your mind.
  * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help in a comment, so you can work together.
-
 
 === When should I de-own an Issue? ===
 
