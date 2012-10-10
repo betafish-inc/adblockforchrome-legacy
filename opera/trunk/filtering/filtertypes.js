@@ -172,7 +172,7 @@ PatternFilter._parseRuleOptions = function(text) {
       }
     }
     else if (option === 'third_party') {
-      result.options |= 
+      result.options |=
           (inverted ? FilterOptions.FIRSTPARTY : FilterOptions.THIRDPARTY);
     }
     else if (option === 'match_case') {
@@ -194,18 +194,181 @@ PatternFilter._parseRuleOptions = function(text) {
     result.allowedElementTypes = ElementTypes.DEFAULTTYPES;
   else
     result.allowedElementTypes = allowedElementTypes;
-  
+
   result.rule = rule;
   return result;
 };
 
-PatternFilter._addOperaRule = function(line, isWhitelist) {
+// combines two identical rules with different options
+// inputs the two rule objects returned by createOperaRule
+// returns the options for the best rule
+PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
+  var rule2Options = PatternFilter.ruleBuilderCache[rule];
+  var newRuleOptions = {};
+  if (!rule2Options) {
+    PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+    return;
+  }
+
+  var thirdPartyDiffers = (ruleOptions.thirdParty !== rule2Options.thirdParty);
+  var resourcesDiffer = (ruleOptions.resources !== rule2Options.resources);
+  var domainsDiffer = false, i;
+  if (((ruleOptions.includeDomains === rule2Options.includeDomains) ||
+      (ruleOptions.includeDomains && rule2Options.includeDomains &&
+      ruleOptions.includeDomains.length === rule2Options.includeDomains.length)) &&
+      ruleOptions.excludeDomains.length === rule2Options.excludeDomains.length) {
+    for (i=0; i<ruleOptions.excludeDomains.length; i++) {
+      if (rule2Options.excludeDomains.indexOf(ruleOptions.excludeDomains[i])!==-1) {
+        domainsDiffer = true;
+        break;
+      }
+    }
+    if (!domainsDiffer && ruleOptions.includeDomains) {
+      for (i=0; i<ruleOptions.includeDomains.length; i++) {
+        if (rule2Options.includeDomains.indexOf(ruleOptions.includeDomains[i])!==-1) {
+          domainsDiffer = true;
+          break;
+        }
+      }
+    }
+  } else {
+    domainsDiffer = true;
+  }
+
+  // Resource types: OR for whitelists, AND for blocking
+  // In case thirdparty and the domains are identical, use OR too
+  if (isWhitelist || (!domainsDiffer && !thirdPartyDiffers)) {
+    newRuleOptions.resources = (ruleOptions.resources | rule2Options.resources);
+  } else {
+    newRuleOptions.resources = (ruleOptions.resources & rule2Options.resources);
+    if (newRuleOptions.resources === 0) {
+      // In cases like the one below, let the one without $domain win
+      // ||ab.cd^$object-subrequest,domain=ef.gh
+      // ||ab.cd^$~object-subrequest
+      if (rule2Options.includeDomains) {
+        PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+      }
+      return;
+    }
+  }
+
+  // combine included and excluded domains. Leave included undefined if any of
+  // the rules is (almost) global so it matches everywhere
+  if (ruleOptions.includeDomains && rule2Options.includeDomains) {
+    newRuleOptions.includeDomains = ruleOptions.includeDomains.concat(rule2Options.includeDomains);
+  }
+  newRuleOptions.excludeDomains = ruleOptions.excludeDomains.concat(rule2Options.excludeDomains);
+
+  // In case third-party differs, use the most specific one (true instead of null)
+  // for blocking rules. In case of conflicts, use the third-party rule only.
+  // Whitelisting rules and rules that only differ in thirdParty become null by default.
+  var shouldDefaultNull = (isWhitelist || (!domainsDiffer && !resourcesDiffer));
+  if (ruleOptions.thirdParty === rule2Options.thirdParty) {
+    newRuleOptions.thirdParty = rule2Options.thirdParty;
+  } else if (ruleOptions.thirdParty === null) {
+    newRuleOptions.thirdParty = (shouldDefaultNull ? null : rule2Options.thirdParty);
+  } else if (rule2Options.thirdParty === null) {
+    newRuleOptions.thirdParty = (shouldDefaultNull ? null : ruleOptions.thirdParty);
+  } else if (shouldDefaultNull) {
+    newRuleOptions.thirdParty = null;
+  } else {
+    if (ruleOptions.thirdParty) {
+      // In case we have both third and first party specific rules, use the
+      // third party one. It's more likely to match on multiple sites...
+      PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+    }
+    return;
+  }
+
+  PatternFilter.ruleBuilderCache[rule] = newRuleOptions;
+};
+
+// stores {'*/ads/*': {thirdParty: true, excludeDomains: []}}
+PatternFilter.ruleBuilderCache = {};
+
+// convert the rule so that it works in Opera
+PatternFilter.createOperaRule = function(line, isWhitelist) {
   var parsedOptions = this._parseRuleOptions(line);
   var elementTypes = 0, type, MATCHEVERYTHING = "*:*";
   for (type in ElementTypes) {
     if (parsedOptions.allowedElementTypes & ElementTypes[type]) {
       elementTypes |= ElementTypes.convertToOperaType(type);
-    } else if (olderOpera && (ElementTypes[type] & ElementTypes.DEFAULTTYPES)) {
+    }
+  }
+  var parsedDomains = Filter._domainInfo(parsedOptions.domainText, '|');
+
+  var rule = parsedOptions.rule;
+  if (isWhitelist) {
+    rule = rule.substring(2);
+  }
+  if (/^\/[^\\\.\*\{\}\+\?\^\$\[\]\(\)\|\<\>\#]+\/$/.test(rule)) {
+    // Simple regexes. Just convert them to the rule
+    rule = rule.substr(1, rule.length-2);
+  }
+
+  // Add starting and trailing wildcards, except for ||x, |x and x|
+  if (rule[0] !== "|") {rule = "*" + rule;}
+  if (rule[rule.length-1] !== "|") {rule += "*";}
+  // ***** -> *
+  rule = rule.replace(/\*\*+/g, '*');
+  // Starting with | means it should be at the beginning of the URL.
+  if (rule[0] === '|' && rule[1] !== '|') {rule = rule.substr(1);}
+  // Rules ending in | means the URL should end there
+  if (rule[rule.length-1] === '|') {rule = rule.substr(0, rule.length-1);}
+  // Opera doesn't allow * as filter. We however sometimes need it!
+  if (/^[\|\*\^]*$/.test(rule)) {rule = MATCHEVERYTHING;}
+
+  // Add any normal blocking rule, like ads$image
+  if (elementTypes !== 0) {
+    var ruleOptions = {
+      resources: elementTypes,
+      thirdParty: (parsedOptions.options & FilterOptions.THIRDPARTY ? true : (parsedOptions.options & FilterOptions.FIRSTPARTY ? false : null)),
+      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
+    };
+    if (parsedDomains.applied_on.length) {
+      ruleOptions.includeDomains = parsedDomains.applied_on;
+    }
+
+    PatternFilter.scheduleRule(rule, ruleOptions, isWhitelist);
+  }
+
+  // Add $document rules that can be parsed, thus rules without path
+  // Thus: @@*$document , @@$document,domain=foo , @@||foo^$document , @@||foo^$document,domain=foo
+  if (isWhitelist && (parsedOptions.allowedElementTypes & ElementTypes.document)) {
+    var ruleOptions = {
+      thirdParty: (parsedOptions.options & FilterOptions.THIRDPARTY ? true : (parsedOptions.options & FilterOptions.FIRSTPARTY ? false : null)),
+      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
+    };
+    if (rule === MATCHEVERYTHING) {
+      if (parsedDomains.applied_on.length) {
+        ruleOptions.includeDomains = parsedDomains.applied_on;
+      }
+    } else if (/^\|\|[^\/\^\:\@\*\|]+(?:\^|\/)\*$/.test(rule)) {
+      var match = rule.match(/^\|\|([^\/\^\:\@\*\|]+)(?:\^|\/)\*$/)[1];
+      if (parsedDomains.applied_on.length === 0) {
+        parsedDomains.applied_on.push(match);
+      } else if (parsedDomains.applied_on.indexOf(match) === -1) {
+        return false; // Help... @@||foo$document,domain=bar ???
+      }
+      ruleOptions.includeDomains = parsedDomains.applied_on
+    } else {
+      return false; // Sorry, we can't parse @@||foo.com/bar$document
+    }
+    PatternFilter.scheduleRule(MATCHEVERYTHING, ruleOptions, isWhitelist);
+  }
+
+  if (parsedOptions.allowedElementTypes & ~ElementTypes.DEFAULTTYPES) {
+    return false; // We'll have to parse it for $popup and exclusion rules too
+  }
+  return true; // We're done
+};
+
+// Same as above, but now for older versions of Opera (12.02 and before)
+PatternFilter._addOperaRuleOlderOpera = function(line, isWhitelist) {
+  var parsedOptions = this._parseRuleOptions(line);
+  var type, MATCHEVERYTHING = "*:*";
+  for (type in ElementTypes) {
+    if (!(parsedOptions.allowedElementTypes & ElementTypes[type]) && (ElementTypes[type] & ElementTypes.DEFAULTTYPES)) {
       return false;
     }
   }
@@ -230,84 +393,36 @@ PatternFilter._addOperaRule = function(line, isWhitelist) {
   // Rules ending in | means the URL should end there
   if (rule[rule.length-1] === '|') {rule = rule.substr(0, rule.length-1);}
   // Opera doesn't allow * as filter. We however sometimes need it!
-  if (/^(?:\|\||\:|\||\|\*\:|\^|\|\*\^)?(?:\*\/|\*\^|\*\|)?$/.test(rule)) {rule = MATCHEVERYTHING;}
-  
-  if (olderOpera) {
-    if (parsedDomains.not_applied_on.length || parsedDomains.applied_on.length) {
-      return false;
-    }
-    var startsWithDomain = false;
-    // Replace ||
-    if (/^\|\|/.test(rule)) {
-      startsWithDomain = true;
-      rule = rule.substr(2);
-    }
-    rule = rule.replace(/\^/g, "/");
+  if (/^[\|\*\^]*$/.test(rule)) {rule = MATCHEVERYTHING;}
+
+  if (parsedDomains.not_applied_on.length || parsedDomains.applied_on.length) {
+    return false;
   }
-  
-  // Add any normal blocking rule, like ads$image
-  if (elementTypes !== 0) {
-    var ruleOptions = {
-      resources: elementTypes,
-      thirdParty: (parsedOptions.options & FilterOptions.THIRDPARTY ? true : (parsedOptions.options & FilterOptions.FIRSTPARTY ? false : null)),
-      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
-    };
-    if (parsedDomains.applied_on.length) {
-      ruleOptions.includeDomains = parsedDomains.applied_on;
-    }
-    
-    if (isWhitelist) {
-      urlFilterAPI.allow.add(rule, ruleOptions);
-      urlFilterAllowed.push(rule);
+  var startsWithDomain = false;
+  // Replace ||
+  if (/^\|\|/.test(rule)) {
+    startsWithDomain = true;
+    rule = rule.substr(2);
+  }
+  rule = rule.replace(/\^/g, "/");
+
+  if (isWhitelist) {
+    if (startsWithDomain) {
+      urlFilterAPI.block.remove("*://" + rule);
+      urlFilterAPI.block.remove("*." + rule);
     } else {
-      urlFilterAPI.block.add(rule, ruleOptions);
+      urlFilterAPI.block.remove(rule);
+    }
+  } else {
+    if (startsWithDomain) {
+      urlFilterAPI.block.add("*://" + rule);
+      urlFilterAPI.block.add("*." + rule);
+      urlFilterBlocked.push("*://" + rule);
+      urlFilterBlocked.push("*." + rule);
+    } else {
+      urlFilterAPI.block.add(rule);
       urlFilterBlocked.push(rule);
     }
-  } else if (olderOpera) {
-    if (isWhitelist) {
-      if (startsWithDomain) {
-        urlFilterAPI.block.remove("*://" + rule);
-        urlFilterAPI.block.remove("*." + rule);
-      } else {
-        urlFilterAPI.block.remove(rule);
-      }
-    } else {
-      if (startsWithDomain) {
-        urlFilterAPI.block.add("*://" + rule);
-        urlFilterAPI.block.add("*." + rule);
-        urlFilterBlocked.push("*://" + rule);
-        urlFilterBlocked.push("*." + rule);
-      } else {
-        urlFilterAPI.block.add(rule);
-        urlFilterBlocked.push(rule);
-      }
-    }
-  }
-  
-  // Add $document rules that can be parsed, thus rules without path
-  // Thus: @@*$document , @@$document,domain=foo , @@||foo^$document , @@||foo^$document,domain=foo
-  if (isWhitelist && !olderOpera && (parsedOptions.allowedElementTypes & ElementTypes.document)) {
-    var ruleOptions = {
-      thirdParty: (parsedOptions.options & FilterOptions.THIRDPARTY ? true : (parsedOptions.options & FilterOptions.FIRSTPARTY ? false : null)),
-      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
-    };
-    if (rule === MATCHEVERYTHING) {
-      if (parsedDomains.applied_on.length) {
-        ruleOptions.includeDomains = parsedDomains.applied_on;
-      }
-    } else if (/^\|\|[^\/\^\:\@\*\|]+(?:\^|\/)\*$/.test(rule)) {
-      var match = rule.match(/^\|\|([^\/\^\:\@\*\|]+)(?:\^|\/)\*$/)[1];
-      if (parsedDomains.applied_on.length === 0) {
-        parsedDomains.applied_on.push(match);
-      } else if (parsedDomains.applied_on.indexOf(match) === -1) {
-        return false; // Help... @@||foo$document,domain=bar ???
-      }
-      ruleOptions.includeDomains = parsedDomains.applied_on
-    } else {
-      return false; // Sorry, we can't parse @@||foo.com/bar$document
-    }
-    urlFilterAPI.allow.add(MATCHEVERYTHING, ruleOptions);
-    urlFilterAllowed.push(MATCHEVERYTHING);
   }
 
   if (parsedOptions.allowedElementTypes & ~ElementTypes.DEFAULTTYPES) {
@@ -346,7 +461,7 @@ PatternFilter._parseRule = function(text) {
   rule = rule.replace(/\*\*+/g, '*');
 
   // Some chars in regexes mean something special; escape it always.
-  // Escaped characters are also faster. 
+  // Escaped characters are also faster.
   // - Do not escape a-z A-Z 0-9 and _ because they can't be escaped
   // - Do not escape | ^ and * because they are handled below.
   rule = rule.replace(/([^a-zA-Z0-9_\|\^\*])/g, '\\$1');
@@ -376,7 +491,7 @@ PatternFilter.prototype = {
   // Inherit from Filter.
   __proto__: Filter.prototype,
 
-  // Returns true if an element of the given type loaded from the given URL 
+  // Returns true if an element of the given type loaded from the given URL
   // would be matched by this filter.
   //   url:string the url the element is loading.
   //   elementType:ElementTypes the type of DOM element.

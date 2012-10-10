@@ -131,15 +131,40 @@ MyFilters.prototype.rebuild = function() {
   this.hidingWhitelist = FilterSet.fromTexts(hidingExcludeText);
   
   urlFilterAPI.clear();
-  for (i=whitelistText.length-1; i>=0; i--) {
-    if (PatternFilter._addOperaRule(whitelistText[i], true)) {
-      whitelistText.splice(i, 1);
+  if (olderOpera) {
+    // Opera 12.02 and before
+    for (i=patternText.length-1; i>=0; i--) {
+      if (PatternFilter._addOperaRuleOlderOpera(patternText[i], false)) {
+        patternText.splice(i, 1);
+      }
     }
-  }
-  for (i=patternText.length-1; i>=0; i--) {
-    if (PatternFilter._addOperaRule(patternText[i], false)) {
-      patternText.splice(i, 1);
+    for (i=whitelistText.length-1; i>=0; i--) {
+      if (PatternFilter._addOperaRuleOlderOpera(whitelistText[i], true)) {
+        whitelistText.splice(i, 1);
+      }
     }
+  } else {
+    // Opera 12.10 and newer
+    for (i=whitelistText.length-1; i>=0; i--) {
+      if (PatternFilter.createOperaRule(whitelistText[i], true)) {
+        whitelistText.splice(i, 1);
+      }
+    }
+    for (i in PatternFilter.ruleBuilderCache) {
+      urlFilterAPI.allow.add(i, PatternFilter.ruleBuilderCache[i]);
+      urlFilterAllowed.push(i);
+    }
+    PatternFilter.ruleBuilderCache = {};
+    for (i=patternText.length-1; i>=0; i--) {
+      if (PatternFilter.createOperaRule(patternText[i], false)) {
+        patternText.splice(i, 1);
+      }
+    }
+    for (i in PatternFilter.ruleBuilderCache) {
+      urlFilterAPI.block.add(i, PatternFilter.ruleBuilderCache[i]);
+      urlFilterBlocked.push(i);
+    }
+    PatternFilter.ruleBuilderCache = {};
   }
   
   this.blocking = new BlockingFilterSet(
