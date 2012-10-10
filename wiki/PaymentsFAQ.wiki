@@ -53,7 +53,7 @@ Please don't dispute the charge through !PayPal/Google/Amazon/your credit card c
 
 == Why should I pay? ==
 
-I ask you to pay if you can afford it, based on the honor system.  If you don't pay, there is no penalty.  You will get ad blocking and customer support either way.  So I can't tell you why you should pay, but I hope that you will if you can afford to.
+I ask you to pay if you can afford it, based on the honor system.  If you don't pay, there is no penalty.  You will get ad blocking and customer support either way, and paying users don't get their feature requests implemented faster.  So I can't tell you why you should pay, but I hope that you will if you can afford to.
 
 Some facts that might inform your decision:  !AdBlock isn't made by a giant corporation.  I wrote it from scratch in my spare time, and eventually quit my job to focus on !AdBlock.  If you pay, you are helping me support my family and funding further !AdBlock development.  And I have a dog.
 
