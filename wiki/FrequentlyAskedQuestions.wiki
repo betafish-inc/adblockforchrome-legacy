@@ -27,6 +27,9 @@ Nope.  It's only available on [https://chromeadblock.com Chrome], [https://safar
 
 Nope.  It's available on [https://chromeadblock.com Chrome], [https://safariadblock.com Safari], and [https://addons.opera.com/extensions/details/adblockforopera/ Opera].  There's an unrelated project for Firefox called [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] that works great.  If you're on IE, I recommend switching to Chrome :)
 
+== Is !AdBlock available for Mac or PC? ==
+
+It's available on both Macs and PCs.  Any computer that can run the Chrome, Safari 5, or Opera 12 web browser can use AdBlock.
 <hr>
 
 = Using !AdBlock =
