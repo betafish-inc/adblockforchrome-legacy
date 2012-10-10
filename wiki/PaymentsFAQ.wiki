@@ -25,6 +25,10 @@ Note that several people contribute time or code to !AdBlock instead of money.  
 
 After you install !AdBlock you are given the chance to pay.  You can also go to [https://chromeadblock.com/pay/ chromeadblock.com/pay/] to pay at any time.
 
+== How long is my payment good for? ==
+
+Forever!  And if you change your mind, you can always ask for a [#Can_I_get_a_refund? refund] and use !AdBlock for free.
+
 == Can I subscribe to pay you monthly? ==
 
 Yes.  You can [http://chromeadblock.com/catblock/download buy CatBlock] for a monthly payment and get [http://chromeadblock.com/catblock CatBlock] as a bonus.  You'll get an email from !PayPal/Google/Amazon every month confirming each charge, and they provide a link to cancel at any time.
