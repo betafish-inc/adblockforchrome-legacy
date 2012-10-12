@@ -113,10 +113,16 @@ storage_get = function(key) {
 }
 
 // Inputs: key:string, value:object.
+// If value === undefined, removes key from storage.
 // Returns undefined.
 storage_set = function(key, value) {
+  var store = widget.preferences;
+  if (value === undefined) {
+    store.removeItem(key);
+    return;
+  }
   try {
-    widget.preferences.setItem(key, JSON.stringify(value));
+    store.setItem(key, JSON.stringify(value));
   } catch (ex) {
     if (ex.message == "QUOTA_EXCEEDED_ERR") {
       openTab("../options.html?storage_quota_exceeded#ui-tabs-2");

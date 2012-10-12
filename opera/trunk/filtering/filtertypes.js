@@ -218,14 +218,14 @@ PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
       ruleOptions.includeDomains.length === rule2Options.includeDomains.length)) &&
       ruleOptions.excludeDomains.length === rule2Options.excludeDomains.length) {
     for (i=0; i<ruleOptions.excludeDomains.length; i++) {
-      if (rule2Options.excludeDomains.indexOf(ruleOptions.excludeDomains[i])!==-1) {
+      if (rule2Options.excludeDomains.indexOf(ruleOptions.excludeDomains[i])===-1) {
         domainsDiffer = true;
         break;
       }
     }
     if (!domainsDiffer && ruleOptions.includeDomains) {
       for (i=0; i<ruleOptions.includeDomains.length; i++) {
-        if (rule2Options.includeDomains.indexOf(ruleOptions.includeDomains[i])!==-1) {
+        if (rule2Options.includeDomains.indexOf(ruleOptions.includeDomains[i])===-1) {
           domainsDiffer = true;
           break;
         }
