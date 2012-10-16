@@ -39,7 +39,7 @@ function customize_for_this_tab() {
         $('#' + div).show();
   });
   if (chrome.extension.getBackgroundPage().olderOpera) {
-    $("#div_pause_adblock, #div_whitelist").css("color", "grey").unbind("click").attr("title", translate("opera_enabledin", "Opera 12.10"));
+    $("#div_pause_adblock, #div_whitelist, #div_report_an_ad").css("color", "grey").unbind("click").attr("title", translate("opera_enabledin", "Opera 12.10"));
   }
 }
 
@@ -126,7 +126,12 @@ $(function() {
   });
 });
 
+function resizePopup() {
+  BG.button.popup.height = document.documentElement.offsetHeight;
+}
+
 $(function() {
   customize_for_this_tab();
   localizePage();
+  resizePopup();
 });

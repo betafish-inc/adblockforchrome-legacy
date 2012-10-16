@@ -2,7 +2,7 @@ $(function() {
   localizePage();
   
   // Sort the languages list
-  var languageOptions = $("#step2_lang option");
+  var languageOptions = $("#step_language_lang option");
   languageOptions.sort(function(a,b) {
     if (!a.text) return -1; if (!b.text) return 1; // First one is empty
     if (!a.value) return 1; if (!b.value) return -1; // 'Other' at the end
@@ -10,7 +10,8 @@ $(function() {
     if (b.getAttribute("i18n") == "lang_english") return 1;
     return (a.text > b.text) ? 1 : -1;
   });
-  $("#step2_lang").empty().append(languageOptions);
+  $("#step_language_lang").empty().append(languageOptions);
+  $("#step_language_lang option[selected='selected']")[0].selected = true; // Opera fails in doing this
 });
 
 //fetching the options...
@@ -37,7 +38,7 @@ BGcall("get_settings", function(settings) {
 
 //generate the URL to the issue tracker
 function generateReportURL() {
-  var result = "http://code.google.com/p/adblockforchrome/issues/entry" +
+  var result = "https://code.google.com/p/adblockforchrome/issues/entry" +
                "?template=Ad%20report%20from%20user&summary=";
 
   var domain = "<enter URL of webpage here>";
@@ -80,11 +81,9 @@ function generateReportURL() {
   body.push("=== Subscribed filters ===");
   body.push(subscribed_filter_names.join('\n'));
   body.push("");
-  body.push("=== Browser" + (AdBlockVersion ? ' & AdBlock' : '') + ": ===");
-  body.push(SAFARI ? "Safari " + navigator.userAgent.match(/Version\/([0-9.]+)/)[1] :
-    "Google Chrome " + navigator.userAgent.match(/Chrome\/([0-9.]+)/)[1]);
-  if (AdBlockVersion)
-    body.push("AdBlock " + AdBlockVersion);
+  body.push("=== Browser & AdBlock: ===");
+  body.push("Opera " + opera.version());
+  body.push("AdBlock " + widget.version);
   body.push("");
   body.push("=== Enabled settings ===");
   body.push(enabled_settings.join('\n'));
@@ -107,13 +106,13 @@ $("#UpdateFilters").click(function() {
   });
 });
 //if the user clicks a radio button
-$("#step1_no").click(function() {
-  $("#step1").html("<span class='answer'>" + translate("no") + "</span>");
+$("#step_update_filters_no").click(function() {
+  $("#step_update_filters").html("<span class='answer'>" + translate("no") + "</span>");
   $("#whattodo").text(translate("adalreadyblocked"));
 });
-$("#step1_yes").click(function() {
-  $("#step1").html("<span class='answer'>" + translate("yes") + "</span>");
-  $("#step2DIV").css("display", "block");
+$("#step_update_filters_yes").click(function() {
+  $("#step_update_filters").html("<span class='answer'>" + translate("yes") + "</span>");
+  $("#step_language_DIV").css("display", "block");
 });
 
 
@@ -122,12 +121,12 @@ $("#step1_yes").click(function() {
 
 //if the user clicks an item
 var contact = "";
-$("#step2_lang").change(function() {
-  var selected = $("#step2_lang option:selected");
-  $("#step2").html("<span class='answer'>"+ selected.text() +"</span>");
+$("#step_language_lang").change(function() {
+  var selected = $("#step_language_lang option:selected");
+  $("#step_language").html("<span class='answer'>"+ selected.text() +"</span>");
   if (selected.text() == translate("other")) {
     $("#whattodo").html(translate("nodefaultfilter1",
-                                  ["<a href='http://adblockplus.org/en/subscriptions'>", "</a>"]));
+                                  ["<a href='https://adblockplus.org/en/subscriptions'>", "</a>"]));
     return;
   } else {
     var required_lists = selected.attr('value').split(';');
@@ -139,121 +138,72 @@ $("#step2_lang").change(function() {
     }
   }
   contact = required_lists[required_lists.length-1];
-  $("#step3DIV").css("display", "block");
+  if (sessionStorage.getItem("errorOccurred")) {
+    // Skip the malware step if an error has occurred. We don't want to scare
+    // users if we have a bug in our code
+    $("#step_firefox_DIV").css("display", "block");
+  } else {
+    $("#step_malware_DIV").css("display", "block");
+  }
 
-  var hideChromeInChrome = (SAFARI?['','']:['<span style="display:none;">', '</span>']);
+  var hideChromeInChrome = ['',''];
   $("#checkinfirefox1").html(translate("checkinfirefox_1", hideChromeInChrome));
   $("#checkinfirefox2").html(translate("checkinfirefox_2", hideChromeInChrome));
   $("#checkinfirefox").html(translate("checkinfirefoxtitle", hideChromeInChrome));
 });
 
 
-// STEP 3: also in Firefox
+// STEP 3: malware
+//if the user clicks a radio button
+$("#step_malware_no, #step_malware_wontcheck").click(function() {
+  $("#step_malware").html("<span class='answer'>" + $(this).next("label").text() + "</span>");
+  $("#step_firefox_DIV").css("display", "block");
+});
+$("#step_malware_yes").click(function() {
+  $("#step_malware").html("<span class='answer'>" + translate("yes") + "</span>");
+  $("#whattodo").text(translate("maybemalware"));
+});
+
+
+// STEP 4: also in Firefox
 
 //If the user clicks a radio button
-$("#step3_yes").click(function() {
-  $("#step3").html("<span class='answer'>" + translate("yes") + "</span>");
+$("#step_firefox_yes").click(function() {
+  $("#step_firefox").html("<span class='answer'>" + translate("yes") + "</span>");
   if (/^mailto\:/.test(contact))
     contact = contact.replace(" at ", "@");
   var reportLink = "<a href='" + contact + "'>" + contact.replace(/^mailto\:/, '') + "</a>";
   $("#whattodo").html(translate("reportfilterlistproblem", [reportLink]));
   $("#privacy").show();
 });
-$("#step3_no").click(function() {
-  if (SAFARI) {
-    // Safari can't block video ads
-    $("#step4DIV").css("display", "block");
+$("#step_firefox_no").click(function() {
+  if (/^https\:/.test(options.url)) {
+    // They can disable adblock for secure sites
+    $("#step_https_DIV").css("display", "block");
   } else {
     $("#whattodo").html(translate("reporttous2"));
     $("a", "#whattodo").attr("href", generateReportURL());
     $("#privacy").show();
   }
-  $("#step3").html("<span class='answer'>" + translate("no") + "</span>");
+  $("#step_firefox").html("<span class='answer'>" + translate("no") + "</span>");
 });
-$("#step3_wontcheck").click(function() {
-  if (!SAFARI) {
-    // Chrome blocking is good enough to assume the answer is 'yes'
-    $("#step3_yes").click();
-  } else {
-    // Safari can't do this.
-    $("#whattodo").text(translate("fixityourself"));
-  }
-  $("#step3").html("<span class='answer'>" + translate("refusetocheck") + "</span>");
+$("#step_firefox_wontcheck").click(function() {
+  $("#whattodo").text(translate("fixityourself"));
+  $("#step_firefox").html("<span class='answer'>" + translate("refusetocheck") + "</span>");
 });
 
 
 
-// STEP 4: video/flash ad (Safari-only)
+// STEP 5: disabled on https (Opera-only)
 
 //If the user clicks a radio button
-$("#step4_yes").click(function() {
-  $("#step4").html("<span class='answer'>" + translate("yes") + "</span>");
-  $("#whattodo").text(translate("cantblockflash"));
-});
-$("#step4_no").click(function() {
-  $("#step4").html("<span class='answer'>" + translate("no") + "</span>");
+$("#step_https_yes").click(function() {
+  $("#step_https").html("<span class='answer'>" + translate("no") + "</span>");
   $("#whattodo").html(translate("reporttous2"));
   $("a", "#whattodo").attr("href", generateReportURL());
   $("#privacy").show();
 });
-
-
-
-// GENERAL STUFF
-
-//check for updates
-var AdBlockVersion;
-try {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", chrome.extension.getURL('manifest.json'), false);
-  xhr.onreadystatechange = function() {
-    if(this.readyState == 4) {
-      //get the current version
-      AdBlockVersion = JSON.parse(this.responseText).version;
-      //check for newer versions
-      var checkURL = "http://clients2.google.com/service/update2/crx?" +
-          "x=id%3Dgighmmpiobklfepjocnamgkkbiglidom%26v%3D" +
-          AdBlockVersion + "%26uc";
-      if (SAFARI)
-        checkURL = "http://safariadblock.com/update.plist";
-      //fetch the version check file
-      $.ajax({
-        cache: false,
-        datatype: (SAFARI ? "text" : "xml"),
-        url: checkURL,
-        success: function(response) {
-          var updateURL;
-          if (!SAFARI) {
-            updateURL = $("updatecheck[status='ok'][codebase]", response).attr('codebase');
-          } else {
-            var version = response.match(/\<string\>(\d+\.\d+\.\d+)\<\/string\>/)[1];
-            if (isNewerVersion(version)) {
-              updateURL = response.match(/http\:\/\/.*\.safariextz/)[0];
-            }
-          }
-          //new version available
-          if (updateURL) {
-            $("#whattodo").html(translate("updatefromoldversion", ["<a href='" + updateURL + "'>", "</a>"]));
-            $("div[id^='step'][id$='DIV']").css('display', 'none');
-          }
-        }
-      });
-    }
-  };
-  xhr.send();
-} catch (ex) {}
-// Check if newVersion is newer than AdBlockVersion
-function isNewerVersion(newVersion) {
-  var versionRegex = /^(\d+)\.(\d+)\.(\d+)$/;
-  var current = AdBlockVersion.match(versionRegex);
-  var notCurrent = newVersion.match(versionRegex);
-  if (!current || !notCurrent)
-    return false;
-  for (var i=1; i<4; i++) {
-    if (current[i] < notCurrent[i])
-      return true;
-    if (current[i] > notCurrent[i])
-      return false;
-  }
-  return false;
-}
+$("#step_https_no").click(function() {
+  $("#step_https").html("<span class='answer'>" + translate("yes") + "</span>");
+  $("#whattodo").html(translate("opera_allow_secure"));
+});
