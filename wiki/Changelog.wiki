@@ -563,6 +563,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Changelog for the Opera version of !AdBlock ==
 
+*1.0.5*: Include changes from !AdBlock for Chrome 2.5.46. Attempt to combine identical rules with different options (this fixes the "Don't run on this domain' option) (Opera 12.10 only). Make sure the button popup has the correct size. Enable reporting an ad from within the extension (Opera 12.10 for advanced users only).
+
 *1.0.4*: Include changes from !AdBlock for Chrome 2.5.44 and 2.5.45. Work around Opera bug where a list that says it's not modified is marked as broken. Fix issue where removing background ads could remove the page content.
 
 *1.0.3*: Include changes from !AdBlock for Chrome 2.5.43. Fix UI issues for the blacklister and whitelister. Add support for the improved blocking method in Opera 12.10
