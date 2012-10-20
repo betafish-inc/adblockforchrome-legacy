@@ -24,6 +24,8 @@ options\general.js
 options\general.html
 options\index.js
 options\options.css
+pages\adreport.html
+pages\adreport.js
 pages\install\index.css
 pages\install\index.js
 pages\install\index.html
