@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.45<br/>
+*Latest Chrome version*: 2.5.46<br/>
 *Latest Safari version*: 2.5.45<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.46*: Correct toolbar button text in Safari (crazyskeggy).  Resource List shows source filter list; Report An Ad support in Opera; filter validation bugfixes; and memory and speed improvements (famlam).  Fix broken buttons in Hotmail.
 
 *2.5.45*: Test users delaying payment decision for an hour
 
