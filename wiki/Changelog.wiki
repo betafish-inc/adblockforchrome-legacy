@@ -8,7 +8,7 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 == Versions ==
 
 *Latest Chrome version*: 2.5.46<br/>
-*Latest Safari version*: 2.5.45<br/>
+*Latest Safari version*: 2.5.46<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
