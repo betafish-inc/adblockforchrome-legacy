@@ -21,7 +21,7 @@ Recently the contributor Famlam added Opera support to !AdBlock, and maintains t
 
 == Is !AdBlock available on the iPhone/iPad/Android? ==
 
-Nope.  It's only available on [https://chromeadblock.com Chrome], [https://safariadblock.com Safari], and [https://addons.opera.com/extensions/details/adblockforopera/ Opera].  Mobile devices don't support !AdBlock and probably won't for a couple of years.
+Nope.  It's only available on [https://chromeadblock.com Chrome], [https://safariadblock.com Safari], and [https://addons.opera.com/extensions/details/adblockforopera/ Opera].  Mobile devices don't support !AdBlock (yet.)
 
 == Is !AdBlock available on Firefox or Internet Explorer? ==
 
