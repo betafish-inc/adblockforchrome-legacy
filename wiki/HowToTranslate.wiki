@@ -101,26 +101,8 @@ Missing translations (16%): a_note_to_you_catblock_lovers, adblock_outdated_chro
 ===== \_locales\uk\messages.json =====
 Missing translations (3%): chromebutton_how_to_hide2, filterorigin, firefox_explanation, nosearchresults, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
 
-===== \_locales\tr\messages.json =====
-Missing translations (3%): adblock_outdated_chrome, chromebutton_how_to_hide2, filterorigin, firefox_explanation, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
-===== \_locales\sv\messages.json =====
-Missing translations (2%): opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
-===== \_locales\sk\messages.json =====
-Missing translations (3%): chromebutton_how_to_hide2, filterorigin, firefox_explanation, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
-===== \_locales\ru\messages.json =====
-Missing translations (2%): opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
-===== \_locales\pt_PT\messages.json =====
-Missing translations (2%): opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translations (3%): adblock_outdated_chrome, chromebutton_how_to_hide2, filterorigin, firefox_explanation, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
-
-===== \_locales\nl\messages.json =====
-Missing translations (2%): opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
 
 ===== \_locales\ko\messages.json =====
 Missing translations (19%): a_note_to_you_catblock_lovers, adblock_outdated_chrome, adsoneverysite, catblock_was_only_in_adblock_for_a_few_days, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, chromebutton_how_to_hide2, close_tab_begin_browsing, custompattern, description2, doesntmatchoriginal, filtereasylist_plus_greek, filterorigin, filterrussian, firefox_explanation, lang_greek, maybemalware, noresourcessend2, nosearchresults, oneverysitetitle, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, storage_quota_exceeded, thats_it, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, undo_last_block
@@ -142,9 +124,6 @@ Missing translations (3%): chromebutton_how_to_hide2, filterorigin, firefox_expl
 
 ===== \_locales\he\messages.json =====
 Missing translations (9%): adblock_outdated_chrome, blacklisterattrwillbe, checkinfirefox_1, checkinfirefox_2, checkinfirefoxtitle, chromebutton_how_to_hide2, filterorigin, firefox_explanation, lang_czech, multipledomainshint, nodefaultfilter1, onlyresourcetypes, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_secure_pages, opera_secure_pages_enabled, searchexplanation, show_resourcelist, typeobject_subrequest, typexmlhttprequest, updatefromoldversion
-
-===== \_locales\fr\messages.json =====
-Missing translations (2%): opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled
 
 ===== \_locales\fi\messages.json =====
 Missing translations (13%): adblock_outdated_chrome, adsoneverysite, chromebutton_how_to_hide2, close_tab_begin_browsing, custompattern, doesntmatchoriginal, filterorigin, firefox_explanation, maybemalware, noresourcessend2, nosearchresults, oneverysitetitle, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, thats_it, thirdparty, undo_last_block
