@@ -34,7 +34,7 @@ FilterSet.fromTexts = function(lines) {
       if (!result.exclude[d]) result.exclude[d] = {};
       result.exclude[d][filter.id] = true;
     });
-     if (filter._domains.applied_on.length === 0) {
+    if (filter._domains.applied_on.length === 0) {
       result.items['global'].push(filter);
     } else {
       filter._domains.applied_on.forEach(function(d) {
