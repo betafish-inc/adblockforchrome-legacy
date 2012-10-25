@@ -1,14 +1,10 @@
 #summary Resources for volunteers
 
-[link overview - read this first.] _TODO contains introduction, rules, and how to get started._
-
-= My issues =
-
-You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
-
-_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de_own_an_issue? When should I de-own an issue?])_
+Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*.
 
 = Ways to help =
+
+Volunteering is easy, even if you don't know much about the project.  Just find an interesting-sounding task below, and follow the given instructions to get started.  If you get at all stuck, we'll be happy to help you out on the mailing list (see [#Overview READ THIS FIRST].)
 
 *First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Owner these definitions (todo)].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
@@ -19,7 +15,11 @@ _Owning an issue means no one else will work on it, so you shouldn't own more th
 || *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancementrequest%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 
-_TODO instructions link to this same document but after a big whitespace_
+= My issues =
+
+You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
+
+_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de_own_an_issue? When should I de-own an issue?])_
 
 = Other helpful views =
 
@@ -32,6 +32,19 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 =Instructions=
+
+===Overview===
+
+Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether or not to volunteer.
+
+ # !AdBlock is free-as-in-speech, open sourced under the *GPLv3*.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay any amount* for !AdBlock.
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
+ # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
+ # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
+ # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
+
+If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev adblockforchrome-dev], the mailing list for contributors.
 
 === Definiton of Type ===
 
