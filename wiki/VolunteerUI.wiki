@@ -6,7 +6,7 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 Volunteering is easy, even if you don't know much about the project.  Just find an interesting-sounding task below, and follow the given instructions to get started.  If you get at all stuck, we'll be happy to help you out on the mailing list (see [#Overview READ THIS FIRST].)
 
-*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Owner these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
+*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Type these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
 || *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
 || *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
