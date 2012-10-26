@@ -35,7 +35,7 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 
 =Instructions=
 
-=== Definiton of Type ===
+=== Definition of Type ===
 
 *Type-!Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
 
