@@ -37,7 +37,7 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 
 === Definition of Type ===
 
-*Type-!Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
+*Type-Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
 
 *Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between Defect and EncancementRequest can be fuzzy if the lack of a feature is considered a bug.)
 
