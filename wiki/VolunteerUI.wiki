@@ -6,13 +6,15 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 Volunteering is easy, even if you don't know much about the project.  Just find an interesting-sounding task below, and follow the given instructions to get started.  If you get at all stuck, we'll be happy to help you out on the mailing list (see [#Overview READ THIS FIRST].)
 
-*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Owner these definitions (todo)].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
+*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Owner these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
 || *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
-|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement,adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=-cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancementrequest%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 
 = My issues =
@@ -33,7 +35,48 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 
 =Instructions=
 
-===Overview===
+=== Definiton of Type ===
+
+*Type-!Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
+
+*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between Defect and EncancementRequest can be fuzzy if the lack of a feature is considered a bug.)
+
+*Type-!AdReport*: The end result of the !AdBlock ad reporting wizard.  It represents an ad shown, or a non-ad blocked, that doesn't have the same behavior in Adblock Plus.  _TODO Does every legitimate !AdReport become a Defect, and the rest become !ReportToList?_
+
+=== Definition of Status ===
+
+|| *Open Statuses* || *Meaning* ||
+|| `New` || Not yet reproduced (for Defects/AdReports) or understood (for Enhancements). ||
+|| `Accepted` || Reproduced or understood, and not closed as `Invalid`/`Duplicate`/`WontFix`. ||
+|| `NeedsReview` || Code has been written and is ready for code review. ||
+|| `ReadyForRelease` || Someone reviewed the code and is confident that it code is ready to merge into trunk. ||
+|| `Started` || Someone reviewed the code and in their opinion it still needs work. ||
+
+|| *Closed Statuses* || *Meaning* ||
+|| `Fixed`  || Code to address the Issue is in trunk. ||
+|| `Invalid` || Insufficient data / not a valid issue ||
+|| `Duplicate` || This report duplicates an existing Issue ||
+|| `WontFix` || We decided to not take action on this issue ||
+|| `WaitingOn[Browser]` || Can't address this without support from `Browser`, e.g. Chrome ||
+|| `ReportToList` || This `AdReport` should be reported to a filter list maintainer ||
+
+=== Definition of Owner ===
+
+Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
+
+ * You plan to debug or write code against the Issue in the next few days.
+ * You might de-own an Issue if you change your mind.
+ * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help, so you can work together.
+
+=== When should I de-own an Issue? ===
+
+You own issues to tell others that you will address this issue very soon, so that they avoid duplicating your work.  If you don't work on an issue for a week or so, de-own it until you're ready to work on it.
+
+When you de-own an issue, you could leave a comment summarizing what progress you've made, for the benefit of whomever picks up where you left off.
+
+
+<br><br><br><br><br><br>
+=Overview=
 
 Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether or not to volunteer.
 
@@ -46,24 +89,4 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
 
 If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev adblockforchrome-dev], the mailing list for contributors.
 
-=== Definiton of Type ===
-
-*Type-EnhancementRequest*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
-
-*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between Defect and EncancementRequest can be fuzzy if the lack of a feature is considered a bug.)
-
-*Type-AdReport*: The end result of the AdBlock ad reporting wizard.  It represents an ad shown, or a non-ad blocked, that doesn't have the same behavior in Adblock Plus.  _TODO Does every legitimate AdReport become a Defect, and the rest become ReportToList?_
-
-=== Definition of Owner ===
-
-Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
-
- * You plan to debug or write code against the Issue in the next few days.
- * You might de-own an Issue if you change your mind.
- * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help in a comment, so you can work together.
-
-=== When should I de-own an Issue? ===
-
-You own issues to tell others that you will address this issue very soon, so that they avoid duplicating your work.  If you don't work on an issue for a week or so, de-own it until you're ready to work on it.
-
-When you de-own an issue, you could leave a comment summarizing what progress you've made, for the benefit of whomever picks up where you left off.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
