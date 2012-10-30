@@ -123,7 +123,7 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
 
 If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then grab an Issue from "Ways to help" above and have fun!
 
-=== Volunteers, Contributors and Committers ===
+=== Volunteers, Contributors, and Committers ===
 
 All you need in order to *volunteer* is a Google account, so that you can create or comment on Issues.  That's sufficient for most volunteer work.
 
