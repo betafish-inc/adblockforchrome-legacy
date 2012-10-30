@@ -11,11 +11,12 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 || *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
 || *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Triage* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement,adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=-cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 
 = My issues =
 
