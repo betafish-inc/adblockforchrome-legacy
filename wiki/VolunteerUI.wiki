@@ -10,7 +10,7 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 
 || <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
-|| *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Reproduce_a_bug instructions] || [#After_you_Reproduce_a_bug instructions] ||
 || *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
@@ -39,29 +39,42 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 
 === How to Clarify an issue ===
 
-Issue reporters rarely supply all the information that is asked of them.  Clarifying an issue means leaving comments that ask questions, until we have all the information that we need to proceed.
+Issue reporters rarely supply all the information that is asked of them.  Clarifying an issue means adding clarifying information, or leaving comments that ask questions of the reporter, until we have all the information that we need to proceed.
 
 We need different information for bug reports vs feature requests.  *Bug reports* are supposed to list the exact steps needed for someone to reproduce the problem.  *Feature requests* just need to be clear enough that we can understand what the user is proposing and why it would be useful.
 
-If you feel that this information is missing, simply *leave a comment with any clarifying questions*.
+If you read the Issue and feel that this information is missing, simply *leave a comment with any clarifying questions*.
 
-If you have the ability, *add clarifying labels*: if you learn that the issue only applies to one browser or OS, add a `Browser-` or `OpSys-` label.
+[#Volunteers,_Contributors,_and_Committers Contributors] can *add clarifying labels*: if you learn that the issue only applies to one browser or OS, add a `Browser-` or `OpSys-` label.
 
-If you have the ability, you could *improve the Issue Summary*.  Be sure to mention the old summary in a comment, so it's not lost.  For example, if a user filed a report called "Can't get videos right" and you learn that the problem is actually that Youtube videos don't play in Safari when posted on Facebook, you could leave a comment saying `[old Summary: "Can't get videos right"]` and change the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
+[#Volunteers,_Contributors,_and_Committers Contributors] can *improve the Issue Summary*.  Be sure to mention the old summary in a comment, so it's not lost.  For example, if a user filed a report called "Can't get videos right" and you learn that the problem is actually that Youtube videos don't play in Safari when posted on Facebook, you could leave a comment saying `[old Summary: "Can't get videos right"]` and change the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
 
 === After you Clarify an issue ===
 
 If you ask questions, *label the Issue `MoreInfoNeeded`* if you have the ability.  This label lets others know that we're waiting to hear back from the reporter.  It also moves the Issue out of the "Clarify an issue" list until that time.
 
-If you feel there are no more questions to ask -- that the Issue is clear enough to reproduce the bug/understand the feature request -- then *leave a comment saying so*, to save other reviewers time.
+If you feel that a *bug report* is clear enough to reproduce, then the next thing to do is [#How_to_Reproduce_a_bug reproduce it] :)
+
+If you feel that a *feature request* is clear enough to proceed, then leave a comment saying "Ready to set Status:Accepted" -- or if you're a [#Volunteers,_Contributors,_and_Committers Contributor], just set `Status:Accepted`.
 
 If you review an Issue and realize that it is not a valid bug report or feature request (e.g. it's a [#Definition_of_Status Duplicate], or an [#Definition_of_Type Ad Report], or blank), then you could [#How_to:_Triage_a_bug_report_/_feature_request triage the Issue].
+
+=== How to Reproduce a bug ===
+
+Bug reports aren't very useful if no one but the reporter can see the buggy behavior.  For that reason, the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template] asks the reporter to list the specific steps that someone else can follow to reproduce the problem.
+
+
+
+Once a bug report is [#How_to_Clarify_an_issue clear enough] to understand how to reproduce it, 
+
+=== After you Reproduce a bug ===
+
 
 === Definition of Type ===
 
 *Type-Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
 
-*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between Defect and EncancementRequest can be fuzzy if the lack of a feature is considered a bug.)
+*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between `Defect` and `Enhancement` can be fuzzy if the lack of a feature is considered a bug.)
 
 *Type-!AdReport*: The end result of the !AdBlock ad reporting wizard.  It represents an ad shown, or a non-ad blocked, that doesn't have the same behavior in Adblock Plus.  _TODO Does every legitimate !AdReport become a Defect, and the rest become !ReportToList?_
 
@@ -108,6 +121,15 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev adblockforchrome-dev], the mailing list for contributors.
+If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then grab an Issue from "Ways to help" above and have fun!
+
+=== Volunteers, Contributors and Committers ===
+
+All you need in order to *volunteer* is a Google account, so that you can create or comment on Issues.  That's sufficient for most volunteer work.
+
+By default volunteers can't do more powerful things like closing duplicate issues or labeling issues.  Someone with official *Contributor* status would have to do it for them.  But it's easy to become a Contributor: if you've worked on, say, more than a dozen issues over more than a week, just ask for Contributor status on the [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev developer mailing list].  We'll grant it after we check that you've been updating Issues correctly.
+
+Any volunteer can write code, attaching a patch to an Issue comment.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status on the [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev developer mailing list].  *Committers* can make changes to !AdBlock's source tree directly.
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
