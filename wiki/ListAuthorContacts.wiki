@@ -1,5 +1,12 @@
 #summary The places where you can contact the authors of the lists.
 
+<wiki:comment>
+*******************************
+This information is duplicated in AdBlock's source code, in
+pages/adreport.html, and the two should be kept in sync.
+*******************************
+</wiki:comment>
+
 Here are all contact methods for the list authors. It saves you some searching if you want to report them. To prevent spam @ is replaced by " at "
 
 || *List name* || *Contact* || *Website* ||
