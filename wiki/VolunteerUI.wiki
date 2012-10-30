@@ -41,7 +41,7 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 
 Issue reporters rarely supply all the information that is asked of them.  Clarifying an issue means adding clarifying information, or leaving comments that ask questions of the reporter, until we have all the information that we need to proceed.
 
-We need different information for bug reports vs feature requests.  *Bug reports* are supposed to list the exact steps needed for someone to reproduce the problem.  *Feature requests* just need to be clear enough that we can understand what the user is proposing and why it would be useful.
+We need different information for bug reports vs feature requests.  *Bug reports* are supposed to list the exact steps needed for someone to reproduce the problem.  There should be no ambiguity about what to type, where to click, what is expected to happen, and what does happen.  *Feature requests* just need to be clear enough that we can understand what the user is proposing and why it would be useful.
 
 If you read the Issue and feel that this information is missing, simply *leave a comment with any clarifying questions*.
 
@@ -63,12 +63,13 @@ If you review an Issue and realize that it is not a valid bug report or feature 
 
 Bug reports aren't very useful if no one but the reporter can see the buggy behavior.  For that reason, the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template] asks the reporter to list the specific steps that someone else can follow to reproduce the problem.
 
-
-
-Once a bug report is [#How_to_Clarify_an_issue clear enough] to understand how to reproduce it, 
+Once a bug report is [#How_to_Clarify_an_issue clear enough] to understand how to reproduce it, just follow the reproduction steps and see if the bug happens to you too.
 
 === After you Reproduce a bug ===
 
+If you fail to reproduce the bug, leave a comment saying "I could not reproduce this bug", and explain what happened when you tried it.  You should mention what browser version, !AdBlock version, and operating system you are using, as well as any other relevant information.
+
+If you *can* reproduce the bug, leave a comment saying "Confirmed", again mentioning your browser version, !AdBlock version, and operating system, and if you're a [#Volunteers,_Contributors,_and_Committers Contributor], set `Status:Accepted`.  You could then move on to [#How_to_Find_the_root_cause_of_a_defect figuring out the cause of the bug].
 
 === Definition of Type ===
 
