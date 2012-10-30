@@ -8,15 +8,16 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 
 *First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Type these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
-|| *You could do this* || *to one of these* || *like this* || *doing this when you're done* ||
+|| <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
+|| *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
 || *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=-cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
 || Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| Update a *`MoreInfoNeeded`* (TODO automate) || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [instructions instructions] || [instructions instructions] ||
 
 = My issues =
 
@@ -35,6 +36,26 @@ All open issues sorted by when they were [http://code.google.com/p/adblockforchr
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 =Instructions=
+
+=== How to Clarify an issue ===
+
+Issue reporters rarely supply all the information that is asked of them.  Clarifying an issue means leaving comments that ask questions, until we have all the information that we need to proceed.
+
+We need different information for bug reports vs feature requests.  *Bug reports* are supposed to list the exact steps needed for someone to reproduce the problem.  *Feature requests* just need to be clear enough that we can understand what the user is proposing and why it would be useful.
+
+If you feel that this information is missing, simply *leave a comment with any clarifying questions*.
+
+If you have the ability, *add clarifying labels*: if you learn that the issue only applies to one browser or OS, add a `Browser-` or `OpSys-` label.
+
+If you have the ability, you could *improve the Issue Summary*.  Be sure to mention the old summary in a comment, so it's not lost.  For example, if a user filed a report called "Can't get videos right" and you learn that the problem is actually that Youtube videos don't play in Safari when posted on Facebook, you could leave a comment saying `[old Summary: "Can't get videos right"]` and change the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
+
+=== After you Clarify an issue ===
+
+If you ask questions, *label the Issue `MoreInfoNeeded`* if you have the ability.  This label lets others know that we're waiting to hear back from the reporter.  It also moves the Issue out of the "Clarify an issue" list until that time.
+
+If you feel there are no more questions to ask -- that the Issue is clear enough to reproduce the bug/understand the feature request -- then *leave a comment saying so*, to save other reviewers time.
+
+If you review an Issue and realize that it is not a valid bug report or feature request (e.g. it's a [#Definition_of_Status Duplicate], or an [#Definition_of_Type Ad Report], or blank), then you could [#How_to:_Triage_a_bug_report_/_feature_request triage the Issue].
 
 === Definition of Type ===
 
@@ -74,7 +95,6 @@ Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue jus
 You own issues to tell others that you will address this issue very soon, so that they avoid duplicating your work.  If you don't work on an issue for a week or so, de-own it until you're ready to work on it.
 
 When you de-own an issue, you could leave a comment summarizing what progress you've made, for the benefit of whomever picks up where you left off.
-
 
 <br><br><br><br><br><br>
 =Overview=
