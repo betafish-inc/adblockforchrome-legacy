@@ -11,13 +11,13 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 || <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
 || *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Reproduce_a_bug instructions] || [#After_you_Reproduce_a_bug instructions] ||
-|| *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [instructions instructions] || [instructions instructions] ||
-|| Update a *`MoreInfoNeeded`* (TODO automate) || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [instructions instructions] || [instructions instructions] ||
+|| *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Triage_an_issue instructions] || [#After_you_Triage_an_issue instructions] ||
+|| Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [#How_to_Find_the_root_cause_of_a_defect instructions] || [#After_you_find_the_root_cause_of_a_defect instructions] ||
+|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20status:accepted%20-has:owner&sort=cause+modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary issues] || [#How_to_Write_code_to_address_an_issue instructions] || [#After_you_Write_code_to_address_an_issue instructions] ||
+|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [#How_to_Write_code_to_address_an_issueinstructions] || [#After_you_Write_code_to_address_an_issue instructions] ||
+|| Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [#How_to_Do_a_code_review instructions] || [#After_you_Do_a_code_review instructions] ||
+|| Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Process_an_ad_report instructions] || [#After_you_Process_an_ad_report instructions] ||
+|| Update a *`MoreInfoNeeded`* (TODO automate) || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 
 = My issues =
 
@@ -73,9 +73,25 @@ If you *can* reproduce the bug, leave a comment saying "Confirmed", again mentio
 
 === How to Triage an issue ===
 
-TODO
+Triage is the process of reviewing newly-filed Issues and figuring out what to do with them.  New Issues are always coming in.  Without triage, the issue tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.
+
+Triage is therefore one of the most *important and useful things that you can do* as a volunteer.  Unfortunately, it takes a little more knowledge of the project to triage effectively than to [#How_to_Clarify_an_issue clarify an issue] or [#How_to_Reproduce_a_bug reproduce a bug].  Also, most of the actions you would take when triaging require being a [#Volunteers,_Contributors,_and_Committers Contributor].  So if you're new to the project, you might want to start there for while to familiarize yourself.
+
+Here are the things you can do to a new (`Status:New`) issue:
+
+ * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example).  This requires being familiar with all the issues that have arrived lately, or at least reviewing the last few weeks' reports and searching the older reports.
+ * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's problem* ([http://code.google.com/p/adblockforchrome/issues/detail?id=5118 example]).  This requires understanding the limits of what !AdBlock can and can not do.
+ * Set `Status:Invalid` if the report is not in fact an !AdBlock issue, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.
+ * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7004 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.  (!AdBlock is a [#Overview benevolent dictatorship] and Michael will review all `WontFix`s, so if you're *almost* positive, you could set `WontFix` and let Michael un-set it if he disagrees.)
+ * [#How_to_Clarify_an_issue Clarify] an issue.  That includes setting `Status:Accepted` once the issue is clear.
+ * Set the label `Urgent` if *this is an emergency*.  Michael, and anyone else [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the Urgent label will be automatically emailed.  See [#What_is_an_Urgent_issue What is an Urgent issue?] for guidance here.
+ * Unset the label `Urgent` if it was applied incorrectly.  Again, see [#What_is_an_Urgent_issue What is an Urgent issue?] for guidance.
 
 === After you Triage an issue ===
+
+TODO
+
+=== What is an Urgent issue? ===
 
 TODO
 
@@ -110,72 +126,133 @@ Once the local copy is installed, you can scroll down to "Inspect Global Page" i
 === After you Find the root cause of a defect ===
 
 If you failed to find the cause, but learned something, *leave a comment mentioning what you tried and what failed*.  For example,
-{{{
-I couldn't figure out why Wikipedia keeps turning pink.  I tried completely removing the toolbar button, which didn't make a difference.
-When it does turn pink, the <div id="header"> section of the page gets a 'color:pink' style attribute attached, but I have no idea why.
-It happens even when I turn off all filter lists, so it can't be a bad filter.  In AdBlock's background.js line 400 it says
+<pre>
+I couldn't figure out why Wikipedia keeps turning pink.  I tried completely removing the 
+toolbar button, which didn't make a difference.  When it does turn pink, the
+<div id="header"> section of the page gets a 'color:pink' style attribute attached, but 
+I have no idea why.  It happens even when I turn off all filter lists, so it can't be a 
+bad filter.  In AdBlock's background.js line 400 it says
    if (domain === "msn.com")
      page.style.color = "pink";
-but Wikipedia doesn't load any resources from msn.com, according to the Developer Tools Resources tab.
-}}}
+but Wikipedia doesn't load any resources from msn.com, according to the Developer Tools 
+Resources tab.
+</pre>
 
 If you do find the cause, *leave a comment being as specific as possible about the cause.*  Remember that whoever comes after you won't have just spent half an hour staring at the code, so she won't have all the context and knowledge in her head that you have right now.  For instance, this is not very useful:
-{{{
-I found the problem: We think Wikipedia is loading from msn.com, so it's turning pink.
-}}}
+<pre>I found the problem: We think Wikipedia is loading from msn.com, so it's turning pink.</pre>
 Better, but still not great:
-{{{
-I found the problem: 'domain' is a global variable in the function fix_msn_background, so it's bleeding through to wikipedia.
-}}}
+<pre>
+I found the problem: 'domain' is a global variable in the function fix_msn_background, so it's bleeding through to
+wikipedia.</pre>
 Best:
-{{{
-I found the problem: 'domain' is accidentally defined as a global variable in background.js line 250.  If you load Wikipedia in one tab and msn.com in a second tab, then fix_msn_background() is called, 'domain' is set to 'msn.com', and background.js line 400 is triggered when Wikipedia loads its next resource.  I expect we could fix it by making 'domain' a local variable, but I haven't tried it.
-}}}
+<pre>
+I found the problem: 'domain' is accidentally defined as a global variable in background.js line 250.  If you load
+Wikipedia in one tab and msn.com in a second tab, then fix_msn_background() is called, 'domain' is set to 'msn.com',
+and background.js line 400 is triggered when Wikipedia loads its next resource.  I expect we could fix it by making
+'domain' a local variable, but I haven't tried it.</pre>
 
 If you are a [#Volunteers,_Contributors,_and_Committers Contributor], you should set the label `Cause-Known`; if not, a Contributor will come behind you and set it.  This lets people who are going to [#How_to_Write_code_to_address_an_issue write code] see which Issues are already debugged.  In fact, they'll see `Cause-Known` issues listed first, to encourage people to at least debug Issues that they want to see fixed.
 
 === How to Write code to address an issue ===
 
-First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix`  (usually on a feature request that he feels is unnecessary).  It's frustrating to write code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just `cc adblockforchrome` and ask him if he would accept a patch addressing this issue.
+First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix`  (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [https://groups.google.com/forum/?fromgroups#!forum/adblockforchrome-dev developer mailing list] and ask him if he would accept a patch addressing the Issue.
+
+Second, be sure to read and *conform to the [#Coding_style coding style guide]*, or you'll just have to fix your code after it gets reviewed.
 
 Here's the process for a *non-[#Volunteers,_Contributors,_and_Committers Committer]* to write code to address an issue:
 
- # Optionally set yourself as `Owner`, so that others don't [#Definition_of_Owner duplicate your work].  If it's a quick fix or you expect no one else will work on it, don't bother.  If you aren't a [#Volunteers,_Contributors,_and_Committers Contributor], leave a comment saying you'd like to be the `Owner`, and someone will set it for you.
+ # Optionally set yourself as `Owner`, so that others don't [#Definition_of_Owner duplicate your work].  If it's a quick fix or you expect no one else will work on it, don't bother, but you'll probably want to cc yourself or star the issue so that you get emailed comments.  If you aren't a [#Volunteers,_Contributors,_and_Committers Contributor], leave a comment saying you'd like to be the `Owner`, and someone will set it for you.
  # Using svn on Linux or !TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
  # Make your changes, testing them in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
+ # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions].
  # Leave a comment on the Issue thoroughly explaining what was changed and what was fixed and how to test it, and ask for code review.  Add the patchfile as an attachment.
 
 Here's the process for a *[#Volunteers,_Contributors,_and_Committers Committer]* to write code to address an issue:
 
- # Optionally set yourself as `Owner`, so that others don't [#Definition_of_Owner duplicate your work].  If it's a quick fix or you expect no one else will work on it, don't bother.  If you aren't a [#Volunteers,_Contributors,_and_Committers Contributor], leave a comment saying you'd like to be the `Owner`, and someone will set it for you.
+ # Optionally set yourself as `Owner`, so that others don't [#Definition_of_Owner duplicate your work].  If it's a quick fix or you expect no one else will work on it, don't bother, but you'll probably want to cc yourself or star the issue so that you get emailed comments.
  # Using svn on Linux or !TortoiseSVN on Windows, copy `https://adblockforchrome.googlecode.com/svn/trunk` to `https://adblockforchrome.googlecode.com/svn/branches/issue-5740` (of course with the correct Issue number.)  _The first time you do this, you may have to [http://code.google.com/p/adblockforchrome/source/checkout authenticate]._  Then check out a local copy of that folder.
  # Make your changes, testing them in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
- # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed.
-
-(TODO: style guide)
-
-TODO
+ # For huge bonus points, also add unit tests to `tools/tests/test.html`.
+ # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
 
 === After you Write code to address an issue ===
 
-TODO
+Set `Status:NeedsReview`, so that someone else will review your code.  If there's someone in particular from whom you'd appreciate code review, cc them with your request.  (If you aren't a [#Volunteers,_Contributors,_and_Committers Contributor] you'll have to leave a comment requesting review/cc, and a Contributor will set these for you.)
+
+If your code has problems, it will be set to `Status:Started` by a reviewer.  In that case, look for feedback in comments on the Issue and on specific revisions ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]), argue with the reviewer(s), make changes, and set `Status:NeedsReview` when you're done.
+
+=== Coding style ===
+
+Code that you submit in a patch or a branch should conform to the following style rules, unless you have a good reason to break the rules :)
+
+Comment every non-one-liner function that you write with a description of what it does, a list of inputs, and what it returns. See background.js for some examples. When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When you implement strange-looking code to handle Issue 1234, it suffices to say `// Issue 1234` so readers know where to learn more.  In general, *err on the side of too many comments*, since dozens of strangers may read your code this year without understanding as much as you do about the context.
+
+Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
+
+There are lots of ways in JavaScript to define a class, its constructor, and its prototype.  Follow this format:
+{{{
+function ClassName(x, y) {
+  this._privateVar1 = x;
+  this.publicVar2 = y;
+}
+ClassName.staticMethod = function(x) {
+};
+ClassName.prototype = {
+  method1: function(x) {
+  },
+  method2: function(x) {
+  }
+};
+}}}
+
+Equality should be `===`, not `==`.  In regular expressions, put a `\` before every non-special character except `[a-zA-Z0-9_-]` so that it's obvious that all other characters are special characters.  E.g. `/^\@\@\|\|ads-r-us\.com(\/ad_content)+$/`
+
+We didn't always have a style guide, so unfortunately the code isn't 100% adherent to the rules above. Refactoring is great -- whenever you touch some code, feel free to clean it up.
 
 === How to Do a code review ===
 
-TODO
+Code that goes into !AdBlock's trunk is almost always reviewed first.  Having at least one other person see your code greatly increases the chance of getting it right.
+
+Anyone can review code.  Even if you don't understand that area of !AdBlock, you can comment on style and suggest ways to simplify or clarify the code.  Even if you don't have time to download and test the code, you can still read it in the browser.
+
+To review code that is in a branch:
+ # Look through the Issue's comments for each revision checkin.  If the author did things correctly, every revision should have resulted in a comment.
+ # Click each revision and then click 'Expand all' to see the code changes in that revision.  Or, check out a local copy of trunk and do something like `svn merge --reintegrate https://adblockforchrome.googlecode.com/svn/branches/issue-5740 && svn diff` in order to view the combined effect of all the revisions.
+ # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
+ # If the change includes unit tests, open tools/tests/test.html in your browser to run them.
+ # Check that the code adheres to the [#Coding_style style guide].
+ # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
+
+To review a patch submitted by a non-Contributor, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.  (If you're a [#Volunteers,_Contributors,_and_Committers Committer], it would be kind of you to create a branch on behalf of the original author, so that reviewers can review the branch properly.)
 
 === After you Do a code review ===
 
-TODO
+If you left review comments but don't feel confident enough to decide whether to ship the code (or prevent it from shipping), you don't have to do anything else.  The author and other reviewer(s) will take your comments into consideration.
+
+If your review was positive, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*
+
+If you are confident that the code needs work before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
 
 === How to Process an ad report ===
 
-TODO
+`Type-AdReport` Issues ([http://code.google.com/p/adblockforchrome/issues/detail?id=7028 example]) are the end result of the !AdBlock ad reporting wizard.  [FrequentlyAskedQuestions#I_see_an_ad!__How_do_I_report_it? Try it yourself] on a random webpage to see what it does.
+
+Many reports don't have all the information filled out.  Specifically, they'll often fail to specify exactly where the ad is on the page.  In that case, you can *ask clarifying questions*, perhaps *request a screenshot*, and *set the label `MoreInfoNeeded`* if you are a [#Volunteers,_Contributors,_and_Committers Contributor].  That label will take the ad report out of the "to process" list until a response comes back.
+
+At the end of the report it should list which filter lists and custom filters the reporter has.  Make your copy of !AdBlock have *the same filter lists and custom filters* under !AdBlock Options.  Then:
+
+1. If you *can not see the ad*, leave a comment like `I do not see the ad when subscribed to the same filter lists as the reporter.  If you Update Filters under AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?` and set the label `MoreInfoNeeded`.
+
+2. If you *can see the ad*, disable !AdBlock under chrome://chrome/extensions and install [http://adblockplus.org Adblock Plus for Chrome].  ABP is a separate project that should be able to block just about everything that !AdBlock does and vice versa.
+
+2a. If ABP also shows the ad, then this ad report should have never been filed.  Set `Status:ReportToList` and leave a comment like `This is due to a missing filter in [the report's main filter list for the webpage's language], a filter list which AdBlock does not control.  Please report this to them.  Their contact info is on ListAuthorContacts.`
+
+2b. If ABP does not show this ad, then this is a bug in !AdBlock.  Set the label `Type-Defect` and `Status:Accepted`, change the summary to something like `ESPN.com ad not blocked (blocked in ABP)`, and leave a comment summarizing how to reproduce the problem, e.g. `Visit http://espn.com/go/some-page.html in AdBlock 2.5.40.  You'll see a large ad take up the whole screen that you have to close to proceed.  This does not happen in ABP.`
 
 === After you Process an ad report ===
 
-TODO
+After you've set `MoreInfoNeeded`, or `Type-Defect`, or `Status:ReportToList`, you're done.  If you're not a Contributor so you can't make those changes, just leave a comment requesting them and a Contributor will do it for you.
 
 === Definition of Type ===
 
