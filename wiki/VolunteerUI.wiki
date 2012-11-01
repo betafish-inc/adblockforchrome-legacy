@@ -25,7 +25,7 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 
 You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
 
-_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de_own_an_issue? When should I de-own an issue?])_
+_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de-own_an_Issue? When should I de-own an Issue?])_
 
 = Other helpful views =
 
