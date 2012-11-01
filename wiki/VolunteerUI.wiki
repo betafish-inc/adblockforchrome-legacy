@@ -71,6 +71,15 @@ If you fail to reproduce the bug, leave a comment saying "I could not reproduce 
 
 If you *can* reproduce the bug, leave a comment saying "Confirmed", again mentioning your browser version, !AdBlock version, and operating system, and if you're a [#Volunteers,_Contributors,_and_Committers Contributor], set `Status:Accepted`.  You could then move on to [#How_to_Find_the_root_cause_of_a_defect figuring out the cause of the bug].
 
+Special case: If the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), it's almost certainly because of an over-aggressive filter.  You can direct the user to http://chromeadblock.com/bugs/hunting , which will walk them through finding and reporting the filter; or if you're feeling generous, you could do it yourself, set `Status:ReportToList`, and leave a comment like
+<pre>
+I followed the steps at chromeadblock.com/bugs/hunting to find that this
+is caused by the filter
+  ##div.banner
+which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the problem
+you'll automatically be updated with the fix.
+</pre>
+
 === How to Triage an issue ===
 
 Triage is the process of reviewing newly-filed Issues and figuring out what to do with them.  New Issues are always coming in.  Without triage, the issue tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.
