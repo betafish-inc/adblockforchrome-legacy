@@ -193,7 +193,7 @@ Comment every non-one-liner function that you write with a description of what i
 
 Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
 
-There are lots of ways in JavaScript to define a class, its constructor, and its prototype.  Follow this format:
+There are lots of ways in !JavaScript to define a class, its constructor, and its prototype.  Follow this format:
 {{{
 function ClassName(x, y) {
   this._privateVar1 = x;
@@ -331,7 +331,7 @@ If you wanted to politely ask the user whether they had seen the link to the FAQ
 === Definition of Status ===
 
 || *Open Statuses* || *Meaning* ||
-|| `New` || Not yet reproduced (for Defects/AdReports) or understood (for Enhancements). ||
+|| `New` || Not yet reproduced (for Defects/!AdReports) or understood (for Enhancements). ||
 || `Accepted` || Reproduced or understood, and not closed as `Invalid`/`Duplicate`/`WontFix`. ||
 || `NeedsReview` || Code has been written and is ready for code review. ||
 || `ReadyForRelease` || Someone reviewed the code and is confident that it code is ready to merge into trunk. ||
