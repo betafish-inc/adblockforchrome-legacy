@@ -73,11 +73,10 @@ If you *can* reproduce the bug, leave a comment saying "Confirmed", again mentio
 
 Special case: If the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), it's almost certainly because of an over-aggressive filter.  You can direct the user to http://chromeadblock.com/bugs/hunting , which will walk them through finding and reporting the filter; or if you're feeling generous, you could do it yourself, set `Status:ReportToList`, and leave a comment like
 <pre>
-I followed the steps at chromeadblock.com/bugs/hunting to find that this
-is caused by the filter
+I followed the steps at chromeadblock.com/bugs/hunting to find that this is caused by the filter
   ##div.banner
-which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the problem
-you'll automatically be updated with the fix.
+which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
+problem you'll automatically be updated with the fix.
 </pre>
 
 === How to Triage an issue ===
