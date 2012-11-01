@@ -17,6 +17,7 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 || *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=enhancement%20status:accepted%20-has:owner&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary issues] || [#How_to_Write_code_to_address_an_issue instructions] || [#After_you_Write_code_to_address_an_issue instructions] ||
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [#How_to_Do_a_code_review instructions] || [#After_you_Do_a_code_review instructions] ||
 || Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Process_an_ad_report instructions] || [#After_you_Process_an_ad_report instructions] ||
+|| Judge an *Urgent issue* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_an_Urgent_issue instructions] || [#After_you_Judge_an_Urgent_issue instructions] ||
 || Update a *`MoreInfoNeeded`* (TODO automate) || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 || *Answer questions* on the mailing list || [http://groups.google.com/group/adblockforchrome-discuss posts] || [#How_to_Answer_questions_on_the_mailing_list instructions] || ||
 
@@ -29,8 +30,6 @@ _Owning an issue means no one else will work on it, so you shouldn't own more th
 = Other helpful views =
 
 All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified] - Figure out what these old issues need in order to move toward resolution.
-
-[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&groupby=&colspec=ID+Opened+Modified+Status+Owner+Summary&nobtn=Update All issues labeled Urgent] - [link instructions] _TODO instructions include: To be notified when these come in, [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe] to the Urgent label._ _TODO robot converts subject:urgent into label:Urgent_
 
 [link Unloved issues] _TODO it needs to be easy to see in what way they're unloved to make it easier to take action on them_
 
@@ -86,22 +85,11 @@ Here are the things you can do to a new (`Status:New`) issue:
  * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7004 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.  (!AdBlock is a [#Overview benevolent dictatorship] and Michael will review all `WontFix`s, so if you're *almost* positive, you could set `WontFix` and let Michael un-set it if he disagrees.)
  * [#How_to_Clarify_an_issue Clarify] an issue.  That includes setting `Status:Accepted` once the issue is clear.
  * Set `Priority-Critical` if *this is an emergency*, which sends out alert emails.  See [#What_is_a_critical_issue What is a critical issue?] for guidance here.
- * Unset the label `Urgent` if it was applied incorrectly.  Again, see [#What_is_a_critical_issue What is a critical issue?] for guidance.
+ * Unset the label `Urgent` if it was applied incorrectly.  See [#How_to_Judge_an_Urgent_issue How to Judge an Urgent issue].
 
 === After you Triage an issue ===
 
 TODO
-
-=== What is a critical issue? ===
-
-[#Volunteers,_Contributors,_and_Committers Contributors] can label an issue `Priority-Critical`.  This sends alert emails to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] that label, including Michael's personal email address, so that a fix can be shipped ASAP.
-
-Regular users cannot set labels.  If a reporter thinks an issue is critical, they can put "Urgent" in the Summary, and it will be auto-labeled `Urgent` (TODO not implemented yet), to be listed in the VolunteerUI task list and emailed to `Urgent` label [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribers].  A [#Volunteers,_Contributors,_and_Committers Contributor] can then set `Priority-Critical` to sound the alarm, or unset `Urgent` if it's a false alarm.  To discourage spam, we warn reporters that false alarms are usually penalized by being ignored for X weeks.
-
-*Definition of "critical"*
-
-TODO.  (Does it have a VISIBLE effect for MANY users or a SEVERE effect for SOME users; list past examples.)
-TODO: Add task to Ways To Help: "Judge Urgent issues"
 
 === How to Find the root cause of a defect ===
 
@@ -262,6 +250,36 @@ At the end of the report it should list which filter lists and custom filters th
 
 After you've set `MoreInfoNeeded`, or `Type-Defect`, or `Status:ReportToList`, you're done.  If you're not a Contributor so you can't make those changes, just leave a comment requesting them and a Contributor will do it for you.
 
+=== How to Judge an Urgent issue ===
+
+_You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to judge Urgent issues._
+
+Issue reporters have the option to [http://code.google.com/p/adblockforchrome/issues/entry?template=URGENT%20Defect label their bug report Urgent].  In addition to showing up in the [#Ways_to_help "Judge an Urgent issue" list], these Issues are emailed to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Urgent` label.
+
+We tell issue reporters to only do this if they think the Issue is [#What_is_a_critical_issue? critical], in which case we'll send out emergency alarm emails.  To discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if they are wrong.
+
+If you think that an `Urgent`-labeled Issue is in fact [#What_is_a_critical_issue? critical], *label it `Priority-Critical`*.  Michael's personal email address is subscribed to that label so that he'll be notified even on a day off -- and anyone else willing to lend a hand with critical issues can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe] to email notifications.
+
+If you think that an `Urgent`-labeled Issue is not critical, just *unlabel it `Urgent`* and leave an explanatory comment like `This is not urgent because, even though there's a visible effect on a popular website, the website can still be used.` or `This is not urgent because the broken website is not used by millions of people.`
+
+=== After you Judge an Urgent issue ===
+
+You are probably the first person who has noticed this Issue.  If it's now `Priority-Critical`, it would be great for you to [#How_to_Reproduce_a_bug reproduce] and [#How_to_Clarify_an_issue clarify] the bug, and even to start [#How_to_Find_the_root_cause_of_a_defect debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
+
+If the issue is serious but not critical, it will get addressed once it reaches the top of the [#Ways_to_help "Triage an issue" list].
+
+If the issue is clearly not critical -- the reporter was abusing the `Urgent` label to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
+
+=== What is a critical issue? ===
+
+An issue is critical and should be labeled `Priority-Critical` (thus sending scary alert emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and:
+ * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
+ * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
+ * major visible *!AdBlock UI is broken* (e.g. the context menu or popup menu are gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
+ * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example]
+ * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
+ * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a major search engine, social network, large news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
+
 === How to Answer questions on the mailing list ===
 
 Theoretically, users seeking answers should be directed to [Support Support], which has links to the FAQs before they are directed to email the adblockforchrome-discuss mailing list or to email Michael directly.  But some users either don't see those links or find a link to the public mailing list somewhere else.
@@ -326,7 +344,7 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then grab an Issue from "Ways to help" above and have fun!
+If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then grab an Issue from [#Ways_to_help Ways To Help] and have fun!
 
 === Volunteers, Contributors, and Committers ===
 
