@@ -20,14 +20,11 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 || Judge an *Urgent issue* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_an_Urgent_issue instructions] || [#After_you_Judge_an_Urgent_issue instructions] ||
 || Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 || *Answer questions* on the mailing list || [http://groups.google.com/group/adblockforchrome-discuss posts] || [#How_to_Answer_questions_on_the_mailing_list instructions] || ||
-
-= My issues =
-
-You own [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these] open issues.
-
-_Owning an issue means no one else will work on it, so you shouldn't own more than a few issues at once, and you should usually work on these issues before any others.  ([#When_should_I_de-own_an_Issue? When should I de-own an Issue?])_
+|| Improve/add a *translation* || [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate+-status:invalid&sort=summary&colspec=ID+Status+Summary&x=area&y=priority&cells=tiles languages] || [HowToTranslate instructions] || ||
 
 = Other helpful views =
+
+You are the Owner of [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these issues].  (You should usually work on these before other Issues; here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue.)
 
 All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified] - Figure out what these old issues need in order to move toward resolution.
 
@@ -179,6 +176,8 @@ Here's the process for a *[#Volunteers,_Contributors,_and_Committers Committer]*
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
 
+Sometimes !AdBlock will need a custom filter in order to fix a problem.  Users are subscribed to the !AdBlock Custom filter list, which lives in filters/adblock_custom.txt.  If you add a filter there, it will be shipped the next time Michael ships the filter list; you can cc adblockforchrome to ask him to do so.
+
 === After you Write code to address an issue ===
 
 Set `Status:NeedsReview`, so that someone else will review your code.  If there's someone in particular from whom you'd appreciate code review, cc them with your request.  (If you aren't a [#Volunteers,_Contributors,_and_Committers Contributor] you'll have to leave a comment requesting review/cc, and a Contributor will set these for you.)
@@ -233,7 +232,7 @@ To review a patch submitted by a non-Contributor, you'll have to just read the p
 
 If you left review comments but don't feel confident enough to decide whether to ship the code (or prevent it from shipping), you don't have to do anything else.  The author and other reviewer(s) will take your comments into consideration.
 
-If your review was positive, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*
+If your review was positive, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*  Michael will then merge it to trunk and set `Status:Fixed`, and it will be shipped in the next release.
 
 If you are confident that the code needs work before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
 
@@ -349,7 +348,7 @@ If you wanted to politely ask the user whether they had seen the link to the FAQ
 
 Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
 
- * You plan to debug or write code against the Issue in the next few days.
+ * You plan to debug or write code against the Issue in the next few days.  (So you should rarely be Owner of more than one or two Issues.)
  * You might de-own an Issue if you change your mind.
  * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help, so you can work together.
 
