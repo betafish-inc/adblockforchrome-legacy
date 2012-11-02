@@ -4,7 +4,7 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 = Ways to help =
 
-Volunteering is easy, even if you don't know much about the project.  Just find an interesting-sounding task below, and follow the given instructions to get started.  If you get at all stuck, we'll be happy to help you out on the mailing list (see [#Overview READ THIS FIRST].)
+Volunteering is easy, even if you don't know much about the project.  You could *answer common questions* from users ([#How_to_Answer_questions_on_the_mailing_list instructions]), or *translate !AdBlock* into your language ([HowToTranslate instructions]).  Where help is most needed is with *issue reports*: read the instructions for something that sounds interesting below to get started.  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!
 
 *First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Type these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
 
@@ -19,8 +19,6 @@ Volunteering is easy, even if you don't know much about the project.  Just find 
 || Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20-has:owner%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Process_an_ad_report instructions] || [#After_you_Process_an_ad_report instructions] ||
 || Judge an *Urgent issue* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_an_Urgent_issue instructions] || [#After_you_Judge_an_Urgent_issue instructions] ||
 || Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
-|| *Answer questions* on the mailing list || [http://groups.google.com/group/adblockforchrome-discuss posts] || [#How_to_Answer_questions_on_the_mailing_list instructions] || ||
-|| Improve/add a *translation* || [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type%3Dl10n+-status:duplicate+-status:invalid&sort=summary&colspec=ID+Status+Summary&x=area&y=priority&cells=tiles languages] || [HowToTranslate instructions] || ||
 
 = Other helpful views =
 
@@ -306,9 +304,9 @@ Now that there is more information, you could check whether the issue [#How_to_C
 
 === How to Answer questions on the mailing list ===
 
-Theoretically, users seeking answers should be directed to [Support Support], which has links to the FAQs before they are directed to email the adblockforchrome-discuss mailing list or to email Michael directly.  But some users either don't see those links or find a link to the public mailing list somewhere else.
+Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the adblockforchrome-discuss@googlegroups.com mailing list or to email Michael directly.  But some users either don't see those links or find a link to the mailing list somewhere else.
 
-So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the mailing list] can be answered by [FrequentlyAskedQuestions the FAQ].  Just politely point users to a relevent answer, e.g.
+So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the mailing list] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
 <pre>
 Thanks for your question.  See
   http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#How_do_I_uninstall_AdBlock_? 
