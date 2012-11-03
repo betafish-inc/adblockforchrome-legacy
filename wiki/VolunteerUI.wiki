@@ -346,9 +346,9 @@ If you wanted to politely ask the user whether they had seen the link to the FAQ
 
 Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
 
- * You plan to debug or write code against the Issue in the next few days.  (So you should rarely be Owner of more than one or two Issues.)
- * You might de-own an Issue if you change your mind.
- * Others can still debug or write code against the Issue, but they're probably duplicating your work.  A better idea is for them to offer help, so you can work together.
+ * You plan to debug or write code against the Issue in the next few days; or your code got a negative code review and is waiting for your attention.  (So you should rarely be Owner of more than one or two Issues that aren't [#Definition_of_Status Status:Started].)
+ * You might de-own it if you decide not to work on it after all.
+ * Others can still work on the Issue, but they're probably duplicating your work.  A better idea is for them to offer help, so you can work together.
 
 === When should I de-own an Issue? ===
 
