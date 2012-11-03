@@ -40,7 +40,7 @@ We need different information for bug reports vs feature requests.  *Bug reports
 
 If you read the Issue and feel that this information is missing, simply *leave a comment with any clarifying questions*.
 
-[#Volunteers,_Contributors,_and_Committers Contributors] can *add clarifying labels*: if you learn that the issue only applies to one browser or OS, add a `Browser-` or `OpSys-` label.
+[#Volunteers,_Contributors,_and_Committers Contributors] can *add clarifying labels*: if you learn that the issue only applies to *one* browser or OS, add a `Browser-` or `OpSys-` label.
 
 [#Volunteers,_Contributors,_and_Committers Contributors] can *improve the Issue Summary*.  Be sure to mention the old summary in a comment, so it's not lost.  For example, if a user filed a report called "Can't get videos right" and you learn that the problem is actually that Youtube videos don't play in Safari when posted on Facebook, you could leave a comment saying `[old Summary: "Can't get videos right"]` and change the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
 
