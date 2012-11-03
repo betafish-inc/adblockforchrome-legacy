@@ -46,7 +46,7 @@ If you read the Issue and feel that this information is missing, simply *leave a
 
 === After you Clarify an issue ===
 
-If you ask questions, [#Volunteers,_Contributors,_and_Committers Contributors] should *label the Issue `MoreInfoNeeded`*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#Ways_to_help "Ways to help" lists], so consider also *starring the issue*, so that you'll know as soon as a response comes back that the label can be removed.
+If you ask questions, [#Volunteers,_Contributors,_and_Committers Contributors] should *label the Issue `MoreInfoNeeded`*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#Ways_to_help "Ways to help" lists], so consider also *starring the issue*, so that you'll know as soon as a response comes back that the [#How_to_Update_a_MoreInfoNeeded label can be removed].
 
 If you feel that a *bug report* is clear enough to reproduce, then the next thing to do is [#How_to_Reproduce_a_bug reproduce it] :)
 
