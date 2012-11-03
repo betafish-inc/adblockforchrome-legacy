@@ -22,7 +22,7 @@ Volunteering is easy, even if you don't know much about the project.  You could 
 
 = Other helpful views =
 
-You are the Owner of [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary these issues].  (You should usually work on these before other Issues; here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue.)
+Issues that [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary you own] (work on these before other Issues; here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue) and that are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary owned by others].
 
 All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified] - Figure out what these old issues need in order to move toward resolution.
 
