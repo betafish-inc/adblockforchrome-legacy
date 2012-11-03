@@ -176,7 +176,7 @@ Here's the process for a *[#Volunteers,_Contributors,_and_Committers Committer]*
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
 
-Sometimes !AdBlock will need a custom filter in order to fix a problem.  Users are subscribed to the !AdBlock Custom filter list, which lives in filters/adblock_custom.txt.  If you add a filter there, it will be shipped the next time Michael ships the filter list; you can cc adblockforchrome to ask him to do so.
+Sometimes !AdBlock will need a custom filter in order to fix a problem.  Users are subscribed to the !AdBlock Custom filter list, which lives in filters/adblock_custom.txt.  If you add a filter there ([http://adblockplus.org/en/filters syntax]), it will be shipped the next time Michael ships the filter list; you can cc adblockforchrome to ask him to do so.
 
 === After you Write code to address an issue ===
 
