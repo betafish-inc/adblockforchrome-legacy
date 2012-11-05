@@ -12,7 +12,7 @@ The first thing to do is to *make sure !AdBlock is installed and up to date.* [h
 == Next: some common problems. ==
 
  * You may find an *ad that wasn't blocked*.  Follow [FrequentlyAskedQuestions#I_see_an_ad!__How_do_I_report_it? these instructions] to block or report it.
- * Safari users may see *broken image popups or slideshows*.  This is a [http://code.google.com/p/adblockforchrome/issues/detail?id=7194 known limitation] in Safari until Apple fixes [https://bugs.webkit.org/show_bug.cgi?id=45586 this bug].
+ * Safari users may see *broken image popups or slideshows*.  This is a [http://code.google.com/p/adblockforchrome/issues/detail?id=7194 known limitation] in Safari until Apple fixes [https://bugs.webkit.org/show_bug.cgi?id=74451 this bug].
  * Safari users may see *ads in videos or Flash games*.  This is a [http://code.google.com/p/adblockforchrome/issues/detail?id=7193 known limitation] in Safari.  To get ad-free videos and Flash, install [http://www.google.com/chrome/ Chrome] and then [http://getadblock.com/chrome add AdBlock to Chrome] instead.
  * *!RockMelt* and *!CoolNovo* users cannot install !AdBlock without a workaround ([http://code.google.com/p/adblockforchrome/issues/detail?id=6874 Rockmelt workaround], [http://code.google.com/p/adblockforchrome/issues/detail?id=6920 CoolNovo workaround]).
  * Safari users should not enable *multi-process windows*; it breaks !AdBlock.
