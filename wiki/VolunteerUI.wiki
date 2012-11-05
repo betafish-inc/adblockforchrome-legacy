@@ -6,8 +6,6 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 Volunteering is easy, even if you don't know much about the project.  You could *answer common questions* from users ([#How_to_Answer_questions_on_the_mailing_list instructions]), or *translate !AdBlock* into your language ([HowToTranslate instructions]).  Where help is most needed is with *issue reports*: read the instructions for something that sounds interesting below to get started.  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!
 
-*First*: Clean up [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3ACleanUp&colspec=ID+Stars+Type+Status+Priority+Area+Summary&cells=tiles these issues]: make sure Type, Status, and Owner are correct according to [#Definition_of_Type these definitions].  _TODO Michael will probably do this in an afternoon and delete this paragraph at that point_
-
 || <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
 || *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20-has:owner%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Reproduce_a_bug instructions] || [#After_you_Reproduce_a_bug instructions] ||
