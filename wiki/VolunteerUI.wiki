@@ -4,7 +4,9 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 = Ways to help =
 
-Volunteering is easy, even if you don't know much about the project.  To get started, just pick something in the list below that sounds interesting, and *read the instructions*.  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!
+Volunteering is easy, even if you don't know much about the project.  I mostly need help in the [http://code.google.com/p/adblockforchrome/issues/list Issue Tracker].  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.
+
+To get started, try reading the instructions for "Clarify an issue".  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!
 
 || <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
@@ -18,12 +20,13 @@ Volunteering is easy, even if you don't know much about the project.  To get sta
 || Judge an *Urgent issue* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_an_Urgent_issue instructions] || [#After_you_Judge_an_Urgent_issue instructions] ||
 || Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 
-(You could also *[#How_to_Answer_questions_on_the_mailing_list answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.)
+You could also *[#How_to_Answer_questions_on_the_mailing_list answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.
+
 = Other helpful views =
 
-Issues that [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary you own] (work on these before other Issues; here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue) and that are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary owned by others].
+All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue.)
 
-All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified]
+All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -43,7 +46,7 @@ If you read the Issue and feel that this information is missing, simply *leave a
 
 === After you Clarify an issue ===
 
-If you ask questions, [#Volunteers,_Contributors,_and_Committers Contributors] should *label the Issue `MoreInfoNeeded`*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#Ways_to_help "Ways to help" lists], so consider also *starring the issue*, so that you'll know as soon as a response comes back that the [#How_to_Update_a_MoreInfoNeeded label can be removed].
+If you ask questions, [#Volunteers,_Contributors,_and_Committers Contributors] should *label the Issue `MoreInfoNeeded`*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#Ways_to_help "Ways to help" lists], so consider also *starring the Issue* at the top left of the Issue page.  That way you'll be emailed as soon as a response comes back and you could [#How_to_Update_a_MoreInfoNeeded remove the label].
 
 If you feel that a *bug report* is clear enough to reproduce, then the next thing to do is [#How_to_Reproduce_a_bug reproduce it] :)
 
@@ -365,7 +368,7 @@ When you de-own an issue, you could leave a comment summarizing what progress yo
 Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether or not to volunteer.
 
  # !AdBlock is free-as-in-speech, open sourced under the *GPLv3*.
- # !AdBlock is free-as-in-beer, though *users may _optionally_ pay any amount* for !AdBlock.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
  # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
  # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
