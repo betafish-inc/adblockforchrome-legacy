@@ -6,7 +6,7 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 Volunteering is easy, even if you don't know much about the project.  I mostly need help in the [http://code.google.com/p/adblockforchrome/issues/list Issue Tracker].  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.
 
-To get started, try reading the instructions for "Clarify an issue".  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!
+To get started, try reading the instructions for "Clarify an issue".  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
 
 || <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
 || *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has%3Aowner+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
