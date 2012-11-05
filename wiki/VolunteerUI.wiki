@@ -372,7 +372,7 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then grab an Issue from [#Ways_to_help Ways To Help] and have fun!
+If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then pick a task from [#Ways_to_help Ways To Help] and have fun!
 
 === Volunteers, Contributors, and Committers ===
 
