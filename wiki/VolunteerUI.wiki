@@ -279,7 +279,7 @@ Let's look at each of those in detail.
 You might *close the Issue*:
 
  * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least searching the older reports.
- * Set `Status:WaitingOnChrome` (or `Safari` or `Opera`) if the report is due to a known limitation in the browser, e.g. an open bug ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]) or lack of support ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]).
+ * Set `Status:WaitingOnChrome` (or `Safari` or `Opera`) if the report is due to a known limitation in the browser, e.g. an open bug ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]) or lack of support ([http://code.google.com/p/adblockforchrome/issues/detail?id=7193 example]).
  * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5295 example]).  This requires understanding the limits of what !AdBlock can and can not do.
  * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
  * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
