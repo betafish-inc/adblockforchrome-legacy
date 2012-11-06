@@ -409,15 +409,13 @@ Anyone can work anywhere in the code; no one officially owns any area.  We use t
 Owned issues are listed last in some of the [# "Ways to help" lists], since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
 
 Times when being Owner is a good idea:
- * You're about to start a complex debugging session.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
- * You're about to write code.  You set yourself Owner so others don't waste their effort, and to be notified of any negative reviews after you set `Status:NeedsReview`.
- * You want to work on an Issue whose Owner hasn't updated it for weeks.  You shouldn't de-Own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
+ * You're about to start a *complex debugging session*.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
+ * You're about to *write code*.  You set yourself Owner so others don't waste their effort, and to be notified of any negative reviews after you set `Status:NeedsReview`.
+ * You want to work on an Issue whose Owner *hasn't updated it for weeks*.  You shouldn't de-Own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
 
 Times when you don't need to be Owner:
  * You're doing *something quick* like reproducing a bug or clarifying an Issue.  It doesn't hurt if someone else does this too.
- * You're Owner of an Issue that you decide not to work on any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
-
-<br><br><br><br><br><br>
+ * You're Owner of an Issue that *you decide not to work on* any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
 
 === Volunteers, Contributors, and Committers ===
 
@@ -426,6 +424,8 @@ All you need in order to *volunteer* is a Google account, so that you can create
 As a new volunteer, you can't do more powerful things like changing an Issue's status, labels, or summary; you need *Contributor* status for that.  But it's easy to become a Contributor: if you've worked on, say, more than a dozen issues over more than a week, just ask for Contributor status on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list].  We'll grant it after we check that you've been updating Issues correctly.
 
 Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list].
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 = Overview =
 
