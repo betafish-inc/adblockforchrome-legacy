@@ -28,7 +28,7 @@ You could also *[#How_to_Answer_questions_on_the_mailing_list answer common ques
 
 = Other helpful views =
 
-All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=is:starred&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary starred by you], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#Definition_of_Owner own] and [#When_should_I_de-own_an_Issue? de-own] an Issue.)
+All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=is:starred&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary starred by you], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#Definition_of_Owner own and de-own] an Issue.)
 
 All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
 
@@ -404,17 +404,18 @@ If you wanted to politely ask the user whether they had seen the link to the FAQ
 
 === Definition of Owner ===
 
-Anyone can work anywhere in the code.  Setting yourself to Owner of an Issue just means:
+Anyone can work anywhere in the code; no one officially owns any area.  We use the Owner field to mean "I'm working on this, so if you do too, we will be duplicating effort."  Note that anyone is still *allowed* to work on an Issue if they want to, regardless of who is Owner.
 
- * You plan to debug or write code against the Issue in the next few days; or your code got a negative code review and is waiting for your attention.  (So you should rarely be Owner of more than one or two Issues that aren't [#Definition_of_Status Status:Started].)
- * You might de-own it if you decide not to work on it after all.
- * Others can still work on the Issue, but they're probably duplicating your work.  A better idea is for them to offer help, so you can work together.
+Owned issues are listed last in some of the [# "Ways to help" lists], since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
 
-=== When should I de-own an Issue? ===
+Times when being Owner is a good idea:
+ * You're about to start a complex debugging session.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
+ * You're about to write code.  You set yourself Owner so others don't waste their effort, and to be notified of any negative reviews after you set `Status:NeedsReview`.
+ * You want to work on an Issue whose Owner hasn't updated it for weeks.  You shouldn't de-Own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
 
-You own issues to tell others that you will address this issue very soon, so that they avoid duplicating your work.  If you don't work on an issue for a week or so, de-own it until you're ready to work on it.
-
-When you de-own an issue, you could leave a comment summarizing what progress you've made, for the benefit of whomever picks up where you left off.
+Times when you don't need to be Owner:
+ * You're doing *something quick* like reproducing a bug or clarifying an Issue.  It doesn't hurt if someone else does this too.
+ * You're Owner of an Issue that you decide not to work on any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
 
 <br><br><br><br><br><br>
 
