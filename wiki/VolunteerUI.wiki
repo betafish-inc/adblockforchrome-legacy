@@ -32,6 +32,8 @@ All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=i
 
 All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
 
+All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&sort=-closed&colspec=ID+Type+Opened+Closed+Modified+Status+Summary+MergedInto closed issues] with most recently closed first.
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 =Instructions=
