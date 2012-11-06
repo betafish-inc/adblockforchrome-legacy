@@ -1,4 +1,5 @@
 #summary Resources for volunteers
+#labels Restrict-AddWikiComment-Contributor
 
 Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*.
 
