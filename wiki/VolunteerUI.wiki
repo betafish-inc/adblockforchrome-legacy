@@ -4,9 +4,9 @@ Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview R
 
 = Ways to help =
 
-Volunteering is easy, even if you don't know much about the project.  I mostly need help handling issue reports from users.  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.
+Volunteering is easy, even if you don't know much about the project.  I mostly need help handling issue reports from users.  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.  Try *reading the instructions for "Clarify an issue"* to get started.
 
-To get started, try reading the instructions for "Clarify an issue".  If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
+If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
 
 _*Important note:* instructions will often suggest changing an Issue's "status" or "labels".  You can't do this until you become a [#Volunteers,_Contributors,_and_Committers Contributor].  So if you're a new volunteer, either *skip* those instructions, or *leave a comment* on the Issue suggesting how a Contributor could make the change._
 
