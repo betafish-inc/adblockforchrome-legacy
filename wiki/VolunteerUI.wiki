@@ -425,7 +425,7 @@ As a new volunteer, you can't do more powerful things like changing an Issue's s
 
 Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list].
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 = Overview =
 
