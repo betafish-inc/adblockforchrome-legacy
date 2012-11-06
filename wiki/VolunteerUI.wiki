@@ -20,7 +20,7 @@ _*Important note:* instructions will often suggest changing an Issue's "status" 
 || Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [#How_to_Do_a_code_review instructions] || [#After_you_Do_a_code_review instructions] ||
 || <h3>[#Volunteers,_Contributors,_and_Committers Contributors] can also:</h3> ||
 || *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20-has:owner%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Triage_an_issue instructions] || [#After_you_Triage_an_issue instructions] ||
-|| Judge an *Urgent issue* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3AUrgent&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_an_Urgent_issue instructions] || [#After_you_Judge_an_Urgent_issue instructions] ||
+|| Judge a *PotentiallyCritical* issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_a_PotentiallyCritical_issue instructions] || [#After_you_Judge_a_PotentiallyCritical_issue instructions] ||
 || Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 
 You could also *[#How_to_Answer_questions_on_the_mailing_list answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.
@@ -268,52 +268,65 @@ If you are confident that the code needs work before shipping, set `Status:Start
 
 _You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to triage issues._
 
-Triage is the process of reviewing newly-filed Issues and figuring out what to do with them.  New Issues are always coming in.  Without triage, the issue tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.
+New Issues are always being filed, and they start out in the "Triage an issue" list.  Triage is the process of moving them out of that list into another list, one step closer to being closed.
 
-Triage is therefore one of the most *important and useful things that you can do* as a volunteer.  Unfortunately, it takes a little more knowledge of the project to triage effectively than to [#How_to_Clarify_an_issue clarify an issue] or [#How_to_Reproduce_a_bug reproduce a bug].  So if you're new to the project, you might want to start with clarifying/reproducing for while to get familiar with the project.
+Without triage, the issue tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.  Triage is therefore one of the most *important and useful things that you can do* as a volunteer, but fewer people can do it, because it takes more knowledge of the project than most other tasks.  It is also the most complex task, since you're making a judgment call on how to proceed with the Issue, then doing whatever may be necessary to start the process.
 
-Here are the things you can do to a new (`Status:New`) issue:
+At a high level, when you triage an Issue you *close it* as `Status:Duplicate/Invalid/WontFix`, or you get it to *`Status:Accepted`*, or you label it *`MoreInfoNeeded`*.  You also give it *accurate labels*.  It hasn't been triaged until you've changed its status or set `MoreInfoNeeded`.
 
- * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least reviewing the last few weeks' reports and searching the older reports.
+Let's look at each of those in detail.
+
+You might *close the Issue*:
+
+ * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least searching the older reports.
  * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5118 example]).  This requires understanding the limits of what !AdBlock can and can not do.
- * Set `Status:Invalid` if the report is not in fact an !AdBlock issue, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
- * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.  (!AdBlock is a [#Overview benevolent dictatorship] and Michael will review all `WontFix`s, so if you're *almost* positive, you could set `WontFix` and let Michael un-set it if he disagrees.)
- * Set `Priority-Critical` if *this is a critical issue* ([#What_is_a_critical_issue? definition]).
- * Unset the `Urgent` label if it was applied incorrectly.  See [#How_to_Judge_an_Urgent_issue How to Judge an Urgent issue].
+ * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
+ * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
+ * If you aren't sure you should set `Status:WontFix`: set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (!AdBlock is a [#Overview benevolent dictatorship] and Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees.)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
+
+If you don't close the issue, then next you should *[#How_to_Clarify_an_issue clarify it]*, and if it's a bug report *[#How_to_Reproduce_a_bug reproduce the bug]*.
+
+In doing so you will have set accurate labels like `Browser-` and `OpSys-`, and either set `MoreInfoNeeded` or `Status:Accepted`.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the Triage list for someone else to reproduce or to close.)
+
+Finally, label it `Priority-Critical` if *it is [#What_is_a_critical_issue? critical]*.  If the reporter marked it !PotentiallyCritical, *[#How_to_Judge_a_PotentiallyCritical_issue judge it]*.
 
 === After you Triage an issue ===
 
-If you haven't closed the Issue, it will remain sitting in the Triage list until it's moved to `Status:Accepted`.  So you could try to move it in that direction by [#How_to_Clarify_an_issue clarifying the Issue] or [#How_to_Reproduce_a_bug reproducing the bug], saving others from doing redundant triage.
+Congratulate yourself for moving this Issue along toward completion, and see if there are any others to triage :)
 
 <hr>
 
-=== How to Judge an Urgent issue ===
+=== How to Judge a `PotentiallyCritical` issue ===
 
-_You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to judge Urgent issues._
+_You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to judge `PotentiallyCritical` issues._
 
-Issue reporters have the option to [http://code.google.com/p/adblockforchrome/issues/entry?template=URGENT%20Defect label their bug report Urgent].  In addition to showing up in the [#Ways_to_help "Judge an Urgent issue" list], these Issues are emailed to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Urgent` label.
+If a Contributor thinks that an Issue is critical according to [#What_is_a_critical_issue? this definition], then they label it `Priority-Critical` and scary alarm emails get sent out to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Priority-Critical` label.  That way, we can fix the issue as quickly as possible.
 
-We tell issue reporters to only do this if they think the Issue is [#What_is_a_critical_issue? critical], in which case we'll send out emergency alarm emails.  To discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if they are wrong.
+A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a Contributor to notice the Issue.
 
-If you think that an `Urgent`-labeled Issue is in fact [#What_is_a_critical_issue? critical], *label it `Priority-Critical`*.  Michael's personal email address is subscribed to that label so that he'll be notified even on a day off -- and anyone else willing to lend a hand with critical issues can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe] to the `Priority-Critical` label.
+To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, `PotentiallyCritical` issues also show up in the [#Ways_to_help "Judge a PotentiallyCritical issue" list].
 
-If you think that an `Urgent`-labeled Issue is not critical, just *unlabel it `Urgent`* and leave an explanatory comment like `This is not urgent because, even though there's a visible effect on a popular website, the website can still be used.` or `This is not urgent because the broken website is not used by millions of people.`
+Users could abuse this ability, thinking they'll get faster treatment of their pet non-critical problem by labeling it `PotentiallyCritical`.  So to discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if we don't agree that the Issue is critical.
 
-=== After you Judge an Urgent issue ===
+If you think that a `PotentiallyCritical`-labeled Issue is in fact [#What_is_a_critical_issue? critical], *label it `Priority-Critical`*.  Michael's personal email address is subscribed to that label so that he'll be notified even on a day off -- and anyone else willing to lend a hand with critical issues can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label.
+
+If you think that a `PotentiallyCritical`-labeled Issue is not critical, just *unlabel it* and leave an explanatory comment like `This is not critical because, even though there's a visible effect on a popular website, the website can still be used.` or `This is not critical because the broken website is not used by millions of people.`
+
+=== After you Judge a `PotentiallyCritical` issue ===
 
 You are probably the first person who has noticed this Issue.  If it's now `Priority-Critical`, it would be great for you to [#How_to_Reproduce_a_bug reproduce] and [#How_to_Clarify_an_issue clarify] the bug, and even to start [#How_to_Find_the_root_cause_of_a_defect debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
 
-If the issue is serious but not critical, it will get addressed once it reaches the top of the [#Ways_to_help "Triage an issue" list].
+If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [#Ways_to_help "Triage an issue" list].  We won't penalize the reporter if it seems that they were acting in good faith.
 
-If the issue is clearly not critical -- the reporter was abusing the `Urgent` label to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
+If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
 
 === What is a critical issue? ===
 
-An issue is critical and should be labeled `Priority-Critical` (thus sending scary alert emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and:
+An issue is critical and should be labeled `Priority-Critical` (thus sending scary alert emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and at least one of the following is true:
  * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
  * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
  * major visible *!AdBlock UI is broken* (e.g. the context menu is gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
- * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example]
+ * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example])
  * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
  * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a *major* search engine, social network, news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
 
