@@ -54,7 +54,7 @@ If you asked a question, you should *set the `MoreInfoNeeded` label*.  (Remember
 
 If you feel that a *bug report* is clear enough to reproduce, then the next thing to do is [#How_to_Reproduce_a_bug reproduce it] :)
 
-If you feel that a *feature request* is clear enough to proceed, then *set `Status:Accepted`*.  Now it will show up in the [#Ways_to_help "Write code to implement a feature" list].
+If you feel that a *feature request* is clear enough to proceed, then *set `Status:Accepted`*.  Now it will show up in the [# "Write code to implement a feature" list].
 
 If you realize the Issue is not a valid bug report or feature request (e.g. it's a [#Definition_of_Status Duplicate], or an [#Definition_of_Type Ad Report], or blank), then you could [#How_to:_Triage_an_issue triage the Issue].
 
@@ -306,7 +306,7 @@ If a Contributor thinks that an Issue is critical according to [#What_is_a_criti
 
 A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a Contributor to notice the Issue.
 
-To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, `PotentiallyCritical` issues also show up in the [#Ways_to_help "Judge a PotentiallyCritical issue" list].
+To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, `PotentiallyCritical` issues also show up in the [# "Judge a PotentiallyCritical issue" list].
 
 Users could abuse this ability, thinking they'll get faster treatment of their pet non-critical problem by labeling it `PotentiallyCritical`.  So to discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if we don't agree that the Issue is critical.
 
@@ -318,7 +318,7 @@ If you think that a `PotentiallyCritical`-labeled Issue is not critical, just *u
 
 You are probably the first person who has noticed this Issue.  If it's now `Priority-Critical`, it would be great for you to [#How_to_Reproduce_a_bug reproduce] and [#How_to_Clarify_an_issue clarify] the bug, and even to start [#How_to_Find_the_root_cause_of_a_defect debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
 
-If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [#Ways_to_help "Triage an issue" list].  We won't penalize the reporter if it seems that they were acting in good faith.
+If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [# "Triage an issue" list].  We won't penalize the reporter if it seems that they were acting in good faith.
 
 If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
 
@@ -338,9 +338,9 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
 
 _You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to update `MoreInfoNeeded` issues._
 
-An Issue is labeled `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  `MoreInfoNeeded` issues are not shown in most of the [#Ways_to_help "Ways to help" lists], since we can't really take action on them without that information.  So removing the label promptly when the user replies is important.
+An Issue is labeled `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  `MoreInfoNeeded` issues are not shown in most of the [# "Ways to help" lists], since we can't really take action on them without that information.  So removing the label promptly when the user replies is important.
 
-Unfortunately, when the user replies, the `MoreInfoNeeded` label isn't auto-removed, so you should *remove it when a reply comes in*.  The list in [#Ways_to_help "Ways to help"] shows the most recently modified `MoreInfoNeeded` issues first, as those are the ones that will probably have a reply.
+Unfortunately, when the user replies, the `MoreInfoNeeded` label isn't auto-removed, so you should *remove it when a reply comes in*.  The list in [# "Ways to help"] shows the most recently modified `MoreInfoNeeded` issues first, as those are the ones that will probably have a reply.
 
 If the user replied but didn't provide the needed information, re-ask the question in a clearer way and don't remove the label.
 
@@ -435,6 +435,6 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then pick a task from [#Ways_to_help Ways To Help] and have fun!
+If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then pick a task from [# Ways To Help] and have fun!
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
