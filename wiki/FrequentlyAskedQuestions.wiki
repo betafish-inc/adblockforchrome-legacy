@@ -70,9 +70,11 @@ You'll get the fix automatically a few days after your report is processed.
 
 Chrome: Right click the !AdBlock toolbar button and choose "Remove from Chrome".
 
-Safari: Safari menu -> Preferences -> Extensions -> !AdBlock Uninstall.
+Safari: click the Safari menu -> Preferences -> Extensions -> !AdBlock Uninstall.
 
-Opera: Opera menu -> Extensions -> Manage Extensions -> Uninstall.
+Opera: click the Opera menu -> Extensions -> Manage Extensions -> Uninstall.
+
+Uninstalling !AdBlock completely removes it from your browser, as if it had never been installed, and leaves no trace of itself on your system.
 
 == How do I remove or add the !AdBlock toolbar button in Safari? ==
 
