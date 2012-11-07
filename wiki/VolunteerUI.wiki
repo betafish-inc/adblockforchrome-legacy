@@ -115,6 +115,8 @@ At the end of the report it should list which filter lists and custom filters th
 
 After you've set `MoreInfoNeeded` or `Status:ReportToList`, you're done.  If you set `Type-Defect`, you could then move on to [#How_to_Find_the_root_cause_of_a_defect figuring out the cause of the bug].
 
+_If you enjoy processing ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` label to be emailed when a new ad report comes in._
+
 <hr>
 
 === How to Find the root cause of a defect ===
@@ -298,6 +300,8 @@ Finally, label it `Priority-Critical` if *it is [#What_is_a_critical_issue? crit
 
 Congratulate yourself for moving this Issue along toward completion, and see if there are any others to triage :)
 
+_If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` and `Type-Enhancement` labels to be notified when new Issues are filed.  You'll get emailed all the updates too, that way, so you'll probably want to filter out the followup emails using email filters._
+
 <hr>
 
 === How to Judge a `PotentiallyCritical` issue ===
@@ -358,6 +362,8 @@ new Issue and mention this Issue's number.
 === After you Update a `MoreInfoNeeded` ===
 
 Now that there is more information, you could check whether the issue [#How_to_Clarify_an_issue is now clear] and can proceed toward being fixed.
+
+_If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
 
 <hr>
 
