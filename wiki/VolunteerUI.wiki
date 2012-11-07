@@ -350,8 +350,7 @@ If the user replies to say that the bug no longer appears, set `Status:Fixed`.
 
 If the user has not replied in 14 days, set `Status:Invalid` with the comment
 <pre>
-Over 14 days ago we requested some additional information, but we didn't get any.  If
-you still have this problem, feel free to open a new Issue and mention this Issue's number.
+Over 14 days ago we requested some additional information, but we didn't get any.  If you still have this problem, feel free to open a new Issue and mention this Issue's number.
 </pre>
 
 === After you Update a `MoreInfoNeeded` ===
