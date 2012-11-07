@@ -203,19 +203,26 @@ PatternFilter._parseRuleOptions = function(text) {
 // inputs the two rule objects returned by createOperaRule
 // returns the options for the best rule
 PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
+  var cleanup = function(options) {
+    if (options.thirdParty === null) {delete options.thirdParty;}
+    if (options.includeDomains.length === 0) {delete options.includeDomains;}
+    if (options.excludeDomains.length === 0) {delete options.excludeDomains;}
+    return options;
+  };
   var rule2Options = PatternFilter.ruleBuilderCache[rule];
   var newRuleOptions = {};
   if (!rule2Options) {
-    PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+    PatternFilter.ruleBuilderCache[rule] = cleanup(ruleOptions);
     return;
   }
+  rule2Options.thirdParty = rule2Options.thirdParty || null;
+  rule2Options.excludeDomains = rule2Options.excludeDomains || [];
+  rule2Options.includeDomains = rule2Options.includeDomains || [];
 
   var thirdPartyDiffers = (ruleOptions.thirdParty !== rule2Options.thirdParty);
   var resourcesDiffer = (ruleOptions.resources !== rule2Options.resources);
   var domainsDiffer = false, i;
-  if (((ruleOptions.includeDomains === rule2Options.includeDomains) ||
-      (ruleOptions.includeDomains && rule2Options.includeDomains &&
-      ruleOptions.includeDomains.length === rule2Options.includeDomains.length)) &&
+  if (ruleOptions.includeDomains.length === rule2Options.includeDomains.length &&
       ruleOptions.excludeDomains.length === rule2Options.excludeDomains.length) {
     for (i=0; i<ruleOptions.excludeDomains.length; i++) {
       if (rule2Options.excludeDomains.indexOf(ruleOptions.excludeDomains[i])===-1) {
@@ -223,7 +230,7 @@ PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
         break;
       }
     }
-    if (!domainsDiffer && ruleOptions.includeDomains) {
+    if (!domainsDiffer) {
       for (i=0; i<ruleOptions.includeDomains.length; i++) {
         if (rule2Options.includeDomains.indexOf(ruleOptions.includeDomains[i])===-1) {
           domainsDiffer = true;
@@ -245,17 +252,19 @@ PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
       // In cases like the one below, let the one without $domain win
       // ||ab.cd^$object-subrequest,domain=ef.gh
       // ||ab.cd^$~object-subrequest
-      if (rule2Options.includeDomains) {
-        PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+      if (rule2Options.includeDomains.length) {
+        PatternFilter.ruleBuilderCache[rule] = cleanup(ruleOptions);
       }
       return;
     }
   }
 
-  // combine included and excluded domains. Leave included undefined if any of
+  // combine included and excluded domains. Leave included empty if any of
   // the rules is (almost) global so it matches everywhere
-  if (ruleOptions.includeDomains && rule2Options.includeDomains) {
+  if (ruleOptions.includeDomains.length && rule2Options.includeDomains.length) {
     newRuleOptions.includeDomains = ruleOptions.includeDomains.concat(rule2Options.includeDomains);
+  } else {
+    newRuleOptions.includeDomains = [];
   }
   newRuleOptions.excludeDomains = ruleOptions.excludeDomains.concat(rule2Options.excludeDomains);
 
@@ -275,12 +284,12 @@ PatternFilter.scheduleRule = function(rule, ruleOptions, isWhitelist) {
     if (ruleOptions.thirdParty) {
       // In case we have both third and first party specific rules, use the
       // third party one. It's more likely to match on multiple sites...
-      PatternFilter.ruleBuilderCache[rule] = ruleOptions;
+      PatternFilter.ruleBuilderCache[rule] = cleanup(ruleOptions);
     }
     return;
   }
 
-  PatternFilter.ruleBuilderCache[rule] = newRuleOptions;
+  PatternFilter.ruleBuilderCache[rule] = cleanup(newRuleOptions);
 };
 
 // stores {'*/ads/*': {thirdParty: true, excludeDomains: []}}
@@ -323,11 +332,9 @@ PatternFilter.createOperaRule = function(line, isWhitelist) {
     var ruleOptions = {
       resources: elementTypes,
       thirdParty: (parsedOptions.options & FilterOptions.THIRDPARTY ? true : (parsedOptions.options & FilterOptions.FIRSTPARTY ? false : null)),
-      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
+      excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : [],
+      includeDomains: parsedDomains.applied_on.length ? parsedDomains.applied_on : []
     };
-    if (parsedDomains.applied_on.length) {
-      ruleOptions.includeDomains = parsedDomains.applied_on;
-    }
 
     PatternFilter.scheduleRule(rule, ruleOptions, isWhitelist);
   }
@@ -340,9 +347,7 @@ PatternFilter.createOperaRule = function(line, isWhitelist) {
       excludeDomains: parsedDomains.not_applied_on.length ? parsedDomains.not_applied_on : []
     };
     if (rule === MATCHEVERYTHING) {
-      if (parsedDomains.applied_on.length) {
-        ruleOptions.includeDomains = parsedDomains.applied_on;
-      }
+      ruleOptions.includeDomains = parsedDomains.applied_on || [];
     } else if (/^\|\|[^\/\^\:\@\*\|]+(?:\^|\/)\*$/.test(rule)) {
       var match = rule.match(/^\|\|([^\/\^\:\@\*\|]+)(?:\^|\/)\*$/)[1];
       if (parsedDomains.applied_on.length === 0) {
