@@ -239,7 +239,7 @@ If you plan to debug more than one Issue, you should [#Joining_the_project becom
 
 === Writing patches ===
 
-First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix` (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
+First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been reviewed and the consensus is to proceed, Michael might overrule and set `Status:WontFix` (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
 
 Second, be sure to read and *conform to the [#Coding_style coding style guide]*, or you'll just have to fix your code after it gets reviewed.
 
@@ -474,7 +474,7 @@ Any Contributor can review code.  Even if you don't understand that area of !AdB
 To review code that is in a branch:
  # Look through the Issue's comments for each revision checkin.  If the author did things correctly, every revision should have resulted in a comment.
  # Click each revision and then click 'Expand all' to see the code changes in that revision.  Or, check out a local copy of trunk and do something like `svn merge --reintegrate https://adblockforchrome.googlecode.com/svn/branches/issue-5740 && svn diff` in order to view the combined effect of all the revisions.
- # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
+ # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#Debugging_issues "Debugging issues".])
  # If the change includes unit tests, open tools/tests/test.html in your browser to run them.
  # Check that the code adheres to the [#Coding_style style guide].
  # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
