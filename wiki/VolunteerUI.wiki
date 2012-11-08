@@ -6,9 +6,9 @@
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
-Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [#TODO become an official Contributor] (don't worry, it's really easy) you can do even more!
+Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [#Joining_the_project become an official Contributor] (don't worry, it's really easy) you can do even more!
 
-Just *click something interesting* below to get started.  Everything has really clear instructions.  But if you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
+Just *click something interesting* below to get started.  And if you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
 
 <hr>
 
@@ -17,7 +17,7 @@ Just *click something interesting* below to get started.  Everything has really 
 Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
  * You could make sure [#Filling_in_missing_information no information is missing] in Issue reports.  We can't fix a problem until we understand it.
- * You could [#Reproducing_bugs try to reproduce a reported bug].  If we can't reproduce a bug, we can't fix it.
+ * You could try to [#Reproducing_bugs reproduce a reported bug].  If we can't reproduce a bug, we can't fix it.
  * You could [#Handling_ad_reports investigate a reported ad], so we know how best to get rid of it.
 
 If you are a programmer,
@@ -31,8 +31,12 @@ Also,
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
  * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
-There's [#TODO a lot more] you can do once you [#TODO become an official Contributor], so please do!
+There's [#TODO a lot more] you can do once you [#Joining_the_project become an official Contributor], so please do so!
 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 = Instructions =
 
@@ -51,9 +55,9 @@ That's where you come in.  Pick an Issue from [http://code.google.com/p/adblockf
  * If the report doesn't seem to be a bug report or a feature request, just ignore it.  A project Contributor will handle it.
  * If the report is complete, just ignore it.  A project Contributor will handle it.
 
-If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all Issues that may have missing information].  The ones that have been waiting longest for attention are listed first.
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all the Issues that may be missing information].  The ones that have been waiting longest for attention are listed first.
 
 [#top Back]
 
@@ -103,23 +107,23 @@ problem you'll automatically be updated with the fix.</pre>
 
 <h4>All other cases</h4>
 
- * If the Issue doesn't seem to be a bug report, just ignore it.  A project Contributor will handle it.
+ * If the Issue doesn't seem to be a bug report, just ignore it.  A project member will handle it.
  * If the repro is not clear enough to follow, *[#Filling_in_missing_information ask for a better repro]*.  Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
  * If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
-   * Example of success: "Confirmed with AdBlock 2.5.40 in Chrome 22 on Windows 7."
-   * Example of failure: "Could not reproduce in Chrome 22/Win7/AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
+   * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
+   * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
 
-If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all non-reproduced bug reports].  The ones that have been waiting longest for attention are listed first.
 
-[# Back]
+[#top Back]
 
 <hr>
 
 === Handling ad reports ===
 
-!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, then click the toolbar button -> Report an ad.  You can do it on any page, including this one, even if there is no ad.  Run through it a few times to see what it does.
+!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, then click the toolbar button -> Report an ad.  You can do it on any page, including this ad-free page.  Run through it a few times to see what it does.
 
 When a user sees an ad, they can the reporting wizard.  Most ads just need to be added to "filter lists", list of ads blocking rules read by !AdBlock and maintained by third parties.  The wizard usually tells the user to report the ad to the appropriate filter list maintainer.
 
@@ -130,8 +134,7 @@ But if the wizard thinks that an appropriate filter already exists, and so the a
 3. Any other information that would be helpful?</pre>
 and the wizard also attaches some information about the user's system.  We then investigate the report to see how we should proceed.
 
-That's where you come in.  Pick an ad report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary
-this list] and follow the steps below to handle it.
+That's where you come in.  Pick an ad report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the steps below to handle it.
 
 <h4>Step 1: Handle invalid reports</h4>
 
@@ -143,13 +146,13 @@ If the report is missing information that you need, *add a comment* requesting m
 
 OK, the report seems complete.  Make your copy of !AdBlock have the *same filter lists* as listed in the report.  You can do this on the !AdBlock Options page.  Then reload the page with the ad.
 
-If you don't see the ad, *add a comment* like "I do not see the ad using !AdBlock 2.5.47 in Chrome 22 on Windows7, with the same filter lists as you.  If you Update Filters under AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?" and stop there.
+If you don't see the ad, *add a comment* like "I do not see the ad using !AdBlock 2.5.47 in Chrome 22 on Windows7, with the same filter lists as you.  If you Update Filters under !AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?" and stop there.
 
 <h4>Step 3: Is there a missing filter?</h4>
 
 OK, you see the ad.  Now verify that you don't see it in Firefox with [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] installed, setting ABP's filter lists to match the report's as closely as possible.  (You shouldn't use the !AdBlock Custom filter list in ABP.)
 
-If ABP also shows the ad, then this ad report should have never been filed; the user probably lied to the ad reporting wizard about checking in Firefox.  *Add a comment* like
+If ABP also shows the ad, then this ad report should have never been filed.  The user probably lied to the ad reporting wizard and said they had checked in Firefox.  *Add a comment* like
 <pre>
 This is due to a missing filter in [the report's main filter list for the
 webpage's language], a filter list which AdBlock does not control.  You
@@ -157,18 +160,18 @@ can report this to them using the contact info on ListAuthorContacts.</pre>
 
 But if ABP does not show this ad, then this is a bug in !AdBlock ([http://code.google.com/p/adblockforchrome/issues/detail?id=4552 example]).  *Add a comment* like
 <pre>
-I can see the ad (a text ad at the bottom of the page) in !AdBlock 2.5.40 in
+I can see the ad (a text ad at the bottom of the page) in AdBlock 2.5.40 in
 Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.</pre>
 
 <h4>That's it!</h4>
 
-If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
 
 _If you enjoy processing ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
 
-[# Back]
+[#top Back]
 
 <hr>
 
@@ -228,13 +231,13 @@ but Wikipedia doesn't load any resources from msn.com, according to the Develope
 Resources tab.
 </pre>
 
-<h4>The issues</h4>
+<h4>The Issues</h4>
 
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the Issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
 
-If you plan to debug Issues more than just once, you should [#TODO become an official Contributor].  Then you'll be able to help in more powerful ways which aren't mentioned here.
+If you plan to debug more than one Issue, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help in more powerful ways which aren't mentioned here.
 
-[# Back]
+[#top Back]
 
 <hr>
 
@@ -246,23 +249,24 @@ Second, be sure to read and *conform to the [#TODO coding style guide]*, or you'
 
 If the design of the solution isn't obvious, you could start a thread in the [http://groups.google.com/group/adblockforchrome-dev developer forum] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
 
-Here's the process for submitting a patch to address an issue.  (Note that official project Committers commit code directly; if you plan to write code against more than one Issue, you should [#TODO become an official Committer].
+Here's the process for submitting a patch to address an issue.
 
- # Using svn on Linux or !TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
- # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
+ # Using svn on Linux or TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_Issues "Debugging Issues"]).
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
- # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions].
- # Add a comment on the Issue thoroughly explaining what was changed and what was fixed and how to test it.  Add the patchfile as an attachment.
+ # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions])
+ # Add a comment to the Issue thoroughly explaining what was changed and what was fixed and how to test it.  Add the patchfile as an attachment.
+ # Star the Issue so you are emailed updates.
 
 Someone will review your patch.  If there are problems, the Issue will be set to `Status:Started` by a reviewer.  In that case, look for feedback in comments on the Issue, argue with the reviewer(s), make changes, and attach a new patch when you're done.
 
 <h4>The issues</h4>
 
-Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  Bug reports that have been debugged already are listed first; otherwise, the Issues that have been waiting longest for attention are listed first.
+Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  Bug reports that have been debugged already are listed first; otherwise, Issues that have been waiting longest for attention are listed first.
 
-If you plan to write more than one patch, you should [#TODO become an official Committer].  Committers use a different process for submitting code, making code review and collaboration easier; and can help in other more powerful ways which aren't mentioned here.
+After a few of your patches have been accepted, you should [#Joining_the_project become an official Contributor] and ask for Commit permission, so that you can commit code directly to the source tree instead.  This makes writing, reviewing, and collaborating on code easier.
 
-[# Back]
+[#top Back]
 
 <hr>
 
@@ -279,14 +283,42 @@ for the answer.
 
 If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the help forum elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
 
-Some useful shortcuts when composing your message: `getadblock.com/support getadblock.com/faq getadblock.com/bugs getadblock.com/faq/textenhance getadblock.com/faq/hunting`.  `getadblock.com` itself will direct the user to the appropriate install page for their browser.
+Some useful shortcuts when composing your message: `getadblock.com/support getadblock.com/bugs getadblock.com/faq getadblock.com/faq/uninstall getadblock.com/faq/textenhance getadblock.com/faq/hunting`.  `getadblock.com` itself will direct the user to the appropriate install page for their browser.
 
 *Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
 
 <hr>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+= Overview =
 
+Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
+
+ # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
+ # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
+ # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
+ # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
+
+If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [# Ways To Help] and have fun!
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+= Joining the project =
+
+As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+
+In addition to comments, Issues have a *Status* (things like newly filed, duplicate, fixed), a *Summary* (like "!AdBlock is breaking GMail"), and *Labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a critical bug".)  More advanced ways to help involve making changes to an Issue's Status, Summary, or Labels.
+
+To be able to do so, you must join the project as an official *Contributor*.  This is encouraged and is basically automatic: once you've worked on, say, more than a dozen issues over more than a week, just request Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll give it to you after we check that you've been updating Issues correctly.
+
+Once you're a Contributor, bookmark [#ContributorUI this page] and work from there instead.  It gives you extra instructions about how and when to update Issue Status, Labels, and Summaries.
 
 
 
@@ -397,7 +429,7 @@ Once you have all the information you need in an ad report, you can check whethe
 
 At the end of the report it should list which filter lists and custom filters the reporter has.  Make your copy of !AdBlock have *the same filter lists and custom filters* under !AdBlock Options.  Then reload the page with the ad.
 
-1. If you *can not see the ad*, leave a comment like `I do not see the ad when subscribed to the same filter lists as you.  If you Update Filters under AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?` and set the `MoreInfoNeeded` label.
+1. If you *can not see the ad*, leave a comment like `I do not see the ad when subscribed to the same filter lists as you.  If you Update Filters under !AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?` and set the `MoreInfoNeeded` label.
 
 2. If you *can see the ad*, verify that you don't see it in Firefox with [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] installed, setting ABP's filter lists and custom filters to match the report's as closely as possible.  (You shouldn't use the !AdBlock Custom filter list in ABP.)
 
@@ -727,18 +759,3 @@ As a new volunteer, you can't do more powerful things like changing an Issue's s
 Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-= Overview =
-
-Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
-
- # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
- # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
- # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
- # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
- # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
- # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
-
-If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [# Ways To Help] and have fun!
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
