@@ -1,0 +1,84 @@
+html {
+  height: 100%
+}
+body {
+  font-family: verdana, sans-serif;
+  width: 800px;
+  margin: auto;
+  background: #D7D7FF;
+}
+#header {
+  display: none; /* shown after loading completes */
+  margin: 50px 0;
+  background: url('../../img/icon48.png') no-repeat;
+  padding-top: 5px;
+  padding-left: 55px;
+  z-index: 10;
+}
+h1 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+h2 {
+  margin-top: 0px;
+}
+.card {
+  position: absolute; /* so it can slide */
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: none; /* we show each one as it arrives */
+}
+.nav {
+  float: right;
+  clear:both;
+  margin: 5px auto;
+}
+.nav a {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 5px 10px;
+  float:left;
+  margin-left: 45px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Georgia;
+  color: #33D;
+}
+#loading-wrapper {
+  top: 50px; /* not in same place as other cards */
+  left: 170px;
+  position: relative;
+}
+#loading-wrapper #cleaner-warning {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#loading-wrapper #cleaner-warning a {
+  font-size: small;
+  color: #999;
+  font-style: italic;
+}
+#loading.card {
+  display: block; /* unlike other cards, this one is shown */
+  position: static;
+  width: 280px;
+}
+#loading.card progress {
+  width: 100%;
+}
+#start-chrome.card {
+  width: 600px;
+}
+#autoupdate-howto.card {
+  width: 700px;
+}
+#autoupdate-howto.card ol li {
+  margin-bottom: 1.5em;
+}
+#howto.card {
+  width: 500px;
+}
+#howto.card img {
+  vertical-align: bottom;
+}

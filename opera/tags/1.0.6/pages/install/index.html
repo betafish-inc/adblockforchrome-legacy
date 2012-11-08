@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title i18n="installedtitle"></title>
+    <link rel="stylesheet" href="../../options/options.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="../../jquery/jquery.min.js"></script>
+    <script src="../../includes/01 port.js"></script>
+    <script src="../../includes/02 functions.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1 i18n="now_you_have_adblock_hooray"></h1>
+      <span i18n="any_new_tabs_you_open_Will_be_automatically_ad_free"></span>
+    </div>
+
+    <div id="wrapper"> <!-- Cards slide within this guy. -->
+      <!-- 
+        For the curious: in tests, non-technical users are confused by
+        AdBlock installing instantaneously, and tend to ignore the
+        installation page if it flashes up the instant they install.
+        So we delay 3 seconds while they get their bearings.
+      -->
+      <div id="loading-wrapper">
+        <div class="section card" id="loading">
+          <i i18n="installing_adblock"></i>
+          <strong><i id="done" i18n="done" style="display:none"></i></strong>
+          <br/><br/>
+          <progress id="chrome-loading-progress" value="0" max="1">
+          </progress>
+        </div>
+        <div id="cleaner-warning">
+          <a href="#" i18n="seeing_this_every_time_you_start_your_browser"></a>
+        </div>
+      </div>
+
+      <div class="section card" id="howto">
+        <h2 i18n="how_to_use_adblock"></h2>
+        <p i18n="adblock_auto_removes_ads_thats_all"></p>
+        <p i18n="opera_for_more_options"></p>
+        <p>
+          <b style="font-size: larger;" i18n="thats_it"></b><br/>
+          <span i18n="close_tab_begin_browsing"></span><br/>
+          <span style="font-size: smaller;" i18n="opera_donations_install"></span>
+        </p>
+        <div class="notice" id="opera120" i18n="opera_120_install"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
