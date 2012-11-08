@@ -424,7 +424,7 @@ _If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrom
 
 <hr>
 
-=== Unlabeling `MoreInfoNeeded`s ===
+=== Unlabeling `MoreInfoNeeded`s (Contributors) ===
 
 We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
 
@@ -439,7 +439,7 @@ didn't get any.  If you still have this problem, feel free to open a
 new Issue and mention this Issue's number.
 </pre>
 
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most recently modified* ones are listed first, as they are the ones that probably have been replied to.
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most recently modified* ones are listed first, as they are the ones that probably have been replied to.  The ones listed last may be over 14 days old.
 
 _If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
 
@@ -453,7 +453,7 @@ If a Contributor thinks that an Issue is critical according to [#What_is_a_criti
 
 A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a Contributor to notice the Issue.
 
-To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, you can also check [the PotentiallyCriticals list].
+To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, you can also check [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary the PotentiallyCriticals list].
 
 Users could abuse this ability, thinking they'll get faster treatment of their pet non-critical problem by labeling it `PotentiallyCritical`.  So to discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if we don't agree that the Issue is critical.
 
@@ -462,13 +462,13 @@ If you think that a `PotentiallyCritical`-labeled Issue is in fact [#What_is_a_c
  # Since you are probably the first person who has noticed this Issue, it would be great for you to [#Reproducing_bugs_(Contributors) reproduce] and [#Filling_in_missing_information_(Contributors) clarify] the bug, and even to start [#Debugging_issues_(Contributors) debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
 
 If you think that a `PotentiallyCritical`-labeled Issue is not critical:
- # *Remove the `PotentialyCritical` label* and add an explanatory comment like `This is not critical because, even though there's a visible effect on a popular website, the website can still be used.` or `This is not critical because the broken website is not used by millions of people.`
- # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [# "Triage an issue" list].  We won't penalize the reporter if it seems that they were acting in good faith.
+ # *Remove the `PotentiallyCritical` label* and add an explanatory comment like "This is not critical because, even though there's a visible effect on a popular website, the website can still be used" or "This is not critical because the broken website is not used by millions of people".
+ # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [#Triaging_issues_(Contributors) triage list].  We won't penalize the reporter if it seems that they were acting in good faith.
  # If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary all PotentiallyCritical issues].
 
-_If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when a new `PotentiallyCritical` report comes in._
+_If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when new ones come in._
 
 _If you wouldn't mind helping firefight, you can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label to be emailed when truly critical bugs do appear.
 
