@@ -20,7 +20,7 @@ Users report ads and bugs all the time in the Issue Tracker.  It would be wonder
 
 If you are a programmer,
 
- * You could [#Debugging_Issues find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
+ * You could [#Debugging_issues find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
  * You could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
 
 Also,
@@ -173,7 +173,7 @@ _If you enjoy processing ad reports, you can [http://code.google.com/p/adblockfo
 
 <hr>
 
-=== Debugging Issues ===
+=== Debugging issues ===
 
 Once a bug has been [#Reproducing_bugs reproduced], we need to know the cause in order to fix it.  The person who finds the cause doesn't have to be the person who fixes the bug.  If you don't feel that you have the time or ability to write code, you can still save someone else time by figuring out where in the code the problem lies -- and I'm sure they would appreciate your effort!  This is also a great way to get to know !AdBlock's code better, to prepare you to submit your own patches.
 
@@ -250,7 +250,7 @@ If the design of the solution isn't obvious, you could start a thread in the [ht
 Here's the process for submitting a patch to address an issue.
 
  # Using svn on Linux or TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
- # Make your changes, testing them in the browser (see instructions in [#Debugging_Issues "Debugging Issues"]).
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions])
  # Add a comment to the Issue thoroughly explaining what was changed and what was fixed and how to test it.  Add the patchfile as an attachment.
@@ -326,13 +326,21 @@ Once you're a Contributor, bookmark [#ContributorUI this page] and work from the
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
-As a Contributor, you have the ability to edit an Issue's Status, Summary, and Labels.  You'll see where to do this as you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)  Be sure to read the list of [#Common_statuses_and_labels_(Contributor) statuses and labels] that we use, and what they mean.  You can set a status or label whenever it's appropriate, not just when following specific instructions below.
+As a Contributor, you have the ability to edit an Issue's Status, Summary, and Labels.  You'll see where to do this as you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)
+
+Be sure to read the list of [#Common_statuses_and_labels_(Contributor) statuses and labels] that we use, and what they mean.  You can set a status or label whenever it's appropriate, not just when following specific instructions below.
 
 Just *click something interesting* below to get started.  Many of these add on to the instructions given to all volunteers, and a few are Contributor-only.  If you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
 
 <hr>
 
 = Ways you can help =
+
+There are a few tasks that only Contributors can do, so doing these before others would be great.
+ * You could [#Triaging_issues_(Contributors) triage incoming Issues], doing whatever is needed to help move them forward.
+ * You could [#Unlabeling_MoreInfoNeededs_(Contributors) review MoreInfoNeeded issues].  If this doesn't happen, actionable Issues remain mostly hidden.
+ * You could [#Judging_PotentiallyCriticals_(Contributors) review PotentiallyCritical issues] in case anything scary is happening.
+ * If you can read code, you could [#Reviewing_code_(Contributors) do a code review] - the author of the code will appreciate it!
 
 Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
@@ -342,9 +350,8 @@ Users report ads and bugs all the time in the Issue Tracker.  It would be wonder
 
 If you are a programmer,
 
- * You could [#Debugging_Issues_(Contributors) find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
+ * You could [#Debugging_issues_(Contributors) find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
  * You could [#Writing_code_(Contributors) submit a patch] to implement a bugfix or feature.  This is of course a huge help.
- * You could [#Reviewing_code_(Contributors) do a code review] - the author of the code will appreciate it!
 
 Also,
 
@@ -384,6 +391,67 @@ Also,
 || `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
 || `MoreInfoNeeded` || We are waiting on a reply from a user ||
 
+
+=== Triaging issues (Contributors) ===
+
+New Issues are always being filed, and they start out as `Status:New` in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].  Triage is the process of moving them out of that list, one step closer to being closed.
+
+Without triage, the Issue Tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.  Triage is therefore one of the most *important and useful things that you can do* as a Contributor.  It takes more knowledge of the project than most other tasks, and is also the most complex task, since you're making a judgment call on how to proceed with the Issue, then doing whatever may be necessary to start the process.
+
+At a high level, when you triage an Issue you *close it* as `Status:Duplicate/Invalid/WontFix`, or you get it to *`Status:Accepted`*, or you label it *`MoreInfoNeeded`*.  You also give it *accurate labels*.  It hasn't been triaged until it's out of the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].
+
+Let's look at each of those in detail.
+
+You might *close the Issue*:
+
+ * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least searching the older reports.
+ * Set `Status:WaitingOnChrome` (or `Safari` or `Opera`) if the report is due to a known limitation in the browser, e.g. an open bug ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]) or lack of support ([http://code.google.com/p/adblockforchrome/issues/detail?id=7193 example]).
+ * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5295 example]).  This requires understanding the limits of what !AdBlock can and can not do.
+ * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
+ * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
+ * If you aren't sure you should set `Status:WontFix`: set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees; !AdBlock is a [#Overview benevolent dictatorship].)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
+
+If you don't close the issue, then next you should *[#Filling_in_missing_information_(Contributors) fill in any missing information]*, and if it's a bug report *[#Reproducing_bugs_(Contributors) reproduce the bug]*.
+
+In doing so you will have set accurate labels like `Browser-` and `OpSys-`, and either set `MoreInfoNeeded` or `Status:Accepted`.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the triage list for someone else to reproduce or to close.)
+
+Finally, label it `Priority-Critical` if *it is [#What_is_a_critical_issue? critical]*.  If the reporter marked it !PotentiallyCritical, *[#Judging_PotentiallyCriticals_(Contributors) judge it]*.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the untriaged Issues].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` and `Type-Enhancement` labels to be notified when a new report comes in.  You'll get emailed all the updates too, that way, so you'll probably want to filter out the followup emails using email filters._
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Unlabeling `MoreInfoNeeded`s ===
+
+We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.  So removing the label promptly when the user replies is important.
+
+When the user replies to a [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issue], *remove the label* so it appears in the relevant lists again.  (The Issue may _still_ be [#Filling_in_missing_information_(Contributors) incomplete], in which case we'll just re-add the label when we ask for more information.)
+
+If the user replies to say that the bug no longer appears, *set `Status:Fixed`*.
+
+Also, we give up on waiting after 14 days.  If the user has not replied by then, *set `Status:Invalid`* and add the comment
+<pre>
+Over 14 days ago we requested some additional information, but we
+didn't get any.  If you still have this problem, feel free to open a
+new Issue and mention this Issue's number.
+</pre>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most recently modified* ones are listed first, as they are the ones that probably have been replied to.
+
+_If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
+
+[#ContributorUI Back]
+
+<hr>
+
+
+
+
+
 === Filling in missing information (Contributors) ===
 
 In addition to [#Filling_in_missing_information the instructions for all volunteers] (read those first), you can do more here as a Contributor:
@@ -398,7 +466,7 @@ In addition to [#Filling_in_missing_information the instructions for all volunte
 
 5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#Reproducing_bugs_(Contributors) reproduced], set `Status:Accepted`.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
 
-6. If the Issue is invalid in some way, you could [#TODO triage it].
+6. If the Issue is invalid in some way, you could [#Triaging_issues_(Contributors) triage it].
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all the Issues that may be missing information].  The ones that have been waiting longest for attention are listed first.
 
@@ -461,11 +529,11 @@ The instructions for non-Contributors to [#Writing_patches write a patch] are th
 
 However, after a few of your patches have been accepted, you should ask for Commit permission in the [http://groups.google.com/group/adblockforchrome-dev developer forum], so that you can commit code directly to the source tree instead of attaching patches.  This makes writing, reviewing, and collaborating on code easier.
 
-Here's the process for a *[#Volunteers,_Contributors,_and_Committers Committer]* to write code to address an issue:
+Here's the process for a Committer to write code to address an issue:
 
  # Set yourself as `Owner` as described above.
  # Using svn on Linux or !TortoiseSVN on Windows, copy `https://adblockforchrome.googlecode.com/svn/trunk` to `https://adblockforchrome.googlecode.com/svn/branches/issue-5740` (of course with the correct Issue number.)  _The first time you do this, you may have to [http://code.google.com/p/adblockforchrome/source/checkout authenticate]._  Then check out a local copy of that folder.
- # Make your changes, testing them in the browser (see instructions in [#Debugging_Issues "Debugging Issues"]).
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
  # Set `Status:NeedsReview`/`cc` as described above.
@@ -592,41 +660,6 @@ We didn't always have a style guide, so unfortunately the code isn't 100% adhere
 
 <hr>
 
-=== How to Triage an issue ===
-
-_You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to triage issues._
-
-New Issues are always being filed, and they start out in the "Triage an issue" list.  Triage is the process of moving them out of that list into another list, one step closer to being closed.
-
-Without triage, the issue tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.  Triage is therefore one of the most *important and useful things that you can do* as a volunteer, but fewer people can do it, because it takes more knowledge of the project than most other tasks.  It is also the most complex task, since you're making a judgment call on how to proceed with the Issue, then doing whatever may be necessary to start the process.
-
-At a high level, when you triage an Issue you *close it* as `Status:Duplicate/Invalid/WontFix`, or you get it to *`Status:Accepted`*, or you label it *`MoreInfoNeeded`*.  You also give it *accurate labels*.  It hasn't been triaged until you've changed its status or set `MoreInfoNeeded`.
-
-Let's look at each of those in detail.
-
-You might *close the Issue*:
-
- * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least searching the older reports.
- * Set `Status:WaitingOnChrome` (or `Safari` or `Opera`) if the report is due to a known limitation in the browser, e.g. an open bug ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]) or lack of support ([http://code.google.com/p/adblockforchrome/issues/detail?id=7193 example]).
- * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5295 example]).  This requires understanding the limits of what !AdBlock can and can not do.
- * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
- * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
- * If you aren't sure you should set `Status:WontFix`: set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (!AdBlock is a [#Overview benevolent dictatorship] and Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees.)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
-
-If you don't close the issue, then next you should *[#How_to_Clarify_an_issue clarify it]*, and if it's a bug report *[#How_to_Reproduce_a_bug reproduce the bug]*.
-
-In doing so you will have set accurate labels like `Browser-` and `OpSys-`, and either set `MoreInfoNeeded` or `Status:Accepted`.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the Triage list for someone else to reproduce or to close.)
-
-Finally, label it `Priority-Critical` if *it is [#What_is_a_critical_issue? critical]*.  If the reporter marked it !PotentiallyCritical, *[#How_to_Judge_a_PotentiallyCritical_issue judge it]*.
-
-=== After you Triage an issue ===
-
-Congratulate yourself for moving this Issue along toward completion, and see if there are any others to triage :)
-
-_If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` and `Type-Enhancement` labels to be notified when a new report comes in.  You'll get emailed all the updates too, that way, so you'll probably want to filter out the followup emails using email filters._
-
-<hr>
-
 === How to Judge a `PotentiallyCritical` issue ===
 
 _You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to judge `PotentiallyCritical` issues._
@@ -663,32 +696,6 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
 
 <hr>
 
-=== How to Update a `MoreInfoNeeded` ===
-
-_You need to be a [#Volunteers,_Contributors,_and_Committers Contributor] to update `MoreInfoNeeded` issues._
-
-An Issue is labeled `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  `MoreInfoNeeded` issues are not shown in most of the [# "Ways to help" lists], since we can't really take action on them without that information.  So removing the label promptly when the user replies is important.
-
-Unfortunately, when the user replies, the `MoreInfoNeeded` label isn't auto-removed, so you should *remove it when a reply comes in*.  The list in [# "Ways to help"] shows the most recently modified `MoreInfoNeeded` issues first, as those are the ones that will probably have a reply.
-
-If the user replied but didn't provide the needed information, re-ask the question in a clearer way and don't remove the label.
-
-If the user replies to say that the bug no longer appears, set `Status:Fixed`.
-
-If the user has not replied in 14 days, set `Status:Invalid` with the comment
-<pre>
-Over 14 days ago we requested some additional information, but we
-didn't get any.  If you still have this problem, feel free to open a
-new Issue and mention this Issue's number.
-</pre>
-
-=== After you Update a `MoreInfoNeeded` ===
-
-Now that there is more information, you could check whether the issue [#How_to_Clarify_an_issue is now clear] and can proceed toward being fixed.
-
-_If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
-
-<hr>
 
 === How to Answer questions from users ===
 
