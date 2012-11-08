@@ -466,7 +466,7 @@ If you think that a `PotentiallyCritical`-labeled Issue is not critical:
  # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [# "Triage an issue" list].  We won't penalize the reporter if it seems that they were acting in good faith.
  # If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
 
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all PotentiallyCritical issues].
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary all PotentiallyCritical issues].
 
 _If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when a new `PotentiallyCritical` report comes in._
 
