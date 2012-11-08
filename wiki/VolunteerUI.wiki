@@ -29,7 +29,7 @@ Also,
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
  * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
-There's [#TODO a lot more] you can do once you [#Joining_the_project become an official Contributor], so please do so!
+There's [#ContributorUI a lot more] you can do once you [#Joining_the_project become an official Contributor], so please do so!
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -243,7 +243,7 @@ If you plan to debug more than one Issue, you should [#Joining_the_project becom
 
 First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix` (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
 
-Second, be sure to read and *conform to the [#TODO coding style guide]*, or you'll just have to fix your code after it gets reviewed.
+Second, be sure to read and *conform to the [#Coding_style coding style guide]*, or you'll just have to fix your code after it gets reviewed.
 
 If the design of the solution isn't obvious, you could start a thread in the [http://groups.google.com/group/adblockforchrome-dev developer forum] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
 
@@ -394,9 +394,9 @@ In addition to [#Filling_in_missing_information the instructions for all volunte
 
 3. If you asked a question, you should *set the `MoreInfoNeeded` label*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#ContributorUI "Ways to help" lists], so consider also *starring the Issue*.  That way you'll be emailed as soon as a response comes back and you could [#TODO remove the label].
 
-4. If a `Type-Enhancement` Issue seems clear enough to proceed, set `Status:Accepted`.  It will then show up in the [#TODO list of Issues to implement].
+4. If a `Type-Enhancement` Issue seems clear enough to proceed, set `Status:Accepted`.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner list of open feature requests].
 
-5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#TODO reproduced], set `Status:Accepted`.  It will then show up in the [#TODO list of Issues to debug].
+5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#Reproducing_bugs_(Contributors) reproduced], set `Status:Accepted`.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
 
 6. If the Issue is invalid in some way, you could [#TODO triage it].
 
@@ -412,7 +412,7 @@ In addition to [#Reproducing_bugs the instructions for all volunteers] (read tho
 
 1. If you encountered the "blocked non-ad" special case and asked the user to take care of it, *set the `MoreInfoNeeded` label*.  If you took care of it yourself, *set `Status:ReportToList`*.
 
-2. Otherwise, if you were able to reproduce the bug, *set `Status:Accepted`*.  The Issue will then show up in the [#TODO list of Issues to debug].
+2. Otherwise, if you were able to reproduce the bug, *set `Status:Accepted`*.  The Issue will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all non-reproduced bug reports].  The ones that have been waiting longest for attention are listed first.
 
@@ -442,7 +442,7 @@ _If you enjoy processing ad reports, you can [http://code.google.com/p/adblockfo
 
 In addition to [#Debugging_issues the instructions for all volunteers] (read those first), you can do more here as a Contributor:
 
-If you find the cause of an issue, *set the `Cause-Known` label*.  This lets people who are going to [#TODO write code] see that you've saved them the trouble of diagnosing the problem.  In fact, they'll see `Cause-Known` Issues listed first, to encourage people to debug Issues that they want to see fixed.
+If you find the cause of an issue, *set the `Cause-Known` label*.  This lets people who are going to [#Writing_code_(Contributors) write code] see that you've saved them the trouble of diagnosing the problem.  In fact, they'll see `Cause-Known` Issues listed first, to encourage people to debug Issues that they want to see fixed.
 
 <h4>The Issues</h4>
 
