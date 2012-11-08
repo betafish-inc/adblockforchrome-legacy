@@ -310,7 +310,7 @@ PatternFilter.createOperaRule = function(line, isWhitelist) {
   if (isWhitelist) {
     rule = rule.substring(2);
   }
-  if (/^\/[^\\\.\*\{\}\+\?\^\$\[\]\(\)\|\<\>\#]+\/$/.test(rule)) {
+  if (rule[0] === "/" && /^\/[^\\\.\*\{\}\+\?\^\$\[\]\(\)\|\<\>\#]+\/$/.test(rule)) {
     // Simple regexes. Just convert them to the rule
     rule = rule.substr(1, rule.length-2);
   }
