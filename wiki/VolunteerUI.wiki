@@ -2,7 +2,6 @@
 #labels Restrict-AddWikiComment-Contributor
 <a name="top"></a>
 
-
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
 Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [#Joining_the_project become an official Contributor] (don't worry, it's really easy) you can do even more!
