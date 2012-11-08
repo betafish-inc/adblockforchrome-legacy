@@ -36,8 +36,6 @@ There's [#ContributorUI a lot more] you can do once you [#Joining_the_project be
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-= Instructions =
-
 === Filling in missing information ===
 
 When a user has a feature request or finds a bug, they file a new Issue.  The standard bug report template asks the user many questions: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect this] and generates an Issue labeled `Type-Defect`.  The feature request template is much less specific: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user this] and generates an Issue labeled `Type-Enhancement`.
@@ -266,6 +264,34 @@ After a few of your patches have been accepted, you should [#Joining_the_project
 
 [#top Back]
 
+=== Coding style ===
+
+Code that you submit in a patch or a branch should conform to the following style rules, unless you have a good reason to break the rules :)
+
+Comment every non-one-liner function that you write with a description of what it does, a list of inputs, and what it returns. See background.js for some examples. When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When you implement strange-looking code to handle Issue `1234`, it suffices to say `// Issue 1234` so readers know where to learn more.  In general, *err on the side of too many comments*, since dozens of strangers may read your code this year without understanding as much as you do about the context.
+
+Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
+
+There are lots of ways in !JavaScript to define a class, its constructor, and its prototype.  Follow this format:
+{{{
+function ClassName(x, y) {
+  this._privateVar1 = x;
+  this.publicVar2 = y;
+}
+ClassName.staticMethod = function(x) {
+};
+ClassName.prototype = {
+  method1: function(x) {
+  },
+  method2: function(x) {
+  }
+};
+}}}
+
+Equality should be `===`, not `==`.  In regular expressions, put a `\` before every non-special character except `[a-zA-Z0-9_-]` so that it's obvious that all other characters are special characters.  E.g. `/^\@\@\|\|ads-r-us\.com(\/ad_content)+$/`
+
+We didn't always have a style guide, so unfortunately the code isn't 100% adherent to the rules above. Refactoring is great -- whenever you touch some code, feel free to clean it up.
+
 <hr>
 
 === Answering questions from users ===
@@ -286,37 +312,6 @@ Some useful shortcuts when composing your message: `getadblock.com/support getad
 *Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
 
 <hr>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-= Overview =
-
-Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
-
- # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
- # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
- # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
- # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
- # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
- # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
-
-If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [# Ways To Help] and have fun!
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-= Joining the project =
-
-As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
-
-In addition to comments, Issues have a *Status* (things like newly filed, duplicate, fixed), a *Summary* (like "!AdBlock is breaking GMail"), and *Labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a critical bug".)  More advanced ways to help involve making changes to an Issue's Status, Summary, or Labels.
-
-To be able to do so, you must join the project as an official *Contributor*.  This is encouraged and is basically automatic: once you've worked on, say, more than a dozen issues over more than a week, just request Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll give it to you after we check that you've been updating Issues correctly.
-
-Once you're a Contributor, bookmark [#ContributorUI this page] and work from there instead.  It gives you extra instructions about how and when to update Issue Status, Labels, and Summaries.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -359,37 +354,19 @@ Also,
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
  * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
+<hr>
+
+<h4>Other helpful views</h4>
+
+All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=is:starred&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary starred by you], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#Definition_of_Owner own and de-own] an Issue.)
+
+All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
+
+All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&sort=-closed&colspec=ID+Type+Opened+Closed+Modified+Status+Summary+MergedInto closed issues] with most recently closed first.
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-=== Common statuses and labels (Contributor) ===
-
-|| *Open Statuses* || *Meaning* ||
-|| `New` || Not yet reproduced (for Defects/!AdReports) or understood (for Enhancements). ||
-|| `Accepted` || Reproduced or understood, and not closed as `Invalid`/`Duplicate`/`WontFix`. ||
-|| `NeedsReview` || Code has been written and is ready for code review. ||
-|| `ReadyForRelease` || Someone reviewed the code and is confident that it code is ready to merge into trunk. ||
-|| `Started` || Someone reviewed the code and in their opinion it still needs work. ||
-
-|| *Closed Statuses* || *Meaning* ||
-|| `Fixed`  || Code to address the Issue is in trunk. ||
-|| `Invalid` || Insufficient data / not a valid issue ||
-|| `Duplicate` || This report duplicates an existing Issue ||
-|| `WontFix` || We decided to not take action on this issue ||
-|| `WaitingOn[Browser]` || Can't address this without support from `Browser`, e.g. Chrome ||
-|| `ReportToList` || This `AdReport` should be reported to a filter list maintainer ||
-
-|| *Labels* || *Meaning* ||
-|| `Browser-Chrome` || This Issue *only* applies to Chrome (or `-Safari` or `-Opera`) ||
-|| `OpSys-OSX` || This Issue *only* applies to Mac OS X (or `-Windows` or `-Linux`) ||
-|| `Type-AdReport` || Ad report ||
-|| `Type-Enhancement` || Feature request ||
-|| `Type-Defect` || Bug report ||
-|| `Cause-Known` || The root cause of this `Type-Defect` has been found ||
-|| `Priority-Critical` || This is a [#What_is_a_critical_issue? critical] Issue (this label sends scary alarm emails) ||
-|| `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
-|| `MoreInfoNeeded` || We are waiting on a reply from a user ||
 
 === Triaging issues (Contributors) ===
 
@@ -410,11 +387,13 @@ You might *close the Issue*:
  * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
  * If you aren't sure you should set `Status:WontFix`: set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees; !AdBlock is a [#Overview benevolent dictatorship].)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
 
-If you don't close the issue, then next you should *[#Filling_in_missing_information_(Contributors) fill in any missing information]*, and if it's a bug report *[#Reproducing_bugs_(Contributors) reproduce the bug]*.
+If you don't close the issue, then next you should:
+ # Correct any incorrect labels (e.g. `Type-Defect`s that should be `Type-Enhancement`s);
+ # [#Filling_in_missing_information_(Contributors) fill in any missing information];
+ # if it's a bug report *[#Reproducing_bugs_(Contributors) reproduce the bug]; and
+ # label it `Priority-Critical`* if it is [#What_is_a_critical_issue? critical].
 
-In doing so you will have set accurate labels like `Browser-` and `OpSys-`, and either set `MoreInfoNeeded` or `Status:Accepted`.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the triage list for someone else to reproduce or to close.)
-
-Finally, *label it `Priority-Critical`* if it is [#What_is_a_critical_issue? critical].  If the reporter marked it !PotentiallyCritical, *[#Judging_PotentiallyCriticals_(Contributors) judge it]*.
+By this point you will have either set `MoreInfoNeeded` or `Status:Accepted`, moving the Issue out of the triage list.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the triage list for someone else to reproduce or to close.)
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the untriaged Issues].  The ones that have been waiting longest for attention are listed first.
 
@@ -486,7 +465,39 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
 
 <hr>
 
-== Filling in missing information (Contributors) ===
+=== Reviewing code (Contributors) ===
+
+Code that goes into !AdBlock's trunk is almost always reviewed first.  Having at least one other person see your code greatly increases the chance of getting it right.
+
+Any Contributor can review code.  Even if you don't understand that area of !AdBlock, you can comment on style and suggest ways to simplify or clarify the code.  Even if you don't have time to download and test the code, you can still read it in the browser.
+
+To review code that is in a branch:
+ # Look through the Issue's comments for each revision checkin.  If the author did things correctly, every revision should have resulted in a comment.
+ # Click each revision and then click 'Expand all' to see the code changes in that revision.  Or, check out a local copy of trunk and do something like `svn merge --reintegrate https://adblockforchrome.googlecode.com/svn/branches/issue-5740 && svn diff` in order to view the combined effect of all the revisions.
+ # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
+ # If the change includes unit tests, open tools/tests/test.html in your browser to run them.
+ # Check that the code adheres to the [#Coding_style style guide].
+ # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
+
+To review a patch submitted by a non-Contributor, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.
+
+<h4>After your review</h4>
+
+If you left review comments but *don't feel confident* enough to decide whether to ship the code (or prevent it from shipping), you're done.  The author and other reviewer(s) will take your comments into consideration.
+
+If your review was *positive*, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*  Michael will then merge it to trunk and set `Status:Fixed`, and it will be shipped in the next release.
+
+If you think that *the code needs work* before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
+
+<h4>The Issues</h4>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary all the Issues awaiting code review].  The ones that have been waiting longest for attention are listed first.
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Filling in missing information (Contributors) ===
 
 In addition to [#Filling_in_missing_information the instructions for all volunteers] (read those first), you can do more here as a Contributor:
 
@@ -542,9 +553,10 @@ _If you enjoy processing ad reports, you can [http://code.google.com/p/adblockfo
 
 === Debugging issues (Contributors) ===
 
-In addition to [#Debugging_issues the instructions for all volunteers] (read those first), you can do more here as a Contributor:
+The instructions for non-Contributors to [#Debugging_issues debug an Issue] are the same for Contributors, except that:
 
-If you find the cause of an issue, *set the `Cause-Known` label*.  This lets people who are going to [#Writing_code_(Contributors) write code] see that you've saved them the trouble of diagnosing the problem.  In fact, they'll see `Cause-Known` Issues listed first, to encourage people to debug Issues that they want to see fixed.
+ # If you expect debugging to take a while, you should set yourself as `Owner` (see the [#The_Owner_field definition]), so that others don't duplicate your work; and
+ # If you find the cause of an issue, *set the `Cause-Known` label*.  This lets people who are going to [#Writing_code_(Contributors) write code] see that you've saved them the trouble of diagnosing the problem.  In fact, they'll see `Cause-Known` Issues listed first, to encourage people to debug Issues that they want to see fixed.
 
 <h4>The Issues</h4>
 
@@ -558,7 +570,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Def
 
 The instructions for non-Contributors to [#Writing_patches write a patch] are the same for Contributors, except that
 
- # You should set yourself as `Owner` before you start working, so that others don't duplicate your work; and
+ # You should set yourself as `Owner` (see the [#The_Owner_field definition]) before you start working, so that others don't duplicate your work; and
  # You should set `Status:NeedsReview` when your patch is ready.  If there's someone in particular from whom you'd appreciate code review, cc them with your request.
 
 However, after a few of your patches have been accepted, you should ask for Commit permission in the [http://groups.google.com/group/adblockforchrome-dev developer forum], so that you can commit code directly to the source tree instead of attaching patches.  This makes writing, reviewing, and collaborating on code easier.
@@ -584,155 +596,75 @@ Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can
 
 <hr>
 
-=== Reviewing code (Contributors) ===
-
-Code that goes into !AdBlock's trunk is almost always reviewed first.  Having at least one other person see your code greatly increases the chance of getting it right.
-
-Any Contributor can review code.  Even if you don't understand that area of !AdBlock, you can comment on style and suggest ways to simplify or clarify the code.  Even if you don't have time to download and test the code, you can still read it in the browser.
-
-To review code that is in a branch:
- # Look through the Issue's comments for each revision checkin.  If the author did things correctly, every revision should have resulted in a comment.
- # Click each revision and then click 'Expand all' to see the code changes in that revision.  Or, check out a local copy of trunk and do something like `svn merge --reintegrate https://adblockforchrome.googlecode.com/svn/branches/issue-5740 && svn diff` in order to view the combined effect of all the revisions.
- # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#How_to_Find_the_root_cause_of_a_defect "How to Find the root cause of a defect".])
- # If the change includes unit tests, open tools/tests/test.html in your browser to run them.
- # Check that the code adheres to the [#Coding_style style guide].
- # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
-
-To review a patch submitted by a non-Contributor, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.
-
-<h4>After your review</h4>
-
-If you left review comments but *don't feel confident* enough to decide whether to ship the code (or prevent it from shipping), you're done.  The author and other reviewer(s) will take your comments into consideration.
-
-If your review was *positive*, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*  Michael will then merge it to trunk and set `Status:Fixed`, and it will be shipped in the next release.
-
-If you think that *the code needs work* before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
-
-<h4>The Issues</h4>
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary all the Issues awaiting code review].  The ones that have been waiting longest for attention are listed first.
-
-[#ContributorUI Back]
-
-<hr>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<hr>
-
-I mostly need help handling issue reports from users.  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.  Try *reading the instructions for "Clarify an issue"* to get started.
-
-If you get at all stuck, email one of the forums mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
-
-_*Important note:* instructions will often suggest changing an Issue's "status" or "labels".  You can't do this until you become a [#Volunteers,_Contributors,_and_Committers Contributor].  So if you're a new volunteer, either *skip* those instructions, or *leave a comment* on the Issue suggesting how a Contributor could make the change._
-
-|| <h3>You could do this</h3> || <h3>to one of these</h3> || <h3>like this</h3> || <h3>doing this when you're done</h3> ||
-|| *Clarify* an issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary issues] || [#How_to_Clarify_an_issue instructions] || [#After_you_Clarify_an_issue instructions] ||
-|| *Reproduce* a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Reproduce_a_bug instructions] || [#After_you_Reproduce_a_bug instructions] ||
-|| Process an *ad report* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Process_an_ad_report instructions] || [#After_you_Process_an_ad_report instructions] ||
-|| Find the *root cause* of a defect|| [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner issues] || [#How_to_Find_the_root_cause_of_a_defect instructions] || [#After_you_Find_the_root_cause_of_a_defect instructions] ||
-|| *Write code* to fix a bug || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner issues] || [#How_to_Write_code_to_address_an_issue instructions] || [#After_you_Write_code_to_address_an_issue instructions] ||
-|| *Write code* to implement a feature || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner issues] || [#How_to_Write_code_to_address_an_issue instructions] || [#After_you_Write_code_to_address_an_issue instructions] ||
-|| Do a *code review* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary issues] || [#How_to_Do_a_code_review instructions] || [#After_you_Do_a_code_review instructions] ||
-|| <h3>[#Volunteers,_Contributors,_and_Committers Contributors] can also:</h3> ||
-|| *Triage* a bug report/feature request || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Triage_an_issue instructions] || [#After_you_Triage_an_issue instructions] ||
-|| Judge a *`PotentiallyCritical`* issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_a_PotentiallyCritical_issue instructions] || [#After_you_Judge_a_PotentiallyCritical_issue instructions] ||
-|| Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
-
-You could also *[#How_to_Answer_questions_from_users answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.
-
-= Other helpful views =
-
-All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=is:starred&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary starred by you], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#Definition_of_Owner own and de-own] an Issue.)
-
-All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
-
-All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&sort=-closed&colspec=ID+Type+Opened+Closed+Modified+Status+Summary+MergedInto closed issues] with most recently closed first.
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-=Instructions=
-
-<hr>
-=== Coding style ===
-
-Code that you submit in a patch or a branch should conform to the following style rules, unless you have a good reason to break the rules :)
-
-Comment every non-one-liner function that you write with a description of what it does, a list of inputs, and what it returns. See background.js for some examples. When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When you implement strange-looking code to handle Issue `1234`, it suffices to say `// Issue 1234` so readers know where to learn more.  In general, *err on the side of too many comments*, since dozens of strangers may read your code this year without understanding as much as you do about the context.
-
-Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
-
-There are lots of ways in !JavaScript to define a class, its constructor, and its prototype.  Follow this format:
-{{{
-function ClassName(x, y) {
-  this._privateVar1 = x;
-  this.publicVar2 = y;
-}
-ClassName.staticMethod = function(x) {
-};
-ClassName.prototype = {
-  method1: function(x) {
-  },
-  method2: function(x) {
-  }
-};
-}}}
-
-Equality should be `===`, not `==`.  In regular expressions, put a `\` before every non-special character except `[a-zA-Z0-9_-]` so that it's obvious that all other characters are special characters.  E.g. `/^\@\@\|\|ads-r-us\.com(\/ad_content)+$/`
-
-We didn't always have a style guide, so unfortunately the code isn't 100% adherent to the rules above. Refactoring is great -- whenever you touch some code, feel free to clean it up.
-
-<hr>
-
-
-=== How to Answer questions from users ===
-
-Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the help forum (the adblockforchrome-discuss Google Group) or to email Michael directly.  But some users either don't see those links or find a link to the help forum somewhere else.
-
-So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the help forum] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
-<pre>
-Thanks for your question.  See
-  http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#How_do_I_uninstall_AdBlock_? 
-for the answer.
-</pre>
-
-If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the help forum elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
-
-*Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
-
-<hr>
-
-=== Definition of Type ===
-
-*Type-Enhancement*: request for !AdBlock to do something it can't currently do.  There's nothing broken, it would just make !AdBlock better in the reporter's opinion.
-
-*Type-Defect*: a bug in !AdBlock.  Something that can be described as a specific set of steps that should lead to an expected behavior but lead to a buggy behavior instead.  (The difference between `Defect` and `Enhancement` can be fuzzy if the lack of a feature is considered a bug.)
-
-*Type-!AdReport*: The end result of the !AdBlock ad reporting wizard.  It represents an ad that a user has found on a page.
-
-=== Definition of Owner ===
+=== The `Owner` field ===
 
 Anyone can work anywhere in the code; no one officially owns any area.  We use the Owner field to mean "I'm working on this, so if you do too, we will be duplicating effort."  Note that anyone is still *allowed* to work on an Issue if they want to, regardless of who is Owner.
 
-Owned issues are listed last in some of the [# "Ways to help" lists], since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
+Owned issues are listed last in some of the lists of issues, since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
 
-Times when being Owner is a good idea:
+When to consider Owning an Issue:
  * You're about to start a *complex debugging session*.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
  * You're about to *write code*.  You set yourself Owner so others don't waste their effort, and to be notified of any negative reviews after you set `Status:NeedsReview`.
- * You want to work on an Issue whose Owner *hasn't updated it for weeks*.  You shouldn't de-Own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
+ * You want to work on an Issue whose Owner *hasn't updated it for weeks*.  You shouldn't de-own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
 
-Times when you don't need to be Owner:
- * You're doing *something quick* like reproducing a bug or clarifying an Issue.  It doesn't hurt if someone else does this too.
+When to de-own an Issue:
  * You're Owner of an Issue that *you decide not to work on* any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
 
-=== Volunteers, Contributors, and Committers ===
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-All you need in order to *volunteer* is a Google account, so that you can create or comment on Issues.  That's sufficient for most volunteer work.
+=== Common statuses and labels (Contributor) ===
 
-As a new volunteer, you can't do more powerful things like changing an Issue's status, labels, or summary; you need *Contributor* status for that.  But it's easy to become a Contributor: if you've worked on, say, more than a dozen issues over more than a week, just ask for Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll grant it after we check that you've been updating Issues correctly.
+|| *Open Statuses* || *Meaning* ||
+|| `New` || Not yet reproduced (for Defects/!AdReports) or understood (for Enhancements). ||
+|| `Accepted` || Reproduced or understood, and not closed as `Invalid`/`Duplicate`/`WontFix`. ||
+|| `NeedsReview` || Code has been written and is ready for code review. ||
+|| `ReadyForRelease` || Someone reviewed the code and is confident that it code is ready to merge into trunk. ||
+|| `Started` || Someone reviewed the code and in their opinion it still needs work. ||
 
-Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].
+|| *Closed Statuses* || *Meaning* ||
+|| `Fixed`  || Code to address the Issue is in trunk. ||
+|| `Invalid` || Insufficient data / not a valid issue ||
+|| `Duplicate` || This report duplicates an existing Issue ||
+|| `WontFix` || We decided to not take action on this issue ||
+|| `WaitingOn[Browser]` || Can't address this without support from `Browser`, e.g. Chrome ||
+|| `ReportToList` || This `AdReport` should be reported to a filter list maintainer ||
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+|| *Labels* || *Meaning* ||
+|| `Browser-Chrome` || This Issue *only* applies to Chrome (or `-Safari` or `-Opera`) ||
+|| `OpSys-OSX` || This Issue *only* applies to Mac OS X (or `-Windows` or `-Linux`) ||
+|| `Type-AdReport` || Ad report ||
+|| `Type-Enhancement` || Feature request ||
+|| `Type-Defect` || Bug report ||
+|| `Cause-Known` || The root cause of this `Type-Defect` has been found ||
+|| `Priority-Critical` || This is a [#What_is_a_critical_issue? critical] Issue (this label sends scary alarm emails) ||
+|| `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
+|| `MoreInfoNeeded` || We are waiting on a reply from a user ||
+
+= Joining the project =
+
+As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+
+In addition to comments, Issues have a *Status* (things like newly filed, duplicate, fixed), a *Summary* (like "!AdBlock is breaking GMail"), and *Labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a critical bug".)  More advanced ways to help involve making changes to an Issue's Status, Summary, or Labels.
+
+To be able to do so, you must join the project as an official *Contributor*.  This is encouraged and is basically automatic: once you've worked on, say, more than a dozen issues over more than a week, just request Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll give it to you after we check that you've been updating Issues correctly.
+
+Once you're a Contributor, bookmark [#ContributorUI this page] and work from there instead.  It gives you extra instructions about how and when to update Issue Status, Labels, and Summaries.
+
+= Overview =
+
+Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
+
+ # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
+ # I run the open source project as a *benevolent dictatorship*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
+ # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
+ # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
+
+If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [#top Ways To Help] and have fun!
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
