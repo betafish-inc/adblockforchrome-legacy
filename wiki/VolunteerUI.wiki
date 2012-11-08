@@ -1,13 +1,42 @@
 #summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
 
-Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*.
+<h1>TODO under construction... please ignore this page for now</h1>
+
+_Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
+
+Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [TODO become an official Contributor] (don't worry, it's really easy) you can do even more!
+
+Just *click something interesting* below to get started.  Everything has really clear instructions.  But if you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
+
+<hr>
 
 = Ways to help =
 
-Volunteering is easy, even if you don't know much about the project.  I mostly need help handling issue reports from users.  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.  Try *reading the instructions for "Clarify an issue"* to get started.
+Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
-If you get at all stuck, email one of the mailing lists mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
+ * You could make sure [TODO no information is missing] in Issue reports.  We can't fix a problem until we understand it!
+ * You could [TODO try to reproduce reported bugs].  If we can't reproduce a bug, we can't fix it.
+ * You could [TODO investigate reported ads], so we know how best to get rid of them.
+
+If you are a programmer,
+
+ * You could [TODO find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
+ * You could [TODO submit a patch] to implement a bugfix or feature.  (If you plan to submit code more than once, you can [TODO get commit rights].)
+
+Also,
+
+ * You could [#How_to_Answer_questions_from_users answer questions from other users] in the help forum.
+ * You could create or improve !AdBlock's [HowToTranslate translation into your language].
+ * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
+
+There's [TODO a lot more] you can do once you can edit Issues directly, so please [TODO become an official Contributor]!
+
+<hr>
+
+I mostly need help handling issue reports from users.  Just pick a task in the table below, read the instructions, and choose an Issue to tackle.  Try *reading the instructions for "Clarify an issue"* to get started.
+
+If you get at all stuck, email one of the forums mentioned [#Overview here] and we'll be happy to help you out!  Have fun! :)
 
 _*Important note:* instructions will often suggest changing an Issue's "status" or "labels".  You can't do this until you become a [#Volunteers,_Contributors,_and_Committers Contributor].  So if you're a new volunteer, either *skip* those instructions, or *leave a comment* on the Issue suggesting how a Contributor could make the change._
 
@@ -24,7 +53,7 @@ _*Important note:* instructions will often suggest changing an Issue's "status" 
 || Judge a *`PotentiallyCritical`* issue || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary issues] || [#How_to_Judge_a_PotentiallyCritical_issue instructions] || [#After_you_Judge_a_PotentiallyCritical_issue instructions] ||
 || Update a *`MoreInfoNeeded`* || [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary issues] || [#How_to_Update_a_MoreInfoNeeded instructions] || [#After_you_Update_a_MoreInfoNeeded instructions] ||
 
-You could also *[#How_to_Answer_questions_on_the_mailing_list answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.
+You could also *[#How_to_Answer_questions_from_users answer common questions]* from users, or *[HowToTranslate translate AdBlock]* into your language.
 
 = Other helpful views =
 
@@ -182,11 +211,11 @@ Resources tab.
 
 === How to Write code to address an issue ===
 
-First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix`  (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer mailing list] and ask him if he would accept a patch addressing the Issue.
+First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix`  (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
 
 Second, be sure to read and *conform to the [#Coding_style coding style guide]*, or you'll just have to fix your code after it gets reviewed.
 
-If the design of the solution isn't obvious, you could start a thread on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
+If the design of the solution isn't obvious, you could start a thread in the [http://groups.google.com/group/adblockforchrome-dev developer forum] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
 
 Here's the process for a *non-[#Volunteers,_Contributors,_and_Committers Committer]* to write code to address an issue:
 
@@ -367,20 +396,20 @@ _If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/
 
 <hr>
 
-=== How to Answer questions on the mailing list ===
+=== How to Answer questions from users ===
 
-Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the adblockforchrome-discuss@googlegroups.com mailing list or to email Michael directly.  But some users either don't see those links or find a link to the mailing list somewhere else.
+Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the help forum (the adblockforchrome-discuss Google Group) or to email Michael directly.  But some users either don't see those links or find a link to the help forum somewhere else.
 
-So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the mailing list] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
+So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the help forum] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
 <pre>
 Thanks for your question.  See
   http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#How_do_I_uninstall_AdBlock_? 
 for the answer.
 </pre>
 
-If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the mailing list elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
+If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the help forum elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
 
-*Important:* If you subscribe to the mailing list and reply over email, *be sure to reply-all*, because replies by default go only to the poster (so that they don't have to subscribe to the list to ask a single question.)  Reply-all will send your reply to the list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
+*Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
 
 <hr>
 
@@ -428,9 +457,9 @@ Times when you don't need to be Owner:
 
 All you need in order to *volunteer* is a Google account, so that you can create or comment on Issues.  That's sufficient for most volunteer work.
 
-As a new volunteer, you can't do more powerful things like changing an Issue's status, labels, or summary; you need *Contributor* status for that.  But it's easy to become a Contributor: if you've worked on, say, more than a dozen issues over more than a week, just ask for Contributor status on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list].  We'll grant it after we check that you've been updating Issues correctly.
+As a new volunteer, you can't do more powerful things like changing an Issue's status, labels, or summary; you need *Contributor* status for that.  But it's easy to become a Contributor: if you've worked on, say, more than a dozen issues over more than a week, just ask for Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll grant it after we check that you've been updating Issues correctly.
 
-Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status on the [http://groups.google.com/group/adblockforchrome-dev developer mailing list].
+Finally, while anyone can submit code as a patch attached to an Issue comment, only *Committers* can make direct changes to !AdBlock's source tree.  Once you've had a few of your patches accepted into !AdBlock's trunk, feel free to ask for Committer status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -445,6 +474,6 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi on !AdBlock's [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and if you plan to stick around for any length of time, subscribe to [http://groups.google.com/group/adblockforchrome-dev adblockforchrome-dev], the mailing list for !AdBlock development.  Then pick a task from [# Ways To Help] and have fun!
+If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [# Ways To Help] and have fun!
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
