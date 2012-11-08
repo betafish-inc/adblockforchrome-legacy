@@ -1,5 +1,6 @@
 #summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
+<a name="top"></a>
 
 <h1>TODO under construction... please ignore this page for now</h1>
 
@@ -54,7 +55,7 @@ If you've done this for a week or so, you should [#TODO become an official Contr
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all Issues that may have missing information].  The ones that have been waiting longest for attention are listed first.
 
-[# Back]
+[#top Back]
 
 <hr>
 
