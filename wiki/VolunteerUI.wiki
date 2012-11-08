@@ -5,7 +5,7 @@
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
-Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [TODO become an official Contributor] (don't worry, it's really easy) you can do even more!
+Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [#TODO become an official Contributor] (don't worry, it's really easy) you can do even more!
 
 Just *click something interesting* below to get started.  Everything has really clear instructions.  But if you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
 
@@ -15,22 +15,286 @@ Just *click something interesting* below to get started.  Everything has really 
 
 Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
- * You could make sure [TODO no information is missing] in Issue reports.  We can't fix a problem until we understand it!
- * You could [TODO try to reproduce reported bugs].  If we can't reproduce a bug, we can't fix it.
- * You could [TODO investigate reported ads], so we know how best to get rid of them.
+ * You could make sure [#Filling_in_missing_information no information is missing] in Issue reports.  We can't fix a problem until we understand it.
+ * You could [#Reproducing_bugs try to reproduce a reported bug].  If we can't reproduce a bug, we can't fix it.
+ * You could [#Handling_ad_reports investigate a reported ad], so we know how best to get rid of it.
 
 If you are a programmer,
 
- * You could [TODO find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
- * You could [TODO submit a patch] to implement a bugfix or feature.  (If you plan to submit code more than once, you can [TODO get commit rights].)
+ * You could [#Debugging_Issues find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
+ * You could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
 
 Also,
 
- * You could [#How_to_Answer_questions_from_users answer questions from other users] in the help forum.
+ * You could [#Answering_questions_from_users answer questions from other users] in the help forum.
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
  * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
-There's [TODO a lot more] you can do once you can edit Issues directly, so please [TODO become an official Contributor]!
+There's [#TODO a lot more] you can do once you [#TODO become an official Contributor], so please do!
+
+
+= Instructions =
+
+=== Filling in missing information ===
+
+When a user has a feature request or finds a bug, they file a new Issue.  The standard bug report template asks the user many questions: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect this] and generates an Issue labeled `Type-Defect`.  The feature request template is much less specific: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user this] and generates an Issue labeled `Type-Enhancement`.
+
+Issue reporters usually leave out information that we need.  Bug reporters will sometimes delete the entire template and just describe the bug in a couple of sentences ([https://code.google.com/p/adblockforchrome/issues/detail?id=7074 example]).  This leaves out important information about their !AdBlock and operating system versions, and crucially, doesn't provide a *list of steps to reproduce the bug*.  Similarly, feature requests rarely have all the information that we need in order to act upon them: we don't understand *why they want this feature*, or exactly *what they are asking for*.
+
+We tell users that we will ignore incomplete bug reports, but in practice we usually don't.  We ask followup questions until we have all the information that we need.
+
+That's where you come in.  Pick an Issue from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary this list].
+ * If it's a `Type-Defect` and is missing any information that we require in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.  For example, in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
+ * If it's a `Type-Defect`, you may be able to think of a question that the template doesn't ask, but that would still help clarify the bug.  *Add a comment* asking your question.  For example, in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
+ * If it's a `Type-Enhancement` and it's at all unclear to you what exactly they want or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
+ * If the report doesn't seem to be a bug report or a feature request, just ignore it.  A project Contributor will handle it.
+ * If the report is complete, just ignore it.  A project Contributor will handle it.
+
+If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all Issues that may have missing information].  The ones that have been waiting longest for attention are listed first.
+
+[# Back]
+
+<hr>
+
+=== Reproducing bugs ===
+
+<h4>What is a repro?</h4>
+
+When a user finds a bug, they file a new Issue.  The [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect standard bug report template] asks the user to give a "repro", which is a recipe for letting someone else reproduce the buggy behavior.  A repro contains:
+ # The exact list of steps to take
+ # What *should* happen after taking those steps (if there were no bug)
+ # What *actually* happens after taking those steps (because there is a bug)
+
+Here's an example repro.
+<pre>
+Reproduction steps:
+      1. Install AdBlock and restart Chrome.
+      2. Open a tab to www.google.com.
+      3. Type hotel into the search box and press Enter.  You are taken to the results page.
+      4. Press the browser Back button.
+      5. Type hotel into the search box again and press Enter.
+Expected result:
+      You see the Google results page again.
+Actual result:
+      Nothing happens, as if you had not pressed Enter.</pre>
+
+This is much more useful than a generic description of a bug, such as "Search for hotel on Google, go back to the search page, and search for hotel again; the search box is broken", because it lets you know exactly how to make the bug appear.  Having a good repro lets you confirm that the bug exists (the user's computer or brain isn't defective) and makes it easier to debug.
+
+That's where you come in.  Pick a bug report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the instructions below to handle it.
+
+<h4>A special case: handling a blocked non-ad</h4>
+
+First, a special case: if the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), then just *add a comment* like this one:
+<pre>
+Sorry for the trouble.  This sounds like it is caused by a broken filter in one of your
+filter lists, which are not maintained by AdBlock.  Please follow the steps at
+  getadblock.com/faq/hunting
+to find the broken filter and report it to the correct filter list.  When they fix the
+problem you'll automatically be updated with the fix.  Let us know how it goes!</pre>
+Or if you're feeling generous, you could do it yourself, and add a comment like
+<pre>
+I followed the steps at getadblock.com/faq/hunting to find that this is caused by the filter
+  ##div.banner
+which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
+problem you'll automatically be updated with the fix.</pre>
+
+<h4>All other cases</h4>
+
+ * If the Issue doesn't seem to be a bug report, just ignore it.  A project Contributor will handle it.
+ * If the repro is not clear enough to follow, *[#Filling_in_missing_information ask for a better repro]*.  Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
+ * If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
+   * Example of success: "Confirmed with AdBlock 2.5.40 in Chrome 22 on Windows 7."
+   * Example of failure: "Could not reproduce in Chrome 22/Win7/AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
+
+If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all non-reproduced bug reports].  The ones that have been waiting longest for attention are listed first.
+
+[# Back]
+
+<hr>
+
+=== Handling ad reports ===
+
+!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, then click the toolbar button -> Report an ad.  You can do it on any page, including this one, even if there is no ad.  Run through it a few times to see what it does.
+
+When a user sees an ad, they can the reporting wizard.  Most ads just need to be added to "filter lists", list of ads blocking rules read by !AdBlock and maintained by third parties.  The wizard usually tells the user to report the ad to the appropriate filter list maintainer.
+
+But if the wizard thinks that an appropriate filter already exists, and so the ad is showing due to a bug in !AdBlock, it helps the user file a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  The report template looks something like this:
+<pre>
+1. Exactly where on that page is the ad? What does it look like? Attach a screenshot if you can.
+2. Paste a working filter, if you have one:
+3. Any other information that would be helpful?</pre>
+and the wizard also attaches some information about the user's system.  We then investigate the report to see how we should proceed.
+
+That's where you come in.  Pick an ad report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary
+this list] and follow the steps below to handle it.
+
+<h4>Step 1: Handle invalid reports</h4>
+
+If the user is reporting ads on almost every website, then they ignored the wizard question about "Ads everywhere".  *Add a comment* pointing them to getadblock.com/bugs/textenhance, and stop there.
+
+If the report is missing information that you need, *add a comment* requesting more information ([http://code.google.com/p/adblockforchrome/issues/detail?id=6176 example]) and stop there.
+
+<h4>Step 2: Try to find the ad</h4>
+
+OK, the report seems complete.  Make your copy of !AdBlock have the *same filter lists* as listed in the report.  You can do this on the !AdBlock Options page.  Then reload the page with the ad.
+
+If you don't see the ad, *add a comment* like "I do not see the ad using !AdBlock 2.5.47 in Chrome 22 on Windows7, with the same filter lists as you.  If you Update Filters under AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?" and stop there.
+
+<h4>Step 3: Is there a missing filter?</h4>
+
+OK, you see the ad.  Now verify that you don't see it in Firefox with [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] installed, setting ABP's filter lists to match the report's as closely as possible.  (You shouldn't use the !AdBlock Custom filter list in ABP.)
+
+If ABP also shows the ad, then this ad report should have never been filed; the user probably lied to the ad reporting wizard about checking in Firefox.  *Add a comment* like
+<pre>
+This is due to a missing filter in [the report's main filter list for the
+webpage's language], a filter list which AdBlock does not control.  You
+can report this to them using the contact info on ListAuthorContacts.</pre>
+
+But if ABP does not show this ad, then this is a bug in !AdBlock ([http://code.google.com/p/adblockforchrome/issues/detail?id=4552 example]).  *Add a comment* like
+<pre>
+I can see the ad (a text ad at the bottom of the page) in !AdBlock 2.5.40 in
+Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.</pre>
+
+<h4>That's it!</h4>
+
+If you've done this for a week or so, you should [#TODO become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy processing ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
+
+[# Back]
+
+<hr>
+
+=== Debugging Issues ===
+
+Once a bug has been [#Reproducing_bugs reproduced], we need to know the cause in order to fix it.  The person who finds the cause doesn't have to be the person who fixes the bug.  If you don't feel that you have the time or ability to write code, you can still save someone else time by figuring out where in the code the problem lies -- and I'm sure they would appreciate your effort!  This is also a great way to get to know !AdBlock's code better, to prepare you to submit your own patches.
+
+!AdBlock is a normal [http://developer.chrome.com/extensions/index.html browser extension].  You can use Chrome's excellent [https://developers.google.com/chrome-developer-tools/docs/overview Developer Tools] to debug it.  The Console tab lets you review logs and errors; the Elements tab lets you view the DOM layout; and the Sources tab lets you add breakpoints to !AdBlock's code and step through it one step at a time.
+
+chrome://chrome/extensions has a link to !AdBlock's `_generated_background_page.html`, where the bulk of !AdBlock's work happens; the rest happens in [http://developer.chrome.com/extensions/content_scripts.html content scripts] on each webpage.  You can open the Developer Tools on any webpage to view !AdBlock's content scripts (in the Sources tab, click the icon at the top left, choose Content Scripts, then click the triangle next to the first item.)
+
+`manifest.json` is the file that describes !AdBlock's structure to Chrome.  That's a good place to start to decide which files to look at.  If you don't know where to start, but would like to try to find the cause of a defect, leave a comment asking for guidance on the Issue, and someone more experienced can try to point you toward likely places to investigate.
+
+<h4>Editing the source</h4>
+
+Often it is useful to modify the source code; e.g. to force a function to return true, or to comment out large sections of code to see if it makes a bug go away.  To do this, you'll want a local copy of the latest !AdBlock release, which you can get by running
+{{{
+svn checkout http://adblockforchrome.googlecode.com/svn/tags/2.5.40 adblockforchrome-read-only
+}}}
+replacing `2.5.40` with [Changelog the current release number].  You'll need svn installed on Linux, or !TortoiseSVN installed on Windows; more info is [http://code.google.com/p/adblockforchrome/source/checkout here].
+
+Once you have your local copy, go to chrome://chrome/extensions, select Developer Mode -> Load Unpacked Extension, and select the folder containing the local copy.  Now !AdBlock is running from that local copy (be sure to disable any other running copies.)  Now you can make changes to the code in that folder, then click the Reload link on chrome://chrome/extensions to load the changed version.
+
+<h4>Debugging in Safari</h4>
+
+If you must debug in Safari, it's a little less pleasant than Chrome.  You can use the Developer Tools to view content scripts on a page, but you can't inspect !AdBlock's background page without installing !AdBlock from a local folder.  Visit the Developer menu -> Extension Builder -> + sign and select a folder containing !AdBlock's source code.  The folder name must end with `.safariextension`, e.g. `adblock-version-2.5.40.safariextension`.  (I think you will need a [https://developer.apple.com/support/safari/developer-certificates.html Safari Developer Certificate] as well in order to install even this test extension.)
+
+Once the local copy is installed, you can scroll down to "Inspect Global Page" in the Extension Builder to open the Developer Tools on the background page, and click Reload in the Extension Builder after making source code changes.
+
+`Info.plist` is the file that describes !AdBlock to Safari, like Chrome's `manifest.json`.  Safari loads some different files from Chrome, so that's a good place to start when looking around.
+
+<h4>When you're finished debugging</h4>
+
+If you find the cause of an Issue, *add a comment* being as specific as possible about the cause.  Remember that whoever comes after you won't have just spent half an hour staring at the code, so she won't have all the context and knowledge in her head that you have right now.  For instance, if you found out why Wikipedia keeps turning pink, this comment is not very useful:
+<pre>I found the problem: We think Wikipedia is loading from msn.com, so it's turning pink.</pre>
+Better, but still not great:
+<pre>
+I found the problem: 'domain' is a global variable in the function fix_msn_background, so it's bleeding through to
+wikipedia.</pre>
+Best:
+<pre>
+I found the problem: 'domain' is accidentally defined as a global variable in background.js line 250.  If you load
+Wikipedia in one tab and msn.com in a second tab, then fix_msn_background() is called, 'domain' is set to 'msn.com',
+and background.js line 400 is triggered when Wikipedia loads its next resource.  I expect we could fix it by making
+'domain' a local variable, but I haven't tried it.</pre>
+
+If you *failed* to find the cause, but learned something, *add a comment* mentioning what you tried and what failed.  For example,
+<pre>
+I couldn't figure out why Wikipedia keeps turning pink.  I tried completely removing the 
+toolbar button, which didn't make a difference.  When it does turn pink, the
+<div id="header"> section of the page gets a 'color:pink' style attribute attached, but 
+I have no idea why.  It happens even when I turn off all filter lists, so it can't be a 
+bad filter.  In AdBlock's background.js line 400 it says
+   if (domain === "msn.com")
+     page.style.color = "pink";
+but Wikipedia doesn't load any resources from msn.com, according to the Developer Tools 
+Resources tab.
+</pre>
+
+<h4>The issues</h4>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
+
+If you plan to debug Issues more than just once, you should [#TODO become an official Contributor].  Then you'll be able to help in more powerful ways which aren't mentioned here.
+
+[# Back]
+
+<hr>
+
+=== Writing patches ===
+
+First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been [#How_to_Triage_an_issue triaged] and the consensus is to proceed, Michael might overrule and set `Status:WontFix` (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
+
+Second, be sure to read and *conform to the [#TODO coding style guide]*, or you'll just have to fix your code after it gets reviewed.
+
+If the design of the solution isn't obvious, you could start a thread in the [http://groups.google.com/group/adblockforchrome-dev developer forum] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
+
+Here's the process for submitting a patch to address an issue.  (Note that official project Committers commit code directly; if you plan to write code against more than one Issue, you should [#TODO become an official Committer].
+
+ # Using svn on Linux or !TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
+ # For huge bonus points, also add unit tests to `tools/tests/test.html`.
+ # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions].
+ # Add a comment on the Issue thoroughly explaining what was changed and what was fixed and how to test it.  Add the patchfile as an attachment.
+
+Someone will review your patch.  If there are problems, the Issue will be set to `Status:Started` by a reviewer.  In that case, look for feedback in comments on the Issue, argue with the reviewer(s), make changes, and attach a new patch when you're done.
+
+<h4>The issues</h4>
+
+Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  Bug reports that have been debugged already are listed first; otherwise, the Issues that have been waiting longest for attention are listed first.
+
+If you plan to write more than one patch, you should [#TODO become an official Committer].  Committers use a different process for submitting code, making code review and collaboration easier; and can help in other more powerful ways which aren't mentioned here.
+
+[# Back]
+
+<hr>
+
+=== Answering questions from users ===
+
+Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the help forum (the adblockforchrome-discuss Google Group) or to email Michael directly.  But some users either don't see those links, or find a link to the help forum somewhere else.
+
+So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the help forum] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
+<pre>
+Thanks for your question.  See
+  http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#How_do_I_uninstall_AdBlock_? 
+for the answer.
+</pre>
+
+If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the help forum elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
+
+Some useful shortcuts when composing your message: `getadblock.com/support getadblock.com/faq getadblock.com/bugs getadblock.com/faq/textenhance getadblock.com/faq/hunting`.  `getadblock.com` itself will direct the user to the appropriate install page for their browser.
+
+*Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <hr>
 
@@ -101,12 +365,12 @@ Special case: If the bug report is that a non-ad is being blocked ([http://code.
 <pre>
 Sorry for the trouble.  This sounds like it is caused by a broken filter in one of your
 filter lists, which are not maintained by AdBlock.  Please follow the steps at
-  chromeadblock.com/bugs/hunting
+  getadblock.com/faq/hunting
 to find the broken filter and report it to the correct filter list.  Let us know how it goes!
 </pre>
 Or if you're feeling generous, you could do it yourself, set `Status:ReportToList`, and leave a comment like
 <pre>
-I followed the steps at chromeadblock.com/bugs/hunting to find that this is caused by the filter
+I followed the steps at getadblock.com/faq/hunting to find that this is caused by the filter
   ##div.banner
 which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
 problem you'll automatically be updated with the fix.
