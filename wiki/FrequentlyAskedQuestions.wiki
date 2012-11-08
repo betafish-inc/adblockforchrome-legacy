@@ -114,6 +114,14 @@ See [GetHelp here].
 
 You'll see this in all Opera versions less than 12.10.  Don't worry, the effects aren't that bad.  !AdBlock uses a list of rules to block ads, and pre-12.10 versions of Opera can't support some of those rules, that's all.  Once you update to Opera 12.10, all disabled functionality will be enabled automatically.
 
+== I see the same kind of ads on almost every website.  They pop up when I hover over underlined words. ==
+
+These ads, sometimes labeled "Text Enhance", are almost certainly being added by an extension.  Disable all extensions and turn them on one by one until you find the culprit.  To find your installed extensions:
+
+ * In Chrome: open a tab to chrome://chrome/extensions.
+ * In Safari: click the Safari menu -> Preferences -> Extensions.
+ * In Opera: click the Opera menu -> Extensions -> Manage Extensions.
+
 == When I install, Chrome warns me that !AdBlock will have access to "Your data on all websites" and "Your tabs and browsing activity"! ==
 
 !AdBlock has the *ability* to access this data, but it doesn't actually access it.  !AdBlock needs this permission in order to run on every page, so that it can block ads for you; that's all.  Nothing sneaky is going on.
