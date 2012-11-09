@@ -468,16 +468,6 @@ _If you wouldn't mind helping firefight, you can also [http://code.google.com/p/
 
 [#ContributorUI Back]
 
-=== What is a critical issue? ===
-
-An issue is critical and should be labeled `Priority-Critical` (thus sending scary alarm emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and at least one of the following is true:
- * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
- * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
- * major visible *!AdBlock UI is broken* (e.g. the context menu is gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
- * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example])
- * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
- * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a *major* search engine, social network, news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
-
 <hr>
 
 === Reviewing code (Contributors) ===
@@ -679,6 +669,20 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
 If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [#top Ways To Help] and have fun!
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+=== What is a critical issue? ===
+
+An issue is critical and should be labeled `Priority-Critical` (thus sending scary alarm emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and at least one of the following is true:
+ * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
+ * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
+ * major visible *!AdBlock UI is broken* (e.g. the context menu is gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
+ * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example])
+ * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
+ * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a *major* search engine, social network, news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
