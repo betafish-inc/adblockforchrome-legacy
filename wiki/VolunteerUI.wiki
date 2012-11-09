@@ -370,7 +370,7 @@ All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&so
 
 === Triaging issues (Contributors) ===
 
-New Issues are always being filed, and they start out as `Status:New` in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].  Triage is the process of moving them out of that list, one step closer to being closed.
+New Issues are always being filed, and they start out as `Status:New` in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].  Triage is the process of *moving them out of that list*, one step closer to being closed.
 
 Without triage, the Issue Tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.  Triage is therefore one of the most *important and useful things that you can do* as a Contributor.  It takes more knowledge of the project than most other tasks, and is also the most complex task, since you're making a judgment call on how to proceed with the Issue, then doing whatever may be necessary to start the process.
 
@@ -385,7 +385,7 @@ You might *close the Issue*:
  * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5295 example]).  This requires understanding the limits of what !AdBlock can and can not do.
  * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
  * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
- * If you aren't sure you should set `Status:WontFix`: set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees; !AdBlock is a [#Overview benevolent dictatorship].)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
+ * If you aren't sure whether to set `Status:WontFix` or not, then set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees; !AdBlock is a [#Overview benevolent dictatorship].)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
 
 If you don't close the issue, then next you should:
  # Correct any incorrect labels (e.g. `Type-Defect`s that should be `Type-Enhancement`s);
@@ -407,7 +407,7 @@ _If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrom
 
 We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
 
-So removing the label promptly when the user replies is important.  When the user replies to a [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issue], *remove the label* so it appears in the relevant lists again.  (The Issue may _still_ be [#Filling_in_missing_information_(Contributors) incomplete], in which case we'll just re-add the label when we ask for more information.)
+So removing the label promptly when the user replies is important.  When a user replies to a question in a [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issue], *remove the label* so it appears in the relevant lists again.
 
 If the user replies to say that the bug no longer appears, *set `Status:Fixed`*.
 
