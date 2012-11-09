@@ -4,7 +4,7 @@
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
-Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  And once you [#Joining_the_project become an official Contributor] (don't worry, it's really easy) you can do even more!
+Volunteering is easy, even if you don't know much about the project.  There are several ways that you can help right now, as a new volunteer.  
 
 Just *click something interesting* below to get started.  And if you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
 
@@ -29,8 +29,9 @@ Also,
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
  * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
-There's [#ContributorUI a lot more] you can do once you [#Joining_the_project become an official Contributor], so please do so!
+<h4>Join the project!</h4>
 
+After you've gotten a feel for the project, you should definitely ask to [#Joining_the_project become an official Contributor]!  Then you can use the [#ContributorUI Contributor UI] to help in more powerful ways.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -321,7 +322,7 @@ Some useful shortcuts when composing your message: `getadblock.com/support getad
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
-As a Contributor, you have the ability to edit an Issue's Status, Summary, and Labels.  You'll see where to do this as you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)
+As a Contributor, you can edit an Issue's *status* (whether it's newly filed, duplicate, fixed, etc), *summary* (like "!AdBlock is breaking GMail"), and *labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a serious bug".)  You'll see where to do this as you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)
 
 Be sure to read the list of [#Common_statuses_and_labels_(Contributor) statuses and labels] that we use, and what they mean.  You can set a status or label whenever it's appropriate, not just when following specific instructions below.
 
@@ -646,11 +647,11 @@ When to de-own an Issue:
 
 As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
 
-In addition to comments, Issues have a *Status* (things like newly filed, duplicate, fixed), a *Summary* (like "!AdBlock is breaking GMail"), and *Labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a critical bug".)  More advanced ways to help involve making changes to an Issue's Status, Summary, or Labels.
+But you're limited because you can't *edit Issues* in more powerful ways.  Everything you do as a new volunteer you can do more effectively when you can edit Issues, and some important tasks can't be done at all without this ability.  Only volunteers who have *joined the project as official Contributors* can edit Issues.
 
-To be able to do so, you must join the project as an official *Contributor*.  This is encouraged and is basically automatic: once you've worked on, say, more than a dozen issues over more than a week, just request Contributor status in the [http://groups.google.com/group/adblockforchrome-dev developer forum].  We'll give it to you after we check that you've been updating Issues correctly.
+Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to become an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
 
-Once you're a Contributor, bookmark [#ContributorUI this page] and work from there instead.  It gives you extra instructions about how and when to update Issue Status, Labels, and Summaries.
+Once you're a Contributor, use [#ContributorUI the Contributor UI] instead of [#top the Volunteer UI].
 
 = Overview =
 
