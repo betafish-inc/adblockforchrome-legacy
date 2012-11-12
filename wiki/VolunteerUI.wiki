@@ -618,9 +618,7 @@ When to consider Owning an Issue:
 When to de-own an Issue:
  * You're Owner of an Issue that *you decide not to work on* any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 === Common statuses and labels (Contributor) ===
 
