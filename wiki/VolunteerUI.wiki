@@ -666,8 +666,8 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
 
  # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
  # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
- # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
- # Similar to Linux, Python, and Ruby on Rails, this open source project is a *[http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]*.  I encourage your feedback and I'll take it into account, but I make the final decisions, and you might not always agree with me :)
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid to run the project by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
+ # I encourage your feedback about how I run the project, and I'll take it into account, but I make the final decisions and you might not always agree with me :)  (In open source this is known as *[http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]*; it's how Linux, Python, and many other projects are run.)
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
