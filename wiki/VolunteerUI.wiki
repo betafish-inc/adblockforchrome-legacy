@@ -602,8 +602,7 @@ Once you're a Contributor, use [#ContributorUI the Contributor UI] instead of [#
 
 <br><br><hr><hr>
 
-<a name="Overview">&nbsp;</a>
-= Project overview =
+= Overview =
 
 Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
 
