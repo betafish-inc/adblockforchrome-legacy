@@ -1,0 +1,656 @@
+#summary Detailed instructions for volunteers
+#labels Restrict-AddWikiComment-Contributor
+= Detailed instructions for volunteers (under construction) =
+
+These instructions are linked to from tasks in the VolunteerUI.
+
+<hr><hr>
+
+=== Detailed instructions for: Filling in missing information ===
+
+[VolunteerUI#Filling_in_missing_information Back to overview]
+
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary Relevant Issues]
+
+When making sure an Issue is missing no information:
+ * If it's a `Type-Defect` and is missing any information that we require in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.  For example, in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
+ * If it's a `Type-Defect`, you may be able to think of a question that the template doesn't ask, but that would still help clarify the bug.  *Add a comment* asking your question.  For example, in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
+ * If it's a `Type-Enhancement` and it's at all unclear to you what exactly they want or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
+ * If the report doesn't seem to be a bug report or a feature request, just ignore it.  A project Contributor will handle it.
+ * If the report is complete, just ignore it.  A project Contributor will handle it.
+
+_If you're not yet an [#Joining_the_project official Contributor], stop here._
+
+Contributors can do more:
+
+1. If you asked a question, you should *set the `MoreInfoNeeded` label*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#ContributorUI "Ways to help" lists], so consider also *starring the Issue*.  That way you'll be emailed as soon as a response comes back and you could [#TODO remove the label].
+
+2. You can *add clarifying labels*.  If you learn that the issue only applies to a single browser or OS, add a `Browser-` or `OpSys-` label.
+
+3. If the Summary is vague, *improve it* and put the old Summary in a comment.  For example, you could update an Issue called "Can't get videos right" by adding a comment saying `[old Summary: "Can't get videos right"]` and changing the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
+
+4. If a `Type-Enhancement` Issue seems clear enough to proceed, *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner list of open feature requests].
+
+5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#Reproducing_bugs_(Contributors) reproduced], *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
+
+6. If the Issue is invalid in some way, you could [#Triaging_issues_(Contributors) triage it].
+
+[VolunteerUI#Filling_in_missing_information Back to overview]
+
+<br><br><hr><hr>
+
+=== Detailed instructions for: Reproducing bugs ===
+
+[VolunteerUI#Reproducing_bugs Back to overview]
+
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+
+<h4>What is a repro?</h4>
+
+When a user finds a bug, they file a new Issue.  The [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect standard bug report template] asks the user to give a "repro", which is a recipe for letting someone else reproduce the buggy behavior.  A repro contains:
+ # The exact list of steps to take
+ # What *should* happen after taking those steps (if there were no bug)
+ # What *actually* happens after taking those steps (because there is a bug)
+
+Here's an example repro.
+<pre>
+Reproduction steps:
+      1. Install AdBlock and restart Chrome.
+      2. Open a tab to www.google.com.
+      3. Type hotel into the search box and press Enter.  You are taken to the results page.
+      4. Press the browser Back button.
+      5. Type hotel into the search box again and press Enter.
+Expected result:
+      You see the Google results page again.
+Actual result:
+      Nothing happens, as if you had not pressed Enter.</pre>
+
+This is much more useful than a generic description of a bug, such as "Search for hotel on Google, go back to the search page, and search for hotel again; the search box is broken", because it lets you know exactly how to make the bug appear.  Having a good repro lets you confirm that the bug exists (the user's computer or brain isn't defective) and makes it easier to debug.
+
+That's where you come in.  Pick a bug report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the instructions below to handle it.
+
+<h4>A special case: handling a blocked non-ad</h4>
+
+First, a special case: if the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), then just *add a comment* like this one:
+<pre>
+Sorry for the trouble.  This sounds like it is caused by a broken filter in one of your
+filter lists, which are not maintained by AdBlock.  Please follow the steps at
+  getadblock.com/faq/hunting
+to find the broken filter and report it to the correct filter list.  When they fix the
+problem you'll automatically be updated with the fix.  Let us know how it goes!</pre>
+Or if you're feeling generous, you could do it yourself, and add a comment like
+<pre>
+I followed the steps at getadblock.com/faq/hunting to find that this is caused by the filter
+  ##div.banner
+which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
+problem you'll automatically be updated with the fix.</pre>
+
+<h4>All other cases</h4>
+
+ * If the Issue doesn't seem to be a bug report, just ignore it.  A project member will handle it.
+ * If the repro is not clear enough to follow, *[#Filling_in_missing_information ask for a better repro]*.  Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
+ * If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
+   * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
+   * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
+
+_[#Joining_the_project Official Contributors], read these [#Detailed_instructions_for_Reproducing_bugs_(Contributors) additional instructions]._
+
+[VolunteerUI#Reproducing_bugs Back to overview]
+
+<br><br><hr><hr>
+
+=== Handling ad reports ===
+
+!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, close the Options page, then click the !AdBlock toolbar button -> Report an ad.  You can do it on any page, including this ad-free page.  Run through it a few times to see what it does.  You can make up pretend answers and just stop before actually reporting anything.
+
+That's what users run when they see an ad.  The wizard usually tells the user to report the ad to the maintainer of the appropriate "filter list" (a list of ad blocking rules read by !AdBlock); in those cases we don't get an ad report.
+
+But if the wizard thinks that an appropriate filter already exists, and so the ad is showing due to a bug in !AdBlock, it helps the user file a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  (Here's an [http://code.google.com/p/adblockforchrome/issues/detail?id=7165 example] which the user forgot to fill in with details).  We then investigate the report to see how we should proceed.
+
+That's where you come in.  Pick an ad report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the steps below to handle it.
+
+<h4>Step 1: Handle invalid reports</h4>
+
+If the user is reporting ads on almost every website, then they ignored the wizard question about "Ads everywhere".  *Add a comment* pointing them to getadblock.com/bugs/textenhance, and stop there.
+
+If the report is missing information that you need, *add a comment* requesting more information ([http://code.google.com/p/adblockforchrome/issues/detail?id=6176 example]) and stop there.
+
+<h4>Step 2: Try to find the ad</h4>
+
+OK, the report seems complete.  Make your copy of !AdBlock have the *same filter lists* as listed in the report.  You can do this on the !AdBlock Options page.  Then reload the page with the ad.
+
+If you don't see the ad, *add a comment* like "I do not see the ad using !AdBlock 2.5.47 in Chrome 22 on Windows7, with the same filter lists as you.  If you Update Filters under !AdBlock Options -> Filter Lists and restart your browser, do you still see the ad?" and stop there.
+
+<h4>Step 3: Is there a missing filter?</h4>
+
+OK, you see the ad.  Now verify that you don't see it in Firefox with [https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/ Adblock Plus] installed, setting ABP's filter lists to match the report's as closely as possible.  (You shouldn't use the !AdBlock Custom filter list in ABP.)
+
+If ABP also shows the ad, then this ad report should have never been filed.  The user probably lied to the ad reporting wizard and said they had checked in Firefox.  *Add a comment* like
+<pre>
+This is due to a missing filter in [the report's main filter list for the
+webpage's language], a filter list which AdBlock does not control.  You
+can report this to them using the contact info on ListAuthorContacts.</pre>
+
+But if ABP does not show this ad, then this is a bug in !AdBlock ([http://code.google.com/p/adblockforchrome/issues/detail?id=4552 example]).  *Add a comment* like
+<pre>
+I can see the ad (a text ad at the bottom of the page) in AdBlock 2.5.40 in
+Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.</pre>
+
+<h4>That's it!</h4>
+
+If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy processing ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
+
+[#top Back]
+
+<hr>
+
+=== Debugging issues ===
+
+Once a bug has been [#Reproducing_bugs reproduced], we need to know the cause in order to fix it.  The person who finds the cause doesn't have to be the person who fixes the bug.  If you don't feel that you have the time or ability to write code, you can still save someone else time by figuring out where in the code the problem lies -- and I'm sure they would appreciate your effort!  This is also a great way to get to know !AdBlock's code better, to prepare you to submit your own patches.
+
+!AdBlock is a normal [http://developer.chrome.com/extensions/index.html browser extension].  You can use Chrome's excellent [https://developers.google.com/chrome-developer-tools/docs/overview Developer Tools] to debug it.  The Console tab lets you review logs and errors; the Elements tab lets you view the DOM layout; and the Sources tab lets you add breakpoints to !AdBlock's code and step through it one step at a time.
+
+chrome://chrome/extensions has a link to !AdBlock's `_generated_background_page.html`, where the bulk of !AdBlock's work happens; the rest happens in [http://developer.chrome.com/extensions/content_scripts.html content scripts] on each webpage.  You can open the Developer Tools on any webpage to view !AdBlock's content scripts (in the Sources tab, click the icon at the top left, choose Content Scripts, then click the triangle next to the first item.)
+
+`manifest.json` is the file that describes !AdBlock's structure to Chrome.  That's a good place to start to decide which files to look at.  If you don't know where to start, but would like to try to find the cause of a defect, leave a comment asking for guidance on the Issue, and someone more experienced can try to point you toward likely places to investigate.
+
+<h4>Editing the source</h4>
+
+Often it is useful to modify the source code; e.g. to force a function to return true, or to comment out large sections of code to see if it makes a bug go away.  To do this, you'll want a local copy of the latest !AdBlock release, which you can get by running
+{{{
+svn checkout http://adblockforchrome.googlecode.com/svn/tags/2.5.40 adblockforchrome-read-only
+}}}
+replacing `2.5.40` with [Changelog the current release number].  You'll need svn installed on Linux, or TortoiseSVN installed on Windows; more info is [http://code.google.com/p/adblockforchrome/source/checkout here].
+
+Once you have your local copy, go to chrome://chrome/extensions, select Developer Mode -> Load Unpacked Extension, and select the folder containing the local copy.  Now !AdBlock is running from that local copy (be sure to disable any other running copies.)  Now you can make changes to the code in that folder, then click the Reload link on chrome://chrome/extensions to load the changed version.
+
+<h4>Debugging in Safari</h4>
+
+If you must debug in Safari, it's a little less pleasant than Chrome.  You can use the Developer Tools to view content scripts on a page, but you can't inspect !AdBlock's background page without installing !AdBlock from a local folder.  Visit the Developer menu -> Extension Builder -> + sign and select a folder containing !AdBlock's source code.  The folder name must end with `.safariextension`, e.g. `adblock-version-2.5.40.safariextension`.  (I think you will need a [https://developer.apple.com/support/safari/developer-certificates.html Safari Developer Certificate] as well in order to install even this test extension.)
+
+Once the local copy is installed, you can scroll down to "Inspect Global Page" in the Extension Builder to open the Developer Tools on the background page, and click Reload in the Extension Builder after making source code changes.
+
+`Info.plist` is the file that describes !AdBlock to Safari, like Chrome's `manifest.json`.  Safari loads some different files from Chrome, so that's a good place to start when looking around.
+
+<h4>When you're finished debugging</h4>
+
+If you find the cause of an Issue, *add a comment* being as specific as possible about the cause.  Remember that whoever comes after you won't have just spent half an hour staring at the code, so she won't have all the context and knowledge in her head that you have right now.  For instance, if you found out why Wikipedia keeps turning pink, this comment is not very useful:
+<pre>I found the problem: We think Wikipedia is loading from msn.com, so it's turning pink.</pre>
+Better, but still not great:
+<pre>
+I found the problem: 'domain' is a global variable in the function fix_msn_background, so it's bleeding through to
+wikipedia.</pre>
+Best:
+<pre>
+I found the problem: 'domain' is accidentally defined as a global variable in background.js line 250.  If you load
+Wikipedia in one tab and msn.com in a second tab, then fix_msn_background() is called, 'domain' is set to 'msn.com',
+and background.js line 400 is triggered when Wikipedia loads its next resource.  I expect we could fix it by making
+'domain' a local variable, but I haven't tried it.</pre>
+
+If you *failed* to find the cause, but learned something, *add a comment* mentioning what you tried and what failed.  For example,
+<pre>
+I couldn't figure out why Wikipedia keeps turning pink.  I tried completely removing the 
+toolbar button, which didn't make a difference.  When it does turn pink, the
+<div id="header"> section of the page gets a 'color:pink' style attribute attached, but 
+I have no idea why.  It happens even when I turn off all filter lists, so it can't be a 
+bad filter.  In AdBlock's background.js line 400 it says
+   if (domain === "msn.com")
+     page.style.color = "pink";
+but Wikipedia doesn't load any resources from msn.com, according to the Developer Tools 
+Resources tab.
+</pre>
+
+<h4>The Issues</h4>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the Issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
+
+If you plan to debug more than one Issue, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help in more powerful ways which aren't mentioned here.
+
+[#top Back]
+
+<hr>
+
+=== Writing patches ===
+
+First, remember that this is a [#Overview benevolent dictatorship], so even if an issue has been reviewed and the consensus is to proceed, Michael might overrule and set `Status:WontFix` (usually on a feature request that he feels is unnecessary).  It's frustrating to write lots of code and then find out it's not going to be used!  Right now there's no way to tell if Michael has reviewed an issue, so if you're worried about wasting your time, just drop a line to the [http://groups.google.com/group/adblockforchrome-dev developer forum] and ask him if he would accept a patch addressing the Issue.
+
+Second, be sure to read and *conform to the [#Coding_style coding style guide]*, or you'll just have to fix your code after it gets reviewed.
+
+If the design of the solution isn't obvious, you could start a thread in the [http://groups.google.com/group/adblockforchrome-dev developer forum] and point to it in an Issue comment, or just debate the design directly in the Issue comments, until it's clear how to approach the problem.
+
+Here's the process for submitting a patch to address an issue.
+
+ # Using svn on Linux or TortoiseSVN on Windows, [http://code.google.com/p/adblockforchrome/source/checkout check out the read-only copy of trunk].
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
+ # For huge bonus points, also add unit tests to `tools/tests/test.html`.
+ # Generate a patch ([http://ariejan.net/2007/07/03/how-to-create-and-apply-a-patch-with-subversion svn instructions], [http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-patch.html TortoiseSVN instructions])
+ # Add a comment to the Issue thoroughly explaining what was changed and what was fixed and how to test it.  Add the patchfile as an attachment.
+ # Star the Issue so you are emailed updates.
+
+Someone will review your patch.  If there are problems, the Issue will be set to `Status:Started` by a reviewer.  In that case, look for feedback in comments on the Issue, argue with the reviewer(s), make changes, and attach a new patch when you're done.
+
+<h4>The issues</h4>
+
+Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  Bug reports that have been debugged already are listed first; otherwise, Issues that have been waiting longest for attention are listed first.
+
+After a few of your patches have been accepted, you should [#Joining_the_project become an official Contributor] and ask for Commit permission, so that you can commit code directly to the source tree instead.  This makes writing, reviewing, and collaborating on code easier.
+
+[#top Back]
+
+=== Coding style ===
+
+Code that you submit in a patch or a branch should conform to the following style rules, unless you have a good reason to break the rules :)
+
+Comment every non-one-liner function that you write with a description of what it does, a list of inputs, and what it returns. See background.js for some examples. When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When you implement strange-looking code to handle Issue `1234`, it suffices to say `// Issue 1234` so readers know where to learn more.  In general, *err on the side of too many comments*, since dozens of strangers may read your code this year without understanding as much as you do about the context.
+
+Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
+
+There are lots of ways in !JavaScript to define a class, its constructor, and its prototype.  Follow this format:
+{{{
+function ClassName(x, y) {
+  this._privateVar1 = x;
+  this.publicVar2 = y;
+}
+ClassName.staticMethod = function(x) {
+};
+ClassName.prototype = {
+  method1: function(x) {
+  },
+  method2: function(x) {
+  }
+};
+}}}
+
+Equality should be `===`, not `==`.  In regular expressions, put a `\` before every non-special character except `[a-zA-Z0-9_-]` so that it's obvious that all other characters are special characters.  E.g. `/^\@\@\|\|ads-r-us\.com(\/ad_content)+$/`
+
+We didn't always have a style guide, so unfortunately the code isn't 100% adherent to the rules above. Refactoring is great -- whenever you touch some code, feel free to clean it up.
+
+<hr>
+
+=== Answering questions from users ===
+
+Theoretically, users seeking answers should be directed to the [Support Support page], which has links to the FAQs before they are directed to email the help forum (the adblockforchrome-discuss Google Group) or to email Michael directly.  But some users either don't see those links, or find a link to the help forum somewhere else.
+
+So most of the [http://groups.google.com/group/adblockforchrome-discuss posts to the help forum] can be answered by [FrequentlyAskedQuestions the FAQ].  You could help these users by politely pointing them to a relevent answer, e.g.
+<pre>
+Thanks for your question.  See
+  http://code.google.com/p/adblockforchrome/wiki/FrequentlyAskedQuestions#How_do_I_uninstall_AdBlock_? 
+for the answer.
+</pre>
+
+If you wanted to politely ask the user whether they had seen the link to the FAQ, that would be helpful as well.  They might say they found a link to the help forum elsewhere, which we can try to replace with a link to [Support Support], or that they skimmed the FAQ but missed the answer, which suggests we might try to simplify the FAQ.
+
+Some useful shortcuts when composing your message: `getadblock.com/support getadblock.com/bugs getadblock.com/faq getadblock.com/faq/uninstall getadblock.com/faq/textenhance getadblock.com/faq/hunting`.  `getadblock.com` itself will direct the user to the appropriate install page for their browser.
+
+*Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
+
+<hr>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+= ContributorUI =
+
+_Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
+
+As a Contributor, you can edit an Issue's *status* (whether it's newly filed, duplicate, fixed, etc), *summary* (like "!AdBlock is breaking GMail"), and *labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a serious bug".)  You'll see where to do this as you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)
+
+Be sure to read the list of [#Common_statuses_and_labels_(Contributor) statuses and labels] that we use, and what they mean.  You can set a status or label whenever it's appropriate, not just when following specific instructions below.
+
+Just *click something interesting* below to get started.  Many of these add on to the instructions given to all volunteers, and a few are Contributor-only.  If you have questions, [http://groups.google.com/group/adblockforchrome-discuss just ask] :)  Have fun!
+
+<hr>
+
+= Ways you can help =
+
+(Quick links:
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary unlabel]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary judge]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary codereview]
+.
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary clarify]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary reproduce]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary adreport]
+.
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner debug]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner write-bugfix]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner write-feature]
+.
+[http://groups.google.com/group/adblockforchrome-discuss helpforum]
+[http://groups.google.com/group/adblockforchrome-dev devforum])
+
+There are a few tasks that only Contributors can do, so doing these before others would be great.
+ * You could [#Triaging_issues_(Contributors) triage incoming Issues], doing whatever is needed to help move them forward.
+ * You could [#Unlabeling_MoreInfoNeeded_s_(Contributors) unlabel MoreInfoNeeded issues].  If this doesn't happen, actionable Issues remain mostly hidden.
+ * You could [#Judging_PotentiallyCritical_s_(Contributors) review PotentiallyCritical issues] in case anything scary is happening.
+ * If you can read code, you could [#Reviewing_code_(Contributors) do a code review] - the author of the code will appreciate it!
+
+Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
+
+ * You could make sure [#Filling_in_missing_information_(Contributors) no information is missing] in Issue reports.  We can't fix a problem until we understand it.
+ * You could try to [#Reproducing_bugs_(Contributors) reproduce a reported bug].  If we can't reproduce a bug, we can't fix it.
+ * You could [#Handling_ad_reports_(Contributors) investigate a reported ad], so we know how best to get rid of it.
+
+If you are a programmer,
+
+ * You could [#Debugging_issues_(Contributors) find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a big head start.
+ * You could [#Writing_code_(Contributors) submit a patch] to implement a bugfix or feature.  This is of course a huge help.
+
+Also,
+
+ * You could [#Answering_questions_from_users answer questions from other users] in the help forum.
+ * You could create or improve !AdBlock's [HowToTranslate translation into your language].
+ * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
+
+<hr>
+
+<h4>Other helpful views</h4>
+
+All open issues [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=is:starred&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary starred by you], [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=owner:me&sort=id&colspec=ID%20Opened%20Modified%20Status%20Type%20Summary Owned by you] or [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=-owner:me%20has:owner&sort=modified&colspec=ID%20Owner%20Opened%20Modified%20Status%20Type%20Summary Owned by someone else].  (Here is info on when to [#The_Owner_field own and de-own] an Issue.)
+
+All open issues sorted by when they were [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=opened&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn opened] or  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=&sort=modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn last modified].
+
+All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&sort=-closed&colspec=ID+Type+Opened+Closed+Modified+Status+Summary+MergedInto closed issues] with most recently closed first.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+=== Triaging issues (Contributors) ===
+
+New Issues are always being filed, and they start out as `Status:New` in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].  Triage is the process of *moving them out of that list*, one step closer to being closed.
+
+Without triage, the Issue Tracker gets messy, important Issues go unnoticed for too long, and some Issues get missed entirely.  Triage is therefore one of the most *important and useful things that you can do* as a Contributor.  It takes more knowledge of the project than most other tasks, and is also the most complex task, since you're making a judgment call on how to proceed with the Issue, then doing whatever may be necessary to start the process.
+
+At a high level, when you triage an Issue you *close it* as `Status:Duplicate/Invalid/WontFix`, or you get it to *`Status:Accepted`*, or you label it *`MoreInfoNeeded`*.  You also give it *accurate labels*.  It hasn't been triaged until it's out of the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage list].
+
+Let's look at each of those in detail.
+
+You might *close the Issue*:
+
+ * Set `Status:Duplicate` if there is *another report of the same issue* ([http://code.google.com/p/adblockforchrome/issues/detail?id=7067 example]).  This requires being familiar with all the issues that have arrived lately, or at least searching the older reports.
+ * Set `Status:WaitingOnChrome` (or `Safari` or `Opera`) if the report is due to a known limitation in the browser, e.g. an open bug ([http://code.google.com/p/adblockforchrome/issues/detail?id=7194 example]) or lack of support ([http://code.google.com/p/adblockforchrome/issues/detail?id=7193 example]).
+ * Set `Status:Invalid` if a bug report is clearly *not !AdBlock's fault* (in which case, tell the user what to do instead: [http://code.google.com/p/adblockforchrome/issues/detail?id=5295 example]).  This requires understanding the limits of what !AdBlock can and can not do.
+ * Set `Status:Invalid` if the report is in fact *not an !AdBlock issue*, but is e.g. a question (in which case, point the user to the relevant [FrequentlyAskedQuestions FAQ] entry.)
+ * Set `Status:WontFix` if you're positive that this is an issue on which !AdBlock *will not take action* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6766 example]).  This requires being with the project for long enough that you've already heard the arguments about why we won't address this issue.
+ * If you aren't sure whether to set `Status:WontFix` or not, then set `MoreInfoNeeded`, cc `adblockforchrome`, and ask Michael's opinion in a comment.  (Michael will review all `WontFix`s, so if you're *almost* positive, you could just set `WontFix` and let Michael un-set it if he disagrees; !AdBlock is a [#Overview benevolent dictatorship].)  For example, if no one can reproduce a bug that is only affecting one user, we may just close the Issue.
+
+If you don't close the issue, then next you should:
+ # Correct any incorrect labels (e.g. `Type-Defect`s that should be `Type-Enhancement`s);
+ # [#Filling_in_missing_information_(Contributors) fill in any missing information];
+ # if it's a bug report *[#Reproducing_bugs_(Contributors) reproduce the bug]; and
+ # label it `Priority-Critical`* if it is [#What_is_a_critical_issue? critical].
+
+By this point you will have either set `MoreInfoNeeded` or `Status:Accepted`, moving the Issue out of the triage list.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the triage list for someone else to reproduce or to close.)
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the untriaged Issues].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` and `Type-Enhancement` labels to be notified when a new report comes in.  You'll get emailed all the updates too, that way, so you'll probably want to filter out the followup emails using email filters._
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Unlabeling `MoreInfoNeeded`s (Contributors) ===
+
+We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
+
+So removing the label promptly when the user replies is important.  When a user replies to a question in a [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issue], *remove the label* so it appears in the relevant lists again.
+
+If the user replies to say that the bug no longer appears, *set `Status:Fixed`*.
+
+Also, we give up on waiting after 14 days.  If the user has not replied by then, *set `Status:Invalid`* and add the comment
+<pre>
+Over 14 days ago we requested some additional information, but we
+didn't get any.  If you still have this problem, feel free to open a
+new Issue and mention this Issue's number.
+</pre>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most recently modified* ones are listed first, as they are the ones that probably have been replied to.  The ones listed last may be over 14 days old.
+
+_If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Judging `PotentiallyCritical`s (Contributors) ===
+
+If a Contributor thinks that an Issue is critical according to [#What_is_a_critical_issue? this definition], then they label it `Priority-Critical` and scary alarm emails get sent out to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Priority-Critical` label.  That way, we can fix the issue as quickly as possible.
+
+A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a Contributor to notice the Issue.
+
+To speed things up, we let users [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect label their bug report] as *potentially* critical.  Anyone willing to be a first responder can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label and quickly set `Priority-Critical` if appropriate.  In case no one happens to see the email, you can also check [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary the PotentiallyCriticals list].
+
+Users could abuse this ability, thinking they'll get faster treatment of their pet non-critical problem by labeling it `PotentiallyCritical`.  So to discourage spam, we warn them that we will probably move the Issue to the bottom of our TODO list if we don't agree that the Issue is critical.
+
+If you think that a `PotentiallyCritical`-labeled Issue is in fact [#What_is_a_critical_issue? critical]:
+ # *Label it `Priority-Critical`*.  Michael's personal email address is subscribed to that label so that he'll be notified even on a day off -- and anyone else willing to lend a hand with critical issues can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label.
+ # Since you are probably the first person who has noticed this Issue, it would be great for you to [#Reproducing_bugs_(Contributors) reproduce] and [#Filling_in_missing_information_(Contributors) clarify] the bug, and even to start [#Debugging_issues_(Contributors) debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
+
+If you think that a `PotentiallyCritical`-labeled Issue is not critical:
+ # *Remove the `PotentiallyCritical` label* and add an explanatory comment like "This is not critical because, even though there's a visible effect on a popular website, the website can still be used" or "This is not critical because the broken website is not used by millions of people".
+ # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [#Triaging_issues_(Contributors) triage list].  We won't penalize the reporter if it seems that they were acting in good faith.
+ # If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary all PotentiallyCritical issues].
+
+_If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when new ones come in._
+
+_If you wouldn't mind helping firefight, you can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label to be emailed when truly critical bugs do appear.
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Reviewing code (Contributors) ===
+
+Code that goes into !AdBlock's trunk is almost always reviewed first.  Having at least one other person see your code greatly increases the chance of getting it right.
+
+Any Contributor can review code.  Even if you don't understand that area of !AdBlock, you can comment on style and suggest ways to simplify or clarify the code.  Even if you don't have time to download and test the code, you can still read it in the browser.
+
+To review code that is in a branch:
+ # Look through the Issue's comments for each revision checkin.  If the author did things correctly, every revision should have resulted in a comment.
+ # Click each revision and then click 'Expand all' to see the code changes in that revision.  Or, check out a local copy of trunk and do something like `svn merge --reintegrate https://adblockforchrome.googlecode.com/svn/branches/issue-5740 && svn diff` in order to view the combined effect of all the revisions.
+ # If the change is non-trivial, check out a copy of the branch with something like `svn checkout http://adblockforchrome.googlecode.com/svn/branches/issue-5740 adblock-issue-5740-for-codereview` and test it in the browser (see instructions in [#Debugging_issues "Debugging issues".])
+ # If the change includes unit tests, open tools/tests/test.html in your browser to run them.
+ # Check that the code adheres to the [#Coding_style style guide].
+ # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
+
+To review a patch submitted by a non-Contributor, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.
+
+<h4>After your review</h4>
+
+If you left review comments but *don't feel confident* enough to decide whether to ship the code (or prevent it from shipping), you're done.  The author and other reviewer(s) will take your comments into consideration.
+
+If your review was *positive*, all issues raised by other reviewers have been settled, you've tested the code, and you are confident that it is ready to ship to millions of users, then *set `Status:ReadyForRelease`*.  *Don't do this lightly!*  Michael will then merge it to trunk and set `Status:Fixed`, and it will be shipped in the next release.
+
+If you think that *the code needs work* before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
+
+<h4>The Issues</h4>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary all the Issues awaiting code review].  The ones that have been waiting longest for attention are listed first.
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Filling in missing information (Contributors) ===
+
+In addition to [#Filling_in_missing_information the instructions for all volunteers] (read those first), you can do more here as a Contributor:
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all the Issues that may be missing information].  The ones that have been waiting longest for attention are listed first.
+
+[#ContributorUI Back]
+
+<br><br><hr><hr>
+
+=== Reproducing bugs (Contributors) ===
+
+[#Detailed_instructions_for_Reproducing_bugs Back to non-Contributor instructions]
+
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+
+In addition to [#Detailed_instructions_for_Reproducing_bugs the instructions for all volunteers] (read those first), you can do more here as a Contributor:
+
+1. If you encountered the "blocked non-ad" special case and asked the user to take care of it, *set the `MoreInfoNeeded` label*.  If you took care of it yourself, *set `Status:ReportToList`*.
+
+2. Otherwise, if you were able to reproduce the bug, *set `Status:Accepted`*.  The Issue will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
+
+[#Detailed_instructions_for_Reproducing_bugs Back to non-Contributor instructions]
+
+<br><br><hr><hr>
+
+=== Handling ad reports (Contributors) ===
+
+In addition to [#Handling_ad_reports the instructions for all volunteers] (read those first), you can do more here as a Contributor:
+
+1. If you added a comment and were not able to see the ad, *set the `MoreInfoNeeded` label*, which will take the ad report out of the "investigate" list until the user replies.
+
+2. If you told the user to report the problem to a filter list, *set `Status:ReportToList`*, which closes the Issue.
+
+3. If the ad appears to be due to a bug in !AdBlock, *set `Status:Accepted`* and change from `Type-AdReport` to *`Type-Defect`*.  Along with the comment that you posted, *change the Summary* from "Ad report: google.com" to a better summary of the defect, e.g. "Text ads appearing at bottom of google.com search results pages (blocked in ABP)".
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy processing ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Debugging issues (Contributors) ===
+
+The instructions for non-Contributors to [#Debugging_issues debug an Issue] are the same for Contributors, except that:
+
+ # If you expect debugging to take a while, you should set yourself as `Owner` (see the [#The_Owner_field definition]), so that others don't duplicate your work; and
+ # If you find the cause of an issue, *set the `Cause-Known` label*.  This lets people who are going to [#Writing_code_(Contributors) write code] see that you've saved them the trouble of diagnosing the problem.  In fact, they'll see `Cause-Known` Issues listed first, to encourage people to debug Issues that they want to see fixed.
+
+<h4>The Issues</h4>
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the Issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
+
+[#ContributorUI Back]
+
+<hr>
+
+=== Writing code (Contributors) ===
+
+The instructions for non-Contributors to [#Writing_patches write a patch] are the same for Contributors, except that
+
+ # You should set yourself as `Owner` (see the [#The_Owner_field definition]) before you start working, so that others don't duplicate your work; and
+ # You should set `Status:NeedsReview` when your patch is ready.  If there's someone in particular from whom you'd appreciate code review, cc them with your request.
+
+However, after a few of your patches have been accepted, you should ask for Commit permission in the [http://groups.google.com/group/adblockforchrome-dev developer forum], so that you can commit code directly to the source tree instead of attaching patches.  This makes writing, reviewing, and collaborating on code easier.
+
+Here's the process for a Committer to write code to address an issue:
+
+ # Set yourself as `Owner` as described above.
+ # Using svn on Linux or TortoiseSVN on Windows, copy `https://adblockforchrome.googlecode.com/svn/trunk` to `https://adblockforchrome.googlecode.com/svn/branches/issue-5740` (of course with the correct Issue number.)  _The first time you do this, you may have to [http://code.google.com/p/adblockforchrome/source/checkout authenticate]._  Then check out a local copy of that folder.
+ # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
+ # For huge bonus points, also add unit tests to `tools/tests/test.html`.
+ # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
+ # Set `Status:NeedsReview`/`cc` as described above.
+
+Sometimes !AdBlock will need a custom filter in order to fix a problem.  Users are subscribed to the !AdBlock Custom filter list, which lives in filters/adblock_custom.txt.  If you add a filter there ([http://adblockplus.org/en/filters syntax]), it will be shipped the next time Michael ships the filter list; you can cc adblockforchrome to ask him to do so.
+
+If your code has problems, it will be set to `Status:Started` by a reviewer.  In that case, look for feedback in comments on the Issue and on specific revisions ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]), argue with the reviewer(s), make changes, and set `Status:NeedsReview` when you're done.
+
+<h4>The Issues</h4>
+
+Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  `Cause-Known` bug reports are listed first; otherwise, Issues that have been waiting longest for attention are listed first.
+
+[#ContributorUI Back]
+
+<hr>
+
+=== The `Owner` field ===
+
+Anyone can work anywhere in the code; no one officially owns any area.  We use the Owner field to mean "I'm working on this, so if you do too, we will be duplicating effort."  Note that anyone is still *allowed* to work on an Issue if they want to, regardless of who is Owner.
+
+Owned issues are listed last in some of the lists of issues, since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
+
+When to consider Owning an Issue:
+ * You're about to start a *complex debugging session*.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
+ * You're about to *write code*.  You set yourself Owner so others don't waste their effort, and to be notified of any negative reviews after you set `Status:NeedsReview`.
+ * You want to work on an Issue whose Owner *hasn't updated it for weeks*.  You shouldn't de-own an Issue for someone, but you could leave a comment saying "I'm about to work on this.  Could you set me as Owner?  And have you made any progress that would help me out?"
+
+When to de-own an Issue:
+ * You're Owner of an Issue that *you decide not to work on* any time in the next week or so.  Owning discourages others from working on the Issue; de-own it and leave a comment with any progress you made.  (You could cc yourself or star the Issue to not lose track of it.)
+
+<hr>
+
+=== Common statuses and labels (Contributor) ===
+
+|| *Open Statuses* || *Meaning* ||
+|| `New` || Not yet reproduced (for Defects/!AdReports) or understood (for Enhancements). ||
+|| `Accepted` || Reproduced or understood, and not closed as `Invalid`/`Duplicate`/`WontFix`. ||
+|| `NeedsReview` || Code has been written and is ready for code review. ||
+|| `ReadyForRelease` || Someone reviewed the code and is confident that it code is ready to merge into trunk. ||
+|| `Started` || Someone reviewed the code and in their opinion it still needs work. ||
+
+|| *Closed Statuses* || *Meaning* ||
+|| `Fixed`  || Code to address the Issue is in trunk. ||
+|| `Invalid` || Insufficient data / not a valid issue ||
+|| `Duplicate` || This report duplicates an existing Issue ||
+|| `WontFix` || We decided to not take action on this issue ||
+|| `WaitingOn[Browser]` || Can't address this without support from `Browser`, e.g. Chrome ||
+|| `ReportToList` || This `AdReport` should be reported to a filter list maintainer ||
+
+|| *Labels* || *Meaning* ||
+|| `Browser-Chrome` || This Issue *only* applies to Chrome (or `-Safari` or `-Opera`) ||
+|| `OpSys-OSX` || This Issue *only* applies to Mac OS X (or `-Windows` or `-Linux`) ||
+|| `Type-AdReport` || Ad report ||
+|| `Type-Enhancement` || Feature request ||
+|| `Type-Defect` || Bug report ||
+|| `Cause-Known` || The root cause of this `Type-Defect` has been found ||
+|| `Priority-Critical` || This is a [#What_is_a_critical_issue? critical] Issue (this label sends scary alarm emails) ||
+|| `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
+|| `MoreInfoNeeded` || We are waiting on a reply from a user ||
+
+= Joining the project =
+
+As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+
+But you're limited because you can't edit Issues in more powerful ways, which only *official Contributors* can do.  Everything you do as a new volunteer you can do more effectively as a Contributor, and some important tasks can't be done at all by non-Contributors.
+
+Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project as an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
+
+Once you're a Contributor, use [#ContributorUI the Contributor UI] instead of [#top the Volunteer UI].
+
+<a name="Overview"></a>=Project overview=
+
+Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
+
+ # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid to run the project by my one-man corporation !BetaFish Incorporated, which receives user payments and owns the rights to !AdBlock.  *Volunteers are not paid*.
+ # I encourage your feedback about how I run the project, and I'll take it into account, but I make the final decisions and you might not always agree with me :)  (In open source this is known as *[http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]*; it's how Linux, Python, and many other projects are run.)
+ # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
+ # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
+
+If the above sounds good to you, then, welcome! :)  Join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev development forum] and say hi if you'd like.  Then head to the [#top Volunteer UI] and have fun!
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+=== What is a critical issue? ===
+
+An issue is critical and should be labeled `Priority-Critical` (thus sending scary alarm emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and at least one of the following is true:
+ * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
+ * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
+ * major visible *!AdBlock UI is broken* (e.g. the context menu is gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
+ * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example])
+ * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
+ * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a *major* search engine, social network, news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
