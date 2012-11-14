@@ -600,7 +600,10 @@ Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once 
 
 Once you're a Contributor, use [#ContributorUI the Contributor UI] instead of [#top the Volunteer UI].
 
-<a name="Overview"></a>=Project overview=
+<br><br><hr><hr>
+
+<a name="Overview"></a>
+= Project overview =
 
 Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
 
