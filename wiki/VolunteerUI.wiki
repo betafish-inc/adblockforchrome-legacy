@@ -31,26 +31,17 @@ Also,
 
 <h4>Join the project!</h4>
 
-After you've gotten a feel for the project, you should definitely ask to [#Joining_the_project become an official Contributor]!  Then you can use the [#ContributorUI Contributor UI] to help in more powerful ways.
+After you've gotten a feel for the project, you should definitely ask to [#Joining_the_project become an official Contributor], which gives you more power to help!
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+= Instructions =
+
+<hr><hr>
 
 === Filling in missing information ===
 
-When a user has a feature request or finds a bug, they file a new Issue.  The standard bug report template asks the user many questions: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect this] and generates an Issue labeled `Type-Defect`.  The feature request template is much less specific: it looks like [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user this] and generates an Issue labeled `Type-Enhancement`.
+Users file new Issue reports when they find a bug or have a feature request.  Sometimes they leave out some of the information that we ask in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect report template] or [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user enhancement report template], or are just plain unclear.
 
-Issue reporters usually leave out information that we need.  Bug reporters will sometimes delete the entire template and just describe the bug in a couple of sentences ([https://code.google.com/p/adblockforchrome/issues/detail?id=7074 example]).  This leaves out important information about their !AdBlock and operating system versions, and crucially, doesn't provide a *list of steps to reproduce the bug*.  Similarly, feature requests rarely have all the information that we need in order to act upon them: we don't understand *why they want this feature*, or exactly *what they are asking for*.
-
-We tell users that we will ignore incomplete bug reports, but in practice we usually don't.  We ask followup questions until we have all the information that we need.
-
-That's where you come in.  Pick an Issue from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary this list].
- * If it's a `Type-Defect` and is missing any information that we require in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.  For example, in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
- * If it's a `Type-Defect`, you may be able to think of a question that the template doesn't ask, but that would still help clarify the bug.  *Add a comment* asking your question.  For example, in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
- * If it's a `Type-Enhancement` and it's at all unclear to you what exactly they want or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
- * If the report doesn't seem to be a bug report or a feature request, just ignore it.  A project Contributor will handle it.
- * If the report is complete, just ignore it.  A project Contributor will handle it.
+We tell users that we will ignore incomplete bug reports, but in practice we usually don't.  Instead, we add comments to the Issue asking followup questions until we have all the info we need.  Here are [VolunteerInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
 
 If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
@@ -58,57 +49,13 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 [#top Back]
 
-<hr>
+<br><br><hr><hr>
 
 === Reproducing bugs ===
 
-<h4>What is a repro?</h4>
+Users file new Issue reports when they find a bug.  The [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect report template] asks the user to give a "repro", which is a recipe for letting someone else reproduce the buggy behavior.
 
-When a user finds a bug, they file a new Issue.  The [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect standard bug report template] asks the user to give a "repro", which is a recipe for letting someone else reproduce the buggy behavior.  A repro contains:
- # The exact list of steps to take
- # What *should* happen after taking those steps (if there were no bug)
- # What *actually* happens after taking those steps (because there is a bug)
-
-Here's an example repro.
-<pre>
-Reproduction steps:
-      1. Install AdBlock and restart Chrome.
-      2. Open a tab to www.google.com.
-      3. Type hotel into the search box and press Enter.  You are taken to the results page.
-      4. Press the browser Back button.
-      5. Type hotel into the search box again and press Enter.
-Expected result:
-      You see the Google results page again.
-Actual result:
-      Nothing happens, as if you had not pressed Enter.</pre>
-
-This is much more useful than a generic description of a bug, such as "Search for hotel on Google, go back to the search page, and search for hotel again; the search box is broken", because it lets you know exactly how to make the bug appear.  Having a good repro lets you confirm that the bug exists (the user's computer or brain isn't defective) and makes it easier to debug.
-
-That's where you come in.  Pick a bug report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the instructions below to handle it.
-
-<h4>A special case: handling a blocked non-ad</h4>
-
-First, a special case: if the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), then just *add a comment* like this one:
-<pre>
-Sorry for the trouble.  This sounds like it is caused by a broken filter in one of your
-filter lists, which are not maintained by AdBlock.  Please follow the steps at
-  getadblock.com/faq/hunting
-to find the broken filter and report it to the correct filter list.  When they fix the
-problem you'll automatically be updated with the fix.  Let us know how it goes!</pre>
-Or if you're feeling generous, you could do it yourself, and add a comment like
-<pre>
-I followed the steps at getadblock.com/faq/hunting to find that this is caused by the filter
-  ##div.banner
-which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
-problem you'll automatically be updated with the fix.</pre>
-
-<h4>All other cases</h4>
-
- * If the Issue doesn't seem to be a bug report, just ignore it.  A project member will handle it.
- * If the repro is not clear enough to follow, *[#Filling_in_missing_information ask for a better repro]*.  Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
- * If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
-   * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
-   * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
+You can then follow the recipe and add a comment to the Issue saying whether or not you saw the buggy behavior.  Here are [VolunteerInstructions#Detailed_instructions_for:_Reproducing_bugs detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
 
 If you've done this for a week or so, you should [#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
@@ -116,7 +63,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 [#top Back]
 
-<hr>
+<br><br><hr><hr><hr>
 
 === Handling ad reports ===
 

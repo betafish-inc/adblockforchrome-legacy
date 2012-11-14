@@ -93,7 +93,7 @@ problem you'll automatically be updated with the fix.</pre>
    * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
    * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
 
-_[#Joining_the_project Official Contributors], read these [#Detailed_instructions_for_Reproducing_bugs_(Contributors) additional instructions]._
+_[#Joining_the_project Official Contributors], read these [#Detailed_instructions_for:_Reproducing_bugs_(Contributors) additional instructions]._
 
 [VolunteerUI#Reproducing_bugs Back to overview]
 
@@ -491,19 +491,19 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 <br><br><hr><hr>
 
-=== Reproducing bugs (Contributors) ===
+=== Detailed instructions for: Reproducing bugs (Contributors) ===
 
-[#Detailed_instructions_for_Reproducing_bugs Back to non-Contributor instructions]
+[#Detailed_instructions_for:_Reproducing_bugs Back to non-Contributor instructions]
 
 [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
-In addition to [#Detailed_instructions_for_Reproducing_bugs the instructions for all volunteers] (read those first), you can do more here as a Contributor:
+In addition to [#Detailed_instructions_for:_Reproducing_bugs the instructions for all volunteers] (read those first), you can do more here as a Contributor:
 
 1. If you encountered the "blocked non-ad" special case and asked the user to take care of it, *set the `MoreInfoNeeded` label*.  If you took care of it yourself, *set `Status:ReportToList`*.
 
 2. Otherwise, if you were able to reproduce the bug, *set `Status:Accepted`*.  The Issue will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
 
-[#Detailed_instructions_for_Reproducing_bugs Back to non-Contributor instructions]
+[#Detailed_instructions_for:_Reproducing_bugs Back to non-Contributor instructions]
 
 <br><br><hr><hr>
 
