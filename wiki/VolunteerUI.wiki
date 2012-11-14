@@ -1,7 +1,6 @@
 #summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
 <a name="top"></a>
-= Volunteer UI =
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[VolunteerInstructions#Project_overview READ THIS FIRST]*._
 
@@ -227,7 +226,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:n
 
 <br><br><hr><hr>
 
-<h5>Overview</h5>
+===== Overview =====
 
 (Oops, the project overview has been moved [VolunteerInstructions#Project_overview here].)
 

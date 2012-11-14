@@ -2,7 +2,7 @@
 #labels Restrict-AddWikiComment-Contributor
 = Detailed instructions for volunteers =
 
-These instructions are linked to from tasks in the VolunteerUI.
+These instructions are linked to from tasks in the [VolunteerUI Volunteer UI].
 
 <hr><hr>
 
@@ -459,6 +459,18 @@ If you think that *the code needs work* before shipping, set `Status:Started`.  
 
 <br><br><hr><hr>
 
+=== Joining the project ===
+
+As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+
+But you're limited because you can't edit Issues in more powerful ways, which only *official Contributors* can do.  Everything you do as a new volunteer you can do more effectively as a Contributor, and some important tasks can't be done at all by non-Contributors.
+
+Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project as an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
+
+Once you're a Contributor, read the instructions [VolunteerInstructions#Project_members below] to learn how to use your new powers :)
+
+<br><br><hr><hr>
+
 === Project members ===
 
 Contributors and Committers are listed on !AdBlock's [http://code.google.com/p/adblockforchrome/people/list People page].
@@ -467,19 +479,7 @@ Contributors and Committers are listed on !AdBlock's [http://code.google.com/p/a
 
 Contributors can edit an Issue's *status* (whether it's newly filed, duplicate, fixed, etc), *summary* (like "!AdBlock is breaking GMail"), and *labels* (tags applied to the Issue that mean things like "This only happens in Windows", "Waiting for the user to reply", or "This is a serious bug".)  You'll see fields to do this when you're adding a comment to an Issue.  (If you don't, make sure you're logged in to Google with the correct email address.)
 
-Be sure to read the list of [#Common_statuses_and_labels statuses and labels] that we use, and what they mean.  You can set a status or label whenever it's appropriate.
-
-_If you aren't yet an official Contributor, you are probably ready to be, so [#Joining_the_project go for it]!_
-
-<h4>Committers</h4>
-
-Committers are Contributors who can also commit code directly to !AdBlock's source tree.
-
-_If you have had a few patches accepted into !AdBlock, [#Joining_the_project become a Committer]!_
-
-<br><br><hr><hr>
-
-=== Common statuses and labels ===
+Here are the common statuses and labels that we use, and what they mean.  You can set a status or label whenever it's appropriate.
 
 || *Open Statuses* || *Meaning* ||
 || `New` || Not yet reproduced (for Defects/!AdReports) or understood (for Enhancements). ||
@@ -507,17 +507,13 @@ _If you have had a few patches accepted into !AdBlock, [#Joining_the_project bec
 || `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
 || `MoreInfoNeeded` || We are waiting on a reply from a user ||
 
-<br><br><hr><hr>
+_If you aren't yet an official Contributor, you are probably ready to be, so [#Joining_the_project go for it]!_
 
-=== Joining the project ===
+<h4>Committers</h4>
 
-As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+Committers are Contributors who can also commit code directly to !AdBlock's source tree.
 
-But you're limited because you can't edit Issues in more powerful ways, which only *official Contributors* can do.  Everything you do as a new volunteer you can do more effectively as a Contributor, and some important tasks can't be done at all by non-Contributors.
-
-Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project as an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
-
-Once you're a Contributor, read [VolunteerInstructions#Project_members these instructions] to learn how to use your new powers :)
+_If you have had a few patches accepted into !AdBlock, [#Joining_the_project become a Committer]!_
 
 <br><br><hr><hr>
 
