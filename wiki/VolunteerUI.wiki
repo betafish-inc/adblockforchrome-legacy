@@ -1,6 +1,6 @@
 #summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
-<a name="top"></a>
+<a name="top"></a>=Volunteer UI=
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
@@ -18,7 +18,7 @@ Users report ads and bugs all the time in the Issue Tracker.  It would be wonder
  * You could try to [#Reproducing_bugs reproduce a reported bug].  If we can't reproduce a bug, we can't fix it.
  * You could [#Handling_ad_reports investigate a reported ad], so we know how best to get rid of it.
 
-If you are a programmer,
+Also, if you are a programmer,
 
  * You could [#Debugging_issues find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
  * You could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
@@ -27,7 +27,6 @@ Also,
 
  * You could [#Answering_questions_from_users answer questions from other users] in the help forum.
  * You could create or improve !AdBlock's [HowToTranslate translation into your language].
- * You could *spread the word* about !AdBlock by email, social network, your blog... this is always helpful!
 
 <h4>Join the project!</h4>
 
@@ -122,14 +121,9 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 !AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, close the Options page, then click the !AdBlock toolbar button -> Report an ad.  You can do it on any page, including this ad-free page.  Run through it a few times to see what it does.  You can make up pretend answers and just stop before actually reporting anything.
 
-When a user sees an ad, they can run the reporting wizard.  Most ads just need to be added to "filter lists", list of ads blocking rules read by !AdBlock and maintained by third parties.  The wizard usually tells the user to report the ad to the appropriate filter list maintainer.
+That's what users run when they see an ad.  The wizard usually tells the user to report the ad to the maintainer of the appropriate "filter list" (a list of ad blocking rules read by !AdBlock); in those cases we don't get an ad report.
 
-But if the wizard thinks that an appropriate filter already exists, and so the ad is showing due to a bug in !AdBlock, it helps the user file a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  The report template looks something like this:
-<pre>
-1. Exactly where on that page is the ad? What does it look like? Attach a screenshot if you can.
-2. Paste a working filter, if you have one:
-3. Any other information that would be helpful?</pre>
-and the wizard also attaches some information about the user's system.  We then investigate the report to see how we should proceed.
+But if the wizard thinks that an appropriate filter already exists, and so the ad is showing due to a bug in !AdBlock, it helps the user file a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  (Here's an [http://code.google.com/p/adblockforchrome/issues/detail?id=7165 example] which the user forgot to fill in with details).  We then investigate the report to see how we should proceed.
 
 That's where you come in.  Pick an ad report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the steps below to handle it.
 
@@ -363,7 +357,7 @@ Users report ads and bugs all the time in the Issue Tracker.  It would be wonder
 
 If you are a programmer,
 
- * You could [#Debugging_issues_(Contributors) find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
+ * You could [#Debugging_issues_(Contributors) find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a big head start.
  * You could [#Writing_code_(Contributors) submit a patch] to implement a bugfix or feature.  This is of course a huge help.
 
 Also,
@@ -515,9 +509,9 @@ In addition to [#Filling_in_missing_information the instructions for all volunte
 
 3. If you asked a question, you should *set the `MoreInfoNeeded` label*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [#ContributorUI "Ways to help" lists], so consider also *starring the Issue*.  That way you'll be emailed as soon as a response comes back and you could [#TODO remove the label].
 
-4. If a `Type-Enhancement` Issue seems clear enough to proceed, set `Status:Accepted`.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner list of open feature requests].
+4. If a `Type-Enhancement` Issue seems clear enough to proceed, *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner list of open feature requests].
 
-5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#Reproducing_bugs_(Contributors) reproduced], set `Status:Accepted`.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
+5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [#Reproducing_bugs_(Contributors) reproduced], *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
 
 6. If the Issue is invalid in some way, you could [#Triaging_issues_(Contributors) triage it].
 
@@ -652,13 +646,13 @@ When to de-own an Issue:
 
 As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
 
-But you're limited because you can't *edit Issues* in more powerful ways.  Everything you do as a new volunteer you can do more effectively when you can edit Issues, and some important tasks can't be done at all without this ability.  Only volunteers who have *joined the project as official Contributors* can edit Issues.
+But you're limited because you can't edit Issues in more powerful ways, which only *official Contributors* can do.  Everything you do as a new volunteer you can do more effectively as a Contributor, and some important tasks can't be done at all by non-Contributors.
 
-Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to become an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
+Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project as an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
 
 Once you're a Contributor, use [#ContributorUI the Contributor UI] instead of [#top the Volunteer UI].
 
-= Overview =
+<a name="Overview"></a>=Project overview=
 
 Thanks for being interested in volunteering on the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know before deciding whether you'd like to volunteer.
 
@@ -669,7 +663,7 @@ Thanks for being interested in volunteering on the !AdBlock project!  Five minut
  # *Being nice* is part of the culture.  Constructive criticism, heated technical debate, and politely declining a user's feature request are all good.  Being rude is not OK - even if a user is irate and clueless, or a volunteer makes an obvious mistake.
  # Over 10 million people use !AdBlock.  By volunteering, you can make the world a slightly better place for millions of people!
 
-If the above sounds good to you, then, welcome! :)  Say hi in !AdBlock's [http://groups.google.com/group/adblockforchrome-discuss public forum], and if you plan to stick around for any length of time, join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev developer forum].  Then pick a task from [#top Ways To Help] and have fun!
+If the above sounds good to you, then, welcome! :)  Join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev development forum] and say hi if you'd like.  Then head to the [#top Volunteer UI] and have fun!
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
