@@ -120,9 +120,9 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 === Handling ad reports ===
 
-!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, then click the toolbar button -> Report an ad.  You can do it on any page, including this ad-free page.  Run through it a few times to see what it does.
+!AdBlock has a built-in ad reporting wizard.  Try it yourself: click the !AdBlock toolbar button -> Options, turn on advanced mode, close the Options page, then click the !AdBlock toolbar button -> Report an ad.  You can do it on any page, including this ad-free page.  Run through it a few times to see what it does.  You can make up pretend answers and just stop before actually reporting anything.
 
-When a user sees an ad, they can the reporting wizard.  Most ads just need to be added to "filter lists", list of ads blocking rules read by !AdBlock and maintained by third parties.  The wizard usually tells the user to report the ad to the appropriate filter list maintainer.
+When a user sees an ad, they can run the reporting wizard.  Most ads just need to be added to "filter lists", list of ads blocking rules read by !AdBlock and maintained by third parties.  The wizard usually tells the user to report the ad to the appropriate filter list maintainer.
 
 But if the wizard thinks that an appropriate filter already exists, and so the ad is showing due to a bug in !AdBlock, it helps the user file a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  The report template looks something like this:
 <pre>
@@ -188,7 +188,7 @@ Often it is useful to modify the source code; e.g. to force a function to return
 {{{
 svn checkout http://adblockforchrome.googlecode.com/svn/tags/2.5.40 adblockforchrome-read-only
 }}}
-replacing `2.5.40` with [Changelog the current release number].  You'll need svn installed on Linux, or !TortoiseSVN installed on Windows; more info is [http://code.google.com/p/adblockforchrome/source/checkout here].
+replacing `2.5.40` with [Changelog the current release number].  You'll need svn installed on Linux, or TortoiseSVN installed on Windows; more info is [http://code.google.com/p/adblockforchrome/source/checkout here].
 
 Once you have your local copy, go to chrome://chrome/extensions, select Developer Mode -> Load Unpacked Extension, and select the folder containing the local copy.  Now !AdBlock is running from that local copy (be sure to disable any other running copies.)  Now you can make changes to the code in that folder, then click the Reload link on chrome://chrome/extensions to load the changed version.
 
@@ -586,7 +586,7 @@ However, after a few of your patches have been accepted, you should ask for Comm
 Here's the process for a Committer to write code to address an issue:
 
  # Set yourself as `Owner` as described above.
- # Using svn on Linux or !TortoiseSVN on Windows, copy `https://adblockforchrome.googlecode.com/svn/trunk` to `https://adblockforchrome.googlecode.com/svn/branches/issue-5740` (of course with the correct Issue number.)  _The first time you do this, you may have to [http://code.google.com/p/adblockforchrome/source/checkout authenticate]._  Then check out a local copy of that folder.
+ # Using svn on Linux or TortoiseSVN on Windows, copy `https://adblockforchrome.googlecode.com/svn/trunk` to `https://adblockforchrome.googlecode.com/svn/branches/issue-5740` (of course with the correct Issue number.)  _The first time you do this, you may have to [http://code.google.com/p/adblockforchrome/source/checkout authenticate]._  Then check out a local copy of that folder.
  # Make your changes, testing them in the browser (see instructions in [#Debugging_issues "Debugging issues"]).
  # For huge bonus points, also add unit tests to `tools/tests/test.html`.
  # Check them in to `branches/issue-5740`.  You can do this as one giant checkin, or as many small checkins; no one will pay attention until you ask for code review.  *Important:* The commit message should start with the line `Update issue 5740`, which will append your commit message as an Issue comment.  Be very explicit in your commit messages about what was changed, what was fixed, and how to test it.
