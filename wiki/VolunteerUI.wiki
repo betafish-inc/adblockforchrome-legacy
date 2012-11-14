@@ -1,6 +1,7 @@
 #summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
-<a name="top"></a>=Volunteer UI=
+<a name="top"></a>
+=Volunteer UI=
 
 _Thanks for helping out with !AdBlock!  If you are new here, please *[#Overview READ THIS FIRST]*._
 
@@ -10,7 +11,7 @@ Just *click something interesting* below to get started.  And if you have questi
 
 <hr>
 
-= Ways to help =
+== Ways to help ==
 
 Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
