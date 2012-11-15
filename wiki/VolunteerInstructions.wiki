@@ -10,12 +10,14 @@ These instructions are linked to from tasks in the [VolunteerUI Volunteer UI].
 
 [VolunteerUI#Filling_in_missing_information Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary Relevant Issues]
 
+Bug report Issues are labeled `Type-Defect`, and feature request Issues are labeled `Type-Enhancement.`
+
 When making sure an Issue is missing no information:
- * If it's a `Type-Defect` and is missing any information that we require in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.  For example, in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
- * If it's a `Type-Defect`, you may be able to think of a question that the template doesn't ask, but that would still help clarify the bug.  *Add a comment* asking your question.  For example, in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
- * If it's a `Type-Enhancement` and it's at all unclear to you what exactly they want or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
- * If the report doesn't seem to be a bug report or a feature request, just ignore it.  A project Contributor will handle it.
- * If the report is complete, just ignore it.  A project Contributor will handle it.
+ * If a `Type-Enhancement` doesn't make clear to you exactly what the reporter wants or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
+ * If a `Type-Defect` is missing any information required by the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.
+   * Example: in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
+ * You may be able to think of a question that the template doesn't ask, but that would still help clarify the Issue.  *Add a comment* asking your question.
+   * Example: in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
 
 <h4>Bonus instructions</h4>
 
@@ -27,9 +29,9 @@ When making sure an Issue is missing no information:
 
 3. If the Summary is vague, *improve it* and put the old Summary in a comment.  For example, you could update an Issue called "Can't get videos right" by adding a comment saying `[old Summary: "Can't get videos right"]` and changing the Summary to `Youtube videos embedded in Facebook posts don't play properly in Safari`.
 
-4. If a `Type-Enhancement` Issue seems clear enough to proceed, *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner list of open feature requests].
+4. If a `Type-Enhancement` Issue seems clear enough to proceed, *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Writing_patches implemented].
 
-5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [VolunteerUI#Reproducing_bugs_(Contributors) reproduced], *set `Status:Accepted`*.  It will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
+5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [VolunteerUI#Reproducing_bugs_(Contributors) reproduced], *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Debugging_issues debugged] and [VolunteerUI#Writing_patches fixed].
 
 6. If the Issue is invalid in some way, you could [VolunteerUI#Triaging_issues_(Contributors) triage it].
 
@@ -48,26 +50,34 @@ When a user finds a bug, they file a new Issue.  The [http://code.google.com/p/a
  # What *should* happen after taking those steps (if there were no bug)
  # What *actually* happens after taking those steps (because there is a bug)
 
-Here's an example repro.
-<pre>
-Reproduction steps:
-      1. Install AdBlock and restart Chrome.
-      2. Open a tab to www.google.com.
-      3. Type hotel into the search box and press Enter.  You are taken to the results page.
-      4. Press the browser Back button.
-      5. Type hotel into the search box again and press Enter.
-Expected result:
-      You see the Google results page again.
-Actual result:
-      Nothing happens, as if you had not pressed Enter.</pre>
+For example, [https://code.google.com/p/adblockforchrome/issues/detail?id=7053 this bug report] has good repro instructions.  They let the reader know exactly how to make the bug appear.  Having a good repro lets you confirm that the bug exists (the user's computer or brain isn't defective) and makes it easier to debug.
 
-This is much more useful than a generic description of a bug, such as "Search for hotel on Google, go back to the search page, and search for hotel again; the search box is broken", because it lets you know exactly how to make the bug appear.  Having a good repro lets you confirm that the bug exists (the user's computer or brain isn't defective) and makes it easier to debug.
+<h4>To reproduce a bug</h4>
 
-That's where you come in.  Pick a bug report from [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary this list] and follow the instructions below to handle it.
+1. If the bug report says that a *non-ad is blocked*, that's a special case: no repro is needed.  Follow [#Bug_reports:_a_special_case these instructions] instead.
 
-<h4>A special case: handling a blocked non-ad</h4>
+2. If the repro is not clear enough to follow, *add a comment* asking for a better repro.
+ * Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
 
-First, a special case: if the bug report is that a non-ad is being blocked ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), then just *add a comment* like this one:
+3. If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
+ * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
+ * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
+
+<h4>Bonus instructions</h4>
+
+*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+
+4. If you were able to reproduce the bug, *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Debugging_issues debugged] and [VolunteerUI#Writing_patches fixed].
+
+5. If the report is invalid in some way, [VolunteerUI#Triaging_issues_(Contributors) triage it].
+
+[VolunteerUI#Reproducing_bugs Back to overview]
+
+=== Bug reports: a special case ===
+
+There's a special type of bug report that we see a lot, to the point where you can skip straight to fixing the problem.
+
+If the bug report is that a *non-ad is being blocked* ([http://code.google.com/p/adblockforchrome/issues/detail?id=6422 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6643 example]), then just *add a comment* like this one:
 <pre>
 Sorry for the trouble.  This sounds like it is caused by a broken filter in one of your
 filter lists, which are not maintained by AdBlock.  Please follow the steps at
@@ -81,23 +91,11 @@ I followed the steps at getadblock.com/faq/hunting to find that this is caused b
 which is in the EasyList filter list.  I have reported it to EasyList, and when they fix the
 problem you'll automatically be updated with the fix.</pre>
 
-<h4>All other cases</h4>
-
- * If the Issue doesn't seem to be a bug report, just ignore it.  A project member will handle it.
- * If the repro is not clear enough to follow, *[VolunteerUI#Filling_in_missing_information ask for a better repro]*.  Note that if a bug is obvious enough, you may not need a formal repro to follow it, for example "The text on mywebsite.com/foo.html turns red when !AdBlock is installed and enabled".
- * If the repro is clear, *follow it and add a comment* with your findings.  Include your *OS, browser, and !AdBlock versions*.
-   * Example of success: "Confirmed with !AdBlock 2.5.40 in Chrome 22 on Windows 7."
-   * Example of failure: "Could not reproduce in Chrome 22/Win7/!AdBlock 2.5.40.  The text is black whether !AdBlock is enabled or not."
-
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet an [#Joining_the_project official Contributor], stop here.*  Contributors, set the `MoreInfoNeeded` label if you asked the user to find the broken filter, or `Status:ReportToList` if you found and reported it yourself.
 
-1. If you encountered the "blocked non-ad" special case and asked the user to take care of it, *set the `MoreInfoNeeded` label*.  If you took care of it yourself, *set `Status:ReportToList`*.
-
-2. Otherwise, if you were able to reproduce the bug, *set `Status:Accepted`*.  The Issue will then show up in the [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner list of Issues to debug].
-
-[VolunteerUI#Reproducing_bugs Back to overview]
+[#Detailed_instructions_for:_Reproducing_bugs Back]
 
 <br><br><hr><hr>
 
