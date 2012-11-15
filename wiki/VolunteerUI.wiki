@@ -71,13 +71,13 @@ All [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=-is%3Aopen&so
 
 Users file new Issue reports when they find a bug or have a feature request.  Sometimes they leave out some of the information that we ask in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect report template] or [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user enhancement report template], or are just plain unclear.
 
-We tell users that we will ignore incomplete bug reports, but in practice we usually don't.  Instead, we add comments to the Issue asking followup questions until we have all the info we need.  Here are [VolunteerInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
+We tell users that we will ignore incomplete reports, but in practice we usually don't.  Instead, we add comments to the Issue asking followup questions until we have all the info we need.  Here are [VolunteerInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
 
 If you've done this for a week or so, you should [VolunteerInstructions#Joining_the_project become an official Contributor].  Then you'll be able to help with these Issues in more powerful ways which aren't mentioned here.
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all the Issues that may be missing information].  The ones that have been waiting longest for attention are listed first.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -91,7 +91,7 @@ If you've done this for a week or so, you should [VolunteerInstructions#Joining_
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all non-reproduced bug reports].  The ones that have been waiting longest for attention are listed first.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -107,7 +107,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adr
 
 _If you enjoy handling ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -121,7 +121,7 @@ If you plan to debug more than one Issue, you should [VolunteerInstructions#Join
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-Cause:Known%20-MoreInfoNeeded&sort=-Owner%20Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner all the Issues awaiting debugging].  The ones that have been waiting longest for attention are listed first.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -133,7 +133,7 @@ After a few of your patches have been accepted, you should [VolunteerInstruction
 
 Here are all the open [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Defect%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Cause+Modified&colspec=Cause%20ID%20Opened%20Modified%20Status%20Summary%20Owner bug reports] and [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=Type=Enhancement%20Status:Accepted%20-MoreInfoNeeded&sort=-Owner+Modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20Owner feature requests].  Bug reports that have been debugged already are listed first; otherwise, Issues that have been waiting longest for attention are listed first.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -154,7 +154,7 @@ Some useful shortcuts when composing your message: `getadblock.com/support getad
 
 *Important:* If you subscribe to the help forum mailing list, adblockforchrome-discuss@googlegroups.com, and you reply over email, *be sure to reply-all*, because replies by default go only to the poster.  This is so posters don't have to join the forum to ask a single question; they can just send an email.  Reply-all will send your reply to the mailing list as well, so others know that the question has been answered.  If the user replies back to you, they may reply directly to you; just cc adblockforchrome-discuss@googlegroups.com when you reply back to them.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -172,7 +172,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 _If you enjoy triaging issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-Defect` and `Type-Enhancement` labels to be notified when a new report comes in.  You'll get emailed all the updates too, that way, so you'll probably want to filter out the followup emails using email filters._
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -188,7 +188,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:Mo
 
 _If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -206,7 +206,7 @@ _Become a first responder! If you enjoy watching out for `PotentiallyCritical` i
 
 _If you wouldn't mind helping firefight, you can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label to be emailed when truly critical bugs do appear._
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
@@ -222,11 +222,11 @@ Here are [VolunteerInstructions#Detailed_instructions_for:_Reviewing_code detail
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary all the Issues awaiting code review].  The ones that have been waiting longest for attention are listed first.
 
-[#top Back]
+[#top Home]
 
 <br><br><hr><hr>
 
-===== Overview =====
+==== Overview ====
 
 (Oops, the project overview has been moved [VolunteerInstructions#Project_overview here].)
 
