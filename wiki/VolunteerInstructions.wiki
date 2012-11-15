@@ -513,7 +513,7 @@ _If you aren't yet an official Contributor, you are probably ready to be, so [#J
 
 Committers are Contributors who can also commit code directly to !AdBlock's source tree.
 
-_If you have had a few patches accepted into !AdBlock, [#Joining_the_project become a Committer]!_
+_After you have had a few patches accepted into !AdBlock, ask in the  [http://groups.google.com/group/adblockforchrome-dev development forum] to become a Committer!_ 
 
 <br><br><hr><hr>
 
