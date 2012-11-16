@@ -99,7 +99,7 @@ problem you'll automatically be updated with the fix.</pre>
 
 <br><br><hr><hr>
 
-=== Detailed instructions for: Handling ad reports ===
+=== Detailed instructions for: Investigating ad reports ===
 
 [VolunteerUI#Investigating_ad_reports Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
