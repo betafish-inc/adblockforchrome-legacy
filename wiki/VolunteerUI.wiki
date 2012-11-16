@@ -1,3 +1,4 @@
+#summary How to contribute to AdBlock
 #labels Restrict-AddWikiComment-Contributor
 <a name="top"></a>
 
