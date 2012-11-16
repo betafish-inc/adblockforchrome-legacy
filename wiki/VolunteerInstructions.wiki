@@ -188,7 +188,7 @@ Once the local copy is installed, you can scroll down to "Inspect Global Page" i
 
 `Info.plist` is the file that describes !AdBlock to Safari, like Chrome's `manifest.json`.  Safari loads some different files from Chrome, so that's a good place to start when looking around.
 
-<h4>When you're finished debugging</h4>
+==== When you're finished debugging ====
 
 If you find the cause of an Issue, *add a comment* being as specific as possible about the cause.  Remember that whoever comes after you won't have just spent half an hour staring at the code, so she won't have all the context and knowledge in her head that you have right now.  For instance, if you found out why Wikipedia keeps turning pink, this comment is not very useful:
 <pre>I found the problem: We think Wikipedia is loading from msn.com, so it's turning pink.</pre>
