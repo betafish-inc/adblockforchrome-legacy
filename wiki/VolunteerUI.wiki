@@ -44,7 +44,7 @@ _PS: If you enjoy helping with !AdBlock, I'd love for you to *[VolunteerInstruct
 Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
 
  * You could [#Verifying_issues verify an Issue], checking that it is legitimate and that it makes sense.
- * You could [#Handling_ad_reports investigate a reported ad], so we know how best to get rid of it.
+ * You could [#Investigating_ad_reports investigate a reported ad], so we know how best to get rid of it.
 
 Also, if you are a programmer,
 
@@ -68,7 +68,7 @@ And if you like doing everything, you may find it easier to just check for [http
 
 === Michael's favorites ===
 
-Everything you do to help gives me more time to work on improving !AdBlock.  *[#Verifying_issues Verifying Issues]* and *[#Handling_ad_reports investigating reported ads]* are two in particular that I would love for you to handle as a new volunteer.
+Everything you do to help gives me more time to work on improving !AdBlock.  *[#Verifying_issues Verifying Issues]* and *[#Investigating_ad_reports investigating reported ads]* are two in particular that I would love for you to handle as a new volunteer.
 
 As a [VolunteerInstructions#Joining_the_project project member], you would be my hero if, on any day that you felt like volunteering, you did these tasks in this order:
  # Unlabel any `MoreInfoNeeded`s that have been answered (use the "`unlabel`" Task Links above)
@@ -84,15 +84,15 @@ As a [VolunteerInstructions#Joining_the_project project member], you would be my
 
 Each of the sections below is linked to from above; just read the ones that interest you.
 
-=== Handling ad reports ===
+=== Investigating ad reports ===
 
 Users can use !AdBlock's built-in ad reporting wizard when they see an ad.  The wizard usually tells the user to report the ad elsewhere, to the people who run the "filter lists" containing lists of known ads to block.  But sometimes the wizard thinks the ad is not due to a missing filter, but due to a problem in !AdBlock itself.
 
-In that case, the wizard tells the user to file a new Issue reporting the ad.  We then go figure out exactly how we're going to handle the situation.  Here are [VolunteerInstructions#Detailed_instructions_for:_Handling_ad_reports detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
+In that case, the wizard tells the user to file a new Issue reporting the ad.  We then go figure out exactly how we're going to handle the situation.  Here are [VolunteerInstructions#Detailed_instructions_for:_Investigating_ad_reports detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
 
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
 
-_If you enjoy handling ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
+_If you enjoy investigating ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
 
 [#top Home]
 
