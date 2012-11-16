@@ -31,12 +31,12 @@ _
 <hr>
 
 Would you be interested in making !AdBlock better for millions of users?  I would *really appreciate* any help you want to give!
-
+<br>
 Read the [VolunteerInstructions#Project_overview project overview], pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
 
 - Michael
 
-_If you enjoy helping with !AdBlock, I'd love for you to *[VolunteerInstructions#Joining_the_project join the project]*.  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!_
+_PS: If you enjoy helping with !AdBlock, I'd love for you to *[VolunteerInstructions#Joining_the_project join the project]*.  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!_
 
 
 == Ways to help ==
