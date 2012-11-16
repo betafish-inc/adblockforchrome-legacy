@@ -46,15 +46,13 @@ Users report ads and bugs all the time in the Issue Tracker.  It would be wonder
  * You could [#Verifying_issues verify an Issue], checking that it is legitimate and that it makes sense.
  * You could [#Investigating_ad_reports investigate a reported ad], so we know how best to get rid of it.
 
-Also, if you are a programmer,
-
- * You could [#Debugging_issues find the cause of reported bugs].  The debugger doesn't have to be the coder, so by debugging you give the coder a huge head start.
- * You could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
+ * If you can read code, you could [#Debugging_issues find the cause of a bug], giving a big head start to whomever writes code to fix the bug.
+ * If you can write code, you could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
 
 Also,
 
  * You could [#Answering_questions_from_users answer questions from other users] in the help forum.
- * You could create or improve !AdBlock's [HowToTranslate translation into your language].
+ * You could help [HowToTranslate translate] !AdBlock into your language.
 
 <h4>Bonus for [VolunteerInstructions#Joining_the_project project members] only:</h4>
 
@@ -70,12 +68,12 @@ And if you like doing everything, you may find it easier to just check for [http
 
 Everything you do to help gives me more time to work on improving !AdBlock.  *[#Verifying_issues Verifying Issues]* and *[#Investigating_ad_reports investigating reported ads]* are two in particular that I would love for you to handle as a new volunteer.
 
-As a [VolunteerInstructions#Joining_the_project project member], you would be my hero if, on any day that you felt like volunteering, you did these tasks in this order:
+As a [VolunteerInstructions#Joining_the_project project member], you would be my *hero* if, on any day that you felt like volunteering, you did these tasks in this order:
  # Unlabel any `MoreInfoNeeded`s that have been answered (use the "`unlabel`" Task Links above)
  # Triage everything you see in the triage list ("`triage`")
- # If you can code, do a code review ("`codereview`")
+ # If you can read code, do a code review ("`codereview`")
  # Respond to any unanswered threads in the help forum ("`help-forum`")
- # If you can code, try to debug any Issue not yet debugged ("`debug`")
+ # If you can read code, try to debug any Issue not yet debugged ("`debug`")
  # Investigate any new ad reports ("`adreport`")
 
 <br><br><br><br><hr><hr>
