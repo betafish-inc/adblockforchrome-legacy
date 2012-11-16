@@ -1,5 +1,5 @@
 #summary Get help with an AdBlock problem.
-#labels Restrict-AddWikiComment-Commit,Featured
+#labels Restrict-AddWikiComment-Commit
 
 (Got a *question*, not a problem?  Check out the [Support support page] for answers and contact info.)
 
