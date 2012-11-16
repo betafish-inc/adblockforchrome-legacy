@@ -466,6 +466,8 @@ Luckily, it's easy to join the project, and I encourage you to do so!  Once you'
 
 Once you've become a project member, read the instructions [VolunteerInstructions#Project_members below] to learn how to use your new powers :)
 
+[VolunteerUI Home]
+
 <br><br><hr><hr>
 
 === Project members ===
