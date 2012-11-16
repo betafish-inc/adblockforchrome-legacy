@@ -8,7 +8,7 @@ These instructions are linked to from tasks in the [VolunteerUI Volunteer UI].
 
 === Detailed instructions for: Filling in missing information ===
 
-[VolunteerUI#Filling_in_missing_information Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary Relevant Issues]
+[VolunteerUI#Verifying_issues Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary Relevant Issues]
 
 Bug report Issues are labeled `Type-Defect`, and feature request Issues are labeled `Type-Enhancement.`
 
@@ -21,9 +21,9 @@ When making sure an Issue is missing no information:
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet a [#Joining_the_project project member], stop here.* Project members can do more:
 
-1. If you asked a question, you should *set the `MoreInfoNeeded` label*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [VolunteerUI "Ways to help" lists], so consider also *starring the Issue*.  That way you'll be emailed as soon as a response comes back and you could [VolunteerUI#Unlabeling_MoreInfoNeeded_s_(Contributors) remove the label].
+1. If you asked a question, you should *set the `MoreInfoNeeded` label*.  This label lets others know that we're waiting to hear back from the reporter.  It also *removes the Issue* from most of the [VolunteerUI "Ways to help" lists], so consider also *starring the Issue*.  That way you'll be emailed as soon as a response comes back and you could [VolunteerUI#Unlabeling_MoreInfoNeeded_s remove the label].
 
 2. You can *add clarifying labels*.  If you learn that the issue only applies to a single browser or OS, add a `Browser-` or `OpSys-` label.
 
@@ -31,17 +31,17 @@ When making sure an Issue is missing no information:
 
 4. If a `Type-Enhancement` Issue seems clear enough to proceed, *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Writing_patches implemented].
 
-5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been [VolunteerUI#Reproducing_bugs_(Contributors) reproduced], *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Debugging_issues debugged] and [VolunteerUI#Writing_patches fixed].
+5. If a `Type-Defect` Issue seems clear enough to proceed, AND has been reproduced, *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Debugging_issues debugged] and [VolunteerUI#Writing_patches fixed].
 
-6. If the Issue is invalid in some way, you could [VolunteerUI#Triaging_issues_(Contributors) triage it].
+6. If the Issue is invalid in some way, you could [VolunteerUI#Triaging_issues triage it].
 
-[VolunteerUI#Filling_in_missing_information Back to overview]
+[VolunteerUI#Verifying_issues Back to overview]
 
 <br><br><hr><hr>
 
 === Detailed instructions for: Reproducing bugs ===
 
-[VolunteerUI#Reproducing_bugs Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+[VolunteerUI#Verifying_issues Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
 <h4>What is a repro?</h4>
 
@@ -65,13 +65,13 @@ For example, [https://code.google.com/p/adblockforchrome/issues/detail?id=7053 t
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet a [#Joining_the_project project member], stop here.* Project members can do more:
 
 4. If you were able to reproduce the bug, *set `Status:Accepted`*, making it a candidate to be [VolunteerUI#Debugging_issues debugged] and [VolunteerUI#Writing_patches fixed].
 
-5. If the report is invalid in some way, [VolunteerUI#Triaging_issues_(Contributors) triage it].
+5. If the report is invalid in some way, [VolunteerUI#Triaging_issues triage it].
 
-[VolunteerUI#Reproducing_bugs Back to overview]
+[VolunteerUI#Verifying_issues Back to overview]
 
 === Bug reports: a special case ===
 
@@ -93,7 +93,7 @@ problem you'll automatically be updated with the fix.</pre>
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.*  Contributors, set the `MoreInfoNeeded` label if you asked the user to find the broken filter, or `Status:ReportToList` if you found and reported it yourself.
+*If you're not yet a [#Joining_the_project project member], stop here.*  Project members, set the `MoreInfoNeeded` label if you asked the user to find the broken filter, or `Status:ReportToList` if you found and reported it yourself.
 
 [#Detailed_instructions_for:_Reproducing_bugs Back]
 
@@ -101,7 +101,7 @@ problem you'll automatically be updated with the fix.</pre>
 
 === Detailed instructions for: Handling ad reports ===
 
-[VolunteerUI#Handling_ad_reports Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+[VolunteerUI#Investigating_ad_reports Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
 <h4>The wizard</h4>
 
@@ -146,7 +146,7 @@ Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet a [#Joining_the_project project member], stop here.* Project members can do more:
 
 1. If you added a comment and were not able to see the ad, *set the `MoreInfoNeeded` label*, which will take the ad report out of the "investigate" list until the user replies.
 
@@ -154,7 +154,7 @@ Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.
 
 3. If the ad appears to be due to a bug in !AdBlock, *set `Status:Accepted`* and change from `Type-AdReport` to *`Type-Defect`*.  Along with the comment that you posted, *change the Summary* from "Ad report: google.com" to a better summary of the defect, e.g. "Text ads appearing at bottom of google.com search results pages (blocked in ABP)".
 
-[VolunteerUI#Handling_ad_reports Back to overview]
+[VolunteerUI#Investigating_ad_reports Back to overview]
 
 <br><br><hr><hr>
 
@@ -218,7 +218,7 @@ Resources tab.
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet a [#Joining_the_project project member], stop here.* Project members can do more:
 
 1. If you expect debugging to take a while, you should set yourself as `Owner` (see the [#The_Owner_field definition]), so that others don't duplicate your work.
 
@@ -256,7 +256,7 @@ Someone will review your patch.  If there are problems, the Issue will be set to
 
 <h4>Bonus instructions</h4>
 
-*If you're not yet an [#Joining_the_project official Contributor], stop here.* Contributors can do more:
+*If you're not yet a [#Joining_the_project project member], stop here.* Project members can do more:
 
 1. You should set yourself as `Owner` (see the [#The_Owner_field definition]) before you start working, so that others don't duplicate your work; and
 
@@ -325,7 +325,7 @@ When to de-own an Issue:
 
 === Detailed instructions for: Triaging issues ===
 
-[VolunteerUI#Triaging_issues_(Contributors) Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+[VolunteerUI#Triaging_issues Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
 <h4>What exactly is triage?</h4>
 
@@ -348,13 +348,12 @@ You might *close the Issue*:
 
 If you don't close the issue, then next you should:
  # Correct any incorrect labels (e.g. `Type-Defect`s that should be `Type-Enhancement`s);
- # [VolunteerUI#Filling_in_missing_information fill in any missing information];
- # if it's a bug report *[VolunteerUI#Reproducing_bugs reproduce the bug]; and
+ # [VolunteerUI#Verifying_issues verify the Issue]; and
  # label it `Priority-Critical`* if it is [#What_is_a_critical_issue? critical].
 
 By this point you will have either set `MoreInfoNeeded` or `Status:Accepted`, moving the Issue out of the triage list.  (I can think of an exception: if you can't reproduce an otherwise clear bug report, then all you can do is add a comment and leave the Issue in the triage list for someone else to reproduce or to close.)
 
-[VolunteerUI#Triaging_issues_(Contributors) Back to overview]
+[VolunteerUI#Triaging_issues Back to overview]
 
 <br><br><hr><hr>
 
@@ -375,7 +374,7 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
 
 === Detailed instructions for: Unlabeling `MoreInfoNeeded`s ===
 
-[VolunteerUI#Unlabeling_MoreInfoNeeded_s_(Contributors) Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
+[VolunteerUI#Unlabeling_MoreInfoNeeded_s Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
 We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
 
@@ -394,19 +393,19 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:Mo
 
 _If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
 
-[VolunteerUI#Unlabeling_MoreInfoNeeded_s_(Contributors) Back to overview]
+[VolunteerUI#Unlabeling_MoreInfoNeeded_s Back to overview]
 
 <br><br><hr><hr>
 
 === Detailed instructions for: Judging `PotentiallyCritical`s ===
 
-[VolunteerUI#Judging_PotentiallyCritical_s_(Contributors) Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary Relevant Issues]
+[VolunteerUI#Judging_PotentiallyCritical_s Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary Relevant Issues]
 
 <h4>Potentially versus actually critical</h4>
 
-If a Contributor thinks that an Issue is critical according to [#What_is_a_critical_issue? this definition], then they label it `Priority-Critical` and scary alarm emails get sent out to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Priority-Critical` label.  That way, we can fix the issue as quickly as possible.
+If a project member thinks that an Issue is critical according to [#What_is_a_critical_issue? this definition], then they label it `Priority-Critical` and scary alarm emails get sent out to anyone [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribed to] the `Priority-Critical` label.  That way, we can fix the issue as quickly as possible.
 
-A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a Contributor to notice the Issue.
+A regular user reporting an Issue can't set `Priority-Critical` and send scary alarm emails.  Normally, he just has to wait for a project member to notice the Issue.
 
 <h4>Getting notified (or spammed)</h4>
 
@@ -418,20 +417,20 @@ Users could abuse this ability, thinking they'll get faster treatment of their p
 
 If you think that a `PotentiallyCritical`-labeled Issue is in fact [#What_is_a_critical_issue? critical]:
  # *Label it `Priority-Critical`*.  Michael's personal email address is subscribed to that label so that he'll be notified even on a day off -- and anyone else willing to lend a hand with critical issues can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label.
- # Since you are probably the first person who has noticed this Issue, it would be great for you to [VolunteerUI#Reproducing_bugs reproduce] and [VolunteerUI#Filling_in_missing_information clarify] the bug, and even to start [VolunteerUI#Debugging_issues debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
+ # Since you are probably the first person who has noticed this Issue, it would be great for you to [VolunteerUI#Verifying_issues verify] the bug, and even to start [VolunteerUI#Debugging_issues debugging it], so that by the time others notice the Issue you'll have moved it closer to shipping a fix.
 
 If you think that a `PotentiallyCritical`-labeled Issue is not critical:
  # *Remove the `PotentiallyCritical` label* and add an explanatory comment like "This is not critical because, even though there's a visible effect on a popular website, the website can still be used" or "This is not critical because the broken website is not used by millions of people".
- # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [VolunteerUI#Triaging_issues_(Contributors) triage list].  We won't penalize the reporter if it seems that they were acting in good faith.
+ # If the issue is serious but not [#What_is_a_critical_issue? critical], it will get addressed once it reaches the top of the [VolunteerUI#Triaging_issues triage list].  We won't penalize the reporter if it seems that they were acting in good faith.
  # If the issue is clearly not critical -- the reporter was abusing `PotentiallyCritical` to get attention -- then you should actively *ignore it for a while* in keeping with our spam warning.
 
-[VolunteerUI#Judging_PotentiallyCritical_s_(Contributors) Back to overview]
+[VolunteerUI#Judging_PotentiallyCritical_s Back to overview]
 
 <br><br><hr><hr>
 
 === Detailed instructions for: Reviewing code ===
 
-[VolunteerUI#Reviewing_code_(Contributors) Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary Relevant Issues]
+[VolunteerUI#Reviewing_code Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary Relevant Issues]
 
 <h4>How to perform the code review</h4>
 
@@ -443,7 +442,7 @@ To review code that is in a branch:
  # Check that the code adheres to the [#Coding_style style guide].
  # Leave comments with suggestions/bugs/questions in the "General comment" field for any specific revision, or double click any line of code in a revision to leave an in-line comment ([http://code.google.com/p/adblockforchrome/source/detail?r=4590 example]).  You can also give an overall Positive or Negative review score.
 
-To review a patch submitted by a non-Contributor, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.
+To review a patch submitted by a non-Committer, you'll have to just read the patch and leave a comment in the Issue with your feedback.  To test it, you'd have to apply the patch to a local copy of trunk.
 
 <h4>After your review</h4>
 
@@ -453,7 +452,7 @@ If your review was *positive*, all issues raised by other reviewers have been se
 
 If you think that *the code needs work* before shipping, set `Status:Started`.  Be sure that the negative code review(s) contain specific points that needed to be addressed, so that the author knows how to proceed.  (The author will probably address the concerns you raised by changing code, but on some of the points you may debate and then decide that no change is necessary.  For example, if you suggest a refactoring, and the author feels the change wouldn't add much benefit, and the style guide is not violated, well, there's no strong argument either way... so make the change yourself and get it reviewed, or let the matter drop.)
 
-[VolunteerUI#Reviewing_code_(Contributors) Back to overview]
+[VolunteerUI#Reviewing_code Back to overview]
 
 <br><br><hr><hr>
 
@@ -461,17 +460,17 @@ If you think that *the code needs work* before shipping, set `Status:Started`.  
 
 As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
 
-But you're limited because you can't edit Issues in more powerful ways, which only *official Contributors* can do.  Everything you do as a new volunteer you can do more effectively as a Contributor, and some important tasks can't be done at all by non-Contributors.
+But you're limited because you can't edit Issues in more powerful ways, which only *project members* can do.  Everything you do as a new volunteer you can do more effectively as a project member, and some important tasks can't be done at all by non-members.
 
-Luckily, it's easy to become a Contributor, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project as an official Contributor.  We'll make you one after we check that you've been updating Issues correctly.
+Luckily, it's easy to join the project, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project.  We'll make you an official member of the !AdBlock project after we check that you've been updating Issues correctly.
 
-Once you're a Contributor, read the instructions [VolunteerInstructions#Project_members below] to learn how to use your new powers :)
+Once you've become a project member, read the instructions [VolunteerInstructions#Project_members below] to learn how to use your new powers :)
 
 <br><br><hr><hr>
 
 === Project members ===
 
-Contributors and Committers are listed on !AdBlock's [http://code.google.com/p/adblockforchrome/people/list People page].
+Project members start out as "Contributors", and may become "Committers" if they would like.  All Contributors and Committers are listed on !AdBlock's [http://code.google.com/p/adblockforchrome/people/list People page].
 
 <h4>Contributors</h4>
 
@@ -505,13 +504,13 @@ Here are the common statuses and labels that we use, and what they mean.  You ca
 || `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
 || `MoreInfoNeeded` || We are waiting on a reply from a user ||
 
-_If you aren't yet an official Contributor, you are probably ready to be, so [#Joining_the_project go for it]!_
+_If you haven't yet joined the project as an official Contributor, [#Joining_the_project go for it]!_
 
 <h4>Committers</h4>
 
-Committers are Contributors who can also commit code directly to !AdBlock's source tree.
+Committers have the same powers as Contributors, but can also commit code directly to !AdBlock's source tree, which makes code review easier.
 
-_After you have had a few patches accepted into !AdBlock, ask in the  [http://groups.google.com/group/adblockforchrome-dev development forum] to become a Committer!_ 
+_After you have had a few patches accepted into !AdBlock, ask in the [http://groups.google.com/group/adblockforchrome-dev development forum] to become a Committer!_ 
 
 <br><br><hr><hr>
 
