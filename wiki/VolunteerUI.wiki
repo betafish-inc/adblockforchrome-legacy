@@ -62,7 +62,7 @@ Also,
  * If you can read code, please [#Reviewing_code do a code review] - the author of the code will appreciate it!
 
 Once you're familiar with the project, you can use the "Task links" above to go straight to the Issues for the tasks you enjoy.<br>
-And if you like doing everything, you may find it easier to just check for [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=modified-after:today-7&sort=-modified&colspec=ID%20Opened%20Modified%20Status%20Summary%20WaitingOn%20BlockedOn recently modified Issues], and handle them however it's appropriate.
+And if you like doing everything, you may prefer to just watch the "`changed-this-week`" list and tackle any recently modified Issues as needed.
 
 === Michael's favorites ===
 
