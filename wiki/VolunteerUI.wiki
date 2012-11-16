@@ -66,7 +66,7 @@ And if you like doing everything, you may find it easier to just check for [http
 
 === Michael's favorites ===
 
-Everything you do to help gives me more time to work on improving !AdBlock.  *[#Verifying_issues Verifying Issues]* and *[#Investigating_ad_reports investigating reported ads]* are two in particular that I would love for you to handle as a new volunteer.
+Everything you do to help gives me more time to work on improving !AdBlock.  [#Verifying_issues Verifying Issues] and [#Investigating_ad_reports investigating reported ads] are two in particular that I would love for you to handle as a new volunteer.
 
 As a [VolunteerInstructions#Joining_the_project project member], you would be my *hero* if, on any day that you felt like volunteering, you did these tasks in this order:
  # Unlabel any `MoreInfoNeeded`s that have been answered (use the "`unlabel`" Task Links above)
