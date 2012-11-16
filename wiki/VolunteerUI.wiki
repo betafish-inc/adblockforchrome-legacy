@@ -1,4 +1,3 @@
-#summary Resources for volunteers
 #labels Restrict-AddWikiComment-Contributor
 <a name="top"></a>
 
