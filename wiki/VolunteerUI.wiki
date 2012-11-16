@@ -98,7 +98,7 @@ _If you enjoy handling ad reports, you can [http://code.google.com/p/adblockforc
 
 <br><br><hr><hr>
 
-=== Verifying an Issue ===
+=== Verifying issues ===
 
 Users file new Issue reports when they find a bug or have a feature request.  As the very first step in handling the Issue, we must make sure we know what they are talking about.
 
