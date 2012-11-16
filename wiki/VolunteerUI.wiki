@@ -106,30 +106,7 @@ When a new Issue labeled `Type-Defect` (bug report) or `Type-Enhancement` (featu
 
  * Add a comment asking for any missing info that we asked for in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect Issue template] or [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user enhancement Issue template].  Here are [VolunteerInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] if you want them.
 
- * Add a comment to `Type-Defect` Issues saying whether you can see the buggy behavior on your end.  Here are [VolunteerInstructions#Detailed_instructions_for:_Reproducing_bugs detailed instructions] for reproducing bugs.
-
-[#top Home]
-
-
-=== Filling in missing information ===
-
-Users file new Issue reports when they find a bug or have a feature request.  Sometimes they leave out some of the information that we ask in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect Issue template] or [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user enhancement Issue template], or are just plain unclear.
-
-We tell users that we will ignore incomplete reports, but in practice we usually don't.  Instead, we add comments to the Issue asking followup questions until we have all the info we need.  Here are [VolunteerInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement+Status%3ANew+-label%3AMoreInfoNeeded&sort=modified&colspec=ID+Opened+Modified+Type+Summary all the Issues that may be missing information].  The ones that have been waiting longest for attention are listed first.
-
-[#top Home]
-
-<br><br><hr><hr>
-
-=== Reproducing bugs ===
-
-Users file new Issue reports when they find a bug.  The [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect report template] asks the user to give a "repro", which is a recipe for letting someone else reproduce the buggy behavior.
-
-You can then follow the recipe and add a comment to the Issue saying whether or not you saw the buggy behavior.  Here are [VolunteerInstructions#Detailed_instructions_for:_Reproducing_bugs detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all non-reproduced bug reports].  The ones that have been waiting longest for attention are listed first.
+ * Add a comment to `Type-Defect` Issues saying whether you can see the buggy behavior on your end.  If no one can see the behavior, we can't proceed with fixing the bug.  Here are [VolunteerInstructions#Detailed_instructions_for:_Reproducing_bugs detailed instructions] for reproducing bugs.
 
 [#top Home]
 
@@ -137,7 +114,7 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=def
 
 === Debugging issues ===
 
-Once a bug has been [#Reproducing_bugs reproduced], we need to know the cause in order to fix it.  The person who finds the cause doesn't have to be the person who fixes the bug.  If you don't feel that you have the time or ability to write code, you can still save someone else time by figuring out where in the code the problem lies -- and I'm sure they would appreciate your effort!  This is also a great way to get to know !AdBlock's code better, to prepare you to submit your own patches.
+Once a bug has been [#Verifying_issues verified], we need to know the cause in order to fix it.  The person who finds the cause doesn't have to be the person who fixes the bug.  If you don't feel that you have the time or ability to write code, you can still save someone else time by figuring out where in the code the problem lies -- and I'm sure they would appreciate your effort!  This is also a great way to get to know !AdBlock's code better, to prepare you to submit your own patches.
 
 If you're not familiar with extension development, here are [VolunteerInstructions#Detailed_instructions_for:_Debugging_issues detailed instructions] for how to debug in the browser, and to get !AdBlock's code onto your machine if you need it.
 
