@@ -15,9 +15,9 @@ Bug report Issues are labeled `Type-Defect`, and feature request Issues are labe
 When making sure an Issue is missing no information:
  * If a `Type-Enhancement` doesn't make clear to you exactly what the reporter wants or why they want it, *add a comment* asking those questions ([https://code.google.com/p/adblockforchrome/issues/detail?id=7075 example]).
  * If a `Type-Defect` is missing any information required by the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report template], *add a comment* asking for that information.
-   * Example: in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], a volunteer asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
+   * Example: in [http://code.google.com/p/adblockforchrome/issues/detail?id=6646 this Issue], John asked for the URL where the bug appeared.  (He could have asked for more, but the URL was a good start.)
  * You may be able to think of a question that the template doesn't ask, but that would still help clarify the Issue.  *Add a comment* asking your question.
-   * Example: in the Issue above, the volunteer could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
+   * Example: in the Issue above, John could have asked "Does the problem still happen if you disable !AdBlock (in the Chrome menu -> Tools -> Extensions) and restart Chrome?"
 
 <h4>Bonus instructions</h4>
 
@@ -311,7 +311,7 @@ We didn't always have a style guide, so unfortunately the code isn't 100% adhere
 
 Anyone can work anywhere in the code; no one officially owns any area.  We use the Owner field to mean "I'm working on this, so if you do too, we will be duplicating effort."  Note that anyone is still *allowed* to work on an Issue if they want to, regardless of who is Owner.
 
-Owned issues are listed last in some of the lists of issues, since other volunteers can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
+Owned issues are listed last in some of the lists of issues, since other project members can probably ignore them.  So you should *de-own Issues you aren't actively working on* to get them back in the right place.
 
 When to consider Owning an Issue:
  * You're about to start a *complex debugging session*.  You set yourself Owner so others don't waste their effort, then de-own it afterwards.
@@ -458,9 +458,9 @@ If you think that *the code needs work* before shipping, set `Status:Started`.  
 
 === Joining the project ===
 
-As a new volunteer, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
+To contribute to !AdBlock, all you need is a Google account.  With that, you can comment on Issues in !AdBlock's Issue Tracker, which lets you help in basic ways.
 
-But you're limited because you can't edit Issues in more powerful ways, which only *project members* can do.  Everything you do as a new volunteer you can do more effectively as a project member, and some important tasks can't be done at all by non-members.
+But you're limited because you can't edit Issues in more powerful ways, which only *project members* can do.  Everything you do to help can be done more effectively as a project member, and some important tasks can't be done at all by non-members.
 
 Luckily, it's easy to join the project, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project.  We'll make you an official member of the !AdBlock project after we check that you've been updating Issues correctly.
 
