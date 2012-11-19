@@ -428,6 +428,55 @@ If you think that a `PotentiallyCritical`-labeled Issue is not critical:
 
 <br><br><hr><hr>
 
+=== Detailed instructions for: Integrating translations ===
+
+[VolunteerUI#Integrating_translations Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary Relevant Issues]
+
+First, you'll need to be a Committer to integrate translations.  If you aren't one yet, just ask in the [http://groups.google.com/group/adblockforchrome-dev development forum] to become a Committer to help with translations.  You'll also need !AdBlock's trunk source code.  Install TortoiseSVN on Windows, then [http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-checkout.html check out] `https://adblockforchrome.googlecode.com/svn/trunk/`, specifying your Google account as username and [https://code.google.com/hosting/settings googlecode.com password] as password.
+
+Second, read HowToTranslate to see how translators create `messages.json` files to attach to the [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary Issue for their locale] when they make a change.
+
+When you have an updated `messages.json` file, you:
+
+ # Replace your copy of `trunk/_locales/(some locale)/messages.json` file with the new one.  (For example, the French locale's translation is at [http://code.google.com/p/adblockforchrome/source/browse/trunk/_locales/fr trunk/_locales/fr/messages.json].)
+ # Check for problems in your modified `trunk`
+ # Either *comment on the Issue* explaining the problems you found, and undo your local changes; or *commit your changes* to trunk.
+
+<h4>Potential problems</h4>
+
+If the `messages.json` file has a problem, you should *add a comment* to the Issue telling the translator how to fix it.  Here's how to deal with several potential problems.
+
+1. If there is an active maintainer of a translation, don't accept a *different person's* translation until you check with the active maintainer that it's OK with them.  We trust the active maintainer more than a stranger.  If the maintainer doesn't respond, the new person can become the active maintainer.
+
+2. If the user didn't use http://chromeadblock.com/l10n/ to create their file, the *syntax* may be incorrect.  You can check that by double clicking `ValidateMessages.json.exe`, which is found in the `trunk/tools` folder.  That program reads all the `messages.json` files in your `trunk/_locales` directory and displays any errors found.  (Don't forget to copy the new `messages.json` file in place before you do this.)  Scroll down to the correct `messages.json` file and check for any errors listed, and let the translator know how to fix them, or fix them yourself.
+
+(You can also click the "Remove unused strings" button in `ValidateMessages.json.exe` to delete strings that aren't detected as used in !AdBlock nor listed as special cases in `trunk/tools/I18N_include_exclude.txt`.  This will modify many files at once, and in that case you should commit the entire `_locales` directory with a commit message like "Removed unused strings".)
+
+3. If the user accidentally or intentionally added a *bad translation*, we must catch that.  To see exactly what the user has changed, use TortoiseSVN's diff command.  Copy and paste their translations into [http://translate.google.com/#auto/en/ Google Translate] to make sure they sound about right.
+
+Don't let the translator change the meaning of the English sentence or add their own commentary.  For example, don't let them translate "EasyList" into "EasyList (not recommended)" or "EasyList - email me at xyz if you have problems".  Don't let them translate a long paragraph full of details with a short summary lacking those details.
+
+4. If anything else *looks "weird"*, don't allow it.  (If you're unsure, cc `adblockforchrome` on the Issue and ask Michael's opinion.)
+
+If you find any problems, use TortoiseSVN to [http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-revert.html revert] your changes.
+
+<h4>When there are no problems</h4>
+
+Once there are no problems with the changes you have made to `trunk/_locales/(some locale)/messages.json`, you [http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-commit.html commit it] using TortoiseSVN, adding a commit message that looks like
+
+`Update Issue 5439`<br>
+`Thanks!  Your changes will appear in the next version.`
+
+The first line of the commit message makes this appear as a comment on the Issue.
+
+_If you enjoy integrating translations, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-L10N` label to be emailed when translators make changes.  That's easier than checking [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary every translation] manually for updates._
+
+
+
+[VolunteerUI#Integrating_translations Back to overview]
+
+<br><br><hr><hr>
+
 === Detailed instructions for: Reviewing code ===
 
 [VolunteerUI#Reviewing_code Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary Relevant Issues]
