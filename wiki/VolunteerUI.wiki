@@ -59,6 +59,7 @@ Also,
  * You could [#Unlabeling_MoreInfoNeeded_s unlabel MoreInfoNeeded issues] when the info arrives.  Otherwise these Issues stay hidden and we don't handle them.
  * You could [#Triaging_issues triage Issues], doing whatever is needed to help move them forward.
  * You could [#Judging_PotentiallyCritical_s review PotentiallyCritical issues] in case anything scary is happening.
+ * You could [#Integrating_translations integrate a new translation].
  * If you can read code, please [#Reviewing_code do a code review] - the author of the code will appreciate it!
 
 Once you're familiar with the project, you can use the "Task links" above to go straight to the Issues for the tasks you enjoy.<br>
@@ -209,6 +210,22 @@ Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3A
 _Become a first responder! If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when new ones come in._
 
 _If you wouldn't mind helping firefight, you can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label to be emailed when truly critical bugs do appear._
+
+[#top Home]
+
+<br><br><hr><hr>
+
+=== Integrating translations ===
+
+_You must be a [VolunteerInstructions#Joining_the_project project member] to judge these issues._
+
+!AdBlock is translated from English into dozens of languages.  Whenever a sentence is added or changed in the English version, the Spanish translator adds or changes the Spanish sentence, the Slovak translator adds or changes the Slovak sentence, etc.
+
+We only put these changes into !AdBlock if they look right -- the translator didn't change the meaning of the sentence by accident or on purpose, and didn't make any other mistake.
+
+So we review those changes before modifying !AdBlock itself.  Here are [VolunteerInstructions#Detailed_instructions_for:_Integrating_translations detailed instructions] on how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary all translations], with the most recently modified listed first.
 
 [#top Home]
 
