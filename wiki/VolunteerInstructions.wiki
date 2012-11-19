@@ -452,7 +452,7 @@ If the `messages.json` file has a problem, you should *add a comment* to the Iss
 
 (You can also click the "Remove unused strings" button in `ValidateMessages.json.exe` to delete strings that aren't detected as used in !AdBlock nor listed as special cases in `trunk/tools/I18N_include_exclude.txt`.  This will modify many files at once, and in that case you should commit the entire `_locales` directory with a commit message like "Removed unused strings".)
 
-3. If the user accidentally or intentionally added a *bad translation*, we must catch that.  To see exactly what the user has changed, use TortoiseSVN's diff command.  Copy and paste their translations into [http://translate.google.com/#auto/en/ Google Translate] to make sure they sound about right.
+3. If the user accidentally or intentionally added a *bad translation*, we must catch that.  To see exactly what the user has changed, use TortoiseSVN's [http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-wcstatus.html#tsvn-dug-diffing diff command].  Copy and paste their translations into [http://translate.google.com/#auto/en/ Google Translate] to make sure they sound about right.
 
 Don't let the translator change the meaning of the English sentence or add their own commentary.  For example, don't let them translate "EasyList" into "EasyList (not recommended)" or "EasyList - email me at xyz if you have problems".  Don't let them translate a long paragraph full of details with a short summary lacking those details.
 
