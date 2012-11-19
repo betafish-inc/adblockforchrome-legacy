@@ -218,15 +218,13 @@ _If you wouldn't mind helping firefight, you can also [http://code.google.com/p/
 
 === Integrating translations ===
 
-_You must be a [VolunteerInstructions#Joining_the_project project member] to judge these issues._
+_You must be a [VolunteerInstructions#Joining_the_project project member] to integrate translations._
 
 !AdBlock is translated from English into dozens of languages.  Whenever a sentence is added or changed in the English version, the Spanish translator adds or changes the Spanish sentence, the Slovak translator adds or changes the Slovak sentence, etc.
 
-We only put these changes into !AdBlock if they look right -- the translator didn't change the meaning of the sentence by accident or on purpose, and didn't make any other mistake.
+We let anybody offer translations, and they can make mistakes.  So we review their changes before integrating them into !AdBlock itself.  Here are [VolunteerInstructions#Detailed_instructions_for:_Integrating_translations detailed instructions] on how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
 
-So we review those changes before modifying !AdBlock itself.  Here are [VolunteerInstructions#Detailed_instructions_for:_Integrating_translations detailed instructions] on how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary all translations], with the most recently modified listed first.
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary all translations], with the most recently modified (possibly containing an update) listed first.
 
 [#top Home]
 
