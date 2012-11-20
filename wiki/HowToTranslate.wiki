@@ -109,9 +109,6 @@ Missing translation (1%): work_around_hulu_problems
 ===== \_locales\sv\messages.json =====
 Missing translation (1%): work_around_hulu_problems
 
-===== \_locales\sk\messages.json =====
-Missing translation (1%): work_around_hulu_problems
-
 ===== \_locales\ru\messages.json =====
 Missing translation (1%): work_around_hulu_problems
 
