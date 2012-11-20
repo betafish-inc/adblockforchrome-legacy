@@ -369,9 +369,6 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
 
 <br><br><hr><hr>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 === Detailed instructions for: Unlabeling `MoreInfoNeeded`s ===
 
 [VolunteerUI#Unlabeling_MoreInfoNeeded_s Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
@@ -580,6 +577,5 @@ Sound good?  Then, welcome! :)  Join !AdBlock's [http://groups.google.com/group/
 
 <br><br><hr><hr>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
