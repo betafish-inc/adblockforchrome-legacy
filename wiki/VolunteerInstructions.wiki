@@ -367,6 +367,8 @@ An issue is critical and should be labeled `Priority-Critical` (thus sending sca
  * it is a *security bug* allowing XSS or other compromise of user anonymity ([http://code.google.com/p/adblockforchrome/issues/detail?id=5558 example])
  * it *affects a giant website*, either by *showing ads* or *breaking a site feature*.  "Giant" means a *major* search engine, social network, news outlet, etc -- something used by many millions of users ([http://code.google.com/p/adblockforchrome/issues/detail?id=4362 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=4694 example])
 
+Critical issues can be reported [http://code.google.com/p/adblockforchrome/issues/entry?template=CRITICAL%20Defect here].
+
 <br><br><hr><hr>
 
 === Detailed instructions for: Unlabeling `MoreInfoNeeded`s ===
