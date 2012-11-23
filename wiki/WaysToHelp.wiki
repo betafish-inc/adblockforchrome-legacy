@@ -84,20 +84,6 @@ As a [WaysToHelpInstructions#Joining_the_project project member], you would be m
 
 Each of the sections below is linked to from above; just read the ones that interest you.
 
-=== Investigating ad reports ===
-
-Users can use !AdBlock's built-in ad reporting wizard when they see an ad.  The wizard usually tells the user to report the ad elsewhere, to the people who run the "filter lists" containing lists of known ads to block.  But sometimes the wizard thinks the ad is not due to a missing filter, but due to a problem in !AdBlock itself.
-
-In that case, the wizard tells the user to file a new Issue reporting the ad.  We then go figure out exactly how we're going to handle the situation.  Here are [WaysToHelpInstructions#Detailed_instructions_for:_Investigating_ad_reports detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
-
-_If you enjoy investigating ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
-
-[#top Home]
-
-<br><br><hr><hr>
-
 === Verifying issues ===
 
 Users file new Issue reports when they find a bug or have a feature request.  As the very first step in handling the Issue, we must make sure we know what they are talking about.
@@ -107,6 +93,20 @@ When a new Issue labeled `Type-Defect` (bug report) or `Type-Enhancement` (featu
  * Add a comment asking for any missing info that we asked for in the [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect defect Issue template] or [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user enhancement Issue template].  Here are [WaysToHelpInstructions#Detailed_instructions_for:_Filling_in_missing_information detailed instructions] if you want them.
 
  * Add a comment to `Type-Defect` Issues saying whether you can see the buggy behavior on your end.  If no one can see the behavior, we can't proceed with fixing the bug.  Here are [WaysToHelpInstructions#Detailed_instructions_for:_Reproducing_bugs detailed instructions] for reproducing bugs.
+
+[#top Home]
+
+<br><br><hr><hr>
+
+=== Investigating ad reports ===
+
+Users can use !AdBlock's built-in ad reporting wizard when they see an ad.  The wizard usually tells the user to report the ad elsewhere, to the people who run the "filter lists" containing lists of known ads to block.  But sometimes the wizard thinks the ad is not due to a missing filter, but due to a problem in !AdBlock itself.
+
+In that case, the wizard tells the user to file a new Issue reporting the ad.  We then go figure out exactly how we're going to handle the situation.  Here are [WaysToHelpInstructions#Detailed_instructions_for:_Investigating_ad_reports detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
+
+Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=adreport%20Status:New%20-label%3AMoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the ad reports to investigate].  The ones that have been waiting longest for attention are listed first.
+
+_If you enjoy investigating ad reports, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-AdReport` label to be emailed when a new ad report comes in._
 
 [#top Home]
 
