@@ -388,10 +388,6 @@ didn't get any.  If you still have this problem, feel free to open a
 new Issue and mention this Issue's number.
 </pre>
 
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most recently modified* ones are listed first, as they are the ones that probably have been replied to.  The ones listed last may be over 14 days old.
-
-_If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
-
 [WaysToHelp#Unlabeling_MoreInfoNeeded_s Back to overview]
 
 <br><br><hr><hr>
