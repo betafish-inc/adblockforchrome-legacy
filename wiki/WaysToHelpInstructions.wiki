@@ -464,10 +464,6 @@ Once there are no problems with the changes you have made to `trunk/_locales/(so
 
 The first line of the commit message makes this appear as a comment on the Issue.
 
-_If you enjoy integrating translations, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Type-L10N` label to be emailed when translators make changes.  That's easier than checking [http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary every translation] manually for updates._
-
-
-
 [WaysToHelp#Integrating_translations Back to overview]
 
 <br><br><hr><hr>
