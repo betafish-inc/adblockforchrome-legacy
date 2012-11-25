@@ -159,9 +159,6 @@ Missing translation (1%): work_around_hulu_problems
 
 ===== \_locales\cs\messages.json =====
 Missing translations (3%): chromebutton_how_to_hide2, filterorigin, firefox_explanation, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, work_around_hulu_problems
-
-===== \_locales\bg\messages.json =====
-Missing translations (2%): firefox_explanation, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, work_around_hulu_problems
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
