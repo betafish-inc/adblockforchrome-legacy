@@ -360,7 +360,7 @@ By this point you will have either set `MoreInfoNeeded` or `Status:Accepted`, mo
 === What is a critical issue? ===
 
 An issue is critical and should be labeled `Priority-Critical` (thus sending scary alarm emails to potentially lots of people) if it *is reproducible* (it's not a freak problem on one user's computer) and at least one of the following is true:
- * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
+ * !AdBlock *crashes or stops ad blocking* on all web pages ([http://code.google.com/p/adblockforchrome/issues/detail?id=6360 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6253 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6194 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5384 example])
  * !AdBlock *interrupts browsing* for most users ([http://code.google.com/p/adblockforchrome/issues/detail?id=6238 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=6322 example])
  * major visible *!AdBlock UI is broken* (e.g. the context menu is gone, or the install or Options page is blank) ([http://code.google.com/p/adblockforchrome/issues/detail?id=6243 example], [http://code.google.com/p/adblockforchrome/issues/detail?id=5389 example])
  * it breaks *filter list updates* ([http://code.google.com/p/adblockforchrome/issues/detail?id=1809 example])
