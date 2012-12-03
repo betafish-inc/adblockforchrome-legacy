@@ -31,9 +31,9 @@ _
 
 <hr>
 
-Would you be interested in making !AdBlock better for millions of users?  I would *really appreciate* any help you want to give!
+Want to make !AdBlock better for millions of users?  I would *really appreciate* any help you want to give!
 <br>
-*Read the [WaysToHelpInstructions#Project_overview project overview]*, pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
+First, *read the [WaysToHelpInstructions#Project_overview project overview]*.  Then pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
 
 - Michael
 <br>
