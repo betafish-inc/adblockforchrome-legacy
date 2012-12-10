@@ -33,7 +33,7 @@ _
 
 Want to make !AdBlock better for millions of users?  I would *really appreciate* any help you want to give!
 <br>
-First, *read the [WaysToHelpInstructions#Project_overview project overview]*.  Then pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
+First, *read the [ProjectOverview#Project_overview project overview]*.  Then pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
 
 - Michael
 <br>

@@ -1,0 +1,14 @@
+#summary Project overview
+#labels Restrict-AddWikiComment-Contributor
+= Project overview =
+
+Thanks for being interested in helping with the !AdBlock project!  Five minutes from now you could be doing useful work on the project.  But first, here are some important things to know:
+
+ # !AdBlock is free-as-in-speech, open sourced under the *[http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3]*.
+ # !AdBlock is free-as-in-beer, though *users may _optionally_ pay [PaymentsFAQ#Payment any amount]* for !AdBlock.
+ # I (Michael Gundlach) created !AdBlock, and I work on it for a living.  I'm paid to run the project by my one-man corporation !BetaFish Inc., which receives user payments and owns the rights to !AdBlock.
+ # I encourage and will take into account your feedback about how to run the project, but I make the final decisions and you might not always agree with me :)  (In open source this is known as [http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]; it's how Linux, Python, and many other projects are run.)
+ # The only real rule is: *be nice*.  If a user is irate, we respond kindly.  If they request a ridiculous feature, we decline it politely.  If we don't like what another project member suggests or does, we argue about it [http://en.wikipedia.org/wiki/Constructive_criticism constructively].  (After all, who wants to hang out with rude people?)
+ # Over 10 million people use !AdBlock.  You won't be paid for helping, but you'll get lots of *thanks*, *experience* working on really popular software, and the satisfaction of *making the world a slightly better place* for millions of people!
+
+Sound good?  Then, welcome! :)  Join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev development forum] and say hi if you'd like.  Then head to the [WaysToHelp Ways To Help] page and have fun!
