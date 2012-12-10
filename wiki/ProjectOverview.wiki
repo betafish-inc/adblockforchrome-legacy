@@ -1,4 +1,3 @@
-#summary Project overview
 #labels Restrict-AddWikiComment-Contributor
 = Project overview =
 
