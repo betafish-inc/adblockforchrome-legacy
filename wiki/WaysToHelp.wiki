@@ -1,5 +1,5 @@
 #summary Ways to get involved with AdBlock
-#labels Restrict-AddWikiComment-Contributor
+#labels Restrict-AddWikiComment-Contributor,Featured
 <a name="top"></a>
 
 _Task links:
