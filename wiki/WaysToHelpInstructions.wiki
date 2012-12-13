@@ -375,7 +375,7 @@ Critical issues can be reported [http://code.google.com/p/adblockforchrome/issue
 
 [WaysToHelp#Unlabeling_MoreInfoNeeded_s Back to overview] | [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary Relevant Issues]
 
-We label an Issue `MoreInfoNeeded` when we're waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
+`MoreInfoNeeded` Issues are waiting on a user to leave a comment with more information.  [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issues] are not shown in most of the lists of Issues, since we can't really take action on them without that information.
 
 So removing the label promptly when the user replies is important.  When a user replies to a question in a [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary `MoreInfoNeeded` issue], *remove the label* so it appears in the relevant lists again.
 
@@ -385,8 +385,9 @@ Also, we give up on waiting after 14 days.  If the user has not replied by then,
 <pre>
 Over 14 days ago we requested some additional information, but we
 didn't get any.  If you still have this problem, feel free to open a
-new Issue and mention this Issue's number.
-</pre>
+new Issue and mention this Issue's number.</pre>
+
+You can do this in bulk.  Control-click each over-14-days-old issue in [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary the list] to open it in a new tab.  Check its checkbox in the list after verifying there's no response.  When you have several checked, use the Actions... dropdown -> Bulk Edit to set the Status and add the comment to all of them at once.
 
 [WaysToHelp#Unlabeling_MoreInfoNeeded_s Back to overview]
 
