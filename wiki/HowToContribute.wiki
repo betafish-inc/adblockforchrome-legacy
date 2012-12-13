@@ -1,5 +1,5 @@
 #summary Things you can do to contribute to AdBlock.
-#labels Featured,Restrict-AddWikiComment-Commit
+#labels Restrict-AddWikiComment-Commit
 
 Would you be interested in making !AdBlock better for millions of users?  I would love any help that you wanted to give!  As you can see below, you don't need to know how to program to help out.
 
