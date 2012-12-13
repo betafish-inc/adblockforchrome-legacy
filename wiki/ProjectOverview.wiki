@@ -10,4 +10,4 @@ Thanks for being interested in helping with the !AdBlock project!  Five minutes 
  # The only real rule is: *be nice*.  If a user is irate, we respond kindly.  If they request a ridiculous feature, we decline it politely.  If we don't like what another project member suggests or does, we argue about it [http://en.wikipedia.org/wiki/Constructive_criticism constructively].  (After all, who wants to hang out with rude people?)
  # Over 10 million people use !AdBlock.  You won't be paid for helping, but you'll get lots of *thanks*, *experience* working on really popular software, and the satisfaction of *making the world a slightly better place* for millions of people!
 
-Sound good?  Then, welcome! :)  Join !AdBlock's [http://groups.google.com/group/adblockforchrome-dev development forum] and say hi if you'd like.  Then head to the [WaysToHelp Ways To Help] page and have fun!
+Sound good?  Then, welcome! :)  Email me at adblockforchrome at gmail.com so I can thank you personally -- then head to the [WaysToHelp Ways To Help] page and have fun!
