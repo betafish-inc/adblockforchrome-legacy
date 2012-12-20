@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.53<br/>
+*Latest Chrome version*: 2.5.54<br/>
 *Latest Safari version*: 2.5.52<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.54*: Disable caching of blockcounts
 
 *2.5.53*: Stop pointing to Amazon S3.  Support block counts app.
 
