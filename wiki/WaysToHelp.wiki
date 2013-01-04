@@ -31,11 +31,10 @@ _
 
 <hr>
 
-!AdBlock is a small open source project with a large user base, so your contribution can make a big impact.
-<br/>
-To get involved: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].
+!AdBlock is a small open source project with a large user base, so your contribution can make a big impact.<br/><br/>
+To participate: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].
 <br>
-If you like what you see, *[WaysToHelpInstructions#Joining_the_project become a project member]*.  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!
+If you like what you see, [WaysToHelpInstructions#Joining_the_project join the project].  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!
 
 == Ways to help ==
 
@@ -44,8 +43,7 @@ Just getting started?  Try one of these:
  * [#Verifying_issues Verify a reported Issue], checking that it is legitimate and that it makes sense.
  * [#Investigating_ad_reports Investigate a reported ad], so we know how best to get rid of it.
 
-You could also [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.
-
+You could also [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.<br/>
 If you're a coder, try [#Debugging_issues finding the cause of] or [#Writing_patches fixing] a bug.
 
 <h4>After you become a [WaysToHelpInstructions#Joining_the_project project member], you can also:</h4>

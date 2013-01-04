@@ -4,9 +4,9 @@
 !AdBlock is a browser extension used by millions of people across the world.  Everyone is welcome to participate in this open source project.  Here's an overview:
 
  # !AdBlock is open sourced under the [http://en.wikipedia.org/wiki/GNU_General_Public_License GPLv3].
- # The rights to !AdBlock itself are owned by BetaFish Incorporated, which is funded primarily by [PaymentsFAQ#Payment optional payments] from users.
- # BetaFish funds development of !AdBlock, but volunteers are welcome to participate in the project as well.  While volunteers aren't paid, they do get to experience making the world a better place for *10+ million !AdBlock users*!
- # !AdBlock was created in 2009 by Michael Gundlach, who now runs the project in the "[http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]" style like Linux and Python: community feedback is encouraged, but Michael will make the final decision if needed to resolve disagreement.
+ # The rights to !AdBlock itself are owned by !BetaFish Incorporated, which is funded primarily by [PaymentsFAQ#Payment optional payments] from users.
+ # !BetaFish funds development of !AdBlock, but volunteers are welcome to participate in the project as well.  While volunteers aren't paid, they get the experience of making the world a better place for *10+ million !AdBlock users*.
+ # !AdBlock was created in 2009 by Michael Gundlach, who now runs the project in the "[http://en.wikipedia.org/wiki/Benevolent_Dictator_For_Life benevolent dictatorship]" style like Linux and Python: community feedback is encouraged, but Michael will make the final decision if needed to resolve disagreements.
  # If you'd like to participate, the only real rule is: *be nice*.  Respond kindly to irate users.  Be polite when declining ridiculous feature requests.  Use [http://en.wikipedia.org/wiki/Constructive_criticism constructive] argument when debating with other contributors.
 
-If you'd like to volunteer, email Michael at adblockforchrome at gmail.com so he can thank you personally -- then head to the [WaysToHelp Ways To Help] page and have fun!
+If you'd like to volunteer, email Michael at [mailto:adblockforchrome@gmail.com adblockforchrome at gmail] so he can thank you personally -- then head to the [WaysToHelp Ways To Help] page and have fun!

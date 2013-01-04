@@ -472,7 +472,7 @@ To contribute to !AdBlock, all you need is a Google account.  With that, you can
 
 But you're limited because you can't edit Issues in more powerful ways, which only *project members* can do.  Everything you do to help can be done more effectively as a project member, and some important tasks can't be done at all by non-members.
 
-Luckily, it's easy to join the project, and I encourage you to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project.  We'll make you an official member of the !AdBlock project after we check that you've been updating Issues correctly.
+Luckily, it's easy to join the project, and you're encouraged to do so!  Once you've worked on, say, more than a dozen issues over more than a week, just ask in the [http://groups.google.com/group/adblockforchrome-dev developer forum] to join the project.  We'll make you an official member of the !AdBlock project after we check that you've been updating Issues correctly.
 
 Once you've become a project member, read the instructions [#Project_members below] to learn how to use your new powers :)
 
