@@ -31,52 +31,32 @@ _
 
 <hr>
 
-Want to make !AdBlock better for millions of users?  I would *really appreciate* any help you want to give!
+!AdBlock is a small open source project with a large user base, so your contribution can make a big impact.
+<br/>
+To get involved: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].
 <br>
-First, *read the [ProjectOverview#Project_overview project overview]*.  Then pick something interesting below, and [http://groups.google.com/group/adblockforchrome-discuss just ask] if you have any questions.  Have fun!
-
-- Michael
-<br>
-_PS: If you enjoy helping with !AdBlock, I'd love for you to *[WaysToHelpInstructions#Joining_the_project join the project]*.  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!_
-
+If you like what you see, *[WaysToHelpInstructions#Joining_the_project become a project member]*.  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!
 
 == Ways to help ==
 
-Users report ads and bugs all the time in the Issue Tracker.  It would be wonderful if you would help keep up with the load.
+Just getting started?  Try one of these:
 
- * You could [#Verifying_issues verify an Issue], checking that it is legitimate and that it makes sense.
- * You could [#Investigating_ad_reports investigate a reported ad], so we know how best to get rid of it.
+ * [#Verifying_issues Verify a reported Issue], checking that it is legitimate and that it makes sense.
+ * [#Investigating_ad_reports Investigate a reported ad], so we know how best to get rid of it.
 
- * If you can read code, you could [#Debugging_issues find the cause of a bug], giving a big head start to whomever writes code to fix the bug.
- * If you can write code, you could [#Writing_patches submit a patch] to implement a bugfix or feature.  This is of course a huge help.
+You could also [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.
 
-Also,
+If you're a coder, try [#Debugging_issues finding the cause of] or [#Writing_patches fixing] a bug.
 
- * You could [#Answering_questions_from_users answer questions from other users] in the help forum.
- * You could help [HowToTranslate translate] !AdBlock into your language.
+<h4>After you become a [WaysToHelpInstructions#Joining_the_project project member], you can also:</h4>
 
-<h4>Bonus for [WaysToHelpInstructions#Joining_the_project project members] only:</h4>
+ * [#Unlabeling_MoreInfoNeeded_s unlabel MoreInfoNeeded issues] when the info arrives.  Otherwise these Issues stay hidden and we don't handle them.
+ * [#Triaging_issues triage Issues], doing whatever is needed to help move them forward.
+ * [#Reviewing_code do a code review] - the author of the code will appreciate it!
+ * [#Integrating_translations integrate a new translation].
 
- * You could [#Unlabeling_MoreInfoNeeded_s unlabel MoreInfoNeeded issues] when the info arrives.  Otherwise these Issues stay hidden and we don't handle them.
- * You could [#Triaging_issues triage Issues], doing whatever is needed to help move them forward.
- * You could [#Judging_PotentiallyCritical_s review PotentiallyCritical issues] in case anything scary is happening.
- * You could [#Integrating_translations integrate a new translation].
- * If you can read code, please [#Reviewing_code do a code review] - the author of the code will appreciate it!
-
-Once you're familiar with the project, you can use the "Task links" above to go straight to the Issues for the tasks you enjoy.<br>
-And if you like doing everything, you may prefer to just watch the "`changed-this-week`" list and tackle any recently modified Issues as needed.
-
-=== Michael's favorites ===
-
-Everything you do to help gives me more time to work on improving !AdBlock.  [#Verifying_issues Verifying Issues] and [#Investigating_ad_reports investigating reported ads] are two in particular that I would love for you to handle if you're just getting started.
-
-As a [WaysToHelpInstructions#Joining_the_project project member], you would be my *hero* if, on any day that you felt like helping out, you did these tasks in this order:
- # Unlabel any `MoreInfoNeeded`s that have been answered (use the "`unlabel`" Task Links above)
- # Triage everything you see in the triage list ("`triage`")
- # If you can read code, do a code review ("`codereview`")
- # Respond to any unanswered threads in the help forum ("`help-forum`")
- # If you can read code, try to debug any Issue not yet debugged ("`debug`")
- # Investigate any new ad reports ("`adreport`")
+_Once you're familiar with the project, you can use the "Task links" above to go straight to the Issues for the tasks you enjoy.<br>
+If you like doing everything, you may prefer to just watch the "`changed-this-week`" list and tackle any recently modified Issues as needed._
 
 <br><br><br><br><hr><hr>
 
@@ -193,24 +173,6 @@ Later, we must remove the label (if there was a reply) or close the Issue (if no
 Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary all the MoreInfoNeeded Issues].  The *most* recently modified ones are listed first, as they are the ones that probably have been replied to.  The ones listed last are getting old.
 
 _If you enjoy handling `MoreInfoNeeded` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `MoreInfoNeeded` label to be emailed when replies come in from users._
-
-[#top Home]
-
-<br><br><hr><hr>
-
-=== Judging `PotentiallyCritical`s ===
-
-_You must be a [WaysToHelpInstructions#Joining_the_project project member] to judge these issues._
-
-Users file new Issue reports when they find a bug.  If they think that it is a really serious bug, we let them label it `PotentiallyCritical`.  If the bug meets our definition of "really serious", then _we_ label it `Priority-Critical` and scary alarm emails get sent out so we can ship a fix quickly.  We warn the user ahead of time that if the bug _doesn't_ meet our definition, we might punish the report a little for spamming us, by ignoring it for a while.
-
-You can review these `PotentiallyCritical` issues and judge whether they meet our criteria for sending out scary alarm emails.  Here are [WaysToHelpInstructions#Detailed_instructions_for:_Judging_PotentiallyCritical_s detailed instructions] for how to do that.  (You'll only need to refer to them a couple of times before you get the hang of it.)
-
-Here are [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary all PotentiallyCritical issues].
-
-_Become a first responder! If you enjoy watching out for `PotentiallyCritical` issues, you can [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `PotentiallyCritical` label to be emailed when new ones come in._
-
-_If you wouldn't mind helping firefight, you can also [http://code.google.com/p/adblockforchrome/issues/subscriptions subscribe to] the `Priority-Critical` label to be emailed when truly critical bugs do appear._
 
 [#top Home]
 
