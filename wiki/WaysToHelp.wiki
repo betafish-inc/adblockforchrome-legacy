@@ -45,7 +45,7 @@ Just getting started?  Try one of these:
  * [#Investigating_ad_reports Investigate a reported ad], so we know how best to get rid of it.
 
 You could also [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.<br>
-If you're a coder, you can [#Debugging_issues find the cause of] or [#Writing_patches fix] one of the many bugs awaiting attention.
+If you're a coder, you can [#Debugging_issues find the cause of] or [#Writing_patches write code to fix] one of the many Issues awaiting attention.
 
 <h4>After you become a [WaysToHelpInstructions#Joining_the_project project member], you can also:</h4>
 
