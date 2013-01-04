@@ -12,9 +12,8 @@ _Task links:
 . . . .
 [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label:MoreInfoNeeded&sort=-modified&colspec=ID%20Opened%20Modified%20Type%20Summary unlabel] .
 [http://code.google.com/p/adblockforchrome/issues/list?can=2&q=type=defect,enhancement%20Status:New%20-MoreInfoNeeded&sort=modified&colspec=ID%20Opened%20Modified%20Type%20Summary triage] .
-[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=label%3APotentiallyCritical&sort=opened&colspec=ID+Opened+Modified+Priority+Reporter+Status+Summary judge] .
-[http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary L10n] .
-[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary codereview]
+[http://code.google.com/p/adblockforchrome/issues/list?can=2&q=status:needsreview&sort=modified&colspec=ID%20Opened%20Modified%20Owner%20Summary codereview] .
+[http://code.google.com/p/adblockforchrome/issues/list?can=1&q=type=l10n%20-status:duplicate%20-status:invalid&sort=-modified+summary&colspec=ID%20Status%20Modified%20Summary L10n]
 _
 <br>
 _Quick views:
@@ -39,15 +38,16 @@ If you like what you see, [WaysToHelpInstructions#Joining_the_project join the p
 
 == Ways to help ==
 
-Just getting started?  Try one of these:
+Outside the Issue Tracker, you could [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.
 
- * [#Verifying_issues Verify a reported Issue], checking that it is legitimate and that it makes sense.
- * [#Investigating_ad_reports Investigate a reported ad], so we know how best to get rid of it.
+*Everything else happens in the Issue Tracker.*  You could:
 
-You could also [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.<br>
-If you're a coder, you can [#Debugging_issues find the cause of] or [#Writing_patches write code to fix] one of the many Issues awaiting attention.
+ * [#Verifying_issues verify a bug report or feature request], checking that it is legitimate and that it makes sense.
+ * [#Investigating_ad_reports investigate a reported ad], so we know how best to get rid of it.
+ * [#Debugging_issues find the cause] of a reported bug.
+ * [#Writing_patches write code] to fix one of the many Issues awaiting attention.
 
-<h4>After you become a [WaysToHelpInstructions#Joining_the_project project member], you can also:</h4>
+*After you become a [WaysToHelpInstructions#Joining_the_project project member],* you can also:
 
  * [#Unlabeling_MoreInfoNeeded_s unlabel MoreInfoNeeded issues] when the info arrives.  Otherwise these Issues stay hidden and we don't handle them.
  * [#Triaging_issues triage an issue], doing whatever is needed to help move it forward.
