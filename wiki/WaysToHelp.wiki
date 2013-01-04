@@ -30,24 +30,21 @@ _
 
 <hr>
 
-!AdBlock is a small open source project with a large user base, so your contribution can make a big impact.
-
-To participate: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].
-<br>
-If you like what you see, [WaysToHelpInstructions#Joining_the_project join the project].  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as an official member, and can do more to help!
+!AdBlock is a small open source project with a large user base, so your contribution can make a big impact.<br>
+To participate: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].  Have fun!
 
 == Ways to help ==
 
-Outside the Issue Tracker, you could [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.
+Outside the Issue Tracker, you can [#Answering_questions_from_users answer questions] in the help forum or [HowToTranslate translate AdBlock] into your language.
 
-*Everything else happens in the Issue Tracker.*  You could:
+*Everything else happens in the Issue Tracker.*  You can:
 
  * [#Verifying_issues verify a bug report or feature request], checking that it is legitimate and that it makes sense.
  * [#Investigating_ad_reports investigate a reported ad], so we know how best to get rid of it.
  * [#Debugging_issues find the cause] of a reported bug.
  * [#Writing_patches write code] to fix one of the many Issues awaiting attention.
 
-*After you become a [WaysToHelpInstructions#Joining_the_project project member],* you can also:
+*If you like contributing to !AdBlock, [WaysToHelpInstructions#Joining_the_project join the project].*  Then you'll be [http://code.google.com/p/adblockforchrome/people/list listed] as a project member, and will have the power to:
 
  * [#Unlabeling_MoreInfoNeeded_s unlabel MoreInfoNeeded issues] when the info arrives.  Otherwise these Issues stay hidden and we don't handle them.
  * [#Triaging_issues triage an issue], doing whatever is needed to help move it forward.
