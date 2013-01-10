@@ -513,7 +513,6 @@ Here are the common statuses and labels that we use, and what they mean.  You ca
 || `Type-Defect` || Bug report ||
 || `Cause-Known` || The root cause of this `Type-Defect` has been found ||
 || `Priority-Critical` || This is a [#What_is_a_critical_issue? critical] Issue (this label sends scary alarm emails) ||
-|| `PotentiallyCritical` || The Issue reporter guesses that the Issue should be labeled `Priority-Critical` ||
 || `MoreInfoNeeded` || We are waiting on a reply from a user ||
 
 _If you haven't yet joined the project as an official Contributor, [#Joining_the_project go for it]!_
