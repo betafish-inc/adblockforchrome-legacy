@@ -91,7 +91,7 @@ To add the button to the toolbar click on "View" or the gear icon in the menubar
 == !AdBlock doesn't work in Incognito/private mode. ==
 
 Extensions don't run in private/Incognito mode by default.  To change this:
-   # In Chrome: go to chrome://extensions and check 'Allow in incognito'.
+   # In Chrome: go to about:extensions and check 'Allow in incognito'.
    # In Opera: click the Opera menu -> Extensions -> Manage Extensions -> !AdBlock's wrench -> Privacy, and check "Allow interaction with private tabs".
 
 == !AdBlock doesn't work on a secure (https) site in Opera. ==
@@ -118,7 +118,7 @@ You'll see this in all Opera versions less than 12.10.  Don't worry, the effects
 
 These ads, sometimes labeled "Text Enhance", are almost certainly being added by an extension.  Disable all extensions and turn them on one by one until you find the culprit.  To find your installed extensions:
 
- * In Chrome: open a tab to chrome://chrome/extensions.
+ * In Chrome: open a tab to about:extensions.
  * In Safari: click the Safari menu -> Preferences -> Extensions.
  * In Opera: click the Opera menu -> Extensions -> Manage Extensions.
 

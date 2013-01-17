@@ -166,7 +166,7 @@ Chrome 22 on Win7.  I do not see it in ABP in Firefox, so I think this is a bug.
 
 !AdBlock is a normal [http://developer.chrome.com/extensions/index.html browser extension].  You can use Chrome's excellent [https://developers.google.com/chrome-developer-tools/docs/overview Developer Tools] to debug it.  The Console tab lets you review logs and errors; the Elements tab lets you view the DOM layout; and the Sources tab lets you add breakpoints to !AdBlock's code and step through it one step at a time.
 
-chrome://chrome/extensions has a link to !AdBlock's `_generated_background_page.html`, where the bulk of !AdBlock's work happens; the rest happens in [http://developer.chrome.com/extensions/content_scripts.html content scripts] on each webpage.  You can open the Developer Tools on any webpage to view !AdBlock's content scripts (in the Sources tab, click the icon at the top left, choose Content Scripts, then click the triangle next to the first item.)
+about:extensions has a link to !AdBlock's `_generated_background_page.html`, where the bulk of !AdBlock's work happens; the rest happens in [http://developer.chrome.com/extensions/content_scripts.html content scripts] on each webpage.  You can open the Developer Tools on any webpage to view !AdBlock's content scripts (in the Sources tab, click the icon at the top left, choose Content Scripts, then click the triangle next to the first item.)
 
 `manifest.json` is the file that describes !AdBlock's structure to Chrome.  That's a good place to start to decide which files to look at.  If you don't know where to start, but would like to try to find the cause of a defect, leave a comment asking for guidance on the Issue, and someone more experienced can try to point you toward likely places to investigate.
 
@@ -178,7 +178,7 @@ svn checkout http://adblockforchrome.googlecode.com/svn/tags/2.5.40 adblockforch
 }}}
 replacing `2.5.40` with [Changelog the current release number].  You'll need svn installed on Linux, or TortoiseSVN installed on Windows; more info is [http://code.google.com/p/adblockforchrome/source/checkout here].
 
-Once you have your local copy, go to chrome://chrome/extensions, select Developer Mode -> Load Unpacked Extension, and select the folder containing the local copy.  Now !AdBlock is running from that local copy (be sure to disable any other running copies.)  Now you can make changes to the code in that folder, then click the Reload link on chrome://chrome/extensions to load the changed version.
+Once you have your local copy, go to about:extensions, select Developer Mode -> Load Unpacked Extension, and select the folder containing the local copy.  Now !AdBlock is running from that local copy (be sure to disable any other running copies.)  Now you can make changes to the code in that folder, then click the Reload link on about:extensions to load the changed version.
 
 <h4>Debugging in Safari</h4>
 

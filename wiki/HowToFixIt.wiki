@@ -26,7 +26,7 @@
 
 == 2. Make sure !AdBlock for Chrome is installed, enabled and up to date ==
 
- # Open the Extensions tab by going to this site: chrome://extensions/
+ # Open a tab to about:extensions to view your installed extensions
  # If !AdBlock isn't listed, you'll need to [HowToFixIt#To_install_on_Chrome install it].
  # If !AdBlock is listed but grayed out, click "Enable".
  # If your version is older than the latest version according to [Changelog this page], click on the right top on "Developer mode"
@@ -41,7 +41,7 @@
 == 4. Uninstall and reinstall !AdBlock for Chrome ==
 
   === To uninstall from Chrome ===
-   # Open a tab to chrome://extensions/
+   # Open a tab to about:extensions
    # Click the trash can to the right of !AdBlbock's "Enable" checkbox
    # _Optional, but sometimes helpful:_ restart Chrome or reboot your computer now.
 
