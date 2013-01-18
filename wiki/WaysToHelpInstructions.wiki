@@ -436,7 +436,7 @@ The first line of the commit message makes this appear as a comment on the Issue
 
 After committing all the changes, don't forget to update the list of missing translations on the HowToTranslate wiki page (run `ValidateMessages.json.exe` to generate the list again).
 
-If new strings were added to AdBlock, leave a comment on the HowToTranslate page so people who starred it will get notified by email.
+If new strings were added to !AdBlock, leave a comment on the HowToTranslate page so people who starred it will get notified by email.
 
 [WaysToHelp#Integrating_translations Back to overview]
 
