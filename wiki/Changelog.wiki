@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.55<br/>
+*Latest Chrome version*: 2.5.56<br/>
 *Latest Safari version*: 2.5.55<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.56*: Minor bugfixes
 
 *2.5.55*: Add Retina support in Chrome on Macs (John), minor bugfix (famlam), let Safari users opt in to experimental faster method of hiding ads
 
