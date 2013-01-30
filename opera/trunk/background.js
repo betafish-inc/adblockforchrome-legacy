@@ -357,13 +357,13 @@ var button = opera.contexts.toolbar.createItem({
         return;
       }
       if (adblock_is_paused()) {
-        chrome.browserAction.setIcon({path:"img/icon18-grayscale.png"});
+        chrome.browserAction.setIcon({path:{18:"img/icon18-grayscale.png"}});
       } else if (info.disabled_site) {
-        chrome.browserAction.setIcon({path:"img/icon18-grayscale.png"});
+        chrome.browserAction.setIcon({path:{18:"img/icon18-grayscale.png"}});
       } else if (info.whitelisted) {
-        chrome.browserAction.setIcon({path:"img/icon18-whitelisted.png"});
+        chrome.browserAction.setIcon({path:{18:"img/icon18-whitelisted.png"}});
       } else {
-        chrome.browserAction.setIcon({path:"img/icon18.png"});
+        chrome.browserAction.setIcon({path:{18:"img/icon18.png"}});
       }
     }
 

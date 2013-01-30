@@ -61,11 +61,13 @@ function generateTable() {
       }
     } else {
       for (var fset in local_filtersets) {
-        matchingfilter = local_filtersets[fset].blocking.
+        var currentlist_matchingfilter = local_filtersets[fset].blocking.
               matches(i, resources[i].type, resources[i].domain, true);
-        if (matchingfilter) {
+        if (currentlist_matchingfilter) {
           matchingListID = fset;
-          break;
+          matchingfilter = currentlist_matchingfilter;
+          if (Filter.isWhitelistFilter(currentlist_matchingfilter))
+            break;
         }
       }
     }
@@ -304,7 +306,7 @@ function createResourceblockFilterset(id, text) {
       h.push(text[i]);
     else if (Filter.isWhitelistFilter(text[i]))
       w.push(text[i]);
-    else
+    else if (text[i])
       b.push(text[i]);
   }
   local_filtersets[id].hiding = FilterSet.fromTexts(h);

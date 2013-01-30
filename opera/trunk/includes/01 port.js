@@ -101,9 +101,10 @@ var chrome = {
 
   browserAction: {
     // This assumes the variable 'button', being the button, already exists
-    // In Chrome that would be done in the manifest
+    // In Chrome that would be done in the manifest.
+    // Opera automatically picks the 36px icon if necessary (if available).
     setIcon: function(properties, callback) {
-      button.icon = properties.path;
+      button.icon = properties.path['18'];
       if (callback) {callback();}
     }
   },
