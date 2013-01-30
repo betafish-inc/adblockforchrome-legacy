@@ -106,9 +106,6 @@ Missing translations (4%): chromebutton_how_to_hide2, filterorigin, firefox_expl
 ===== \_locales\tr\messages.json =====
 Missing translations (2%): if_this_breaks_let_us_know, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
-===== \_locales\sk\messages.json =====
-Missing translations (1%): if_this_breaks_let_us_know, use_experimental_feature_to_speed_up_adblock
-
 ===== \_locales\pl\messages.json =====
 Missing translations (1%): if_this_breaks_let_us_know, use_experimental_feature_to_speed_up_adblock
 
