@@ -13,7 +13,7 @@ I (Michael Gundlach, the creator of !AdBlock) receive all proceeds from your pay
 
 == General questions: ==
 
-There are also many volunteers helping me by answering general user questions or improving the !AdBlock program.  (I would love [HowToContribute your help] too!)  If your question isn't answered in [FrequentlyAskedQuestions the general FAQ], you can email !AdBlock's  [mailto:adblockforchrome-discuss@googlegroups.com public mailing list] to get help from a volunteer, me, or another !AdBlock user.
+There are also many volunteers helping me by answering general user questions or improving the !AdBlock program.  (I would love [WaysToHelp your help] too!)  If your question isn't answered in [FrequentlyAskedQuestions the general FAQ], you can email !AdBlock's  [mailto:adblockforchrome-discuss@googlegroups.com public mailing list] to get help from a volunteer, me, or another !AdBlock user.
 
 == Private questions: ==
 
