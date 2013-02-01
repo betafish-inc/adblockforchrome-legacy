@@ -22,7 +22,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || - additional Polish filters || admin at adblocklist.org || http://adblocklist.org/ ||
 || - additional Romanian filters || mail at zoso.ro || http://www.zoso.ro/rolist ||
 || - additional Russian filters || http://forum.mozilla-russia.org/viewtopic.php?id=3679 || http://code.google.com/p/ruadlist/ ||
-|| Czech filters || vaclav at dajbych.net || http://adblock.dajbych.net/ ||
+|| Czech and Slovak filters || tomasko126 at google.com || http://code.google.com/p/adblock-czechoslovaklist/ ||
 || Danish filters || henrik at schack.dk || http://henrik.schack.dk/adblock/ ||
 || Hungarian filters || pete at teamlupus.hu || http://pete.teamlupus.hu/site/?pg=hufilter ||
 || Israeli filters || http://mozilla.org.il/board/viewtopic.php?f=8&t=8679 || http://code.google.com/p/israellist/ ||
