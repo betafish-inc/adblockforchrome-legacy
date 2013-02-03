@@ -587,6 +587,8 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Changelog for the Opera version of !AdBlock ==
 
+*1.0.7*: Include changes from !AdBlock for Chrome 2.5.57.
+
 *1.0.6*: Include changes from !AdBlock for Chrome 2.5.47. Added high density icons for OS X Retina. Work around Opera bug regarding to the blocking of third-party resources
 
 *1.0.5*: Include changes from !AdBlock for Chrome 2.5.46. Attempt to combine identical rules with different options (this fixes the "Don't run on this domain' option) (Opera 12.10 only). Make sure the button popup has the correct size. Enable reporting an ad from within the extension (Opera 12.10 for advanced users only).
