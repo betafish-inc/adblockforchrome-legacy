@@ -447,7 +447,7 @@ MyFilters.prototype._make_subscription_options = function() {
       requiresList: "easylist",
     },
     "easylist_plus_french": { // Additional French filters
-      url: "http://adblock-listefr.com/liste_fr.txt",
+      url: "https://listefr-adblock.googlecode.com/hg/liste_fr.txt",
       requiresList: "easylist",
     },
     "easylist_plus_german": { // Additional German filters
@@ -467,7 +467,7 @@ MyFilters.prototype._make_subscription_options = function() {
       requiresList: "easylist",
     },
     "russian": { // Additional Russian filters
-      url: "https://ruadlist.googlecode.com/svn/trunk/advblock.txt",
+      url: "https://ruadlist.googlecode.com/hg/advblock.txt",
       requiresList: "easylist",
     },
     "chinese": { // Additional Chinese filters

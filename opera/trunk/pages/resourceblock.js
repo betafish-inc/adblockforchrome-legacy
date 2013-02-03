@@ -201,7 +201,7 @@ function generateTable() {
         document.location.reload();
     });
   });
-};
+}
 
 // Converts the ElementTypes number back into an readable string
 // or hiding or 'unknown' if it wasn't in ElementTypes.
@@ -287,7 +287,7 @@ function generateFilterSuggestions() {
     attr("title", translate("wildcardhint")).
     val(url).
     bind("input", function() {
-      $("#custom").click()
+      $("#custom").click();
     });
   $("#custom + label").append(inputBox);
 }
@@ -707,6 +707,7 @@ $(function() {
                 window.close();
                 return;
               }
+              $("#legend").show();
             } else
               $("#resourceslist input").click();
             $("#choosedifferentresource").remove();
@@ -744,4 +745,4 @@ sortTable = function() {
     var no = Number(item.match(/\d+$/)[0]) - 10000;
     $("tbody", table).append(rowList[no]);
   });
-}
+};
