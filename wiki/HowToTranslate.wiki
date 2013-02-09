@@ -109,9 +109,6 @@ Missing translations (2%): let_me_know_how_it_is_working, use_experimental_featu
 ===== \_locales\sv\messages.json =====
 Missing translation (1%): let_me_know_how_it_is_working
 
-===== \_locales\sk\messages.json =====
-Missing translation (1%): let_me_know_how_it_is_working
-
 ===== \_locales\ru\messages.json =====
 Missing translation (1%): let_me_know_how_it_is_working
 
