@@ -7,6 +7,15 @@
 
 Sorry to hear that!  You've come to the right place.
 
+<h2><font color="red">Note on February 12, 2013</font></h2>
+If !AdBlock has stopped working, it is probably because the list of known ads that !AdBlock uses is broken today.  I will ship an update to you in the next few days that fixes the problem.
+
+To work around the problem, <a href="abp:subscribe?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Feasylist.txt&1">click this link</a> to subscribe to a working list of known ads.
+
+Otherwise, read on.
+
+-----
+
 The first thing to do is to *make sure !AdBlock is installed and up to date.* [http://chromeadblock.com/help/outofdate/ Instructions]
 
 == Next: some common problems. ==
