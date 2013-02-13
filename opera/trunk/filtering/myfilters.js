@@ -38,11 +38,18 @@ function MyFilters() {
 
     sub.initialUrl = sub.initialUrl || official.url;
     sub.url = sub.url || official.url;
-    if (sub.initialUrl != official.url) {
+    if (sub.initialUrl !== official.url) {
       // The official URL was changed. Use it. In case of a redirect, this
       // doesn't happen as only sub.url is changed, not sub.initialUrl.
       sub.initialUrl = official.url;
       sub.url = official.url;
+    }
+
+    var isMissingRequiredList = (sub.requiresList !== official.requiresList);
+    if (official.requiresList && isMissingRequiredList && sub.subscribed) {
+      // A required list was added.  Make sure main list subscribers get it.
+      if (this._subscriptions[official.requiresList])
+        this.changeSubscription(official.requiresList, {subscribed: true});
     }
     sub.requiresList = official.requiresList;
     sub.subscribed = sub.subscribed || false;
@@ -369,10 +376,6 @@ MyFilters.prototype.customToDefaultId = function(id) {
   for (var defaultList in this._official_options)
     if (this._official_options[defaultList].url == urlOfCustomList)
       return defaultList;
-  // We use a mirror of EasyList. However, to prevent users from getting
-  // subscribed to both the mirror as the official one, have this check...
-  if (urlOfCustomList == "https://easylist-downloads.adblockplus.org/easylist.txt")
-    return "easylist";
   return id;
 }
 
@@ -405,6 +408,7 @@ MyFilters.prototype._load_default_subscriptions = function() {
       case 'pl': return 'easylist_plus_polish';
       case 'ro': return 'easylist_plus_romanian';
       case 'ru': return 'russian';
+      case 'sk': return 'czech';
       case 'uk': return 'russian';
       case 'zh': return 'chinese';
       default: return '';
@@ -432,7 +436,7 @@ MyFilters.prototype._make_subscription_options = function() {
       url: "https://chromeadblock.com/filters/adblock_custom.txt",
     },
     "easylist": { // EasyList
-      url: "http://adblockplus.mozdev.org/easylist/easylist.txt"
+      url: "https://easylist-downloads.adblockplus.org/easylist.txt"
     },
     "easylist_plus_bulgarian": { // Additional Bulgarian filters
       url: "http://stanev.org/abp/adblock_bg.txt",
@@ -451,7 +455,7 @@ MyFilters.prototype._make_subscription_options = function() {
       requiresList: "easylist",
     },
     "easylist_plus_german": { // Additional German filters
-      url: "http://adblockplus.mozdev.org/easylist/easylistgermany.txt",
+      url: "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
       requiresList: "easylist",
     },
     "easylist_plus_greek": { // Additional Greek filters
@@ -474,8 +478,9 @@ MyFilters.prototype._make_subscription_options = function() {
       url: "https://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt",
       requiresList: "easylist",
     },
-    "czech": { // Czech filters
-      url: "http://adblock.dajbych.net/adblock.txt",
+    "czech": { // Additional Czech and Slovak filters
+      url: "https://adblock-czechoslovaklist.googlecode.com/svn/filters.txt",
+      requiresList: "easylist",
     },
     "danish": { // Danish filters
       url: "http://adblock.schack.dk/block.txt",
