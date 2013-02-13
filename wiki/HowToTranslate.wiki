@@ -113,9 +113,6 @@ Requires update: filterczech
 Requires update: filterczech
 Missing translation (1%): lang_slovak
 
-===== \_locales\ru\messages.json =====
-Requires update: filterczech
-
 ===== \_locales\pt_PT\messages.json =====
 Requires update: filterczech
 
