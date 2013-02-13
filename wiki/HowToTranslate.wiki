@@ -113,7 +113,13 @@ Requires update: filterczech
 Requires update: filterczech
 Missing translation (1%): lang_slovak
 
+===== \_locales\sk\messages.json =====
+Requires update: filterczech
+
 ===== \_locales\ru\messages.json =====
+Requires update: filterczech
+
+===== \_locales\pt_PT\messages.json =====
 Requires update: filterczech
 
 ===== \_locales\pt_BR\messages.json =====
@@ -163,6 +169,9 @@ Missing translations (25%): adblock_is_paused, adblock_outdated_chrome, adsoneve
 ===== \_locales\el\messages.json =====
 Requires update: filterczech
 Missing translations (4%): filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, searchexplanation, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
+
+===== \_locales\de\messages.json =====
+Requires update: filterczech
 
 ===== \_locales\da\messages.json =====
 Requires update: filterczech
