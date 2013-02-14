@@ -106,9 +106,6 @@ Missing translations (17%): adblock_outdated_chrome, adsoneverysite, checkinfire
 Requires update: filterczech
 Missing translations (5%): chromebutton_how_to_hide2, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, nosearchresults, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
-===== \_locales\tr\messages.json =====
-Requires update: filterczech
-
 ===== \_locales\sv\messages.json =====
 Requires update: filterczech
 Missing translation (1%): lang_slovak
@@ -170,10 +167,6 @@ Requires update: filterczech
 ===== \_locales\da\messages.json =====
 Requires update: filterczech
 Missing translation (1%): lang_slovak
-
-===== \_locales\cs\messages.json =====
-Requires update: filterczech
-Missing translations (1%): lang_slovak, let_me_know_how_it_is_working
 
 ===== \_locales\bg\messages.json =====
 Requires update: filterczech
