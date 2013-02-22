@@ -7,13 +7,6 @@
 
 Sorry to hear that!  You've come to the right place.
 
-<h2><font color="red">Note on February 13, 2013</font></h2>
-If !AdBlock has stopped working, try updating to !AdBlock version 2.5.60 ([http://chromeadblock.com/help/outofdate/ instructions]) and clicking the !AdBlock toolbar button -> Options -> Filter Lists -> Update Filters to get the latest version of !EasyList, which was a little sick until today.
-
-Otherwise, read on.
-
------
-
 The first thing to do is to *make sure !AdBlock is installed and up to date.* [http://chromeadblock.com/help/outofdate/ Instructions]
 
 == Next: some common problems. ==
