@@ -14,7 +14,7 @@ Here are all contact methods for the list authors. It saves you some searching i
 || !EasyList (recommended) || http://forums.lanik.us/ || https://easylist.adblockplus.org/ ||
 || - additional Bulgarian filters || alex at stanev.org || http://stanev.org/abp/ ||
 || - additional Chinese filters || http://code.google.com/p/adblock-chinalist/issues/list || http://code.google.com/p/adblock-chinalist/ ||
-|| - additional Czech and Slovak filters || http://code.google.com/p/adblock-czechoslovaklist/issues/list || http://code.google.com/p/adblock-czechoslovaklist/ ||
+|| - additional Czech and Slovak filters || tomasko126 at gmail.com || http://code.google.com/p/adblock-czechoslovaklist/ ||
 || - additional Dutch filters || http://code.google.com/p/dutchadblockfilters/issues/list || http://code.google.com/p/dutchadblockfilters/ ||
 || - additional Finnish filters || http://wiltteri.net/ilmoita/ || http://wiltteri.net/ ||
 || - additional French filters || http://forums.lanik.us/viewforum.php?f=91 ||  http://adblock-listefr.com/ ||
