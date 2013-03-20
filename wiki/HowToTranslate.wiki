@@ -144,9 +144,6 @@ Missing translations (5%): filterczech, filterorigin, firefox_explanation, lang_
 
 ===== \_locales\da\messages.json =====
 Missing translations (1%): filterczech, lang_slovak
-
-===== \_locales\bg\messages.json =====
-Missing translations (2%): filterczech, lang_slovak, let_me_know_how_it_is_working
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
