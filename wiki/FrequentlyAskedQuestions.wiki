@@ -11,8 +11,6 @@ I'm Michael Gundlach, a developer in Georgia in the US.  Hi!  I created !AdBlock
 
 In addition to financial support, anyone can [WaysToHelp contribute code or time] to the project.  About a dozen [http://code.google.com/p/adblockforchrome/people/list contributors] have [Changelog done so] over the years.
 
-Recently the contributor Famlam added Opera support to !AdBlock, and maintains that code.
-
 == How does !AdBlock work? Do I have to configure it? ==
 
 !AdBlock automatically blocks all ads on web pages for you, with no configuration necessary.  As soon as you install it, you can open a tab to nytimes.com (for example), and there will be no ads on the page.
@@ -102,7 +100,7 @@ To allow !AdBlock to run on https sites, click the Opera menu -> Extensions -> M
 
 == My browser won't update to the latest version of !AdBlock. ==
 
-Chrome: because !AdBlock is so popular, updates take a few weeks to roll out.  You can [http://chromeadblock.com/help/outofdate force it to update] if you're impatient.
+Chrome: because !AdBlock is so popular, updates take a few days to roll out.  You can [http://chromeadblock.com/help/outofdate force it to update] if you're impatient.
 
 Safari: You may have auto-update of extensions turned off.  Turn it on under Safari -> Preferences -> Extensions -> Updates.  You can also be sure to update to the latest version by reinstalling from safariadblock.com.
 
@@ -190,4 +188,4 @@ If you speak multiple languages, you may wish to use filter lists for those lang
 
 = Where can I ask a question or get in touch? =
 
-[mailto:adblockforchrome-discuss@googlegroups.com Send an email] to the discussion mailing list -- we're always listening!
+Over [Support here].
