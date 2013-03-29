@@ -127,9 +127,6 @@ Missing translations (21%): adblock_outdated_chrome, adsoneverysite, checkinfire
 ===== \_locales\hu\messages.json =====
 Missing translations (19%): adblock_outdated_chrome, adsoneverysite, checkinfirefox_1, checkinfirefox_2, checkinfirefox_3, checkinfirefox_4, checkinfirefox_5, checkinfirefoxtitle, chromebutton_how_to_hide2, close_tab_begin_browsing, custompattern, doesntmatchoriginal, filterczech, filterorigin, filterrussian, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, maybemalware, noresourcessend2, nosearchresults, oneverysitetitle, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reportpubliclyavailable, resourcedomain, safari50_updatenotice, searchexplanation, searchplaceholder, thats_it, thirdparty, typeobject_subrequest, typeother, typepopup, typexmlhttprequest, undo_last_block, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
-===== \_locales\hr\messages.json =====
-Missing translations (1%): filterczech, lang_slovak
-
 ===== \_locales\he\messages.json =====
 Missing translations (11%): adblock_outdated_chrome, blacklisterattrwillbe, checkinfirefox_1, checkinfirefox_2, checkinfirefoxtitle, chromebutton_how_to_hide2, filterczech, filterorigin, firefox_explanation, lang_czech, lang_slovak, let_me_know_how_it_is_working, multipledomainshint, nodefaultfilter1, onlyresourcetypes, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_secure_pages, opera_secure_pages_enabled, searchexplanation, show_resourcelist, typeobject_subrequest, typexmlhttprequest, updatefromoldversion, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
