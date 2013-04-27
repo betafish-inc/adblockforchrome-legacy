@@ -109,9 +109,6 @@ Missing translation (1%): spread_the_word
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): filterczech, lang_slovak, spread_the_word
 
-===== \_locales\ru\messages.json =====
-Missing translation (1%): spread_the_word
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translation (1%): spread_the_word
 
