@@ -109,9 +109,6 @@ Missing translation (1%): spread_the_word
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): filterczech, lang_slovak, spread_the_word
 
-===== \_locales\pt_BR\messages.json =====
-Missing translation (1%): spread_the_word
-
 ===== \_locales\pl\messages.json =====
 Missing translations (2%): filterczech, lang_slovak, let_me_know_how_it_is_working, spread_the_word, use_experimental_feature_to_speed_up_adblock
 
@@ -147,9 +144,6 @@ Missing translations (26%): adblock_is_paused, adblock_outdated_chrome, adsoneve
 
 ===== \_locales\el\messages.json =====
 Missing translations (5%): filterczech, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, searchexplanation, spread_the_word, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
-
-===== \_locales\de\messages.json =====
-Missing translation (1%): spread_the_word
 
 ===== \_locales\da\messages.json =====
 Missing translations (2%): filterczech, lang_slovak, spread_the_word
