@@ -103,9 +103,6 @@ Missing translations (18%): adblock_outdated_chrome, adsoneverysite, checkinfire
 ===== \_locales\uk\messages.json =====
 Missing translations (5%): chromebutton_how_to_hide2, filterczech, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, nosearchresults, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, spread_the_word, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
-===== \_locales\tr\messages.json =====
-Missing translation (1%): spread_the_word
-
 ===== \_locales\te\messages.json =====
 Missing translation (1%): spread_the_word
 
