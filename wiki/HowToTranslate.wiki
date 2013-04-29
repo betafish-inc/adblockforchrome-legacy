@@ -106,9 +106,6 @@ Missing translations (5%): chromebutton_how_to_hide2, filterczech, filterorigin,
 ===== \_locales\te\messages.json =====
 Missing translation (1%): spread_the_word
 
-===== \_locales\sv\messages.json =====
-Missing translations (2%): filterczech, lang_slovak, spread_the_word
-
 ===== \_locales\pl\messages.json =====
 Missing translations (2%): filterczech, lang_slovak, let_me_know_how_it_is_working, spread_the_word, use_experimental_feature_to_speed_up_adblock
 
