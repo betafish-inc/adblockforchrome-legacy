@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.62<br/>
+*Latest Chrome version*: 2.5.63<br/>
 *Latest Safari version*: 2.5.62<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.63*: Pressing enter clicks default button in blacklist and whitelist wizards (Pao), lock icon in install URL.
 
 *2.5.62*: Put sharing link in Chrome toolbar button menu (tomasko), stop using deprecated API (Pao), test lock icon in URL upon install
 
