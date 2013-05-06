@@ -28,6 +28,6 @@ If not, email Michael (the creator of !AdBlock) at [mailto:payments@getadblock.c
   * I would like a [PaymentsFAQ#How_do_I_get_a_refund? refund].
 
 *None of the above?*  You can:
-  * read the [FrequentlyAskedQuestions General FAQ].  *<font color="red">Please do this before emailing.</font>* I bet it answers your question! 
-  * email public questions to the [mailto:adblockforchrome-discuss@googlegroups.com public mailing list], and a volunteer or another user will help you.
-  * email private concerns to [mailto:support@getadblock.com support@getadblock.com].
+  * read the [FrequentlyAskedQuestions General FAQ].  *<font color="red">Please do this before emailing.</font>* I bet it answers your question!
+  * send truly private concerns (not questions about how to use Adblock!) to support {at} getadblock.com. But you should probably instead:
+  * email the [mailto:adblockforchrome-discuss@googlegroups.com support group], and you will be helped promptly.
