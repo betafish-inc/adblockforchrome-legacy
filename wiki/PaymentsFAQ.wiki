@@ -59,9 +59,11 @@ You can get a refund at any time, for any reason, and you can still use !AdBlock
 
 == How do I get a refund? ==
 
-Your payment confirmation email from !PayPal/Google/Amazon should contain a link to review your order.  You can cancel the payment from there.
+If you paid by credit card, the receipt you were emailed contains a link to get a refund.
 
-If you can't find that, you can ask me for a refund at [mailto:payments@getadblock.com payments@getadblock.com] and I'll take care of it.  It's easier for me to do this in the first 60 days, but even beyond that point I will try my best to get you a full refund.
+Otherwise, your payment confirmation email from !PayPal/Google/Amazon should contain a link to review your order.  You can cancel the payment from there.
+
+If you can't find those, you can ask me for a refund at [mailto:payments@getadblock.com payments@getadblock.com] and I'll take care of it.  It's easier for me to do this in the first 60 days, but even beyond that point I will try my best to get you a full refund.
 
 Please don't dispute the charge through !PayPal/Google/Amazon/your credit card company in order to initiate the refund, as sometimes it freezes the money so I can't refund it to you for a month.
 
