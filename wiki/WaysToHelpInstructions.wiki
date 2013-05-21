@@ -285,7 +285,7 @@ Code you submit to !AdBlock should conform to the following style rules, unless 
 
 Comment every non-one-liner function that you write with a description of what it does, a list of inputs, and what it returns. See background.js for some examples. When in doubt about whether a chunk of code makes sense, lead it with a comment explaining what's going on.  When you implement strange-looking code to handle Issue `1234`, it suffices to say `// Issue 1234` so readers know where to learn more.  In general, *err on the side of too many comments*, since dozens of strangers may read your code this year without understanding as much as you do about the context.
 
-Variables should be clearly named instead of short.  `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
+Variables should be clearly named instead of short.  `EnumsAreNamed.LIKETHIS`; `ClassesAreNamedLikeThis`; `functionsNamedLikeThis`; `_privateFuntionsLikeThis`; `variables_like_this`; `_private_variables_like_this` ("private" meaning "not meant for use outside this object.")  When in doubt, follow the capitalization of the code around you.
 
 There are lots of ways in !JavaScript to define a class, its constructor, and its prototype.  Follow this format:
 {{{
