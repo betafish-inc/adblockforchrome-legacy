@@ -112,12 +112,6 @@ Missing translations (3%): disableallextensions, disableforchromeandsafaristeptw
 ===== \_locales\sv\messages.json =====
 Missing translations (2%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone
 
-===== \_locales\ru\messages.json =====
-Missing translations (2%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone
-
-===== \_locales\pt_BR\messages.json =====
-Missing translations (2%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone
-
 ===== \_locales\pl\messages.json =====
 Missing translations (4%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, lang_slovak, let_me_know_how_it_is_working, reenableadsonebyone, spread_the_word, use_experimental_feature_to_speed_up_adblock
 
@@ -153,9 +147,6 @@ Missing translations (26%): adblock_is_paused, adblock_outdated_chrome, casesens
 
 ===== \_locales\el\messages.json =====
 Missing translations (7%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, reenableadsonebyone, searchexplanation, spread_the_word, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
-
-===== \_locales\de\messages.json =====
-Missing translations (2%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone
 
 ===== \_locales\da\messages.json =====
 Missing translations (3%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, lang_slovak, reenableadsonebyone, spread_the_word
