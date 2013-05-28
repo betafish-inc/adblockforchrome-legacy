@@ -110,7 +110,28 @@ Missing translations (2%): disableallextensions, disableforchromeandsafaristeptw
 Missing translations (3%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone, spread_the_word
 
 ===== \_locales\sv\messages.json =====
-Missing translations (2%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
+===== \_locales\sr\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
+===== \_locales\sk\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
+===== \_locales\ru\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
+===== \_locales\pt_PT\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
+===== \_locales\pt_BR\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
 
 ===== \_locales\pl\messages.json =====
 Missing translations (4%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, lang_slovak, let_me_know_how_it_is_working, reenableadsonebyone, spread_the_word, use_experimental_feature_to_speed_up_adblock
@@ -139,14 +160,26 @@ Missing translations (3%): disableallextensions, disableforchromeandsafaristeptw
 ===== \_locales\he\messages.json =====
 Missing translations (13%): adblock_outdated_chrome, blacklisterattrwillbe, checkinfirefox_1, checkinfirefox_2, checkinfirefoxtitle, chromebutton_how_to_hide2, disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, filterorigin, firefox_explanation, lang_czech, lang_slovak, let_me_know_how_it_is_working, multipledomainshint, nodefaultfilter1, onlyresourcetypes, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_secure_pages, opera_secure_pages_enabled, reenableadsonebyone, searchexplanation, show_resourcelist, spread_the_word, typeobject_subrequest, typexmlhttprequest, updatefromoldversion, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
+===== \_locales\fr\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
 ===== \_locales\fi\messages.json =====
 Missing translations (15%): adblock_outdated_chrome, chromebutton_how_to_hide2, close_tab_begin_browsing, custompattern, disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, doesntmatchoriginal, filterczech, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, noresourcessend2, nosearchresults, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reenableadsonebyone, reportpubliclyavailable, resourcedomain, searchexplanation, searchplaceholder, spread_the_word, thats_it, thirdparty, undo_last_block, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
 
 ===== \_locales\es\messages.json =====
 Missing translations (26%): adblock_is_paused, adblock_outdated_chrome, casesensitive, checkinfirefox_3, checkinfirefox_4, checkinfirefoxtitle, chromebutton_how_to_hide2, cleanuplist, close_tab_begin_browsing, custompattern, disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, doesntmatchoriginal, excludedomainorurl, excludefilterremoved, filecleanerwarning, filterczech, filterlistsrock, filterorigin, firefox_explanation, for_more_options_right_click, headerfilter, lang_slovak, let_me_know_how_it_is_working, noresourcessend2, nosearchresults, novalidurlpattern, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_enabledin, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reenableadsonebyone, reportpubliclyavailable, resourceblocklegend4, resourceblocklegend5, resourcedomain, resourceiswhitelisted, searchexplanation, searchplaceholder, show_ads_except_for, spread_the_word, status_disabled, storage_quota_exceeded, subscribe_unsubscribe_all, thats_it, thirdparty, thirdpartycheckbox, typeobject_subrequest, typescript, typestylesheet, typesubdocument, typexmlhttprequest, undo_last_block, use_experimental_feature_to_speed_up_adblock, warning_overrules_filters, whitelisteverycontaining, wildcardhint, work_around_hulu_problems, you_can_slide_to_change, you_know_thats_a_bad_idea_right
 
+===== \_locales\en\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
+
 ===== \_locales\el\messages.json =====
 Missing translations (7%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, filterorigin, firefox_explanation, lang_slovak, let_me_know_how_it_is_working, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, reenableadsonebyone, searchexplanation, spread_the_word, use_experimental_feature_to_speed_up_adblock, work_around_hulu_problems
+
+===== \_locales\de\messages.json =====
+Message 'disableforopera' is never used and should be removed
+Message 'disableforoperainstructions' is never used and should be removed
 
 ===== \_locales\da\messages.json =====
 Missing translations (3%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, filterczech, lang_slovak, reenableadsonebyone, spread_the_word
