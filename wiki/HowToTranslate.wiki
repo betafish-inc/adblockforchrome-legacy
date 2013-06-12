@@ -150,9 +150,6 @@ Missing translations (3%): disableallextensions, disableforchromeandsafaristeptw
 
 ===== \_locales\cs\messages.json =====
 Missing translations (3%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone, spread_the_word
-
-===== \_locales\bg\messages.json =====
-Missing translations (3%): disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforsafaristepone, reenableadsonebyone, spread_the_word
 }}}
 
 There will always be a time that you will no longer be able to maintain your translation, due to changes in work, health or any other reason. In that case, please tell us, so that we can ask other people to continue where you left.
