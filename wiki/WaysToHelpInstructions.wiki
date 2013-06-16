@@ -106,9 +106,14 @@ problem you'll automatically be updated with the fix.</pre>
 <h4>The wizard</h4>
 
 First, try out !AdBlock's built-in ad reporting wizard to see what it does.  It's just a bunch of questions.  You can run it on any page, including this one, and make up pretend answers, then stop before actually filing an ad report.  Do this:
+
+For Safari and Opera 12.15
  # Click the !AdBlock toolbar button -> Options
  # Check the "advanced mode" checkbox
  # Close the Options page
+ # Click the !AdBlock toolbar button -> Report an ad.
+
+For Chrome and Opera 15
  # Click the !AdBlock toolbar button -> Report an ad.
 
 Depending on whether you said you saw the ad in Firefox using Adblock Plus, the wizard either gave you a link to report the ad to a filter list maintainer, or a link to report the ad to us.  Doing the latter files a `Type-AdReport` Issue in !AdBlock's Issue Tracker.  (Here's an [http://code.google.com/p/adblockforchrome/issues/detail?id=7165 example] which the user forgot to fill in with details).  We then investigate the report to see how we should proceed.
