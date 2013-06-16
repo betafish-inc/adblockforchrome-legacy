@@ -59,9 +59,12 @@ You can pause !AdBlock, or tell it to never run on certain websites, under the !
 You can block an ad for yourself if you'd like (see [#How_do_I_block_an_ad? these instructions]); or you can report it so that it will be blocked for everyone.
 
 Don't report ads in the Issue tracker.  Instead, do the following:
-
+  For Safari and Opera 12.15
    # Click the !AdBlock toolbar button -> Options -> General -> "Show me advanced options"
    # Go back to the page that contains the ad
+   # Click the !AdBlock toolbar button -> Report an ad
+  
+  For Chrome and Opera 15
    # Click the !AdBlock toolbar button -> Report an ad
 
 You'll get the fix automatically a few days after your report is processed.
