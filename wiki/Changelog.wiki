@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.5.64<br/>
+*Latest Chrome version*: 2.5.65<br/>
 *Latest Safari version*: 2.5.64<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.5.65*: Blacklist wizard never gets hidden by page content (wormboy.d); updated Russian filter URL (tomasko)
 
 *2.5.64*: Ad report wizard makes user disable other extensions (Marcus Jackson); 'Report an ad' available to non-advanced users (tomasko), Follow button added to Share page (tomasko), minor bugfixes
 
