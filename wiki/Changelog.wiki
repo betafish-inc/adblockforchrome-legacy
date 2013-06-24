@@ -7,11 +7,13 @@ Note that !AdBlock releases as quickly as possible to get improvements to our us
 
 == Versions ==
 
-*Latest Chrome version*: 2.6.0<br/>
+*Latest Chrome version*: 2.6.1<br/>
 *Latest Safari version*: 2.6.0<br/>
 *Latest Opera version*: See [#Changelog_for_the_Opera_version_of_AdBlock here]<br/>
 
 <wiki:comment>NEW VERSIONS GO HERE</wiki:comment>
+
+*2.6.1*: Help link explaining new block counts section in popup
 
 *2.6.0*: Simplify Filter Lists options tab (Pao), show blocking stats in toolbar button and popup (Pao)
 
