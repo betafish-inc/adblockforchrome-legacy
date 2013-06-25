@@ -151,9 +151,6 @@ Missing translations (1%): adblock_click_for_details, whats_this
 ===== \_locales\ru\messages.json =====
 Missing translations (4%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, failedtofetchlanguagefilter, languagedropdowndescription, otherfilters, show_on_adblock_button, whats_this
 
-===== \_locales\sk\messages.json =====
-Missing translations (4%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, failedtofetchlanguagefilter, languagedropdowndescription, otherfilters, show_on_adblock_button, whats_this
-
 ===== \_locales\sr\messages.json =====
 Missing translations (4%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, failedtofetchlanguagefilter, languagedropdowndescription, otherfilters, show_on_adblock_button, whats_this
 
