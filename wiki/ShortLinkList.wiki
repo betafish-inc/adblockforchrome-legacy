@@ -11,7 +11,7 @@ http://getadblock.com/contribute (also /participate or /volunteer)
   The WaysToHelp wiki page
 
 http://getadblock.com/pay
-  The donation page for !AdBlock
+  The payment page for !AdBlock
 
 http://getadblock.com/project
   The homepage of the Google Code Project
@@ -41,7 +41,7 @@ http://getadblock.com/faq/hunting
   Instructions on how to hunt down a bad filter.
 
 http://getadblock.com/faq/toomuchblocked
-  The replacement for /faq/hunting - preferred to send users here
+  The replacement for /faq/hunting - preferred to send users here.  It covers undoing if you blocked too much yourself, or hunting down the filter list filter that blocked too much accidentally.
 
 http://getadblock.com/faq/adreport
   Instructions on reporting an ad
