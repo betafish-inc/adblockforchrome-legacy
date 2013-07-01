@@ -46,8 +46,8 @@ http://getadblock.com/faq/toomuchblocked
 http://getadblock.com/faq/adreport
   Instructions on reporting an ad
 
-http://getadblock.com/faq/textenhance
-  Instructions on removing "Text Enhance" ads.
+http://getadblock.com/faq/adseverywhere (also /faq/textenhance )
+  Instructions on removing ads injected onto every page, probably by an extension.  The ads are often labeled "Text Enhance".
 
 http://getadblock.com/faq/uninstall
   Instructions on how to uninstall !AdBlock
