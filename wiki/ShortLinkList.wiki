@@ -8,16 +8,16 @@ http://getadblock.com/chrome (also /safari or /opera)
   An install page for a specific browser
 
 http://getadblock.com/contribute (also /participate or /volunteer)
-  Links to the WaysToHelp wiki page
+  The WaysToHelp wiki page
 
 http://getadblock.com/pay
   The donation page for !AdBlock
 
 http://getadblock.com/project
-  Links to the homepage of the Google Code Project
+  The homepage of the Google Code Project
 
 http://getadblock.com/support
-  Takes you to the [Support] wiki page.
+  The [Support] wiki page.
 
 http://getadblock.com/speedsurvey
   Survey for testing out Issue 6902
@@ -29,7 +29,7 @@ http://getadblock.com/bugs
   The Issues tab / the GetHelp wiki page
 
 http://getadblock.com/bugs/critical
-  An link which gives a definition of "Priority-Critical" at WaysToHelpInstructions
+  The definition of "Priority-Critical" at WaysToHelpInstructions
 
 http://getadblock.com/faq
   The FAQ (FrequentlyAskedQuestions)
