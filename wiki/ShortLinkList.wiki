@@ -1,0 +1,53 @@
+#summary A list of the shortlinks at getadblock.com
+#labels Restrict-AddWikiComment-Commit
+
+http://getadblock.com
+  Links to the install page for your browser, or the Chrome version, otherwise
+
+http://getadblock.com/chrome (also /safari or /opera)
+  An install page for a specific browser
+
+http://getadblock.com/contribute (also /participate or /volunteer)
+  Links to the WaysToHelp wiki page
+
+http://getadblock.com/pay
+  The donation page for !AdBlock
+
+http://getadblock.com/project
+  Links to the homepage of the Google Code Project
+
+http://getadblock.com/support
+  Takes you to the [Support] wiki page.
+
+http://getadblock.com/speedsurvey
+  Survey for testing out Issue 6902
+
+http://getadblock.com/gplus
+  The !AdBlock Google+ Page
+
+http://getadblock.com/bugs
+  The Issues tab / the GetHelp wiki page
+
+http://getadblock.com/bugs/critical
+  An link which gives a definition of "Priority-Critical" at WaysToHelpInstructions
+
+http://getadblock.com/faq
+  The FAQ (FrequentlyAskedQuestions)
+
+http://getadblock.com/faq/payments
+  The Payments FAQ (PaymentsFAQ)
+
+http://getadblock.com/faq/hunting
+  Instructions on how to hunt down a bad filter.
+
+http://getadblock.com/faq/toomuchblocked
+  The replacement for /faq/hunting - preferred to send users here
+
+http://getadblock.com/faq/adreport
+  Instructions on reporting an ad
+
+http://getadblock.com/faq/textenhance
+  Instructions on removing "Text Enhance" ads.
+
+http://getadblock.com/faq/uninstall
+  Instructions on how to uninstall !AdBlock
