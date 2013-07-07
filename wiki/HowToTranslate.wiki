@@ -115,9 +115,6 @@ Missing translations (5%): adblock_click_for_details, adblockinglist, blocked_ad
 ===== \_locales\sk\messages.json =====
 Missing translation (1%): selectlanguage
 
-===== \_locales\ru\messages.json =====
-Missing translation (1%): selectlanguage
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translation (1%): selectlanguage
 
