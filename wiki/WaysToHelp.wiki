@@ -31,7 +31,7 @@ _
 <hr>
 
 !AdBlock is a small open source project with a large user base, so your contribution can make a big impact.<br>
-To participate: *read the [ProjectOverview#Project_overview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].  Have fun!
+To participate: *read the [ProjectOverview project overview]*, find something interesting below, and feel free to [http://groups.google.com/group/adblockforchrome-discuss ask questions].  Have fun!
 
 == Ways to help ==
 
