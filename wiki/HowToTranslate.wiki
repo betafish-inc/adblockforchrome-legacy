@@ -115,9 +115,6 @@ Missing translations (5%): adblock_click_for_details, adblockinglist, blocked_ad
 ===== \_locales\sk\messages.json =====
 Missing translation (1%): selectlanguage
 
-===== \_locales\ro\messages.json =====
-Missing translations (27%): adblock_outdated_chrome, adblock_wont_run_on_pages_matching, blacklisterattrwillbe, blacklisteroptions1, blacklisteroptionstitle, blacklisterthefilter, blacklistertype, blacklisterwarningnofilter, block_by_url_instead, blockdomain, blockeverycontaining, blockmoreads, blockurlwithtext, cantblockflash, cantblockflashwarning, checkinfirefox_3, checkinfirefoxtitle, csstomatch, did_you_know_this_is_my_full_time_job, disableforoperainstructions, doesntmatchoriginal, excludefilterremoved, failedtofetchfilter, failedtofetchlanguagefilter, fetchinglabel, filecleanerwarning, filterorigin, filtersavewarning, firefox_explanation, flashads, for_more_options_right_click, format_site1_site2_site3, headerfilter, headertype, let_me_know_how_it_is_working, manualfilteredit, nodefaultfilter1, noresourcessend2, nosearchresults, novalidurlpattern, now_you_have_adblock_hooray, only_block_ads_on_these_sites, onlyondomains, onlyresourcetypes, opera_120_install, opera_120_options, opera_allow_secure, opera_can_also_change_setting, opera_donations_button, opera_donations_install, opera_excludedomainorurl, opera_for_more_options, opera_linkunblock, opera_reenable_button, opera_secure_pages, opera_secure_pages_enabled, opera_show_toolbar_button, reenableadsonebyone, reportfilterlistproblem, reportpubliclyavailable, resourceblocklegend3, resourceblocklegend4, resourceblocklegend5, resourceblocktitle, resourcedomain, resourceiswhitelisted, retryaftersubscribe, safari50_updatenotice, searchexplanation, storage_quota_exceeded, subscribingtitle, thirdparty, thirdpartycheckbox, typeobject_subrequest, whitelisteverycontaining, work_around_hulu_problems
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translation (1%): selectlanguage
 
