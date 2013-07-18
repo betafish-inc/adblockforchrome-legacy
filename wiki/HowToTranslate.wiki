@@ -124,9 +124,6 @@ Missing translations (7%): filterchinese, filterczech, filterdanish, filterdutch
 ===== \_locales\ro\messages.json =====
 Missing translations (1%): filterisraeli, lang_israeli
 
-===== \_locales\pt_PT\messages.json =====
-Missing translations (7%): filterchinese, filterczech, filterdanish, filterdutch, filtereasylist_plun_korean, filtereasylist_plus_bulgarian, filtereasylist_plus_finnish, filtereasylist_plus_french, filtereasylist_plus_german, filtereasylist_plus_greek, filtereasylist_plus_polish, filtereasylist_plus_romanian, filtereasylist_plus_spanish, filterhungarian, filterisraeli, filteritalian, filterjapanese, filterrussian, lang_israeli
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translations (7%): filterchinese, filterczech, filterdanish, filterdutch, filtereasylist_plun_korean, filtereasylist_plus_bulgarian, filtereasylist_plus_finnish, filtereasylist_plus_french, filtereasylist_plus_german, filtereasylist_plus_greek, filtereasylist_plus_polish, filtereasylist_plus_romanian, filtereasylist_plus_spanish, filterhungarian, filterisraeli, filteritalian, filterjapanese, filterrussian, lang_israeli, selectlanguage
 
