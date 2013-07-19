@@ -127,9 +127,6 @@ Missing translation (1%): filterisraeli
 ===== \_locales\pt_BR\messages.json =====
 Missing translations (2%): filterczech, filterisraeli, filterrussian, selectlanguage
 
-===== \_locales\pl\messages.json =====
-Missing translations (2%): filterczech, filterrussian
-
 ===== \_locales\nl\messages.json =====
 Missing translations (9%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforopera, disableforoperainstructions, disableforsafaristepone, failedtofetchlanguagefilter, filterczech, filterisraeli, filterrussian, languagedropdowndescription, otherfilters, reenableadsonebyone, selectlanguage, show_on_adblock_button, spread_the_word, whats_this
 
