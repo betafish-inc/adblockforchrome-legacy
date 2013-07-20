@@ -115,9 +115,6 @@ Missing translations (2%): filterczech, filterisraeli, filterrussian
 ===== \_locales\sr\messages.json =====
 Missing translations (6%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, failedtofetchlanguagefilter, filterczech, filterisraeli, filterrussian, languagedropdowndescription, otherfilters, selectlanguage, show_on_adblock_button, whats_this
 
-===== \_locales\sk\messages.json =====
-Missing translations (2%): filterczech, filterisraeli, filterrussian, selectlanguage
-
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): filterczech, filterisraeli, filterrussian
 
