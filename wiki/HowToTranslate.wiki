@@ -157,9 +157,6 @@ Missing translations (26%): blocked_n_in_total, blocked_n_on_this_page, disablef
 ===== \_locales\el\messages.json =====
 Missing translations (13%): adblock_click_for_details, adblockinglist, blocked_ads, blocked_n_in_total, blocked_n_on_this_page, customfilters, disableallextensions, disableforchromeandsafaristeptwo, disableforchromestepone, disableforopera, disableforoperainstructions, disableforsafaristepone, failedtofetchlanguagefilter, filterczech, filterisraeli, filterorigin, filterrussian, firefox_explanation, lang_slovak, languagedropdowndescription, let_me_know_how_it_is_working, opera_allow_secure, opera_secure_pages, opera_secure_pages_enabled, otherfilters, reenableadsonebyone, searchexplanation, selectlanguage, show_on_adblock_button, spread_the_word, use_experimental_feature_to_speed_up_adblock, whats_this, work_around_hulu_problems
 
-===== \_locales\de\messages.json =====
-Missing translations (1%): filterczech, filterrussian
-
 ===== \_locales\da\messages.json =====
 Missing translations (3%): blocked_n_in_total, blocked_n_on_this_page, filterczech, filterisraeli, filterrussian, selectlanguage
 
