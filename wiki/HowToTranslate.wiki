@@ -118,9 +118,6 @@ Missing translations (6%): adblock_click_for_details, adblockinglist, blocked_ad
 ===== \_locales\ru\messages.json =====
 Missing translations (2%): filterczech, filterisraeli, filterrussian
 
-===== \_locales\ro\messages.json =====
-Missing translation (1%): filterisraeli
-
 ===== \_locales\pt_BR\messages.json =====
 Missing translations (2%): filterczech, filterisraeli, filterrussian, selectlanguage
 
