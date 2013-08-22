@@ -1,28 +1,4 @@
-#summary AdBlock Support
+#summary Support
 #labels Restrict-AddWikiComment-Commit,Featured
 
-= !AdBlock Support =
-
-Support is equally available to all users, whether or not you pay for !AdBlock.
-
-*Are you seeing an ad?*
-  * !AdBlock is [http://getadblock.com/bugs not installed/not blocking *any* ads].
-  * Ads pop up when I put my mouse on [http://getadblock.com/faq/textenhance underlined words.]
-  * [http://getadblock.com/faq/adreport I found an ad] that !AdBlock does not block.
-
-*Is !AdBlock broken?*
-  * A website [http://getadblock.com/faq/toomuchblocked looks wrong or has the wrong parts blocked].
-  * !AdBlock is [http://getadblock.com/bugs not working correctly or is missing a feature].
-
-*Are you unhappy with !AdBlock?*
-  * I would like to [http://getadblock.com/faq/uninstall uninstall].
-  * I would like a [PaymentsFAQ#How_do_I_get_a_refund? refund].
-
-*Do you have a question about payments or refunds?*
-  1. Please *read the [PaymentsFAQ Payments FAQ] first*.  It probably answers your question.
-  1. If not, email your question to [mailto:payments@getadblock.com payments@getadblock.com].
-
-*Something else?*  You can:
-  * read the [FrequentlyAskedQuestions General FAQ].  *<font color="red">Please do this before emailing.</font>* I bet it answers your question!
-  * send truly private concerns (not questions about how to use Adblock!) to support {at} getadblock.com. But you should probably instead:
-  * email the public [mailto:adblockforchrome-discuss@googlegroups.com support forum], and you will be helped promptly.
+Support has moved <a href="https://getadblock.com/support">here</a>.
