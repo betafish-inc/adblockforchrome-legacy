@@ -1,35 +1,4 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-AddWikiComment-Commit
 
-(Got a *question*, not a problem?  Check out the [Support support page] for answers and contact info.)
-
-= Having trouble with !AdBlock? =
-
-Sorry to hear that!  You've come to the right place.
-
-The first thing to do is to *make sure !AdBlock is installed and up to date.* [http://chromeadblock.com/help/outofdate/ Instructions]
-
-== Next: some common problems. ==
-
- * You may find an *ad that wasn't blocked*.  Follow [FrequentlyAskedQuestions#I_see_an_ad!__How_do_I_report_it? these instructions] to block or report it.
- * Safari users may see *broken image popups or slideshows*.  This is a [http://code.google.com/p/adblockforchrome/issues/detail?id=7194 known limitation] in Safari until Apple fixes [https://bugs.webkit.org/show_bug.cgi?id=74451 this bug].
- * Safari users may see *ads in videos or Flash games*.  This is a [http://code.google.com/p/adblockforchrome/issues/detail?id=7193 known limitation] in Safari.  To get ad-free videos and Flash, install [http://www.google.com/chrome/ Chrome] and then [http://getadblock.com/chrome add AdBlock to Chrome] instead.
- * *!RockMelt* users cannot install !AdBlock without a workaround ([http://code.google.com/p/adblockforchrome/issues/detail?id=6874#c14 Rockmelt workaround]).
- * Safari users should not enable *multi-process windows*; it breaks !AdBlock.
- * Users on a *Nightly/Canary/Labs/Next browser version* often have problems solved by switching to the stable browser version.
-
-== Most other problems are fixed by these easy steps! ==
- # Make sure !AdBlock is installed and up to date, as described above.
- # Manually update your filters ([http://code.google.com/p/adblockforchrome/wiki/HowToFixIt#Make_sure_you_are_using_the_latest_filters instructions])
- # Make sure your browser is up to date.  (Instructions: [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Google_Chrome_instal Chrome] [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Safari_installed Safari] [HowToFixIt#1._Make_sure_you_have_the_latest_version_of_Opera_installed Opera])
- # Reboot your computer.
- # Uninstall and reinstall !AdBlock. (Instructions: [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Chrome Chrome] [HowToFixIt#4._Uninstall_and_reinstall_AdBlock_for_Safari Safari] [HowToFixIt#5._Uninstall_and_reinstall_AdBlock_for_Opera Opera])
- # Delete !AdBlock's settings file.  (Instructions: [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Chrome Chrome] [HowToFixIt#5._Delete_the_LocalStorage_file_of_AdBlock_for_Safari Safari] [HowToFixIt#6._Clear_AdBlock_for_Opera's_settings Opera])
-
-== Do you still have a problem after trying the above? ==
-
-It's likely that someone already told us about the problem!  Please [http://code.google.com/p/adblockforchrome/issues/ search existing reports] for one similar to yours.
-
-If you find a similar report, *leave a comment* with further information, and/or click the *star* at the top left of the report to be emailed updates.
-
-And if you didn't find a match when you [http://code.google.com/p/adblockforchrome/issues/ searched existing reports], please file a [http://code.google.com/p/adblockforchrome/issues/entry?template=Feature%20request%20from%20user feature request] or a [http://code.google.com/p/adblockforchrome/issues/entry?template=Defect bug report].
+This page has moved <a href="https://adblock.tenderapp.com">here.</a>
