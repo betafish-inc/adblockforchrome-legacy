@@ -1,4 +1,8 @@
 #summary Get help with an AdBlock problem.
 #labels Restrict-AddWikiComment-Commit
 
-This page has moved <a href="https://adblock.tenderapp.com">here.</a>
+This page has moved.
+
+Found a bug? Go [https://adblock.tenderapp.com/kb/other-problems/ive-got-a-problem-with-adblock-how-do-i-report-the-bug here].
+
+Got an idea for a cool new feature? Tell us [https://adblock.tenderapp.com/discussion/new?category_id=suggestions here].
