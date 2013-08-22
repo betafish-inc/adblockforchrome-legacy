@@ -1,4 +1,4 @@
 #summary The FAQ
 #labels Restrict-AddWikiComment-Commit
 
-The FAQ has moved <a href="https://getadblock.com/support">here.</a>
+The FAQ has moved <a href="https://adblock.tenderapp.com/kb">here.</a>
