@@ -17,7 +17,7 @@ http://getadblock.com/project
   The homepage of the Google Code Project
 
 http://getadblock.com/support
-  The [Support] wiki page.
+  The Tender site.
 
 http://getadblock.com/speedsurvey
   Survey for testing out Issue 6902
