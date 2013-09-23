@@ -1,2 +1,2 @@
-﻿#labels Featured,Restrict-AddWikiComment-Commit
+﻿#labels Restrict-AddWikiComment-Commit
 This page has moved! Please go [https://adblock.tenderapp.com/kb/technical-questions/how-can-i-find-out-what-has-changed-between-releases here] instead.
