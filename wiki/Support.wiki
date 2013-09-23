@@ -1,4 +1,4 @@
 #summary Support
-#labels Restrict-AddWikiComment-Commit,Featured
+#labels Restrict-AddWikiComment-Commit
 
 Support has moved <a href="https://getadblock.com/support">here</a>.
