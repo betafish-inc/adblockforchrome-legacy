@@ -1,2 +1,2 @@
 #labels Restrict-AddWikiComment-Commit
-Moved [http://adblock.tenderapp.com/kb/other-problems/how-can-i-contact-the-filter-list-maintainers here.]
+This information has moved.  Please go [http://adblock.tenderapp.com/kb/other-problems/how-can-i-contact-the-filter-list-maintainers here] to see it.
