@@ -1,4 +1,5 @@
 #summary The places where you can contact the authors of the lists.
+#labels Restrict-AddWikiComment-Commit
 
 <wiki:comment>
 *******************************
